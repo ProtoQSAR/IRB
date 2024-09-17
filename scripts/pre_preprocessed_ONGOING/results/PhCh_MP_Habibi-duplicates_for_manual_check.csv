@@ -1,0 +1,2 @@
+SAN_SMILES;y;ID;orig_ID;CAS;NAME;UNITS;smiles_source;ORIGINAL_SMILES;MOL_OBJECT;SMILES
+CCCC1C(=O)N2C(N(C)C)=Nc3ccc(C)cc3N2C1=O;[228.0, 228.0];[58, 59];[169, 251];[nan, nan];['Apazone', 'Azapropazone'];['C', 'C'];['isoSMILES_from_NAME', 'isoSMILES_from_NAME'];['CCCC1C(=O)N2C(N(C)C)=Nc3ccc(C)cc3N2C1=O', 'CCCC1C(=O)N2C(N(C)C)=Nc3ccc(C)cc3N2C1=O'];[<rdkit.Chem.rdchem.Mol object at 0x0000022D7D3EE940>, <rdkit.Chem.rdchem.Mol object at 0x0000022D7D3EEA00>];['CCCC1C(=O)N2C(N(C)C)=Nc3ccc(C)cc3N2C1=O', 'CCCC1C(=O)N2C(N(C)C)=Nc3ccc(C)cc3N2C1=O']

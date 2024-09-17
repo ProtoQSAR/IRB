@@ -1,0 +1,259 @@
+SMILES;y;ID;orig_ID;CAS;NAME;UNITS;smiles_source
+BrC(Br)Br;-2.36552;83;84;;Bromoform ;logcm/h;isoSMILES_from_NAME
+Brc1ccccc1;-0.83716;82;83;;Bromobenzene ;logcm/h;isoSMILES_from_NAME
+C1=CCC=C1;-1.52288;99;100;;Cyclopentadiene ;logcm/h;isoSMILES_from_NAME
+C1=CCCCC1;-1.19044;254;255;;Cyclohexene ;logcm/h;isoSMILES_from_NAME
+C1=Cc2ccccc2C1;-1.35556;264;265;;Indene ;logcm/h;isoSMILES_from_NAME
+C1CCOC1;-2.83268;215;216;;Tetrahydrofuran ;logcm/h;isoSMILES_from_NAME
+C1COCCN1;-3.86;164;165;;Morpholine ;logcm/h;isoSMILES_from_NAME
+C1COCCO1;-3.45;258;259;;Dioxane ;logcm/h;isoSMILES_from_NAME
+C=C(C)C(=O)O;-2.58;156;157;;Methyl acrylic acid ;logcm/h;isoSMILES_from_NAME
+C=C(C)C(=O)OC;-2.35067;157;158;;Methyl methacrylate ;logcm/h;isoSMILES_from_NAME
+C=C(Cl)Cl;-1.7986;2;3;;1,1-Dichloroethylene ;logcm/h;isoSMILES_from_NAME
+C=CC#N;-2.87;242;243;;Acrylonitrile ;logcm/h;isoSMILES_from_NAME
+C=CC(=C)Cl;-1.46725;250;251;;Chloroprene ;logcm/h;isoSMILES_from_NAME
+C=CC(=O)O;-3.05;65;66;;Acrylic acid ;logcm/h;isoSMILES_from_NAME
+C=CC(=O)OC;-2.68;155;156;;Methyl acrylate ;logcm/h;isoSMILES_from_NAME
+C=CC(=O)OCC;-2.39;116;117;;Ethyl acrylate ;logcm/h;isoSMILES_from_NAME
+C=CC(=O)OCCCC;-2.0;86;87;;Butyl acrylate ;logcm/h;isoSMILES_from_NAME
+C=CC=O;-3.07;64;65;;Acrolein ;logcm/h;isoSMILES_from_NAME
+C=CCO;-2.95;67;68;;Allyl alcohol ;logcm/h;isoSMILES_from_NAME
+C=CCOc1ccccc1OCC(O)CNC(C)C;-2.81;183;184;;oxprenolol;logcm/h;isoSMILES_from_NAME
+C=COC(C)=O;-2.73;222;223;;Vinyl acetate ;logcm/h;isoSMILES_from_NAME
+C=O;-2.65;128;129;;Formaldehyde ;logcm/h;isoSMILES_from_NAME
+CC#N;-3.21;63;64;;Acetonitrile ;logcm/h;isoSMILES_from_NAME
+CC(=O)CC(C)(C)O;-3.06753;49;50;;4-Hydroxy-4-methyl-2-pentanone ;logcm/h;isoSMILES_from_NAME
+CC(=O)CCC(C)C;-2.08197;58;59;;5-Methyl-2-hexanone ;logcm/h;isoSMILES_from_NAME
+CC(=O)N(C)C;-2.8;256;257;;Dimethyl acetamide ;logcm/h;isoSMILES_from_NAME
+CC(=O)O;-3.21;61;62;;Acetic acid ;logcm/h;isoSMILES_from_NAME
+CC(=O)OC(C)(C)C;-2.17914;211;212;;tert-Butyl acetate ;logcm/h;isoSMILES_from_NAME
+CC(=O)OCC(=O)[C@@]12OC(C)(C)O[C@@H]1C[C@H]1[C@@H]3C[C@H](F)C4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@@]12C;-2.77;127;128;;Fluocinonide ;logcm/h;isoSMILES_from_NAME
+CC(=O)OCCC(C)C;-1.90658;143;144;;Isoamyl acetate ;logcm/h;isoSMILES_from_NAME
+CC(=O)[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3CC[C@]12C;-2.82;196;197;;Progesterone ;logcm/h;isoSMILES_from_NAME
+CC(C)(C)O;-2.92445;212;213;;tert-Butyl alcohol ;logcm/h;isoSMILES_from_NAME
+CC(C)(C)c1ccc(O)c(O)c1;-1.28483;57;58;;4-tert-Butyl catechol ;logcm/h;isoSMILES_from_NAME
+CC(C)=O;-3.29;62;63;;Acetone ;logcm/h;isoSMILES_from_NAME
+CC(C)CC(C)O;-2.33;54;55;;4-Methyl-2-pentanol ;logcm/h;isoSMILES_from_NAME
+CC(C)CCO;-2.0;144;145;;Isoamyl alcohol ;logcm/h;isoSMILES_from_NAME
+CC(C)CO;-2.65;145;146;;Isobutanol ;logcm/h;isoSMILES_from_NAME
+CC(C)Cc1ccc(C(C)C(=O)O)cc1;-1.44;263;264;;Ibuprofen ;logcm/h;isoSMILES_from_NAME
+CC(C)N;-2.9;265;266;;Isopropylamine ;logcm/h;isoSMILES_from_NAME
+CC(C)NCC(O)COc1ccc(CC(N)=O)cc1;-4.3;244;245;;atenolol;logcm/h;isoSMILES_from_NAME
+CC(C)NCC(O)COc1ccc(COCCOC(C)C)cc1;-3.57;80;81;;bisoprolol;logcm/h;isoSMILES_from_NAME
+CC(C)NCC(O)COc1cccc2ccccc12;-2.75;279;280;;propranolol;logcm/h;isoSMILES_from_NAME
+CC(C)Nc1ccccc1;-1.74715;173;174;;N-Isopropylaniline ;logcm/h;isoSMILES_from_NAME
+CC(C)O;-3.05;147;148;;Isopropyl alcohol ;logcm/h;isoSMILES_from_NAME
+CC(C)[N+](=O)[O-];-2.69465;234;235;;2-Nitropropane ;logcm/h;isoSMILES_from_NAME
+CC(C)c1ccccc1;-0.85;253;254;;Cumene ;logcm/h;isoSMILES_from_NAME
+CC(CO[N+](=O)[O-])O[N+](=O)[O-];-2.60555;5;6;;1,2-Propylene glycol dinitrate ;logcm/h;isoSMILES_from_NAME
+CC(Cl)(Cl)Cl;-2.35;225;226;;1,1,1-Trichloroethane ;logcm/h;isoSMILES_from_NAME
+CC(Cl)CCl;-2.0;200;201;;Propylene dichloride ;logcm/h;isoSMILES_from_NAME
+CC(Cl)Cl;-2.05257;1;2;;1,1-Dichloroethane ;logcm/h;isoSMILES_from_NAME
+CC(O)C(C)O;-3.9136975;16;17;;2,3-Butanediol ;logcm/h;isoSMILES_from_NAME
+CC1(C)O[C@@H]2C[C@H]3[C@@H]4CCC5=CC(=O)C=C[C@]5(C)[C@@]4(F)[C@@H](O)C[C@]3(C)[C@]2(C(=O)CO)O1;-4.69;218;219;;triamcinolone acetonide;logcm/h;isoSMILES_from_NAME
+CC12CCC(CC1=O)C2(C)C;-1.98716;89;90;;Camphor ;logcm/h;isoSMILES_from_NAME
+CC1=CC(=O)CC(C)(C)C1;-2.35655;146;147;;Isophorone ;logcm/h;isoSMILES_from_NAME
+CC1CCCCC1;-0.75696;159;160;;Methylcyclohexane ;logcm/h;isoSMILES_from_NAME
+CC1CO1;-3.05;201;202;;Propylene oxide;logcm/h;isoSMILES_from_NAME
+CC=O;-3.15;241;242;;Acetaldehyde ;logcm/h;isoSMILES_from_NAME
+CCBr;-2.24185;118;119;;Ethyl bromide ;logcm/h;isoSMILES_from_NAME
+CCC(=O)N(c1ccccc1)C1CCN(CCc2ccccc2)CC1;-2.25;126;127;;Fentanyl ;logcm/h;isoSMILES_from_NAME
+CCC(=O)O;-2.94;197;198;;Propionic acid ;logcm/h;isoSMILES_from_NAME
+CCC(C)=O;-2.95;230;231;;2-butanone ;logcm/h;isoSMILES_from_NAME
+CCC(C)O;-2.55284;209;210;;sec-Butyl alcohol ;logcm/h;isoSMILES_from_NAME
+CCC(C)OC(C)=O;-2.20761;208;209;;sec-Butyl acetate ;logcm/h;isoSMILES_from_NAME
+CCC(C)c1ccccc1O;-1.23433;181;182;;o-sec-Butylphenol ;logcm/h;isoSMILES_from_NAME
+CCC1(C2=CCCCC2)C(=O)NC(=O)NC1=O;-3.09;96;97;;cyclobarbitone;logcm/h;isoSMILES_from_NAME
+CCC1(CC)C(=O)NC(=O)NC1=O;-3.9137;246;247;;barbital ;logcm/h;isoSMILES_from_NAME
+CCC1(CCC(C)C)C(=O)NC(=O)NC1=O;-2.64;69;70;;amylobarbital;logcm/h;isoSMILES_from_NAME
+CCC1(c2ccccc2)C(=O)NC(=O)NC1=O;-3.35;189;190;;phenobarbital;logcm/h;isoSMILES_from_NAME
+CCCC(=O)O;-2.71;248;249;;butyric acid;logcm/h;isoSMILES_from_NAME
+CCCC(C)=O;-2.6;32;33;;2-Pentanone ;logcm/h;isoSMILES_from_NAME
+CCCCC(=O)O;-2.7;188;189;;pentanoic acid;logcm/h;isoSMILES_from_NAME
+CCCCC(C)=O;-2.35;28;29;;2-Hexanone ;logcm/h;isoSMILES_from_NAME
+CCCCC1(CC)C(=O)NC(=O)NC1=O;-3.72;85;86;;Butobarbital ;logcm/h;isoSMILES_from_NAME
+CCCCCC(=O)O;-1.85;262;263;;Hexanoic acid ;logcm/h;isoSMILES_from_NAME
+CCCCCC(C)=O;-2.0;27;28;;2-Heptanone ;logcm/h;isoSMILES_from_NAME
+CCCCCC(C)O;-1.48;26;27;;2-heptanol ;logcm/h;isoSMILES_from_NAME
+CCCCCCC(=O)O;-1.7;132;133;;Heptanoic acid ;logcm/h;isoSMILES_from_NAME
+CCCCCCCC(=O)O;-1.55;178;179;;Octanoic acid ;logcm/h;isoSMILES_from_NAME
+CCCCCCCCCCO;-1.1;[274, 100];[275, 101];[nan, nan];['n-decanol ', 'Decanol '];logcm/h;isoSMILES_from_NAME
+CCCCCCCCCO;-1.17;[13, 174];[14, 175];[nan, nan];['1-nonanol', 'Nonanol '];logcm/h;isoSMILES_from_NAME
+CCCCCCCCO;-1.1337;229;230;;1-octanol ;logcm/h;isoSMILES_from_NAME
+CCCCCCCO;-1.4849999999999999;[10, 133];[11, 134];[nan, nan];['1-heptanol ', 'Heptanol '];logcm/h;isoSMILES_from_NAME
+CCCCCCO;-1.8936975;11;12;;1-hexanol;logcm/h;isoSMILES_from_NAME
+CCCCCCOC(=O)c1cccnc1;-1.75;170;171;;N-Hexyl nicotinate ;logcm/h;isoSMILES_from_NAME
+CCCCCO;-2.22;276;277;;pentanol ;logcm/h;isoSMILES_from_NAME
+CCCCCOC(C)=O;-1.85387;167;168;;n-Amyl acetate ;logcm/h;isoSMILES_from_NAME
+CCCCO;-2.5237;84;85;;Butanol ;logcm/h;isoSMILES_from_NAME
+CCCCOC(=O)c1cccnc1;-1.78;87;88;;Butyl nicotinate ;logcm/h;isoSMILES_from_NAME
+CCCCOCCO;-2.85;21;22;;2-Butoxyethanol ;logcm/h;isoSMILES_from_NAME
+CCCCOP(=O)(O)OCCCC;-2.37675;257;258;;Di-n-butyl phosphate ;logcm/h;isoSMILES_from_NAME
+CCCO;-2.91;175;176;;n-propanol ;logcm/h;isoSMILES_from_NAME
+CCC[N+](=O)[O-];-2.64589;228;229;;1-Nitropropane ;logcm/h;isoSMILES_from_NAME
+CCCc1ccccc1;-0.97838;199;200;;Propylbenzene ;logcm/h;isoSMILES_from_NAME
+CCN;-3.09;121;122;;Ethylamine ;logcm/h;isoSMILES_from_NAME
+CCN(C)C;-2.7036975;110;111;;Dimethylethylamine ;logcm/h;isoSMILES_from_NAME
+CCN(CC)C(=O)N1CCN(C)CC1;-3.89;108;109;;diethylcarbamazine;logcm/h;isoSMILES_from_NAME
+CCN(CC)CC;-2.31;220;221;;Triethylamine ;logcm/h;isoSMILES_from_NAME
+CCN(CC)CC(=O)Nc1c(C)cccc1C;-2.4;267;268;;Lidocaine ;logcm/h;isoSMILES_from_NAME
+CCNCC;-2.75;107;108;;Diethylamine ;logcm/h;isoSMILES_from_NAME
+CCNc1nc(Cl)nc(NC(C)C)n1;-2.0;245;246;;atrazine;logcm/h;isoSMILES_from_NAME
+CCO;-2.9737;114;115;;ethanol ;logcm/h;isoSMILES_from_NAME
+CCOC(=O)C1(c2ccccc2)CCN(C)CC1;-2.43;152;153;;Meperidine ;logcm/h;isoSMILES_from_NAME
+CCOC(=O)c1ccccc1C(=O)OCC;-2.32239;106;107;;Diethyl phthalate ;logcm/h;isoSMILES_from_NAME
+CCOC(=O)c1cccnc1;-2.22;120;121;;Ethyl nicotinate;logcm/h;isoSMILES_from_NAME
+CCOC=O;-3.01;119;120;;Ethyl formate ;logcm/h;isoSMILES_from_NAME
+CCOCC;-2.46;105;106;;diethyl ether ;logcm/h;isoSMILES_from_NAME
+CCOCCO;-3.5037;24;25;;2-ethoxyethanol ;logcm/h;isoSMILES_from_NAME
+CCOCCOC(C)=O;-3.09;25;26;;2-Ethoxyethyl acetate ;logcm/h;isoSMILES_from_NAME
+CCOCCOCCO;-3.88;14;15;;2-(2-Ethoxyethoxy)ethanol ;logcm/h;isoSMILES_from_NAME
+CCc1ccc(O)cc1;-1.46;48;49;;4-Ethylphenol ;logcm/h;isoSMILES_from_NAME
+CCc1cccc2c3c([nH]c12)C(CC)(CC(=O)O)OCC3;-2.13;124;125;;etodolac;logcm/h;isoSMILES_from_NAME
+CCc1ccccc1;-1.15;117;118;;Ethyl benzene ;logcm/h;isoSMILES_from_NAME
+CN(C)CCC(c1ccc(Cl)cc1)c1ccccn1;-2.6337;92;93;;chlorpheniramine ;logcm/h;isoSMILES_from_NAME
+CN(C)c1ccccc1;-1.7;166;167;;N,N-Dimethyl aniline ;logcm/h;isoSMILES_from_NAME
+CN/C(=C\[N+](=O)[O-])NCCSCc1ccc(CN(C)C)o1;-4.05;205;206;;ranitidine;logcm/h;isoSMILES_from_NAME
+CN1C(C(=O)Nc2ccccn2)=C(O)c2ccccc2S1(=O)=O;-3.81;193;194;;Piroxicam ;logcm/h;isoSMILES_from_NAME
+CN1CCC[C@H]1c1cccnc1;-2.1;172;173;;nicotine;logcm/h;isoSMILES_from_NAME
+CN1CCN(C(c2ccccc2)c2ccccc2)CC1;-2.52;0;1;;1-(diphenylmethyl)-4-methylpiperazine;logcm/h;isoSMILES_from_NAME
+CN1CC[C@]23c4c5ccc(O)c4O[C@H]2C(=O)CC[C@H]3[C@H]1C5;-4.0737;138;139;;Hydromorphone ;logcm/h;isoSMILES_from_NAME
+CN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@@H](O)C=C[C@H]3[C@H]1C5;-4.2537;271;272;;Morphine;logcm/h;isoSMILES_from_NAME
+CN1[C@H]2CC(OC(=O)[C@H](CO)c3ccccc3)C[C@@H]1[C@H]1O[C@@H]21;-4.3;207;208;;Scopolamine ;logcm/h;isoSMILES_from_NAME
+CN1[C@H]2CC[C@@H]1CC(OC(=O)C(CO)c1ccccc1)C2;-4.2437;73;74;;atropine ;logcm/h;isoSMILES_from_NAME
+CNC(=O)Oc1ccccc1OC(C)C;-2.59;198;199;;Propoxur ;logcm/h;isoSMILES_from_NAME
+CNN;-3.75;163;164;;Monomethylhydrazine ;logcm/h;isoSMILES_from_NAME
+CN[C@@H](C)[C@H](O)c1ccccc1;-2.22;112;113;;Ephedrine ;logcm/h;isoSMILES_from_NAME
+CO;-3.3036975;153;154;;Methanol ;logcm/h;isoSMILES_from_NAME
+COC(=O)c1ccc(O)cc1;-2.04;154;155;;Methyl 4-hydroxybenzoate ;logcm/h;isoSMILES_from_NAME
+COC(=O)c1cccnc1;-2.51;158;159;;Methyl nicotinate ;logcm/h;isoSMILES_from_NAME
+COC(C)=O;-3.04431;268;269;;Methyl acetate ;logcm/h;isoSMILES_from_NAME
+COC(C)COC(C)CO;-3.07212;259;260;;Dipropylene glycol methyl ether ;logcm/h;isoSMILES_from_NAME
+COC1=CC(=O)C[C@@H](C)[C@]12Oc1c(Cl)c(OC)cc(OC)c1C2=O;-2.89;131;132;;Griseofulvin ;logcm/h;isoSMILES_from_NAME
+COC=O;-3.065;270;271;;Methyl formate ;logcm/h;isoSMILES_from_NAME
+COCC(C)O;-2.9;12;13;;1-Methoxypropan-2-ol ;logcm/h;isoSMILES_from_NAME
+COCCO;-3.73;269;270;;Methyl cellosolve ;logcm/h;isoSMILES_from_NAME
+COCCOC(C)=O;-3.6;232;233;;2-Methoxyethyl acetate ;logcm/h;isoSMILES_from_NAME
+COCCc1ccc(OCC(O)CNC(C)C)cc1;-3.08;161;162;;metoprolol;logcm/h;isoSMILES_from_NAME
+COc1c2occc2cc2ccc(=O)oc12;-1.5637;60;61;;8-methoxypsoralen ;logcm/h;isoSMILES_from_NAME
+COc1ccc(O)cc1;-2.64397;194;195;;p-Methoxyphenol ;logcm/h;isoSMILES_from_NAME
+COc1ccc2c(c1)c(CC(=O)O)c(C)n2C(=O)c1ccc(Cl)cc1;-1.83;142;143;;indomethacin;logcm/h;isoSMILES_from_NAME
+COc1ccc2c3c1O[C@H]1[C@@H](O)C=C[C@H]4[C@@H](C2)N(C)CC[C@]314;-4.0237;93;94;;codeine ;logcm/h;isoSMILES_from_NAME
+COc1ccc2cc([C@H](C)C(=O)O)ccc2c1;-2.1837;169;170;;naproxen ;logcm/h;isoSMILES_from_NAME
+COc1ccccc1;-1.6;71;72;;Anisole ;logcm/h;isoSMILES_from_NAME
+COc1ccccc1N;-2.63264;231;232;;2-Methoxyaniline ;logcm/h;isoSMILES_from_NAME
+C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@]2(C)[C@@]1(O)C(=O)CO;-3.97;102;103;;dexamethasone;logcm/h;isoSMILES_from_NAME
+C[C@@H]1O[C@@H](O[C@H]2C[C@@H](O)[C@]3(CO)[C@H]4[C@H](O)C[C@]5(C)[C@@H](C6=CC(=O)OC6)CC[C@]5(O)[C@@H]4CC[C@]3(O)C2)[C@H](O)[C@H](O)[C@H]1O;-6.1037;182;183;;Ouabain ;logcm/h;isoSMILES_from_NAME
+C[C@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@]2(C)[C@@]1(O)C(=O)CO;-3.61;247;248;;betamethasone;logcm/h;isoSMILES_from_NAME
+C[C@H]1O[C@@H](O[C@H]2[C@@H](O)C[C@H](O[C@H]3[C@@H](O)C[C@H](O[C@H]4CC[C@]5(C)[C@H]6CC[C@]7(C)[C@@H](C8=CC(=O)OC8)CC[C@]7(O)[C@@H]6CC[C@@H]5C4)O[C@@H]3C)O[C@@H]2C)C[C@H](O)[C@@H]1O;-4.8137;255;256;;digitoxin ;logcm/h;isoSMILES_from_NAME
+C[C@]12CC(=O)[C@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@@H]1CC[C@]2(O)C(=O)CO;-5.0;95;96;;cortisone;logcm/h;isoSMILES_from_NAME
+C[C@]12CCC(=O)C=C1CC[C@@H]1[C@@H]2[C@@H](O)C[C@]2(C=O)[C@@H](C(=O)CO)CC[C@@H]12;-4.69;66;67;;aldosterone;logcm/h;isoSMILES_from_NAME
+C[C@]12CC[C@@H]3c4ccc(O)cc4CC[C@H]3[C@@H]1CCC2=O;-2.44;260;261;;estrone;logcm/h;isoSMILES_from_NAME
+C[C@]12CC[C@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@@H]1CC[C@@H]2C(=O)CO;-3.35;101;102;;deoxycorticosterone;logcm/h;isoSMILES_from_NAME
+C[C@]12CC[C@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@@H]1CC[C@@H]2O;-2.7137;213;214;;testosterone ;logcm/h;isoSMILES_from_NAME
+C[C@]12CC[C@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@@H]1CC[C@]2(O)C(=O)CO;-4.13;94;95;;Cortexolone ;logcm/h;isoSMILES_from_NAME
+C[C@]12C[C@H](O)[C@@]3(F)[C@@H](CCC4=CC(=O)C=C[C@@]43C)[C@@H]1C[C@@H](O)[C@]2(O)C(=O)CO;-5.4;281;282;;triamcinolone;logcm/h;isoSMILES_from_NAME
+C[C@]12C[C@H](O)[C@H]3[C@@H](CCC4=CC(=O)C=C[C@@]43C)[C@@H]1CC[C@]2(O)C(=O)CO;-4.35;195;196;;prednisolone;logcm/h;isoSMILES_from_NAME
+C[C@]12C[C@H](O)[C@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@@H]1CC[C@@H]2C(=O)CO;-4.0037;251;252;;Corticosterone ;logcm/h;isoSMILES_from_NAME
+C[C@]12C[C@H](O)[C@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@@H]1CC[C@]2(O)C(=O)CO;-4.2937;137;138;;hydrocortisone ;logcm/h;isoSMILES_from_NAME
+Cc1c(N(C)C)c(=O)n(-c2ccccc2)n1C;-2.99;68;69;;aminopyrine;logcm/h;isoSMILES_from_NAME
+Cc1cc(C)cc(O)c1;-1.48282;35;36;;3,5-Dimethylphenol ;logcm/h;isoSMILES_from_NAME
+Cc1cc(O)cc(C)c1Cl;-1.23;44;45;;4-Chloro-3,5-dimethylphenol ;logcm/h;isoSMILES_from_NAME
+Cc1ccc(C(C)C)c(O)c1;-1.1837;216;217;;thymol ;logcm/h;isoSMILES_from_NAME
+Cc1ccc(C)cc1;-1.13136;203;204;;p-Xylene ;logcm/h;isoSMILES_from_NAME
+Cc1ccc(N)cc1;-2.38722;202;203;;p-Toluidine ;logcm/h;isoSMILES_from_NAME
+Cc1ccc(O)cc1;-1.76;185;186;;p-Cresol ;logcm/h;isoSMILES_from_NAME
+Cc1ccc(O)cc1C;-1.44;34;35;;3,4-Xylenol ;logcm/h;isoSMILES_from_NAME
+Cc1ccc([N+](=O)[O-])cc1;-1.8729;278;279;;p-Nitrotoluene ;logcm/h;isoSMILES_from_NAME
+Cc1ccc([N+](=O)[O-])cc1[N+](=O)[O-];-2.42481;19;20;;2,4-Dinitrotoluene ;logcm/h;isoSMILES_from_NAME
+Cc1cccc(C)c1;-1.1;40;41;;3-xylene ;logcm/h;isoSMILES_from_NAME
+Cc1cccc(CO)c1;-1.781;37;38;;3-Methylbenzyl alcohol ;logcm/h;isoSMILES_from_NAME
+Cc1cccc(N)c1;-2.37986;165;166;;m-Toluidine ;logcm/h;isoSMILES_from_NAME
+Cc1cccc(O)c1;-1.8236975;150;151;;m-Cresol ;logcm/h;isoSMILES_from_NAME
+Cc1cccc([N+](=O)[O-])c1;-1.81816;162;163;;m-Nitrotoluene ;logcm/h;isoSMILES_from_NAME
+Cc1ccccc1;-1.3;217;218;;Toluene;logcm/h;isoSMILES_from_NAME
+Cc1ccccc1Cl;-1.06399;176;177;;o-Chlorotoluene ;logcm/h;isoSMILES_from_NAME
+Cc1ccccc1O;-1.8036975;177;178;;o-Cresol ;logcm/h;isoSMILES_from_NAME
+Cc1ccccc1[N+](=O)[O-];-1.92445;275;276;;o-Nitrotoluene ;logcm/h;isoSMILES_from_NAME
+ClC(Cl)(Cl)C(Cl)(Cl)Cl;-1.4;135;136;;Hexachloroethane ;logcm/h;isoSMILES_from_NAME
+ClC(Cl)=C(Cl)C(Cl)=C(Cl)Cl;-0.92;134;135;;Hexachlorobutadiene ;logcm/h;isoSMILES_from_NAME
+ClC(Cl)=C(Cl)Cl;-1.3037;214;215;;tetrachloroethylene ;logcm/h;isoSMILES_from_NAME
+ClC(Cl)Cl;-1.8;282;283;;Trichloromethane ;logcm/h;isoSMILES_from_NAME
+ClC=C(Cl)Cl;-1.92;219;220;;trichloroethylene;logcm/h;isoSMILES_from_NAME
+ClC=CCCl;-2.0;6;7;;1,3-Dichloropropene ;logcm/h;isoSMILES_from_NAME
+ClC=CCl;-1.9914;4;5;;1,2-Dichloroethylene ;logcm/h;isoSMILES_from_NAME
+ClCC(Cl)CCl;-2.00745;226;227;;1,2,3-Trichloropropane ;logcm/h;isoSMILES_from_NAME
+ClCC1CO1;-3.43;113;114;;Epichlorohydrin ;logcm/h;isoSMILES_from_NAME
+ClCCCl;-2.0;122;123;;Ethylene dichloride ;logcm/h;isoSMILES_from_NAME
+ClCc1ccccc1;-1.86012;77;78;;Benzyl chloride ;logcm/h;isoSMILES_from_NAME
+Clc1ccc(Cl)cc1;-1.17457;186;187;;p-Dichlorobenzene ;logcm/h;isoSMILES_from_NAME
+Clc1ccccc1Cl;-1.18111;179;180;;o-Dichlorobenzene ;logcm/h;isoSMILES_from_NAME
+Cn1c(=O)c2c(ncn2C)n(C)c1=O;-3.96;88;89;;caffeine;logcm/h;isoSMILES_from_NAME
+N#Cc1ccc(O)cc1;-1.98;47;48;;4-Cyanophenol ;logcm/h;isoSMILES_from_NAME
+N#Cc1cccc(C#N)c1;-2.93181;7;8;;1,3-Dicyanobenzene ;logcm/h;isoSMILES_from_NAME
+NC(=O)Cc1ccc(O)cc1;-3.3337;53;54;;4-hydroxyphenylacetamide ;logcm/h;isoSMILES_from_NAME
+NC(N)=Nc1nc(CSCC/C(N)=N/S(N)(=O)=O)cs1;-4.79;125;126;;famotidine;logcm/h;isoSMILES_from_NAME
+NC(N)=O;-3.83;221;222;;Urea ;logcm/h;isoSMILES_from_NAME
+NC=O;-4.06702;129;130;;Formamide ;logcm/h;isoSMILES_from_NAME
+NCCCC[C@H](N)C(=O)O;-3.3137;148;149;;Lysine ;logcm/h;isoSMILES_from_NAME
+NCCO;-4.02;115;116;;Ethanol amine ;logcm/h;isoSMILES_from_NAME
+NNc1ccccc1;-2.49214;192;193;;Phenylhydrazine ;logcm/h;isoSMILES_from_NAME
+N[C@@H](CC(=O)O)C(=O)O;-3.8736975;72;73;;Aspartic acid ;logcm/h;isoSMILES_from_NAME
+N[C@@H](Cc1cnc[nH]1)C(=O)O;-4.2637;136;137;;Histidine ;logcm/h;isoSMILES_from_NAME
+Nc1cc([N+](=O)[O-])ccc1O;-3.1137;20;21;;2-amino-4-nitrophenol ;logcm/h;isoSMILES_from_NAME
+Nc1ccc(Cl)c(N)c1;-2.68;43;44;;4-chloro-1,3-phenylenediamine;logcm/h;isoSMILES_from_NAME
+Nc1ccc(N)c([N+](=O)[O-])c1;-3.3005;[233, 31];[32, 234];[nan, nan];['2-Nitro-4-phenylenediamine ', '2-nitro-1,4-phenylenediamine'];logcm/h;isoSMILES_from_NAME
+Nc1ccc(N)cc1;-3.59685;[8, 56];[9, 57];[nan, nan];['4-Phenylenediamine ', '1,4-benzenediamine '];logcm/h;isoSMILES_from_NAME
+Nc1ccc(O)c([N+](=O)[O-])c1;-2.55;41;42;;4-Amino-2-nitrophenol ;logcm/h;isoSMILES_from_NAME
+Nc1ccc([N+](=O)[O-])cc1;-2.57512;277;278;;p-Nitroaniline ;logcm/h;isoSMILES_from_NAME
+Nc1ccccc1;-2.65;70;71;;Aniline ;logcm/h;isoSMILES_from_NAME
+Nc1ccccc1N;-3.2937;3;4;;1,2-benzenediamine ;logcm/h;isoSMILES_from_NAME
+Nc1ncn[nH]1;-3.84466;243;244;;Amitrole ;logcm/h;isoSMILES_from_NAME
+O=C(CCl)c1ccccc1;-2.29414;22;23;;2-Chloroacetophenone ;logcm/h;isoSMILES_from_NAME
+O=C(NCCO[N+](=O)[O-])c1cccnc1;-3.66;171;172;;nicorandil;logcm/h;isoSMILES_from_NAME
+O=C(O)Cc1ccc(O)cc1;-2.47;52;53;;4-hydroxyphenyl acetic acid;logcm/h;isoSMILES_from_NAME
+O=C(O)Cc1ccccc1Nc1c(Cl)cccc1Cl;-1.74;103;104;;diclofenac;logcm/h;isoSMILES_from_NAME
+O=C(O)c1ccccc1;-1.5937;75;76;;benzoic acid ;logcm/h;isoSMILES_from_NAME
+O=C(O)c1ccccc1O;-2.2036975;280;281;;Salicylic acid ;logcm/h;isoSMILES_from_NAME
+O=C(OCc1ccccc1)c1cccnc1;-1.8;78;79;;Benzyl nicotinate ;logcm/h;isoSMILES_from_NAME
+O=C1CCCCC1;-2.74;98;99;;Cyclohexanone ;logcm/h;isoSMILES_from_NAME
+O=CO;-3.52;130;131;;Formic acid ;logcm/h;isoSMILES_from_NAME
+O=[N+]([O-])c1ccc(O)cc1;-2.21;[51, 239];[240, 52];[nan, nan];['4-nitrophenol', '4-hydroxynitrobenzene '];logcm/h;isoSMILES_from_NAME
+O=[N+]([O-])c1ccc([N+](=O)[O-])cc1;-2.70997;187;188;;p-Dinitrobenzene ;logcm/h;isoSMILES_from_NAME
+O=[N+]([O-])c1cccc(O)c1;-2.25;38;39;;3-Nitrophenol ;logcm/h;isoSMILES_from_NAME
+O=[N+]([O-])c1cccc([N+](=O)[O-])c1;-2.68825;151;152;;m-Dinitrobenzene ;logcm/h;isoSMILES_from_NAME
+O=[N+]([O-])c1ccccc1[N+](=O)[O-];-2.54516;180;181;;o-Dinitrobenzene ;logcm/h;isoSMILES_from_NAME
+O=c1[nH]cc(F)c(=O)[nH]1;-3.26;240;241;;5-fluorouracil ;logcm/h;isoSMILES_from_NAME
+O=c1ccc2ccccc2o1;-2.04;252;253;;Coumarin ;logcm/h;isoSMILES_from_NAME
+OC1CCCCC1;-2.21467;97;98;;Cyclohexanol ;logcm/h;isoSMILES_from_NAME
+OCCCCCCc1ccccc1;-1.0037;59;60;;6-phenylhexanol ;logcm/h;isoSMILES_from_NAME
+OCCCCc1ccccc1;-1.1837;55;56;;4-phenylbutanol ;logcm/h;isoSMILES_from_NAME
+OCCCc1ccccc1;-1.28;39;40;;3-phenylpropanol ;logcm/h;isoSMILES_from_NAME
+OCCNCCO;-4.38;104;105;;Diethanolamine ;logcm/h;isoSMILES_from_NAME
+OCCO;-4.07;261;262;;Ethylene glycol ;logcm/h;isoSMILES_from_NAME
+OCCOc1ccccc1;-2.88;33;34;;2-Phenoxyethanol ;logcm/h;isoSMILES_from_NAME
+OCCc1ccccc1;-2.12;236;237;;2-phenylethanol;logcm/h;isoSMILES_from_NAME
+OC[C@@H](O)[C@@H](O)[C@H](O)[C@H](O)CO;-4.96;149;150;;Mannitol ;logcm/h;isoSMILES_from_NAME
+OC[C@H]1O[C@H](O[C@]2(CO)O[C@H](CO)[C@@H](O)[C@@H]2O)[C@H](O)[C@@H](O)[C@@H]1O;-5.28;210;211;;Sucrose ;logcm/h;isoSMILES_from_NAME
+OCc1ccc(O)cc1;-2.7;50;51;;4-hydroxybenzyl alcohol ;logcm/h;isoSMILES_from_NAME
+OCc1ccccc1;-2.22;76;77;;Benzyl alcohol ;logcm/h;isoSMILES_from_NAME
+Oc1c(Cl)cc(Cl)cc1Cl;-1.14;17;18;;2,4,6-trichlorophenol ;logcm/h;isoSMILES_from_NAME
+Oc1cc(O)cc(O)c1;-2.5137;227;228;;1,3,5-trihydroxybenzene ;logcm/h;isoSMILES_from_NAME
+Oc1ccc(Br)cc1;-1.4436975;42;43;;4-Bromophenol ;logcm/h;isoSMILES_from_NAME
+Oc1ccc(Cl)cc1;-1.44;46;47;;4-Chlorophenol ;logcm/h;isoSMILES_from_NAME
+Oc1ccc(Cl)cc1Cl;-1.14;18;19;;2,4-dichlorophenol;logcm/h;isoSMILES_from_NAME
+Oc1ccc(O)cc1;-2.9537;139;140;;hydroquinone;logcm/h;isoSMILES_from_NAME
+Oc1ccc2ccccc2c1;-1.5936975;30;31;;2-Naphthol ;logcm/h;isoSMILES_from_NAME
+Oc1cccc(Br)c1;-1.35022;36;37;;3-Bromophenol ;logcm/h;isoSMILES_from_NAME
+Oc1cccc(O)c1;-2.82;206;207;;Resorcinol ;logcm/h;isoSMILES_from_NAME
+Oc1cccc2ccccc12;-1.55;168;169;;Naphthol ;logcm/h;isoSMILES_from_NAME
+Oc1ccccc1;-2.0936975;190;191;;Phenol ;logcm/h;isoSMILES_from_NAME
+Oc1ccccc1Cl;-1.4836975;23;24;;2-Chlorophenol ;logcm/h;isoSMILES_from_NAME
+Oc1ccccc1O;-2.51;90;91;;catechol;logcm/h;isoSMILES_from_NAME
+S=C=S;-1.66555;249;250;;Carbon disulfide ;logcm/h;isoSMILES_from_NAME
+c1ccc(-c2ccccc2)cc1;-0.83565;79;80;;Biphenyl ;logcm/h;isoSMILES_from_NAME
+c1ccc(Nc2ccccc2)cc1;-1.26761;111;112;;Diphenylamine ;logcm/h;isoSMILES_from_NAME
+c1ccc(OCC2CO2)cc1;-2.84;191;192;;Phenylglycidyl ether ;logcm/h;isoSMILES_from_NAME
+c1ccc2ccccc2c1;-1.15864;272;273;;Naphthalene ;logcm/h;isoSMILES_from_NAME
+c1ccc2cnccc2c1;-1.78;266;267;;Isoquinoline ;logcm/h;isoSMILES_from_NAME
+c1ccncc1;-2.74;204;205;;Pyridine ;logcm/h;isoSMILES_from_NAME

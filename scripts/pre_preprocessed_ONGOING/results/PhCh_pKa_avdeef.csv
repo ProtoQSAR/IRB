@@ -1,0 +1,110 @@
+SMILES;y;ID;orig_ID;CAS;NAME;UNITS;smiles_source;pka
+C#CCN(C)[C@H](C)Cc1ccc(F)cc1;7.42;55;56;;p-F-deprenyl;pKa;isoSMILES_from_NAME;base
+C#CCN(C)[C@H](C)Cc1ccccc1;7.48;56;57;;Deprenyl;pKa;isoSMILES_from_NAME;base
+C=CCOc1ccccc1OCC(O)CNC(C)C;9.57;117;118;;oxprenolol;pKa;isoSMILES_from_NAME;base
+C=CCc1ccccc1OCC(O)CNC(C)C;9.51;107;108;;alprenolol;pKa;isoSMILES_from_NAME;base
+C=C[C@H]1CN2CC[C@@H]1C[C@H]2[C@H](O)c1ccnc2ccc(OC)cc12;8.55;81;82;;Quinine;pKa;isoSMILES_from_NAME;base
+CC(=O)O;4.55;40;41;;acetic acid;pKa;isoSMILES_from_NAME;acid
+CC(=O)Oc1c(C)cc(OCC(O)CNC(C)C)c(C)c1C;9.54;114;115;;metipranolol;pKa;isoSMILES_from_NAME;base
+CC(=O)Oc1ccc2c3c1O[C@@H]1C(OC(C)=O)C=C[C@H]4[C@@H](C2)N(C)CC[C@]314;7.96;67;68;;Diacetylmorphine;pKa;isoSMILES_from_NAME;base
+CC(=O)Oc1ccccc1C(=O)O;3.5;26;27;;acetylsalicylic acid;pKa;isoSMILES_from_NAME;acid
+CC(C(=O)O)N(C(=O)c1ccccc1)c1ccc(F)c(Cl)c1;3.73;28;29;;flamprop;pKa;isoSMILES_from_NAME;acid
+CC(C(=O)O)c1ccc(-c2ccccc2)c(F)c1;4.03;33;34;;flurbiprofen;pKa;isoSMILES_from_NAME;acid
+CC(C(=O)O)c1cccc(C(=O)c2ccccc2)c1;3.98;30;31;;ketoprofen;pKa;isoSMILES_from_NAME;acid
+CC(C)(C)NCC(O)COc1cccc2c1C[C@H](O)[C@H](O)C2;9.69;125;126;;nadolol;pKa;isoSMILES_from_NAME;base
+CC(C)(C)NCC(O)COc1ccccc1C1CCCC1;9.92;129;130;;phenbutolol;pKa;isoSMILES_from_NAME;base
+CC(C)(C)NC[C@H](O)COc1nsnc1N1CCOCC1;9.53;112;113;;timolol;pKa;isoSMILES_from_NAME;base
+CC(C)(C)c1ccc(C(O)CCCN2CCC(C(O)(c3ccccc3)c3ccccc3)CC2)cc1;9.86;128;129;;Terfenadine;pKa;isoSMILES_from_NAME;base
+CC(C)Cc1ccc(C(C)C(=O)O)cc1;4.45;39;40;;ibupofen;pKa;isoSMILES_from_NAME;acid
+CC(C)N(CCC(C(N)=O)(c1ccccc1)c1ccccn1)C(C)C;10.32;133;134;;Disopyramide;pKa;isoSMILES_from_NAME;base
+CC(C)NCC(O)COc1ccc(CC(N)=O)cc1;9.54;113;114;;atenolol;pKa;isoSMILES_from_NAME;base
+CC(C)NCC(O)COc1ccc(COCCOC(C)C)cc1;9.57;118;119;;Bisoprolol;pKa;isoSMILES_from_NAME;base
+CC(C)NCC(O)COc1cccc2[nH]c3ccccc3c12;9.52;110;111;;Carazolol;pKa;isoSMILES_from_NAME;base
+CC(C)NCC(O)COc1cccc2[nH]ccc12;9.54;115;116;;Pindolol;pKa;isoSMILES_from_NAME;base
+CC(C)NCC(O)COc1cccc2ccccc12;9.53;111;112;;Propranolol;pKa;isoSMILES_from_NAME;base
+CC(C)n1c(/C=C/[C@H](O)C[C@H](O)CC(=O)O)c(-c2ccc(F)cc2)c2ccccc21;4.31;37;38;;fluvastatin;pKa;isoSMILES_from_NAME;acid
+CC(CN1c2ccccc2Sc2ccccc21)N(C)C;9.0;91;92;;Promethazine;pKa;isoSMILES_from_NAME;base
+CC(Cc1ccc(C(C)(C)C)cc1)CN1CC(C)OC(C)C1;7.34;54;55;;Fenpropimorph;pKa;isoSMILES_from_NAME;base
+CC(N)(Cc1ccc(O)c(O)c1)C(=O)O;2.21;2;3;;a-methyl-DOPA;pKa;isoSMILES_from_NAME;acid
+CC(NC(CCc1ccccc1)C(=O)O)C(=O)N1CCCC1C(=O)O;7.84;62;63;;Enalaprilat;pKa;isoSMILES_from_NAME;base
+CC/C(=C(/c1ccccc1)c1ccc(OCCN(C)C)cc1)c1ccccc1;8.48;78;79;;Tamoxifen;pKa;isoSMILES_from_NAME;base
+CC1(C)S[C@@H]2[C@@H](NC(=O)[C@H](N)c3ccc(O)cc3)C(=O)N2[C@H]1C(=O)O;2.6;9;10;;amoxicilin;pKa;isoSMILES_from_NAME;acid
+CC1CCc2cc(F)cc3c(=O)c(C(=O)O)cn1c23;6.27;48;49;;flumequine;pKa;isoSMILES_from_NAME;acid
+CC1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23;8.31;74;75;;ofloxacin;pKa;isoSMILES_from_NAME;base
+CCC(=O)OC(Cc1ccccc1)(c1ccccc1)C(C)CN(C)C;9.06;94;95;;Propoxyphene;pKa;isoSMILES_from_NAME;base
+CCC1OC(=O)CC(O)C(C)C(CC=O)(OC2OC(C)CC(N(C)C)C2O)CC(C)C(=O)C=CC(C)=CC1C;8.83;88;89;;repromycin;pKa;isoSMILES_from_NAME;base
+CCC1OC(=O)CC(O)C(C)C(OC2OC(C)C(O)C(N(C)C)C2O)C(CC=O)CC(C)C(=O)C=CC(C)=CC1COC1OC(C)C(O)C(OC)C1CC;8.36;76;77;;Desmycosin;pKa;isoSMILES_from_NAME;base
+CCC1OC(=O)CC(O)C(C)C(OC2OC(C)C(OC3CC(C)(O)C(O)C(C)O3)C(N(C)C)C2O)C(CC=O)CC(C)C(=O)C=CC(C)=CC1COC1OC(C)C(O)C(OC)C1CC;7.73;60;61;;tylosin;pKa;isoSMILES_from_NAME;base
+CCC1OC(=O)CC(O)CC(OC2OC(C)CC(N(C)C)C2O)C(CC=O)CC(C)C(=O)C=CC2OC2C1C;8.79;85;86;;rosaramicin;pKa;isoSMILES_from_NAME;base
+CCCC(=O)Nc1ccc(OC[C@H](O)CNC(C)C)c(C(C)=O)c1;9.52;109;110;;acebutolol;pKa;isoSMILES_from_NAME;base
+CCCCC[C@H](O)/C=C/[C@@H]1[C@@H](O)CC(=O)[C@H]1C/C=C/CCCC(=O)O;4.77;42;43;;Prostoglandin E2;pKa;isoSMILES_from_NAME;acid
+CCCCC[C@H](O)/C=C/[C@@H]1[C@@H](O)CC(=O)[C@H]1CCCCCCC(=O)O;4.87;43;44;;Prostoglandin E1;pKa;isoSMILES_from_NAME;acid
+CCCCNc1ccc(C(=O)OCCN(C)C)cc1;8.49;79;80;;tetracaine;pKa;isoSMILES_from_NAME;base
+CCCCc1oc2ccccc2c1C(=O)c1cc(I)c(OCCN(CC)CC)c(I)c1;9.06;93;94;;amiodalone;pKa;isoSMILES_from_NAME;base
+CCCN(CCC)S(=O)(=O)c1ccc(C(=O)O)cc1;3.01;18;19;;Probenecid;pKa;isoSMILES_from_NAME;acid
+CCCOC(=O)NCCCN(C)C;9.48;105;106;;propamocarb;pKa;isoSMILES_from_NAME;base
+CCN(C)C(=O)Oc1cccc(C(C)N(C)C)c1;8.8;87;88;;Rivastigmine;pKa;isoSMILES_from_NAME;base
+CCN(CC)C(=O)Nc1ccc(OCC(O)CNC)c(C(C)=O)c1;9.66;123;124;;Celiprolol;pKa;isoSMILES_from_NAME;base
+CCN(CC)CC(=O)Nc1c(C)cccc1C;7.95;66;67;;lidocaine;pKa;isoSMILES_from_NAME;base
+CCN(CC)CCOC(=O)c1ccc(N)cc1;9.04;92;93;;Procaine;pKa;isoSMILES_from_NAME;base
+CCOC(=O)C1=C(COCCN)NC(C)=C(C(=O)OC)C1c1ccccc1Cl;9.26;101;102;;amlodipine;pKa;isoSMILES_from_NAME;base
+CCOC(=O)[C@H](CCc1ccccc1)N[C@@H](C)C(=O)N1CCC[C@H]1C(=O)O;2.92;17;18;;Enalapril;pKa;isoSMILES_from_NAME;acid
+CC[C@H]1OC(=O)[C@@H](C)[C@H](O[C@@H]2C[C@](C)(OC)[C@@H](O)[C@@H](C)O2)[C@@H](C)[C@@H](O[C@@H]2O[C@H](C)C[C@@H](N(C)C)[C@@H]2O)[C@](C)(O)C[C@@H](C)/C(=N/OCOCCOC)[C@@H](C)[C@@H](O)[C@]1(C)O;9.27;102;103;;roxitheromycin;pKa;isoSMILES_from_NAME;base
+CC[C@H]1OC(=O)[C@@H](C)[C@H](O[C@H]2C[C@](C)(OC)[C@H](O)[C@@H](C)O2)[C@@H](C)[C@@H](O[C@@H]2O[C@H](C)C[C@@H](N(C)C)[C@@H]2O)[C@](C)(O)C[C@@H](C)C(=O)[C@@H](C)[C@@H](O)[C@]1(C)O;8.8;86;87;;erythromycin;pKa;isoSMILES_from_NAME;base
+CC[C@H]1OC(=O)[C@H](C)[C@@H](O[C@H]2C[C@@](C)(OC)[C@@H](O)[C@H](C)O2)[C@H](C)[C@@H](O[C@@H]2O[C@H](C)C[C@H](N(C)C)[C@H]2O)[C@](C)(OC)C[C@@H](C)C(=O)[C@H](C)[C@@H](O)[C@]1(C)O;8.99;90;91;;Claridhromycin;pKa;isoSMILES_from_NAME;base
+CCn1cc(C(=O)O)c(=O)c2ccc(C)nc21;6.01;45;46;;Nalidixic acid;pKa;isoSMILES_from_NAME;acid
+CN(C)CCC=C1c2ccccc2CCc2ccccc21;9.49;106;107;;amitriptyline;pKa;isoSMILES_from_NAME;base
+CN(C)CCCN1c2ccccc2CCc2ccccc21;9.51;108;109;;imipramine;pKa;isoSMILES_from_NAME;base
+CN(C)CCCN1c2ccccc2Sc2ccc(Cl)cc21;9.24;100;101;;Chlorpromazine;pKa;isoSMILES_from_NAME;base
+CN(C)CCCOc1nn(Cc2ccccc2)c2ccccc12;9.27;103;104;;benzydamine;pKa;isoSMILES_from_NAME;base
+CN(C)CCOC(c1ccccc1)c1ccccc1;9.1;97;98;;Diphenhydramine;pKa;isoSMILES_from_NAME;base
+CN(C)CCOC1(c2ccccc2)CC2CCC1(C)C2(C)C;9.61;120;121;;Deramciclane;pKa;isoSMILES_from_NAME;base
+CN(C/C=C/C#CC(C)(C)C)Cc1cccc2ccccc12;7.05;50;51;;Terbinafine;pKa;isoSMILES_from_NAME;base
+CN/C(=C\[N+](=O)[O-])NCCSCc1ccc(CN(C)C)o1;8.31;75;76;;ranitidine;pKa;isoSMILES_from_NAME;base
+CN1CCC[C@H]1c1cccnc1;8.11;70;71;;nicotine;pKa;isoSMILES_from_NAME;base
+CN1CCN(C2=Nc3cc(Cl)ccc3Nc3ccccc32)CC1;7.9;64;65;;Colzapine;pKa;isoSMILES_from_NAME;base
+CN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@H](O[C@H]2OC(C(=O)O)[C@@H](O)[C@@H](O)C2O)C=C[C@H]3[C@H]1C5;2.77;13;14;;Morphine-6-beta-D-glucuronide;pKa;isoSMILES_from_NAME;acid
+CN1[C@H]2CC[C@@H]1CC(OC(=O)[C@H](CO)c1ccccc1)C2;9.84;127;128;;atropine;pKa;isoSMILES_from_NAME;base
+CNC(C)C(O)c1ccccc1;9.65;122;123;;Ephedrine;pKa;isoSMILES_from_NAME;base
+CNC(CC(C)C)C(=O)NC1C(=O)NC(CC(N)=O)C(=O)NC2C(=O)NC3C(=O)NC(C(=O)NC(C(=O)O)c4cc(O)cc(O)c4-c4cc3ccc4O)C(O)c3ccc(c(Cl)c3)Oc3cc2cc(c3OC2OC(CO)C(O)C(O)C2OC2CC(C)(N)C(O)C(C)O2)Oc2ccc(cc2Cl)C1O;2.66;12;13;;vancomycin;pKa;isoSMILES_from_NAME;acid
+CNCCC=C1c2ccccc2CCc2ccccc21;10.13;131;132;;nortryptiline;pKa;isoSMILES_from_NAME;base
+CNCCCN1c2ccccc2CCc2ccccc21;10.16;132;133;;Desipramine;pKa;isoSMILES_from_NAME;base
+CN[C@H]1C(O)O[C@H](CO)[C@@H](O)[C@@H]1O;9.6;119;120;;N-methyl-D-glucamine;pKa;isoSMILES_from_NAME;base
+COC1C(OC(C)=O)CC(=O)OC(C)CC2OC2/C=C/C(=O)C(C)CC(CC=O)C1OC1OC(C)C(O)C(N(C)C)C1O;8.44;77;78;;desmycarosyl carbomycin a;pKa;isoSMILES_from_NAME;base
+COC1C(OC(C)=O)CC(=O)OC(C)CC=CC=CC(=O)C(C)CC(CC=O)C1OC1OC(C)C(OC2CC(C)(O)C(OC(=O)CC(C)C)C(C)O2)C(N(C)C)C1O;7.55;57;58;;Carbomycin B;pKa;isoSMILES_from_NAME;base
+COC1CC(OC2C(C)C(O)OC(C)C(C)C(O)C(C)C(=O)C3(CO3)CC(C)C(OC3OC(C)CC(N(C)C)C3O)C2C)OC(C)C1O;8.84;89;90;;oleandomycin;pKa;isoSMILES_from_NAME;base
+COCCc1ccc(OCC(O)CNC(C)C)cc1;9.56;116;117;;metoprolol;pKa;isoSMILES_from_NAME;base
+CO[C@H]1[C@@H](O[C@@H]2O[C@H](C)[C@@H](O[C@H]3C[C@@](C)(O)[C@@H](O[C@@H](O)CC(C)C)[C@H](C)O3)[C@@H](N(C)C)[C@H]2O)[C@@H](CCO)C[C@@H](C)[C@H](O)CC[C@@H]2O[C@H]2C[C@@H](C)O[C@@H](O)C[C@H]1O[C@H](C)O;7.61;59;60;;Carbomycin A;pKa;isoSMILES_from_NAME;base
+COc1cc(NC(C)CCCN)c2ncccc2c1;10.03;130;131;;Primaquine;pKa;isoSMILES_from_NAME;base
+COc1ccc(CCN(C)CCCC(C#N)(c2ccc(OC)c(OC)c2)C(C)C)cc1OC;9.07;95;96;;Verapamil;pKa;isoSMILES_from_NAME;base
+COc1ccc([C@@H]2Sc3ccccc3N(CCN(C)C)C(=O)[C@@H]2OC(C)=O)cc1;8.02;69;70;;Diltiazem;pKa;isoSMILES_from_NAME;base
+COc1ccc2c(c1)c(CC(=O)O)c(C)n2C(=O)c1ccc(Cl)cc1;4.42;38;39;;indomethacin;pKa;isoSMILES_from_NAME;acid
+COc1ccc2c3c1O[C@H]1[C@@H](O)C=C[C@H]4[C@@H](C2)N(C)CC[C@]314;8.22;73;74;;Codeine phosphate;pKa;isoSMILES_from_NAME;base
+COc1ccc2c3c1O[C@H]1[C@@H](O)C=C[C@H]4[C@@H](C2)NCC[C@]314;9.23;99;100;;norcodeine;pKa;isoSMILES_from_NAME;base
+COc1ccc2cc(C(C)C(=O)O)ccc2c1;4.18;36;37;;Naproxen;pKa;isoSMILES_from_NAME;acid
+COc1ccccc1OCCNCC(O)COc1cccc2[nH]c3ccccc3c12;7.97;68;69;;Carvedilol;pKa;isoSMILES_from_NAME;base
+Cc1cc(=O)oc2cc(C3OC(C(=O)O)C(O)C(O)C3O)ccc12;2.82;14;15;;4-Me-umbelliferyl b-D-glucuron;pKa;isoSMILES_from_NAME;acid
+Cc1cc(Cl)ccc1O[C@H](C)C(=O)O;3.21;21;22;;mecoprop;pKa;isoSMILES_from_NAME;acid
+Cc1cc2c(s1)Nc1ccccc1N=C2N1CCN(C)CC1;7.8;61;62;;olanzapine;pKa;isoSMILES_from_NAME;base
+Cc1cccc(C)c1OCC(C)N;9.14;98;99;;mexiletine;pKa;isoSMILES_from_NAME;base
+Cc1cnc2c(C(=O)O)c(Cl)ccc2c1;3.96;29;30;;quinmerac;pKa;isoSMILES_from_NAME;acid
+N#Cc1ccc2c(c1)N(CCCCN1CCC(O)CC1)c1ccccc1S2;8.76;84;85;;periciazine;pKa;isoSMILES_from_NAME;base
+NC(CC(=O)O)C(=O)O;9.67;124;125;;aspartic acid;pKa;isoSMILES_from_NAME;base
+NC(Cc1c[nH]c2ccccc12)C(=O)NC(Cc1c[nH]c2ccccc12)C(=O)O;3.38;24;25;;trp-trp;pKa;isoSMILES_from_NAME;acid
+NC(Cc1c[nH]c2ccccc12)C(=O)NC(Cc1ccccc1)C(=O)O;3.18;19;20;;trp-phe;pKa;isoSMILES_from_NAME;acid
+NC(Cc1ccc(O)c(O)c1)C(=O)O;2.21;3;4;;DOPA;pKa;isoSMILES_from_NAME;acid
+NC(Cc1ccc(O)cc1)C(=O)O;2.2;1;2;;tyrosine;pKa;isoSMILES_from_NAME;acid
+NCCCCc1ccccc1;10.5;134;135;;4-phenylbutylamine;pKa;isoSMILES_from_NAME;base
+NS(=O)(=O)c1cc(C(=O)O)c(NCc2ccco2)cc1Cl;3.52;27;28;;furosemide;pKa;isoSMILES_from_NAME;acid
+O=C(CCCN1CCC(O)(c2ccc(Cl)cc2)CC1)c1ccc(F)cc1;8.65;83;84;;haloperidol;pKa;isoSMILES_from_NAME;base
+O=C(O)CCCCc1ccccc1;4.56;41;42;;5-phenylvaleric acid;pKa;isoSMILES_from_NAME;acid
+O=C(O)COc1ccc(Cl)cc1Cl;2.64;10;11;;2,4-dichlorophenoxyacetic acid;pKa;isoSMILES_from_NAME;acid
+O=C(O)Cc1ccccc1Nc1c(Cl)cccc1Cl;3.99;32;33;;Diclofenac;pKa;isoSMILES_from_NAME;acid
+O=C(O)c1cc(/N=N/c2ccc(S(=O)(=O)Nc3ccccn3)cc2)ccc1O;2.65;11;12;;Sulfasalazine;pKa;isoSMILES_from_NAME;acid
+O=C(O)c1ccc2ccccc2c1;4.18;35;36;;2-napthoic acid;pKa;isoSMILES_from_NAME;acid
+O=C(O)c1ccccc1;3.98;31;32;;benzoic acid;pKa;isoSMILES_from_NAME;acid
+O=C(O)c1ccccc1Nc1cccc(C(F)(F)F)c1;4.09;34;35;;flufenamic acid;pKa;isoSMILES_from_NAME;acid
+O=C(O)c1ccccc1O;2.88;16;17;;Salicylic Acid;pKa;isoSMILES_from_NAME;acid
+O=C(O)c1nc(Cl)ccc1Cl;2.32;5;6;;Clopyralid;pKa;isoSMILES_from_NAME;acid
+O=C1CC2(CCCC2)CC(=O)N1CCCCN1CCN(c2ncccn2)CC1;7.6;58;59;;Buspinone;pKa;isoSMILES_from_NAME;base
+Oc1ccc2c3c1O[C@H]1C(O)C=C[C@H]4[C@@H](C2)NCC[C@]314;9.8;126;127;;normorphine;pKa;isoSMILES_from_NAME;base

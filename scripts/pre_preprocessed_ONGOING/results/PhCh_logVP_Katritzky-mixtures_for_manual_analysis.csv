@@ -1,0 +1,2 @@
+SAN_SMILES;y;ID;orig_ID;CAS;NAME;UNITS;smiles_source;ORIGINAL_SMILES;MOL_OBJECT;SMILES;y_old
+C#CC(C)(O)CC.CCC(C)C#CO;2.84;301;302;;methyl pentynol;LogkPa;noisoSMILES_from_NAME;C#CC(C)(O)CC.CCC(C)C#CO;<rdkit.Chem.rdchem.Mol object at 0x000001AD1A7F21C0>;C#CC(C)(O)CC.CCC(C)C#CO;[2.84]

@@ -1,0 +1,429 @@
+SMILES;y;ID;orig_ID;CAS;NAME;UNITS;smiles_source
+CCc1c2c(nc3ccc(N)cc13)-c1cc3c(c(=O)n1C2)COC(=O)[C@]3(O)CC;1;0;mbcd0029947;;SN 392;classBCRPsub;smiles
+C[C@H](CCC(=O)NC(CCCCNC(=S)Nc1ccc2c(c1)C(=O)OC21c2ccc(O)cc2Oc2cc(O)ccc21)C(=O)O)[C@H]1CC[C@H]2[C@@H]3[C@H](O)C[C@@H]4C[C@H](O)CC[C@]4(C)[C@H]3C[C@H](O)[C@]12C;0;1;mbcd0029769;;cholyl lysyl fluorescein;classBCRPsub;smiles
+C=CC(=O)Nc1cc2c(Nc3ccc(F)c(Cl)c3)ncnc2cc1OCCCN1CCOCC1;1;2;mbcd0029953;;Cl-1033;classBCRPsub;smiles
+CN(C)c1ccc2c(-c3ccccc3)c3ccc(N(C)C)cc3[o+]c2c1;0;3;mbcd0031480;;(6-dimethylamino-9-phenyl-xanthen-3-ylidene)-dimethyl-ammonium;classBCRPsub;smiles
+C[C@]12CC[C@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@@H]1CC[C@@H]2O;1;4;mbcd0003001;;testosterone;classBCRPsub;smiles
+CNc1nc2c(Cc3cccnc3)c(C)c(OS(=O)(=O)O)c(C)c2s1;1;5;mbcd0030263;;E3040S;classBCRPsub;smiles
+CC[n+]1c(-c2ccccc2)c2cc(N)ccc2c2ccc(N)cc21;1;6;mbcd0031476;;ethidium;classBCRPsub;smiles
+COc1cc2c(=O)n(CCN(CCO)CCO)c3c4cc5c(cc4ncc3c2cc1OC)OCO5;1;7;mbcd0030145;;Benzo[c][1,3]benzodioxolo[5,6-h][1,6]naphthyridin-13(12H)-one, 12-[2-[bis(2-hydroxyethyl)amino]ethyl]-2,3-dimethoxy-;classBCRPsub;smiles
+COCCN(C(=O)CCl)c1c(C)cccc1C;0;8;mbcd0029409;;Dimethachlor;classBCRPsub;smiles
+COc1ccc(C(=O)c2ccc(C=CC(=O)O[C@H]3C[C@H]4OC[C@@]4(OC(C)=O)[C@H]4[C@H](OC(=O)c5ccccc5)[C@]5(O)C[C@H](OC(C)=O)C(C)=C([C@@H](OC(C)=O)C(=O)[C@]34C)C5(C)C)cc2)cc1;0;9;mbcd0031292;;tRA98007;classBCRPsub;smiles
+CCCCCCCCCCOC(C)c1c(C)c2cc3nc(c4c5[nH]c(cc6nc(cc1[nH]2)C(C)=C6CC)c(C)c5C(=O)C4)[C@@H](CCC(=O)O)[C@@H]3C;1;10;mbcd0030232;;(3S,4S)-9-[1-(decyloxy)ethyl]-14-ethyl-4,8,13,18-tetramethyl-20-oxo-3-phorbinepropanoic acid;classBCRPsub;smiles
+CCCC(=O)O[C@H](COC(=O)CC)COP(=O)(O)OC[C@H](N)C(=O)O;1;11;mbcd0030204;;Phosphatidylserine;classBCRPsub;smiles
+COc1cc2nc(N3CCN(C(=O)c4ccc(N=[N+]=[N-])c(I)c4)CC3)nc(N)c2cc1OC;1;12;mbcd0029976;;Iodoarylazidoprazosin;classBCRPsub;smiles
+CCN(CC)CCNc1ccc2nc(C)n3c4ccc(O)cc4c(=O)c1c23;1;13;mbcd0030123;;C 1310;classBCRPsub;smiles
+O=S(=O)(O)Oc1ccc2ccc3c4ccccc4cc4ccc1c2c43;1;14;mbcd0029394;;Benzo[a]pyrene-3-sulfate;classBCRPsub;smiles
+O=CNN1C(=O)c2c(c3c4cccc(O)c4n(C4OC(CO)[C@@H](O)C(O)[C@H]4O)c3c3[nH]c4c(O)cccc4c23)C1=O;1;15;mbcd0029952;;NB-506;classBCRPsub;smiles
+Cn1nnc2c(C(N)=O)ncn2c1=O;0;16;mbcd0001309;;temozolomide;classBCRPsub;smiles
+CCN(CC)CCCCCCCCCNc1ccc2ncn3c4ccc(O)cc4c(=O)c1c23;0;17;mbcd0030134;;C 2018;classBCRPsub;smiles
+COc1cc2c3c(n(CCCN4CCOCC4)c(=O)c2cc1OC)-c1cc2c(cc1C3=O)OCO2;0;18;mbcd0030418;;NSC724998;classBCRPsub;smiles
+CC(C)CCC[C@@H](C)[C@H]1CC[C@H]2[C@@H]3CC=C4C[C@@H](O)CC[C@]4(C)[C@H]3CC[C@]12C;1;19;mbcd0001668;;Cholesterol;classBCRPsub;smiles
+O=C(O)Cc1ccccc1Nc1c(Cl)cccc1Cl;1;20;mbcd0003113;;Diclofenac;classBCRPsub;smiles
+O=C(O)c1cc(N=Nc2ccc(S(=O)(=O)Nc3ccccn3)cc2)ccc1O;1;21;mbcd0001280;;Sulfasalazine;classBCRPsub;smiles
+CC(C)c1nc(N(C)S(C)(=O)=O)nc(-c2ccc(F)cc2)c1C=C[C@@H](O)C[C@@H](O)CC(=O)O;1;22;mbcd0001448;;Rosuvastatin;classBCRPsub;smiles
+CO[C@]12CC[C@@]3(C[C@@H]1[C@](C)(O)C(C)(C)C)[C@H]1Cc4ccc(O)c5c4[C@@]3(CCN1CC1CC1)[C@H]2O5;0;23;mbcd0001345;;buprenorphine;classBCRPsub;smiles
+Nc1nc(=O)n([C@@H]2CS[C@H](CO)O2)cc1F;0;24;mbcd0003029;;Emtricitabine;classBCRPsub;smiles
+Cc1cc(=O)oc2cc(OS(=O)(=O)O)ccc12;1;25;mbcd0000071;;4-methylumbelliferone sulfate;classBCRPsub;smiles
+Cc1cc(NC(=O)NC(=O)c2ccccc2N(C)C)ccc1Oc1ncc(Br)cn1;0;26;mbcd0030280;;Dimethyl-benzoylphenylurea;classBCRPsub;smiles
+Cc1cn([C@H]2C[C@H](N=[N+]=[N-])[C@@H](COP(=O)(O)O)O2)c(=O)[nH]c1=O;1;27;mbcd0031255;;Azidothymidine monophosphate;classBCRPsub;smiles
+Cn1cc(C2=C(c3c4n(c5ccccc35)CCC(CN)C4)C(=O)NC2=O)c2ccccc21;0;28;mbcd0030007;;Bisindolylmaleimide X;classBCRPsub;smiles
+COc1cc2c3c(n(CCCNCCO)c(=O)c2cc1OC)-c1cc2c(cc1C3=O)OCO2;1;29;mbcd0030419;;NSC706744;classBCRPsub;smiles
+Cc1cn([C@H]2C[C@H](N=[N+]=[N-])[C@@H](CO)O2)c(=O)[nH]c1=O;1;30;mbcd0001107;;Zidovudine;classBCRPsub;smiles
+C1=CNC=CC1;1;31;mbcd0031455;;1,4-Dihydropyridine;classBCRPsub;smiles
+O=c1[nH]c(=O)c2[nH]c(=O)[nH]c2[nH]1;1;32;mbcd0029345;;Uric acid;classBCRPsub;smiles
+CCCCCCOC(C)c1c(C)c2cc3nc(c4c5[nH]c(cc6nc(cc1[nH]2)C(C)=C6CC)c(C)c5C(=O)C4)[C@@H](CCC(=O)O)[C@@H]3C;1;33;mbcd0029995;;HPPH;classBCRPsub;smiles
+C[C@H](CCC(=O)O)[C@H]1CC[C@H]2[C@@H]3CC[C@@H]4C[C@H](O)CC[C@]4(C)[C@H]3C[C@H](O)[C@]12C;1;34;mbcd0001655;;Deoxycholic Acid;classBCRPsub;smiles
+O=c1ccc2ccc(O)cc2o1;0;35;mbcd0031667;;7-hydroxycoumarin;classBCRPsub;smiles
+Cc1cc(=O)[nH]c2cc3oc4ccccc4c3cc12;1;36;mbcd0021406;;NSC 375985;classBCRPsub;smiles
+Nc1ccn([C@H]2CC[C@@H](CO)O2)c(=O)n1;0;37;mbcd0001355;;Zalcitabine;classBCRPsub;smiles
+COc1cc([C@@H]2c3cc4c(cc3[C@@H](O[C@@H]3O[C@@H]5CO[C@@H](C)O[C@H]5[C@H](O)[C@H]3O)[C@H]3COC(=O)[C@H]23)OCO4)cc(OC)c1O;1;38;mbcd0002466;;Etoposide;classBCRPsub;smiles
+CC[C@H](CC[C@@H](C)[C@H]1CC[C@H]2[C@@H]3CC=C4C[C@@H](O)CC[C@]4(C)[C@H]3CC[C@]12C)C(C)C;0;39;mbcd0000182;;beta-Sitosterol;classBCRPsub;smiles
+S=c1nc[nH]c2[nH]cnc12;1;40;mbcd0029825;;6-Mercaptopurine;classBCRPsub;smiles
+CC(C)(C)NC(=O)[C@@H]1C[C@@H]2CCCC[C@@H]2CN1C[C@@H](O)[C@H](Cc1ccccc1)NC(=O)[C@H](CC(N)=O)NC(=O)c1ccc2ccccc2n1;0;41;mbcd0001533;;saquinavir;classBCRPsub;smiles
+NC(=S)NN=Cc1ccc(O)cn1;1;42;mbcd0030178;;5-Hydroxypicolinaldehyde thiosemicarbazone;classBCRPsub;smiles
+Cc1ccncc1Nc1ncccc1C(=O)Nc1ccc(C2(C#N)CCCC2)cc1;1;43;mbcd0031138;;3-Pyridinecarboxamide, N-[4-(1-cyanocyclopentyl)phenyl]-2-[(4-pyridinylmethyl)amino]-;classBCRPsub;smiles
+COc1ccc(C2=NC(c3ccc(Cl)cc3)C(c3ccc(Cl)cc3)N2C(=O)N2CCNC(=O)C2)c(OC(C)C)c1;0;44;mbcd0030247;;nutlin-3a;classBCRPsub;smiles
+CCc1c2c(nc3ccc(OC(=O)N4CCC(N5CCCCC5)CC4)cc13)-c1cc3c(c(=O)n1C2)COC(=O)[C@]3(O)CC;1;45;mbcd0002091;;irinotecan;classBCRPsub;smiles
+CC(C)NCC(O)COc1cccc2ccccc12;0;46;mbcd0002488;;propranolol;classBCRPsub;smiles
+Nc1ccn([C@@H]2O[C@H](CO)[C@@H](O)[C@@H]2O)c(=O)n1;0;47;mbcd0001381;;Cytarabine;classBCRPsub;smiles
+N[C@@H](CCC(=O)N[C@@H](CS)C(=O)NCC(=O)O)C(=O)O;1;48;mbcd0003078;;Glutathione;classBCRPsub;smiles
+COc1cc([C@@H]2c3cc4c(cc3[C@@H](O[C@@H]3O[C@@H]5CO[C@@H](c6cccs6)O[C@H]5[C@H](O)[C@H]3O)[C@H]3COC(=O)[C@H]23)OCO4)cc(OC)c1O;1;49;mbcd0001080;;Teniposide;classBCRPsub;smiles
+CNC(=O)C(CCN1CCC(O)(c2ccc(Cl)cc2)CC1)(c1ccccc1)c1ccccc1;0;50;mbcd0030430;;N-desmethyl-loperamide;classBCRPsub;smiles
+C[C@]12CC[C@@H]3c4ccc(O)cc4CC[C@H]3[C@@H]1CC[C@@H]2O[C@@H]1O[C@H](C(=O)O)[C@@H](O)[C@H](O)[C@H]1O;1;51;mbcd0000387;;17beta-estradiol 17beta-D-glucuronide;classBCRPsub;smiles
+COC(=O)C1C2CC3c4[nH]c5cc(OC)ccc5c4CCN3CC2CC(OC(=O)c2cc(OC)c(OC)c(OC)c2)C1OC;1;52;mbcd0028309;;Reserpine (no stereo);classBCRPsub;smiles
+O=S(=O)(O)c1ccc(-c2c3nc(c(-c4ccc(S(=O)(=O)O)cc4)c4ccc([nH]4)c(-c4ccccc4)c4nc(c(-c5ccccc5)c5ccc2[nH]5)C=C4)C=C3)cc1;0;53;mbcd0030394;;TPPS2a;classBCRPsub;smiles
+CCN(CCO)CCCOc1ccc2c(Nc3cc(CC(=O)Nc4cccc(F)c4)[nH]n3)ncnc2c1;1;54;mbcd0030252;;barasertib-hQPA;classBCRPsub;smiles
+COc1cc(O)c2c(=O)cc(-c3ccccc3)oc2c1;0;55;mbcd0022552;;Tectochrysin;classBCRPsub;smiles
+O=S(=O)(O)c1ccc(-c2c3nc(c(-c4ccc(S(=O)(=O)O)cc4)c4ccc([nH]4)c(-c4ccccc4)c4nc(c(-c5ccccc5)c5ccc2[nH]5)C=C4)CC3)cc1;0;56;mbcd0030395;;TPCS2a;classBCRPsub;smiles
+COc1ccc(-c2coc3cc(O)cc(O)c3c2=O)cc1;0;57;mbcd0003026;;Biochanin A;classBCRPsub;smiles
+CCCCCCCCCCCCCCCC[n+]1ccn(Cc2ccccc2)c1C;0;58;mbcd0031502;;1H-imidazolium, 1-hexadecyl-2-methyl-3-(phenylmethyl)-;classBCRPsub;smiles
+CN(C)CCCNc1ccc2ncn3c4ccc(O)cc4c(=O)c1c23;1;59;mbcd0030125;;C 1371;classBCRPsub;smiles
+CCCC(=O)O[C@H](COC(=O)CC)COP(=O)(O)OC[C@H](N)C(=O)Nc1ccc([N+](=O)[O-])c2nonc12;1;60;mbcd0031470;;C6-NBD-phosphatidylserine;classBCRPsub;smiles
+O=C1c2c(O)ccc(O)c2C(=O)c2c(NCCNCCO)ccc(NCCNCCO)c21;1;61;mbcd0002981;;mitoxantrone;classBCRPsub;smiles
+CN(C)[C@@H]1C(O)=C(C(N)=O)C(=O)[C@@]2(O)C(O)=C3C(=O)c4c(O)cccc4[C@@](C)(O)[C@H]3C[C@@H]12;1;62;mbcd0003016;;Tetracycline;classBCRPsub;smiles
+CC(C)CN(C[C@@H](O)[C@H](Cc1ccccc1)NC(=O)O[C@H]1CO[C@H]2OCC[C@H]21)S(=O)(=O)c1ccc(N)cc1;0;63;mbcd0002634;;Darunavir;classBCRPsub;smiles
+O=c1nc[nH]c2c1ncn2[C@H]1CC[C@@H](CO)O1;0;64;mbcd0029982;;Didanosine;classBCRPsub;smiles
+CN(C)CCCNc1ccc2nnn3c4ccc(O)cc4c(=O)c1c23;1;65;mbcd0029764;;C-1305;classBCRPsub;smiles
+CCCCCCCCCCCCCC(=O)OC[C@H](COP(=O)(O)OCC[N+](C)(C)C)OC(=O)CCCCCNc1ccc([N+](=O)[O-])c2nonc12;1;66;mbcd0031410;;C6-NBD-phosphatidylcholine;classBCRPsub;smiles
+COc1ccc(NC(=S)NN=C2C(=O)Nc3c(Cl)cc(Cl)cc32)cc1;1;67;mbcd0030039;;NSC 73306;classBCRPsub;smiles
+NS(=O)(=O)c1cc2c(cc1Cl)N=CNS2(=O)=O;1;68;mbcd0007286;;Chlorothiazide;classBCRPsub;smiles
+CO[C@H]1C=CO[C@@]2(C)Oc3c(C)c(O)c4c(O)c(c(C=NN5CCN(C)CC5)c(O)c4c3C2=O)NC(=O)C(C)=C/C=C/[C@H](C)[C@H](O)[C@@H](C)[C@@H](O)[C@@H](C)[C@H](OC(C)=O)[C@@H]1C;1;69;mbcd0001416;;Rifampin;classBCRPsub;smiles
+C=CC1=C(C)c2cc3[nH]c(cc4nc(cc5[nH]c(cc1n2)c(C)c5CCC(=O)O)C(CCC(=O)O)=C4C)c(C)c3C=C;1;70;mbcd0015671;;Protoporphyrin;classBCRPsub;smiles
+CNC(=C[N+](=O)[O-])NCCSCc1csc(CN(C)C)n1;0;71;mbcd0003138;;Nizatidine;classBCRPsub;smiles
+COc1ccc([C@@H]2CC(=O)c3c(O)cc(O[C@@H]4O[C@H](C(=O)O)[C@@H](O)[C@H](O)[C@H]4O)cc3O2)cc1O;1;72;mbcd0029456;;Hesperetin 7-O-glucuronide;classBCRPsub;smiles
+CNc1nc2c(Cc3cccnc3)c(C)c(O)c(C)c2s1;1;73;mbcd0030386;;E3040;classBCRPsub;smiles
+COc1cc2c(Nc3ccc(Br)cc3F)ncnc2cc1OCC1CCN(C)CC1;1;74;mbcd0030146;;Vandetanib;classBCRPsub;smiles
+COC(=O)[C@@]1(OC)CC2OC1(C)n1c3ccccc3c3c4c(c5c6ccccc6n2c5c31)C(=O)N(C)C4;0;75;mbcd0030014;;KT5823;classBCRPsub;smiles
+COc1cc(C=CC(=O)CC(=O)C=Cc2ccc(O)cc2)ccc1O;0;76;mbcd0029386;;Demethoxycurcumin;classBCRPsub;smiles
+CC1NC(=O)NC(=O)C1C=CC(=O)NC(CO)CS(=O)CS(C)=O;1;77;mbcd0030429;;Sparoxomycin A1;classBCRPsub;smiles
+CC(=O)Nc1cc2c3c(cccc3c1)C(=O)N(CCN(C)C)C2=O;1;78;mbcd0030416;;N-Acetyl-amonafide;classBCRPsub;smiles
+Nc1nc(Nc2ccc(S(N)(=O)=O)cc2)nn1C(=O)c1c(F)cccc1F;1;79;mbcd0029979;;JNJ 7706621;classBCRPsub;smiles
+O=C(c1ccc(OCCN2CCCCC2)cc1)c1c(-c2ccc(O)cc2)sc2cc(O)ccc12;0;80;mbcd0012405;;raloxifene;classBCRPsub;smiles
+CCN(CC)CCNc1ccc2ncn3c4ccc(O)cc4c(=O)c1c23;1;81;mbcd0029999;;C-1311;classBCRPsub;smiles
+NC(=O)c1cccc(-c2cc(OC(=O)NC3CCCCC3)ccc2O)c1;1;82;mbcd0030253;;URB 937;classBCRPsub;smiles
+CC(=O)OCOC(=O)CN(CC(=O)OCOC(C)=O)Cc1cc2c(cc1OC(C)=O)Oc1cc(OC(C)=O)c(CN(CC(=O)OCOC(C)=O)CC(=O)OCOC(C)=O)cc1C21OC(=O)c2ccccc21;1;83;mbcd0000212;;Calcein-AM;classBCRPsub;smiles
+CC[C@H]1OC(=O)[C@H](C)[C@@H](O[C@H]2C[C@@](C)(OC)[C@@H](O)[C@H](C)O2)[C@H](C)[C@@H](O[C@@H]2O[C@H](C)C[C@H](N(C)C)[C@H]2O)[C@](C)(O)C[C@@H](C)C(=O)[C@H](C)[C@@H](O)[C@]1(C)O;1;84;mbcd0000937;;Erythromycin;classBCRPsub;smiles
+COc1cc2c(=O)c(-c3ccc(O)cc3)coc2cc1OS(=O)(=O)O;1;85;mbcd0029980;;glycitein sulfate;classBCRPsub;smiles
+O=C(O)CCc1cc2c(cc1O)Oc1cc(O)c(CCC(=O)O)cc1C21OC(=O)c2cc(C(=O)O)ccc21;0;86;mbcd0031452;;BCECF;classBCRPsub;smiles
+COc1ccc(C(=O)Oc2ccc(C=CC(=O)O[C@H]3C[C@H]4OC[C@@]4(OC(C)=O)[C@H]4[C@H](OC(=O)c5ccccc5)[C@]5(O)C[C@H](OC(C)=O)C(C)=C([C@@H](OC(C)=O)C(=O)[C@]34C)C5(C)C)cc2)c2ccccc12;0;87;mbcd0031300;;tRA01069;classBCRPsub;smiles
+Cc1cc(N2CCOCC2)cc2[nH]c(-c3c(NC[C@@H](O)c4cccc(Cl)c4)cc[nH]c3=O)nc12;1;88;mbcd0007267;;BMS 536924;classBCRPsub;smiles
+CC(C)n1c(C=C[C@H](O)C[C@H](O)CC(=O)O)c(-c2ccc(F)cc2)c2ccccc21;1;89;mbcd0001445;;Fluvastatin;classBCRPsub;smiles
+O=C(C=Cc1ccc(O)cc1)CC(=O)C=Cc1ccc(O)cc1;0;90;mbcd0029387;;Bisdemethoxycurcumin;classBCRPsub;smiles
+Cc1cnc2ccc3c(nc(N)n3C)c2n1;1;91;mbcd0030090;;2-amino-3,8-dimethylimidazo[4,5-f]quinoxaline (MeIQx);classBCRPsub;smiles
+CCc1c2c(nc3cc(F)c(O)cc13)-c1cc3c(c(=O)n1C2)COC(=O)[C@]3(O)CC;1;92;mbcd0029949;;SN 398;classBCRPsub;smiles
+CCC1(c2ccccc2)C(=O)NC(=O)NC1=O;0;93;mbcd0003007;;Phenobarbital;classBCRPsub;smiles
+CN(Cc1ccc(S(=O)(=O)N2CCOCC2)cc1)c1ccc2c3c(cccc13)C(N)=N2;1;94;mbcd0029963;;AG 331;classBCRPsub;smiles
+Cc1ncc(C[n+]2csc(CCO)c2C)c(N)n1;0;95;mbcd0031482;;Thiamine ion;classBCRPsub;smiles
+CCN(CC)CCNc1ccc2ncn3c4ccccc4c(=O)c1c23;0;96;mbcd0030137;;C 1415;classBCRPsub;smiles
+CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](OC(=O)C=Cc3ccc(C(=O)Oc4ccccc4)cc3)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]2(O)C[C@H](OC(C)=O)C(C)=C1C2(C)C;0;97;mbcd0031283;;tRA99030;classBCRPsub;smiles
+CC(C)(c1ccc(O)cc1)c1ccc(O[C@@H]2O[C@H](C(=O)O)C(O)[C@H](O)C2O)cc1;0;98;mbcd0030378;;Bisphenol A Glucuronide;classBCRPsub;smiles
+COc1ccc2c(c1)c(=O)c1c(NCCCN(C)C)ccc3nc(C)n2c31;0;99;mbcd0030136;;C 1375;classBCRPsub;smiles
+COc1cc2nc(N3CCN(C(=O)c4ccco4)CC3)nc(N)c2cc1OC;1;100;mbcd0003024;;Prazosin;classBCRPsub;smiles
+O=C1Cc2cc(O)ccc2-c2oc3cc(OS(=O)(=O)O)ccc3c21;1;101;mbcd0030414;;coumestrol-sulfate;classBCRPsub;smiles
+CC(=Cc1csc(C)n1)[C@@H]1C[C@@H]2O[C@]2(C)CCC[C@H](C)[C@H](O)[C@@H](C)C(=O)C(C)(C)[C@@H](O)CC(=O)N1;0;102;mbcd0001688;;Ixabepilone;classBCRPsub;smiles
+CN(C)CCCn1cc(C2=C(c3c[nH]c4ccccc34)C(=O)NC2=O)c2ccccc21;0;103;mbcd0021308;;Bisindolylmaleimide I;classBCRPsub;smiles
+CC1CC2C3CCC4=CC(=O)C=CC4(C)C3(F)C(O)CC2(C)C1(O)C(=O)CO;0;104;mbcd0031518;;9-Fluoro-11,17,21-trihydroxy-16-methylpregna-1,4-diene-3,20-dione;classBCRPsub;smiles
+O=C(O)CNC(=O)[C@H](CS)NC(=O)CC[C@H](Nc1ccc([N+](=O)[O-])cc1[N+](=O)[O-])C(=O)O;1;105;mbcd0030390;;DNP-SG;classBCRPsub;smiles
+COc1ccc2cc1Oc1ccc(cc1)C[C@H]1c3cc(c(OC)cc3CCN1C)Oc1c(OC)c(OC)cc3c1[C@H](C2)N(C)CC3;0;106;mbcd0000843;;Tetrandrine;classBCRPsub;smiles
+CNC(=O)c1cc(Oc2ccc(NC(=O)Nc3ccc(Cl)c(C(F)(F)F)c3)cc2)ccn1;1;107;mbcd0001056;;sorafenib;classBCRPsub;smiles
+CCOC(=O)C1=C(C)NC(C)=C(C(=O)OC)C1c1cccc([N+](=O)[O-])c1;0;108;mbcd0003135;;Nitrendipine;classBCRPsub;smiles
+Oc1ccc(C=Cc2cc(O)cc(O)c2)cc1;1;109;mbcd0002831;;resveratrol;classBCRPsub;smiles
+CC(C)(C(=O)O)c1ccc(C(O)CCCN2CCC(C(O)(c3ccccc3)c3ccccc3)CC2)cc1;0;110;mbcd0001797;;Fexofenadine;classBCRPsub;smiles
+C(=NNC1=NCCN1)c1c2ccccc2c(C=NNC2=NCCN2)c2ccccc12;1;111;mbcd0000191;;Bisantrene;classBCRPsub;smiles
+O=C(O)[C@H]1C[C@H](Oc2ccc3ccc(=O)oc3c2)[C@H](O)[C@@H](O)[C@H]1O;0;112;mbcd0031668;;7-hydroxycoumarin glucuronide;classBCRPsub;smiles
+CN(Cc1cnc2nc(N)nc(N)c2n1)c1ccc(C(=O)N[C@@H](CCC(=O)N[C@@H](CCC(=O)N[C@@H](CCC(=O)N[C@@H](CCC(=O)O)C(=O)O)C(=O)O)C(=O)O)C(=O)O)cc1;1;113;mbcd0030392;;Methotrexate triglutamate;classBCRPsub;smiles
+Cc1cc2nc3c(=O)[nH]c(=O)nc-3n(C[C@H](O)[C@H](O)[C@H](O)CO)c2cc1C;1;114;mbcd0025627;;Riboflavin;classBCRPsub;smiles
+Cc1cc(O)c2c(=O)c3c(O)cc(O)c4c5c(O)cc(O)c6c(=O)c7c(O)cc(C)c8c1c2c(c34)c(c78)c65;1;115;mbcd0026911;;Hypericin;classBCRPsub;smiles
+Cc1ccc(NC(=O)c2ccc(CN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1;1;116;mbcd0002828;;imatinib;classBCRPsub;smiles
+C[C@]12CC[C@H](O)CC1=CC[C@@H]1[C@@H]2CC[C@]2(C)C(=O)CC[C@@H]12;1;117;mbcd0026055;;Dehydroepiandrosterone;classBCRPsub;smiles
+COc1cc(C2Oc3cc(C4Oc5cc(O)cc(O)c5C(=O)C4O)ccc3OC2CO)ccc1O;1;118;mbcd0027229;;Silymarin;classBCRPsub;smiles
+CC(=CCC1=C(C)C(=O)c2ccccc2C1=O)CCC[C@H](C)CCC[C@H](C)CCCC(C)C;0;119;mbcd0030273;;Vitamin K1;classBCRPsub;smiles
+CC1Sc2c(C(=O)O)c(=O)c3cc(F)c(N4CCNCC4)cc3n21;1;120;mbcd0030019;;Ulifloxacin;classBCRPsub;smiles
+Cc1cc(=O)oc2cc(OC3O[C@H](C(=O)O)[C@@H](O)[C@H](O)[C@H]3O)ccc12;1;121;mbcd0000070;;4-methylumbelliferone glucuronide;classBCRPsub;smiles
+O=c1cc(-c2ccccc2)oc2c1ccc1ccccc12;1;122;mbcd0004738;;alpha-Naphthoflavone;classBCRPsub;smiles
+Cn1c2ccccc2c2c3c(c4c5ccccc5n(CCC#N)c4c21)CNC3=O;0;123;mbcd0030009;;Go6976;classBCRPsub;smiles
+CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](OC(=O)C=Cc3ccc(C(=O)c4ccc(C(C)C)cc4)cc3)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]2(O)C[C@H](OC(C)=O)C(C)=C1C2(C)C;0;124;mbcd0031291;;tRA98009;classBCRPsub;smiles
+O=C(O)[C@H]1CSC(c2nc3ccc(O)cc3s2)=N1;1;125;mbcd0030091;;D-Luciferin;classBCRPsub;smiles
+Nc1nc2c(ncn2COC(CO)CO)c(=O)[nH]1;1;126;mbcd0003890;;ganciclovir;classBCRPsub;smiles
+Cc1oncc1C(=O)Nc1ccc(C(F)(F)F)cc1;1;127;mbcd0007655;;leflunomide;classBCRPsub;smiles
+C[C@H](CCC(=O)O)[C@H]1CC[C@H]2[C@@H]3[C@H](O)C[C@@H]4C[C@H](O)CC[C@]4(C)[C@H]3C[C@H](O)[C@]12C;1;128;mbcd0001640;;Cholic acid;classBCRPsub;smiles
+O=c1c(-c2ccc(O)cc2)coc2cc(O)ccc12;1;129;mbcd0013632;;Daidzein;classBCRPsub;smiles
+Cc1nc(Nc2ncc(C(=O)Nc3c(C)cccc3Cl)s2)cc(N2CCN(CCO)CC2)n1;1;130;mbcd0001547;;dasatinib;classBCRPsub;smiles
+Nc1nc(Cl)nc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@@H]1F;1;131;mbcd0001190;;clofarabine;classBCRPsub;smiles
+Nc1nc2nc[nH]c2c(=S)[nH]1;1;132;mbcd0030337;;Thioguanine;classBCRPsub;smiles
+C=Cc1c(C)c2cc3nc(c4c5[nH]c(cc6nc(cc1[nH]2)C(C)=C6CC)c(C)c5C(=O)C4)[C@@H](CCC(=O)O)[C@@H]3C;1;133;mbcd0030067;;Pyropheophorbide a;classBCRPsub;smiles
+CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](OC(=O)C=Cc3ccc(C(=O)c4ccc(C)cc4)cc3)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]2(O)C[C@H](OC(C)=O)C(C)=C1C2(C)C;0;134;mbcd0031290;;tRA98010;classBCRPsub;smiles
+Nc1nc(NC2CC2)c2ncn([C@H]3C=C[C@@H](CO)C3)c2n1;1;135;mbcd0003124;;Abacavir;classBCRPsub;smiles
+CC(C)(c1ccc(O)cc1)c1ccc(O)cc1;1;136;mbcd0026147;;Parabis;classBCRPsub;smiles
+CN(C)CCCCCNc1ccc2ncn3c4ccc(O)cc4c(=O)c1c23;1;137;mbcd0030128;;C 1492;classBCRPsub;smiles
+N[C@@H](CCC(=O)N[C@@H](CSc1ccc([N+](=O)[O-])cc1[N+](=O)[O-])C(=O)NCC(=O)O)C(=O)O;1;138;mbcd0000047;;2,4-dinitrophenyl-S-glutathione;classBCRPsub;smiles
+COc1ccc2c(c1)c1c3c(c4c5ccccc5n(C)c4c1n2CC(O)CN(C)C)C(=O)NC3=O;0;139;mbcd0030010;;Go7874;classBCRPsub;smiles
+CCc1c(C)c2cc3[nH]c(cc4nc(c5c6nc(cc1[nH]2)C(C)=C6C(=O)C5)C(CCC(=O)O)=C4C)c(C)c3CC;1;140;mbcd0029975;;Phytoporphyrin;classBCRPsub;smiles
+O=C1CN(N=Cc2ccc([N+](=O)[O-])o2)C(=O)N1;1;141;mbcd0001221;;Nitrofurantoin;classBCRPsub;smiles
+CC(NC(C)(C)C)C(=O)c1cccc(Cl)c1;1;142;mbcd0003003;;Bupropion;classBCRPsub;smiles
+CC[C@]1(O)C[C@H]2C[N@](CCc3c([nH]c4ccccc34)[C@@](C(=O)OC)(c3cc4c(cc3OC)N(C)[C@H]3[C@@](O)(C(N)=O)[C@H](O)[C@]5(CC)C=CCN6CC[C@]43[C@@H]65)C2)C1;0;143;mbcd0028108;;Vindesine;classBCRPsub;smiles
+Nc1nnc(-c2cccc(Cl)c2Cl)c(N)n1;0;144;mbcd0013986;;lamotrigine;classBCRPsub;smiles
+CNc1ccccc1C(=O)NC(=O)Nc1ccc(OC2NCC(Br)CN2)c(C)c1;0;145;mbcd0030421;;N-({4-[(5-bromopyrimidin-2-yl)oxy]-3-methylphenyl}carbamoyl)-2-(methylamino)benzamide;classBCRPsub;smiles
+Cc1cn([C@H]2C=C[C@@H](CO)O2)c(=O)[nH]c1=O;0;146;mbcd0029983;;Stavudine;classBCRPsub;smiles
+O=C(O)COc1ccc(C(=O)CNC(=O)c2cc3c(s2)CCNC3)cc1OCC(=O)O;1;147;mbcd0029890;;ME3277;classBCRPsub;smiles
+C[C@]12CC[C@@H]3c4ccc(OS(=O)(=O)O)cc4CC[C@H]3[C@@H]1CCC2=O;1;148;mbcd0003075;;Estrone-3-sulfate;classBCRPsub;smiles
+CC(O)=C(C#N)C(=O)Nc1ccc(C(F)(F)F)cc1;1;149;mbcd0030042;;Teriflunomide;classBCRPsub;smiles
+CCC(=O)O[C@]1(C(=O)SCF)[C@H](C)C[C@H]2[C@@H]3C[C@H](F)C4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@@]21C;0;150;mbcd0001164;;fluticasone propionate;classBCRPsub;smiles
+O=c1c(-c2ccc(O)cc2)coc2cc(O)cc(O)c12;1;151;mbcd0003116;;Genistein;classBCRPsub;smiles
+O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12;1;152;mbcd0003120;;Quercetin;classBCRPsub;smiles
+CN(Cc1cnc2nc(N)nc(N)c2n1)c1ccc(C(=O)N[C@@H](CCC(=O)N[C@@H](CCC(=O)O)C(=O)O)C(=O)O)cc1;0;153;mbcd0030282;;Methotrexate monoglutamate;classBCRPsub;smiles
+O=c1oc2cc(O)ccc2c2oc3cc(O)ccc3c12;1;154;mbcd0029182;;Coumestrol;classBCRPsub;smiles
+CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](OC(=O)C=Cc3cccc(NC(=O)c4ccccc4)c3)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]2(O)C[C@H](OC(C)=O)C(C)=C1C2(C)C;0;155;mbcd0031286;;tRA99019;classBCRPsub;smiles
+CCN(CC)CCCNc1ccc2nc(C)n3c4ccc(OC)cc4c(=O)c1c23;0;156;mbcd0030139;;C 1379;classBCRPsub;smiles
+Cc1cc(=O)oc2cc(OC3OC(O)[C@@H](O)C(O)[C@H]3O)ccc12;1;157;mbcd0030387;;4-MUG;classBCRPsub;smiles
+C[C@]12CCC(=O)C=C1CC[C@@H]1[C@@H]2[C@@H](O)C[C@]2(C=O)[C@@H](C(=O)CO)CC[C@@H]12;0;158;mbcd0001675;;Aldosterone;classBCRPsub;smiles
+COC(=O)[C@@]1(O)CC2OC1n1c3ccccc3c3c4c(c5c6ccccc6n2c5c31)C(=O)NC4;0;159;mbcd0030011;;K252a;classBCRPsub;smiles
+Cn1c(N)nc2ncc(-c3ccccc3)cc21;1;160;mbcd0000043;;2-amino-1-methyl-6-phenylimidazo[4,5-b]pyridine;classBCRPsub;smiles
+CCNCCNC(=O)c1c(C)[nH]c(C=C2C(=O)Nc3ccc(F)cc32)c1C;1;161;mbcd0030335;;N-desethyl sunitinib;classBCRPsub;smiles
+CO[C@@H]1[C@H](N(C)C(=O)c2ccccc2)C[C@H]2O[C@]1(C)n1c3ccccc3c3c4c(c5c6ccccc6n2c5c31)C(=O)NC4;0;162;mbcd0030016;;Midostaurin;classBCRPsub;smiles
+COCCc1ccc(OCC(O)CNC(C)C)cc1;0;163;mbcd0002822;;Metoprolol;classBCRPsub;smiles
+COc1cc(NC(=O)Nc2cccc(CNC(=O)O[C@H]3CCOC3)c2)ccc1-c1cnco1;0;164;mbcd0029881;;VX710;classBCRPsub;smiles
+NCCCn1cc(C2=C(c3c[nH]c4ccccc34)C(=O)NC2=O)c2ccccc21;0;165;mbcd0030001;;Bisindolylmaleimide III;classBCRPsub;smiles
+CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2c-1nc1ccccc1c2C=NOC(C)(C)C;1;166;mbcd0029844;;Gimatecan;classBCRPsub;smiles
+CCCCCCCCCCCCCC=C[C@@H](O)[C@@H](N)COP(=O)(O)O;1;167;mbcd0030203;;Sphingosine 1-phosphate;classBCRPsub;smiles
+COc1cc2c3c(n(CCCn4ccnc4)c(=O)c2cc1OC)-c1cc2c(cc1C3=O)OCO2;1;168;mbcd0030417;;NSC725776;classBCRPsub;smiles
+C[C@H]1O[C@@H](O[C@H]2[C@@H](O)C[C@H](O[C@H]3[C@@H](O)C[C@H](O[C@H]4CC[C@@]5(C)[C@H](CC[C@@H]6[C@@H]5C[C@@H](O)[C@]5(C)[C@@H](C7=CC(=O)OC7)CC[C@]65O)C4)O[C@@H]3C)O[C@@H]2C)C[C@H](O)[C@@H]1O;0;169;mbcd0001050;;Digoxin;classBCRPsub;smiles
+CC(C=NN=C1c2ccccc2-c2ccccc21)Cc1ccccc1;1;170;mbcd0030037;;NSC 120668;classBCRPsub;smiles
+COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(C)=O)C[C@@H]3O[C@H]1C[C@H](N)[C@H](O)[C@H](C)O1;1;171;mbcd0005183;;daunorubicin;classBCRPsub;smiles
+CCN(CC)CCNc1ccc2ncn3c4c(O)cccc4c(=O)c1c23;1;172;mbcd0030129;;C 1633;classBCRPsub;smiles
+CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](OC(=O)C=Cc3cccc(NC(=O)c4ccccc4)c3)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]23OC(=O)O[C@H]2[C@H](OC(C)=O)C(C)=C1C3(C)C;0;173;mbcd0031287;;tRA99018;classBCRPsub;smiles
+CC(=O)CCCCn1c(=O)c2c(ncn2C)n(C)c1=O;0;174;mbcd0005225;;pentoxifylline;classBCRPsub;smiles
+CC(O)(CS(=O)(=O)c1ccc(F)cc1)C(=O)Nc1ccc(C#N)c(C(F)(F)F)c1;1;175;mbcd0001465;;Bicalutamide;classBCRPsub;smiles
+Cc1cn(-c2cc(NC(=O)c3ccc(C)c(Nc4nccc(-c5cccnc5)n4)c3)cc(C(F)(F)F)c2)cn1;1;176;mbcd0001690;;nilotinib;classBCRPsub;smiles
+CC(=O)OCC1=C(C(=O)O)N2C(=O)[C@@H](NC(=O)Cc3cccs3)[C@H]2SC1;1;177;mbcd0003681;;Cephalothin;classBCRPsub;smiles
+O=C(O)c1[nH]c2cc(Cl)cc(Cl)c2c1C=C1CCN(c2ccccc2)C1=O;1;178;mbcd0031351;;GV 196771;classBCRPsub;smiles
+O=C1NC(=O)c2c1c1c3ccccc3[nH]c1c1[nH]c3ccccc3c21;0;179;mbcd0030015;;Arcyriaflavin A;classBCRPsub;smiles
+COC(=Cc1ccc(O)cc1)C(=O)O;0;180;mbcd0003260;;(2Z)-3-(4-hydroxyphenyl)-2-methoxy-2-propenoic acid;classBCRPsub;smiles
+O=S(=O)(O)Oc1ccc2c(c1)OCC(c1ccc(O)cc1)C2;1;181;mbcd0030410;;equol-7-sulfate;classBCRPsub;smiles
+CCOc1ccc(-c2nc3ccc(-c4nc5cc(N6CCN(C)CC6)ccc5[nH]4)cc3[nH]2)cc1;1;182;mbcd0000474;;Hoechst 33342;classBCRPsub;smiles
+CC1=NN(c2ccc(C)c(C)c2)C(=O)C1=NNc1cccc(-c2cccc(C(=O)O)c2)c1O;1;183;mbcd0029195;;Eltrombopag;classBCRPsub;smiles
+C#C[C@]1(O)CC[C@H]2[C@@H]3CCc4cc(OS(=O)(=O)O)ccc4[C@H]3CC[C@@]21C;1;184;mbcd0029339;;Ethinylestradiol-3-O-sulfate;classBCRPsub;smiles
+CCC1(CO)C(=O)OCc2c1cc1n(c2=O)Cc2cc3ccccc3nc2-1;1;185;mbcd0029876;;Homocamptothecin;classBCRPsub;smiles
+O=C1NC(=O)C(c2ccccc2)(c2ccccc2)N1;0;186;mbcd0002996;;phenytoin;classBCRPsub;smiles
+O=C1N[C@H]2[C@H](O)[C@H](O)[C@@H](O)[C@H](O)[C@@H]2c2cc3c(c(O)c21)OCO3;1;187;mbcd0025729;;Pancratistatin;classBCRPsub;smiles
+Cc1c(C)c2c(c(C)c1O)CC[C@@](C)(CCC[C@H](C)CCC[C@H](C)CCCC(C)C)O2;0;188;mbcd0027668;;alpha-Vitamin E;classBCRPsub;smiles
+CS(=O)(=O)CCNCc1ccc(-c2ccc3ncnc(Nc4ccc(OCc5cccc(F)c5)c(Cl)c4)c3c2)o1;1;189;mbcd0001550;;lapatinib;classBCRPsub;smiles
+C=Cc1c(C)c2cc3nc(c4c5[nH]c(cc6nc(cc1[nH]2)C(C)=C6CC)c(C)c5C(=O)[C@@H]4C(=O)OC)[C@@H](CCC(=O)O)[C@@H]3C;1;190;mbcd0029883;;Pheophorbide a;classBCRPsub;smiles
+CC[C@@]1(O)CC(=O)OCc2c1cc1n(c2=O)Cc2cc3cc(F)c(F)cc3nc2-1;1;191;mbcd0029877;;BN-80915;classBCRPsub;smiles
+C[C@H](Cn1cnc2c(N)ncnc21)OCP(=O)(O)O;0;192;mbcd0003028;;Tenofovir;classBCRPsub;smiles
+CCN(CC)c1ccc(C(=O)c2ccc(C=CC(=O)O[C@H]3C[C@H]4OC[C@@]4(OC(C)=O)[C@H]4[C@H](OC(=O)c5ccccc5)[C@]5(O)C[C@H](OC(C)=O)C(C)=C([C@@H](OC(C)=O)C(=O)[C@]34C)C5(C)C)cc2)cc1;0;193;mbcd0031299;;tRA9-1a;classBCRPsub;smiles
+Cn1nnnc1SCC1=C(C(=O)O)N2C(=O)[C@@H](NC(=O)[C@H](O)c3ccccc3)[C@H]2SC1;0;194;mbcd0003019;;Cefamandole;classBCRPsub;smiles
+Nc1ccn(C[C@@H](CO)OCP(=O)(O)O)c(=O)n1;0;195;mbcd0029406;;Cidofovir;classBCRPsub;smiles
+O=C1NC(=O)c2c1c1c3ccccc3[nH]c1c1[nH]c3cc(Br)ccc3c21;0;196;mbcd0030018;;CDK4I;classBCRPsub;smiles
+C=CC(=C)CN1C(=O)c2c3nc(cc4[nH]c(cc5nc(cc6[nH]c2c(c6C)C1=O)C(CC)=C5C)c(CC)c4C)[C@@H](C)[C@@H]3CCC(=O)OC;1;197;mbcd0030234;;9,12-Imino-2,21-metheno-7,4:14,17-dinitrilo-4H-pyrido[4,3-b]azacyclononadecine-16-propanoic acid, 5,10-diethyl-1,15,16,18,19,20-hexahydro-6,11,15,22-tetramethyl-19-(2-methylene-3-buten-1-yl)-18,20-dioxo-, methyl ester, (15S,16S)-;classBCRPsub;smiles
+Nc1ccc(O)c(C(=O)O)c1;0;198;mbcd0003017;;Salozinal;classBCRPsub;smiles
+CC[C@H]1OC(=O)[C@H](C)[C@@H](O[C@H]2C[C@@](C)(OC)[C@@H](O)[C@H](C)O2)[C@H](C)[C@@H](O[C@@H]2O[C@H](C)C[C@H](N(C)C)[C@H]2O)[C@](C)(O)C[C@@H](C)[C@@H]2N[C@@H](COCCOC)O[C@@H]([C@H]2C)[C@]1(C)O;1;199;mbcd0029879;;Dirithromycin;classBCRPsub;smiles
+O=S(=O)(O)Oc1cccc(C[C@H](CO)C(CO)Cc2cccc(O)c2)c1;1;200;mbcd0030412;;enterodiol-sulfate;classBCRPsub;smiles
+CCn1cc(C(=O)O)c(=O)c2cc(F)c(N3CCNCC3)cc21;1;201;mbcd0011365;;Norfloxacin;classBCRPsub;smiles
+O=[N+]([O-])c1ccc(OS(=O)(=O)O)cc1;1;202;mbcd0030185;;4-Nitrophenyl sulfate;classBCRPsub;smiles
+CCOc1ccc(C(=O)c2ccc(C=CC(=O)O[C@H]3C[C@H]4OC[C@@]4(OC(C)=O)[C@H]4[C@H](OC(=O)c5ccccc5)[C@]5(O)C[C@H](OC(C)=O)C(C)=C([C@@H](OC(C)=O)C(=O)[C@]34C)C5(C)C)cc2)cc1;0;203;mbcd0031298;;tRA9-2a;classBCRPsub;smiles
+CCN(CC)CCCNc1ccc2ncn3c4ccc(O)cc4c(=O)c1c23;1;204;mbcd0030126;;C 1335;classBCRPsub;smiles
+COc1cc2c(=O)n(CCNC(CO)CO)c3c4cc5c(cc4ncc3c2cc1OC)OCO5;1;205;mbcd0030144;;12-{2-[(1,3-Dihydroxy-2-propanyl)amino]ethyl}-2,3-dimethoxybenzo[c][1,3]benzodioxolo[5,6-h][1,6]naphthyridin-13(12H)-one;classBCRPsub;smiles
+O=C(O)c1cn(C2CC2)c2cc(N3CCNCC3)c(F)cc2c1=O;1;206;mbcd0017980;;ciprofloxacin;classBCRPsub;smiles
+O=C1NCc2c1c1c3ccccc3[nH]c1c1[nH]c3ccccc3c21;0;207;mbcd0030012;;K252c;classBCRPsub;smiles
+CN(C)CC1CCn2c(c(C3=C(c4cn(C)c5ccccc45)C(=O)NC3=O)c3ccccc32)C1;0;208;mbcd0030008;;Bisindolylmaleimide XI;classBCRPsub;smiles
+COc1ccc(C=CC(=O)c2cc(OC)c(OC)c(OC)c2)cc1O;1;209;mbcd0030235;;(2E)-3-(3-hydroxy-4-methoxyphenyl)-1-(3,4,5-trimethoxyphenyl)prop-2-en-1-one;classBCRPsub;smiles
+c1ccc2c(c1)cc1ccc3cccc4ccc2c1c34;1;210;mbcd0000169;;Benzo(a)pyrene;classBCRPsub;smiles
+CCN1CCN(c2cc3c(cc2F)c(=O)c(C(=O)O)cn3C2CC2)CC1;1;211;mbcd0030239;;Enrofloxacin;classBCRPsub;smiles
+C=Cc1c(C)c2cc3nc(cc4[nH]c(cc5nc(cc1[nH]2)C(C)=C5CCC(=O)O)c(CCC(=O)OC)c4C)[C@@]1(C)C3=CC=C(C(=O)OC)[C@H]1C(=O)OC;1;212;mbcd0029996;;Verteporfin;classBCRPsub;smiles
+COc1cc2c(c3oc(=O)c4c(c13)CCC4=O)[C@@H]1C=CO[C@@H]1O2;1;213;mbcd0029932;;Aflatoxin B1;classBCRPsub;smiles
+COc1cc2c(cc1OC)CN(CCc1ccc(NC(=O)c3cc(OC)c(OC)cc3NC(=O)c3cnc4ccccc4c3)cc1)CC2;0;214;mbcd0002104;;Tariquidar;classBCRPsub;smiles
+NC(=O)N1c2ccccc2C=Cc2ccccc21;0;215;mbcd0002985;;carbamazepine;classBCRPsub;smiles
+CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2cc3c(CN(C)C)c(O)ccc3nc2-1;1;216;mbcd0003187;;topotecan;classBCRPsub;smiles
+CCc1cccc(CC)c1N(COC)C(=O)CCl;0;217;mbcd0029408;;Alachlor;classBCRPsub;smiles
+COC(=O)c1ccccc1-c1c2ccc(=N)cc-2oc2cc(N)ccc12;1;218;mbcd0002393;;Benzoic acid, 2-(6-amino-3-imino-3H-xanthen-9-yl)-, methyl ester;classBCRPsub;smiles
+CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2c-1nc1ccccc1c2CCNC(C)C;1;219;mbcd0030066;;Belotecan;classBCRPsub;smiles
+Cn1cc(C2=C(c3cn(CCCSC(=N)N)c4ccccc34)C(=O)NC2=O)c2ccccc21;0;220;mbcd0026369;;Bisindolylmaleimide IX;classBCRPsub;smiles
+O=C1O[C@H]([C@@H](O)CO)C(O)=C1O;0;221;mbcd0029161;;L-Ascorbic acid;classBCRPsub;smiles
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCCN1CCOCC1;1;222;mbcd0003125;;Gefitinib;classBCRPsub;smiles
+COc1cc(Nc2c3ccccc3nc3ccccc23)ccc1NS(C)(=O)=O;0;223;mbcd0003882;;o-amsacrine;classBCRPsub;smiles
+COC[C@H]1CN(c2ccc(OCC[C@@H](O)C(F)(F)F)cc2)C(=O)O1;1;224;mbcd0030244;;Befloxatone;classBCRPsub;smiles
+COc1cc2ncnc(Nc3cccc(Cl)c3)c2cc1OC;1;225;mbcd0011472;;AG1478;classBCRPsub;smiles
+CC(NC(C)(C)CO)C(=O)c1cccc(Cl)c1;0;226;mbcd0030222;;Hydroxybupropion;classBCRPsub;smiles
+O=C(O)[C@H]1O[C@@H](Oc2cc3oc(-c4ccc(O)cc4)cc(=O)c3c(O)c2O)[C@H](O)[C@@H](O)[C@@H]1O;1;227;mbcd0031673;;Scutellarein 7-O-beta-D-glucuronide;classBCRPsub;smiles
+C=Cc1c(C)c2cc3nc(c(CC(=O)O)c4[nH]c(cc5nc(cc1[nH]2)C(C)=C5CC)c(C)c4C(=O)O)[C@@H](CCC(=O)O)[C@@H]3C;1;228;mbcd0029885;;Chlorin e6;classBCRPsub;smiles
+CCc1c2c(nc3cc(O)ccc13)-c1cc3c(c(=O)n1C2)COC(=O)[C@]3(O)CC;1;229;mbcd0029945;;SN 355;classBCRPsub;smiles
+CCN(CC)CCCC(C)Nc1c2ccc(Cl)cc2nc2ccc(OC)cc12;1;230;mbcd0026257;;Quinacrine;classBCRPsub;smiles
+CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](OC(=O)c3ccc(C(=O)c4ccccc4)cc3)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]23OC(=O)O[C@H]2[C@H](OC(C)=O)C(C)=C1C3(C)C;0;231;mbcd0031284;;tRA99021;classBCRPsub;smiles
+COc1cc(-c2[o+]c3cc(O)cc(O)c3cc2O)cc(O)c1O;1;232;mbcd0031481;;2-(3,4-Dihydroxy-5-methoxyphenyl)-3,5,7-trihydroxychromenium;classBCRPsub;smiles
+CC#Cc1c(OC)ccc2c(C(=O)c3cc(OC)c(OC)c(OC)c3)n[nH]c12;1;233;mbcd0030021;;TH-482;classBCRPsub;smiles
+Nc1ccn([C@@H]2CS[C@H](CO)O2)c(=O)n1;1;234;mbcd0002982;;Lamivudine;classBCRPsub;smiles
+O=C(O)[C@H]1O[C@@H](Oc2c(O)cc3oc(-c4ccc(O)cc4)cc(=O)c3c2O)[C@H](O)[C@@H](O)[C@@H]1O;1;235;mbcd0031672;;Scutellarein 6-O-beta-D-glucuronide;classBCRPsub;smiles
+C=Cc1c(C)c2cc3nc(c4c5[nH]c(cc6nc(cc1[nH]2)C(C)=C6CC)c(C)c5C(=O)C4)[C@@H](CCC(=O)OC)[C@@H]3C;1;236;mbcd0029884;;Pyropheophorbide a methyl ester;classBCRPsub;smiles
+CN1CCCC1CCn1cc(C2=C(c3c[nH]c4ccccc34)C(=O)NC2=O)c2ccccc21;0;237;mbcd0030000;;Bisindolylmaleimide II;classBCRPsub;smiles
+CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2cc3c(N)cccc3nc2-1;1;238;mbcd0000100;;9-Aminocamptothecin;classBCRPsub;smiles
+OCC1OC(Oc2cc3c(O)cc(O)cc3[o+]c2-c2ccc(O)c(O)c2)C(O)C(O)C1O;1;239;mbcd0031161;;cyanidin-3-hexoside;classBCRPsub;smiles
+CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](OC(=O)C=Cc3ccc(Oc4ccccc4)cc3)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]23OC(=O)O[C@H]2[C@H](OC(C)=O)C(C)=C1C3(C)C;0;240;mbcd0031288;;tRA99011;classBCRPsub;smiles
+Cc1nccc2c1[nH]c1cc(OS(=O)(=O)O)ccc12;1;241;mbcd0030269;;Harmol sulfate;classBCRPsub;smiles
+COc1cc(C(=O)c2n[nH]c3c(C#CCO)c(OC)ccc23)cc(OC)c1OC;1;242;mbcd0030020;;TH-337;classBCRPsub;smiles
+O=c1[nH]cc(F)c(=O)[nH]1;1;243;mbcd0003963;;Fluorouracil;classBCRPsub;smiles
+COc1cc(-c2[o+]c3cc(O)cc(O)c3cc2OC2OC(CO)C(O)C(O)C2O)cc(OC)c1O;1;244;mbcd0030558;;malvidin-3-hexoside;classBCRPsub;smiles
+CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](OC(=O)C=Cc3ccc4ccccc4c3)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]2(O)C[C@H](OC(C)=O)C(C)=C1C2(C)C;0;245;mbcd0031297;;tRA95069;classBCRPsub;smiles
+CN(C)CCN1C(=O)c2cccc3cc(N)cc(c23)C1=O;0;246;mbcd0025430;;Amonafide;classBCRPsub;smiles
+C[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2c-1nc1ccccc1c2C=NOCc1ccc(N)cc1;1;247;mbcd0030264;;ST 1976;classBCRPsub;smiles
+CC(C)NCC(O)COc1ccc(COCCOC(C)C)cc1;0;248;mbcd0001178;;Bisoprolol;classBCRPsub;smiles
+CC=C1C[C@H]2C=Nc3cc(OCCCCCOc4cc5c(cc4OC)C(=O)N4CC(=CC)C[C@H]4C=N5)c(OC)cc3C(=O)N2C1;1;249;mbcd0030426;;ELB-21;classBCRPsub;smiles
+CN(C)CCCCCNc1ccc2ncn3c4ccccc4c(=O)c1c23;0;250;mbcd0030142;;C 1266;classBCRPsub;smiles
+CC(C)NCC(O)c1ccc(NS(C)(=O)=O)cc1;0;251;mbcd0003128;;Sotalol;classBCRPsub;smiles
+CN1C(=O)C(c2c[nH]c3ccccc23)=C(c2c[nH]c3ccccc23)C1=O;0;252;mbcd0030003;;Bisindolylmaleimide V;classBCRPsub;smiles
+CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](OC(=O)C=Cc3ccc(C(=O)c4ccccc4)cc3)CC3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]2(O)C[C@H](OC(C)=O)C=C1C2(C)C;0;253;mbcd0029882;;TRA96023;classBCRPsub;smiles
+CCC(=C(c1ccccc1)c1ccc(OCCN(C)C)cc1)c1ccccc1;1;254;mbcd0002889;;Tamoxifen;classBCRPsub;smiles
+Nc1nc2ccc(OC(F)(F)F)cc2s1;1;255;mbcd0011439;;riluzole;classBCRPsub;smiles
+CCOCN(C(=O)CCl)c1c(C)cccc1CC;0;256;mbcd0026020;;Acetochlor;classBCRPsub;smiles
+Cc1c(C)c2c(c(C)c1OS(=O)(=O)O)CCC(C)(COc1ccc(Cc3sc(=O)[nH]c3O)cc1)O2;1;257;mbcd0000875;;Troglitazone sulfate;classBCRPsub;smiles
+Cn1cc(C2=C(c3cn(CCCN)c4ccccc34)C(=O)NC2=O)c2ccccc21;0;258;mbcd0030006;;Bisindolylmaleimide VIII;classBCRPsub;smiles
+O=C(O)C1OC(Oc2cc(O)c3c(=O)c(-c4ccc(O)cc4)coc3c2)[C@H](O)C(O)[C@@H]1O;1;259;mbcd0030397;;Genistein glucuronide;classBCRPsub;smiles
+S=C=NCCc1ccccc1;1;260;mbcd0003129;;Phenethyl isothiocyanate;classBCRPsub;smiles
+COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(=O)CO)CC3O[C@H]1C[C@H](N)[C@H](O[C@@H]2CCCCO2)[C@H](C)O1;1;261;mbcd0030083;;Pirarubicin;classBCRPsub;smiles
+CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](OC(=O)C=Cc3ccc(C(=O)Oc4ccccc4)cc3)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]23OC(=O)O[C@H]2[C@H](OC(C)=O)C(C)=C1C3(C)C;0;262;mbcd0031177;;tRA99031;classBCRPsub;smiles
+COc1cc2c(=O)n(CCNCCN(C)C)c3c4cc5c(cc4ncc3c2cc1OC)OCO5;1;263;mbcd0030143;;12-(2-{[2-(Dimethylamino)ethyl]amino}ethyl)-2,3-dimethoxybenzo[c][1,3]benzodioxolo[5,6-h][1,6]naphthyridin-13(12H)-one;classBCRPsub;smiles
+CO[C@@]12[C@H](COC(N)=O)C3=C(C(=O)C(C)=C(N)C3=O)N1C[C@@H]1N[C@@H]12;0;264;mbcd0000998;;Mitomycin;classBCRPsub;smiles
+Cc1nc(N)nc(N)c1-c1ccc(Cl)c(Cl)c1;0;265;mbcd0029966;;Metoprine;classBCRPsub;smiles
+O=C1NC(=O)C(c2cn(CCCN3CCNCC3)c3ccccc23)=C1c1c[nH]c2ccccc12;0;266;mbcd0030005;;Bisindolylmaleimide VII;classBCRPsub;smiles
+CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](OC(=O)C=Cc3ccc(C(=O)c4ccc(F)cc4)cc3)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]2(O)C[C@H](OC(C)=O)C(C)=C1C2(C)C;0;267;mbcd0031295;;tRA97045;classBCRPsub;smiles
+OCCN(CCO)c1nc(N2CCCCC2)c2nc(N(CCO)CCO)nc(N3CCCCC3)c2n1;1;268;mbcd0003100;;Dipyridamole;classBCRPsub;smiles
+N[C@@H](Cc1ccc(O)c(O)c1)C(=O)O;0;269;mbcd0003904;;L-DOPA;classBCRPsub;smiles
+CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H]1C[C@@H](O)CC(=O)O1;1;270;mbcd0000154;;Atorvastatin lactone;classBCRPsub;smiles
+COc1ccc(-c2coc3cc(OS(=O)(=O)O)ccc3c2=O)cc1;1;271;mbcd0030413;;formononetin-sulfate;classBCRPsub;smiles
+CCCCC(CC)COC(=O)c1ccccc1C(=O)OCC(CC)CCCC;0;272;mbcd0028840;;Octyl phthalate;classBCRPsub;smiles
+O=C1CC(O)C[C@@H](C=Cc2c(C3CC3)nc3ccccc3c2-c2ccc(F)cc2)O1;0;273;mbcd0029937;;Pitavastatin Lactone;classBCRPsub;smiles
+Cc1c(F)c(N2CCNC(C)C2)cc2c1c(=O)c(C(=O)O)cn2C1CC1;1;274;mbcd0001038;;Grepafloxacin;classBCRPsub;smiles
+O=c1c(-c2ccc(OS(=O)(=O)O)cc2)coc2cc(O)cc(O)c12;1;275;mbcd0030407;;genistein-4'-O-sulfate;classBCRPsub;smiles
+CCc1c2c(nc3ccc(Cl)cc13)-c1cc3c(c(=O)n1C2)COC(=O)[C@]3(O)CC;1;276;mbcd0029941;;SN 349;classBCRPsub;smiles
+CN(C)CCNc1ccc2ncn3c4ccc(O)cc4c(=O)c1c23;1;277;mbcd0030124;;C 1584;classBCRPsub;smiles
+CCc1nc(N)nc(N)c1-c1ccc(Cl)cc1;1;278;mbcd0016826;;Pyrimethamine;classBCRPsub;smiles
+CCN(CC)CCN1C(=O)c2c(c3c4cccc(Cl)c4n([C@@H]4O[C@H](CO)[C@@H](OC)[C@H](O)[C@H]4O)c3c3[nH]c4c(Cl)cccc4c23)C1=O;1;279;mbcd0030089;;Becatecarin;classBCRPsub;smiles
+CCc1c2c(nc3cc(F)c(F)cc13)-c1cc3c(c(=O)n1C2)COC(=O)[C@]3(O)CC;1;280;mbcd0029951;;SN 444;classBCRPsub;smiles
+CC(=O)OCOC(=O)CCc1cc2c(cc1OCOC(C)=O)Oc1cc(OCOC(C)=O)c(CCC(=O)OCOC(C)=O)cc1C21OC(=O)c2cc(C(=O)OCOC(C)=O)ccc21;1;281;mbcd0030261;;BCECF-AM;classBCRPsub;smiles
+CCCCCCOC(=O)C1(O)C[C@@H]2O[C@@]1(C)n1c3ccccc3c3c4c(c5c6ccccc6n2c5c31)C(=O)NC4;0;282;mbcd0030013;;KT5720;classBCRPsub;smiles
+COc1cc2c(cc1OC)CN(CCc1ccc(NC(=O)c3cccc4c(=O)c5cccc(OC)c5[nH]c34)cc1)CC2;0;283;mbcd0001808;;Elacridar;classBCRPsub;smiles
+CN1CC[C@H](c2c(O)cc(O)c3c(=O)cc(-c4ccccc4Cl)oc23)[C@H](O)C1;1;284;mbcd0001652;;flavopiridol;classBCRPsub;smiles
+CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](OC(=O)C=Cc3ccc4c(c3)-c3ccccc3C4=O)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]2(O)C[C@H](OC(C)=O)C(C)=C1C2(C)C;0;285;mbcd0031294;;tRA98005;classBCRPsub;smiles
+C[C@]12C[C@H](O)[C@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@@H]1CC[C@@H]2C(=O)CO;0;286;mbcd0003905;;Corticosterone;classBCRPsub;smiles
+C=C1C[C@H]2C=Nc3cc(OCCCOc4cc5c(cc4OC)C(=O)N4CC(=C)C[C@H]4C=N5)c(OC)cc3C(=O)N2C1;1;287;mbcd0030423;;SJG-136;classBCRPsub;smiles
+COc1cc2c[n+](C)c3c4cc(OC)c(OC)cc4ccc3c2cc1OC;1;288;mbcd0030038;;NSC 168201;classBCRPsub;smiles
+CN1[C@@H](CC(=O)c2ccccc2)CCC[C@H]1C[C@H](O)c1ccccc1;0;289;mbcd0030278;;Lobeline;classBCRPsub;smiles
+O=c1c(-c2ccc(O)cc2)coc2cc(OS(=O)(=O)O)cc(O)c12;1;290;mbcd0030406;;genistein-7-O-sulfate;classBCRPsub;smiles
+CCN(CC)CCNc1ccc2ncn3c4c(OC)ccc(OC)c4c(=O)c1c23;0;291;mbcd0030138;;C 1503;classBCRPsub;smiles
+CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2c-1nc1ccccc1c2C=NOCCN1CCOCC1;1;292;mbcd0030283;;ST1600;classBCRPsub;smiles
+CCN(CC)CCCNc1ccc2nc(C)n3c4ccc(O)cc4c(=O)c1c23;1;293;mbcd0030122;;C 1336;classBCRPsub;smiles
+COc1cc(C=Cc2cc(OC)c(OC)c(OC)c2)ccc1O;1;294;mbcd0030023;;Combretastatin A-4;classBCRPsub;smiles
+C[C@@H]1Cc2c(Cl)cc(C(=O)N[C@@H](Cc3ccccc3)C(=O)O)c(O)c2C(=O)O1;1;295;mbcd0000640;;Ochratoxin A;classBCRPsub;smiles
+CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2cc3c([N+](=O)[O-])cccc3nc2-1;0;296;mbcd0029455;;9-Nitrocamptothecin;classBCRPsub;smiles
+CC1CS(=O)(=O)CCN1N=Cc1ccc([N+](=O)[O-])o1;1;297;mbcd0015116;;Nifurtimox;classBCRPsub;smiles
+CCC1(c2ccccc2)C(=O)NCNC1=O;0;298;mbcd0011455;;Primidone;classBCRPsub;smiles
+CCC1=C(C)c2cc3[nH]c(cc4nc(c5c6[nH]c(cc1n2)c(C)c6C(=O)C5)[C@@H](CCC(=O)O)[C@@H]4C)c(C)c3C(C)OCc1cccc(I)c1;1;299;mbcd0030233;;3-(1'-m-iodobenzyloxy) pyropheophorbide-a;classBCRPsub;smiles
+CCc1c2c(nc3cc(F)c(OC)cc13)-c1cc3c(c(=O)n1C2)COC(=O)[C@]3(O)CC;1;300;mbcd0029948;;SN 397;classBCRPsub;smiles
+CCCCCCCCCCCCCCCC(=O)O[C@H](COC(=O)CCCCCNc1ccc([N+](=O)[O-])c2nonc12)COP(=O)(O)OC[C@H](N)C(=O)O;1;301;mbcd0031409;;L-Serine, 3-[[6-[(7-nitro-2,1,3-benzoxadiazol-4-yl)amino]-1-oxohexyl]oxy]-2-[(1-oxohexadecyl)oxy]propyl hydrogen phosphate (ester), (R)-;classBCRPsub;smiles
+Nc1nc(Cl)nc2c1ncn2[C@H]1C[C@H](O)[C@@H](CO)O1;1;302;mbcd0000960;;cladribine;classBCRPsub;smiles
+C=C1C[C@H]2C=Nc3cc(OCCCCCOc4cc5c(cc4OC)C(=O)N4CC(=C)C[C@H]4C=N5)c(OC)cc3C(=O)N2C1;1;303;mbcd0030425;;DRG-16;classBCRPsub;smiles
+COc1cc(-c2[o+]c3cc(O)cc(OC4OC(CO)[C@@H](O)C(O)[C@H]4O)c3cc2OC2OC(CO)[C@@H](O)C(O)[C@H]2O)cc(OC)c1O;1;304;mbcd0030189;;malvidin-3,5-diglucoside;classBCRPsub;smiles
+Cc1cccc(C)c1N(Cn1cccn1)C(=O)CCl;0;305;mbcd0029410;;Metazachlor;classBCRPsub;smiles
+CN(CCOc1ccc(CC2SC(=O)NC2=O)cc1)c1ccccn1;1;306;mbcd0023111;;rosiglitazone;classBCRPsub;smiles
+COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)CC(O)(C(=O)CO)CC3OC1CC(N)C(O)C(C)O1;1;307;mbcd0031536;;Epirubicin (no stereo);classBCRPsub;smiles
+CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](OC(=O)c3ccc(C(=O)c4ccccc4)cc3)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]2(O)C[C@H](OC(C)=O)C(C)=C1C2(C)C;0;308;mbcd0031285;;tRA99020;classBCRPsub;smiles
+CCN(CC)CCNc1ccc2ncn3c4ccc(OC)cc4c(=O)c1c23;0;309;mbcd0030141;;C 1330;classBCRPsub;smiles
+CC(=O)Nc1ccc(OS(=O)(=O)O)cc1;1;310;mbcd0030186;;Acetaminophen sulfate;classBCRPsub;smiles
+CC(C)(C)NC[C@H](O)COc1nsnc1N1CCOCC1;0;311;mbcd0002999;;Timolol;classBCRPsub;smiles
+CN(C)CCNc1ccc2ncn3c4ccccc4c(=O)c1c23;0;312;mbcd0030140;;C 1176;classBCRPsub;smiles
+CC1=CC(=O)c2c(O)cccc2C1=O;1;313;mbcd0028598;;Plumbagine;classBCRPsub;smiles
+COc1cc(-c2[o+]c3cc(O)cc(O)c3cc2O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)ccc1O;1;314;mbcd0030191;;peonidin-3- glucoside;classBCRPsub;smiles
+O=C(C=C(O)C=Cc1ccc(O)cc1)CCc1ccc(O)cc1;0;315;mbcd0029978;;Curcumin III;classBCRPsub;smiles
+COc1cc(Nc2c(C#N)cnc3cc(OCCCN4CCN(C)CC4)c(OC)cc23)c(Cl)cc1Cl;0;316;mbcd0030532;;bosutinib;classBCRPsub;smiles
+Cc1nc2ccc(NCCN(C)C)c3c(=O)c4cc(O)ccc4n1c23;1;317;mbcd0030121;;C 1309;classBCRPsub;smiles
+CCc1c2c(nc3cc(Br)ccc13)-c1cc3c(c(=O)n1C2)COC(=O)[C@]3(O)CC;1;318;mbcd0029942;;SN 351;classBCRPsub;smiles
+CCN(CC)CCNc1ccc2ncn3c4ccc(C(C)(C)C)cc4c(=O)c1c23;0;319;mbcd0030131;;C 1558;classBCRPsub;smiles
+O=C(O)[C@H]1O[C@@H](Oc2c(-c3ccc(O)c(O)c3)oc3cc(O)cc(O)c3c2=O)[C@H](O)[C@@H](O)[C@@H]1O;1;320;mbcd0030267;;Quercetin-3-Glucuronide;classBCRPsub;smiles
+CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](OC(=O)C=Cc3ccc(Oc4ccccc4)cc3)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]2(O)C[C@H](OC(C)=O)C(C)=C1C2(C)C;0;321;mbcd0031289;;tRA99010;classBCRPsub;smiles
+C[C@]12CC[C@@H]3c4ccc(OS(=O)(=O)O)cc4CC[C@H]3[C@@H]1CC[C@@H]2O;1;322;mbcd0000389;;Estradiol-3-sulfate;classBCRPsub;smiles
+O=C1c2ccccc2-c2nn(CCNCCO)c3ccc(NCCNCCO)c1c23;1;323;mbcd0031425;;BBR 3390;classBCRPsub;smiles
+COc1cc(-c2[o+]c3cc(O)cc(O)c3cc2O)cc(OC)c1O;1;324;mbcd0030187;;Malvidin;classBCRPsub;smiles
+COc1ccc(OC)c(Cc2cnc3nc(N)nc(N)c3c2C)c1;1;325;mbcd0029965;;Piritrexim;classBCRPsub;smiles
+O=C1NC(=O)C(c2c[nH]c3ccccc23)=C1c1c[nH]c2ccccc12;0;326;mbcd0030002;;Bisindolylmaleimide IV;classBCRPsub;smiles
+CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](OC(=O)C=Cc3ccc(C(=O)c4ccccc4)cc3)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]23OC(=O)O[C@H]2[C@H](OC(C)=O)C(C)=C1C3(C)C;0;327;mbcd0031296;;tRA97013;classBCRPsub;smiles
+CC(C)N(C(=O)CCl)c1ccccc1;0;328;mbcd0029412;;Propachlor;classBCRPsub;smiles
+COc1c(C)c2c(c(OC3O[C@H](C(=O)O)[C@@H](O)[C@H](O)[C@H]3O)c1CC=C(C)CCC(=O)O)C(=O)OC2;1;329;mbcd0030373;;Mycophenolic acid glucuronide;classBCRPsub;smiles
+CCC1(C)CC(=O)NC1=O;0;330;mbcd0026528;;Ethosuximide;classBCRPsub;smiles
+Cc1c(N)nc(C)c2c1[nH]c1ccccc12;1;331;mbcd0029309;;Tryptophan P 1;classBCRPsub;smiles
+O=C1c2c(c3c4ccc(O)cc4n(C4O[C@H](CO)[C@@H](O)[C@H](O)[C@H]4O)c3c3[nH]c4cc(O)ccc4c23)C(=O)N1NC(CO)CO;1;332;mbcd0000496;;J-107088;classBCRPsub;smiles
+Cc1onc(-c2c(F)cccc2Cl)c1C(=O)N[C@@H]1C(=O)N2[C@@H]1SC(C)(C)[C@@H]2C(=O)O;0;333;mbcd0003036;;Flucloxacillin;classBCRPsub;smiles
+COc1ccc(C[C@H](N)C(=O)N[C@H]2[C@@H](O)[C@H](n3cnc4c(N(C)C)ncnc43)O[C@@H]2CO)cc1;1;334;mbcd0000723;;Puromycin;classBCRPsub;smiles
+CCCCCCCCCCSCC(CO)NC(=O)C=Cc1c(C)[nH]c(=O)[nH]c1=O;1;335;mbcd0030179;;(E)-N-(1-decylsulfanyl-3-hydroxypropan-2-yl)-3-(6-methyl-2,4-dioxo-1H-pyrimidin-5-yl)prop-2-enamide;classBCRPsub;smiles
+COC(=O)Nc1nc2ccc(S(=O)c3ccccc3)cc2[nH]1;1;336;mbcd0026840;;Oxfendazole;classBCRPsub;smiles
+Cn1c(N)nc2c3cccnc3ccc21;1;337;mbcd0029933;;2-amino-3-methylimidazp[4,5-f]quinoline;classBCRPsub;smiles
+Nc1nc(=O)c2nc(CNc3ccc(C(=O)N[C@@H](CCC(=O)O)C(=O)O)cc3)cnc2[nH]1;1;338;mbcd0003959;;Folic acid;classBCRPsub;smiles
+CN[C@@H]1C[C@H]2O[C@@](C)([C@@H]1OC)n1c3ccccc3c3c4c(c5c6ccccc6n2c5c31)C(=O)N[C@@H]4O;1;339;mbcd0029988;;UCN-01;classBCRPsub;smiles
+C#CC(C)N(C(=O)CCl)c1ccccc1;0;340;mbcd0029413;;Prynachlor;classBCRPsub;smiles
+CCC(C)(C)C(=O)O[C@H]1C[C@@H](C)C=C2C=C[C@H](C)[C@H](CC[C@@H]3C[C@@H](O)CC(=O)O3)[C@H]21;1;341;mbcd0001194;;Simvastatin;classBCRPsub;smiles
+COc1ccnc(CS(=O)c2nc3cc(OC(F)F)ccc3[nH]2)c1OC;1;342;mbcd0022900;;Pantoprazole;classBCRPsub;smiles
+COc1cc2c(cc1OCCCOc1cc3c(cc1OC)C(=O)N1CCC[C@H]1C=N3)N=C[C@@H]1CCCN1C2=O;1;343;mbcd0030424;;DSB-120;classBCRPsub;smiles
+Cc1nc(=O)c2cc(CN(C)c3ccc(N(C=O)[C@@H](CCC(=O)O)C(=O)O)s3)ccc2[nH]1;1;344;mbcd0029766;;Raltitrexed;classBCRPsub;smiles
+O=C(c1ccc(OCCN2CCCCC2)cc1)C1c2ccc(O[C@@H]3O[C@H](C(=O)O)[C@@H](O)[C@H](O)[C@H]3O)cc2SC1c1ccc(O)cc1;0;345;mbcd0031669;;Raloxifene-6-beta-glucuronide;classBCRPsub;smiles
+Cc1nc2ccc(NCCN(C)C)c3c(=O)c4ccccc4n1c23;0;346;mbcd0030133;;C 1213;classBCRPsub;smiles
+C[C@@H](Oc1ccc(CNC(=O)c2cccnc2Oc2ccc3c(c2)OCO3)c(F)c1)C(=O)O;1;347;mbcd0030025;;CP 671305;classBCRPsub;smiles
+CC(=O)O[C@@]12CO[C@@H]1C[C@H](O)[C@@]1(C)C(=O)[C@H](O)C3=C(C)[C@@H](OC(=O)[C@H](O)[C@@H](NC(=O)OC(C)(C)C)c4ccccc4)C[C@@](O)([C@@H](OC(=O)c4ccccc4)[C@H]21)C3(C)C;1;348;mbcd0027726;;Docetaxel;classBCRPsub;smiles
+CC(C=CC1=C(C)CCCC1(C)C)=CC=CC(C)=CCO;0;349;mbcd0000919;;Vitamin A;classBCRPsub;smiles
+O=C1NC(=O)C(c2cn(CCC3CCCCN3)c3ccccc23)=C1c1c[nH]c2ccccc12;0;350;mbcd0030004;;Bisindolylmaleimide VI;classBCRPsub;smiles
+C=Cc1c(C)c2cc3nc(c4c5[nH]c(cc6nc(cc1[nH]2)C(C)=C6CC)c(C)c5C(=O)[C@@H]4C(=O)OC)[C@@H](CCC(=O)OC)[C@@H]3C;1;351;mbcd0029989;;Pheophorbide a methyl ester;classBCRPsub;smiles
+CC(=O)O[C@H]1C(=O)[C@@]2(C)[C@H]([C@H](OC(=O)c3ccccc3)[C@]34OC(=O)O[C@H]3[C@H](OC(=O)[C@H](O)[C@H](CC(C)C)NC(=O)OC(C)(C)C)C(C)=C1C4(C)C)[C@]1(OC(C)=O)CO[C@@H]1C[C@@H]2O;0;352;mbcd0000648;;Ortataxel;classBCRPsub;smiles
+CCN(CC)CCNc1ccc2ncn3c4ccc(C)cc4c(=O)c1c23;0;353;mbcd0030132;;C 1554;classBCRPsub;smiles
+C[C@H](CCC(=O)NCC(=O)O)[C@H]1CC[C@H]2[C@@H]3[C@H](O)C[C@@H]4C[C@H](O)CC[C@]4(C)[C@H]3C[C@H](O)[C@]12C;1;354;mbcd0000455;;Glycocholate;classBCRPsub;smiles
+CCCCC(=O)N(Cc1ccc(-c2ccccc2-c2nnn[nH]2)cc1)[C@H](C(=O)O)C(C)C;0;355;mbcd0003086;;valsartan;classBCRPsub;smiles
+CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](OC(=O)C=Cc3ccc(C(=O)c4ccc(N(C)C)cc4)cc3)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]2(O)C[C@H](OC(C)=O)C(C)=C1C2(C)C;0;356;mbcd0031293;;tRA98006;classBCRPsub;smiles
+Oc1cccc(-c2c3nc(c(-c4cccc(O)c4)c4ccc([nH]4)c(-c4cccc(O)c4)c4nc(c(-c5cccc(O)c5)c5ccc2[nH]5)C=C4)C=C3)c1;0;357;mbcd0029886;;meso-tetra(3-hydroxyphenyl)chlorin;classBCRPsub;smiles
+CC1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23;1;358;mbcd0003068;;Ofloxacin;classBCRPsub;smiles
+C[C@]12CC[C@H](OS(=O)(=O)O)CC1=CC[C@@H]1[C@@H]2CC[C@]2(C)C(=O)CC[C@@H]12;1;359;mbcd0003070;;dehydroepiandrosterone sulfate;classBCRPsub;smiles
+CCCCCCOC(C)c1c(C)c2cc3nc(c4c5nc(cc6[nH]c(cc1[nH]2)c(C)c6CC)C(C)=C5C(=O)C4)[C@@H](CCC(=O)NO[C@@H]1[C@@H](O)[C@@H](O)[C@@H](O)O[C@@H]1CO)[C@@H]3C;0;360;mbcd0030152;;HPPH-Galactose;classBCRPsub;smiles
+Cc1cc(NC(=O)NC(=O)c2ccccc2N)ccc1OC1NCC(Br)CN1;0;361;mbcd0030422;;NSC647884;classBCRPsub;smiles
+CN1C[C@@H]2C[C@H]1CN2c1cc2c(cc1F)c(=O)c(C(=O)O)cn2C1CC1;1;362;mbcd0031139;;Danofloxacin;classBCRPsub;smiles
+CO[C@]12CC[C@@]3(C[C@@H]1[C@](C)(O)C(C)(C)C)[C@H]1Cc4ccc(O)c5c4[C@@]3(CCN1)[C@H]2O5;0;363;mbcd0030531;;Norbuprenorphine;classBCRPsub;smiles
+CCCCCc1cc(C=c2[nH]c(=C3C=CC=N3)cc2OC)[nH]c1C;0;364;mbcd0030275;;Prodigiosin;classBCRPsub;smiles
+Cc1ccc2[nH]c(N)nc(=O)c2c1Sc1ccncc1;1;365;mbcd0031133;;Nolatrexed;classBCRPsub;smiles
+CN=C(NC#N)NCCSCc1nc[nH]c1C;1;366;mbcd0001111;;Cimetidine;classBCRPsub;smiles
+Cc1ncc(CO)c(CO)c1O;0;367;mbcd0010622;;Bezatin;classBCRPsub;smiles
+CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2c-1nc1cc3c(cc1c2CN1CCN(C)CC1)OCCO3;1;368;mbcd0030260;;Lurtotecan;classBCRPsub;smiles
+CC[C@H](C)C(=O)O[C@H]1C[C@H](O)C=C2C=C[C@H](C)[C@H](CC[C@@H](O)C[C@@H](O)CC(=O)O)[C@H]21;1;369;mbcd0003126;;Pravastatin;classBCRPsub;smiles
+CCCc1nc(C(C)(C)O)c(C(=O)OCc2oc(=O)oc2C)n1Cc1ccc(-c2ccccc2-c2nnn[nH]2)cc1;1;370;mbcd0027486;;Olmesartan medoxomil;classBCRPsub;smiles
+CN(Cc1cnc2nc(N)nc(N)c2n1)c1ccc(C(=O)N[C@@H](CCC(=O)O)C(=O)O)cc1;1;371;mbcd0003043;;Methotrexate;classBCRPsub;smiles
+C#Cc1c(OC)ccc2c(C(=O)c3cc(OC)c(OC)c(OC)c3)n[nH]c12;1;372;mbcd0030022;;TH-494;classBCRPsub;smiles
+C[C@]12CC[C@@H]3c4ccc(O)cc4CC[C@H]3[C@@H]1CC[C@@H]2O;1;373;mbcd0003055;;estradiol;classBCRPsub;smiles
+CN(C)CCCNc1ccc2ncn3c4ccccc4c(=O)c1c23;0;374;mbcd0030135;;C 1212;classBCRPsub;smiles
+C[C@H](CCC(=O)NCCS(=O)(=O)O)C1CC[C@H]2[C@@H]3CC[C@@H]4C[C@H](O)CC[C@]4(C)[C@H]3C[C@H](O)[C@]12C;1;375;mbcd0000817;;Taurodeoxycholate;classBCRPsub;smiles
+COc1cc2nc(N(C)CCCNC(=O)C3CCCO3)nc(N)c2cc1OC;1;376;mbcd0026833;;alfuzosin;classBCRPsub;smiles
+O=C(c1ccc(OCCN2CCCCC2)cc1)C1c2ccc(O)cc2SC1c1ccc(O[C@@H]2O[C@H](C(=O)O)[C@@H](O)[C@H](O)[C@H]2O)cc1;0;377;mbcd0031670;;Raloxifene-4'-beta-glucuronide;classBCRPsub;smiles
+O=C(c1ccc(OCCN2CCCCC2)cc1)C1c2ccc(O[C@@H]3O[C@H](C(=O)O)[C@@H](O)[C@H](O)[C@H]3O)cc2SC1c1ccc(O[C@@H]2O[C@H](C(=O)O)[C@@H](O)[C@H](O)[C@H]2O)cc1;0;378;mbcd0031671;;Raloxifene-6,4'-diglucuronide;classBCRPsub;smiles
+O=C(O)CN(CC(=O)O)Cc1cc2c(cc1O)Oc1cc(O)c(CN(CC(=O)O)CC(=O)O)cc1C21OC(=O)c2ccccc21;0;379;mbcd0029351;;Calcein;classBCRPsub;smiles
+CCc1c2c(nc3ccc(O)cc13)-c1cc3c(c(=O)n1C2)COC(=O)[C@]3(O)CC;1;380;mbcd0000779;;SN-38;classBCRPsub;smiles
+COc1ccc(Cl)cc1C(=O)NCCc1ccc(S(=O)(=O)NC(=O)NC2CCCCC2)cc1;1;381;mbcd0003074;;glyburide;classBCRPsub;smiles
+CCN(CC)CCNc1ccc2ncn3c4cc(O)ccc4c(=O)c1c23;1;382;mbcd0030127;;C 1419;classBCRPsub;smiles
+Cc1c(Cc2cccnc2)c2c(c(C)c1OC1OC(O)[C@@H](O)C(O)[C@H]1O)SCN2;1;383;mbcd0030388;;E3040G;classBCRPsub;smiles
+CC[C@@]1(C)C(=O)OCc2c1cc1n(c2=O)Cc2c-1cc1ccccc1c2C=NOCCN;1;384;mbcd0030265;;ST 1587;classBCRPsub;smiles
+CCc1cccc(C)c1N(C(=O)CCl)C(C)COC;0;385;mbcd0029411;;Metolachlor;classBCRPsub;smiles
+c1ccc2c(c1)[nH]c1c2ccc2[nH]c3ccccc3c21;1;386;mbcd0029957;;Indolocarbazole;classBCRPsub;smiles
+CC1(C)O[C@@H]2C[C@H]3[C@@H]4CCC5=CC(=O)C=C[C@]5(C)[C@@]4(F)[C@@H](O)C[C@]3(C)[C@]2(C(=O)CO)O1;0;387;mbcd0029329;;Triamcinolone acetonide;classBCRPsub;smiles
+COc1cc(C=CC(=O)CC(=O)C=Cc2ccc(O)c(OC)c2)ccc1O;0;388;mbcd0000303;;Curcumin;classBCRPsub;smiles
+CC(CCC(=O)NCC(=O)O)C1CCC2C3C(O)CC4CC(O)CCC4(C)C3CCC12C;1;389;mbcd0029349;;Chenodeoxycholylglycine;classBCRPsub;smiles
+COCC(=O)NCC=Cc1ccc2ncnc(Nc3ccc(Oc4ccc(C)nc4)c(C)c3)c2c1;1;390;mbcd0030120;;CP-724714;classBCRPsub;smiles
+C#Cc1cccc(Nc2ncnc3cc(OCCOC)c(OCCOC)cc23)c1;1;391;mbcd0003099;;erlotinib;classBCRPsub;smiles
+COC1=CC(=O)c2c(c(O)c3oc4cc(OC)cc(C)c4c(=O)c3c2O)C1=O;1;392;mbcd0030428;;Bikaverin;classBCRPsub;smiles
+O=c1c(-c2ccc(OS(=O)(=O)O)cc2)coc2cc(O)ccc12;1;393;mbcd0030210;;Daidzein-4'-sulfate;classBCRPsub;smiles
+Cn1ncc2c(NCCc3ccccc3)nc(Cl)nc21;1;394;mbcd0007646;;NSC 19139;classBCRPsub;smiles
+CC(C)=CCc1c(O)cc2oc(-c3ccccc3)cc(=O)c2c1O;0;395;mbcd0031440;;6-Prenyl-chrysin;classBCRPsub;smiles
+O=C1NC(=O)c2c1c1c3ccccc3n3c1c1c2c2ccccc2n1C1CCC3O1;0;396;mbcd0030017;;SB-218078;classBCRPsub;smiles
+CCCSc1ccc2nc(NC(=O)OC)[nH]c2c1;0;397;mbcd0014953;;Albendazole;classBCRPsub;smiles
+COc1ccc(C2CC(=O)c3c(O)cc(OS(=O)(=O)O)cc3O2)cc1O;1;398;mbcd0030050;;Hesperetin 7-O-Sulfate;classBCRPsub;smiles
+Nc1nc(Cl)nc2c1ncn2[C@H]1C[C@H](O)[C@@H](COP(=O)(O)O)O1;1;399;mbcd0029116;;cladribine monophosphate;classBCRPsub;smiles
+COCc1c(C(C)C)nc(C(C)C)c(C=C[C@@H](O)C[C@@H](O)CC(=O)O)c1-c1ccc(F)cc1;1;400;mbcd0023123;;Cerivastatin;classBCRPsub;smiles
+Nc1nc(=O)c2c(CCc3ccc(C(=O)N[C@@H](CCC(=O)O)C(=O)O)cc3)c[nH]c2[nH]1;1;401;mbcd0029125;;pemetrexed;classBCRPsub;smiles
+C[C@@H]1O[C@@H](OC2C[C@](O)([C@H](C)O)Cc3c(O)c4c(c(O)c32)C(=O)c2ccccc2C4=O)C[C@H](N)[C@@H]1O;1;402;mbcd0029956;;Idarubicinol;classBCRPsub;smiles
+Cc1c(O)cccc1C(=O)N[C@@H](CSc1ccccc1)[C@H](O)CN1C[C@H]2CCCC[C@H]2C[C@H]1C(=O)NC(C)(C)C;1;403;mbcd0026632;;Nelfinavir;classBCRPsub;smiles
+Cc1nc(=O)c2c(ccc3ccc(CNc4ccc5c(c4)CN([C@@H](CCC(=O)O)C(=O)O)C5=O)cc32)[nH]1;1;404;mbcd0029420;;(S)-GW1843;classBCRPsub;smiles
+O=C(O)[C@H]1O[C@@H](Oc2ccc3ccc4c5ccccc5cc5ccc2c3c54)[C@H](O)[C@@H](O)[C@@H]1O;1;405;mbcd0029916;;BP-3-Glucuronide;classBCRPsub;smiles
+COc1cc(OC)c(C(=O)C=Cc2cn(C)c3ccccc23)c(OC)c1;0;406;mbcd0030172;;JA1-51;classBCRPsub;smiles
+O=C1OCC(Cc2cccc(O)c2)[C@@H]1Cc1cccc(OS(=O)(=O)O)c1;1;407;mbcd0030411;;enterolactone-sulfate;classBCRPsub;smiles
+CCCCN(CCCC)CNc1ccc2nc(C)n3c4ccc(O)cc4c(=O)c1c23;0;408;mbcd0030130;;C 1315;classBCRPsub;smiles
+O=C(O)C[C@H](O)C[C@H](O)C=Cc1c(C2CC2)nc2ccccc2c1-c1ccc(F)cc1;1;409;mbcd0000693;;pitavastatin;classBCRPsub;smiles
+CC1=C(C(=O)O)N2C(=O)[C@@H](NC(=O)[C@H](N)c3ccc(O)cc3)[C@H]2SC1;0;410;mbcd0001472;;Cefadroxil;classBCRPsub;smiles
+COc1ccc2c3c([nH]c2c1)[C@H](C=C(C)C)N1C(=O)[C@@H]2CCCN2C(=O)[C@@H]1C3;1;411;mbcd0002422;;Fumitremorgin C;classBCRPsub;smiles
+CCCS(=O)c1ccc2nc(NC(=O)OC)[nH]c2c1;1;412;mbcd0000124;;Albendazole sulphoxide;classBCRPsub;smiles
+O=c1[nH]c(=O)n([C@H]2C[C@H](O)[C@@H](COP(=O)(O)O)O2)cc1F;0;413;mbcd0030279;;FdUMP;classBCRPsub;smiles
+Nc1nc(=O)c2c([nH]1)NCC(CNc1ccc(C(=O)NC(CCC(=O)O)C(=O)O)cc1)N2C=O;0;414;mbcd0031513;;(+/-)-Folinic acid;classBCRPsub;smiles
+CC(=O)[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3CC[C@]12C;1;415;mbcd0001892;;Progesterone;classBCRPsub;smiles
+CN(Cc1cnc2nc(N)nc(N)c2n1)c1ccc(C(=O)N[C@@H](CCC(=O)N[C@@H](CCC(=O)N[C@@H](CCC(=O)O)C(=O)O)C(=O)O)C(=O)O)cc1;1;416;mbcd0029343;;methotrexate diglutamate;classBCRPsub;smiles
+COC(=O)Nc1nc2ccc(Sc3ccccc3)cc2[nH]1;0;417;mbcd0008195;;fenbendazole;classBCRPsub;smiles
+CC[C@@]1(C)C(=O)Cc2c1cc1n(c2=O)Cc2c-1nc1cc3c(cc1c2C1CCC1)OCO3;0;418;mbcd0030277;;S39625;classBCRPsub;smiles
+CNc1nc2c(Cc3cccnc3)c(C)c(O[C@@H]3O[C@H](C(=O)O)[C@@H](O)[C@H](O)[C@H]3O)c(C)c2s1;1;419;mbcd0000369;;E3040 glucuronide;classBCRPsub;smiles
+CCc1c2c(nc3ccc(O[C@@H]4O[C@H](C(=O)O)[C@@H](O)[C@@H](O)[C@H]4O)cc13)-c1cc3c(c(=O)n1C2)COC(=O)[C@]3(O)CC;1;420;mbcd0000780;;SN-38 glucuronide;classBCRPsub;smiles
+CCOC(=O)C1C(C)=NC(C)=C(C(=O)OCCNC(=O)c2ccc(N=[N+]=[N-])cc2)C1c1ccccc1C(F)(F)F;1;421;mbcd0000159;;Azidopine;classBCRPsub;smiles
+CCCC(CCC)C(=O)O;0;422;mbcd0003008;;Valproic Acid;classBCRPsub;smiles
+O=C1CN=C(c2ccccc2Cl)c2cc([N+](=O)[O-])ccc2N1;0;423;mbcd0001430;;Clonazepam;classBCRPsub;smiles
+Nc1nc2c(ncn2COCCO)c(=O)[nH]1;1;424;mbcd0003916;;Acyclovir;classBCRPsub;smiles
+Cn1ncc2c(Nc3cccc(Cl)c3)nc(Nc3cccc(Cl)c3)nc21;1;425;mbcd0005274;;NSC 11668;classBCRPsub;smiles
+NC(=O)Nc1ccccc1C(=O)c1ccccc1;1;426;mbcd0030502;;Benzoylphenylurea;classBCRPsub;smiles
+CC1=CC(=O)c2ccccc2C1=O;1;427;mbcd0016031;;Vitamin K3;classBCRPsub;smiles

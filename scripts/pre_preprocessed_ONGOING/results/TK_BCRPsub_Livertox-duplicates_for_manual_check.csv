@@ -1,0 +1,2 @@
+SAN_SMILES;y;ID;orig_ID;CAS;NAME;UNITS;smiles_source;ORIGINAL_SMILES;MOL_OBJECT;SMILES
+CN(C)CCCNc1ccc2ncn3c4ccc(O)cc4c(=O)c1c23;[0, 1];[127, 1483];[127, 1483];[nan, nan];['645810', 'mol_0415'];['classBCRPsub', 'classBCRPsub'];['SMILES', 'SMILES'];['CN(C)CCCNc1ccc2ncn3c4ccc(O)cc4c(=O)c1c23', 'CN(C)CCCNc1ccc2ncn3c4ccc(O)cc4c(=O)c1c23'];[<rdkit.Chem.rdchem.Mol object at 0x00000277D2E70510>, <rdkit.Chem.rdchem.Mol object at 0x00000277D2EBAC80>];['CN(C)CCCNc1ccc2ncn3c4ccc(O)cc4c(=O)c1c23', 'CN(C)CCCNc1ccc2ncn3c4ccc(O)cc4c(=O)c1c23']

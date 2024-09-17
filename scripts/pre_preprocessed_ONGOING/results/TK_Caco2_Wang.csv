@@ -1,0 +1,1076 @@
+SMILES;y;ID;orig_ID;CAS;NAME;UNITS;smiles_source
+C#CC#CC/C=C\CCCCC/C=C/C(=O)NCC(C)CC;-4.4299998;1022;A-12;;(2E,9Z)-N-(2-methylbutyl)pentadeca-2,9-diene-12,14-diynamide;logcm/s;smi
+C#CC#CC/C=C\CCCCCC(C)=O;-4.492425;674;D-1886;;Tetradec-(8Z)-ene-11,13-diyn-2-one (6);logcm/s;smi
+C#CC#CCCCC/C=C/C(=O)NCC(C)C;-3.80499995;[123, 675];['D-1888', 'A-3'];[nan, nan];['(2E)-N-Isobutylundeca-2-ene-8,10-diynamide (2) mw=231', '(2E)-N-isobutylundeca-2-ene-8,10-diynamide'];logcm/s;smi
+C#C[C@@]1(O)CC[C@@H]2[C@H]3CCC4=Cc5oncc5C[C@@]4(C)[C@@H]3CC[C@]21C;-4.561461;431;D-1401;;Danazol;logcm/s;smi
+C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=Cc5oncc5C[C@]4(C)[C@H]3CC[C@@]21C;-4.8400002;7;A-110;;danazol;logcm/s;smi
+C#Cc1cccc(Nc2ncnc3cc(OCCOC)c(OCCOC)cc23)c1;-4.4699998;1110;D-1425;;Erlotinib;logcm/s;smi
+C/C=C(/C)C(=O)O[C@@H]([C@@H](O)c1cc2ccc(=O)oc2cc1OC)C(C)(C)O;-4.8499289;671;D-1883;;Angelol-B;logcm/s;smi
+C/C=C(/C)C(=O)O[C@H](c1cc2ccc(=O)oc2cc1OC)[C@H](O)C(C)(C)O;-4.8123703;670;D-1882;;Angelol-A;logcm/s;smi
+C/C=C(\C)C(=O)O[C@H]1[C@@H](OC(C)=O)c2c(ccc3ccc(=O)oc23)OC1(C)C;-4.5799999;18;A-132;;d-praeruptorin;logcm/s;smi
+C/C=C/C#CCC/C=C\C=C\C(=O)NCC(C)C;-4.0;1181;D-1975;;(2E,4Z,8Z)-N-isobutyldodeca-2,4,10-triene-8 -ynamide (4) mw = 245;logcm/s;smi
+C/C=C/C/C=C/CCC(=O)[C@@H]1O[C@@H]1C(N)=O;-5.4224062;751;D-2067;;Cerulenin;logcm/s;smi
+C/C=C/c1cc(OC)c2c(c1)C(C)C(c1cc(OC)c(O)c(OC)c1)O2;-5.3400002;164;A-364;;neolignan smi02;logcm/s;smi
+C/C=C\C#C/C=C/C(O)CCCCCC(C)=O;-4.3099017;672;D-1884;;8-Hydroxy-pentadeca-(9E,13Z)-dien-11-yn-2-one (2);logcm/s;smi
+C/C=C\C#CC/C=C\CCCCCC(C)=O;-5.0;673;D-1885;;Pentadeca-(8Z,13Z)dien-11-yn-2-one (5);logcm/s;smi
+C/C=C\C#CCC/C=C\C=C\C(=O)NCC(C)C;-3.8599999;1;A-10;;(2E,4Z,8Z)-N-isobutyldodeca-2,4,10-triene-8 -ynamide;logcm/s;smi
+C/C=C\C=C/CC/C=C/C=C/C(=O)NCC(C)C;-4.2441254;392;C-946;;453-(2E,4E,8Z,10Z)-N-Isobutyldodeca-2,4,8,10-tetraenamide (5) mw=247;logcm/s;smi
+C/N=C(\NC#N)NCCSCc1[nH]cnc1C;-5.9000001;261;A-91;;cimetidine;logcm/s;smi
+C/N=C(\NC#N)NCCSCc1csc(N=C(N)N)n1;-5.7693943999999995;[616, 227];['D-1751', 'A-482'];[nan, nan];['Tiotidine', 'tiotidine'];logcm/s;smi
+C=C(C)C(COc1c2occc2cc2ccc(=O)oc12)OC(C)(C)C(O)COc1c2occc2cc2ccc(=O)oc12;-4.48;1266;D-2536;;Rivulobirin A;logcm/s;smi
+C=C(C)CNc1ccc(C(C)C(=O)O)cc1;-4.3400002;108;A-27;;alminoprofen;logcm/s;smi
+C=C(c1ccccc1)C1OCC(N)CO1;-4.9913998;339;C-1128;;879-(cis)-[2-(E-Phenylvinyl)-1,3-dioxan-5-yl]amine (6a);logcm/s;smi
+C=C(c1ccccc1)C1OCC(NC(=O)Cc2ccccc2)CO1;-5.0498786;342;C-1131;;883-(cis)-[2-(E-Phenylvinyl)-1,3-dioxan-5-yl]phenylacetamide (14a);logcm/s;smi
+C=C(c1ccccc1)[C@H]1OC[C@@H](N)[C@H](C)O1;-4.9880071;340;C-1129;;880-(2S,4S,5R)-[2-(E-Phenylvinyl)-4-methyl-1,3-dioxan-5-yl]amine (6b);logcm/s;smi
+C=C(c1ccccc1)[C@H]1OC[C@@H](NC(=O)Cc2ccccc2)[C@H](C)O1;-5.0503659;343;C-1132;;884-14b;logcm/s;smi
+C=C1C[C@@H]2[C@H](CC[C@]3(C)C(=O)CC[C@@H]23)[C@@]2(C)C=CC(=O)C=C12;-4.3299999;442;D-1427;;Exemestane;logcm/s;smi
+C=C1C[C@]23CC[C@H]4[C@@](C)(CCC[C@@]4(C)C(=O)OC4O[C@@H](CO)[C@H](O)[C@@H](O)[C@@H]4O)C2CC(O[C@H]2O[C@@H](CO)[C@H](O)C(O[C@H]4O[C@@H](CO)[C@H](O)[C@@H](O)[C@@H]4O)[C@@H]2O[C@H]2O[C@@H](CO)[C@H](O)[C@@H](O)[C@@H]2O)[C@H]1C3;-6.9593034;752;D-2070;;Rebaudioside A;logcm/s;smi
+C=C1NC(N)=Nc2c1ncn2COCCOC(=O)CC[C@@H](N)C(=O)O;-5.8099999;1024;A-136;;EACV;logcm/s;smi
+C=C1NC(N)=Nc2c1ncn2COCCOC(=O)[C@@H](C)N;-5.6900001;54;A-19;;AACV;logcm/s;smi
+C=C1NC(N)=Nc2c1ncn2COCCOC(=O)[C@H](N)C(C)C;-5.3499999;234;A-496;;VACV;logcm/s;smi
+C=C1NC(N)=Nc2c1ncn2COCCOC(=O)[C@H](N)CO;-5.3299999;200;A-436;;SACV;logcm/s;smi
+C=C1NC(N)=Nc2c1ncn2COCCOC(=O)[C@H](N)[C@H](C)CC;-5.6799998;106;A-267;;IACV;logcm/s;smi
+C=CC(N)=O;-4.5693183;1229;D-2284;;Acrylamide;logcm/s;smi
+C=CC1=C(C)/C(=C\C2=N/C(=C\c3[nH]c(/C=C4/NC(=O)C(C)=C4C=C)c(C)c3CCC(=O)O)C(CCC(=O)O)=C2C)NC1=O;-5.6290045;774;D-2128;;Biliverdin;logcm/s;smi
+C=CC1=C(C)/C(=C\c2[nH]c(Cc3[nH]c(/C=C4/NC(=O)C(C)=C4C=C)c(C)c3CCC(=O)NCCS(=O)(=O)O)c(CCC(=O)NCCS(=O)(=O)O)c2C)NC1=O;-6.0594678;773;D-2127;;Bilirubin ditaurate;logcm/s;smi
+C=CC1=C(C)/C(=C\c2[nH]c(Cc3[nH]c(/C=C4/NC(=O)C(C)=C4C=C)c(C)c3CCC(=O)O)c(CCC(=O)O)c2C)NC1=O;-6.1314831;772;D-2126;;Bilirubin;logcm/s;smi
+C=CCC(N)c1ccccc1-c1noc2ccccc12;-4.8699999;952;D-2479;;Org 34167;logcm/s;smi
+C=CCN1CC[C@]23c4c5ccc(O)c4O[C@H]2C(=O)CC[C@@]3(O)[C@H]1C5;-4.6208858500000005;[1051, 587];['D-1699', 'A-355'];[nan, nan];['Naloxone', 'naloxone'];logcm/s;smi
+C=CCNC(=O)C(=O)C(CCC)NC(=O)C1C2C(CN1C(=O)C(NC(=O)NC(C(=O)C(C)C)C(C)C)C(C)(C)C)C2(C)C;-5.29;1244;D-2378;;S2;logcm/s;smi
+C=CCNC(=O)C(=O)C(CCC)NC(=O)C1CC2CN1C(=O)C(C1CCCCC1)NC(=O)Cc1cccc(c1)OCCC(C)(C)O2;-5.0300002;1243;D-2377;;S1;logcm/s;smi
+C=CCO[C@H](CCC(C)(C)O)[C@](C)(O)[C@H]1CC[C@@]2(O)C3=CC(=O)[C@@H]4C[C@@H](O)[C@@H](O)C[C@@]4(C)C3CC[C@]12C;-4.6900001;739;D-2039;;20E 22-allyl ether (7);logcm/s;smi
+C=CCOc1ccccc1OCC(CNC(C)C)OC(=O)C1CC1;-4.1920457;588;D-1700;;Oxprenolol ester;logcm/s;smi
+C=CCOc1ccccc1OCC(O)CNC(C)C;-4.315834533333333;[1083, 172, 1126];['B-562', 'A-386', 'D-1530'];[nan, nan, nan];['oxprenolol', 'Oxaprenolol', 'Oxprenolol'];logcm/s;smi
+C=CCOc1ccccc1OC[C@@H](CNC(C)C)OC(=O)C1CC1;-4.5450001;173;A-387;;oxprenolol ester;logcm/s;smi
+C=CC[C@@H]1/C=C(\C)C[C@H](C)C[C@H](OC)[C@H]2O[C@@](O)(C(=O)C(=O)N3CCCC[C@H]3C(=O)O[C@H](/C(C)=C/[C@@H]3CC[C@@H](O)[C@H](OC)C3)[C@H](C)[C@@H](O)CC1=O)[C@H](C)C[C@@H]2OC;-5.1500001;537;D-1599;;Tacrolimus;logcm/s;smi
+C=CCc1cc(OC)c(OC(C)C(O)c2cc(O)cc(OC)c2)c(OC)c1;-4.6500001;1054;A-372;;neolignan smi10;logcm/s;smi
+C=CCc1cc(OC)c(OC(C)C(O)c2cc(OC)c(OC)c(OC)c2)c(OC)c1;-4.5500002;167;A-370;;neolignan smi08;logcm/s;smi
+C=CCc1cc(OC)c(OC(C)C(O)c2ccc(O)c(OC)c2)c(OC)c1;-4.5100002;168;A-371;;neolignan smi09;logcm/s;smi
+C=CCc1cc(OC)c(OC(C)C(O)c2ccc(OC)c(OC)c2)c(OC)c1;-4.6199999;1053;A-369;;neolignan smi07;logcm/s;smi
+C=CCc1cc(OC)c(OC(C)C(OC(C)=O)c2ccc(OC)c(OC)c2)c(OC)c1;-4.5900002;1052;A-368;;neolignan smi06;logcm/s;smi
+C=CCc1cc(OC)c(OC(C)Cc2cc(OC)c(OC)c(OC)c2)c(OC)c1;-4.73;165;A-367;;neolignan smi05;logcm/s;smi
+C=CCc1ccccc1OCC(CNC(C)C)OC(=O)C1CC1;-4.1507826;585;D-1691;;Alprenolol ester;logcm/s;smi
+C=CCc1ccccc1OCC(O)CNC(C)C;-4.10392985;[396, 292];['D-1344', 'B-556'];[nan, nan];Alprenolol;logcm/s;smi
+C=C[C@@H]1CN2CC[C@@H]1C[C@H]2[C@H](O)c1ccnc2ccc(OC)cc12;-4.5008955;532;D-1587;;Spironolactone;logcm/s;smi
+C=C[C@H]1CN2CC[C@H]1C[C@@H]2[C@@H](O)c1ccnc2ccc(OC)cc12;-4.6900001;196;A-427;;quinidine;logcm/s;smi
+C=C[C@H]1C[N@@]2CC[C@H]1C[C@@H]2C(O)c1ccnc2ccc(OC)cc12;-4.6799998;520;D-1560;;Quinidine;logcm/s;smi
+CC#CC#CCC/C=C\C=C\C(=O)NCC(C)CC;-3.9512346999999997;[715, 254];['A-7', 'D-1978'];[nan, nan];['(2E,4Z)-N-(2-methylbutyl)dodeca-2,4-diene-8,10-diynamide (8) mw= 257', '(2E,4Z)-N-(2-methylbutyl)dodeca-2,4-diene-8,10-diynamide'];logcm/s;smi
+CC#CC#CCCCC/C=C/C(=O)NCC(C)CC;-4.22978685;[716, 60];['A-2', 'D-1979'];[nan, nan];['(2E)-N-(2-methylbutyl)dodeca-2-ene-8,10-diynamide (9) mw = 259', '(2E)-N-(2-methylbutyl)dodeca-2-ene-8,10-diynamide'];logcm/s;smi
+CC#Cc1cn([C@@H]2O[C@H](CO)[C@@H](O)[C@@H]2O)c(=O)[nH]c1=O;-5.1687455;492;D-1513;;Netivudine (882C87);logcm/s;smi
+CC(=O)C(NC(=O)CN)c1ccc(O)cc1;-5.2800002;57;A-195;;glycine-valine acyclovir;logcm/s;smi
+CC(=O)CC(c1ccccc1)c1c(O)c2ccccc2oc1=O;-4.52729535;[554, 243];['D-1632', 'A-508'];[nan, nan];['Warfarin', 'warfarin'];logcm/s;smi
+CC(=O)CCCCn1c(=O)c2c(ncn2C)n(C)c1=O;-4.1799998;505;D-1535;;Pentoxifylline;logcm/s;smi
+CC(=O)N(C)[C@@H](Cc1ccccc1)C(=O)N(C)[C@H](Cc1ccccc1)C(=O)N(C)[C@@H](Cc1ccccc1)C(N)=O;-4.6937804;632;D-1781;;Ac-(NMe-D-phe)3-NH2;logcm/s;smi
+CC(=O)N1CCN(c2ccc(OC[C@@H]3CO[C@@](Cn4ccnc4)(c4ccc(Cl)cc4Cl)O3)cc2)CC1;-4.7538648;1117;D-1473;;Ketoconazole;logcm/s;smi
+CC(=O)N1CCN(c2ccc(OC[C@H]3CO[C@](Cn4ccnc4)(c4ccc(Cl)cc4Cl)O3)cc2)CC1;-4.9299998;113;A-283;;ketoconazole;logcm/s;smi
+CC(=O)NC(=O)[C@@H](N)Cc1c[nH]c2ccccc12;-5.6199999;1050;A-353;;N-acetyl-tryptophanamide;logcm/s;smi
+CC(=O)NC(C(=O)NC1C(=O)N2C(C(=O)O)=C(C)CSC12)c1ccccc1;-6.6300001;259;A-81;;cephalexin acetylated;logcm/s;smi
+CC(=O)NC(Cc1c[nH]c2ccccc12)C(=O)NC(C)C(=O)NCC(=O)NCC(=O)NC(CC(=O)O)C(=O)NC(C)C(N)=O;-7.4981046;764;D-2107;;Ac-Trp-Ala-Gly-Gly-Asp-Ala-NH2;logcm/s;smi
+CC(=O)NC(O)CNc1ccc(C(C)=O)cc1;-5.2199998;867;D-2312;;OXe;logcm/s;smi
+CC(=O)NCC(=O)NCCc1ccccc1;-4.6597776;1140;D-1666;;N-Acetylglycine Phenethylamide (7);logcm/s;smi
+CC(=O)NCC(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](C)C(N)=O;-6.5900002;765;D-2108;;Ac-Gly-Asn-Ala-NH2;logcm/s;smi
+CC(=O)NCC(=O)N[C@@H](CCCCN)C(=O)N[C@@H](C)C(N)=O;-7.0100002;766;D-2110;;Ac-Gly-Lys-Ala-NH2;logcm/s;smi
+CC(=O)NCC1CN(S(=O)(=O)c2ccc(C)cc2)C(=O)O1;-4.7199998;870;D-2315;;OXo;logcm/s;smi
+CC(=O)NCC1CN(c2cc(F)c(-c3ccncc3)c(F)c2)C(=O)O1;-4.29;636;D-1791;;PNU-93936A;logcm/s;smi
+CC(=O)NCC1CN(c2ccc(C(C)=O)cc2)C(=O)O1;-4.5900002;863;D-2308;;Oxazolidin-2-one (OXa);logcm/s;smi
+CC(=O)NCC1CN(c2ccc(C(C)=O)cc2)S(=O)N1C;-5.1199999;868;D-2313;;OXf;logcm/s;smi
+CC(=O)NCC1CN(c2ccc(C(C)O)cc2)C(=O)N1;-5.6999998;869;D-2314;;OXh;logcm/s;smi
+CC(=O)NC[C@H]1CN(c2ccc(-c3ccc(C#N)nc3)c(F)c2)C(=O)O1;-4.3783755;642;D-1805;;PNU-184421;logcm/s;smi
+CC(=O)NC[C@H]1CN(c2ccc(-c3nnc(CC/C(C)=N\O)s3)c(F)c2)C(=O)O1;-5.250906;644;D-1812;;PNU-179962;logcm/s;smi
+CC(=O)NC[C@H]1CN(c2ccc(N3CCOCC3)c(F)c2)C(=O)O1;-4.6788902;637;D-1792;;PNU-100766;logcm/s;smi
+CC(=O)N[C@@H](C(=O)NCCc1ccccc1)C(C)C;-4.4610906;1141;D-1668;;N-Acetyl-D-valine Phenethylamide (9a);logcm/s;smi
+CC(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](C)C(=O)NCC(=O)NCC(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](C)C(N)=O;-7.29;1254;D-2459;;Acetyl-Trp-Ala-Gly-Gly-Asn-Ala-Amide;logcm/s;smi
+CC(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](C)C(=O)NCC(=O)NCC(=O)N[C@@H](CCCCN)C(=O)N[C@@H](C)C(N)=O;-7.3099999;872;D-2318;;Ac-Trp-Ala-Gly-Gly-Lys-Ala-NH2;logcm/s;smi
+CC(=O)N[C@@H](Cc1ccccc1)C(=O)N(C)[C@H](Cc1ccccc1)C(=O)N(C)[C@@H](Cc1ccccc1)C(N)=O;-4.9229274;631;D-1780;;Ac-D-phe-(NMe-D-phe)2-NH2 {[14C]-Acf(N-Mef)2NH2 };logcm/s;smi
+CC(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@H](Cc1ccccc1)C(=O)N(C)[C@@H](Cc1ccccc1)C(N)=O;-5.3484769;630;D-1779;;Ac-D-phe2-(NMe-D-phe)-NH2;logcm/s;smi
+CC(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@H](Cc1ccccc1)C(=O)N[C@@H](Cc1ccccc1)C(N)=O;-5.7648687;1152;D-1778;;Ac-D-phe3-NH2;logcm/s;smi
+CC(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@H](Cc1ccccc1)C(N)=O;-5.6994848;629;D-1777;;Ac-D-phe2-NH2;logcm/s;smi
+CC(=O)N[C@@H](Cc1ccccc1)C(N)=O;-5.10009;628;D-1776;;Ac-D-phe-NH2;logcm/s;smi
+CC(=O)N[C@H](C)C(=O)NCCc1ccccc1;-4.6095328;571;D-1667;;N-Acetyl-D-alanine Phenethylamide (8);logcm/s;smi
+CC(=O)N[C@H](CC(C)C)C(=O)NCCc1ccccc1;-4.5132465;572;D-1669;;N-Acetyl-D-leucine Phenethylamide (10);logcm/s;smi
+CC(=O)N[C@H](CC1CCCCC1)C(=O)NCCc1ccccc1;-4.3517656;574;D-1671;;N-Acetyl-D-cyclohexylalanine Phenethylamide (12);logcm/s;smi
+CC(=O)N[C@H](Cc1ccccc1)C(=O)N(C)[C@H](Cc1ccccc1)C(=O)N[C@H](Cc1ccccc1)C(N)=O;-5.0900002;942;D-2467;;;logcm/s;smi
+CC(=O)N[C@H](Cc1ccccc1)C(=O)NCCc1ccccc1;-4.4210458;573;D-1670;;N-Acetyl-D-phenylalanine Phenethylamide (11a);logcm/s;smi
+CC(=O)Nc1ccc(O)cc1;-4.4400001;75;A-23;;acetaminophen;logcm/s;smi
+CC(=O)Nc1ccc(OCC(O)CNC(C)C)cc1;-5.655210333333334;[290, 370, 510];['B-554', 'D-1547', 'C-751'];[nan, nan, nan];['133-practolol', 'Practolol'];logcm/s;smi
+CC(=O)OC(C)OC(=O)N1CCC(N2CCN(CC(=O)c3ccc(OCC(=O)OC4CCOCC4)cc3)C(=O)C2)CC1;-4.5100002;30;A-151;;EF5264;logcm/s;smi
+CC(=O)[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3CC[C@]12C;-4.4525001;[515, 188];['A-415', 'D-1554'];[nan, nan];['Progesterone', 'progesterone'];logcm/s;smi
+CC(=O)c1ccc(N2CC(CN)OC2=O)cc1;-4.8499999;865;D-2310;;OXc;logcm/s;smi
+CC(=O)c1ccc(N2CC(CO)OC2=O)cc1;-4.1799998;864;D-2309;;OXb;logcm/s;smi
+CC(=O)c1ccc2c(c1)N1C(=O)OCC1CC2;-4.0100002;871;D-2317;;OXn;logcm/s;smi
+CC(=O)c1cccc(NC(=O)N[C@@H]2CCCC[C@H]2CN2CCC[C@@H](Cc3ccc(F)cc3)C2)c1;-4.9586072;302;B-579;;;logcm/s;smi
+CC(=O)c1sc(NC(=O)N[C@@H]2CCCC[C@H]2CN2CCC[C@@H](Cc3ccc(F)cc3)C2)nc1C;-5.221849;301;B-577;;;logcm/s;smi
+CC(=S)NC[C@H]1CN(c2ccc(-c3nnc(CN)s3)c(F)c2)C(=O)O1;-4.8219547;1156;D-1806;;PNU-182347;logcm/s;smi
+CC(=S)NC[C@H]1CN(c2ccc(-c3nnc(CNS(C)(=O)=O)s3)c(F)c2)C(=O)O1;-5.619894;1159;D-1816;;PNU-241028;logcm/s;smi
+CC(=S)NC[C@H]1CN(c2ccc(N3CCCS(=O)(=O)CC3)c(F)c2)C(=O)O1;-4.6391363;643;D-1809;;PNU-184470;logcm/s;smi
+CC(=S)NC[C@H]1CN(c2ccc(N3CCCS(=O)CC3)c(F)c2)C(=O)O1;-5.3386211;638;D-1796;;PNU-184435;logcm/s;smi
+CC(C(=O)O)c1ccc(-c2ccccc2)c(F)c1;-4.608934533333334;[50, 1114, 333];['A-183', 'D-1440', 'C-1058'];[nan, nan, nan];['Flurbiprofen', 'flurbiprofen', '746-Flurbiprofen'];logcm/s;smi
+CC(C(=O)O)c1ccc(C(=O)c2ccccc2)s1;-4.4099998;[544, 223];['D-1613', 'A-479'];[nan, nan];['Tiaprofenic Acid', 'tiaprofenic acid'];logcm/s;smi
+CC(C(=O)O)c1ccc(CC2CCCC2=O)cc1;-4.3499999;480;D-1495;;Loxoprofen;logcm/s;smi
+CC(C(=O)O)c1ccc2c(c1)CC(=O)c1ccccc1S2;-4.4000001;[556, 246];['D-1635', 'A-512'];[nan, nan];['zaltoprofen', 'Zaltoprofen'];logcm/s;smi
+CC(C(=O)O)c1ccc2c(c1)Cc1cccnc1O2;-4.3899999;513;D-1550;;Pranoprofen, pyranoprofen;logcm/s;smi
+CC(C(=O)O)c1ccc2c(c1)N(CCCN1CCCN(C3CC(=O)N(C)C(=O)N3C)CC1)c1ccccc1CO2;-5.7199998;964;D-2514;;13e;logcm/s;smi
+CC(C(=O)O)c1ccc2c(c1)N(CCCN1CCCN(c3cc(=O)n(C)c(=O)n3C)CC1)c1ccccc1S2;-5.1599998;1224;D-2227;;;logcm/s;smi
+CC(C(=O)O)c1cccc(C(=O)c2ccccc2)c1;-4.482730066666666;[114, 1118, 1095];['C-679', 'A-284', 'D-1474'];[nan, nan, nan];['025-Ketoprofen', 'ketoprofen', 'Ketoprofen'];logcm/s;smi
+CC(C(=O)O)c1cccc(Oc2ccccc2)c1;-4.94846055;[357, 447];['D-1437', 'C-1290'];[nan, nan];['Fenoprofen', '745-Fenoprofen'];logcm/s;smi
+CC(C)(C(=O)O)c1ccc(C(O)CCCN2CCC(C(O)(c3ccccc3)c3ccccc3)CC2)cc1;-6.105;[48, 47];['A-177', 'A-176'];[nan, nan];['fexofenadine', 'fexofenadine hydrochloride'];logcm/s;smi
+CC(C)(C)C(=O)OCOC(=O)N1CCC(N2CCN(CC(=O)c3ccc(OCC(=O)OC4CCCCC4)cc3)C(=O)C2)CC1;-4.4400001;35;A-158;;EF5292;logcm/s;smi
+CC(C)(C)CC(=O)Nc1c(F)cc(C(=O)Nc2nccs2)cc1F;-4.0599999;255;A-73;;carboxamido 28;logcm/s;smi
+CC(C)(C)NC(=O)C1CC2CCCCC2CN1CC(O)C(Cc1ccccc1)NC(=O)C(CC(N)=O)NC(=O)c1ccc2ccccc2n1;-6.2800002;527;D-1579;;Saquinavir;logcm/s;smi
+CC(C)(C)NC(=O)[C@@H]1CC2CCCCC2CN1CC(OC(=O)CCCCC1SCC2NC(=O)NC21)[C@H](Cc1ccccc1)NC(=O)[C@H](CC(N)=O)NC(=O)c1ccc2ccccc2n1;-6.4094677;707;D-1954;;Biotin-Saquinavir;logcm/s;smi
+CC(C)(C)NC(=O)[C@@H]1CN(Cc2cccnc2)CCN1C[C@@H](O)C[C@@H](Cc1ccccc1)C(=O)N[C@H]1c2ccccc2C[C@H]1O;-5.6900001;466;D-1466;;Indinavir;logcm/s;smi
+CC(C)(C)NC(=O)[C@@H]1C[C@@H]2CCCC[C@@H]2CN1C[C@@H](O)[C@H](Cc1ccccc1)NC(=O)[C@H](CC(N)=O)NC(=O)c1ccc2ccccc2n1;-6.2600002;1068;A-438;;saquinavir;logcm/s;smi
+CC(C)(C)NC(=O)[C@H]1C[C@H]2CCCC[C@H]2CN1C[C@@H](O)[C@H](Cc1ccccc1)NC(=O)[C@@H](CC(N)=O)NC(=O)c1ccc2ccccc2n1;-5.8616972;1097;C-794;;187-Saquinavir;logcm/s;smi
+CC(C)(C)NCC(O)COc1ccc(NC(=O)NC2CCCCC2)cc1;-4.9684534;1132;D-1600;;Talinolol;logcm/s;smi
+CC(C)(C)NCC(O)COc1cccc2c1CC(O)C(O)C2;-5.4109998;158;A-354;;nadalol;logcm/s;smi
+CC(C)(C)NC[C@@H](COc1nsnc1N1CCOCC1)OC(=O)C1CC1;-4.45792675;[226, 589];['A-481', 'D-1702'];[nan, nan];['Timolol ester', 'timolol ester'];logcm/s;smi
+CC(C)(C)NC[C@H](O)COc1nsnc1N1CCOCC1;-4.7660073999999994;[225, 1135];['A-480', 'D-1614'];[nan, nan];['Timolol', 'timolol'];logcm/s;smi
+CC(C)(C)S(=O)(=O)C[C@H](Cc1ccccc1)C(=O)N[C@@H](Cc1cnc[nH]1)C(=O)N[C@H](CC1CCCCC1)[C@@H](O)[C@H](O)C1CC1;-6.1300907;522;D-1565;;Remikiren (Ro 42-5892);logcm/s;smi
+CC(C)(C)c1ccc(C(O)CCCN2CCC(C(O)(c3ccccc3)c3ccccc3)CC2)cc1;-5.2600002;1134;D-1608;;Terfenadine;logcm/s;smi
+CC(C)(C)c1ccc(NC(=O)c2ccnn2CCc2ccncc2)cc1;-5.1295056;819;D-2202;;N-(4-tert-Butylphenyl)-1-(2-(pyridin-4-yl)ethyl)-1H-pyrazole-5-carboxamide (23);logcm/s;smi
+CC(C)(C)c1cccc(NC(=O)c2nscc2NCc2ccncc2)c1;-5.2516832;825;D-2209;;N-(3-tertbutylphenyl)-4-(pyridin-4-ylmethylamino)isothiazole-3-carboxamide (11);logcm/s;smi
+CC(C)(C)c1nn2ccccc2c1Cc1ccc(C(=O)N[C@@H]2CCOC[C@@H]2C(=O)NO)cc1;-5.3665314;321;B-641;;;logcm/s;smi
+CC(C)(NC(=O)c1cc2ccccc2s1)C(=O)N[C@H](Cc1ccccc1)C(=O)NCCCN1CCOCC1;-5.3289509;1189;D-2025;;10b;logcm/s;smi
+CC(C)(O)CC[C@@H](O)[C@](C)(O)[C@H]1CC[C@@]2(O)C3=CC(=O)[C@@H]4C[C@@H](O)[C@@H](O)C[C@@]4(C)C3CC[C@]12C;-4.79;742;D-2045;;20-Hydroxyecdysone (25);logcm/s;smi
+CC(C)=CC(=O)O[C@@H]1Cc2cc3ccc(=O)oc3cc2OC1(C)C;-4.9204097;759;D-2090;;Decursinol angelate (DA);logcm/s;smi
+CC(C)=CCC[C@](C)(O[C@@H]1O[C@@H](CO)[C@@H](O)[C@H](O)[C@H]1O)[C@H]1CC[C@]2(C)[C@@H]1[C@H](O)C[C@@H]1[C@@]3(C)CC[C@H](O)C(C)(C)[C@@H]3C(O[C@@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3O)C[C@]12C;-6.5883503;1204;D-2094;;Ginsenoside Rg1 (Rg1);logcm/s;smi
+CC(C)C(=O)Nc1ccc(N(O)O)c(C(F)(F)F)c1;-4.321653400000001;[331, 452];['D-1445', 'C-1032'];[nan, nan];['694-Flutamide (FLT)', 'Flutamide (FLT)'];logcm/s;smi
+CC(C)C(N)C(=O)NC(Cc1ccccc1)C(=O)OC[C@@H]1O[C@H](n2cc(F)c(=O)[nH]c2=O)C[C@H]1O;-6.080461;658;D-1845;;5'-L-valyl-L-phenylalanyl-floxuridine;logcm/s;smi
+CC(C)C(N)C(=O)OCCOCn1cnc2c(=O)[nH]c(N)nc21;-5.669776;1183;D-1995;;Val-ACV;logcm/s;smi
+CC(C)C(N)C(=O)OC[C@@H]1O[C@H](n2cc(F)c(=O)[nH]c2=O)C[C@H]1O;-5.29;921;D-2409;;5'-L-Val-FUdR;logcm/s;smi
+CC(C)C(NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)N1CCOCC1)C(C)C)C(=O)C(F)(F)C(F)(F)F;-4.5178499;651;D-1824;;EI analogue 102 (MDL 102,111);logcm/s;smi
+CC(C)C(NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)c1ccc(C(=O)N2CCOCC2)cc1)C(C)C)C(=O)C(F)(F)C(F)(F)F;-5.098455;649;D-1822;;EI analogue 101 (MDL 101,146);logcm/s;smi
+CC(C)CC(N)C(=O)NCC(=O)OC[C@@H]1O[C@H](n2cc(F)c(=O)[nH]c2=O)C[C@H]1O;-5.4206805;659;D-1846;;5'-L-leucyl-L-glycyl-floxuridine;logcm/s;smi
+CC(C)CC(NC(=O)CN)C(=O)OC[C@@H]1O[C@H](n2cc(F)c(=O)[nH]c2=O)C[C@H]1O;-5.2006745;1163;D-1847;;5'-L-glycyl-L-leucyl-floxuridine;logcm/s;smi
+CC(C)CC[C@@H](O)[C@](C)(O)[C@H]1CC[C@@]2(O)C3=CC(=O)[C@@H]4C[C@@H](O)[C@@H](O)C[C@@]4(C)C3CC[C@]12C;-4.7199998;1197;D-2046;;Ponasterone A (26);logcm/s;smi
+CC(C)CC[C@@H](O)[C@](C)(O)[C@H]1CC[C@@]2(O)C3=CC(=O)[C@]4(O)C[C@@H](O)[C@@H](O)C[C@@]4(C)C3[C@@H](O)C[C@]12C;-4.9000001;743;D-2047;;Muristerone A (28);logcm/s;smi
+CC(C)CCn1c(=O)c(C2=NS(=O)(=O)c3ccccc3N2)c(O)c2cccn21;-4.9593034;857;D-2291;;NS5B inhibitor 2;logcm/s;smi
+CC(C)CNC(=O)[C@H](C)NC[C@H](Cc1ccccc1)NC(=O)c1cc(C(=O)N[C@H](C)c2ccc(F)cc2)cc(N(C)S(C)(=O)=O)c1;-5.0;309;B-622;;4b;logcm/s;smi
+CC(C)CNC(=O)[C@H](C)NC[C@H](Cc1ccccc1)NC(=O)c1cc(CCC2C[C@@H]2C)cc(N(C)S(C)(=O)=O)c1;-4.6197886;308;B-620;;;logcm/s;smi
+CC(C)COC(=O)N1CCC(CN(C2Cc3cc(C#N)ccc3N(Cc3cncn3C)C2)S(=O)(=O)c2ccccn2)CC1;-5.1224694;1172;D-1905;;PB-102;logcm/s;smi
+CC(C)C[C@H](O)[C@H](O)[C@H](CC1CCCCC1)NC(=O)CCCCCc1ccccc1;-5.1500001;916;D-2401;;V;logcm/s;smi
+CC(C)C[C@H](O)[C@H](O)[C@H](CC1CCCCC1)NC(=O)OC(C)(C)C;-4.1799998;1246;D-2398;;II;logcm/s;smi
+CC(C)C[C@H]1C(=O)N2CCC[C@H]2[C@]2(O)O[C@](NC(=O)[C@@H]3C=C4c5cccc6[nH]c(Br)c(c56)C[C@H]4N(C)C3)(C(C)C)C(=O)N12;-5.845;[249, 409];['D-1368', 'A-58'];[nan, nan];['bromocriptine', 'Bromocriptine'];logcm/s;smi
+CC(C)C[C@H]1NC(=O)[C@@H](CC2CCCCC2)NC(=O)CNC(=O)[C@@H](C)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)/C=C\c2ccccc2OC1=O;-6.4699998;252;A-65;;CA-Leu-Enk;logcm/s;smi
+CC(C)C[C@H]1NC(=O)[C@@H](Cc2ccccc2)NC(=O)CNC(=O)[C@@H](C)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)/C=C\c2ccccc2OC1=O;-5.8800001;251;A-62;;CA-DADLE;logcm/s;smi
+CC(C)Cc1ccc(C(C)C(=O)NO)cc1;-4.6300001;[464, 107, 1004];['A-269', 'D-1463', 'D-2608'];[nan, nan, nan];['ibuproxam', 'Ibuproxam'];logcm/s;smi
+CC(C)Cc1ccc(C(C)C(=O)O)cc1;-4.3116877;[1037, 463];['D-1462', 'A-268'];[nan, nan];['ibuprofen', 'Ibuprophen'];logcm/s;smi
+CC(C)NCC(COc1ccc(CCOCC2CC2)cc1)OC(=O)C1CC1;-4.1300812;586;D-1692;;Betaxolol ester;logcm/s;smi
+CC(C)NCC(COc1cccc2ccccc12)OC(=O)C1CC1;-4.1608586;1147;D-1701;;Propranolol ester;logcm/s;smi
+CC(C)NCC(O)COc1ccc(CCOCC2CC2)cc1;-4.3156309;405;D-1363;;Betaxolol;logcm/s;smi
+CC(C)NCC(O)COc1ccc(COCCOC(C)C)cc1;-4.7600002;407;D-1365;;Bisoprolol;logcm/s;smi
+CC(C)NCC(O)COc1ccc(NC=O)cc1;-5.4279842;621;D-1761;;H 95/71;logcm/s;smi
+CC(C)NCC(O)COc1cccc2[nH]ccc12;-4.5624337;[508, 1061];['D-1542', 'A-399'];[nan, nan];['pindolol', 'Pindolol'];logcm/s;smi
+CC(C)NCC(O)COc1cccc2ccccc12;-4.52197335;[307, 190];['A-417', 'B-618'];[nan, nan];['Propranolol', 'propranolol'];logcm/s;smi
+CC(C)NCC(O)c1ccc(NS(C)(=O)=O)cc1;-5.5589170333333335;[352, 530, 206];['A-448', 'D-1585', 'C-1238'];[nan, nan, nan];['sotalol', 'Sotalol', '301-Sotalol HCl'];logcm/s;smi
+CC(C)NC[C@@H](O)COc1ccc(CCOCC2CC2)cc1;-4.8099999;1073;A-52;;betazolol;logcm/s;smi
+CC(C)NC[C@H](COc1ccc(CCOCC2CC2)cc1)OC(=O)C1CC1;-4.52;1074;A-53;;betazolol ester;logcm/s;smi
+CC(C)NC[C@H](COc1cccc2ccccc12)OC(=O)C1CC1;-4.5100002;191;A-418;;propranolol ester;logcm/s;smi
+CC(C)NS(=O)(=O)n1c(N)nc2ccc(C(C(N)=O)c3cc(F)ccc3F)cc21;-4.5388007;650;D-1823;;;logcm/s;smi
+CC(C)NS(=O)(=O)n1c(N)nc2ccc(C(C(N)=O)c3cccc(F)c3)cc21;-4.3312736;1161;D-1825;;;logcm/s;smi
+CC(C)OC(=O)[C@H](Cc1ccc(OC(=O)N(C)C)cc1)NC(=O)[C@H]1N(S(=O)(=O)c2cnn(C)c2)CSC1(C)C;-5.1700001;239;A-503;;VLA-4 antagonist 3;logcm/s;smi
+CC(C)S(=O)(=O)n1c(N)nc2ccc(/C(=C/C(N)=O)c3c(F)c(F)c(F)c(F)c3F)cc21;-4.1999998;889;D-2350;;E15;logcm/s;smi
+CC(C)S(=O)(=O)n1c(N)nc2ccc(/C(=C/C(N)=O)c3c(F)c(F)cc(F)c3F)cc21;-4.1999998;141;A-323;;LY366659;logcm/s;smi
+CC(C)S(=O)(=O)n1c(N)nc2ccc(/C(=C/C(N)=O)c3cc(F)c(F)c(F)c3)cc21;-4.3299999;891;D-2352;;E17;logcm/s;smi
+CC(C)S(=O)(=O)n1c(N)nc2ccc(/C(=C/C(N)=O)c3cc(F)cc(F)c3)cc21;-4.2399998;[888, 140];['A-322', 'D-2349'];[nan, nan];['E14', 'LY366572'];logcm/s;smi
+CC(C)S(=O)(=O)n1c(N)nc2ccc(/C(=C/C(N)=O)c3cc(F)ccc3F)cc21;-4.46;[131, 1236];['A-312', 'D-2340'];[nan, nan];['LY354400', 'E05'];logcm/s;smi
+CC(C)S(=O)(=O)n1c(N)nc2ccc(/C(=C/C(N)=O)c3ccc(F)c(F)c3)cc21;-4.3600001;[145, 892];['A-328', 'D-2353'];[nan, nan];['E18', 'LY368227'];logcm/s;smi
+CC(C)S(=O)(=O)n1c(N)nc2ccc(/C(=C/C(N)=O)c3ccc(F)c(F)c3F)cc21;-4.3299999;144;A-326;;LY366856;logcm/s;smi
+CC(C)S(=O)(=O)n1c(N)nc2ccc(/C(=C/C(N)=O)c3ccc(F)cc3)cc21;-4.3299999;[880, 1045];['D-2338', 'A-308'];[nan, nan];['E03', 'LY341904'];logcm/s;smi
+CC(C)S(=O)(=O)n1c(N)nc2ccc(/C(=C/C(N)=O)c3ccc(F)cc3F)cc21;-4.3699999;[146, 1238];['A-329', 'D-2354'];[nan, nan];['LY368228', 'E19'];logcm/s;smi
+CC(C)S(=O)(=O)n1c(N)nc2ccc(/C(=C/C(N)=O)c3cccc(F)c3)cc21;-4.2733332666666675;[128, 881, 890];['D-2339', 'D-2351', 'A-309'];[nan, nan, nan];['LY341908', 'E04', 'E16'];logcm/s;smi
+CC(C)S(=O)(=O)n1c(N)nc2ccc(/C(=C/C(N)=O)c3cccc(F)c3F)cc21;-4.329999900000001;[136, 885];['D-2346', 'A-317'];[nan, nan];['LY362683', 'E11'];logcm/s;smi
+CC(C)S(=O)(=O)n1c(N)nc2ccc(/C(=C/C(N)=O)c3ccccc3)cc21;-4.3600001;[879, 127];['D-2337', 'A-307'];[nan, nan];['LY153186', 'E02'];logcm/s;smi
+CC(C)S(=O)(=O)n1c(N)nc2ccc(/C(=C/C(N)=O)c3ccccc3F)cc21;-4.54;142;A-324;;LY366799;logcm/s;smi
+CC(C)S(=O)(=O)n1c(N)nc2ccc(/C(=N/O)c3ccccc3)cc21;-3.8699999;[878, 126];['A-306', 'D-2336'];[nan, nan];['Enviroxime (LY122772)', 'LY122772'];logcm/s;smi
+CC(C)[C@@H](C(=O)N[C@H](C)Cc1ccc(O)c(C(C)(C)C)c1)N(C)C(=O)[C@@H](N)Cc1ccccc1;-4.9186072;841;D-2236;;17d;logcm/s;smi
+CC(C)[C@H](N)C(=O)OCCOCn1cnc2c(=O)nc(N)[nH]c21;-5.6791361333333334;[306, 618, 551];['D-1628', 'B-600', 'D-1755'];[nan, nan, nan];['Valacyclovir', 'Valaciclovir'];logcm/s;smi
+CC(C)[C@H](N)C(=O)OC[C@@H]1O[C@H](n2cc(F)c(=O)[nH]c2=O)C[C@H]1O;-6.0100002;922;D-2412;;5'-L-Leu-FUdR;logcm/s;smi
+CC(C)[C@H](N)C(=O)OC[C@H]1O[C@@H](n2ccc(O)nc2=O)[C@@H](O)[C@@H]1O;-5.23;874;D-2321;;5'-L-valyl-cytarabine (2);logcm/s;smi
+CC(C)[C@H](NC(=O)CCN(C)C)c1cc(Cl)ccc1N1CCN(C(=O)[C@H](C)Cc2ccc(Cl)cc2)CC1;-5.0478787;813;D-2191;;12d;logcm/s;smi
+CC(C)[C@H](NC(=O)CCN(C)C)c1cccc(F)c1N1CCN(C(=O)[C@H](C)Cc2ccc(Cl)cc2)CC1;-5.0;808;D-2182;;10d;logcm/s;smi
+CC(C)[C@H](NC(=O)[C@H](OCc1ccccc1)[C@H](O)[C@@H](O)[C@@H](OCc1ccccc1)C(=O)N[C@H]1c2ccccc2C[C@H]1O)C(=O)NCC(F)(F)F;-5.54;956;D-2485;;21e;logcm/s;smi
+CC(C)[C@H](NC(=O)[C@H](OCc1ccccc1)[C@H](O)[C@@H](O)[C@@H](OCc1ccccc1)C(=O)N[C@H]1c2ccccc2C[C@H]1O)C(=O)NCCF;-5.8000002;954;D-2483;;21d;logcm/s;smi
+CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)O;-5.3099999;404;D-1357;;Atorvastatin;logcm/s;smi
+CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@H](O)C[C@H](O)CC(=O)O;-5.309804;391;C-907;;403-Atorvastatin;logcm/s;smi
+CC(C)c1ccc(NC(=O)c2ccnn2CCc2ccncc2)cc1;-5.0886235;820;D-2203;;;logcm/s;smi
+CC(C)c1cccc(C(C)C)c1O;-4.77;[189, 902];['D-2367', 'A-416'];[nan, nan];['Propofol', 'propofol'];logcm/s;smi
+CC(C)n1c(/C=C/[C@H](O)C[C@H](O)CC(=O)O)c(-c2ccc(F)cc2)c2ccccc21;-5.6999998;453;D-1446;;Fluvastatin;logcm/s;smi
+CC(C)n1c(N)nc2ccc(C(C(N)=O)c3cccc(F)c3F)cc21;-5.1874509;714;D-1971;;;logcm/s;smi
+CC(CCc1ccccc1)NCC(O)c1ccc(O)c(C(N)=O)c1;-4.895062;471;D-1477;;Labetalol;logcm/s;smi
+CC(CN1c2ccccc2Sc2ccccc21)N(C)C;-3.7777722;517;D-1556;;Promethazine;logcm/s;smi
+CC(CO)NC(=O)C1C=C2c3cccc4[nH]cc(c34)CC2N(C)C1;-5.1684265;1198;D-2056;;Ergonovine;logcm/s;smi
+CC(NC(=O)C(N)CC(N)=O)C(N)=O;-6.5885487;360;C-1303;;808-Asn-Ala-NH2;logcm/s;smi
+CC(NC(=O)[C@@H](N)CCC(=O)OCc1ccccc1)C(=O)O;-5.6912522;848;D-2266;;D-Glu(OBzl)-Ala;logcm/s;smi
+CC(NC(=O)[C@@H](N)COCc1ccccc1)C(=O)O;-5.9906998;849;D-2267;;D-Ser(Bzl)-Ala;logcm/s;smi
+CC(NC(C)(C)C)C(=O)c1cccc(Cl)c1;-3.9519544;412;D-1371;;Bupropion;logcm/s;smi
+CC(O)(CS(=O)(=O)c1ccc(F)cc1)C(=O)Nc1ccc(C#N)c(C(F)(F)F)c1;-4.6599998;406;D-1364;;Bicalutamide;logcm/s;smi
+CC(OC(=O)NCC1(CC(=O)O)CCCCC1)OC(=O)C(C)C;-4.5093193;711;D-1968;;XP13512;logcm/s;smi
+CC/C(=C(/c1ccccc1)c1ccc(OCCN(C)C)cc1)c1ccccc1;-4.3221111;538;D-1601;;Tamoxifen;logcm/s;smi
+CC/C=C(\C(=O)N[C@@H]1C(=O)N2C(C(=O)OCOC(=O)C(C)(C)C)=C(COC(N)=O)CS[C@H]12)c1csc(N)n1;-5.1100001;260;A-84;;CFPN-PI;logcm/s;smi
+CC1(C)C2[C@@H](O)C[C@@H]3C4(CC[C@]5(C)[C@@H]([C@]6(C)CC[C@H](C(C)(C)O)O6)[C@@H](O)C[C@@]35C)CC24CC[C@@H]1O;-4.5;976;D-2534;;Cycloastragenol;logcm/s;smi
+CC1(C)CC(=O)N(CCCCN2CCN(c3ncccn3)CC2)C(=O)C1;-4.6999998;947;D-2473;;Org 33062;logcm/s;smi
+CC1(C)CC(=O)N(CCCCN2CCN(c3ncccn3)CC2)C(=O)C1O;-4.8899999;948;D-2474;;Org 25907;logcm/s;smi
+CC1(C)CNc2cc(NC(=O)c3cccnc3NCc3ccncc3)ccc21;-5.489058;1217;D-2196;;D;logcm/s;smi
+CC1(C)SC2C(NC(=O)C(N)c3ccccc3)C(=O)N2C1C(=O)O;-6.0700002;401;D-1353;;Ampicillin;logcm/s;smi
+CC1(C)S[C@@H]2[C@H](NC(=O)Cc3ccccc3)C(=O)N2[C@H]1C(=O)O;-6.0250001;245;A-51;;benzylpenicillin;logcm/s;smi
+CC1(C)S[C@@H]2[C@H](NC(=O)[C@H](N)c3ccc(O)cc3)C(=O)N2[C@H]1C(=O)O;-6.1524997;156;A-35;;amoxicillin;logcm/s;smi
+CC1(C)S[C@@H]2[C@H](NC(=O)[C@H](N)c3ccccc3)C(=O)N2[C@H]1C(=O)O;-5.6999998;166;A-37;;ampicillin;logcm/s;smi
+CC1(C)S[C@H]2[C@@H](NC(=O)Cc3ccccc3)C(=O)N2[C@@H]1C(=O)O;-5.8697934;607;D-1728;;Penicillin G;logcm/s;smi
+CC1(C)S[C@]2(C)[C@H](NC(=O)[C@H](N)c3ccccc3)C(=O)N2[C@H]1C(=O)O;-6.1023731;362;C-670;;014-Ampicillin;logcm/s;smi
+CC1=C(C(=O)O)N2C(=O)C(NC(=O)C(N)c3ccccc3)C2SC1;-6.3600001;258;A-80;;cephalexin;logcm/s;smi
+CC1=C(C(=O)O)N2C(=O)[C@@H](NC(=O)[C@@H](N)C3=CCC=CC3)[C@H]2SC1;-5.6925039;377;C-777;;167-cephradine;logcm/s;smi
+CC1=C(C(=O)O)N2C(=O)[C@@H](NC(=O)[C@H](N)C3=CCC=CC3)[C@H]2SC1;-5.61500005;[417, 1076];['D-1381', 'A-82'];[nan, nan];['cephradine', 'Cephradine'];logcm/s;smi
+CC1=C(CC(=O)O)c2cc(F)ccc2/C1=C\c1ccc(S(C)=O)cc1;-5.06341435;[1131, 213];['D-1596', 'A-456'];[nan, nan];['sulindac', 'Sulindac'];logcm/s;smi
+CC1=C[C@@H]2O[C@@H]3[C@@H](O)C[C@](C)([C@]34CO4)[C@]2(CO)[C@@H](O)C1=O;-5.3005152;858;D-2293;;Deoxynivalenol (DON);logcm/s;smi
+CC1CCC(=O)CCC/C=C/c2cc(O)cc(O)c2C(=O)OC1;-4.98;981;D-2568;;Zearalenone (ZEN);logcm/s;smi
+CC1CCC(O)CCC/C=C/c2cc(O)cc(O)c2C(=O)OC1;-5.27;982;D-2569;;a-Zearalenol (a-ZEL);logcm/s;smi
+CC1CCC(O)CCCCCc2cc(O)cc(O)c2C(=O)OC1;-4.8200002;983;D-2570;;a-Zearalanol (a-ZAL);logcm/s;smi
+CC1CCC2C(C)C(OC(=O)CCC(=O)O)OC3OC4(C)CCC1C32OO4;-5.4000001;402;D-1355;;Artesunate;logcm/s;smi
+CC1CCN(C(=O)CC(Cc2cccc(C(=N)N)c2)NS(=O)(=O)c2ccc3ccccc3c2)CC1;-6.8762317;575;D-1672;;;logcm/s;smi
+CC1CCN(C(=O)CC(Cc2cccc(N)c2)NS(=O)(=O)c2ccc3ccccc3c2)CC1;-4.997839;583;D-1684;;;logcm/s;smi
+CC1CN(CCCNC(=O)[C@@H](Cc2ccccc2)NC(=O)C2(NC(=O)c3cc4ccccc4s3)CCCC2)CC(C)N1;-5.9593034;1193;D-2035;;21b;logcm/s;smi
+CC1CN(c2cc3c(cc2F)c(=O)c(C(=O)O)cn3C2CC2)CCN1;-5.44092445;[1148, 1077];['D-1703', 'A-96'];[nan, nan];CNV 97100;logcm/s;smi
+CC1CN(c2cc3c(cc2F)c(=O)c(C(=O)O)cn3C2CC2)CCN1C;-4.6603856;[264, 590];['D-1704', 'A-97'];[nan, nan];CNV 97101;logcm/s;smi
+CC1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23;-4.7907937;[170, 498];['D-1522', 'A-378'];[nan, nan];['Ofloxacin', 'ofloxacin'];logcm/s;smi
+CC1NC(=O)C(CC(=O)O)NC(=O)CNC(=O)CNC(=O)C(C)NC(=O)C(Cc2c[nH]c3ccccc23)NC1=O;-7.0307584;767;D-2111;;cyclo[Trp-Ala-Gly-Gly-Asp-Ala];logcm/s;smi
+CC1OC(O[C@@H]2C=C3CC[C@@H]4[C@H](CC[C@]5(C)[C@@H](c6ccc(=O)oc6)CC[C@]45O)[C@@]3(C)CC2)C(O)C(O)C1O;-6.2299852;1149;D-1726;;Proscillaridin;logcm/s;smi
+CCC(=O)C(CC(C)N(C)C)(c1ccccc1)c1ccccc1;-4.6599998;1121;D-1501;;Methadone;logcm/s;smi
+CCC(=O)N(c1ccccc1)C1(COC)CCN(CCn2nnn(CC)c2=O)CC1;-3.961593066666667;[99, 1084, 613];['D-1745', 'A-26', 'B-571'];[nan, nan, nan];['Alfentanil', 'alfentanil'];logcm/s;smi
+CCC(=O)NC[C@H]1CN(c2ccc(-c3nncs3)c(F)c2)C(=O)O1;-4.4308991;1155;D-1801;;PNU-179450;logcm/s;smi
+CCC(=O)NC[C@H]1CN(c2ccc(-n3cc(C#N)cn3)c(F)c2)C(=O)O1;-4.3099999;1157;D-1807;;PNU-179397;logcm/s;smi
+CCC(=O)Nc1ccc(OCC(O)CNC(C)C)cc1;-5.2198415;622;D-1762;;H 244/45;logcm/s;smi
+CCC(=S)NC[C@H]1CN(c2ccc(N3CCN(C(=O)CO)CC3)c(F)c2)C(=O)O1;-4.7423639;641;D-1803;;PNU-184147;logcm/s;smi
+CCC(=S)NC[C@H]1CN(c2ccc(N3CCN(C=O)CC3)c(F)c2)C(=O)O1;-4.4579659;639;D-1797;;PNU-184249;logcm/s;smi
+CCC(C(=O)O)c1ccc(N2Cc3ccccc3C2=O)cc1;-4.3899999;1038;A-271;;indobufen;logcm/s;smi
+CCC(C)(C)C(=O)O[C@@H]1C[C@H](C)C=C2C=C[C@@H](C)[C@@H](CC[C@@H]3C[C@H](O)CC(=O)O3)[C@@H]21;-5.1700001;528;D-1583;;Simvastatin;logcm/s;smi
+CCC(C)C(=O)OC1CC(C)C=C2C=CC(C)C(CCC3CC(O)CC(=O)O3)C21;-4.8400002;479;D-1494;;Lovastatin;logcm/s;smi
+CCC(C)C(=O)O[C@@H]1C[C@@H](O)C=C2C=C[C@@H](C)[C@@H](CC[C@@H](O)C[C@@H](O)CC(=O)O)[C@@H]21;-5.8699999;511;D-1548;;Pravastatin;logcm/s;smi
+CCC(C)C(N)C(=O)OC[C@@H]1O[C@H](n2cc(F)c(=O)[nH]c2=O)C[C@H]1O;-5.5908804;657;D-1844;;5'-L-isoleucyl-floxuridine;logcm/s;smi
+CCC/C=C\CC/C=C/C=C/C(=O)NCC(C)C;-4.6989698;393;C-999;;643-(2E,4E,8Z)-N-isobutyldodeca-2,4,8-trienamide (6) mw = 249;logcm/s;smi
+CCC1(c2ccccc2)C(=O)NC(=O)NC1=O;-4.6300001;507;D-1538;;Phenobarbital;logcm/s;smi
+CCC12CCN(CC3(O)CC3)C(Cc3ccc(O)cc31)C2(C)C;-4.8458223;[248, 565];['A-55', 'D-1649'];[nan, nan];['Bremazocine', 'bremazocine'];logcm/s;smi
+CCCC(CCC)C(=O)O;-4.3200002;552;D-1629;;Valproic acid;logcm/s;smi
+CCCC1O[C@@H]2C[C@H]3[C@@H]4CCC5=CC(=O)C=C[C@]5(C)[C@H]4[C@@H](O)C[C@]3(C)[C@]2(C(=O)CO)O1;-4.83999995;[250, 411];['D-1370', 'A-59'];[nan, nan];['Budesonide', 'budesonide'];logcm/s;smi
+CCCCC(=O)N(Cc1ccc(-c2ccccc2-c2nnn[nH]2)cc1)[C@H](C(=O)O)C(C)C;-6.2600002;553;D-1630;;Valsartan;logcm/s;smi
+CCCCC(=O)NS(=O)(=O)c1ccccc1-c1ccc(Cn2c(CCC)nc(CC)c2C(=O)O)c(F)c1;-5.1999998;876;D-2334;;XM970;logcm/s;smi
+CCCCC(C)OC(=O)COc1ccc(C(=O)CN2CCN(C3CCNCC3)CC2=O)cc1;-5.29;24;A-145;;EF5232;logcm/s;smi
+CCCCC/C=C\C/C=C\CCCCCCCC(=O)OCC/C=C/c1ccc(OC)c(OC)c1;-4.8498521;744;D-2050;;(E)-4-(3,4-dimethoxyphenyl)but-3-en-1-yl linoleate (1);logcm/s;smi
+CCCCCCC(C)OC(=O)COc1ccc(C(=O)CN2CCN(C3CCNCC3)CC2=O)cc1;-4.7399998;25;A-146;;EF5242;logcm/s;smi
+CCCCCCC(N)C(=O)N[C@@H](Cc1c(C)cc(O)cc1C)C(=O)N1CCC[C@@H]1C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](Cc1ccccc1)C(N)=O;-6.2223768;664;D-1869;;;logcm/s;smi
+CCCCCCC(N)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N1CCC[C@@H]1C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H]1O[C@H](C(N)=O)[C@@H](O)C(O)C1O;-5.79;1168;D-1866;;;logcm/s;smi
+CCCCCCC(N)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N1CCC[C@@H]1C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](Cc1ccccc1)C(N)=O;-5.4504986;1167;D-1861;;;logcm/s;smi
+CCCCCCCC/C=C\CCCCCCCC(=O)OCC/C=C/c1ccc(OC)c(OC)c1;-5.0101638;745;D-2051;;(E)-4-(3,4-dimethoxyphenyl)but-3-en-1-yl oleate (2);logcm/s;smi
+CCCCCCCCCC(=O)N1CCNCC1;-3.8199999;980;D-2564;;CD27;logcm/s;smi
+CCCCCCCCCC(=O)NN;-4.1199999;979;D-2558;;CD21;logcm/s;smi
+CCCCCCCCCC(=O)Nc1ccc(S(=O)(=O)Nc2nncs2)cc1;-5.46;904;D-2375;;;logcm/s;smi
+CCCCCCCCCC(=O)O;-4.6799998;1267;D-2537;;Capric acid (decanoic acid);logcm/s;smi
+CCCCCCCCCC(=O)OC;-3.51;978;D-2538;;CD1;logcm/s;smi
+CCCCCCCCCCCCc1ccc(S(=O)(=O)Nc2nncs2)cc1;-5.3200002;905;D-2376;;;logcm/s;smi
+CCCCCCCCOC(=O)c1ccc(O)cc1;-4.8800001;926;D-2420;;Octylparaben;logcm/s;smi
+CCCCCCOc1cccc(NC(=O)OCC[NH+]2CCCC2)c1;-5.4807429;[376, 1060];['A-397', 'C-771'];[nan, nan];['phenylcarbamic acid ester XVII', '157-XVII'];logcm/s;smi
+CCCCCC[C@H](NC(C)=O)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)NCC(=O)NCC(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H](CC(C)C)C(N)=O;-5.9699998;1265;D-2532;;Ac-C8-Enk-NH (3);logcm/s;smi
+CCCCCN(CCCOC)C(=O)[C@@H](CCC(=O)O)NC(=O)c1ccc(Cl)c(Cl)c1;-5.140131;756;D-2083;;Dexloxiglumide;logcm/s;smi
+CCCCCOc1cccc(NC(=O)OCCN2CCCC2)c1;-4.77;599;D-1714;;XIV;logcm/s;smi
+CCCCCOc1cccc(NC(=O)OCC[NH+]2CCCC2)c1;-4.76977565;[1059, 348];['A-396', 'C-1215'];[nan, nan];['phenylcarbamic acid ester XIV', '156-XIV'];logcm/s;smi
+CCCCN1C(=O)N(Cc2ccc3[nH]nc(N)c3c2)[C@H](Cc2ccccc2)[C@H](O)[C@@H](O)[C@H]1Cc1ccccc1;-5.6788902;566;D-1657;;DMP 851;logcm/s;smi
+CCCCN1CCN(c2cc3c(cc2F)c(=O)c(C(=O)O)cn3C2CC2)CC1C;-4.85924625;[593, 2];['A-100', 'D-1707'];[nan, nan];CNV 97104;logcm/s;smi
+CCCCOC(=O)COc1ccc(C(=O)CN2CCN(C3CCN(C(=O)OCc4oc(=O)oc4C)CC3)CC2=O)cc1;-4.3499999;26;A-147;;EF5248;logcm/s;smi
+CCCCOC(=O)COc1ccc(C(=O)CN2CCN(C3CCNCC3)CC2=O)cc1;-5.79;23;A-141;;EF5170;logcm/s;smi
+CCCCOC(=O)COc1ccc(C(=O)CNC(=O)c2cc3c(s2)CCNC3)cc1OCC(=O)OCCCC;-5.1011863;1188;D-2018;;ME3229;logcm/s;smi
+CCCCOC(=O)c1ccc(O)cc1;-4.4899998;925;D-2418;;Butylparaben;logcm/s;smi
+CCCCOc1cccc(NC(=O)OCCN2CCCC2)c1;-4.5900002;598;D-1713;;XI;logcm/s;smi
+CCCCOc1cccc(NC(=O)OCC[NH+]2CCCC2)c1;-4.58751345;[179, 375];['C-770', 'A-395'];[nan, nan];['155-XI', 'phenylcarbamic acid ester XI'];logcm/s;smi
+CCCCc1nc(Cl)c(C=O)n1Cc1ccc(-c2ccccc2-c2nnn[nH]2)cc1;-5.0600001500000005;[1234, 1023];['A-133', 'D-2329'];[nan, nan];['DuP-167', 'DUP 167'];logcm/s;smi
+CCCCc1nc(Cl)c(CO)n1Cc1ccc(-c2ccccc2-c2nnn[nH]2)cc1;-6.0727587;478;D-1493;;Losartan;logcm/s;smi
+CCCCc1oc2ccc(NS(C)(=O)=O)cc2c1C(=O)c1ccc(OCCCN(CCCC)CCCC)cc1;-4.52;1012;D-2625;;Dronedarone;logcm/s;smi
+CCCN(Cc1ccoc1)C(=O)c1cc(C)cc(OCC2(CON=C(N)N)CC2)c1;-5.3872161;322;B-646;;;logcm/s;smi
+CCCN1CCN(c2cc3c(cc2F)c(=O)c(C(=O)O)cn3C2CC2)CC1C;-4.8195391;[592, 265];['D-1706', 'A-99'];[nan, nan];CNV 97103;logcm/s;smi
+CCCOC(=O)c1ccc(O)cc1;-4.3899999;924;D-2417;;Propylparaben;logcm/s;smi
+CCCOCOCC1CN(c2ccc(C(C)=O)cc2)C(=O)O1;-3.95;866;D-2311;;OXd;logcm/s;smi
+CCCOc1ccc2c(c1)[C@@H](c1ccc(OC)cc1OCC(=O)O)[C@H](C(=O)O)C2;-5.23;1069;A-439;;SB209670;logcm/s;smi
+CCCOc1cccc(NC(=O)OCCN2CCCC2)c1;-4.5700002;597;D-1712;;VIII;logcm/s;smi
+CCCOc1cccc(NC(=O)OCC[NH+]2CCCC2)c1;-4.5693183;[178, 374];['C-769', 'A-394'];[nan, nan];['phenylcarbamic acid ester VIII', '154-VIII'];logcm/s;smi
+CCCS(=O)(=O)n1c(N)nc2ccc(/C(=C/C(=O)NC)c3cccc(F)c3)cc21;-4.1900001;[884, 135];['D-2344', 'A-316'];[nan, nan];['E09', 'LY362546'];logcm/s;smi
+CCCSc1ccc2nc(NC(=O)OC)[nH]c2c1;-5.18854335;[345, 1102];['C-1169', 'D-1342'];[nan, nan];['961-Albendazole (ABZ)', 'Albendazole'];logcm/s;smi
+CCC[C@H](NC(=O)C1[C@H]2CCC[C@H]2CN1C(=O)[C@@H](NC(=O)[C@@H](NC(=O)c1cnccn1)C1CCCCC1)C(C)(C)C)C(=O)C(=O)NC1CC1;-5.3200002;906;D-2381;;VX-950;logcm/s;smi
+CCC[C@H](NC(=O)[C@@H]1[C@H]2CCC[C@H]2CN1C(=O)[C@@H](NC(=O)[C@@H](NC(=O)c1cnccn1)C1CCCCC1)C(C)(C)C)C(=O)C(=O)NC1CC1;-5.3899999;989;D-2579;;Telaprevir;logcm/s;smi
+CCCc1cc(=O)[nH]c(=S)[nH]1;-4.166585700000001;[192, 518];['A-420', 'D-1557'];[nan, nan];['Propylthiouracil (PTU)', 'propylthiouracil'];logcm/s;smi
+CCCc1nc(CC)c(C=O)n1Cc1ccc(-c2ccccc2-c2nnn[nH]2)cc1;-5.43000005;[875, 14];['A-124', 'D-2326'];[nan, nan];DMP 581;logcm/s;smi
+CCCc1nc2c(C)cc(-c3nc4ccccc4n3C)cc2n1Cc1ccc(-c2ccccc2C(=O)O)cc1;-4.790964150000001;[216, 539];['D-1603', 'A-470'];[nan, nan];['telmisartan', 'Telmisartan'];logcm/s;smi
+CCCc1nn(C)c2c(=O)[nH]c(-c3cc(S(=O)(=O)N4CCN(C)CC4)ccc3OCC)nc12;-4.33029415;[1129, 295];['D-1582', 'B-561'];[nan, nan];['Sildenafil', 'UK-92480, Sildenafil'];logcm/s;smi
+CCCc1nn(C)c2c(=O)nc(-c3cc(S(=O)(=O)N4CCN(C)CC4)ccc3OCC)[nH]c12;-4.5100002;205;A-446;;sildenafil;logcm/s;smi
+CCN(CC)CC(=O)Nc1c(C)cccc1C;-4.408332166666667;[473, 380, 118];['A-293', 'C-784', 'D-1483'];[nan, nan, nan];['175-Lidocaine', 'lidocaine', 'Lidocaine'];logcm/s;smi
+CCN(CC)CCCC(C)Nc1ccnc2cc(Cl)ccc12;-4.5500002;419;D-1384;;Chloroquine;logcm/s;smi
+CCN(CC)CCNC(=O)c1cc(Cl)c(N)cc1OC;-4.6508477;[1099, 487];['D-1506', 'C-803'];[nan, nan];['207-Metoclopramide', 'Metoclopramide'];logcm/s;smi
+CCN(CC)c1ccc2cc(C(=O)NC3(C(=O)N[C@H](Cc4ccccc4)C(=O)NCC4CCN(CC5CCOCC5)CC4)CCCC3)sc2c1;-4.997839;685;D-1917;;MEN15716;logcm/s;smi
+CCN1CCN(c2cc3c(cc2F)c(=O)c(C(=O)O)cn3C2CC2)CC1C;-4.771172549999999;[1078, 591];['D-1705', 'A-98'];[nan, nan];CNV 97102;logcm/s;smi
+CCNC(=O)/C=C(/c1ccc2nc(N)n(S(=O)(=O)C(C)C)c2c1)c1cccc(F)c1F;-4.0700002;[147, 893];['A-330', 'D-2355'];[nan, nan];['E20', 'LY368766'];logcm/s;smi
+CCO/N=C(\N)c1ccc(-c2ccc(-c3ccc(/C(N)=N/OCC)cc3)o2)cc1;-5.2295737;856;D-2286;;DB377 (4);logcm/s;smi
+CCOC(=O)C1=C(C)NC(C)=C(C(=O)OC)C1c1cccc(Cl)c1Cl;-4.64049245;[446, 46];['D-1436', 'A-173'];[nan, nan];['felodipine', 'Felodipine'];logcm/s;smi
+CCOC(=O)C1=C(C)NC(C)=C(C(=O)OC)C1c1cccc(N(O)O)c1;-4.6200309;497;D-1519;;Nitrendipine;logcm/s;smi
+CCOC(=O)C1=C(C)NC(C)=C(C(=O)OC)C1c1cccc([N+](=O)[O-])c1;-4.8499999;1056;A-376;;nitrendipine;logcm/s;smi
+CCOC(=O)C1=C(COCCN)NC(C)=C(C(=O)OC)C1c1ccccc1Cl;-4.6700001;1010;D-2621;;Amlodipine;logcm/s;smi
+CCOC(=O)CCN1CC(=O)N(C)c2ccc(NCc3ccc(C(=N)N)cc3)cc2C1=O;-6.8519359;710;D-1962;;G6264;logcm/s;smi
+CCOC(=O)CCN1CC(=O)N(C)c2ccc(OCc3ccc(C(=N)N)cc3)cc2C1=O;-6.3682656;709;D-1961;;G6262;logcm/s;smi
+CCOC(=O)COc1ccc(C(=O)CN2CCN(C3CCN(C(=O)OC(C)OC(=O)C(C)(C)C)CC3)CC2=O)cc1;-4.1399999;34;A-155;;EF5283;logcm/s;smi
+CCOC(=O)COc1ccc(C(=O)CN2CCN(C3CCN(C(=O)OC(C)OC(C)=O)CC3)CC2=O)cc1;-4.2800002;28;A-149;;EF5251;logcm/s;smi
+CCOC(=O)COc1ccc(C(=O)CN2CCN(C3CCN(C(=O)OC(OC(=O)C(C)(C)C)C(C)(C)C)CC3)CC2=O)cc1;-4.0;33;A-154;;EF5278;logcm/s;smi
+CCOC(=O)COc1ccc(C(=O)CN2CCN(C3CCN(C(=O)OC(OC(C)=O)C(C)(C)C)CC3)CC2=O)cc1;-4.02;32;A-153;;EF5270;logcm/s;smi
+CCOC(=O)COc1ccc(C(=O)CN2CCN(C3CCN(C(=O)OCOC(=O)C(C)(C)C)CC3)CC2=O)cc1;-4.2600002;1026;A-157;;EF5289;logcm/s;smi
+CCOC(=O)N1CCC(CN(C2Cc3cc(C#N)ccc3N(Cc3cncn3C)C2)S(=O)(=O)c2ccccn2)CC1;-5.5875134;679;D-1906;;PB-104;logcm/s;smi
+CCOC(=O)NC(=N)c1ccc2[nH]c(Cc3nc4ccccc4[nH]3)nc2c1;-6.1500001;183;A-408;;PNU200969;logcm/s;smi
+CCOC(=O)NC(=N)c1ccc2nc(Cc3nc4ccccc4[nH]3)[nH]c2c1;-6.152451;635;D-1788;;PNU200969;logcm/s;smi
+CCOC(=O)[C@H](CCc1ccccc1)N[C@@H](C)C(=O)N1CCC[C@H]1C(=O)O;-5.6719999;1027;A-160;;enalapril;logcm/s;smi
+CCOC(=O)[C@H](Cc1ccc(OC(=O)N(C)C)cc1)NC(=O)[C@H]1N(S(=O)(=O)c2cnn(C)c2)CSC1(C)C;-5.3699999;238;A-502;;VLA-4 antagonist 2;logcm/s;smi
+CCOC(=O)c1c(Cl)cc(Cl)cc1-c1ccc([C@@H](C)NC(=O)C2(NC(=O)C(F)(F)F)CC2)c(F)c1;-4.6020598;315;B-632;;2h;logcm/s;smi
+CCOC(=O)c1c(Cl)cc(Cl)cc1-c1cnc([C@@H](C)NC(=O)C2(NC(=O)C(F)(F)F)CC2)c(F)c1;-4.6020598;316;B-633;;2o;logcm/s;smi
+CCOC(=O)c1c(Cl)cccc1-c1cnc([C@@H](C)NC(=O)C2(NC(=O)C(F)(F)F)CC2)c(F)c1;-4.5528421;310;B-624;;2n;logcm/s;smi
+CCOC(=O)c1ccc(O)cc1;-4.8102908;1231;D-2300;;Ethylparaben;logcm/s;smi
+CCOC(=O)c1ccc2c(C(C(=O)NS(=O)(=O)c3ccc(C)cc3OC)c3ccc4c(c3)OCO4)cn(C)c2c1;-4.6994848;1187;D-2013;;;logcm/s;smi
+CCOCC(COCC)OC(=O)COc1ccc(C(=O)CN2CCN(C3CCN(C(=O)OC(C)OC(C)=O)CC3)CC2=O)cc1;-4.1500001;31;A-152;;EF5265;logcm/s;smi
+CCOP(=O)(OCC)Oc1ccc(N(O)O)cc1;-4.6900001;1007;D-2615;;Paraoxon;logcm/s;smi
+CCO[C@H](CCC(C)(C)O)[C@](C)(O)[C@H]1CC[C@@]2(O)C3=CC(=O)[C@@H]4C[C@@H](O)[C@@H](O)C[C@@]4(C)C3CC[C@]12C;-4.8600001;738;D-2038;;20E 22-ethyl ether (5);logcm/s;smi
+CCOc1cccc(NC(=O)OCCN2CCCC2)c1;-4.5500002;596;D-1711;;V;logcm/s;smi
+CCOc1cccc(NC(=O)OCC[NH+]2CCCC2)c1;-4.55142115;[177, 373];['A-393', 'C-768'];[nan, nan];['153-V', 'phenylcarbamic acid ester V'];logcm/s;smi
+CCOc1ccccc1OCC1CNCCO1;-4.3899999;1136;D-1631;;Viloxazine;logcm/s;smi
+CCS(=O)(=O)CCn1c(N(O)O)cnc1C;-4.52;545;D-1615;;Tinidazole;logcm/s;smi
+CC[C@@H]1C2CCCCN3CCC(C23)[C@@H]2[C@H](C)C(=O)O[C@H]12;-4.9198675;758;D-2087;;Neostenine;logcm/s;smi
+CC[C@@H]1OC(=O)[C@@H](C)[C@H](O[C@@H]2C[C@](C)(OC)[C@H](O)[C@@H](C)O2)[C@H](C)[C@H](O[C@@H]2O[C@H](C)C[C@H](N(C)C)[C@H]2O)[C@@](C)(O)C[C@@H](C)/C(=N\OCOCCOC)[C@H](C)[C@@H](O)[C@@]1(C)O;-5.7397189;723;D-2004;;Roxithromycin;logcm/s;smi
+CC[C@@H]1OC(=O)[C@@H](C)[C@H](O[C@H]2C[C@](C)(OC)[C@@H](O)[C@H](C)O2)[C@@H](C)[C@@H](O[C@H]2O[C@H](C)C[C@@H](N(C)C)[C@H]2O)[C@@](C)(O)C[C@@H](C)C(=O)[C@H](C)[C@@H](O)[C@@]1(C)O;-5.7800002;42;A-167;;erythromycin;logcm/s;smi
+CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2cc3c(N(O)O)cccc3nc2-1;-5.1985431;620;D-1760;;9-Nitrocamptothecin (9-NC);logcm/s;smi
+CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2cc3ccccc3nc2-1;-4.1100001;253;A-66;;camptothecin;logcm/s;smi
+CC[C@H](C)C(=O)O[C@H]1C[C@H](O)C=C2C=C[C@H](C)[C@H](CC[C@@H](O)C[C@@H](O)CC(=O)O)[C@H]21;-5.8400002;184;A-411;;pravastatin;logcm/s;smi
+CC[C@H](C)[C@H](N)C(=O)O[C@@H]1C[C@@H](n2cc(F)c(=O)[nH]c2=O)O[C@H]1CO;-5.5599999;1247;D-2410;;3'-L-Ile-FUdR;logcm/s;smi
+CC[C@H]1CN2CCc3cc(OC)c(OC)cc3[C@@H]2C[C@@H]1C[C@H]1NCCc2cc(OC)c(OC)cc21;-5.6900001;440;D-1420;;Emetine;logcm/s;smi
+CC[C@H]1OC(=O)[C@H](C)[C@@H](O[C@H]2C[C@@](C)(OC)[C@@H](O)[C@H](C)O2)[C@H](C)[C@@H](O[C@@H]2O[C@H](C)C[C@H](N(C)C)[C@H]2O)[C@](C)(O)C[C@@H](C)C(=O)[C@H](C)[C@@H](O)[C@]1(C)O;-5.6451256;[1146, 43];['D-1694', 'A-168'];[nan, nan];['erythromycine', 'Erythromicin'];logcm/s;smi
+CC[C@H]1OC(=O)[C@H](C)[C@@H](O[C@H]2C[C@@](C)(OC)[C@@H](O)[C@H](C)O2)[C@H](C)[C@@H](O[C@@H]2O[C@H](C)C[C@H](N(C)C)[C@H]2O)[C@](C)(OC)C[C@@H](C)C(=O)[C@H](C)[C@@H](O)[C@]1(C)O;-5.4699998;426;D-1393;;Clarithromycin;logcm/s;smi
+CC[C@H]1[C@@H]2C[C@@H]3[C@@H]4N(C)c5ccccc5[C@]45C[C@@H](C2[C@@H]5O)N3[C@@H]1O;-4.9387093;1207;D-2104;;Ajmaline (AML);logcm/s;smi
+CC[C@]1(O)C(=O)OCc2c1cc1n(c2=O)-c2cc3ccccc3nc2C1;-4.3318486;712;D-1969;;20(S)-camptothecin (CPT);logcm/s;smi
+CC[C@]1(O)C[C@@H]2CN(CCc3c([nH]c4ccccc34)[C@@](C(=O)OC)(c3cc4c(cc3OC)N(C)[C@H]3[C@@](O)(C(=O)OC)[C@H](OC(C)=O)[C@]5(CC)C=CCN6CC[C@]43[C@@H]65)C2)C1;-5.48;237;A-500;;vinblastine;logcm/s;smi
+CC[C@]1(O)C[C@H]2CN(CCc3c([nH]c4ccccc34)[C@@](C(=O)OC)(c3cc4c(cc3OC)N(C)[C@H]3[C@@]5(C[C@]6(CC)C=CCN7CC[C@]43[C@@H]76)OC(=O)N(CCCl)C5=O)C2)C1;-4.8616409;842;D-2237;;KAR-2;logcm/s;smi
+CCc1cc(C(N)=S)ccn1;-4.4000001;444;D-1431;;Ethionamide;logcm/s;smi
+CCc1ccc(NC(=O)c2ccnn2CCc2ccncc2)cc1;-5.0116143;816;D-2199;;;logcm/s;smi
+CCc1ccncc1;-3.9723473;693;D-1928;;-;logcm/s;smi
+CCc1nc(N)nc(N)c1-c1ccc(Cl)cc1;-4.23;519;D-1559;;Pyrimethamine;logcm/s;smi
+CCc1oc(O)c(Cc2c(O)c(CC=C(C)C)c(O)c(C(C)=O)c2O)c(=O)c1C;-4.71;927;D-2421;;Arzanol;logcm/s;smi
+CCn1cc(C(=O)O)c(=O)c2cc(F)c(N3CCN(C)CC3)cc21;-4.6006865333333335;[506, 388, 174];['A-389', 'D-1536', 'C-848'];[nan, nan, nan];['Pefloxacin', '278-Pefloxacin', 'pefloxacin'];logcm/s;smi
+CCn1cc(C(=O)O)c(=O)c2cc(F)c(N3CCNC(C)C3)c(F)c21;-4.8000002;475;D-1487;;Lomefloxacin;logcm/s;smi
+CN(C(=O)[C@H](Cc1ccc(C(=N)N)cc1)NS(=O)(=O)c1ccc2ccccc2c1)C1CCCC1;-6.6989698;266;B-520;;;logcm/s;smi
+CN(C(=O)[C@H](Cc1ccc(CN)cc1)NS(=O)(=O)c1ccc2ccccc2c1)C1CCCC1;-4.9586072;1079;B-519;;;logcm/s;smi
+CN(C)C(=N)N=C(N)N;-5.85770465;[484, 149];['D-1500', 'A-336'];[nan, nan];['Metformin HCl', 'metformin'];logcm/s;smi
+CN(C)C(=O)C(CCN1CCC(O)(c2ccc(Cl)cc2)CC1)(c1ccccc1)c1ccccc1;-4.9699998;476;D-1488;;Loperamide HCl;logcm/s;smi
+CN(C)C(=O)NS(=O)(=O)n1c(N)nc2ccc(/C(=C/C(N)=O)c3cccc(F)c3)cc21;-4.1700001;[130, 895];['D-2357', 'A-310'];[nan, nan];['LY353462', 'E22'];logcm/s;smi
+CN(C)C(=O)NS(=O)(=O)n1c(N)nc2ccc(C(C(N)=O)c3cccc(F)c3)cc21;-4.1700001;713;D-1970;;;logcm/s;smi
+CN(C)C(=O)OC1N=C(c2ccccc2)c2cc(Cl)ccc2N(C)C1=O;-4.46;413;D-1373;;Camazepam;logcm/s;smi
+CN(C)C(=O)Oc1ccc(C[C@H](NC(=O)[C@H]2N(S(=O)(=O)c3cnn(C)c3)CSC2(C)C)C(=O)OCC(C)(C)C)cc1;-5.3400002;240;A-504;;VLA-4 antagonist 4;logcm/s;smi
+CN(C)C(=O)Oc1ccc(C[C@H](NC(=O)[C@H]2N(S(=O)(=O)c3cnn(C)c3)CSC2(C)C)C(=O)OCOC(=O)C(C)(C)C)cc1;-5.5999999;241;A-505;;VLA-4 antagonist 5;logcm/s;smi
+CN(C)CC/C=C1/c2ccccc2COc2ccc(CC(=O)O)cc21;-5.0100002;499;D-1523;;Olopatadine;logcm/s;smi
+CN(C)CC/C=C1/c2ccccc2Sc2ccc(Cl)cc21;-4.7399998;422;D-1388;;Chlorprothixene;logcm/s;smi
+CN(C)CC1CCCCC1(O)c1cccc(O)c1;-4.7799463;853;D-2276;;M1;logcm/s;smi
+CN(C)CCC(c1ccc(Br)cc1)c1ccccn1;-4.702363699999999;[410, 1093];['C-1174', 'D-1369'];[nan, nan];['Brompheniramine', '972-Brompheniramine'];logcm/s;smi
+CN(C)CCC(c1ccc(Cl)cc1)c1ccccn1;-4.2800002;420;D-1386;;Chlorpheniramine;logcm/s;smi
+CN(C)CCC=C1c2ccccc2CCc2ccccc21;-4.0803325;[356, 399];['C-1288', 'D-1351'];[nan, nan];['732-Amitriptyline', 'Amitriptyline'];logcm/s;smi
+CN(C)CCCN1c2ccccc2CCc2ccccc21;-4.8509998;109;A-270;;imipramine;logcm/s;smi
+CN(C)CCCN1c2ccccc2Sc2ccc(Cl)cc21;-4.906492;[365, 421];['C-686', 'D-1387'];[nan, nan];['039-Chlorpromazine', 'Chlorpromazine'];logcm/s;smi
+CN(C)CCCN1c2ccccc2Sc2ccccc21;-4.3800001;516;D-1555;;Promazine;logcm/s;smi
+CN(C)CCOC(c1ccccc1)c1ccccc1;-4.27;1109;D-1413;;Diphenhydramine;logcm/s;smi
+CN(C)[C@@H]1C(=O)C(C(N)=O)=C(O)[C@@]2(O)C(=O)C3=C(O)c4c(O)ccc(Cl)c4[C@@](C)(O)[C@H]3C[C@@H]12;-6.3200002;423;D-1389;;Chlortetracycline;logcm/s;smi
+CN(C)c1ccc(C(=O)NCCCCCNC(=O)CS)cc1;-5.1324477;1165;D-1858;;N-[5-[(4-Dimethylaminobenzoyl)amino]pentyl]-2-mercaptoacetamide (S2);logcm/s;smi
+CN(CC(=O)O)C(=O)CN;-4.9000001;617;D-1753;;Glycylsarcosine;logcm/s;smi
+CN(CCCN1CCC(CN2c3ccccc3Sc3ccc(C(=O)O)cc32)CC1)c1cc(=O)n(C)c(=O)n1C;-5.7209244;830;D-2216;;6b;logcm/s;smi
+CN(Cc1cnc2nc(N)nc(N)c2n1)c1ccc(C(=O)N[C@@H](CCC(=O)O)C(=O)O)cc1;-6.25;[485, 150];['D-1502', 'A-338'];[nan, nan];['Methotrexate', 'methotrexate'];logcm/s;smi
+CN(OCCNC(=O)Cc1c(C#N)ccc(NCC(F)(F)c2ccccn2)c1F)C(=N)N;-6.3723636;327;B-661;;;logcm/s;smi
+CN/C(=N\CCSCc1nc[nH]c1C)NC#N;-6.0420098;296;B-563;;Cimetidine;logcm/s;smi
+CN1/C(=C(\O)Nc2ccccn2)C(=O)c2sccc2S1(=O)=O;-4.88432575;[219, 1133];['D-1605', 'A-473'];[nan, nan];['Tenoxicam', 'terazosin'];logcm/s;smi
+CN1C(=O)CC(N2CCCN(CC/C=C3/c4ccccc4CCc4ccc(C(=O)O)cc43)CC2)N(C)C1=O;-5.1599998;973;D-2526;;(Z)-19g;logcm/s;smi
+CN1C(=O)CC(N2CCCN(CC/C=C3/c4ccccc4CCc4ccc(CC(=O)O)cc43)CC2)N(C)C1=O;-5.3200002;1263;D-2525;;(Z)-19f;logcm/s;smi
+CN1C(=O)CC(N2CCCN(CC/C=C3/c4ccccc4COc4ccc(C(=O)O)cc43)CC2)N(C)C1=O;-5.4200001;971;D-2523;;(Z)-19d;logcm/s;smi
+CN1C(=O)CC(N2CCCN(CC/C=C3/c4ccccc4COc4ccc(CC(=O)O)cc43)CC2)N(C)C1=O;-5.4000001;969;D-2521;;(Z)-19b;logcm/s;smi
+CN1C(=O)CC(N2CCCN(CCCN3c4ccccc4CCc4ccc(C(=O)O)cc43)CC2)N(C)C1=O;-5.3600001;1262;D-2517;;13h;logcm/s;smi
+CN1C(=O)CC(N2CCCN(CCCN3c4ccccc4CCc4ccc(C(C)(C)C(=O)O)cc43)CC2)N(C)C1=O;-5.2450004;967;D-2519;;13j;logcm/s;smi
+CN1C(=O)CC(N2CCCN(CCCN3c4ccccc4CCc4ccc(CC(=O)O)cc43)CC2)N(C)C1=O;-5.5900002;966;D-2518;;13i;logcm/s;smi
+CN1C(=O)CC(N2CCCN(CCCN3c4ccccc4COc4ccc(C(=O)O)cc43)CC2)N(C)C1=O;-5.5;965;D-2516;;13g;logcm/s;smi
+CN1C(=O)CC(N2CCCN(CCCN3c4ccccc4COc4ccc(CC(=O)O)cc43)CC2)N(C)C1=O;-5.8000002;963;D-2513;;13d;logcm/s;smi
+CN1C(=O)CC(N2CCN(CC/C=C3/c4ccccc4CCc4ccc(CC(=O)O)cc43)CC2)N(C)C1=O;-4.8299999;972;D-2524;;(Z)-19e;logcm/s;smi
+CN1C(=O)CC(N2CCN(CC/C=C3/c4ccccc4COc4ccc(C(=O)O)cc43)CC2)N(C)C1=O;-5.0700002;970;D-2522;;(Z)-19c;logcm/s;smi
+CN1C(=O)CC(N2CCN(CC/C=C3/c4ccccc4COc4ccc(CC(=O)O)cc43)CC2)N(C)C1=O;-5.1399999;968;D-2520;;(E-Z)-19a;logcm/s;smi
+CN1C(=O)CC(N2CCN(CCCN3c4ccccc4COc4ccc(C(=O)O)cc43)CC2)N(C)C1=O;-5.1199999;962;D-2510;;;logcm/s;smi
+CN1C(=O)CC(N2CCN(CCCN3c4ccccc4COc4ccc(CC(=O)O)cc43)CC2)N(C)C1=O;-5.52;1261;D-2512;;13c;logcm/s;smi
+CN1C(=O)CC(N2CCN(CCCN3c4ccccc4Sc4ccc(CC(=O)O)cc43)CC2)N(C)C1=O;-4.9099998;961;D-2509;;;logcm/s;smi
+CN1C(=O)CN(CCC(=O)O)C(=O)c2cc(NCc3ccc(C(=N)N)cc3)ccc21;-6.4579659;708;D-1958;;G6191;logcm/s;smi
+CN1C(=O)CN=C(c2ccccc2)c2cc(Cl)ccc21;-4.234572825;[368, 433, 12, 287];['D-1407', 'A-119', 'C-731', 'B-549'];[nan, nan, nan, nan];['diazepam', '102-diazepam', 'Diazepam'];logcm/s;smi
+CN1C(C(=O)Nc2ccccn2)=C(O)c2ccccc2S1(=O)=O;-4.4490995;509;D-1544;;Piroxicam;logcm/s;smi
+CN1C2CC(OC(=O)C(CO)c3ccccc3)CC1C1OC12;-4.7240591;1128;D-1580;;Scopolamine;logcm/s;smi
+CN1C2CC[C@@H]1CC(OC(c1ccc(Cl)cc1)c1cccc(Cl)c1)C2;-5.5975828;698;D-1935;;3',4''-diCl BZT;logcm/s;smi
+CN1C2CC[C@@H]1CC(OC(c1ccccc1)c1ccc(Cl)cc1)C2;-4.9114642;697;D-1934;;4'-Cl BZT;logcm/s;smi
+CN1C2CC[C@@H]1CC(OC(c1ccccc1)c1cccc(Cl)c1)C2;-4.662271;1178;D-1933;;3'-Cl BZT;logcm/s;smi
+CN1CC(=O)NC1=N;-5.9354091;5;A-105;;creatinine;logcm/s;smi
+CN1CCC(=C2c3ccccc3CC(=O)c3sccc32)CC1;-4.45233845;[1092, 1119];['D-1476', 'C-1161'];[nan, nan];['943-Ketotifen fumarate (38)', 'Ketotifen'];logcm/s;smi
+CN1CCC(c2c[nH]c3ccc(NC(=O)c4ccc(F)cc4)cc23)CC1;-5.3211966;610;D-1736;;LY334370;logcm/s;smi
+CN1CCCC/C=C\[C@@H]2C[C@@]2(C(=O)NS(=O)(=O)C2CC2)NC(=O)[C@@H]2C[C@@H](Oc3nc(-c4ccccc4)nc4ccccc34)C[C@H]2C1=O;-4.6799998;995;D-2594;;;logcm/s;smi
+CN1CCCC1c1cccnc1;-4.569492166666667;[169, 366, 494];['D-1516', 'C-688', 'A-375'];[nan, nan, nan];['041-Nicotine', 'nicotine', 'Nicotine'];logcm/s;smi
+CN1CCN(C(=O)CCNC(=O)[C@@H](Cc2ccccc2)NC(=O)C2(NC(=O)c3cc4ccccc4s3)CCCC2)CC1;-5.6994848;1190;D-2029;;25c;logcm/s;smi
+CN1CCN(C2=Nc3cc(Cl)ccc3Nc3ccccc32)CC1;-4.5100002;263;A-95;;clozapine;logcm/s;smi
+CN1CCN(C2=c3ccccc3=Nc3ccc(Cl)cc3N2)CC1;-4.5100002;428;D-1395;;Clozapine;logcm/s;smi
+CN1CCN(Cc2ccc(C(c3nnnn3Cc3ccccc3)N3CCCN(C4CCC4)CC3)cc2)CC1;-6.0999999;1260;D-2505;;5d;logcm/s;smi
+CN1CCN(c2c(F)cc3c(=O)c(C(=O)O)cn(CCF)c3c2F)CC1;-4.8099742;604;D-1724;;Fleroxacin;logcm/s;smi
+CN1CC[C@]23C(=O)C[C@@H]4C(=CCO[C@H]5CC(=O)N(c6ccccc62)[C@@H]3[C@@H]54)C1;-4.5816798;1209;D-2120;;Icajine (Ica);logcm/s;smi
+CN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@@H](O)C=C[C@H]3[C@H]1C5;-5.27499985;[490, 155];['A-349', 'D-1510'];[nan, nan];['Morphine', 'morphine'];logcm/s;smi
+CN1C[C@@H]2c3ccccc3Oc3ccc(Cl)cc3[C@H]2C1;-4.73;946;D-2472;;Org 5222;logcm/s;smi
+CN1[C@@H]2CC[C@@H]1CC(OC(=O)C(CO)c1ccccc1)C2;-4.7016673;1103;D-1358;;Atropine;logcm/s;smi
+CN1[C@H]2CC(OC(=O)[C@H](CO)c3ccccc3)C[C@@H]1[C@H]1O[C@@H]21;-4.928;201;A-441;;scopolamine;logcm/s;smi
+CN1[C@H]2CC[C@@H]1CC(OC(=O)C(CO)c1ccccc1)C2;-4.6999998;207;A-45;;atropine;logcm/s;smi
+CN1c2ccccc2C(=O)N2CCc3c([nH]c4ccccc34)C21;-4.632256;748;D-2061;;Evodiamine (EDM);logcm/s;smi
+CNC(=N)c1cccc(CC(CC(=O)N2CCC(C(=O)O)CC2)NS(=O)(=O)c2ccc3ccccc3c2)c1;-7.1487603;582;D-1680;;;logcm/s;smi
+CNC(=N)c1cccc(CC(CC(=O)N2CCC(C)CC2)NS(=O)(=O)c2ccc3ccccc3c2)c1;-6.8503904;584;D-1687;;;logcm/s;smi
+CNC(=O)/C=C(/c1ccc2nc(N)n(C(C)C)c2c1)c1cccc(F)c1F;-5.2199998;[1048, 1239];['D-2361', 'A-319'];[nan, nan];['E26', 'LY366094'];logcm/s;smi
+CNC(=O)/C=C(/c1ccc2nc(N)n(C3CCCC3)c2c1)c1ccccc1F;-5.1500001;899;D-2363;;E28;logcm/s;smi
+CNC(=O)/C=C(/c1ccc2nc(N)n(S(=O)(=O)C(C)C)c2c1)c1cc(F)ccc1F;-4.2600002;[882, 132];['A-313', 'D-2341'];[nan, nan];['LY355081', 'E06'];logcm/s;smi
+CNC(=O)/C=C(/c1ccc2nc(N)n(S(=O)(=O)C(C)C)c2c1)c1ccc(F)c(F)c1F;-4.1399999;[138, 886];['D-2347', 'A-320'];[nan, nan];['E12', 'LY366347'];logcm/s;smi
+CNC(=O)/C=C(/c1ccc2nc(N)n(S(=O)(=O)C(C)C)c2c1)c1cccc(F)c1F;-4.21;[883, 134];['D-2343', 'A-315'];[nan, nan];['LY357822', 'E08'];logcm/s;smi
+CNC(=O)/C=C(/c1ccc2nc(N)n(S(=O)(=O)C(C)C)c2c1)c1ccccc1-c1cccc2ccccc12;-4.0300002;1047;A-318;;LY366092;logcm/s;smi
+CNC(=O)/C=C(\c1cccc(F)c1)c1ccc2nc(N)n(S(=O)(=O)NC(=O)N(C)C)c2c1;-4.0599999;[894, 1046];['D-2356', 'A-311'];[nan, nan];['LY354030', 'E21'];logcm/s;smi
+CNC(=O)/C=C(\c1cccc(F)c1)c1ccc2nc(N)n(S(=O)(=O)NC(=O)N3CCCC3)c2c1;-4.0999999;897;D-2359;;E24;logcm/s;smi
+CNC(=O)/C=C(\c1cccc(F)c1)c1ccc2nc(N)n(S(=O)(=O)NC(=O)N3CCOCC3)c2c1;-4.3899999;896;D-2358;;E23;logcm/s;smi
+CNC(=O)/C=C(\c1ccccc1)c1ccc2nc(N)n(S(=O)(=O)C(C)C)c2c1;-4.1999998;[1237, 133];['D-2342', 'A-314'];[nan, nan];['E07', 'LY357132'];logcm/s;smi
+CNC(=O)C(c1ccc2nc(N)n(C(C)C)c2c1)c1cccc(F)c1F;-5.0;648;D-1821;;;logcm/s;smi
+CNC(=O)C(c1ccc2nc(N)n(C3CCCC3)c2c1)c1ccccc1F;-4.9074507;652;D-1826;;;logcm/s;smi
+CNC(=O)[C@@H](Cc1ccccc1)NC(=O)[C@@H](C)NC(C)=O;-5.7484403;567;D-1661;;N-Acetyl-D-alanyl-D-phenylalanine N-Methylamide (2);logcm/s;smi
+CNC(=O)[C@@H](Cc1ccccc1)NC(=O)[C@@H](CC(C)C)NC(C)=O;-5.2142239;1139;D-1663;;N-Acetyl-D-leucyl-D-phenylalanine N-Methylamide (4);logcm/s;smi
+CNC(=O)[C@@H](Cc1ccccc1)NC(=O)[C@@H](CC1CCCCC1)NC(C)=O;-5.1413336;570;D-1665;;N-Acetyl-D-cyclohexylalanyl-D-phenylalanine N-Methylamide (6);logcm/s;smi
+CNC(=O)[C@@H](Cc1ccccc1)NC(=O)[C@@H](Cc1ccccc1)NC(=O)[C@@H](Cc1ccccc1)NC(C)=O;-5.3800001;943;D-2468;;;logcm/s;smi
+CNC(=O)[C@@H](Cc1ccccc1)NC(=O)[C@@H](Cc1ccccc1)NC(C)=O;-5.0499268;569;D-1664;;N-Acetyl-D-phenylalanyl-D-phenylalanine N-Methylamide (5a);logcm/s;smi
+CNC(=O)[C@@H](Cc1ccccc1)NC(=O)[C@H](NC(C)=O)C(C)C;-5.3900242;568;D-1662;;N-Acetyl-D-valyl-D-phenylalanine N-Methylamide (3a);logcm/s;smi
+CNC(=O)[C@@H](NC(=O)[C@H](OCc1ccccc1)[C@H](O)[C@@H](O)[C@@H](OCc1ccccc1)C(=O)N[C@H]1c2ccccc2C[C@H]1O)C(C)C;-5.8499999;955;D-2484;;;logcm/s;smi
+CNC(=O)[C@@H]1Cc2cn(cn2)CC(=O)N2CCC[C@H]2C(=O)N[C@@H](C)C(=O)N1C;-5.8998151;1151;D-1768;;U-84656 (IV);logcm/s;smi
+CNC(=O)[C@H](Cc1ccccc1)N(C)C(=O)[C@@H](Cc1ccccc1)N(C)C(=O)[C@H](Cc1ccccc1)N(C)C(C)=O;-4.4948897;633;D-1782;;Ac-(NMe-D-phe)3-NHMe;logcm/s;smi
+CNC(=O)[C@H](NC(=O)[C@](O)(Cc1ccccc1)CN(Cc1ccc(-c2ccccn2)cc1)NC(=O)[C@H](CC(=O)OC)C(C)(C)C)C(C)(C)C;-5.4699998;994;D-2592;;;logcm/s;smi
+CNC(=O)[C@H](NC(=O)[C@](O)(Cc1ccccc1)CN(Cc1ccc(Br)cc1)NC(=O)[C@H](CC(=O)OC)C(C)(C)C)C(C)(C)C;-5.5999999;993;D-2591;;;logcm/s;smi
+CNC(C)C(O)c1ccccc1;-4.9799998;[443, 38];['D-1428', 'A-161'];[nan, nan];['Ephedrine, Pseudoephedrine', 'ephedrine'];logcm/s;smi
+CNC1(c2ccccc2Cl)CCCCC1=O;-4.2600002;1241;D-2371;;Ketamine;logcm/s;smi
+CNCC(=O)N[C@H](c1cccc(F)c1N1CCN(C(=O)[C@H](C)Cc2ccc(Cl)cc2Cl)CC1)C(C)C;-5.6999998;807;D-2181;;10c;logcm/s;smi
+CNCC(O)c1ccc(O)c(O)c1;-6.0188646;603;D-1723;;Epinephrine;logcm/s;smi
+CNCCC(=O)N[C@H](c1cc(C)ccc1N1CCN(C(=O)[C@H](C)Cc2ccc(Cl)cc2)CC1)C(C)C;-4.9204097;810;D-2186;;11c;logcm/s;smi
+CNCCC(Oc1ccc(C(F)(F)F)cc1)c1ccccc1;-4.9299622;381;C-801;;205-Fluoxetine;logcm/s;smi
+CNCCC(Oc1ccc(C)cc1)c1ccccc1;-4.5500002;449;D-1442;;Fluoxetine;logcm/s;smi
+CNCCCN1c2ccccc2CCc2ccccc21;-4.614265;[1107, 1020];['A-112', 'D-1404'];[nan, nan];['Desipramine', 'desipramine'];logcm/s;smi
+CNCCN[C@H](c1cc(C)ccc1N1CCN(C(=O)[C@H](C)Cc2ccc(Cl)cc2F)CC1)C(C)C;-5.52;806;D-2178;;;logcm/s;smi
+CNC[C@H](O)c1ccc(O)c(O)c1;-6.125;40;A-164;;epinephrine;logcm/s;smi
+CNCc1cnc(C)cc1Oc1ccccc1Oc1ccccc1;-4.8399267;1090;B-643;;;logcm/s;smi
+CNCc1nnc(-c2ccc(N3C[C@H](CNC(C)=S)OC3=O)cc2F)s1;-4.7697759;1158;D-1810;;PNU-182945;logcm/s;smi
+CNS(=O)(=O)Cc1ccc2[nH]cc(CCN(C)C)c2c1;-5.6828976;536;D-1598;;Sumatriptan;logcm/s;smi
+CNS(=O)(=O)c1ccc(Cl)cc1;-4.186419;285;B-546;;;logcm/s;smi
+CN[C@@H](C)[C@@H](O)c1ccccc1;-4.9913998;389;C-852;;285-Ephedrine;logcm/s;smi
+CN[C@@H](CCSC)C(=O)NC(=O)[C@H](Cc1ccccc1)NC(=O)CNC(=O)[C@@H](C)NC(=O)[C@@H](N)Cc1ccc(O)cc1;-7.3099999;862;D-2307;;Metkephamid;logcm/s;smi
+CO;-4.4899998;1049;A-337;;methanol;logcm/s;smi
+CO/N=C(/C(=O)N[C@@H]1C(=O)N2C(C(=O)O)=C(CSc3nc(=O)c(=O)[nH]n3C)CS[C@H]12)c1csc(N)n1;-6.604713;606;D-1727;;Ceftriaxone;logcm/s;smi
+CO/N=C(\C(=O)N[C@@H]1C(=O)N2C(C(=O)O)=C(CSc3nc(=O)c(=O)[nH]n3C)CS[C@H]12)c1csc(N)n1;-6.7649999;257;A-78;;ceftriaxone;logcm/s;smi
+COC(=O)/C=C/CNC(=O)CN1C(=O)[C@@H](COC(=O)Nc2ccc(Cl)cc2C(F)(F)F)N=C(c2ccccc2)c2ccccc21;-5.4200001;914;D-2394;;4c;logcm/s;smi
+COC(=O)C(C)NP(=O)(OC[C@@H]1C=C[C@H](n2cc(C)c(=O)[nH]c2=O)O1)Oc1ccc(Br)cc1;-5.6954093;721;D-2001;;CF 1517 (p-Br);logcm/s;smi
+COC(=O)C(C)NP(=O)(OC[C@@H]1C=C[C@H](n2cc(C)c(=O)[nH]c2=O)O1)Oc1ccc(C)cc1;-5.8474512;719;D-1999;;CF 1525 (p-Me);logcm/s;smi
+COC(=O)C(C)NP(=O)(OC[C@@H]1C=C[C@H](n2cc(C)c(=O)[nH]c2=O)O1)Oc1ccc(Cl)cc1;-5.7328787;720;D-2000;;CF 1523 (p-Cl);logcm/s;smi
+COC(=O)C(C)NP(=O)(OC[C@@H]1C=C[C@H](n2cc(C)c(=O)[nH]c2=O)O1)Oc1ccc(I)cc1;-5.1300001;722;D-2002;;CF 1572 (p-I);logcm/s;smi
+COC(=O)C(C)NP(=O)(OC[C@@H]1C=C[C@H](n2cc(C)c(=O)[nH]c2=O)O1)Oc1ccc(OC)cc1;-5.9819288;1184;D-1998;;CF 1526 (p-OMe);logcm/s;smi
+COC(=O)C1=C(C)NC(C)=C(C(=O)OC(C)C)C1c1cccc2nonc12;-4.0522659;[385, 468];['C-842', 'D-1470'];[nan, nan];['271-Isradipine', 'Isradipine'];logcm/s;smi
+COC(=O)C1=C(C)NC(C)=C(C(=O)OC)C1c1ccccc1N(O)O;-4.3319983;495;D-1517;;Nifedipine;logcm/s;smi
+COC(=O)C1=C(C)NC(C)=C(C(=O)OCC(C)C)C1c1ccccc1N(O)O;-4.6999998;496;D-1518;;Nisoldipine;logcm/s;smi
+COC(=O)C1=C(C)NC(C)=C(C(=O)OCCN(C)Cc2ccccc2)C1c1cccc(N(O)O)c1;-4.9305754;493;D-1515;;Nicardipine;logcm/s;smi
+COC(=O)C1=CO[C@@H](C)[C@H]2CN3CCc4c([nH]c5ccccc45)[C@@H]3C[C@@H]12;-4.8187928;1206;D-2103;;Ajmalicine (AMC);logcm/s;smi
+COC(=O)C1C(O)CCC2CN3CCc4c([nH]c5ccccc45)C3CC21;-4.8099999;555;D-1634;;Yohimbine (YOH);logcm/s;smi
+COC(=O)C1CCCCN1C(=O)CC(Cc1cccc(C(=N)N)c1)NS(=O)(=O)c1ccc2ccccc2c1;-7.1178856;577;D-1674;;;logcm/s;smi
+COC(=O)C1CCN(C(=O)CC(Cc2cccc(C(=N)N)c2)NS(=O)(=O)c2ccc3ccccc3c2)CC1;-7.0912943;580;D-1678;;;logcm/s;smi
+COC(=O)C[C@@H](C(=O)NN(Cc1ccc(/C=C\c2ccccc2)cc1)C[C@@](O)(Cc1ccccc1)C(=O)NC1c2ccccc2C[C@H]1O)C(C)(C)C;-5.0799999;1269;D-2584;;;logcm/s;smi
+COC(=O)C[C@@H](C(=O)NN(Cc1ccc(Br)cc1)C[C@@](O)(Cc1ccccc1)C(=O)NC1CCOC1)C(C)(C)C;-4.9699998;991;D-2587;;;logcm/s;smi
+COC(=O)Nc1nc2ccc(C(=O)c3ccccc3)cc2[nH]1;-4.5100002;481;D-1496;;Mebendazole;logcm/s;smi
+COC(=O)Nc1nc2ccccc2[nH]1;-4.1011863;755;D-2082;;Carbendazim;logcm/s;smi
+COC(=O)[C@@H]1[C@H](O)CC[C@@H]2CN3CCc4c([nH]c5ccccc45)[C@H]3C[C@H]21;-4.8124795;359;C-1301;;801-Yohimbine (YOH);logcm/s;smi
+COC(=O)[C@H](N)CCCCNC(=S)Nc1ccc2c(c1)C(=O)OC21c2ccc(O)cc2Oc2cc(O)ccc21;-5.8313413;757;D-2086;;Lys-FITC-OCH3;logcm/s;smi
+COC(=O)[C@H]1[C@H](O)CC[C@@H]2CN3CCc4c([nH]c5ccccc45)[C@H]3C[C@H]21;-4.7298937;763;D-2102;;Corynanthine (COR);logcm/s;smi
+COC(=O)[C@H]1[C@H]2C[C@@H]3c4[nH]c5cc(OC)ccc5c4CCN3C[C@H]2C[C@@H](OC(=O)c2cc(OC)c(OC)c(OC)c2)[C@@H]1OC;-5.3699999;523;D-1567;;Reserpine;logcm/s;smi
+COC(=O)c1c(Cl)cc(Cl)cc1-c1ccc([C@@H](C)NC(=O)C2(NC(=O)C(F)(F)F)CC2)c(F)c1;-4.7447276;1088;B-630;;2f;logcm/s;smi
+COC(=O)c1c(Cl)cc(Cl)cc1-c1cnc([C@@H](C)NC(=O)C2(NC(=O)C(F)(F)F)CC2)c(F)c1;-4.5376019;313;B-628;;2m;logcm/s;smi
+COC(=O)c1c(Cl)cccc1-c1ccc([C@@H](C)NC(=O)C2(NC(=O)C(F)(F)F)CC2)c(F)c1;-4.4685211;319;B-636;;;logcm/s;smi
+COC(=O)c1c(Cl)cccc1-c1cnc([C@@H](C)NC(=O)C2(NC(=O)C(F)(F)F)CC2)c(F)c1;-4.6020598;317;B-634;;2l;logcm/s;smi
+COC(=O)c1c(F)cc(Cl)cc1-c1ccc([C@@H](C)NC(=O)C2(NC(=O)C(F)(F)F)CC2)c(F)c1;-4.5686364;1089;B-637;;2g;logcm/s;smi
+COC(=O)c1cc(O)c(O)c(O)c1;-5.3899999;1240;D-2370;;Methyl gallate;logcm/s;smi
+COC(=O)c1cc(OC)c2c(c1-c1c(C(=O)OC)cc(OC)c3c1OCO3)OCO2;-4.1687455;754;D-2081;;Dimethyl-4',4'-dimethoxy-5,6,5',6'-dimethylene dioxybiphenyl-2,2'-dicarboxylate (DDB);logcm/s;smi
+COC(=O)c1cc(OC)c2c(c1-c1c(CO)cc(OC)c3c1OCO3)OCO2;-4.7979398;655;D-1839;;Bicyclol;logcm/s;smi
+COC(=O)c1ccc(O)cc1;-4.46;923;D-2416;;Methylparaben;logcm/s;smi
+COC(=O)c1ccccc1-c1c2ccc(=N)cc-2oc2cc(N)ccc12;-5.9411516;1138;D-1656;;Rhodamine 123 (Rho 123);logcm/s;smi
+COC(C)(C)CC[C@@H](O)[C@](C)(O)[C@H]1CC[C@@]2(O)C3=CC(=O)[C@@H]4C[C@@H](O)[C@@H](O)C[C@@]4(C)C3CC[C@]12C;-4.7600002;740;D-2040;;20E 25-methyl ether (10);logcm/s;smi
+COC1=CC(=O)C[C@@H](C)[C@]12Oc1c(Cl)c(OC)cc(OC)c1C2=O;-4.3527815499999996;[458, 58];['D-1455', 'A-198'];[nan, nan];['Griseofulvin', 'griseofulvin'];logcm/s;smi
+COC1CC(OC2CCC3(C=O)C4CCC5(C)C(C6=CC(=O)OC6)CCC5(O)C4CCC3(O)C2)OC(C)C1O;-5.5799999;1106;D-1400;;Cymarin;logcm/s;smi
+COCC(=O)O[C@]1(CCN(C)CCCc2nc3ccccc3[nH]2)CCc2cc(F)ccc2[C@@H]1C(C)C;-4.9674999500000006;[153, 605];['A-345', 'D-1725'];[nan, nan];['mibefradil', 'Mibefradil'];logcm/s;smi
+COCCCOc1ccc(-c2nccc(-c3cc4c([nH]3)C3(CCCNC3)CNC4=O)n2)cn1;-5.3800001;959;D-2502;;;logcm/s;smi
+COCCNC(=O)[C@H](NC(=O)[C@](O)(Cc1ccccc1)CN(Cc1ccc(Br)cc1)NC(=O)[C@H](CC(=O)OC)C(C)(C)C)C(C)C;-5.3200002;992;D-2589;;;logcm/s;smi
+COCCOCCOC(=O)[C@H](Cc1ccc(OC(=O)N(C)C)cc1)NC(=O)[C@H]1N(S(=O)(=O)c2cnn(C)c2)CSC1(C)C;-5.6900001;242;A-506;;VLA-4 antagonist 6;logcm/s;smi
+COCCOCCOCC(=O)Nc1ccc(S(=O)(=O)Nc2nncs2)cc1;-6.2399998;1242;D-2374;;;logcm/s;smi
+COCCOc1ccc(N2CCN(CCn3ncc4c3nc(N)n3nc(-c5ccco5)nc43)CC2)cc1;-5.3499999;187;A-414;;preladenant;logcm/s;smi
+COCCc1ccc(OCC(O)CNC(C)C)cc1;-4.3493013;304;B-597;;Metoprolol;logcm/s;smi
+COCCn1cc(C(C(=O)NS(=O)(=O)c2ccc(C)cc2OC)c2ccc3c(c2)OCO3)c2ccc(COC)cc21;-5.7979398;730;D-2015;;;logcm/s;smi
+COCCn1cc(C(C(=O)NS(=O)(=O)c2ccc(C)cc2OC)c2ccc3c(c2)OCO3)c2ccc(F)cc21;-5.720623;731;D-2016;;;logcm/s;smi
+COCN1C(=O)N(COC)C(=O)C(c2ccccc2)(c2ccccc2)C1=O;-4.4499998;974;D-2527;;T2000;logcm/s;smi
+COCN1C(=O)NC(=O)C(c2ccccc2)(c2ccccc2)C1=O;-4.5;1264;D-2528;;MMMDPB;logcm/s;smi
+COCc1c(C(C)C)nc(C(C)C)c(/C=C/[C@@H](O)C[C@@H](O)CC(=O)O)c1-c1ccc(F)cc1;-5.27;1257;D-2490;;Cerivastatin;logcm/s;smi
+COCc1ccc2c(C(C(=O)NS(=O)(=O)c3ccc(C)cc3OC)c3ccc4c(c3)OCO4)cn(C)c2c1;-5.3005152;728;D-2012;;;logcm/s;smi
+CON=C(C(=O)NC1C(=O)N2C(C(=O)O)=C(COC(N)=O)CSC12)c1ccco1;-6.29;415;D-1378;;Cefuroxime;logcm/s;smi
+CO[C@@H]1C=CO[C@@]2(C)Oc3c(C)c(O)c4c(c3C2=O)C(=O)/C(=C\NN2CCN(C)CC2)C(=C4O)NC(=O)C(C)=CC=C[C@@H](C)[C@H](O)[C@H](C)[C@H](O)[C@@H](C)[C@@H](OC(C)=O)[C@@H]1C;-5.399786;525;D-1570;;Rifampicin;logcm/s;smi
+CO[C@@H]1C[C@H]2C(=O)C=C3C(CC[C@]4(C)[C@@H]([C@@](C)(O)[C@@H](CCC(C)C)OC)CC[C@@]34O)[C@]2(C)C[C@@H]1O;-4.5380535;1196;D-2044;;PoA 3.22-dimethyl ether (20);logcm/s;smi
+CO[C@H](CCC(C)(C)O)[C@](C)(O)[C@H]1CC[C@@]2(O)C3=CC(=O)[C@@H]4C[C@@H](O)[C@@H](O)C[C@@]4(C)C3CC[C@]12C;-4.79;1194;D-2037;;20E 22-methyl ether (4);logcm/s;smi
+CO[C@H](CCC(C)C)[C@](C)(O)[C@H]1CC[C@@]2(O)C3=CC(=O)[C@@H]4C[C@@H](O)[C@@H](O)C[C@@]4(C)C3CC[C@]12C;-4.5799999;741;D-2043;;PoA 22-methyl ether (18);logcm/s;smi
+CO[C@H]1/C=C/O[C@@]2(C)Oc3c(C)c(O)c4c(c3C2=O)C2=NC3(CCN(CC(C)C)CC3)NC2=C(NC(=O)/C(C)=C\C=C\[C@H](C)[C@H](O)[C@@H](C)[C@@H](O)[C@@H](C)[C@H](OC(C)=O)[C@@H]1C)C4=O;-5.02;[953, 524];['D-1569', 'D-2481'];[nan, nan];Rifabutin;logcm/s;smi
+CO[C@H]1C[C@@H]2CC[C@@H](C)[C@@](O)(O2)C(=O)C(=O)N2CCCC3[C@H](C[C@@H]4CC[C@@H](OCCO)[C@H](OC)C4)[C@H](CC(=O)[C@H](C)/C=C(\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)CC[C@H](C)/C=C/C=C/C=C/1C)OC(=O)[C@H]32;-4.6300001;1070;A-443;;SDZ-RAD;logcm/s;smi
+CO[C@H]1C[C@@H]2CC[C@@H](C)[C@@](O)(O2)C(=O)C(=O)N2CCCC[C@H]2C(=O)O[C@H]([C@H](C)C[C@@H]2CC[C@@H](O)[C@H](OC)C2)CC(=O)[C@H](C)/C=C(\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)C[C@H](C)/C=C/C=C/C=C/1C;-4.96;199;A-430;;rapamycin;logcm/s;smi
+CO[C@H]1C[C@H](O[C@H]2CC[C@]3(C=O)[C@H]4CC[C@]5(C)[C@@H](C6=CC(=O)OC6)CC[C@]5(O)[C@@H]4CC[C@]3(O)C2)O[C@H](C)[C@H]1O;-5.6999998;1018;A-107;;cymarin;logcm/s;smi
+CO[C@H]1C[C@]2(C)C3CC[C@]4(C)[C@@H]([C@@](C)(O)[C@H](O)CCC(C)C)CC[C@@]4(O)C3=CC(=O)[C@@H]2C[C@H]1O;-4.6999998;1195;D-2042;;PoA 2-methyl ether (16);logcm/s;smi
+COc1c(O)cc(O)c2c(=O)cc(-c3ccccc3)oc12;-4.63112805;[244, 782];['A-509', 'D-2147'];[nan, nan];['Wogonin (2)', 'wogonin'];logcm/s;smi
+COc1c(O)cc2oc(-c3ccc(O)cc3)cc(=O)c2c1O;-5.1799998;[986, 103];['A-263', 'D-2574'];[nan, nan];['Hispidulin (4)', 'hispidulin'];logcm/s;smi
+COc1c2ccoc2c(OCC2OC2(C)C)c2oc(=O)ccc12;-4.3000002;977;D-2535;;Byankangelicol;logcm/s;smi
+COc1cc(-c2cc(=O)c3c(O)cc(O)cc3o2)cc(O)c1O;-6.0;[984, 203];['A-444', 'D-2571'];[nan, nan];['Selagin (1)', 'selagin'];logcm/s;smi
+COc1cc(-c2cc(=O)c3c(O)cc(O)cc3o2)cc(O)c1OC;-4.9499998;1268;D-2572;;Apometzgerin (2);logcm/s;smi
+COc1cc(-c2cc(=O)c3c(O)cc(O)cc3o2)cc(OC)c1OC;-5.0999999;[985, 228];['A-488', 'D-2573'];[nan, nan];['tricetin-3`,4`,5`-trimethylether', 'Tricetin-3,4,5-trimethylether (3)'];logcm/s;smi
+COc1cc(-c2oc3cc(O)cc(O)c3c(=O)c2OC2O[C@H](CO[C@H]3O[C@H](C)[C@@H](O)[C@H](O)[C@@H]3O)[C@@H](O)[C@H](O)[C@H]2O)ccc1O;-6.5388007;798;D-2166;;IRR (23);logcm/s;smi
+COc1cc(-c2oc3cc(O)cc(O)c3c(=O)c2O[C@@H]2O[C@H](CO[C@@H]3O[C@@H](C)[C@H](O)[C@@H](O)[C@H]3O)[C@@H](O)[C@H](O)[C@H]2O)ccc1O;-6.54;1039;A-274;;IRR ;logcm/s;smi
+COc1cc(C(=O)N2CC[C@](CCN3CCC(C(=O)N4CCN(C)CC4)(c4cccnc4)CC3)(c3ccc(Cl)c(Cl)c3)C2)cc(OC)c1OC;-5.1382737;1160;D-1819;;NK1NK2 analogue 104 (15f);logcm/s;smi
+COc1cc(C(=O)N2CC[C@](CCN3CCC(C(=O)N4CCOCC4)(c4ccccc4)CC3)(c3ccc(Cl)c(Cl)c3)C2)cc(OC)c1OC;-5.0814137;647;D-1820;;NK1NK2 analogue 212 (15d);logcm/s;smi
+COc1cc(C(=O)N2CC[C@](CCN3CCC(C(N)=O)(c4ccccc4)CC3)(c3ccc(Cl)c(Cl)c3)C2)cc(OC)c1OC;-5.4105153;646;D-1818;;NK1NK2 analogue 105 (MDL 105,212);logcm/s;smi
+COc1cc(C(=O)NCc2ccc(OCCN(C)C)cc2)cc(OC)c1OC;-4.96;1013;D-2631;;Trimethobenzamide;logcm/s;smi
+COc1cc(C)ccc1S(=O)(=O)NC(=O)C(c1ccc2c(c1)OCO2)c1cn(C)c2cc(C#N)ccc12;-5.1011863;725;D-2008;;;logcm/s;smi
+COc1cc(C)ccc1S(=O)(=O)NC(=O)C(c1ccc2c(c1)OCO2)c1cn(C)c2cc(C(C)=O)ccc12;-5.8519359;727;D-2011;;;logcm/s;smi
+COc1cc(C)ccc1S(=O)(=O)NC(=O)C(c1ccc2c(c1)OCO2)c1cn(C)c2cc(F)ccc12;-4.6994848;726;D-2010;;;logcm/s;smi
+COc1cc(Cc2cnc(N)nc2N)cc(OC)c1OC;-4.352620099999999;[549, 229];['A-489', 'D-1626'];[nan, nan];['Trimethoprim', 'trimethoprim'];logcm/s;smi
+COc1cc(Cl)ccc1C[C@@H](C)C(=O)N1CCN(c2ccc(Cl)cc2[C@@H](NC(=O)C(C)N)C(C)C)CC1;-5.5214391;812;D-2190;;12c;logcm/s;smi
+COc1cc(N)c(Cl)cc1C(=O)NC1CCN(CCCOc2ccc(F)cc2)CC1OC;-4.52;1105;D-1392;;Cisapride;logcm/s;smi
+COc1cc(OC)c2c(=O)cc(-c3ccccc3)oc2c1;-4.6313224;700;D-1941;;5,7-DMF;logcm/s;smi
+COc1cc([C@@H]2c3cc4c(cc3[C@@H](OC3OC5COC(c6cccs6)OC5C(O)C3O)[C@H]3COC(=O)[C@H]23)OCO4)cc(OC)c1O;-6.0500002;957;D-2489;;Teniposide;logcm/s;smi
+COc1cc([C@@H]2c3cc4c(cc3[C@@H](O[C@@H]3O[C@@H]5CO[C@@H](C)O[C@H]5[C@H](O)[C@H]3O)[C@H]3COC(=O)[C@H]23)OCO4)cc(OC)c1O;-6.14999985;[1112, 21];['A-138', 'D-1433'];[nan, nan];['eetoposide', 'Etoposide'];logcm/s;smi
+COc1cc2c(c(OC)c1OC)-c1c(cc3c(c1OC)OCO3)C[C@H](C)[C@@](C)(O)C2;-4.5693183;601;D-1721;;Gomisin A;logcm/s;smi
+COc1cc2c(cc1OC)C1CC(O)C(CC(C)C)CN1CC2;-4.5986857;346;C-1197;;1029-Dihydrotetrabenazine isomer;logcm/s;smi
+COc1cc2c(cc1OC)[C@H]1C[C@H](O)[C@@H](CC(C)C)CN1CC2;-4.6799998;1230;D-2297;;Dihydrotetrabenazine isomer A;logcm/s;smi
+COc1cc2c(cc1OC)[C@]13CCN4CC5=CCO[C@@H]6CC(=O)N2[C@@H]1[C@@H]6[C@@H]5C[C@@H]43;-4.7786422;769;D-2115;;Brucine (Bru);logcm/s;smi
+COc1cc2c(cc1OC)[C@]13CC[N+]4([O-])CC5=CCO[C@@H]6CC(=O)N2[C@@H]1[C@@H]6[C@@H]5C[C@H]34;-5.46;770;D-2118;;Brucine N-oxide (B-N);logcm/s;smi
+COc1cc2nc(N(C)CCCNC(=O)C3CCCO3)nc(N)c2cc1OC;-5.6399999;1011;D-2623;;Alfuzosin;logcm/s;smi
+COc1cc2nc(N3CCN(C(=O)C4CCCO4)CC3)nc(N)c2cc1OC;-4.6100001;218;A-472;;tenoxicam;logcm/s;smi
+COc1cc2nc(N3CCN(C(=O)c4ccco4)CC3)nc(N)c2cc1OC;-4.987;185;A-412;;prazosin;logcm/s;smi
+COc1cc2nc(N3CCN(C(=O)c4occc4Cl)CC3)nc(N)c2cc1OC;-4.8899999;512;D-1549;;Prazocin;logcm/s;smi
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCCN1CCOCC1;-4.48;1116;D-1451;;Gefitinib;logcm/s;smi
+COc1cc2oc(-c3ccc(O)c(O)c3)c(OC)c(=O)c2c(O)c1OC;-5.0900002;[195, 987];['D-2575', 'A-424'];[nan, nan];['Quercetagetin-3,6,7-trimethylether (5)', 'quercetagetin-3,6,7-trimethylether'];logcm/s;smi
+COc1ccc(-c2cc(=O)c3c(O)cc(O)cc3o2)cc1;-4.8411663;[1030, 783];['A-20', 'D-2148'];[nan, nan];['Acacetin (4)', 'acacetin'];logcm/s;smi
+COc1ccc(-c2cc(=O)c3c(O)cc(OC4O[C@H](CO[C@@H]5OC[C@@H](O)[C@H](O)[C@H]5O)[C@@H](O)[C@H](O)[C@H]4O)cc3o2)cc1O;-6.1599998;786;D-2152;;DXG (9);logcm/s;smi
+COc1ccc(-c2cc(=O)c3c(O)cc(O[C@@H]4O[C@H](CO)[C@@H](O)[C@H](O)[C@H]4O)cc3o2)cc1O;-6.9204097;790;D-2156;;DG (13);logcm/s;smi
+COc1ccc(-c2cc(=O)c3c(OC)c(OC)c(OC)c(OC)c3o2)cc1;-4.5307834;[781, 214];['D-2146', 'A-463'];[nan, nan];['tangeretin', 'Tangeretin (1)'];logcm/s;smi
+COc1ccc(-c2cc(=O)c3c(OC)cc(OC)cc3o2)cc1;-4.5595455;701;D-1942;;5,7,4'-TMF;logcm/s;smi
+COc1ccc(-c2cc(=O)c3ccc(OC)cc3o2)cc1;-4.6010299;1179;D-1940;;7,4'-DMF;logcm/s;smi
+COc1ccc(-c2coc3cc(O)ccc3c2=O)cc1;-4.5296774;[800, 51];['D-2170', 'A-184'];[nan, nan];['Formononetin (30)', 'formononetin '];logcm/s;smi
+COc1ccc(-c2nc(O[C@@H]3C[C@H]4C(=O)N[C@]5(C(=O)NS(=O)(=O)C6CC6)C[C@H]5/C=C\CCCCN(C)C(=O)[C@@H]4C3)c3ccc(OC)c(C)c3n2)cc1;-5.0500002;1000;D-2601;;51e;logcm/s;smi
+COc1ccc(-c2oc3c(CC=C(C)C)c(O)cc(O)c3c(=O)c2O[C@H]2O[C@H](C)[C@@H](O)[C@H](O)[C@@H]2O)cc1;-5.8378239;668;D-1877;;Baohuoside I;logcm/s;smi
+COc1ccc(-c2oc3c(CC=C(C)C)c(O[C@@H]4O[C@H](CO)[C@@H](O)[C@H](O)[C@H]4O)cc(O)c3c(=O)c2O[C@H]2O[C@H](C)[C@@H](O)[C@H](O)[C@@H]2O)cc1;-6.2292061;667;D-1876;;Icariin;logcm/s;smi
+COc1ccc(-c2oc3c(CC=C(C)C)c(O[C@@H]4O[C@H](CO)[C@@H](O)[C@H](O)[C@H]4O)cc(O)c3c(=O)c2O[C@H]2O[C@H](C)[C@@H](O)[C@H](O)[C@@H]2O[C@H]2OC[C@H](O)[C@@H](O)[C@@H]2O)cc1;-6.5595455;666;D-1874;;Epimedin B;logcm/s;smi
+COc1ccc(-c2oc3c(CC=C(C)C)c(O[C@@H]4O[C@H](CO)[C@@H](O)[C@H](O)[C@H]4O)ccc3c(=O)c2O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O[C@@H]2O[C@@H](C)[C@H](O)[C@@H](O)[C@H]2O)cc1;-6.4910722;665;D-1873;;Epimedin A;logcm/s;smi
+COc1ccc(-c2oc3cc(O)cc(O)c3c(=O)c2O)cc1;-5.1900001;1041;A-281;;kaempferide ;logcm/s;smi
+COc1ccc(-c2oc3cc(O)cc(O)c3c(=O)c2O)cc1O;-5.0013065;793;D-2160;;Tamarixetin (17);logcm/s;smi
+COc1ccc(/C(=C\C(N)=O)c2ccc3nc(N)n(S(=O)(=O)C(C)C)c3c2)cc1F;-4.48;[139, 887];['D-2348', 'A-321'];[nan, nan];['LY366349', 'E13'];logcm/s;smi
+COc1ccc(/C=C/CCO)cc1OC;-4.8428431;746;D-2053;;Compound D;logcm/s;smi
+COc1ccc(CC(C)NCC(O)c2ccc(O)c(NC=O)c2)cc1;-5.6300001;[52, 877];['A-185', 'D-2335'];[nan, nan];['Formoterol', 'formoterol'];logcm/s;smi
+COc1ccc(CC2c3cc(OC)c(OC)cc3CCN2C)cc1OC;-4.5497985;761;D-2095;;Laudanosine (LAU);logcm/s;smi
+COc1ccc(CCN(C)CCCC(C#N)(c2ccc(OC)c(OC)c2)C(C)C)cc1OC;-4.5799999;235;A-499;;verapamil;logcm/s;smi
+COc1ccc(CCN(C)CCC[C@](C#N)(c2ccc(OC)c(OC)c2)C(C)C)cc1OC;-4.9612799;1086;B-617;;Verapamil;logcm/s;smi
+COc1ccc(CCN2CCC(Nc3nc4ccccc4n3Cc3ccc(F)cc3)CC2)cc1;-5.1500001;403;D-1356;;Astemizole;logcm/s;smi
+COc1ccc(CN(CCN(C)C)c2ccccn2)cc1;-4.6599998;944;D-2469;;Pyrilamine Maleate;logcm/s;smi
+COc1ccc(Cc2nccc3cc(OC)c(OC)cc23)cc1OC;-4.451482049999999;[504, 335];['D-1533', 'C-1080'];[nan, nan];['792-Papaverine (PAP)', 'Papaverine (PAP)'];logcm/s;smi
+COc1ccc([C@@H]2CC(=O)c3c(O)cc(O)cc3O2)cc1O;-4.7399998;61;A-208;;hesperetin ;logcm/s;smi
+COc1ccc([C@@H]2Sc3ccccc3N(CCN(C)C)C(=O)[C@@H]2OC(C)=O)cc1;-4.4043612;437;D-1412;;Diltiazem;logcm/s;smi
+COc1ccc2[nH]c(S(=O)Cc3ncc(C)c(OC)c3C)nc2c1;-4.1700001;1057;A-381;;omeprazole;logcm/s;smi
+COc1ccc2c(=O)cc(-c3ccccc3)oc2c1;-4.6479459;699;D-1939;;7-MF;logcm/s;smi
+COc1ccc2c(O[C@@H]3CC4C(=O)N[C@]5(C(=O)O)C[C@@H]5/C=C\CCCCC[C@H](NC(=O)OC5CCCC5)C(=O)N4C3)cc(-c3csc(NC(C)C)n3)nc2c1;-5.6599998;907;D-2382;;BILN-2061;logcm/s;smi
+COc1ccc2c(O[C@@H]3C[C@H]4C(=O)N[C@]5(C(=O)NS(=O)(=O)C6CC6)C[C@H]5/C=C\CCCCCN(C)C(=O)[C@@H]4C3)nc(-c3ccccc3)nc2c1C;-4.5900002;1001;D-2602;;60a;logcm/s;smi
+COc1ccc2c(O[C@@H]3C[C@H]4C(=O)N[C@]5(C(=O)NS(=O)(=O)C6CC6)C[C@H]5/C=C\CCCCN(C)C(=O)[C@@H]4C3)cc(-c3cccc(C(C)C)n3)nc2c1C;-4.9204097;780;D-2143;;32h;logcm/s;smi
+COc1ccc2c(O[C@@H]3C[C@H]4C(=O)N[C@]5(C(=O)NS(=O)(=O)C6CC6)C[C@H]5/C=C\CCCCN(C)C(=O)[C@@H]4C3)cc(-c3nc(C(C)C)cs3)nc2c1;-4.8880281;776;D-2139;;32b;logcm/s;smi
+COc1ccc2c(O[C@@H]3C[C@H]4C(=O)N[C@]5(C(=O)NS(=O)(=O)C6CC6)C[C@H]5/C=C\CCCCN(C)C(=O)[C@@H]4C3)cc(-c3nc(C(C)C)cs3)nc2c1C;-5.0778604;777;D-2140;;TMC435350 (32c);logcm/s;smi
+COc1ccc2c(O[C@@H]3C[C@H]4C(=O)N[C@]5(C(=O)NS(=O)(=O)C6CC6)C[C@H]5/C=C\CCCCN(C)C(=O)[C@@H]4C3)cc(-c3nc(C(C)C)cs3)nc2c1Cl;-5.238286;778;D-2141;;32f;logcm/s;smi
+COc1ccc2c(O[C@@H]3C[C@H]4C(=O)N[C@]5(C(=O)NS(=O)(=O)C6CC6)C[C@H]5/C=C\CCCCN(C)C(=O)[C@@H]4C3)cc(-n3ccc(C(C)C)n3)nc2c1C;-4.8219547;779;D-2142;;32g;logcm/s;smi
+COc1ccc2c(O[C@@H]3C[C@H]4C(=O)N[C@]5(C(=O)NS(=O)(=O)C6CC6)C[C@H]5/C=C\CCCCN(C)C(=O)[C@@H]4C3)nc(-c3ccc(F)cc3)nc2c1;-4.6999998;998;D-2597;;45c;logcm/s;smi
+COc1ccc2c(O[C@@H]3C[C@H]4C(=O)N[C@]5(C(=O)NS(=O)(=O)C6CC6)C[C@H]5/C=C\CCCCN(C)C(=O)[C@@H]4C3)nc(-c3ccc(F)cc3)nc2c1C;-4.4899998;1002;D-2603;;60c;logcm/s;smi
+COc1ccc2c(O[C@@H]3C[C@H]4C(=O)N[C@]5(C(=O)NS(=O)(=O)C6CC6)C[C@H]5/C=C\CCCCN(C)C(=O)[C@@H]4C3)nc(-c3cccc(F)c3)nc2c1C;-5.3000002;1270;D-2600;;51d;logcm/s;smi
+COc1ccc2c(O[C@@H]3C[C@H]4C(=O)N[C@]5(C(=O)NS(=O)(=O)C6CC6)C[C@H]5/C=C\CCCCN(C)C(=O)[C@@H]4C3)nc(-c3ccccc3)nc2c1;-4.8899999;996;D-2595;;45a;logcm/s;smi
+COc1ccc2c(O[C@@H]3C[C@H]4C(=O)N[C@]5(C(=O)NS(=O)(=O)C6CC6)C[C@H]5/C=C\CCCCN(C)C(=O)[C@@H]4C3)nc(-c3ccccc3)nc2c1C;-4.8899999;999;D-2598;;51a;logcm/s;smi
+COc1ccc2c(O[C@@H]3C[C@H]4C(=O)N[C@]5(C(=O)NS(=O)(=O)C6CC6)C[C@H]5/C=C\CCCCN(C)C(=O)[C@@H]4C3)nc(-c3nc(C(C)C)cs3)nc2c1;-5.2199998;997;D-2596;;45b;logcm/s;smi
+COc1ccc2c(O[C@H]3C[C@H]4C(=O)NCCCCC/C=C\[C@@H]5C[C@@]5(C(=O)NS(=O)(=O)C5CC5)NC(=O)[C@@H]4C3)nc(-c3ccc(F)cc3)nc2c1C;-4.4899998;1003;D-2607;;67c;logcm/s;smi
+COc1ccc2c(c1)C13CCCCC1C(C2)N(C)CC3;-4.7399998;432;D-1406;;Dextromethorphan;logcm/s;smi
+COc1ccc2c(c1)[C@@]13CCCC[C@@H]1[C@@H](C2)N(C)CC3;-4.628932;361;C-1337;;1033-Dextromethorphan (DEM);logcm/s;smi
+COc1ccc2c(c1)[C@]13CCN4CC5=CCO[C@@H]6CC(=O)N2[C@@H]1[C@@H]6[C@@H]5C[C@@H]43;-4.5717444;1208;D-2116;;Beta-colubrine (Col);logcm/s;smi
+COc1ccc2c(c1)c(CC(=O)O)c(C)n2C(=O)c1ccc(Cl)cc1;-4.6900001;110;A-272;;indomethacin;logcm/s;smi
+COc1ccc2c(c1OC)C[N+]1(Cc3ccc(Cl)cc3)CCc3cc4c(cc3C1C2)OCO4;-6.2314224;717;D-1987;;CPU-86017;logcm/s;smi
+COc1ccc2c3c1OC1C(O)C=CC4C(C2)N(C)CCC341;-4.2800002;429;D-1396;;Codeine;logcm/s;smi
+COc1ccc2c3c1O[C@H]1[C@@H](O)C=C[C@H]4[C@@H](C2)N(C)CC[C@]314;-4.0900002;3;A-101;;codeine;logcm/s;smi
+COc1ccc2cc(C(=O)NC3(C(=O)N[C@H](Cc4ccccc4)C(=O)NCC4CCN(CC5CCOCC5)CC4)CCCC3)sc2c1;-5.9593034;737;D-2036;;48e;logcm/s;smi
+COc1ccc2cc(C(C)C(=O)[O-])ccc2c1;-4.3299999;160;A-357;;naproxen sodium;logcm/s;smi
+COc1ccc2cc([C@H](C)C(=O)O)ccc2c1;-4.6599998;159;A-356;;naproxen;logcm/s;smi
+COc1ccc2cc1Oc1ccc(cc1)CC1c3c(cc4c(c3Oc3cc5c(cc3OC)CCN(C)C5C2)OCO4)CCN1C;-4.1877432;762;D-2096;;Cepharanthine (CEP);logcm/s;smi
+COc1ccc2cc3[n+](cc2c1O)CCc1cc2c(cc1-3)OCO2;-4.8815303;1205;D-2098;;Berberrubine (BRB);logcm/s;smi
+COc1ccc2nc(S(=O)Cc3ncc(C)c(OC)c3C)[nH]c2c1;-4.21534825;[387, 500];['C-847', 'D-1525'];[nan, nan];['277-Omeprazole', 'Omeprazole'];logcm/s;smi
+COc1cccc(-n2c(=O)n(Cc3c(F)cccc3Br)c(=O)n(C[C@H](N)c3ccccc3)c2=O)c1F;-4.8569851;299;B-575;;15j;logcm/s;smi
+COc1cccc(-n2c(=O)n(Cc3ccccc3C#N)c(=O)n(C[C@H](N)c3ccccc3)c2=O)c1F;-4.5917602;300;B-576;;15f;logcm/s;smi
+COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(C)=O)C[C@@H]3O[C@H]1C[C@H](N)[C@H](O)[C@H](C)O1;-6.0999999;1255;D-2463;;Daunorubicin;logcm/s;smi
+COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@](O)(C(=O)CO)C[C@H]3O[C@@H]1C[C@@H](N)[C@@H](O)[C@@H](C)O1;-6.5900002;1145;D-1693;;Doxorubicin;logcm/s;smi
+COc1cncc(-c2nccc(-c3cc4c([nH]3)C3(CCCNC3)CNC4=O)n2)c1;-5.6999998;1259;D-2501;;;logcm/s;smi
+COc1cnn(C)c(=O)c1-c1ccc(C[C@@H](CO)NC(=O)c2c(Cl)cccc2Cl)cc1;-5.6010299;775;D-2134;;;logcm/s;smi
+CS(=O)(=O)N[C@H](Cc1ccccc1)C(=O)N1CCC[C@H]1C(=O)NCC1CCN(C(=N)N)CC1;-6.5611248;634;D-1785;;BMS 189664;logcm/s;smi
+CS(=O)(=O)Nc1ccc2c(c1)S(=O)(=O)N/C(=C1\C(=O)[C@@H]3[C@H]4CC[C@H](C4)[C@@H]3N(Cc3ccc(F)cc3)C1=O)N2;-5.8899999;1016;D-2638;;Setrobuvir (ANA598);logcm/s;smi
+CS(=O)(=O)Nc1cccc(Cn2cnc3ccccc32)c1;-4.63039205;[276, 941];['B-535', 'D-2458'];[nan, nan];;logcm/s;smi
+CS(=O)(=O)c1ccccc1-c1ccc(NC(=O)c2cc(C(F)(F)F)nn2-c2cccc(CN)c2)c(F)c1;-5.3000002;913;D-2391;;4h;logcm/s;smi
+CS(=O)(=O)c1ccccc1-c1ccc(NC(=O)c2cc(C(F)(F)F)nn2-c2cccc(CN)c2)cc1;-5.5;912;D-2390;;4g;logcm/s;smi
+CSCC[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)CNC(=O)CNC(=O)[C@@H](N)Cc1ccc(O)cc1)C(=O)O;-7.3800001;860;D-2301;;Met-enkephalin;logcm/s;smi
+CSCC[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)CNC(=O)[C@@H](C)NC(=O)[C@@H](N)Cc1ccc(O)cc1)C(=O)O;-7.02;861;D-2305;;[D-Ala2]Met-enkephalin;logcm/s;smi
+CSc1ccc2ncn(/C=C/C(=O)O)c(=O)c2c1;-4.942493649999999;[222, 543];['A-478', 'D-1612'];[nan, nan];['Tiacrilast (Ro 22-3747)', 'tiacrilast'];logcm/s;smi
+CSc1nc2cc(C(=O)N3CCC(C)CC3)ccc2[nH]1;-4.5418172;1225;D-2245;;;logcm/s;smi
+C[C@@H](NC(=O)C1(NC(=O)C(F)(F)F)CC1)c1ccc(-c2cc(Cl)cc(Cl)c2-c2nnn(C)n2)cc1F;-4.5528421;1087;B-625;;2j;logcm/s;smi
+C[C@@H](NC(=O)C1(NC(=O)C(F)(F)F)CC1)c1ccc(-c2cc(Cl)cc(F)c2-c2nnn(C)n2)cc1F;-4.6382723;311;B-626;;2k;logcm/s;smi
+C[C@@H](NC(=O)C1(NC(=O)C(F)(F)F)CC1)c1ccc(-c2cc(Cl)ccc2-c2nnn(C)n2)cc1F;-4.5528421;314;B-629;;2e;logcm/s;smi
+C[C@@H](O)[C@@H]1NC(=O)[C@H](CCCCN)N(C)C(=O)[C@@H](Cc2c[nH]c3ccccc23)N(C)C(=O)[C@H](Cc2ccccc2)NC(=O)[C@@H]2CCCN2C(=O)[C@H](Cc2ccccc2)NC1=O;-6.7423639;627;D-1775;;Cyclo(-PFMewMeKTF-) (6);logcm/s;smi
+C[C@@H](O)[C@@H]1NC(=O)[C@H](CCCCN)N(C)C(=O)[C@@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@@H]2CCCN2C(=O)[C@H](Cc2ccccc2)N(C)C1=O;-6.5700002;852;D-2274;;Cyclo(-PFMewKTMeF-) (7);logcm/s;smi
+C[C@@H](O)[C@@H]1NC(=O)[C@H](CCCCN)NC(=O)[C@@H](Cc2c[nH]c3ccccc23)N(C)C(=O)[C@H](Cc2ccccc2)NC(=O)[C@@H]2CCCN2C(=O)[C@H](Cc2ccccc2)NC1=O;-6.3989701;626;D-1774;;Cyclo(-PFMewKTF-) (4);logcm/s;smi
+C[C@@H](O)[C@@H]1NC(=O)[C@H](CCCCN)NC(=O)[C@@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@@H]2CCCN2C(=O)[C@H](Cc2ccccc2)N(C)C1=O;-6.3005152;625;D-1773;;Cyclo(-PFwKTMeF-) (3);logcm/s;smi
+C[C@@H](O)[C@@H]1NC(=O)[C@H](CCCCN)NC(=O)[C@@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@@H]2CCCN2C(=O)[C@H](Cc2ccccc2)NC1=O;-6.2209244;624;D-1771;;Cyclo(-PFwKTF-) (1);logcm/s;smi
+C[C@@H]1CC[C@H]2[C@@H](C)C(=O)O[C@@H]3O[C@@]4(C)CC[C@@H]1[C@]32OO4;-4.51952005;[594, 1063];['A-42', 'D-1708'];[nan, nan];['artemisinin', 'Artemisinin'];logcm/s;smi
+C[C@@H]1CC[C@H]2[C@@H](C)[C@@H](OC(=O)CCC(=O)O)O[C@@H]3OC4(C)CC[C@@H]1[C@@]23OO4;-5.4001169;372;C-765;;150-Artesunate;logcm/s;smi
+C[C@@H]1CC[C@H]2[C@@H](C)[C@H](OC(=O)CCC(=O)O)O[C@@H]3O[C@@]4(C)CC[C@@H]1[C@@]23OO4;-5.4000001;198;A-43;;artesunate;logcm/s;smi
+C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@]2(C)[C@@]1(O)C(=O)CO;-4.82032845;[9, 1108];['A-114', 'D-1405'];[nan, nan];['dexamethasone', 'Dexamethasone'];logcm/s;smi
+C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@]2(C)[C@@]1(O)C(=O)COC1O[C@@H](CC(=O)O)[C@H](O)[C@@H](O)[C@@H]1O;-5.979651;1150;D-1739;;Dexamethasone-?-D-glucuronide;logcm/s;smi
+C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@]2(C)[C@@]1(O)C(=O)COC1O[C@@H](CO)[C@H](O)[C@@H](O)[C@@H]1O;-6.3982739;611;D-1738;;Dexamethasone-?-D-glucoside;logcm/s;smi
+C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@]2(C)[C@@]1(O)C(=O)CO[C@H]1O[C@@H](C(=O)O)[C@H](O)[C@@H](O)[C@@H]1O;-6.1199999;11;A-116;;dexamethasone b D glucuronide;logcm/s;smi
+C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@]2(C)[C@@]1(O)C(=O)CO[C@H]1O[C@@H](CO)[C@H](O)[C@@H](O)[C@@H]1O;-6.54;10;A-115;;dexamethasone b D glucoside;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C1=O;-5.1500001;98;A-259;;hexapeptide 57;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C1=O;-5.3000002;92;A-251;;hexapeptide 48;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)NC1=O;-5.8200002;83;A-237;;hexapeptide 29;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)N(C)C(=O)[C@@H](C)NC(=O)[C@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C1=O;-5.3000002;91;A-250;;hexapeptide 47;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)N(C)C(=O)[C@@H](C)NC(=O)[C@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@@H](C)NC1=O;-5.0;82;A-236;;hexapeptide 28;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@H](C)N(C)C1=O;-5.3000002;101;A-261;;hexapeptide 59;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC1=O;-5.8200002;1035;A-246;;hexapeptide 43;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@@H](C)NC(=O)[C@H](C)N(C)C1=O;-5.8200002;90;A-245;;hexapeptide 42;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@@H](C)NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)N(C)C1=O;-5.0;95;A-256;;hexapeptide 54;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@@H](C)NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC1=O;-5.8200002;85;A-240;;hexapeptide 33;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@@H](C)NC(=O)[C@@H](C)NC(=O)[C@H](C)N(C)C1=O;-5.8200002;84;A-239;;hexapeptide 32;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC(=O)[C@@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@H](C)N(C)C1=O;-5.3000002;96;A-257;;hexapeptide 55;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC(=O)[C@@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC1=O;-5.3000002;81;A-235;;hexapeptide 27;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC(=O)[C@@H](C)NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC1=O;-5.3000002;73;A-226;;hexapeptide 18;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C1=O;-5.3000002;94;A-255;;hexapeptide 53;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)NC1=O;-5.8200002;74;A-228;;hexapeptide 20;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)NC(=O)[C@@H](C)NC(=O)[C@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C1=O;-5.8200002;87;A-242;;hexapeptide 37;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)NC(=O)[C@@H](C)NC(=O)[C@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@@H](C)NC1=O;-5.8200002;1034;A-227;;hexapeptide 19;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)NC(=O)[C@@H](C)NC(=O)[C@H](C)N(C)C(=O)[C@H](C)NC(=O)[C@@H](C)NC1=O;-5.8200002;64;A-213;;hexapeptide 05;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC1=O;-5.8200002;79;A-233;;hexapeptide 25;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@@H](C)NC(=O)[C@H](C)N(C)C1=O;-5.8200002;78;A-232;;hexapeptide 24;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC1=O;-5.8200002;1032;A-223;;hexapeptide 15;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)NC(=O)[C@@H](C)NC(=O)[C@H](C)N(C)C1=O;-5.8200002;72;A-222;;hexapeptide 14;logcm/s;smi
+C[C@@H]1NC(=O)[C@@H](C)NC(=O)[C@H](C)NC(=O)[C@@H](C)NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC1=O;-5.8200002;65;A-214;;hexapeptide 06;logcm/s;smi
+C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@@H](C)NC1=O;-5.2600002;89;A-244;;hexapeptide 41;logcm/s;smi
+C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@@H](C)NC(=O)[C@@H](C)N(C)C1=O;-5.3000002;1036;A-253;;hexapeptide 51;logcm/s;smi
+C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC(=O)[C@@H](C)N(C)C(=O)[C@@H](C)NC1=O;-5.3000002;80;A-234;;hexapeptide 26;logcm/s;smi
+C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC(=O)[C@@H](C)NC(=O)[C@@H](C)N(C)C1=O;-5.8200002;88;A-243;;hexapeptide 38;logcm/s;smi
+C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC(=O)[C@@H](C)NC(=O)[C@@H](C)NC1=O;-5.3000002;1033;A-224;;hexapeptide 16;logcm/s;smi
+C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@@H](C)NC1=O;-5.8200002;77;A-231;;hexapeptide 23;logcm/s;smi
+C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)NC(=O)[C@@H](C)NC1=O;-5.8200002;71;A-221;;hexapeptide 13;logcm/s;smi
+C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)NC(=O)[C@H](C)NC(=O)[C@@H](C)N(C)C(=O)[C@@H](C)NC1=O;-5.3000002;68;A-217;;hexapeptide 09;logcm/s;smi
+C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)NC(=O)[C@H](C)NC(=O)[C@@H](C)NC(=O)[C@@H](C)NC1=O;-5.8200002;1031;A-212;;hexapeptide 04;logcm/s;smi
+C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@@H](C)NC1=O;-5.8200002;76;A-230;;hexapeptide 22;logcm/s;smi
+C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)N(C)C(=O)[C@@H](C)NC(=O)[C@@H](C)NC1=O;-5.8200002;70;A-220;;hexapeptide 12;logcm/s;smi
+C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC(=O)[C@@H](C)N(C)C(=O)[C@@H](C)NC1=O;-5.8200002;67;A-216;;hexapeptide 08;logcm/s;smi
+C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@@H](C)N(C)C(=O)[C@H](C)NC(=O)[C@@H](C)NC(=O)[C@@H](C)NC1=O;-5.8200002;63;A-211;;hexapeptide 03;logcm/s;smi
+C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@@H](C)NC(=O)[C@H](C)N(C)C(=O)[C@@H](C)N(C)C(=O)[C@@H](C)NC1=O;-5.8200002;66;A-215;;hexapeptide 07;logcm/s;smi
+C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@@H](C)NC(=O)[C@H](C)NC(=O)[C@@H](C)N(C)C(=O)[C@@H](C)NC1=O;-5.8200002;62;A-209;;hexapeptide 01;logcm/s;smi
+C[C@@H]1O[C@@H](O[C@@H]2C(=O)c3c(O)cc(O)cc3O[C@H]2c2ccc(O)c(O)c2)[C@H](O)[C@H](O)[C@H]1O;-6.8200002;1233;D-2325;;Astilbin;logcm/s;smi
+C[C@@H]1O[C@@H](O[C@@H]2[C@@H](O)[C@H](OCCc3ccc(O)c(O)c3)O[C@H](CO[C@@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3O)[C@H]2OC(=O)/C=C/c2ccc(O)c(O)c2)[C@H](O)[C@H](O)[C@H]1O;-6.6500001;20;A-137;;echinacoside;logcm/s;smi
+C[C@@H]1O[C@@H](O[C@H]2C[C@@H](O)[C@@]3(CO)[C@H]4[C@H](O)C[C@]5(C)[C@@H](C6=CC(=O)OC6)CC[C@]5(O)[C@@H]4CC[C@]3(O)C2)[C@H](O)[C@H](O)[C@H]1O;-6.9593034;501;D-1528;;Ouabain;logcm/s;smi
+C[C@@H]1O[C@@H](O[C@H]2C[C@@H](O)[C@]3(CO)[C@H]4[C@H](O)C[C@]5(C)[C@@H](C6=CC(=O)OC6)CC[C@]5(O)[C@@H]4CC[C@]3(O)C2)[C@H](O)[C@H](O)[C@H]1O;-7.23;1058;A-383;;ouabain;logcm/s;smi
+C[C@@H]1O[C@@H](O[C@H]2[C@H](Oc3cc(O)c4c(c3)O[C@H](c3ccc(O)cc3)CC4=O)O[C@H](CO)[C@@H](O)[C@@H]2O)[C@H](O)[C@H](O)[C@H]1O;-6.8200002;900;D-2364;;Naringin;logcm/s;smi
+C[C@@H]1O[C@@H](Oc2c(-c3ccc(O)c(O)c3)oc3cc(O)cc(O)c3c2=O)[C@@H](O)[C@H](O)[C@@H]1O;-6.0999999;796;D-2164;;Quercitrin (21);logcm/s;smi
+C[C@@H]1O[C@@H](Oc2c(-c3ccc(O)c(O)c3)oc3cc(O)cc(O)c3c2=O)[C@H](O)[C@H](O)[C@H]1O;-6.0999999;1065;A-426;;quercitrin ;logcm/s;smi
+C[C@@H]1O[C@@H](c2ccc(Cl)cc2)OC[C@H]1N;-4.9279342;337;C-1126;;877-(2S,4S,5R)-2-[(4'-Chlorophenyl)-4-methyl-1,3-dioxan-5-yl]amine (5h);logcm/s;smi
+C[C@@H]1O[C@@H](c2ccc(Cl)cc2)OC[C@H]1NC(=O)Cc1ccccc1;-4.9920392;341;C-1130;;881-13h;logcm/s;smi
+C[C@@H]1O[C@@H](c2ccc(N(O)O)cc2)OC[C@H]1N;-4.8885694;338;C-1127;;878-(2S,4S,5R)-2-[(4'-Nitrophenyl)-4-methyl-1,3-dioxan-5-yl]amine (5i);logcm/s;smi
+C[C@@H]1O[C@@H](c2ccc(N(O)O)cc2)OC[C@H]1NC(=O)Cc1ccccc1;-4.9846401;1094;C-1314;;882-13i;logcm/s;smi
+C[C@@H]1[C@H]2C3=CC[C@@H]4[C@@]5(C)CC[C@H](O)C(C)(C)[C@@H]5CC[C@@]4(C)[C@]3(C)CC[C@@]2(C(=O)O)CC[C@H]1C;-5.5500002;233;A-495;;ursolic acid;logcm/s;smi
+C[C@@](N)(Cc1ccc(O)c(O)c1)C(=O)O;-6.619894;1122;D-1503;;Methyldopa;logcm/s;smi
+C[C@@]12C=CC(=O)C=C1CC[C@@H]1[C@@H]2[C@@H](O)C[C@@]2(C)[C@H]1CC[C@]2(O)C(=O)CO;-5.4436975;354;C-1281;;677-Prednisolone;logcm/s;smi
+C[C@@]12CCC(=O)C=C1CC[C@H]1[C@@H]3CC[C@](O)(C(=O)CO)[C@@]3(C)CC(=O)[C@H]12;-4.5086384;351;C-1223;;234-Cortisone;logcm/s;smi
+C[C@H](CCC(=O)NCC(=O)[O-])[C@H]1CC[C@H]2[C@H]3[C@H](C[C@H](O)[C@@]21C)[C@@]1(C)CC[C@@H](O)C[C@H]1C[C@H]3O;-5.7141905;850;D-2269;;Glycocholate;logcm/s;smi
+C[C@H](CS)C(=O)N1CCC[C@@H]1C(=O)O;-4.8153086;355;C-1282;;679-Captopril (Cap);logcm/s;smi
+C[C@H](CS)C(=O)N1CCC[C@H]1C(=O)O;-4.8200002;414;D-1374;;Captopril (Cap);logcm/s;smi
+C[C@H](CSN=O)C(=O)N1CCC[C@@H]1C(=O)O;-4.5;1186;D-2006;;S-nitrosylated captopril (CapNO);logcm/s;smi
+C[C@H](N)C(=O)O;-5.4201083;615;D-1748;;L-alanine;logcm/s;smi
+C[C@H](N)Cc1ccccc1;-4.3899999;400;D-1352;;Amphetamine sulfate;logcm/s;smi
+C[C@H](NC(=O)[C@H](N)Cc1ccccc1)C(=O)N[C@H](CO)C(=O)O;-6.2819986;753;D-2073;;D-Phe-D-Ala-D-Ser-OH;logcm/s;smi
+C[C@H](N[C@H](CCc1ccccc1)C(=O)O)C(=O)N1CCC[C@@H]1C(=O)O;-5.8800001;441;D-1422;;Enalaprilat;logcm/s;smi
+C[C@H]1C(=O)N(C)[C@H](C)C(=O)N(C)[C@H](C)C(=O)N(C)[C@@H](C)C(=O)N[C@H](C)C(=O)N(C)[C@@H](C)C(=O)N1C;-5.3000002;100;A-260;;hexapeptide 58;logcm/s;smi
+C[C@H]1C(=O)N(C)[C@H](C)C(=O)N[C@H](C)C(=O)N(C)[C@@H](C)C(=O)N(C)[C@H](C)C(=O)N(C)[C@@H](C)C(=O)N1C;-5.0999999;97;A-258;;hexapeptide 56;logcm/s;smi
+C[C@H]1C(=O)N(C)[C@H](C)C(=O)N[C@H](C)C(=O)N(C)[C@@H](C)C(=O)N[C@H](C)C(=O)N(C)[C@@H](C)C(=O)N1C;-4.6999998;93;A-254;;hexapeptide 52;logcm/s;smi
+C[C@H]1C(=O)N[C@H](C)C(=O)N(C)[C@H](C)C(=O)N(C)[C@@H](C)C(=O)N(C)[C@H](C)C(=O)N(C)[C@@H](C)C(=O)N1C;-5.3000002;102;A-262;;hexapeptide 60;logcm/s;smi
+C[C@H]1C(=O)N[C@H](C)C(=O)N[C@H](C)C(=O)N(C)[C@@H](C)C(=O)N[C@H](C)C(=O)N(C)[C@@H](C)C(=O)N1C;-5.8200002;86;A-241;;hexapeptide 34;logcm/s;smi
+C[C@H]1CN(c2c(F)c(N)c3c(=O)c(C(=O)O)cn(C4CC4)c3c2F)C[C@@H](C)N1;-4.7784066;531;D-1586;;Sparfloxacin (SPX);logcm/s;smi
+C[C@H]1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23;-4.5500002;1006;D-2612;;Levofloxacin;logcm/s;smi
+C[C@H]1C[C@@]2(C)C(=CC(=O)[C@@H]3[C@]4(C)CC[C@@H](O)[C@@](C)(C(=O)O)[C@H]4CC[C@]32C)[C@@H]2[C@@H](C)[C@H](C)CC[C@H]12;-5.8000002;843;D-2238;;11-keto-beta-boswellic acid (KBA);logcm/s;smi
+C[C@H]1C[C@H](C)C(=O)[C@H]([C@H](O)CC2CC(=O)NC(=O)C2)C1;-4.8400002;1271;D-2613;;Cycloheximide;logcm/s;smi
+C[C@H]1C[C@H]2[C@@H]3CC[C@](O)(C(=O)CO)[C@@]3(C)C[C@H](O)[C@@H]2[C@@]2(C)C=CC(=O)C=C12;-5.1161518;486;D-1504;;Methylprednisolone;logcm/s;smi
+C[C@H]1O[C@@H](O[C@H]2[C@@H](O)C[C@H](O[C@H]3[C@@H](O)C[C@H](O[C@H]4CC[C@@]5(C)[C@H]6C[C@@H](O)[C@]7(C)C(C8=CC(=O)OC8)CC[C@]7(O)[C@@H]6CC[C@@H]5C4)O[C@@H]3C)O[C@@H]2C)C[C@H](O)[C@@H]1O;-5.6316042;436;D-1411;;Digoxin;logcm/s;smi
+C[C@H]1O[C@@H](O[C@H]2[C@@H](O)C[C@H](O[C@H]3[C@@H](O)C[C@H](O[C@H]4CC[C@]5(C)[C@H]6C[C@@H](O)[C@]7(C)[C@@H](C8=CC(=O)OC8)CC[C@]7(O)[C@@H]6CC[C@@H]5C4)O[C@@H]3C)O[C@@H]2C)C[C@H](O)[C@@H]1O;-5.7355282;[305, 13];['B-598', 'A-121'];[nan, nan];['Digoxin', 'digoxin'];logcm/s;smi
+C[C@]12CC(O)[C@H]3[C@@H](CCC4=CC(=O)C=C[C@@]43C)[C@@H]1CC[C@]2(O)C(=O)CO;-5.3699999;514;D-1551;;Prednisolone;logcm/s;smi
+C[C@]12CC[C@@H]3c4ccc(O)cc4CC[C@H]3[C@@H]1CC[C@@H]2O;-4.731148;[44, 1111];['A-169', 'D-1429'];[nan, nan];['Estradiol', 'estradiol'];logcm/s;smi
+C[C@]12CC[C@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@@H]1CC[C@@H]2C(=O)CO;-4.6700001;1021;A-113;;desoxycarticosterone;logcm/s;smi
+C[C@]12CC[C@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@@H]1CC[C@@H]2O;-4.365;[220, 541];['A-475', 'D-1609'];[nan, nan];['Testosterone', 'testosterone'];logcm/s;smi
+C[C@]12C[C@@H](O)[C@@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@H]1CC[C@@]2(O)C(=O)CO;-4.6599998;105;A-266;;hydrocortisone;logcm/s;smi
+C[C@]12C[C@H](O)[C@H]3[C@@H](CCC4=CC(=O)C=C[C@@]43C)[C@@H]1CC[C@]2(O)C(=O)CO;-4.7199998;186;A-413;;prednisolone;logcm/s;smi
+C[C@]12C[C@H](O)[C@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@@H]1CC[C@@H]2C(=O)CO;-4.3887606;1143;D-1688;;Corticosterone;logcm/s;smi
+C[C@]12C[C@H](O)[C@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@@H]1CC[C@]2(O)C(=O)CO;-4.5543182;[288, 462];['D-1461', 'B-551'];[nan, nan];Hydrocortisone;logcm/s;smi
+C[N+](C)(C)CCO;-4.9521427;750;D-2066;;Choline;logcm/s;smi
+C[N+]1(C)[C@H]2CC(OC(=O)[C@H](CO)c3ccccc3)C[C@H]1C1OC12;-6.1599998;151;A-342;;methylscopolamine;logcm/s;smi
+Cc1c(F)c(N2CCNC(C)C2)cc2c1C(=O)C(C(=O)O)CN2C1CC1;-4.9825492;378;C-780;;170-Grepafloxacin hydrochloride (GRX);logcm/s;smi
+Cc1c(F)c(N2CCNC(C)C2)cc2c1c(=O)c(C(=O)O)cn2C1CC1;-4.8899999;457;D-1454;;Grepafloxacin HCl;logcm/s;smi
+Cc1c(N(C)C)c(=O)n(-c2ccccc2)n1C;-4.3894196;398;D-1349;;Aminopyrine;logcm/s;smi
+Cc1c(O)c(=O)ccn1C;-4.8885303;1226;D-2264;;L1 (1,2-dimethyl-3 hydroxypyridin-4-one);logcm/s;smi
+Cc1c(O)c2c(c(C)c1CCO)C(=O)C(C)(C)C2;-4.7597256;845;D-2254;;;logcm/s;smi
+Cc1c(O)c2c(c(C)c1CCO[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O)C(=O)C(C)(C)C2;-6.0107207;846;D-2255;;;logcm/s;smi
+Cc1c(O)cccc1C(=O)N[C@@H](CSc1ccccc1)[C@H](O)CN1C[C@H]2CCCC[C@H]2C[C@H]1C(=O)NC(C)(C)C;-6.1500001;491;D-1512;;Nelfinavir;logcm/s;smi
+Cc1c(OCC(F)(F)F)ccnc1CS(=O)c1nc2ccccc2[nH]1;-4.1100001;116;A-290;;lansoprazole;logcm/s;smi
+Cc1cc(=O)n(-c2ccccc2)n1C;-4.1802676000000005;[293, 175];['A-39', 'B-557'];[nan, nan];['Antipyrin', 'antipyrine'];logcm/s;smi
+Cc1cc(C(=O)Nc2ccc(-c3ccccc3S(C)(=O)=O)cc2)n(-c2cccc(CN)c2)n1;-5.9000001;910;D-2387;;4c;logcm/s;smi
+Cc1cc(C(=O)Nc2ccc(-c3ccccc3S(C)(=O)=O)cc2F)n(-c2cccc(CN)c2)n1;-5.5;1245;D-2388;;4d;logcm/s;smi
+Cc1cc(C(=O)Nc2ccc(-c3ccccc3S(N)(=O)=O)cc2F)n(-c2cccc(CN)c2)n1;-6.0;909;D-2386;;4b;logcm/s;smi
+Cc1cc(CC(=O)O)n(C)c1C(=O)c1ccc(Cl)cc1;-4.6100001;559;D-1640;;Zomepirac;logcm/s;smi
+Cc1cc(COc2ccc(C(=O)N[C@@H]3CC4(C[C@@H]3C(=O)NO)OCCO4)cc2)c2ccccc2n1;-5.7423639;821;D-2205;;;logcm/s;smi
+Cc1cc(COc2ccc(C(=O)N[C@@H]3C[C@@]4(CCCO4)C[C@@H]3C(=O)NO)cc2)c2ccccc2n1;-5.6319547;822;D-2206;;18 (5R,S);logcm/s;smi
+Cc1cc(C[C@H](NS(=O)(=O)c2ccccc2)c2nc3ccccc3[nH]2)ccc1[C@@H]1CC(=O)N=S1(=O)[O-];-6.3989701;1227;D-2270;;Me-(S)-IZD;logcm/s;smi
+Cc1cc(NC(O)=C2C(=O)c3ccccc3S(=O)(=O)N2C)no1;-4.6100001;467;D-1469;;Isoxicam;logcm/s;smi
+Cc1cc(NS(=O)(=O)c2ccc(N)cc2)no1;-4.8800001;1071;A-451;;sulfamethoxazole;logcm/s;smi
+Cc1cc(O)cc(C)c1C[C@H](N)C(=O)N1CCC[C@@H]1C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](Cc1ccccc1)C(N)=O;-6.2987847;1169;D-1868;;;logcm/s;smi
+Cc1ccc(-c2cc(C(F)(F)F)nn2-c2ccc(S(N)(=O)=O)cc2)cc1;-4.8050604;416;D-1379;;Celecoxib;logcm/s;smi
+Cc1ccc(-c2nc3ccc(C)cn3c2CC(=O)N(C)C)cc1;-4.5;558;D-1639;;Zolpidem;logcm/s;smi
+Cc1ccc(-c2ncc(Cl)cc2-c2ccc(S(C)(=O)=O)cc2)cn1;-4.2807493;[344, 445];['C-1165', 'D-1434'];[nan, nan];['953-Etoricoxib', 'Etoricoxib'];logcm/s;smi
+Cc1ccc(/C(=C/CN2CCCC2)c2cccc(/C=C/C(=O)O)n2)cc1;-5.720623;394;D-1340;;Acrivastine;logcm/s;smi
+Cc1ccc(C(=O)c2ccc(CC(=O)O)n2C)cc1;-5.082860500000001;[546, 1091];['C-1057', 'D-1618'];[nan, nan];['744-Tolmetin', 'Tolmetin'];logcm/s;smi
+Cc1ccc(C(F)(F)CNc2ccc(C#N)c(CC(=O)NCCONC(=N)N)c2F)nc1;-6.188375;323;B-655;;;logcm/s;smi
+Cc1ccc(N2CCN(C(=O)[C@H](C)Cc3ccc(Cl)cc3)CC2)c([C@@H](N)C(C)C)c1;-5.3000002;805;D-2176;;7d;logcm/s;smi
+Cc1ccc(N2CCN(C(=O)[C@H](C)Cc3ccc(Cl)cc3)CC2)c([C@@H](NC(=O)CCN(C)C)C(C)C)c1;-4.388608;1214;D-2187;;11d;logcm/s;smi
+Cc1ccc(N2CCN(C(=O)[C@H](C)Cc3ccc(Cl)cc3)CC2)c([C@@H](NC(=O)CCN)C(C)C)c1;-5.5214391;809;D-2185;;11b;logcm/s;smi
+Cc1ccc(N2CCN(C(=O)[C@H](C)Cc3ccc(Cl)cc3C)CC2)c([C@@H](NC(=O)CCN(C)C)C(C)C)c1;-4.7979398;1215;D-2189;;11f;logcm/s;smi
+Cc1ccc(N2CCN(C(=O)[C@H](C)Cc3ccc(Cl)cc3F)CC2)c([C@@H](NC(=O)CCN(C)C)C(C)C)c1;-4.4308991;811;D-2188;;11e;logcm/s;smi
+Cc1ccc(NC(=O)c2ccc(CN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1;-5.3899999;465;D-1464;;Imatinib;logcm/s;smi
+Cc1ccc(NC(=O)c2nscc2NCc2ccncc2)cc1C(F)(F)F;-5.2295737;827;D-2211;;;logcm/s;smi
+Cc1ccc(S(=O)(=O)NC(=O)C(c2ccc3c(c2)OCO3)c2cn(C)c3cc(CO)ccc23)cc1;-5.7697759;729;D-2014;;;logcm/s;smi
+Cc1ccc2c(=O)c3cccc(CC(=O)O)c3oc2c1C;-4.5;[1200, 15];['D-2076', 'A-127'];[nan, nan];['5,6-Dimethylxanthenone-4-acetic acid (DMXAA)', 'DMXAA'];logcm/s;smi
+Cc1ccc2c(=O)c3cccc(CC(=O)OC4OC(C(=O)O)[C@@H](O)[C@@H](O)[C@@H]4O)c3oc2c1C;-6.52;16;A-128;;DMXAA-G;logcm/s;smi
+Cc1ccc2cc(C(=O)NC3(C(=O)N[C@H](Cc4ccccc4)C(=O)NCC4CCN(CC5CCOCC5)CC4)CCCC3)sc2c1;-5.2912149;619;D-1758;;MEN15596;logcm/s;smi
+Cc1cccc(Nc2ccccc2C(=O)O)c1C;-4.74857355;[482, 358];['D-1497', 'C-1291'];[nan, nan];['748-Mefenamic Acid', 'Mefenamic acid'];logcm/s;smi
+Cc1ccccc1N1C(=O)c2cc(S(N)(=O)=O)c(Cl)cc2NC1C;-5.21;152;A-343;;metolazone;logcm/s;smi
+Cc1ccccc1N1C(=O)c2cc(S(N)(=O)=O)c(Cl)cc2N[C@H]1C;-5.3049202;488;D-1507;;Metolazone;logcm/s;smi
+Cc1ccnc2[nH]c(Cc3nc4ccc(/C(N)=N\O)cc4[nH]3)nc12;-6.6994848;1154;D-1789;;PNU200681;logcm/s;smi
+Cc1ccnc2c1NC(=O)c1cccnc1N2C1CC1;-4.512678149999999;[1124, 1055];['D-1514', 'A-374'];[nan, nan];['nevirapine', 'Nevirapine'];logcm/s;smi
+Cc1ccnc2nc(Cc3nc4cc(C(=N)N)ccc4[nH]3)[nH]c12;-7.0500002;182;A-406;;PNU200648;logcm/s;smi
+Cc1ccnc2nc(Cc3nc4ccc(C(=N)N)cc4[nH]3)[nH]c12;-7.0478787;1153;D-1787;;PNU200648;logcm/s;smi
+Cc1ccncc1;-3.9612868;695;D-1930;;-;logcm/s;smi
+Cc1cn([C@H]2C=C[C@@H](CO)O2)c(=O)[nH]c1=O;-5.3483939;533;D-1588;;Stavudine (d4T);logcm/s;smi
+Cc1cn([C@H]2C[C@H](N=[N+]=[N-])[C@@H](CO)O2)c(=O)[nH]c1=O;-5.0599999;247;A-513;;zidovudine;logcm/s;smi
+Cc1cn([C@H]2C[C@H]([N-][NH+]=N)[C@@H](CO)O2)c(=O)[nH]c1=O;-5.1850867;369;C-735;;107-zidovudine;logcm/s;smi
+Cc1cnc(C(=O)NCCc2ccc(S(=O)(=O)NC(=O)NC3CCCCC3)cc2)cn1;-4.7199998;455;D-1452;;Glipizide;logcm/s;smi
+Cc1cnc(N/C(O)=C2/C(=O)c3ccccc3S(=O)(=O)N2C)s1;-4.7058601;483;D-1498;;Meloxicam;logcm/s;smi
+Cc1cnc(NC(=O)C2=C(O)c3ccccc3S(=O)(=O)N2C)s1;-4.71;148;A-332;;meloxicam;logcm/s;smi
+Cc1csc(NC(=O)C(C(=O)OC(C)C)=C2SCS2)n1;-4.5100002;749;D-2064;;YH439;logcm/s;smi
+Cc1nc(-c2c(Cl)cc(Cl)cc2-c2ccc([C@@H](C)NC(=O)C3(NC(=O)C(F)(F)F)CC3)c(F)c2)no1;-4.6382723;312;B-627;;2i;logcm/s;smi
+Cc1nc(-c2ccc(Cl)cc2-c2ccc([C@@H](C)NC(=O)C3(NC(=O)C(F)(F)F)CC3)c(F)c2)no1;-4.5086384;318;B-635;;2d;logcm/s;smi
+Cc1nc(N)ccc1CNC(=O)Cc1c(C#N)ccc(NCC(F)(F)c2ccccn2)c1F;-5.1474957;326;B-660;;;logcm/s;smi
+Cc1ncc(CO)c(CO)c1O;-4.8362136;[390, 1127];['D-1558', 'C-904'];[nan, nan];['388-Pyridoxine (Vitamin B6)', 'Pyridoxine (Vitamin B6)'];logcm/s;smi
+Cc1ncc(C[n+]2csc(CCO)c2C)c(N)n1;-5.2685814;653;D-1827;;Thiamin (Vitamin B1);logcm/s;smi
+Cc1ncc2n1-c1ccc(Cl)cc1C(c1ccccc1F)=NC2;-4.380506049999999;[1098, 1123];['D-1508', 'C-802'];[nan, nan];['Midazolam', '206-Midazolam'];logcm/s;smi
+Cc1nccc2c1[nH]c1cc(O)ccc12;-5.302259;718;D-1990;;Harmol;logcm/s;smi
+Cc1nccc2c1[nH]c1ccccc12;-5.223299;330;C-1010;;659-Harmane;logcm/s;smi
+Cc1nnc(C(C)C)n1C1CC2CCC(C1)N2CC[C@H](NC(=O)C1CCC(F)(F)CC1)c1ccccc1;-6.0;1137;D-1645;;Maraviroc (UK-427,857);logcm/s;smi
+Cc1nnc(NS(=O)(=O)c2ccc(N)cc2)s1;-5.8393164;534;D-1590;;Sulfamethizole;logcm/s;smi
+Cc1nnc(SCC2=C(C(=O)O)N3C(=O)[C@@H](NC(=O)Cn4cnnn4)[C@H]3SC2)s1;-6.23;256;A-75;;cefazolin;logcm/s;smi
+Cc1nnc2n1-c1ccc(Cl)cc1C(c1ccccc1)=NC2;-4.0886133000000005;[112, 395];['D-1343', 'A-28'];[nan, nan];['alprazolam', 'Alprazolam'];logcm/s;smi
+Cc1nnc2n1-c1ccc(Cl)cc1C(c1ccccc1Cl)=NC2;-4.5500002;548;D-1624;;Triazolam;logcm/s;smi
+Cc1noc(NS(=O)(=O)c2ccc(N)cc2)c1C;-4.8450000499999994;[212, 535];['A-455', 'D-1595'];[nan, nan];['Sulfisoxazole', 'sulfisoxazole'];logcm/s;smi
+Cc1oc(=O)oc1COC(=O)N1CCC(N2CCN(CC(=O)c3ccc(OCC(=O)OC4CCCCC4)cc3)C(=O)C2)CC1;-4.3099999;27;A-148;;EF5249;logcm/s;smi
+Cc1onc(-c2ccccc2)c1C(=O)N[C@@H]1C(=O)N2[C@@H](C(=O)O)C(C)(C)S[C@H]12;-4.8797116;623;D-1765;;Oxacillin;logcm/s;smi
+Cc1onc(-c2ccccc2Cl)c1C(=O)N[C@@H]1C(=O)N2[C@@H](C(=O)O)C(C)(C)S[C@H]12;-5.5799999;171;A-384;;oxacillin;logcm/s;smi
+Clc1ccc(C2CN3CCN=C3c3ccccc32)cc1;-4.7199998;950;D-2476;;Org 34037;logcm/s;smi
+Clc1ccc2c(c1)CCc1cccnc1C2=C1CCNCC1;-4.0599999;1014;D-2632;;Desloratadine;logcm/s;smi
+Clc1ccc2c(c1)N=C(N1CCNCC1)c1ccccc1N2;-4.6799998;163;A-362;;N-desmethylclozapine;logcm/s;smi
+Clc1ccc2c(c1)NC(N1CCNCC1)=c1ccccc1=N2;-4.6799998;901;D-2365;;N-desmethylclozapine;logcm/s;smi
+Clc1cccc(Cl)c1NC1=NCCN1;-4.53886295;[427, 262];['D-1394', 'A-94'];[nan, nan];['Clonidine', 'clonidine'];logcm/s;smi
+Clc1ccncc1;-4.220202;689;D-1921;;-;logcm/s;smi
+Cn1c(=O)c2[nH]cnc2n(C)c1=O;-4.3499999;221;A-477;;theophylline;logcm/s;smi
+Cn1c(=O)c2c(ncn2C)n(C)c1=O;-4.3400002;1075;A-63;;caffeine;logcm/s;smi
+Cn1c(C(=O)NC2(C(=O)N[C@H](Cc3ccccc3)C(=O)NCCCN3CCOCC3)CCCC2)cc2ccccc21;-4.9723473;732;D-2023;;14c;logcm/s;smi
+Cn1c(C2=CCN(CCCN3c4ccccc4Sc4ccc(CC(=O)O)cc43)CC2)cc(=O)n(C)c1=O;-4.8289509;840;D-2232;;;logcm/s;smi
+Cn1c(N)nc2ncc(-c3ccccc3)cc21;-4.8205118;724;D-2005;;2-Amino-1-methyl-6-phenylimidazo-[4,5-b]pyridine (PhIP);logcm/s;smi
+Cn1c(N2CCCN(CCCN3c4ccccc4Sc4c(C(=O)O)cccc43)CC2)cc(=O)n(C)c1=O;-5.8005152;832;D-2220;;;logcm/s;smi
+Cn1c(N2CCCN(CCCN3c4ccccc4Sc4ccc(/C=C/C(=O)O)cc43)CC2)cc(=O)n(C)c1=O;-4.6493707;839;D-2231;;;logcm/s;smi
+Cn1c(N2CCCN(CCCN3c4ccccc4Sc4ccc(C(=O)O)cc43)CC2)cc(=O)n(C)c1=O;-4.8289509;831;D-2218;;;logcm/s;smi
+Cn1c(N2CCCN(CCCN3c4ccccc4Sc4ccc(C(C)(C)C(=O)O)cc43)CC2)cc(=O)n(C)c1=O;-5.0;837;D-2228;;;logcm/s;smi
+Cn1c(N2CCCN(CCCN3c4ccccc4Sc4ccc(CC(=O)O)cc43)CC2)cc(=O)n(C)c1=O;-5.2600002;835;D-2224;;;logcm/s;smi
+Cn1c(N2CCCN(CCCN3c4ccccc4Sc4ccc(CCC(=O)O)cc43)CC2)cc(=O)n(C)c1=O;-5.1100001;836;D-2226;;;logcm/s;smi
+Cn1c(N2CCCN(CCCN3c4ccccc4Sc4ccc(OCC(=O)O)cc43)CC2)cc(=O)n(C)c1=O;-5.8005152;838;D-2230;;;logcm/s;smi
+Cn1c(N2CCCN(CCCN3c4ccccc4Sc4cccc(C(=O)O)c43)CC2)cc(=O)n(C)c1=O;-5.8005152;1221;D-2219;;;logcm/s;smi
+Cn1c(N2CCN(CCCCN3c4ccccc4Sc4ccc(C(=O)O)cc43)CC2)cc(=O)n(C)c1=O;-4.6900001;834;D-2222;;;logcm/s;smi
+Cn1c(N2CCN(CCCN3c4ccccc4Sc4ccc(C(=O)O)cc43)CC2)cc(=O)n(C)c1=O;-5.0;1220;D-2217;;;logcm/s;smi
+Cn1c(N2CCN(CCCN3c4ccccc4Sc4ccc(CC(=O)O)cc43)CC2)cc(=O)n(C)c1=O;-4.9099998;1222;D-2223;;;logcm/s;smi
+Cn1c(N2CCN(CCCN3c4ccccc4Sc4ccc(CCC(=O)O)cc43)CC2)cc(=O)n(C)c1=O;-5.29;1223;D-2225;;;logcm/s;smi
+Cn1c(N2CCN(CCN3c4ccccc4Sc4ccc(C(=O)O)cc43)CC2)cc(=O)n(C)c1=O;-5.3099999;833;D-2221;;;logcm/s;smi
+Cn1c(NCCCN2CCC(CN3c4ccccc4Sc4ccc(C(=O)O)cc43)CC2)cc(=O)n(C)c1=O;-5.8989701;829;D-2215;;;logcm/s;smi
+Cn1c(NCCCN2CCC(Oc3ccc(Cl)c(Cl)c3)CC2)cc(=O)n(C)c1=O;-4.8783755;1219;D-2214;;;logcm/s;smi
+Cn1cnc(S(=O)(=O)N(CCN(Cc2cncn2C)c2ccc(C#N)cc2)CC2CCCCC2)c1;-5.8219547;706;D-1950;;12q;logcm/s;smi
+Cn1cnc(S(=O)(=O)N(CCN(Cc2cncn2C)c2ccc(C#N)cc2)Cc2ccccc2)c1;-5.9593034;705;D-1947;;12d;logcm/s;smi
+Cn1cncc1CN(CCN(Cc1ccccc1)S(=O)(=O)c1ccccn1)c1ccc(C#N)cc1;-5.5514212;1180;D-1953;;12g;logcm/s;smi
+Cn1cncc1CN1CC(N(CCn2cccc2)S(=O)(=O)c2ccccn2)Cc2cc(C#N)ccc21;-4.9099998;1171;D-1902;;PB-43;logcm/s;smi
+Cn1cncc1CN1CC(N(Cc2cccc(-n3cccc3)c2)S(=O)(=O)c2ccccn2)Cc2cc(C#N)ccc21;-5.6391363;677;D-1899;;PB-26;logcm/s;smi
+Cn1cncc1CN1CC(N(Cc2ccccn2)S(=O)(=O)c2ccccn2)Cc2cc(C#N)ccc21;-5.7979398;678;D-1900;;PB-27;logcm/s;smi
+Cn1nnnc1-c1cccc(NC(=O)N[C@@H]2CCCC[C@H]2CN2CCC[C@@H](Cc3ccc(F)cc3)C2)c1;-5.6989698;1085;B-578;;;logcm/s;smi
+FC(F)(F)c1ccc(N2CCNCC2)nc1Cl;-4.5999999;945;D-2470;;Org 12962;logcm/s;smi
+FC(F)(F)c1cccc(C2=CCN(CCc3ccc4ccccc4c3)CC2)c1;-4.73;1015;D-2636;;Xaliproden (SR57746);logcm/s;smi
+Fc1cccc2c1O[C@H]1CNC[C@@H]1O2;-4.0999999;49;A-182;;fluparoxan;logcm/s;smi
+Fc1cccc2c1O[C@H]1CNC[C@H]1O2;-3.729485;450;D-1443;;Fluparoxan (GR50360A);logcm/s;smi
+Fc1ccncc1;-3.8897052;1177;D-1931;;-;logcm/s;smi
+N#Cc1ccc(NCC(F)(F)c2ccc(F)c(F)c2)c(F)c1CC(=O)NCCONC(=N)N;-5.9430285;328;B-662;;;logcm/s;smi
+N#Cc1ccc(NCC(F)(F)c2cccc(F)c2)c(F)c1CC(=O)NCCONC(=N)N;-5.7414021;325;B-659;;;logcm/s;smi
+N#Cc1ccc(NCC(F)(F)c2ccccc2)c(F)c1CC(=O)NCCONC(=N)N;-5.6479244;324;B-658;;;logcm/s;smi
+N#Cc1cccc(Cc2ncccn2)c1;-4.1758742;280;B-539;;;logcm/s;smi
+N#Cc1cccc(Cn2cccn2)c1;-4.141635450000001;[1250, 267];['D-2436', 'B-521'];[nan, nan];;logcm/s;smi
+N#Cc1cccc(Cn2ccnc2)c1;-4.169385200000001;[929, 277];['B-536', 'D-2427'];[nan, nan];;logcm/s;smi
+N#Cc1cccc(Cn2cnc3ccccc32)c1;-4.18088695;[931, 270];['D-2431', 'B-524'];[nan, nan];;logcm/s;smi
+N/C(=N/O)c1ccc2[nH]c(-c3ccccn3)nc2c1;-4.6500001;181;A-405;;PNU200647;logcm/s;smi
+N=C(N)NC(=O)c1nc(Cl)c(N)nc1N;-6.251812;291;B-555;;Amiloride;logcm/s;smi
+N=C(N)NCCC[C@@H](NC(=O)[C@@H](N)Cc1ccc(O)cc1)C(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H](Cc1ccccc1)C(N)=O;-7.7600002;1043;A-292;;LEF553;logcm/s;smi
+N=C(N)c1ccc(-c2ccc(-c3ccc(C(=N)N)cc3)o2)cc1;-6.4201083;600;D-1716;;DB75 [2,5-bis(4-amidinophenyl)furan];logcm/s;smi
+N=C(N)c1ccc2[nH]c(-c3ccccn3)nc2c1;-6.4699998;1062;A-404;;PNU200603;logcm/s;smi
+N=C(N)c1ccc2[nH]c(Cc3nc4ccccc4[nH]3)nc2c1;-6.6999998;180;A-403;;PNU200001;logcm/s;smi
+N=C(N)c1ccc2nc(-c3ccccn3)[nH]c2c1;-6.4579659;614;D-1746;;PNU 200603;logcm/s;smi
+N=C(N)c1cccc(-n2nc(C(F)(F)F)cc2C(=O)Nc2ncc(-c3ccccc3S(N)(=O)=O)cn2)c1;-7.0;908;D-2383;;2c;logcm/s;smi
+N=C(N)c1cccc(CC(CC(=O)N2CCC(C(=O)O)CC2)NS(=O)(=O)c2ccc3ccccc3c2)c1;-7.3390937;579;D-1677;;;logcm/s;smi
+N=C(N)c1cccc(CC(CC(=O)N2CCCC(C(=O)O)C2)NS(=O)(=O)c2ccc3ccccc3c2)c1;-7.3820248;578;D-1675;;;logcm/s;smi
+N=C(N)c1cccc(CC(CC(=O)N2CCCCC2C(=O)O)NS(=O)(=O)c2ccc3ccccc3c2)c1;-7.3814998;576;D-1673;;;logcm/s;smi
+N=C(N)c1cccc(CC(CC(=O)N2CCNCC2)NS(=O)(=O)c2ccc3ccccc3c2)c1;-7.0312262;1142;D-1681;;;logcm/s;smi
+N=C(NO)c1cccc(CC(CC(=O)N2CCC(C(=O)O)CC2)NS(=O)(=O)c2ccc3ccccc3c2)c1;-7.3677616;581;D-1679;;;logcm/s;smi
+N=c1nc(N2CCCCC2)cc(N)n1O;-4.9978392;[489, 386];['C-845', 'D-1509'];[nan, nan];['275-Minoxidil', 'Minoxidil'];logcm/s;smi
+NC(=O)/C=C(\c1cccc(F)c1)c1ccc2nc(N)n(S(=O)(=O)NC(=O)N3CCOCC3)c2c1;-4.7399998;898;D-2360;;E25;logcm/s;smi
+NC(=O)C(N)Cc1c[nH]c2ccccc12;-4.9200001;232;A-492;;tryptophanamide;logcm/s;smi
+NC(=O)CC[C@H](N)C(=O)O;-6.0702906;609;D-1734;;Glutamine;logcm/s;smi
+NC(=O)Cc1cc(/N=N/c2ccc(S(=O)(=O)Nc3ccccn3)cc2)ccc1O;-5.7088718;1008;D-2618;;Sulfasalamide;logcm/s;smi
+NC(=O)N1C(=O)C(C(=O)c2cccs2)c2cc(Cl)ccc21;-4.5700002;217;A-471;;tenidap;logcm/s;smi
+NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CCCN=C(N)N)NC(=O)[C@@H](N)Cc1ccc(O)cc1;-7.4317985;298;B-573;;Lef53;logcm/s;smi
+NC(=O)[C@H]1CCCN1C(=O)[C@@H](Cc1c[nH]cn1)NC(=O)[C@H]1CCC(=O)N1;-6.8313413;1210;D-2123;;Pyr-His-Pro-NH2 (TRH);logcm/s;smi
+NC(=O)c1c(F)ccc(OCc2nc3cc(Cl)cnc3s2)c1F;-4.3099999;928;D-2424;;;logcm/s;smi
+NC(=O)c1cccc(Cc2ncccn2)c1;-4.4609237;279;B-538;;;logcm/s;smi
+NC(=O)c1cccc(Cn2ccnc2)c1;-5.16215465;[937, 284];['D-2445', 'B-544'];[nan, nan];;logcm/s;smi
+NC(=O)c1cccc(Cn2cnc3ccccc32)c1;-4.600163;[281, 938];['B-540', 'D-2446'];[nan, nan];;logcm/s;smi
+NC(=O)c1ccncc1;-4.2782722;688;D-1920;;-;logcm/s;smi
+NC(=O)n1c(O)c(C(=O)c2cccs2)c2cc(Cl)ccc21;-4.3103647;540;D-1604;;Tenidap;logcm/s;smi
+NC(=S)NC[C@H]1CN(c2ccc(C3CCS(=O)(=O)CC3)c(F)c2)C(=O)O1;-5.8880281;645;D-1814;;PNU-179399;logcm/s;smi
+NC(CC(=O)O)C(=O)OC[C@@H]1O[C@H](n2cc(F)c(=O)[nH]c2=O)C[C@H]1O;-6.4899998;1248;D-2415;;5'-L-Asp-FUdR;logcm/s;smi
+NC(CCC(=O)O)C(=O)O;-6.0700002;456;D-1453;;Glutaminic Acid;logcm/s;smi
+NC(Cc1c[nH]c2ccccc12)C(=O)O;-5.3899999;231;A-491;;tryptophan;logcm/s;smi
+NC(Cc1ccccc1)C(=O)OC[C@@H]1O[C@H](n2cc(F)c(=O)[nH]c2=O)C[C@H]1O;-5.3891382;656;D-1842;;5'-L-phenylalanyl-floxuridine;logcm/s;smi
+NC(N)=N/N=C/c1c(Cl)cccc1Cl;-4.52170585;[379, 59];['A-199', 'C-783'];[nan, nan];['guanabenz', '174-Guanabenz'];logcm/s;smi
+NC(N)=NC(=O)c1nc(Cl)c(N)nc1N;-5.694745066666666;[1096, 137, 397];['D-1347', 'C-699', 'A-32'];[nan, nan, nan];['Amiloride', 'amiloride', '061-Amiloride'];logcm/s;smi
+NC(N)=NCC1COc2ccccc2O1;-4.8197937;[460, 349];['C-1216', 'D-1457'];[nan, nan];['173-Guanoxan', 'Guanoxan'];logcm/s;smi
+NC(N)=NN=Cc1c(Cl)cccc1Cl;-4.3299999;459;D-1456;;Guanabenz;logcm/s;smi
+NC(N)=Nc1nc(CSCC/C(N)=N\S(N)(=O)=O)cs1;-5.9488473;382;C-825;;243-Famotidine;logcm/s;smi
+NC(N)=Nc1nc(CSCCC(N)=NS(N)(=O)=O)cs1;-6.0700002;45;A-172;;famotidine;logcm/s;smi
+NC1CONC1=O;-5.4400001;430;D-1398;;Cycloserine;logcm/s;smi
+NC1[C@@H]2CN(c3nc4c(cc3F)c(=O)c(C(=O)O)cn4-c3ccc(F)cc3F)C[C@H]12;-4.66499995;[550, 230];['D-1627', 'A-490'];[nan, nan];['trovafloxacin', 'Trovafloxacin'];logcm/s;smi
+NCC(=O)CCC(=O)O;-5.3400002;1025;A-15;;5-aminolevulinic acid;logcm/s;smi
+NCC(=O)N1CCC[C@H]1C(=O)O;-5.2123351;562;D-1646;;Gly-Pro (glycylproline);logcm/s;smi
+NCCCCN;-4.5179658;859;D-2298;;Putrescine;logcm/s;smi
+NCCCC[C@H](N[C@@H](CCc1ccccc1)C(=O)O)C(=O)N1CCC[C@@H]1C(=O)O;-6.6599998;474;D-1485;;Lisinopril;logcm/s;smi
+NCCCC[C@H](N[C@@H](CCc1ccccc1)C(=O)O)C(=O)N1CCC[C@H]1C(=O)O;-7.3899999;121;A-298;;lisinopril;logcm/s;smi
+NCCc1c[nH]c2ccc(O)cc12;-4.8600001;204;A-445;;serotonin;logcm/s;smi
+NCCc1ccc(O)c(O)c1;-4.95000005;[17, 564];['D-1648', 'A-129'];[nan, nan];['Dopamine', 'dopamine'];logcm/s;smi
+NCc1cccc(-n2nc(C(F)(F)F)cc2C(=O)Nc2ccc(-c3ccccc3S(N)(=O)=O)cc2F)c1;-6.0;911;D-2389;;4f;logcm/s;smi
+NCc1cccc(Cc2ncccn2)c1;-4.5968795;274;B-529;;;logcm/s;smi
+NCc1cccc(Cn2cccn2)c1;-4.54834105;[1082, 1253];['D-2450', 'B-541'];[nan, nan];;logcm/s;smi
+NCc1cccc(Cn2cnc3ccccc32)c1;-4.5595455000000005;[282, 939];['B-542', 'D-2449'];[nan, nan];;logcm/s;smi
+NNc1nncc2ccccc12;-5.1700001;104;A-264;;hydralazine;logcm/s;smi
+NS(=O)(=O)N1CCN(C2CN(CC[C@]3(c4ccc(Cl)c(Cl)c4)CCC(=O)N(CC4CC4)C3)C2)CC1;-5.8969545;1162;D-1829;;UK 224,671;logcm/s;smi
+NS(=O)(=O)c1cc2c(cc1C(F)(F)F)NC(Cc1ccccc1)NS2(=O)=O;-5.8899999;1104;D-1362;;Bendroflumethiazide;logcm/s;smi
+NS(=O)(=O)c1ccc(C2=C(c3ccccc3)C(=O)OC2)cc1;-4.6199999;526;D-1574;;Rofecoxib;logcm/s;smi
+NS(=O)(=O)c1ccc(Cl)cc1;-4.2620125;286;B-548;;;logcm/s;smi
+NS(=O)(=O)c1ccc(Cn2cnc3ccccc32)cc1;-4.63039205;[269, 933];['B-523', 'D-2435'];[nan, nan];;logcm/s;smi
+N[C@@H](C(=O)N[C@@H]1C(=O)N2C(C(=O)O)=C(Cl)CC[C@H]12)c1ccccc1;-7.3400002;122;A-299;;loracarbef;logcm/s;smi
+N[C@@H](Cc1ccc(O)c(O)c1)C(=O)O;-5.93597745;[1120, 117];['A-291', 'D-1481'];[nan, nan];['L-dopa', 'Levodopa (L-dopa)'];logcm/s;smi
+N[C@@H](Cc1ccccc1)C(=O)O;-4.83948565;[347, 124];['C-1201', 'A-302'];[nan, nan];['027-L-Phenylalanine', 'l-phenylalanine'];logcm/s;smi
+N[C@@H](Cc1ccccc1)C(=O)OC[C@H]1O[C@@H](n2ccc(O)nc2=O)[C@@H](O)[C@@H]1O;-5.6999998;1232;D-2323;;5'-L-phenylalanyl-cytarabine (5);logcm/s;smi
+Nc1c(CC(=O)O)cccc1C(=O)c1ccccc1;-4.52;1005;D-2611;;Amfenac;logcm/s;smi
+Nc1c(CC(=O)[O-])cccc1C(=O)c1ccccc1;-4.52;129;A-31;;amfenac sodium;logcm/s;smi
+Nc1cc(-c2ccncc2)c[nH]c1=O;-4.7544875;384;C-838;;263-Amrinone;logcm/s;smi
+Nc1ccc(S(=O)(=O)Nc2ccccn2)cc1;-4.7791872;[210, 1130, 367];['A-453', 'C-705', 'D-1592'];[nan, nan, nan];['069-Sulfapyridine', 'sulfapyridine', 'Sulfapyridine'];logcm/s;smi
+Nc1ccc(S(=O)(=O)Nc2ncccn2)cc1;-4.75;208;A-450;;sulfadiazine;logcm/s;smi
+Nc1ccc(S(=O)(=O)O)cc1;-5.4299998;1170;D-1893;;Sulfanilic acid;logcm/s;smi
+Nc1ccc(S(N)(=O)=O)cc1;-5.2600002;[209, 903];['D-2368', 'A-452'];[nan, nan];['sulfanilamide', 'Sulfanilamide'];logcm/s;smi
+Nc1cccc(Cn2cnc3ccccc32)c1;-4.24054385;[272, 940];['B-527', 'D-2457'];[nan, nan];;logcm/s;smi
+Nc1cccnc1;-4.5380535;687;D-1919;;-;logcm/s;smi
+Nc1ccn([C@@H]2CS[C@H](CO)O2)c(=O)n1;-5.4200001;472;D-1478;;Lamivudine;logcm/s;smi
+Nc1ccncc1;-4.0202255;692;D-1926;;-;logcm/s;smi
+Nc1nc(/C(=C\CC(=O)O)C(=O)NC2C(=O)N3C(C(=O)O)=CCSC23)cs1;-6.0604806;363;C-672;;016-Ceftibuten;logcm/s;smi
+Nc1nc(=O)c2c([nH]1)NCC(CNc1ccc(C(=O)NC(CCC(=O)O)C(=O)O)cc1)N2C=O;-7.5214391;1199;D-2057;;Folinic acid;logcm/s;smi
+Nc1nc(=O)c2ncn(COC(CO)CO)c2[nH]1;-6.3699999;1029;A-190;;ganciclovir;logcm/s;smi
+Nc1nc(=O)c2ncn(COCCO)c2[nH]1;-5.9899998;1101;D-1341;;Acyclovir;logcm/s;smi
+Nc1nc(=O)c2ncn([C@@H]3C[C@H](CO)[C@H]3CO)c2[nH]1;-6.0555172;383;C-827;;247-Lobucavir;logcm/s;smi
+Nc1nc(O)c2ncn([C@@H]3C[C@H](CO)[C@H]3CO)c2n1;-6.0555172;303;B-592;;Lobucavir;logcm/s;smi
+Nc1nc2c(ncn2C2[C@@H](CO)C[C@@H]2CO)c(=O)[nH]1;-6.0599999;477;D-1491;;Lobucavir;logcm/s;smi
+Nc1nc2c(ncn2COC(CO)CO)c(=O)[nH]1;-6.1012278;454;D-1450;;Gancyclovir;logcm/s;smi
+Nc1nnc(-c2cccc(Cl)c2Cl)c(N)n1;-4.3899999;115;A-289;;lamotrigine;logcm/s;smi
+O=C(/C=C/c1ccc(O)c(O)c1)OC(Cc1ccc(O)c(O)c1)C(=O)O;-6.49037455;[1066, 1164];['D-1856', 'A-434'];[nan, nan];['rosmarinic  acid', 'Rosmarinic acid (RMA)'];logcm/s;smi
+O=C(/C=C/c1ccc(O)c(O)c1/C=C/c1ccc(O)c(O)c1)OC(Cc1ccc(O)c(O)c1)C(=O)O;-7.2277412;661;D-1853;;Salvianolic acid A (SAA);logcm/s;smi
+O=C(/C=C/c1ccc(O)c2c1C(C(=O)O)C(c1ccc(O)c(O)c1)O2)OC(Cc1ccc(O)c(O)c1)C(=O)O;-7.0891552;663;D-1857;;Lithospermic acid (LSA);logcm/s;smi
+O=C(/C=C/c1ccc(O)cc1)c1ccc(O)cc1O;-4.8378239;803;D-2174;;Isoliquiritigenin (35);logcm/s;smi
+O=C(/C=C/c1ccc2c(c1)nc(CCc1ccccc1)n2CCN1CCCC1)NO;-5.5207167;676;D-1892;;SB639;logcm/s;smi
+O=C(CCCCCCC(=O)Nc1ccccc1)NO;-5.6294661;1166;D-1859;;Vorinostat (SAHA-suberoylanilide hydroxamic acid);logcm/s;smi
+O=C(CCCN1CCC(=C(c2ccc(F)cc2)c2ccc(F)cc2)CC1)N1CCCC1;-5.0599999;951;D-2477;;Org 23366;logcm/s;smi
+O=C(CCCN1CCC(O)(c2ccc(Cl)cc2)CC1)c1ccc(F)cc1;-4.71;461;D-1458;;Haloperidol;logcm/s;smi
+O=C(CCc1ccc(O)cc1)c1ccc(O)cc1O;-4.7399821499999995;[8, 1202];['A-111', 'D-2078'];[nan, nan];['davidigenin', 'Davidigenin (DG)'];logcm/s;smi
+O=C(CO)N1CCN(c2ccc(N3C[C@H](CNC(=S)C4CC4)OC3=O)cc2F)CC1;-4.4308991;640;D-1802;;PNU-184148;logcm/s;smi
+O=C(COc1ccc(C(=O)CN2CCN(C3CCN(C(=O)OC/C=C4/OC(=O)c5ccccc54)CC3)CC2=O)cc1)OC1CCCCC1;-4.4000001;29;A-150;;EF5261;logcm/s;smi
+O=C(CS)NCCCCCC(=O)Nc1cccc2cccnc12;-4.8496218;654;D-1828;;6MAQH (W2);logcm/s;smi
+O=C(NC(Cc1c[nH]c2ccccc12)C(=O)O)OCc1ccccc1;-5.8000002;162;A-361;;N-carbobenzoxy-tryptophan;logcm/s;smi
+O=C(NC1(C(=O)N[C@@H](Cc2ccccc2)C(=O)NCCCN2CCOCC2)CCCC1)c1cc2ccccc2s1;-5.0478787;680;D-1907;;MEN14268;logcm/s;smi
+O=C(NC1(C(=O)N[C@H](Cc2ccccc2)C(=O)NC2CCN(CC3CCOCC3)CC2)CCCC1)c1cc2ccccc2s1;-5.0700002;683;D-1914;;MEN15353;logcm/s;smi
+O=C(NC1(C(=O)N[C@H](Cc2ccccc2)C(=O)NCC2CCN(C3CCOCC3)CC2)CCCC1)c1cc2ccccc2s1;-5.7979398;1192;D-2032;;30d;logcm/s;smi
+O=C(NC1(C(=O)N[C@H](Cc2ccccc2)C(=O)NCC2CCN(CC3CCOCC3)CC2)CCCC1)c1cc2ccc(C(F)(F)F)cc2s1;-5.1919103;736;D-2034;;48d;logcm/s;smi
+O=C(NC1(C(=O)N[C@H](Cc2ccccc2)C(=O)NCCC(=O)N2CCN(C3CCOCC3)CC2)CCCC1)c1cc2ccccc2s1;-5.8880281;735;D-2031;;25f;logcm/s;smi
+O=C(NC1(C(=O)N[C@H](Cc2ccccc2)C(=O)NCCC(=O)N2CCN(CC3CCOCC3)CC2)CCCC1)c1cc2ccccc2s1;-5.5693183;1191;D-2030;;25e;logcm/s;smi
+O=C(NC1(C(=O)N[C@H](Cc2ccccc2)C(=O)NCCC2CCN(CC3CCOCC3)CC2)CCCC1)c1cc2ccccc2s1;-5.4094677;684;D-1915;;MEN15366;logcm/s;smi
+O=C(NC1(C(=O)N[C@H](Cc2ccccc2)C(=O)NCCCC(=O)N2CCC(N3CCOCC3)CC2)CCCC1)c1cc2ccccc2s1;-5.7697759;734;D-2028;;25a;logcm/s;smi
+O=C(NC1(C(=O)N[C@H](Cc2ccccc2)C(=O)NCCCN2CCC(O)CC2)CCCC1)c1cc2ccccc2s1;-5.8519359;733;D-2027;;21c;logcm/s;smi
+O=C(NC1(C(=O)N[C@H](Cc2ccccc2)C(=O)NCCCN2CCOCC2)CCCC1)c1cc2ccccc2o1;-5.2209244;682;D-1910;;MEN14745;logcm/s;smi
+O=C(NC1(C(=O)N[C@H](Cc2ccccc2)C(=O)NCCCN2CCOCC2)CCCC1)c1ccc(-c2ccccc2)cc1;-4.7399998;681;D-1909;;MEN14732;logcm/s;smi
+O=C(NC1(C(=O)N[C@H](Cc2ccccc2)C(=O)NCCCN2CCOCC2)CCCC1)c1ccc(-c2ccccc2)s1;-4.9309068;1173;D-1912;;MEN14970;logcm/s;smi
+O=C(NCC1CCCCN1)c1cc(OCC(F)(F)F)ccc1OCC(F)(F)F;-4.418400800000001;[1113, 1100];['D-1439', 'C-841'];[nan, nan];['270-Flecainide', 'Flecainide'];logcm/s;smi
+O=C(N[C@@H]1CCOC[C@@H]1C(=O)NO)c1ccc(Cc2c(C(F)(F)F)nn3ccccc23)cc1;-5.7447276;320;B-640;;;logcm/s;smi
+O=C(Nc1ccc(C(F)(F)F)c(Cl)c1)c1ccnn1CCc1ccncc1;-5.3400002;1218;D-2204;;;logcm/s;smi
+O=C(Nc1ccc(Cl)cc1)c1ccnn1CCc1ccncc1;-5.1590075;815;D-2197;;N-(4-Chlorophenyl)-1-(2-(pyridin-4-yl)ethyl)-1H-pyrazole-5-carboxamide (11);logcm/s;smi
+O=C(Nc1ccc(OC(F)(F)Cl)cc1)c1ccnn1CCc1ccncc1;-5.3275695;818;D-2201;;N-(4-(Chlorodifluoromethoxy)phenyl)-1-(2-(pyridin-4-yl)ethyl)-1H-pyrazole-5-carboxamide (22);logcm/s;smi
+O=C(Nc1ccc(OC(F)(F)F)cc1)c1ccnn1CCc1ccncc1;-5.1515226;817;D-2200;;;logcm/s;smi
+O=C(Nc1cccc(Br)c1)c1nscc1NCc1ccncc1;-5.2606096;826;D-2210;;;logcm/s;smi
+O=C(Nc1cccc(C(F)(F)F)c1)c1ccccc1NCc1ccncc1;-5.158072;1216;D-2195;;C;logcm/s;smi
+O=C(Nc1cccc(C(F)(F)F)c1)c1nscc1NCc1ccnc2ccccc12;-5.5700002;828;D-2213;;4-(quinolin-4-ylmethylamino)-N-(3-(trifluoromethyl)phenyl)isothiazole-3-carboxamide (30);logcm/s;smi
+O=C(Nc1cccc(C(F)(F)F)c1)c1nscc1NCc1ccncc1;-5.158072;823;D-2207;;4-(Pyridin-4-ylmethylamino)-N-(3-(trifluoromethyl)phenyl)isothiazole-3-carboxamide (3);logcm/s;smi
+O=C(Nc1cccc(OC(F)(F)F)c1)c1nscc1NCc1ccncc1;-5.1003633;824;D-2208;;;logcm/s;smi
+O=C(O)C(O)Cc1ccc(O)c(O)c1;-5.9118199;660;D-1851;;Tanshinol (TSL);logcm/s;smi
+O=C(O)C1=C/C(=N\Nc2ccc(S(=O)(=O)Nc3ccccn3)cc2)C=CC1=O;-6.5171175;595;D-1709;;Sulfasalazine;logcm/s;smi
+O=C(O)CC(C1CCN(C(=O)CCCc2ccc3c(n2)NCCC3)CC1)C1CNc2ccccc2C1;-5.2199998;919;D-2407;;C;logcm/s;smi
+O=C(O)CC(CC1CCN(C(=O)CCc2ccc3c(n2)NCCC3)CC1)C1CNc2ccccc2C1;-5.5999999;918;D-2406;;b;logcm/s;smi
+O=C(O)CC(CC1CCN(C(=O)CCc2ccc3c(n2)NCCC3)CC1)c1cnc2ccccc2c1;-5.8899999;917;D-2405;;a;logcm/s;smi
+O=C(O)CCc1nc(-c2ccccc2)c(-c2ccccc2)o1;-4.48;503;D-1531;;Oxaprozin;logcm/s;smi
+O=C(O)COC(=O)Cc1ccccc1Nc1c(Cl)cccc1Cl;-4.4099998;69;A-22;;aceclofenac;logcm/s;smi
+O=C(O)COCCN1CCN(C(c2ccccc2)c2ccc(Cl)cc2)CC1;-5.5;418;D-1382;;Cetirizine;logcm/s;smi
+O=C(O)COc1ccc(C(=O)CN2CCN(C3CCNCC3)CC2=O)cc1;-6.1199999;22;A-139;;EF5154;logcm/s;smi
+O=C(O)C[C@@H](c1cnc2ccccc2c1)N1CC[C@@H](CCCc2ccc3c(n2)NCCC3)C1=O;-5.6900001;920;D-2408;;I-II;logcm/s;smi
+O=C(O)C[C@H](NC(=O)[C@@H]1CCCN(C(=O)CCC2CCNCC2)C1)c1cccnc1;-6.21;36;A-159;;elarofiban;logcm/s;smi
+O=C(O)Cc1c(/C=C/C(=O)OC(Cc2ccc(O)c(O)c2)C(=O)O)ccc(O)c1O;-7.1795707;662;D-1855;;Salvianolic acid D (SAD);logcm/s;smi
+O=C(O)Cc1ccc(Cn2cccn2)cc1;-5.53955105;[1081, 935];['D-2438', 'B-534'];[nan, nan];;logcm/s;smi
+O=C(O)Cc1ccccc1Nc1c(Cl)cccc1Cl;-4.460681;434;D-1408;;Diclofenac;logcm/s;smi
+O=C(O)[C@H]1O[C@@H](Oc2cc3oc(-c4ccccc4)cc(=O)c3c(O)c2O)[C@H](O)[C@@H](O)[C@@H]1O;-6.769887949999999;[224, 789];['D-2155', 'A-48'];[nan, nan];['Baicalin (12) (BG)', 'baicalin '];logcm/s;smi
+O=C(O)c1cc(-c2ccc(F)cc2F)ccc1O;-4.73759105;[435, 334];['D-1410', 'C-1059'];[nan, nan];['Diflunisal', '749-Diflunisal'];logcm/s;smi
+O=C(O)c1cc(/N=N/c2ccc(S(=O)(=O)Nc3ccccn3)cc2)ccc1O;-5.378171;211;A-454;;sulfasalazine;logcm/s;smi
+O=C(O)c1cc(Cl)ccc1O;-4.98;37;A-16;;5-chlorosalicylic acid;logcm/s;smi
+O=C(O)c1ccc(Cc2ncccn2)cc1;-5.269205599999999;[1252, 278];['B-537', 'D-2444'];[nan, nan];;logcm/s;smi
+O=C(O)c1ccc(Cn2cccn2)cc1;-5.4382596;[275, 934];['D-2437', 'B-531'];[nan, nan];;logcm/s;smi
+O=C(O)c1ccc(Cn2cnc3ccccc32)cc1;-5.49810455;[273, 932];['D-2432', 'B-528'];[nan, nan];;logcm/s;smi
+O=C(O)c1cccc(Cc2ncccn2)c1;-5.2123351;[936, 268];['D-2443', 'B-522'];[nan, nan];;logcm/s;smi
+O=C(O)c1cccc(Cn2cccn2)c1;-5.5315664;[1251, 271];['B-526', 'D-2442'];[nan, nan];;logcm/s;smi
+O=C(O)c1ccccc1;-4.0050001;236;A-50;;benzoic acid;logcm/s;smi
+O=C(O)c1ccccc1-c1c2ccc(=O)cc-2oc2cc(O)ccc12;-4.77;855;D-2283;;Fluorescein;logcm/s;smi
+O=C(O)c1ccccc1O;-4.779427800000001;[560, 1067];['A-437', 'D-1641'];[nan, nan];['Salicylic acid', 'salicylic acid'];logcm/s;smi
+O=C(O)c1ccncc1;-5.1900001;686;D-1918;;-;logcm/s;smi
+O=C(O)c1cn(C2CC2)c2cc(N3CCNCC3)c(F)cc2c1=O;-5.3629701;[425, 371];['C-763', 'D-1391'];[nan, nan];['Ciprofloxacin (CIP)', '148-Ciprofloxacin (CIP)'];logcm/s;smi
+O=C(O[C@H]1Cc2c(O)cc(O)cc2O[C@H]1c1ccc(O)c(O)c1)c1cc(O)c(O)c(O)c1;-6.9294324;[1228, 39];['A-163', 'D-2280'];[nan, nan];['epicatechin-3-gallate', 'Epicatechin gallate (ECG)'];logcm/s;smi
+O=C(c1ccc(F)cc1)C1CCN(CCn2c(=O)[nH]c3ccccc3c2=O)CC1;-4.4400001;469;D-1472;;Ketanserin;logcm/s;smi
+O=C(c1ccc(OCCN2CCCCC2)cc1)c1c(-c2ccc(O)cc2)sc2cc(O)ccc12;-5.7227535;521;D-1562;;Raloxifene HCl;logcm/s;smi
+O=C(c1ccccc1)c1ccc2n1CCC2C(=O)O;-5.36826565;[332, 470];['C-1056', 'D-1475'];[nan, nan];['743-Ketorolac', 'Ketorolac'];logcm/s;smi
+O=C1CC(c2ccc(O)c(O)c2)Oc2cc(O)cc(O)c21;-5.2800002;799;D-2168;;Eriodictyol (28);logcm/s;smi
+O=C1CC(c2ccc(O)cc2)Oc2cc(O)ccc21;-4.8000002;1201;D-2077;;Liquiritigenin (LG);logcm/s;smi
+O=C1CCC(N2C(=O)c3ccccc3C2=O)C(=O)N1;-4.6999998;542;D-1611;;Thalidomide;logcm/s;smi
+O=C1CCCN1CCCCN1CCN(c2cc(C(F)(F)F)ccn2)CC1;-4.7399998;949;D-2475;;Org 13011;logcm/s;smi
+O=C1CN=C(c2ccccc2)c2cc(Cl)ccc2N1;-3.9382965500000005;[289, 1125];['B-552', 'D-1521'];[nan, nan];['Nordazepam', 'Nordazepam (Desmethyldiazepam)'];logcm/s;smi
+O=C1CN=C(c2ccccn2)c2cc(Br)ccc2N1;-4.4000001;408;D-1367;;Bromazepam;logcm/s;smi
+O=C1C[C@@H](c2ccc(C[C@H](NS(=O)(=O)c3ccccc3)c3nc4ccccc4[nH]3)cc2F)S(=O)([O-])=N1;-6.5214391;851;D-2271;;F-(S)-IZD;logcm/s;smi
+O=C1C[C@@H](c2ccc(O)c(O)c2)Oc2cc(O)cc(O)c21;-5.2800002;41;A-165;;eriodictyol ;logcm/s;smi
+O=C1C[C@@H](c2ccc(O)cc2)Oc2cc(O)cc(O)c21;-4.6550002;161;A-358;;naringenin;logcm/s;smi
+O=C1C[C@@H](c2ccc(O[C@@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3O)cc2)Oc2cc(O)ccc21;-6.5887568000000005;[1203, 119];['A-296', 'D-2079'];[nan, nan];['Liquiritin', 'Liquiritin (LQ)'];logcm/s;smi
+O=C1C[C@@H]2OCC=C3CN4CC[C@]56c7ccccc7N1[C@H]5[C@H]2[C@H]3C[C@H]46;-4.5086198;768;D-2114;;Strychnine (Str);logcm/s;smi
+O=C1C[C@H]2OCC=C3CN4C[C@H](O)C56c7ccccc7N1[C@@H]5[C@H]2[C@H]3CC46;-4.600163;771;D-2119;;Pseudostrychnine (Psd);logcm/s;smi
+O=C1Cc2cc(CCN3CCN(c4nsc5ccccc45)CC3)c(Cl)cc2N1;-5.07002355;[1072, 557];['D-1637', 'A-514'];[nan, nan];['Ziprasidone', 'ziprasidone'];logcm/s;smi
+O=C1N(c2ccccc2)c2ccccc2C1(Cc1ccncc1)Cc1ccncc1;-4.643333299999999;[1009, 19, 1235];['A-134', 'D-2331', 'D-2620'];[nan, nan, nan];['DuP-996', 'Linopirdine', 'DUP 996'];logcm/s;smi
+O=C1NC(=O)C(c2ccccc2)(c2ccccc2)C(=O)N1;-4.46;975;D-2529;;T2007;logcm/s;smi
+O=C1NC(=O)C(c2ccccc2)(c2ccccc2)N1;-4.52969695;[176, 364];['C-682', 'A-391'];[nan, nan];['032-Phenytoin', 'phenatoin'];logcm/s;smi
+O=C1NCC2(CCCNC2)c2[nH]c(-c3ccnc(-c4cc5ccccc5o4)n3)cc21;-5.8200002;958;D-2499;;;logcm/s;smi
+O=C1NCC2(CCCNC2)c2[nH]c(-c3ccnc(-c4ccc5c(c4)OCO5)n3)cc21;-5.4699998;1258;D-2500;;;logcm/s;smi
+O=C1Nc2ccc(Cl)cc2C(c2ccccc2)=NC1O;-3.98461365;[294, 502];['D-1529', 'B-560'];[nan, nan];Oxazepam;logcm/s;smi
+O=C1Nc2ccc(Cl)cc2[C@@](C#CC2CC2)(C(F)(F)F)O1;-4.0500002;439;D-1419;;Efavirenz;logcm/s;smi
+O=C1OCCN1/N=C/c1ccc(N(O)O)o1;-4.9899998;1115;D-1448;;Furazolidone;logcm/s;smi
+O=C1c2c(O)cc(O)cc2OC(c2ccc(O)c(O)c2)C1O;-6.5093193;1213;D-2169;;Taxifolin (29);logcm/s;smi
+O=C1c2ccccc2-n2c1nc1ccccc1c2=O;-4.1999998;990;D-2581;;Tryptanthrin;logcm/s;smi
+O=Cc1ccncc1;-4.1805573;1174;D-1922;;-;logcm/s;smi
+O=c1[nH]c(=O)n([C@@H]2O[C@H](CO)[C@@H](O)[C@@H]2O)cc1/C=C/Br;-5.3899999;529;D-1584;;Sorivudine (BVaraU);logcm/s;smi
+O=c1[nH]c(=O)n([C@H]2O[C@@H](CO)[C@H](O)[C@H]2O)cc1/C=C/Br;-5.3989701;608;D-1732;;BVaraU;logcm/s;smi
+O=c1[nH]c2cc(Cl)ccc2o1;-4.1900001;424;D-1390;;Chlorzoxazone;logcm/s;smi
+O=c1[nH]c2ccccc2n1CCCN1CCC(n2c(=O)[nH]c3cc(Cl)ccc32)CC1;-5.4151082;[353, 438];['D-1417', 'C-1240'];[nan, nan];['324-Domperidone', 'Domperidone'];logcm/s;smi
+O=c1c(-c2ccc(O)cc2)coc2c(C3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3O)c(O)ccc12;-6.3989701;802;D-2173;;Puerarin (34);logcm/s;smi
+O=c1c(-c2ccc(O)cc2)coc2c([C@@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3O)c(O)ccc12;-6.4000001;193;A-422;;puerarin ;logcm/s;smi
+O=c1c(-c2ccc(O)cc2)coc2cc(O)cc(O)c12;-4.610000149999999;[1185, 55];['D-2003', 'A-191'];[nan, nan];['Genistein', 'genistein '];logcm/s;smi
+O=c1c(-c2ccc(O)cc2)coc2cc(O)ccc12;-4.679444999999999;[801, 6];['A-108', 'D-2171'];[nan, nan];['daidzein ', 'Daidzein (32)'];logcm/s;smi
+O=c1c(-c2ccc(O)cc2)coc2cc(OC3OC(CO)C(O)C(O)C3O)ccc12;-6.3600001;1019;A-109;;daidzin ;logcm/s;smi
+O=c1c(O)c(-c2cc(O)c(O)c(O)c2)oc2cc(O)cc(O)c12;-5.77;[794, 157];['A-350', 'D-2162'];[nan, nan];['Myricetin (19)', 'myricetin '];logcm/s;smi
+O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)c(O)c(O)c12;-6.6999998;[194, 988];['D-2576', 'A-423'];[nan, nan];['Quercetagetin (6)', 'quercetagetin'];logcm/s;smi
+O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12;-5.71249985;[1064, 1212];['D-2161', 'A-425'];[nan, nan];['quercetin', 'Quercetin (18)'];logcm/s;smi
+O=c1c(O)c(-c2ccc(O)cc2)oc2cc(O)cc(O)c12;-4.9899998;792;D-2159;;Kaempferol (16);logcm/s;smi
+O=c1c(O)c(-c2ccc(O)cc2O)oc2cc(O)cc(O)c12;-6.20940205;[154, 795];['D-2163', 'A-348'];[nan, nan];['morin ', 'Morin (20)'];logcm/s;smi
+O=c1c(O)c(-c2ccccc2)oc2cc(O)cc(O)c12;-5.110595699999999;[53, 791];['D-2157', 'A-189'];[nan, nan];['Galangin (14)', 'galangin '];logcm/s;smi
+O=c1c(OC2C(O)OC(CO)C(O)C2O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12;-6.1700001;111;A-276;;isoquercitrin ;logcm/s;smi
+O=c1c(OC2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)c(-c2ccc(OC3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3O)c(O)c2)oc2cc(O)cc(O)c12;-7.0478787;847;D-2261;;Quercetin 3,4'-diglucoside;logcm/s;smi
+O=c1c(O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12;-6.27;797;D-2165;;Isoquercitrin (22);logcm/s;smi
+O=c1c2ccccc2nc2n1CCc1c-2[nH]c2ccccc12;-5.0582528;747;D-2060;;Rutaecarpine (RCP);logcm/s;smi
+O=c1cc(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12;-5.0500002;[784, 125];['A-304', 'D-2149'];[nan, nan];['luteolin ', 'Luteolin (6)'];logcm/s;smi
+O=c1cc(-c2ccc(O)c(O)c2)oc2cc(O[C@@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3O)cc(O)c12;-6.36913275;[788, 1044];['A-305', 'D-2154'];[nan, nan];['luteoloside ', 'Luteoloside (11)'];logcm/s;smi
+O=c1cc(-c2ccc(O)cc2)oc2cc(O)c(O)c(O)c12;-5.2199998;[785, 202];['A-442', 'D-2151'];[nan, nan];['scutellarein ', 'Scutellarein (8)'];logcm/s;smi
+O=c1cc(-c2ccc(O)cc2)oc2cc(O)c([C@@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3O)c(O)c12;-6.2003298;787;D-2153;;Isovitexin (10);logcm/s;smi
+O=c1cc(-c2ccc(O)cc2)oc2cc(O)cc(O)c12;-4.9821801;704;D-1946;;Apigenin (5,7,4'-THF);logcm/s;smi
+O=c1cc(-c2ccc(O)cc2)oc2cc(O)ccc12;-5.2123351;702;D-1944;;7,4'-DHF;logcm/s;smi
+O=c1cc(-c2ccc(O)cc2)oc2cc(O[C@@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3O[C@@H]3OC[C@](O)(CO)[C@H]3O)cc(O)c12;-7.1199999;120;A-297;;Liquiritin apioside ;logcm/s;smi
+O=c1cc(-c2ccc(O)cc2)oc2cc([O-])c(C3OC(CO)C(O)C(O)C3O)c(O)c12;-6.1999998;1040;A-277;;isovitexin ;logcm/s;smi
+O=c1cc(-c2ccccc2)oc2cc(O)c(O)c(O)c12;-5.139318;[1211, 215];['D-2150', 'A-47'];[nan, nan];['Baicalein (7)', 'baicalein '];logcm/s;smi
+O=c1cc(-c2ccccc2)oc2cc(O)cc(O)c12;-5.0105972;703;D-1945;;Chrysin (5,7-DHF);logcm/s;smi
+O=c1cc(-c2ccccc2)oc2ccccc12;-3.9201083;561;D-1642;;Flavone;logcm/s;smi
+O=c1ccc2ccc(O)cc2o1;-4.5710139;669;D-1878;;Umbelliferone;logcm/s;smi
+O=c1ccc2ccccc2o1;-4.1425066;[602, 4];['D-1722', 'A-104'];[nan, nan];['Cumarin', 'coumarin'];logcm/s;smi
+O=c1n(CCCN2CCN(c3cccc(Cl)c3)CC2)nc2ccccn12;-4.6199999;547;D-1623;;Trazodone;logcm/s;smi
+O=c1nc(O)ccn1[C@@H]1O[C@H](CO)[C@@H](O)[C@@H]1O;-6.0999999;873;D-2320;;Cytarabine (1);logcm/s;smi
+OC(Cn1cncn1)(Cn1cncn1)c1ccc(F)cc1F;-4.60624715;[448, 1028];['A-181', 'D-1441'];[nan, nan];['Fluconazole', 'fluconazole'];logcm/s;smi
+OCC(O)CO;-4.8299999;56;A-193;;glycerol;logcm/s;smi
+OCCN1CCN(CC/C=C2/c3ccccc3Sc3ccc(C(F)(F)F)cc32)CC1;-4.8899999;451;D-1444;;Flupenthixol;logcm/s;smi
+OC[C@@H]1CC[C@H](n2cnc3c(O)ncnc32)O1;-5.6708102;1182;D-1988;;2',3'-dideoxyinosine (ddI);logcm/s;smi
+OC[C@@H]1O[C@@](O)(CO)[C@H](O)[C@H]1O[C@@H]1O[C@H](CO)[C@H](O)[C@H](O)[C@H]1O;-6.5364394;612;D-1740;;Lactulose;logcm/s;smi
+OC[C@H]1O[C@@](CO)(OC2O[C@H](COC3O[C@H](CO)[C@H](O)[C@H](O)[C@H]3O)[C@@H](O)[C@H](O)[C@H]2O)[C@@H](O)[C@@H]1O;-7.309804;350;C-1222;;228-Raffinose;logcm/s;smi
+OC[C@H]1O[C@@](CO)(O[C@H]2O[C@H](CO[C@H]3O[C@H](CO)[C@H](O)[C@H](O)[C@H]3O)[C@@H](O)[C@H](O)[C@H]2O)[C@@H](O)[C@@H]1O;-7.6199999;197;A-428;;raffinose;logcm/s;smi
+OC[C@H]1O[C@H](O[C@]2(CO)O[C@H](CO)[C@@H](O)[C@@H]2O)[C@H](O)[C@@H](O)[C@@H]1O;-5.9186072;1144;D-1689;;Sucrose;logcm/s;smi
+OC[C@H]1O[C@](O)(CO)[C@@H](O)[C@@H]1O[C@@H]1O[C@H](CO)[C@H](O)[C@H](O)[C@H]1O;-6.6778786;[297, 1042];['B-564', 'A-288'];[nan, nan];['lactulose', 'Lactulose'];logcm/s;smi
+OCc1ccncc1;-4.0902224;690;D-1924;;-;logcm/s;smi
+ON(O)NC1=NCCN1Cc1ccc(Cl)nc1;-4.6677732;760;D-2091;;Imidacloprid (IMI);logcm/s;smi
+ON1C=CC=C(c2cc3nccc(-c4ccc(OC(F)F)c(OCC5CC5)c4)n3n2)C1;-4.71;1256;D-2465;;PDE-310;logcm/s;smi
+Oc1cc(O)c2c(c1)OC(c1ccc(O)c(O)c1)C(O)C2;-6.2199998;0;A-1;;(-)-epicatechin;logcm/s;smi
+Oc1cc(O)c2c(c1)O[C@H](c1cc(O)c(O)c(O)c1)[C@H](O)C2;-6.8284068;854;D-2279;;Epigallocatechin (EGC);logcm/s;smi
+Oc1cc(O)c2c(c1)O[C@H](c1ccc(O)c(O)c1)[C@H](O)C2;-6.4311924;804;D-2175;;(-)-Epicatechin (36);logcm/s;smi
+Oc1ccc(-c2cnc(-c3cccc(O)c3)o2)cc1;-5.1011863;814;D-2194;;3-[5-(4-hydroxyphenyl)-1,3-oxazol-2-yl]phenol (18);logcm/s;smi
+Oc1cccc2ccccc12;-4.4899998;915;D-2395;;1-naphthol;logcm/s;smi
+Oc1ccncc1;-4.1089525;1175;D-1923;;-;logcm/s;smi
+c1c2c(cc3c1OCO3)-c1cc3ccc4c(c3c[n+]1CC2)OCO4;-4.9574246;336;C-1083;;795-Coptisine chloride (COP);logcm/s;smi
+c1ccc(-c2cccnc2)cc1;-3.8880284;696;D-1932;;-;logcm/s;smi
+c1ccc(-c2ccncc2)cc1;-4.0680037;691;D-1925;;-;logcm/s;smi
+c1ccc(C2(N3CCCCC3)CCCCC2)cc1;-4.48;563;D-1647;;Phencyclidine (PCP);logcm/s;smi
+c1ccc(Cc2ccncc2)cc1;-3.9978395;1176;D-1927;;-;logcm/s;smi
+c1ccc(Cn2ccnc2)cc1;-4.1684265499999995;[1249, 283];['D-2426', 'B-543'];[nan, nan];;logcm/s;smi
+c1ccc(Cn2cnc3ccccc32)cc1;-4.14906525;[1080, 930];['B-525', 'D-2430'];[nan, nan];;logcm/s;smi
+c1ccc(Cn2nnnc2C(c2ccc(Cn3cncn3)cc2)N2CCCN(C3CCC3)CC2)cc1;-6.3000002;960;D-2507;;5m;logcm/s;smi
+c1ccc2c(NCCCCCCCNc3c4c(nc5ccccc35)CCCC4)c3c(nc2c1)CCCC3;-5.4412465;844;D-2248;;Bis(7)-tacrine (B7T);logcm/s;smi
+c1ccncc1;-3.9703081;694;D-1929;;-;logcm/s;smi
+c1csc([C@]23CNC[C@H]2C3)c1;-4.7544875;329;B-663;;S-6j;logcm/s;smi

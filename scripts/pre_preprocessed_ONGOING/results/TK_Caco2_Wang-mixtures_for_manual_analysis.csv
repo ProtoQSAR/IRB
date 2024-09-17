@@ -1,0 +1,2 @@
+SAN_SMILES;y;ID;orig_ID;CAS;NAME;UNITS;smiles_source;ORIGINAL_SMILES;MOL_OBJECT;SMILES;y_old
+C.CC(C)n1c(N)nc2ccc(/C(=C/C(N)=O)c3cccc(F)c3F)cc21;-5.3000002;143;A-325;;LY366853;logcm/s;smi;Fc1c(cccc1F)\C(=C/C(=O)N)\c1cc2n(C(C)C)c(nc2cc1)N.C;<rdkit.Chem.rdchem.Mol object at 0x000001FA8A73D2E0>;Fc1c(cccc1F)\C(=C/C(=O)N)\c1cc2n(C(C)C)c(nc2cc1)N.C;[-5.3000002]
