@@ -37,6 +37,8 @@ data_folder =  '.' + os.path.sep + 'input_data'
 
 results_folder = '.' + os.path.sep + 'results'
 
+
+
 if not os.path.exists(results_folder):
     os.makedirs(results_folder)
     print("Output directory created: ../results/")
@@ -52,11 +54,10 @@ else:
     print("Output directory already exists: ../results/clean_files")
 
 
-path_to_hygieia = r'F:\ProtoQSAR\GENERATE_MODELS_3_0\FullAsFunctions'
+path_to_hygieia = r'C:\Users\Enrique\Documents\GitHub\generate_models\FullAsFunctions'
 exec_hygieia = 'hygieia_mod.py'
 
 config_file = 'info_original_datasets.xlsx'
-
 ##############################################################################
 
 
@@ -69,14 +70,9 @@ config_df_sel_cols = config_df[['dataset',
        'curation_process', 'sheet', 'SMILES_col', 'ID_col', 'NAME_col',
        'CAS_col', 'NAME_noiso', 'NAME_iso', 'CAS_noiso', 'CAS_iso', 'encoding', 'experimental_column', 'units',
        'output_name', 'require_additionalprocessing', 'other_col', 'proceed']]
-
+print(config_df)
 
 dictios_dfs = config_df_sel_cols.set_index('dataset').T.to_dict()
-
-
-
-
-
 
 for dataset, info in dictios_dfs.items():
 
@@ -352,12 +348,6 @@ for dataset, info in dictios_dfs.items():
         df = pd.read_csv(pathfile, sep = ';')
         smiles_source = info['SMILES_col']
         
-
-        
-#%%
-
-    
-
     if use_smiles_from_unique_source == True:    
         
         df.rename(columns = {info['SMILES_col']: 'SMILES'}, inplace = True)

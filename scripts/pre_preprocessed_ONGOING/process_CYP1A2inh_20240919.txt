@@ -1,0 +1,86 @@
+[+] Analysing "DeppPK_cyp1a2_inhibitor_all.csv" dataset
+        [++] Dataframe file created: IRB_CYP1A2inh_DeepPK-entiredata.csv
+        [++] Preprocessed dataframe file created: IRB_CYP1A2inh_DeepPK-preprocessed.csv
+        [++] Process file by HYGIEIA
+
+#########################################################################
+####################### WELCOME TO HYGIEIA script #######################
+#########################################################################
+This script will process your dataframe and:
+        - eliminate incorrect molecules ans sanitize smiles
+        - clean salts
+        - eliminate inorganic and organometallic compounds
+        - check for duplicated molecules
+        - check for mixtures.
+A file located in ".\results" folder is needed
+This file must be called: "\IRB_CYP1A2inh_DeepPK-preprocessed.csv"
+Extra columns are available in the input file:
+
+['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+What to you want to do with them?.
+
+        [1] Ignore extra data and remove it from following steps.
+
+                  "SMILES" will be the only filtered/sanitized column and "y" will be the only redirected output.
+
+        [2] Keep them in the output.
+
+                  SMILES will be only the filtered/sanitized column but all the rest will be redirected in the output.
+
+        [3] Keep them in the output and use them to check duplicates.
+
+                  More than one column will be used for filtering: SMILES will be for sanitize, mixture, salts and inorganics,
+                  the rest of the columns (except y) for checking for duplicates.
+
+        [4] Select which columns I want to keep and  which to use them to check duplicates.
+
+                  Provide a list with two lists [check dups, keep] do not include your SMILES and y
+SMILES y ['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+[+] Sanitizing smiles (Always done)
+Index(['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS',
+       'smiles_source'],
+      dtype='object')
+[+] Eliminating salts 
+C:\Users\Enrique\.conda\envs\Protocosas\lib\site-packages\pandas\core\indexing.py:1667: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self.obj[key] = value
+C:\Users\Enrique\.conda\envs\Protocosas\lib\site-packages\pandas\core\indexing.py:1835: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._setitem_single_column(loc, value[:, i].tolist(), pi)
+C:\Users\Enrique\Documents\GitHub\generate_models\FullAsFunctions\hygieia_mod.py:304: FutureWarning: Using short name for 'orient' is deprecated. Only the options: ('dict', list, 'series', 'split', 'records', 'index') will be used in a future version. Use one of the above to silence this warning.
+  salts_changed = df_changes.to_dict(orient='record')
+        Your dataset had salts, that have been eliminated:
+
+        [2HH] --> [2HH]
+[+] Eliminating inorganic and organometallic compounds
+
+Your dataset had 7 molecules with forbiden atoms. They have been eliminated.
+         NCCOB(c1ccccc1)c1ccccc1
+         [Zr+2]
+         [Pt+2]
+         c1ccc(B2OC[C@@H]3OB(c4ccccc4)O[C@H]([C@@H]4COB(c5ccccc5)O4)[C@@H]3O2)cc1
+         [Rb+]
+         [Ir]
+         c1ccc(B2OCC(C3OB(c4ccccc4)OC4COB(c5ccccc5)OC43)O2)cc1
+[+] Checking for repeated compounds considering extra data
+        Congratulations, your dataset has not duplicated compounds.
+[+] Checking for mixtures
+[]
+        Congratulations, your dataset has not mixtures.
+
+A new file has been generated:
+
+.\results\IRB_CYP1A2inh_DeepPK.csv: contains the unique molecules, following your instructions
+['ID', 'orig_ID', 'CAS', 'NAME', 'UNITS', 'smiles_source'] [] Index(['ID', 'SAN_SMILES', 'MOL_OBJECT', 'ORIGINAL_SMILES', 'orig_ID',
+       'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source'],
+      dtype='object')
+Your input dataset has 19891 molecules.
+Your output dataset has 19882 molecules.
+thanks for using HYGIEIA!
+        [+++] Dataframe curated file created: IRB_CYP1A2inh_DeepPK
