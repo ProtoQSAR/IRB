@@ -1,0 +1,2 @@
+SAN_SMILES;y;ID;orig_ID;CAS;NAME;UNITS;smiles_source;ORIGINAL_SMILES;MOL_OBJECT;SMILES;y_old
+CCOc1cc(CN2CCC3(CC2)CC(=O)N(c2ccc(C(=O)O)cc2)C3)cc(OCC)c1-c1ccc(F)cc1.O=C(O)C(F)(F)F;0;181;;;;classCavinh;SMILES;CCOc1cc(CN2CCC3(CC2)CC(=O)N(c2ccc(C(=O)O)cc2)C3)cc(OCC)c1-c1ccc(F)cc1.O=C(O)C(F)(F)F;<rdkit.Chem.rdchem.Mol object at 0x7b9d16847ca0>;CCOc1cc(CN2CCC3(CC2)CC(=O)N(c2ccc(C(=O)O)cc2)C3)cc(OCC)c1-c1ccc(F)cc1.O=C(O)C(F)(F)F;[0]
