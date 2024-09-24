@@ -54,7 +54,7 @@ else:
     print("Output directory already exists: ../results/clean_files")
 
 
-path_to_hygieia = r'C:\Users\Enrique\Documents\GitHub\generate_models\FullAsFunctions'
+path_to_hygieia = '/home/carmenortiz/Escritorio/generate_models/FullAsFunctions/'
 exec_hygieia = 'hygieia_mod.py'
 
 config_file = 'info_original_datasets.xlsx'
