@@ -516,7 +516,12 @@ dictio_properties = {
                      'classreg' : 'class'},
     'TK_Pinh':      {'desired_units' : 'classPinh',
                      'classreg' : 'class'},    
-    
+    'IRB_hERGinh': {'desired_units' : 'classhERG',
+                     'classreg' : 'class'},
+    'IRB_Navinh': {'desired_units' : 'classNavinh',
+                     'classreg' : 'class'},
+    'IRB_Cavinh': {'desired_units' : 'classCavinh',
+                     'classreg' : 'class'},
     }
 
 
@@ -554,13 +559,27 @@ dictios_dfs = {
     #               'Habibi':      {'file' : 'PhCh_MP_Habibi'},
     #                 'Hughes':      {'file' : 'PhCh_MP_Hughes'},
     #             },   
-    'PhCh_pKa' : ##↓ okis
-                {'avdeef':      {'file' : 'PhCh_pKa_avdeef'},
-                  'sander':      {'file' : 'PhCh_pKa_sander'},
-                   'liao':        {'file' : 'PhCh_pKa_liao'},
-                   'qtbx':        {'file' : 'PhCh_pKa_qtbx'},
-                   'settimo':     {'file' : 'PhCh_pKa_settimo'},
-                },  
+    #'PhCh_pKa' : ##↓ okis
+    #            {'avdeef':      {'file' : 'PhCh_pKa_avdeef'},
+    #              'sander':      {'file' : 'PhCh_pKa_sander'},
+    #               'liao':        {'file' : 'PhCh_pKa_liao'},
+    #               'qtbx':        {'file' : 'PhCh_pKa_qtbx'},
+    #               'settimo':     {'file' : 'PhCh_pKa_settimo'},
+    #            },  
+    'IRB_Cavinh' : 
+                  {'chEMBL': {'file' : 'IRB_Cavinh_chEMBL'},
+                   'CtoxPred': {'file' : 'IRB_Cavinh_CtoxPred'},
+                   },
+    'IRB_Navinh' :
+                  {'chEMBL': {'file' : 'IRB_Navinh_chEMBL'},
+                   'CtoxPred': {'file' : 'IRB_Navinh_CtoxPred'},
+                   },
+    'IRB_hERGinh' :
+                  {'chEMBL': {'file' : 'IRB_hERGinh_chEMBL'},
+                   'vnnADMET': {'file' : 'IRB_hERGinh_vnnADMET'},
+                   'DeepPK': {'file' : 'IRB_hERGinh_DeepPK'},
+                   },
+
     # 'TK_Caco2' : ##↓ okis
     #             {'PhamThe':     {'file' : 'TK_Caco2_PhamThe'}, 
     #               'Wang':        {'file' : 'TK_Caco2_Wang'},
