@@ -16,6 +16,7 @@ from sklearn.cluster import OPTICS
 # df_sav = pickle.load(open("FINAL_429_maccs_fps.sav", "rb"))
 
 os.chdir(r"C:/Users/proto/Desktop/Rita/base_datos_Laureano/1intento_clustering")
+
 #%% build array of fingerprints
 
 def fps_array(pckld_df):
@@ -50,7 +51,6 @@ for key, df in cluster_dic.items():
 df_sub_all = pd.concat(subsets_dic.values(), ignore_index=True)
 
 #%% functions to apply to all the dataset
-
 files = os.listdir()
 sav_files = [file  for file in files if file.endswith("sav")]
 

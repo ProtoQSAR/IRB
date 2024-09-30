@@ -1,0 +1,69 @@
+[+] Analysing "DeppPK_fdamdd_reg_all.csv" dataset
+        [++] Dataframe file created: TOX_MRDD_DeepPK-entiredata.csv
+C:\Users\Enrique\.conda\envs\Protocosas\lib\site-packages\pandas\core\frame.py:5034: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().rename(
+        [++] Preprocessed dataframe file created: TOX_MRDD_DeepPK-preprocessed.csv
+        [++] Process file by HYGIEIA
+
+#########################################################################
+####################### WELCOME TO HYGIEIA script #######################
+#########################################################################
+This script will process your dataframe and: 
+        - eliminate incorrect molecules ans sanitize smiles
+        - clean salts
+        - eliminate inorganic and organometallic compounds
+        - check for duplicated molecules
+        - check for mixtures.
+A file located in ".\results" folder is needed
+This file must be called: "\TOX_MRDD_DeepPK-preprocessed.csv"
+Extra columns are available in the input file:
+
+['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+What to you want to do with them?.
+
+        [1] Ignore extra data and remove it from following steps.
+
+                  "SMILES" will be the only filtered/sanitized column and "y" will be the only redirected output.
+
+        [2] Keep them in the output.
+
+                  SMILES will be only the filtered/sanitized column but all the rest will be redirected in the output.
+
+        [3] Keep them in the output and use them to check duplicates.
+
+                  More than one column will be used for filtering: SMILES will be for sanitize, mixture, salts and inorganics,
+                  the rest of the columns (except y) for checking for duplicates.
+
+        [4] Select which columns I want to keep and  which to use them to check duplicates.
+
+                  Provide a list with two lists [check dups, keep] do not include your SMILES and y
+SMILES y ['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+[+] Sanitizing smiles (Always done)
+Index(['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS',
+       'smiles_source'],
+      dtype='object')
+[+] Eliminating salts 
+C:\Users\Enrique\Documents\GitHub\generate_models\FullAsFunctions\hygieia_mod.py:304: FutureWarning: Using short name for 'orient' is deprecated. Only the options: ('dict', list, 'series', 'split', 'records', 'index') will be used in a future version. Use one of the above to silence this warning.
+  salts_changed = df_changes.to_dict(orient='record')
+        Congratulations, your dataset has not salts.
+[+] Eliminating inorganic and organometallic compounds
+        Congratulations, your dataset has not inorganic and organometallic compounds.
+[+] Checking for repeated compounds considering extra data
+        Congratulations, your dataset has not duplicated compounds.
+[+] Checking for mixtures
+[]
+        Congratulations, your dataset has not mixtures.
+
+A new file has been generated:
+
+.\results\TOX_MRDD_DeepPK.csv: contains the unique molecules, following your instructions
+['ID', 'orig_ID', 'CAS', 'NAME', 'UNITS', 'smiles_source'] [] Index(['ID', 'SAN_SMILES', 'MOL_OBJECT', 'ORIGINAL_SMILES', 'orig_ID',
+       'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source'],
+      dtype='object')
+Your input dataset has 1200 molecules.
+Your output dataset has 1200 molecules.
+thanks for using HYGIEIA!
+        [+++] Dataframe curated file created: TOX_MRDD_DeepPK
