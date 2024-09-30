@@ -58,8 +58,6 @@ print(f'\n[+] Opening "{file1}" file')
     
 df1 = PandasTools.LoadSDF(data_folder + os.path.sep + file1)
 
-df1.replace('IRB PLATE ')
-
 df1['SMILES']  = df1.apply(lambda row: retrieve_smiles(row['ROMol']), axis=1)
 
 df1.insert(0, 'ID_SET', ['set_1']*df1.shape[0])
@@ -93,13 +91,59 @@ output_file2_name = file2.split('.')[0]
 df2.to_csv(results_folder+ os.path.sep + output_file2_name + '.csv', sep = ';')
 
 ##############################################################################
- 
+
+############################## file 3 processing #############################
+
+
+file3 = 'focus 2 mM_70 cmpds_29092024_sent.sdf'
+
+print(f'\n[+] Opening "{file3}" file')
+
+df3 = PandasTools.LoadSDF(data_folder + os.path.sep + file3)
+
+df3.rename(columns = {'IRB plate': 'IRB PLATE', 'Library': 'LIBRARY'}, inplace = True)
+
+df3['SMILES']  = df3.apply(lambda row: retrieve_smiles(row['ROMol']), axis=1)
+
+df3.insert(0, 'ID_SET', ['set_3']*df3.shape[0])
+
+df3.index.name = 'ID_SET_COMPOUND'
+
+
+output_file3_name = file3.split('.')[0]
+df3.to_csv(results_folder+ os.path.sep + output_file3_name + '.csv', sep = ';')
+
+##############################################################################
+
+############################## file 4 processing #############################
+
+
+file4 = 'focus 10 mM_10665 cmpds_29092024_sent.sdf'
+
+print(f'\n[+] Opening "{file4}" file')
+
+df4 = PandasTools.LoadSDF(data_folder + os.path.sep + file4)
+
+df4.rename(columns = {'IRB plate ': 'IRB PLATE', 'Library': 'LIBRARY'}, inplace = True)
+
+df4['SMILES']  = df4.apply(lambda row: retrieve_smiles(row['ROMol']), axis=1)
+
+df4.insert(0, 'ID_SET', ['set_4']*df4.shape[0])
+
+df4.index.name = 'ID_SET_COMPOUND'
+
+
+output_file4_name = file4.split('.')[0]
+df4.to_csv(results_folder+ os.path.sep + output_file4_name + '.csv', sep = ';')
+
+##############################################################################
+
 #%%
    
 ################################### merge ####################################
 
 
-merged = pd.concat([df1,df2], axis = 0)
+merged = pd.concat([df1,df2,df3,df4], axis = 0)
 
 merged.reset_index(drop = True, inplace = True)
 
@@ -109,8 +153,7 @@ merged.set_index('ID_UNIQUE', inplace = True)
 
 merged_reordered = merged[['ID_SET', 'IRB WELL', 'LIBRARY', 'IRB PLATE', 'ID NUMBER', 'ID', 'ORIGINAL WELL', 'ROMol', 'SMILES']]
 
-merged_reordered.to_csv(results_folder+ os.path.sep + 'merged_1_and_2.csv', sep = ';')
-
+merged_reordered.to_csv(results_folder+ os.path.sep + 'merged_all.csv', sep = ';')
 
 
 ##############################################################################
@@ -119,14 +162,13 @@ merged_unique_smiles = merged_reordered[~merged_reordered.duplicated(subset=['SM
 
 
 
-merged_unique_smiles.to_csv(results_folder+ os.path.sep + 'merged_1_and_2_unique_smiles.csv', sep = ';')
+merged_unique_smiles.to_csv(results_folder+ os.path.sep + 'merged_all_unique_smiles.csv', sep = ';')
 
 merged_duplicated_smiles = merged_reordered[merged_reordered.duplicated(subset=['SMILES'], keep = False)]
 
 merged_duplicated_smiles.sort_values(by=['SMILES'], inplace = True)
 
-merged_duplicated_smiles.to_csv(results_folder+ os.path.sep + 'merged_1_and_2_duplicated_smiles.csv', sep = ';')
-
+merged_duplicated_smiles.to_csv(results_folder+ os.path.sep + 'merged_all_duplicated_smiles.csv', sep = ';')
 
 
 
