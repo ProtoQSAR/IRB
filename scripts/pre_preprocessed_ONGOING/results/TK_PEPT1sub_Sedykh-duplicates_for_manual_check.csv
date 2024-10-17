@@ -1,2 +1,0 @@
-SAN_SMILES;y;ID;orig_ID;CAS;NAME;UNITS;smiles_source;ORIGINAL_SMILES;MOL_OBJECT;SMILES
-NC(Cc1ccccc1)C(=O)N1CCCC1C(=O)O;[1, 1];[73, 172];[5244, 5444];[28426519, 0];['L-Phe-D-Pro', 'Phe-Pro'];['classPEPT1sub', 'classPEPT1sub'];['SMILES', 'SMILES'];['NC(CC1=CC=CC=C1)C(N2C(C(O)=O)CCC2)=O', 'NC(Cc1ccccc1)C(=O)N2CCCC2C(=O)O'];[<rdkit.Chem.rdchem.Mol object at 0x000001F4F4B50AC0>, <rdkit.Chem.rdchem.Mol object at 0x000001F4F4B55F20>];['NC(CC1=CC=CC=C1)C(N2C(C(O)=O)CCC2)=O', 'NC(Cc1ccccc1)C(=O)N2CCCC2C(=O)O']

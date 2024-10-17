@@ -482,206 +482,64 @@ dictios_dfs= {'property' : {'name_dataset': {'file' : entire file name,
                             'classreg' : reg/class}
 '''
 
-#dictios_for_WP3_ONTOX
+#dictios_for_IRB
 dictio_properties = {
-    'PhCh_BP':      {'desired_units' : 'C',
-                     'classreg' : 'reg',},
-    'PhCh_logD':    {'desired_units' : 'logD',
-                     'classreg' : 'reg'},
-    'PhCh_logH':    {'desired_units' : 'logH',
-                     'classreg' : 'reg'},
-    'PhCh_logP':    {'desired_units' : 'logKow',
-                     'classreg' : 'reg'},
-    'PhCh_WS':      {'desired_units' : 'LogMolar',
-                     'classreg' : 'reg'},    
-    'PhCh_VP':      {'desired_units' : 'LogmmHg',
-                     'classreg' : 'reg'}, 
-    'PhCh_MP':      {'desired_units' : 'C',
-                     'classreg' : 'reg'},
-    'PhCh_pKa':     {'desired_units' : 'pKa',
-                     'classreg' : 'reg'},    
-    'TK_Caco2':     {'desired_units' : 'logcm/s',
-                     'classreg' : 'reg'}, 
-    'TK_FU':        {'desired_units' : 'ratioFU',
-                     'classreg' : 'reg'},
-    'TK_logKp':     {'desired_units' : 'logcm/h',
-                     'classreg' : 'reg'},
-    'TK_BBB':       {'desired_units' : 'classBBB',
-                     'classreg' : 'class'},
-    'TK_F30':       {'desired_units' : 'classF30', # zscore analysis performed ok: not intraoutliers
-                     'classreg' : 'class'},
-    'TK_HIA':       {'desired_units' : 'classHIA',
-                     'classreg' : 'class'},
-    'TK_Psub' :     {'desired_units' : 'classPsub',
-                     'classreg' : 'class'},
-    'TK_Pinh':      {'desired_units' : 'classPinh',
-                     'classreg' : 'class'},    
-    'IRB_hERGinh': {'desired_units' : 'classhERG',
-                     'classreg' : 'class'},
-    'IRB_Navinh': {'desired_units' : 'classNavinh',
-                     'classreg' : 'class'},
-    'IRB_Cavinh': {'desired_units' : 'classCavinh',
-                     'classreg' : 'class'},
-    }
+
+    'TK_FU':            {'desired_units' : 'ratioFU',
+                         'classreg' : 'reg'},
+    'TK_OATP1B1inh':        {'desired_units' : 'classOATP1B1inh',
+                             'classreg' : 'class'},
+    'TK_OATP1B3inh':        {'desired_units' : 'classOATP1B3inh',
+                             'classreg' : 'class'},
+    'TOX_MRDD' :        {'desired_units' : 'logmg/kg/day',
+                             'classreg' : 'reg'},
+    'TOX_Cav12inh' :        {'desired_units' : 'classCavinh',
+                             'classreg' : 'class'},
+    'TOX_Nav15inh' :        {'desired_units' : 'classNavinh',
+                             'classreg' : 'class'},
+    'TOX_hERGinh' :        {'desired_units' : 'classhERGinh',
+                             'classreg' : 'class'},
+     }
 
 
 dictios_dfs = {
-    # 'PhCh_BP' : ##↓ okis
-    #             {'Hall':        {'file' : 'PhCh_BP_Hall'},
-    #               'Katritzky':   {'file' : 'PhCh_BP_Katritzky'},
-    #               'PhyspropBP' : {'file' : 'PhCh_BP_PHYSPROP'},
-    #             },
-    # 'PhCh_logD' : ##↓ okis
-    #             {'Liu':         {'file' : 'PhCh_logD_Liu'},
-    #               'Wu':          {'file' : 'PhCh_logD_Wu'},
-    #             },             
-    # 'PhCh_logH' : ##↓ okis
-    #             {'Moldarresi':  {'file' : 'PhCh_logH_Moldarresi'},
-    #               'Yao':         {'file' : 'PhCh_logH_Yao'},
-    #             }, 
-    # 'PhCh_logP' :  ##↓ okis
-    #             {'PhyspropLogP':{'file' : 'PhCh_logP_PHYSPROP'},
-    #               'Hughes':      {'file' : 'PhCh_logP_Hughes'},
-    #               'Martel':      {'file' : 'PhCh_logP_Martel'},              
-    #             },
-    # 'PhCh_WS' : ##↓ okis
-    #             {'PhyspropWS':  {'file' : 'PhCh_logS_PHYSPROP'},
-    #               'Hughes':      {'file' : 'PhCh_logS_Hughes'},
-    #             },
-    # 'PhCh_VP' : ##↓ okis
-    #             {'PhyspropVP':     {'file' : 'PhCh_VP_PHYSPROP'},
-    #               'Katritzky':     {'file' : 'PhCh_logVP_Katritzky'},
-    #             },
+              
+    'TK_FU' : ##↓ okis
+                  {'Tonnelier':   {'file' : 'TK_FUB_Tonnelier'},
+                    'Yamazaki':    {'file' : 'TK_FUB_Yamazaki'},
+                    'Lombardo':    {'file' : 'TK_FUB_Lombardo'},
+                    'Riley':       {'file' : 'TK_FUB_Riley'},
+                    # 'Sohlenius*':   {'file' : 'TK_FUB_Sohlenius'}, # not considered because poor correlation
+                    'Votano':      {'file' : 'TK_FUB_Votano'},
+                    'cran':        {'file' : 'TK_FUB_cran'},
+                    'Zhu':         {'file' : 'TK_FUB_Zhu'},
+                  },                 
+    'TK_OATP1B1inh' : ##↓ okis
+                {'Livertox':   {'file' : 'TK_OATP1B1inh_livertox'}
+                },
+    'TK_OATP1B3inh' : ##↓ okis
+                {'Livertox':   {'file' : 'TK_OATP1B3inh_livertox'}
+                },                
+    'TOX_MRDD' : ##↓ okis
+                {'DeepPK':   {'file' : 'TOX_MRDD_DeepPK'}
+                },
+     'TOX_Cav12inh' : ##↓ okis
+                {'ChEMBL':   {'file' : 'TOX_Cav12inh_ChEMBL'},
+                'CtoxPred':   {'file' : 'TOX_Cav12inh_CtoxPred'}
+                },
+     'TOX_Nav15inh' : ##↓ okis
+                {'ChEMBL':   {'file' : 'TOX_Nav15inh_ChEMBL'},
+                'CtoxPred':   {'file' : 'TOX_Nav15inh_CtoxPred'}
+                },
+     'TOX_hERGinh' : ##↓ okis
+                {'ChEMBL':   {'file' : 'TOX_hERGinh_ChEMBL'},
+                'vnnADMET':   {'file' : 'TOX_hERGinh_vnnADMET'},
+                'DeepPK':   {'file' : 'TOX_hERGinh_DeepPK'}
+                },
 
-    # 'PhCh_MP' : ##↓ okis
-    #             {'PhyspropMP':  {'file' : 'PhCh_MP_PHYSPROP'},
-    #               'Katrizy':     {'file' : 'PhCh_MP_Katrizy'},
-    #               'Habibi':      {'file' : 'PhCh_MP_Habibi'},
-    #                 'Hughes':      {'file' : 'PhCh_MP_Hughes'},
-    #             },   
-    #'PhCh_pKa' : ##↓ okis
-    #            {'avdeef':      {'file' : 'PhCh_pKa_avdeef'},
-    #              'sander':      {'file' : 'PhCh_pKa_sander'},
-    #               'liao':        {'file' : 'PhCh_pKa_liao'},
-    #               'qtbx':        {'file' : 'PhCh_pKa_qtbx'},
-    #               'settimo':     {'file' : 'PhCh_pKa_settimo'},
-    #            },  
-    'IRB_Cavinh' : 
-                  {'chEMBL': {'file' : 'IRB_Cavinh_chEMBL'},
-                   'CtoxPred': {'file' : 'IRB_Cavinh_CtoxPred'},
-                   },
-    'IRB_Navinh' :
-                  {'chEMBL': {'file' : 'IRB_Navinh_chEMBL'},
-                   'CtoxPred': {'file' : 'IRB_Navinh_CtoxPred'},
-                   },
-    'IRB_hERGinh' :
-                  {'chEMBL': {'file' : 'IRB_hERGinh_chEMBL'},
-                   'vnnADMET': {'file' : 'IRB_hERGinh_vnnADMET'},
-                   'DeepPK': {'file' : 'IRB_hERGinh_DeepPK'},
-                   },
-
-    # 'TK_Caco2' : ##↓ okis
-    #             {'PhamThe':     {'file' : 'TK_Caco2_PhamThe'}, 
-    #               'Wang':        {'file' : 'TK_Caco2_Wang'},
-    #             },                 
-    # 'TK_FU' : ##↓ okis
-    #             {'Tonnelier':   {'file' : 'TK_FUB_Tonnelier'},
-    #               'Yamazaki':    {'file' : 'TK_FUB_Yamazaki'},
-    #               'Lombardo':    {'file' : 'TK_FUB_Lombardo'},
-    #               'Riley':       {'file' : 'TK_FUB_Riley'},
-    #               # 'Sohlenius*':   {'file' : 'TK_FUB_Sohlenius'}, # not considered because poor correlation
-    #               'Votano':      {'file' : 'TK_FUB_Votano'},
-    #               'cran':        {'file' : 'TK_FUB_cran'},
-    #               'Zhu':         {'file' : 'TK_FUB_Zhu'},
-    #             },                 
-    # 'TK_logKp' : ##↓ okis
-    #             {'Potts':       {'file' : 'TK_logKp_Potts'},
-    #               'Khajeh':      {'file' : 'TK_logKp_Khajeh'},
-    #             },  
-    # 'TK_BBB' : ##↓ okis
-    #             {'Wang':        {'file' : 'TK_BBB_Wang'},
-    #             },              
-    # 'TK_F30' : ##↓ okis
-    #             {'Fagerholm':   {'file' : 'TK_F30_Fagerholm'},
-    #               'Kim':        {'file' : 'TK_F30_Kim'},                            
-    #             },                 
-    # 'TK_HIA' : ##↓ okis
-    #             {'PhamThe':     {'file' : 'TK_HIA_PhamThe'}, 
-    #               'Wang':        {'file' : 'TK_HIA_Wang'},
-    #               },                
-    # 'TK_Psub' : ##↓ okis
-    #             {'Wang' :       {'file' : 'TK_Psub_Wang'}, 
-    #               'Li' :         {'file' : 'TK_Psub_Li'},
-    #             },
-    # 'TK_Pinh' : ##↓ okis
-    #             {'Broccatelli': {'file' : 'TK_Pinh_Broccatelli'}, 
-    #             }, 
+              
 
     } 
-
-'''#dictios_for_WP4 ONTOX
-dictio_properties = {
-    'TK_BCRPsub':      {'desired_units' : 'classBCRPsub',
-                      'classreg' : 'class'},
-    'TK_OATP1b1sub':      {'desired_units' : 'classOATP1b1sub',
-                      'classreg' : 'class'},
-    'TK_OATP1b3sub':      {'desired_units' : 'classOATP1b3sub',
-                      'classreg' : 'class'},
-    'TK_OCT2sub':      {'desired_units' : 'classOCT2sub',
-                      'classreg' : 'class'},
-    'TK_Psub4':      {'desired_units' : 'classPsubsub',
-                      'classreg' : 'class'},
-    'TK_UGTsub':      {'desired_units' : 'classUGTsub',
-                      'classreg' : 'class'},
-    'TK_BSEPsub':      {'desired_units' : 'classBSEPsub',
-                      'classreg' : 'class'},      
-    'TK_PEPT1sub':      {'desired_units' : 'classPEPT1sub',
-                      'classreg' : 'class'},   
-    
-    }
-
-dictios_dfs = {
-    'TK_BCRPsub' : ##↓ okis
-                {'Bocci':        {'file' : 'TK_BCRPsub_Bocci'},
-                  'Metrabase':    {'file' : 'TK_BCRPsub_Metrabase'},
-                  'Sedykh' :      {'file' : 'TK_BCRPsub_Sedykh'},
-                  'Livertox' :    {'file' : 'TK_BCRPsub_Livertox'},
-                },
-    'TK_OATP1b1sub' : ##↓ okis
-                {'DeepPK':       {'file' : 'TK_OATP1b1sub_DeepPK'},
-                  'Metrabase':    {'file' : 'TK_OATP1b1sub_Metrabase'},
-                }, 
-    'TK_OATP1b3sub' : ##↓ okis
-                {'DeepPK':       {'file' : 'TK_OATP1b3sub_DeepPK'},
-                  'Metrabase':    {'file' : 'TK_OATP1b3sub_Metrabase'},
-                },
-    'TK_OCT2sub' : ##↓ okis
-                {'DeepPK':       {'file' : 'TK_OCT2sub_DeepPK'},
-
-                },
-    'TK_Psub4' : ##↓ okis
-                {'Wang' :           {'file' : 'TK_Psub_Wang'}, 
-                  'Li' :             {'file' : 'TK_Psub_Li'},
-                  'DeepPK':       {'file' : 'TK_Psub_DeepPK'},
-                  'Livertox':     {'file' : 'TK_Psub_Livertox'},
-                },
-    'TK_UGTsub' : ##↓ okis
-                {'Huang':        {'file' : 'TK_UGTsub_Huang'},
-
-                },                
-    'TK_BSEPsub' : ##↓ okis
-                {'Livertox':     {'file' : 'TK_BSEPsub_Livertox'},
-
-                },   
-    'TK_PEPT1sub' : ##↓ okis
-                {'Metrabase':    {'file' : 'TK_PEPT1sub_Metrabase'},
-                  'Sedykh':       {'file' : 'TK_PEPT1sub_Sedykh'},
-                },  
-    }'''
-
-
-
-
 
 
 ##############################################################################
@@ -956,6 +814,19 @@ for propertie, info in dictios_dfs.items():
             
             filtered_dataset = all_merged[final_cols]
             
+    ######  create file ready for wotan
+    
+    
+    #Remove outliers.
+    df_only_valid = all_merged[all_merged["valid/outlier"] == "valid"]
+    
+    final_cols_wotan = ['ID_all','SMILES', 'y_consensus']
+    
+    file_for_wotan = df_only_valid[final_cols_wotan]
+    
+    file_for_wotan.rename(columns = {'y_consensus': 'y'},inplace=True)
+            
+            
       
     
     output_file_df = f'all_merged_{propertie}.csv'
@@ -965,6 +836,11 @@ for propertie, info in dictios_dfs.items():
     filteredoutput_file_df = f'filtered_final_data_{propertie}.csv'
     print(f'\t[++] Final_filtered dataframe file created: {filteredoutput_file_df}')
     filtered_dataset.to_csv(results_folder + os.path.sep + filteredoutput_file_df, sep = ';', index = False)
+  
+    output_file_df_wotan = f'{propertie}.csv'
+    print(f'\t[++] File ready for wotan created:  {output_file_df_wotan}')
+    file_for_wotan.to_csv(results_folder + os.path.sep + output_file_df_wotan, sep = ';', index = False)    
+    
 
 
 

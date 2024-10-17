@@ -1,0 +1,18 @@
+cyp1a2_inhibitor
+		 negative 10233
+		 positive 9658
+cyp2c9_inhibitor
+		 negative 12362
+		 positive 6921
+cyp2c19_inhibitor
+		 negative 10880
+		 positive 8772
+cyp2d6_inhibitor
+		 negative 15381
+		 positive 4319
+cyp3a4_inhibitor
+		 negative 13823
+		 positive 9217
+herg
+		 negative 7825
+		 positive 12903

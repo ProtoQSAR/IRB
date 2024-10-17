@@ -1,2 +1,0 @@
-SAN_SMILES;y;ID;orig_ID;CAS;NAME;UNITS;smiles_source;ORIGINAL_SMILES;MOL_OBJECT;SMILES
-CC(C)CCn1c(NCCO)nc2c1c(=O)n(C)c(=O)n2C;[2.93, 5.36];[300, 320];[404, 439];[nan, nan];[nan, nan];['logKow', 'logKow'];['SMILES', 'SMILES'];['CC(C)CCn1c2c(nc1NCCO)n(c(=O)n(c2=O)C)C', 'CC(C)CCn1c2c(nc1NCCO)n(c(=O)n(c2=O)C)C'];[<rdkit.Chem.rdchem.Mol object at 0x0000029BF492FD60>, <rdkit.Chem.rdchem.Mol object at 0x0000029BF4932880>];['CC(C)CCn1c2c(nc1NCCO)n(c(=O)n(c2=O)C)C', 'CC(C)CCn1c2c(nc1NCCO)n(c(=O)n(c2=O)C)C']

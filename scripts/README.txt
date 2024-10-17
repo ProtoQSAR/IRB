@@ -1,0 +1,1 @@
+ficheros grandes se están poniendo en NAS: \\NAS1C15D8\Public\2_ PROYECTOS\Contratas\IRB

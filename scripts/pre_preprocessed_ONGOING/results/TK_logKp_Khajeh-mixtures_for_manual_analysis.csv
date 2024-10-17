@@ -1,2 +1,0 @@
-SAN_SMILES;y;ID;orig_ID;CAS;NAME;UNITS;smiles_source;ORIGINAL_SMILES;MOL_OBJECT;SMILES;y_old
-Cc1cc(C)cc(N)c1.Cc1ccc(C)c(N)c1.Cc1ccc(N)c(C)c1.Cc1ccc(N)cc1C.Cc1cccc(C)c1N.Cc1cccc(N)c1C;-1.91721;223;224;;Xylidine ;logcm/h;isoSMILES_from_NAME;Cc1cc(C)cc(N)c1.Cc1ccc(C)c(N)c1.Cc1ccc(N)c(C)c1.Cc1ccc(N)cc1C.Cc1cccc(C)c1N.Cc1cccc(N)c1C;<rdkit.Chem.rdchem.Mol object at 0x0000020D84A51DC0>;Cc1cc(C)cc(N)c1.Cc1ccc(C)c(N)c1.Cc1ccc(N)c(C)c1.Cc1ccc(N)cc1C.Cc1cccc(C)c1N.Cc1cccc(N)c1C;[-1.91721]

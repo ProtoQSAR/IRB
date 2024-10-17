@@ -1,2 +1,0 @@
-ID;SAN_SMILES;MOL_OBJECT;ORIGINAL_SMILES;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
-63;CNC(=O)c1cccc2c(Nc3ccc(NS(C)(=O)=O)cc3OC)c3cccc(C)c3nc12.O=S(=O)(O)CCO;<rdkit.Chem.rdchem.Mol object at 0x000002095198DB80>;CNC(=O)c1cccc2c(Nc3ccc(NS(C)(=O)=O)cc3OC)c3cccc(C)c3nc12.O=S(=O)(O)CCO;64;CNC(=O)c1cccc2c(Nc3ccc(NS(C)(=O)=O)cc3OC)c3cccc(C)c3nc12.O=S(=O)(O)CCO;34.0;;Amsalog;%;isoSMILES_from_NAME

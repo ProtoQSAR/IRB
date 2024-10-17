@@ -1,3 +1,0 @@
-SAN_SMILES;y;ID;orig_ID;CAS;NAME;UNITS;smiles_source;ORIGINAL_SMILES;MOL_OBJECT;SMILES;y_old
-C/C(Cl)=C/Cl.C=C(Cl)CCl.C=CC(Cl)Cl.CC=C(Cl)Cl;-1.614;2015;;026952-23-8;DICHLOROPROPENE;LogMolar;SMILES_from_mol;C/C(Cl)=C/Cl.C=C(Cl)CCl.C=CC(Cl)Cl.CC=C(Cl)Cl;<rdkit.Chem.rdchem.Mol object at 0x000002323A0C39A0>;C/C(Cl)=C/Cl.C=C(Cl)CCl.C=CC(Cl)Cl.CC=C(Cl)Cl;[-1.614]
-CC(C)c1ccc(C(C)C)cc1.CC(C)c1cccc(C(C)C)c1.CC(C)c1ccccc1C(C)C;-3.462;2005;;025321-09-9;DIISOPROPYLBENZENE;LogMolar;SMILES_from_mol;CC(C)c1ccc(C(C)C)cc1.CC(C)c1cccc(C(C)C)c1.CC(C)c1ccccc1C(C)C;<rdkit.Chem.rdchem.Mol object at 0x000002323A0C3580>;CC(C)c1ccc(C(C)C)cc1.CC(C)c1cccc(C(C)C)c1.CC(C)c1ccccc1C(C)C;[-3.462]

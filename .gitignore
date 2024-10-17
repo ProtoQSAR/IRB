@@ -1,5 +1,4 @@
 Administrative/
 
 # large files
-*-original.csv
-*-entiredata.csv
+libreria/files

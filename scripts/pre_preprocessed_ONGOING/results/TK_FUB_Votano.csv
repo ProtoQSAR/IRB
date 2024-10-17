@@ -15,7 +15,7 @@ C=C1CC2C(CCC3(C)C(=O)CCC23)C2(C)C=CC(=O)C=C12;90.0;270;271;;exemestane;%PBR;SMIL
 C=C1CCC2(O)C3Cc4ccc(O)c5c4C2(CCN3CC2CC2)C1O5;38.0;471;472;;nalmefene;%PBR;SMILES
 C=CC1=C(C(=O)O)N2C(=O)C(NC(=O)C(=NOCC(=O)O)c3csc(N)n3)C2SC1;67.0;132;133;;cefixime;%PBR;SMILES
 C=CC1CN2CCC1CC2C(O)c1ccnc2ccc(OC)cc12;80.0;651;652;;quinine;%PBR;SMILES
-C=CCC1(C(C)CCC)C(=O)NC(=O)NC1=O;56.5;[649, 682];[650, 683];[nan, nan];['quinalbarbitone', 'secobarbital'];%PBR;SMILES
+C=CCC1(C(C)CCC)C(=O)NC(=O)NC1=O;56.5;[649, 682];[650, 683];[nan, nan];['secobarbital', 'quinalbarbitone'];%PBR;SMILES
 C=CCN1CC(C(=O)N(CCCN(C)C)C(=O)NCC)CC2c3cccc4[nH]cc(c34)CC21;41.0;112;113;;cabergoline;%PBR;SMILES
 C=CCNc1nc(NCC=C)nc(N2CCN(C(c3ccc(F)cc3)c3ccc(F)cc3)CC2)n1;99.0;27;28;;almitrine;%PBR;SMILES
 C=CCOc1ccc(CC(=O)O)cc1Cl;99.0;20;21;;alclofenac;%PBR;SMILES
@@ -468,7 +468,7 @@ COc1ccc(CCN(C)CCCC(C#N)(c2ccc(OC)c(OC)c2)C(C)C)cc1OC;90.0;788;789;;verapamil;%PB
 COc1ccc(CCN2CCC(Nc3nc4ccccc4n3Cc3ccc(F)cc3)CC2)cc1;97.0;56;57;;astemizole;%PBR;SMILES
 COc1ccc(CCNCC(O)COc2cccc(C)c2)cc1OC;96.0;87;88;;bevantolol;%PBR;SMILES
 COc1ccc(Cc2nccc3cc(OC)c(OC)cc23)cc1OC;87.0;524;525;;papaverine;%PBR;SMILES
-COc1ccc(Cl)cc1C(=O)NCCc1ccc(S(=O)(=O)NC(=O)NC2CCCCC2)cc1;99.0;[329, 322];[330, 323];[nan, nan];['glibenclamide', 'glyburide'];%PBR;SMILES
+COc1ccc(Cl)cc1C(=O)NCCc1ccc(S(=O)(=O)NC(=O)NC2CCCCC2)cc1;99.0;[329, 322];[330, 323];[nan, nan];['glyburide', 'glibenclamide'];%PBR;SMILES
 COc1ccc(O)c(C(C)(C)C)c1;85.0;111;112;;2-butyl-4-hydroxyanisole;%PBR;SMILES
 COc1ccc2c(C(=S)N(C)CC(=O)O)cccc2c1C(F)(F)F;100.0;761;762;;tolrestat;%PBR;SMILES
 COc1ccc2c(c1)C(=O)N(CCc1ccc(S(=O)(=O)NC(=O)NC3CCCCC3)cc1)C(=O)C2(C)C;100.0;326;327;;gliquidone;%PBR;SMILES
@@ -671,7 +671,7 @@ O=C(OCC(O)CO)c1ccccc1Nc1ccnc2c(C(F)(F)F)cccc12;85.0;285;286;;floctafenine;%PBR;S
 O=C(c1ccc(F)cc1)C1CCN(CCn2c(=O)[nH]c3ccccc3c2=O)CC1;95.0;368;369;;ketanserin;%PBR;SMILES
 O=C(c1ccccc1)c1ccc2n1CCC2C(=O)O;100.0;371;372;;ketorolac;%PBR;SMILES
 O=C1C(=O)c2ccccc2C(O)=C1C1CCC(c2ccc(Cl)cc2)CC1;100.0;60;61;;atovaquone;%PBR;SMILES
-O=C1C(CCS(=O)c2ccccc2)C(=O)N(c2ccccc2)N1c1ccccc1;98.5;[714, 715];[715, 716];[nan, nan];['sulphinpyrazone', 'sulfinpyrazone'];%PBR;SMILES
+O=C1C(CCS(=O)c2ccccc2)C(=O)N(c2ccccc2)N1c1ccccc1;98.5;[714, 715];[715, 716];[nan, nan];['sulfinpyrazone', 'sulphinpyrazone'];%PBR;SMILES
 O=C1C2C3CCC(C3)C2C(=O)N1CCCCN1CCN(c2ncccn2)CC1;30.0;721;722;;tandospirone;%PBR;SMILES
 O=C1CC2(CCCC2)CC(=O)N1CCCCN1CCN(c2ncccn2)CC1;95.0;106;107;;buspirone;%PBR;SMILES
 O=C1CCC2(O)C3Cc4ccc(O)c5c4C2(CCN3CC2CC2)C1O5;20.0;472;473;;naltrexone;%PBR;SMILES

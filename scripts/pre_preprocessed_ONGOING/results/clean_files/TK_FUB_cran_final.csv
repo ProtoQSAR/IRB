@@ -422,7 +422,7 @@ ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
 56;;CN1CSC(=S)N(C)C1;0.891427273096711;533-74-4;Dazomet;ratioFU;SMILES.desalt
 1009;;CN1Cc2c(N)cccc2C(c2ccccc2)C1;0.4;24526-64-5;Nomifensine;ratioFU;SMILES.desalt
 512;;CN1[C@H]2CCC[C@@H]1C[C@H](NC(=O)c1nn(C)c3ccccc13)C2;0.35;109889-09-0;Granisetron;ratioFU;SMILES.desalt
-[674, 612];;CN1[C@H]2CC[C@@H]1C[C@H](OC(=O)C(CO)c1ccccc1)C2;0.6218;['51-55-8', '000051-55-8'];Atropine;ratioFU;SMILES.desalt
+[674, 612];;CN1[C@H]2CC[C@@H]1C[C@H](OC(=O)C(CO)c1ccccc1)C2;0.6218;['000051-55-8', '51-55-8'];Atropine;ratioFU;SMILES.desalt
 519;;CN1[C@H]2C[C@H](OC(=O)[C@H](CO)c3ccccc3)C[C@@H]1[C@H]1O[C@@H]21;0.9;51-34-3;Scopolamine;ratioFU;SMILES.desalt
 518;;CNC(=C[N+](=O)[O-])NCCSCc1ccc(CN(C)C)o1;0.95;66357-35-5;Ranitidine;ratioFU;SMILES.desalt
 1007;;CNC(=C[N+](=O)[O-])NCCSCc1csc(CN(C)C)n1;0.65;76963-41-2;Nizatidine;ratioFU;SMILES.desalt
@@ -442,7 +442,7 @@ ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
 429;;CNC1(c2ccccc2Cl)CCCCC1=O;0.88;6740-88-1;Ketamine;ratioFU;SMILES.desalt
 526;;CNC1=Nc2ccc(Cl)cc2C(c2ccccc2)=[N+](O)C1;0.15;58-25-3;Chlordiazepoxide;ratioFU;SMILES.desalt
 1011;;CNCCC=C1c2ccccc2CCc2ccccc21;0.12;72-69-5;Nortriptyline;ratioFU;SMILES.desalt
-[945, 623];;CNCCCC12CCC(c3ccccc31)c1ccccc12;0.1008;['010262-69-8', '10262-69-8'];['Maprotinline', 'Maprotiline'];ratioFU;SMILES.desalt
+[945, 623];;CNCCCC12CCC(c3ccccc31)c1ccccc12;0.1008;['010262-69-8', '10262-69-8'];['Maprotiline', 'Maprotinline'];ratioFU;SMILES.desalt
 427;;CNCCCN1c2ccccc2CCc2ccccc21;0.18;50-47-5;Desipramine;ratioFU;SMILES.desalt
 671;;CNCC[C@@H](Oc1ccccc1C)c1ccccc1;0.02;83015-26-3;Atomoxetine;ratioFU;SMILES.desalt
 961;;CN[C@@H](C)Cc1ccccc1;0.85;537-46-2;Methamphetamine;ratioFU;SMILES.desalt
@@ -542,7 +542,7 @@ ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
 876;;COc1ccc(Cl)cc1C(=O)NCCc1ccc(S(=O)(=O)NC(=O)NC2CCCCC2)cc1;0.021;10238-21-8;Glyburide;ratioFU;SMILES.desalt
 273;;COc1ccc(O)c(C(C)(C)C)c1;0.072169;121-00-6;2-tert-butyl-4-methoxy-phenol;ratioFU;SMILES.desalt
 291;;COc1ccc(OC(F)(F)F)cc1CN[C@H]1CCCN[C@H]1c1ccccc1;0.079959;145742-28-5;(2s,3s)-n-[2-methoxy-5-(trifluoromethoxy)benzyl]-2-phenylpiperidin-3-amine;ratioFU;SMILES.desalt
-[425, 484];;COc1ccc([C@@H]2Sc3ccccc3N(CCN(C)C)C(=O)[C@@H]2OC(C)=O)cc1;0.209;['33286-22-5', '42399-41-7'];['Diltiazem hydrochloride', 'Diltiazem'];ratioFU;SMILES.desalt
+[425, 484];;COc1ccc([C@@H]2Sc3ccccc3N(CCN(C)C)C(=O)[C@@H]2OC(C)=O)cc1;0.209;['33286-22-5', '42399-41-7'];['Diltiazem', 'Diltiazem hydrochloride'];ratioFU;SMILES.desalt
 753;;COc1ccc([C@]2(C#N)CC[C@@H](C(=O)O)CC2)cc1OC1CCCC1;0.006;153259-65-5;Cilomilast;ratioFU;SMILES.desalt
 413;;COc1ccc([N+](=O)[O-])cc1N;0.335937;99-59-2;2-methoxy-5-nitroaniline;ratioFU;SMILES.desalt
 509;;COc1ccc2c(c1)[C@]13CCCC[C@@H]1[C@H](C2)N(C)CC3;0.45;125-71-3;Dextromethorphan;ratioFU;SMILES.desalt
@@ -806,7 +806,7 @@ ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
 302;;O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.0;2058-94-8;Perfluoroundecanoic acid;ratioFU;SMILES.desalt
 323;;O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.0;335-76-2;Perfluorodecanoic acid;ratioFU;SMILES.desalt
 329;;O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.000992;375-95-1;Perfluorononanoic acid;ratioFU;SMILES.desalt
-[330, 172];;O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.0043234159534055;['3825-26-1', '335-67-1'];['Pentadecafluorooctanoic acid ammonium salt', 'Perfluorooctanoic acid'];ratioFU;SMILES.desalt
+[330, 172];;O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.0043234159534055;['335-67-1', '3825-26-1'];['Perfluorooctanoic acid', 'Pentadecafluorooctanoic acid ammonium salt'];ratioFU;SMILES.desalt
 328;;O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.00164;375-85-9;Perfluoroheptanoic acid;ratioFU;SMILES.desalt
 320;;O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.0167609999999999;307-24-4;Perfluorohexanoic acid;ratioFU;SMILES.desalt
 50;;O=C(O)C1(C(=O)Nc2ccc(Cl)cc2Cl)CC1;0.984014545442395;113136-77-9;Cyclanilide;ratioFU;SMILES.desalt

@@ -1,3 +1,0 @@
-SAN_SMILES;y;ID;orig_ID;CAS;NAME;UNITS;smiles_source;ORIGINAL_SMILES;MOL_OBJECT;SMILES
-CC1CCC(C)CC1;[397.5, 392.5];[152, 153];[153, 154];[nan, nan];['cis-1,4-dimethylcyclohexane', 'trans-1,4-dimethylcyclohexane'];['K', 'K'];['isoSMILES_from_NAME', 'isoSMILES_from_NAME'];['CC1CCC(C)CC1', 'CC1CCC(C)CC1'];[<rdkit.Chem.rdchem.Mol object at 0x00000242239CF640>, <rdkit.Chem.rdchem.Mol object at 0x00000242239CF6A0>];['CC1CCC(C)CC1', 'CC1CCC(C)CC1']
-COC(C)C;[323.8, 332.1];[222, 239];[223, 240];[nan, nan];['methyl isopropyl ether', 'methyl-sec-butyl ether'];['K', 'K'];['isoSMILES_from_NAME', 'noisoSMILES_from_NAME'];['COC(C)C', 'COC(C)C'];[<rdkit.Chem.rdchem.Mol object at 0x00000242239D3040>, <rdkit.Chem.rdchem.Mol object at 0x00000242239D36A0>];['COC(C)C', 'COC(C)C']

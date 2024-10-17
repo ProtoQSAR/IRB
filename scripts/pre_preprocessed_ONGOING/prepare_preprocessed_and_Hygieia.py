@@ -54,10 +54,11 @@ else:
     print("Output directory already exists: ../results/clean_files")
 
 
-path_to_hygieia = '/home/carmenortiz/Escritorio/generate_models/FullAsFunctions/'
+# path_to_hygieia = '/home/carmenortiz/Escritorio/generate_models/FullAsFunctions/' #Carmen
+path_to_hygieia = r'F:\ProtoQSAR\GENERATE_MODELS_3_0\FullAsFunctions' #Eva
 exec_hygieia = 'hygieia_mod.py'
 
-config_file = 'info_original_datasets.xlsx'
+config_file = 'info_original_datasets_IRB.xlsx'
 ##############################################################################
 
 
@@ -345,7 +346,13 @@ for dataset, info in dictios_dfs.items():
             
     elif info['curation_process'] == 'curation8':
         
+       
         df = pd.read_csv(pathfile, sep = ';')
+        
+        if info['require_additionalprocessing'] == 'ignore_ID':
+            df.rename(columns={'ID': 'old_ID'}, inplace = True)
+        
+        
         smiles_source = info['SMILES_col']
         
     if use_smiles_from_unique_source == True:    
