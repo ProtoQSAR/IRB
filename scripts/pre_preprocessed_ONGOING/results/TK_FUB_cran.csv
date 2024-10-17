@@ -215,7 +215,7 @@ CCCC(=O)OCOC(=O)C1=C(C)NC(C)=C(C(=O)OC)C1c1cccc(Cl)c1Cl;0.0038;759;;167221-71-8;
 CCCC(C)(COC(N)=O)COC(N)=O;1.0;956;;57-53-4;Meprobamate;ratioFU;SMILES.desalt
 CCCC(C)C1(CC)C(=O)N=C(O)NC1=O;0.66;569;;76-74-4;Pentobarbital;ratioFU;SMILES.desalt
 CCCC(C)C1(CC)C(=O)N=C(S)NC1=O;0.25;583;;76-75-5;Thiopental;ratioFU;SMILES.desalt
-CCCC(CCC)C(=O)O;;[449, 587];[nan, nan];['99-66-1', '1069-66-5'];['Sodium valproate', 'Valproic acid'];ratioFU;SMILES.desalt
+CCCC(CCC)C(=O)O;;[449, 587];[nan, nan];['1069-66-5', '99-66-1'];['Sodium valproate', 'Valproic acid'];ratioFU;SMILES.desalt
 CCCC1C(=O)N2C(N(C)C)=Nc3ccc(C)cc3N2C1=O;0.004;676;;13539-59-8;Azapropazone;ratioFU;SMILES.desalt
 CCCCC(C#N)(Cn1cncn1)c1ccc(Cl)cc1;0.0842871853932;155;;88671-89-0;Myclobutanil;ratioFU;SMILES.desalt
 CCCCC(CC)C(=O)OCCOCCOCCOC(=O)C(CC)CCCC;0.0;403;;94-28-0;Tri(ethylene glycol) bis(2-ethylhexanoate);ratioFU;SMILES.desalt
@@ -401,7 +401,7 @@ CCn1cc(C(=O)O)c(=O)c2cc(F)c(N3CCNCC3)nc21;0.8;817;;74011-58-8;Enoxacin;ratioFU;S
 CCn1cc(C(=O)O)c(=O)c2ccc(C)nc21;0.749;626;;389-08-2;Nalidixic_acid;ratioFU;SMILES.desalt
 CCn1cc(C(=O)O)c(=O)c2cnc(N3CCNCC3)nc21;0.85;573;;51940-44-4;Pipemidic acid;ratioFU;SMILES.desalt
 CN(C(=O)c1c(O)c2ccccc2n(C)c1=O)c1ccccc1;;1076;;84088-42-6;Roquinimex;ratioFU;SMILES.desalt
-CN(C)C(=N)NC(=N)N;;[960, 447];[nan, nan];['657-24-9', '1115-70-4'];['Metformin', 'Metformin hydrochloride'];ratioFU;SMILES.desalt
+CN(C)C(=N)NC(=N)N;;[960, 447];[nan, nan];['1115-70-4', '657-24-9'];['Metformin', 'Metformin hydrochloride'];ratioFU;SMILES.desalt
 CN(C)C(=O)Nc1ccc(Cl)c(Cl)c1;0.161459653539701;79;;330-54-1;Diuron ;ratioFU;SMILES.desalt
 CN(C)C(=O)Nc1ccc(Cl)cc1;0.45508;294;;150-68-5;Monuron;ratioFU;SMILES.desalt
 CN(C)C(=O)Nc1cccc(C(F)(F)F)c1;0.258915593637104;108;;2164-17-2;Fluometuron;ratioFU;SMILES.desalt
@@ -460,7 +460,7 @@ CN1COCN(Cc2cnc(Cl)s2)C1=N[N+](=O)[O-];0.828565877623412;219;;153719-23-4;Thiamet
 CN1CSC(=S)N(C)C1;0.891427273096711;56;;533-74-4;Dazomet;ratioFU;SMILES.desalt
 CN1Cc2c(N)cccc2C(c2ccccc2)C1;0.4;1009;;24526-64-5;Nomifensine;ratioFU;SMILES.desalt
 CN1[C@H]2CCC[C@@H]1C[C@H](NC(=O)c1nn(C)c3ccccc13)C2;0.35;512;;109889-09-0;Granisetron;ratioFU;SMILES.desalt
-CN1[C@H]2CC[C@@H]1C[C@H](OC(=O)C(CO)c1ccccc1)C2;0.6218;[674, 612];[nan, nan];['000051-55-8', '51-55-8'];Atropine;ratioFU;SMILES.desalt
+CN1[C@H]2CC[C@@H]1C[C@H](OC(=O)C(CO)c1ccccc1)C2;0.6218;[674, 612];[nan, nan];['51-55-8', '000051-55-8'];Atropine;ratioFU;SMILES.desalt
 CN1[C@H]2C[C@H](OC(=O)[C@H](CO)c3ccccc3)C[C@@H]1[C@H]1O[C@@H]21;0.9;519;;51-34-3;Scopolamine;ratioFU;SMILES.desalt
 CNC(=C[N+](=O)[O-])NCCSCc1ccc(CN(C)C)o1;0.95;518;;66357-35-5;Ranitidine;ratioFU;SMILES.desalt
 CNC(=C[N+](=O)[O-])NCCSCc1csc(CN(C)C)n1;0.65;1007;;76963-41-2;Nizatidine;ratioFU;SMILES.desalt
@@ -481,7 +481,7 @@ CNC1(c2ccccc2Cl)CCCCC1=O;0.88;429;;6740-88-1;Ketamine;ratioFU;SMILES.desalt
 CNC1=Nc2ccc(Cl)cc2C(c2ccccc2)=[N+](O)C1;0.15;526;;58-25-3;Chlordiazepoxide;ratioFU;SMILES.desalt
 CNCCC(Oc1ccc(C(F)(F)F)cc1)c1ccccc1;;511;;54910-89-3;Fluoxetine;ratioFU;SMILES.desalt
 CNCCC=C1c2ccccc2CCc2ccccc21;0.12;1011;;72-69-5;Nortriptyline;ratioFU;SMILES.desalt
-CNCCCC12CCC(c3ccccc31)c1ccccc12;0.1008;[945, 623];[nan, nan];['010262-69-8', '10262-69-8'];['Maprotiline', 'Maprotinline'];ratioFU;SMILES.desalt
+CNCCCC12CCC(c3ccccc31)c1ccccc12;0.1008;[945, 623];[nan, nan];['10262-69-8', '010262-69-8'];['Maprotinline', 'Maprotiline'];ratioFU;SMILES.desalt
 CNCCCN1c2ccccc2CCc2ccccc21;0.18;427;;50-47-5;Desipramine;ratioFU;SMILES.desalt
 CNCC[C@@H](Oc1ccccc1C)c1ccccc1;0.02;671;;83015-26-3;Atomoxetine;ratioFU;SMILES.desalt
 CN[C@@H](C)Cc1ccccc1;0.85;961;;537-46-2;Methamphetamine;ratioFU;SMILES.desalt
@@ -592,7 +592,7 @@ COc1ccc(Cc2nccc3cc(OC)c(OC)cc23)cc1OC;0.073;1026;;58-74-2;Papaverine;ratioFU;SMI
 COc1ccc(Cl)cc1C(=O)NCCc1ccc(S(=O)(=O)NC(=O)NC2CCCCC2)cc1;0.021;876;;10238-21-8;Glyburide;ratioFU;SMILES.desalt
 COc1ccc(O)c(C(C)(C)C)c1;0.072169;273;;121-00-6;2-tert-butyl-4-methoxy-phenol;ratioFU;SMILES.desalt
 COc1ccc(OC(F)(F)F)cc1CN[C@H]1CCCN[C@H]1c1ccccc1;0.079959;291;;145742-28-5;(2s,3s)-n-[2-methoxy-5-(trifluoromethoxy)benzyl]-2-phenylpiperidin-3-amine;ratioFU;SMILES.desalt
-COc1ccc([C@@H]2Sc3ccccc3N(CCN(C)C)C(=O)[C@@H]2OC(C)=O)cc1;0.20900000000000002;[425, 484];[nan, nan];['33286-22-5', '42399-41-7'];['Diltiazem', 'Diltiazem hydrochloride'];ratioFU;SMILES.desalt
+COc1ccc([C@@H]2Sc3ccccc3N(CCN(C)C)C(=O)[C@@H]2OC(C)=O)cc1;0.20900000000000002;[425, 484];[nan, nan];['33286-22-5', '42399-41-7'];['Diltiazem hydrochloride', 'Diltiazem'];ratioFU;SMILES.desalt
 COc1ccc([C@]2(C#N)CC[C@@H](C(=O)O)CC2)cc1OC1CCCC1;0.006;753;;153259-65-5;Cilomilast;ratioFU;SMILES.desalt
 COc1ccc([N+](=O)[O-])cc1N;0.335937;413;;99-59-2;2-methoxy-5-nitroaniline;ratioFU;SMILES.desalt
 COc1ccc2c(c1)N(C[C@H](C)CN(C)C)c1ccccc1S2;;934;;60-99-1;Levomepromazine;ratioFU;SMILES.desalt
@@ -747,7 +747,7 @@ Cc1nnc2n1-c1ccc(Cl)cc1C(c1ccccc1Cl)=NC2;0.1;437;;28911-01-5;Triazolam;ratioFU;SM
 Cc1nnc2n1-c1sc(Br)cc1C(c1ccccc1Cl)=NC2;0.092;698;;57801-81-7;Brotizolam;ratioFU;SMILES.desalt
 Cc1noc(NS(=O)(=O)c2ccc(N)cc2)c1C;0.079;1101;;127-69-5;Sulfisoxazole;ratioFU;SMILES.desalt
 Cc1onc(-c2c(Cl)cccc2Cl)c1C(=O)N[C@@H]1C(=O)N2[C@@H](C(=O)O)C(C)(C)S[C@H]12;0.03;555;;3116-76-5;Dicloxacillin;ratioFU;SMILES.desalt
-Cc1onc(-c2c(F)cccc2Cl)c1C(=O)N[C@@H]1C(=O)N2[C@@H](C(=O)O)C(C)(C)S[C@H]12;;[458, 846];[nan, nan];['5250-39-5', '1847-24-1'];['Flucloxacillin sodium', 'Flucloxacillin'];ratioFU;SMILES.desalt
+Cc1onc(-c2c(F)cccc2Cl)c1C(=O)N[C@@H]1C(=O)N2[C@@H](C(=O)O)C(C)(C)S[C@H]12;;[458, 846];[nan, nan];['1847-24-1', '5250-39-5'];['Flucloxacillin sodium', 'Flucloxacillin'];ratioFU;SMILES.desalt
 Cc1onc(-c2ccccc2)c1C(=O)N[C@@H]1C(=O)N2[C@@H](C(=O)O)C(C)(C)S[C@H]12;0.07;1016;;66-79-5;Oxacillin;ratioFU;SMILES.desalt
 ClC1(Cl)C2(Cl)C3(Cl)C4(Cl)C(Cl)(Cl)C5(Cl)C3(Cl)C1(Cl)C5(Cl)C24Cl;0.015083;309;;2385-85-5;Mirex;ratioFU;SMILES.desalt
 ClC1=C(Cl)C2(Cl)C3C(Cl)C=CC3C1(Cl)C2(Cl)Cl;0.043328;372;;76-44-8;Heptachlor;ratioFU;SMILES.desalt
@@ -891,7 +891,7 @@ O=C(O)C(Cl)Cl;;790;;79-43-6;Dichloroacetic acid;ratioFU;SMILES.desalt
 O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.0;302;;2058-94-8;Perfluoroundecanoic acid;ratioFU;SMILES.desalt
 O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.0;323;;335-76-2;Perfluorodecanoic acid;ratioFU;SMILES.desalt
 O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.000992;329;;375-95-1;Perfluorononanoic acid;ratioFU;SMILES.desalt
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.0043234159534055;[330, 172];[nan, nan];['335-67-1', '3825-26-1'];['Perfluorooctanoic acid', 'Pentadecafluorooctanoic acid ammonium salt'];ratioFU;SMILES.desalt
+O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.0043234159534055;[330, 172];[nan, nan];['3825-26-1', '335-67-1'];['Perfluorooctanoic acid', 'Pentadecafluorooctanoic acid ammonium salt'];ratioFU;SMILES.desalt
 O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.00164;328;;375-85-9;Perfluoroheptanoic acid;ratioFU;SMILES.desalt
 O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.0167609999999999;320;;307-24-4;Perfluorohexanoic acid;ratioFU;SMILES.desalt
 O=C(O)C1(C(=O)Nc2ccc(Cl)cc2Cl)CC1;0.984014545442395;50;;113136-77-9;Cyclanilide;ratioFU;SMILES.desalt
@@ -902,7 +902,7 @@ O=C(O)COCCN1CCN(C(c2ccccc2)c2ccc(Cl)cc2)CC1;0.01;521;;83881-51-0;Cetirizine;rati
 O=C(O)COc1ccc(Cl)cc1Cl;0.040012841774996;1;;94-75-7;2,4-d;ratioFU;SMILES.desalt
 O=C(O)COc1nc(Cl)c(Cl)cc1Cl;0.022367731977763;229;;55335-06-3;Triclopyr;ratioFU;SMILES.desalt
 O=C(O)Cc1ccccc1Nc1c(Cl)cc(O)cc1Cl;0.017;590;;64118-84-9;4'-Hydroxydiclofenac;ratioFU;SMILES.desalt
-O=C(O)Cc1ccccc1Nc1c(Cl)cccc1Cl;;[457, 439];[nan, nan];['15307-79-6', '15307-86-5'];['Diclofenac', 'Diclofenac sodium'];ratioFU;SMILES.desalt
+O=C(O)Cc1ccccc1Nc1c(Cl)cccc1Cl;;[457, 439];[nan, nan];['15307-86-5', '15307-79-6'];['Diclofenac', 'Diclofenac sodium'];ratioFU;SMILES.desalt
 O=C(O)Cn1c(=O)c(=O)[nH]c2cc([N+](=O)[O-])c(-n3ccnc3)cc21;;1183;;210245-80-0;Zonampanel;ratioFU;SMILES.desalt
 O=C(O)O;1.0;940;;554-13-2;Lithium carbonate;ratioFU;SMILES.desalt
 O=C(O)P(=O)(O)O;0.85;856;;4428-95-9;Foscarnet;ratioFU;SMILES.desalt

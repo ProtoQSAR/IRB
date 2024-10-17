@@ -11,6 +11,8 @@ guide Nav1.5: python filter_data_chEMBL_IRB.py ../datasets_for_modelling/Nav_chE
 
 guide Cav1.5: python filter_data_chEMBL_IRB.py ../datasets_for_modelling/Cav_chEMBL_non-curated.csv ../datasets_for_modelling/intermediate_files/Cav12inh_chEMBL_non_curated_indexed.csv ./pre_preprocessed_ONGOING/input_data/TK_ChemBL_Cav12inh_firstprocessing.csv
 
+guide Cav1.5: python filter_data_chEMBL_IRB.py ../datasets_for_modelling/Abaumannii_MIC_CHEMBL_filter-nM.csv ../datasets_for_modelling/intermediate_files/AbaumanniiMIC_chEMBL_non_curated_indexed.csv ./pre_preprocessed_ONGOING/input_data/BIO_ChemBL_AbaumanniiMIC_firstprocessing.csv
+
 ensure that the path exists, as it has been customized for IRB project
 
 
@@ -91,5 +93,5 @@ print(df["SMILES"])
 
 # df[["SMILES", "y"]].to_csv("%s_chEMBL.csv" % model_name, sep = ";", index = False) # modified by proto to rename custom
 
-df[["SMILES", "y"]].to_csv("%s" % outputpath_finalfile, sep = ";", index = True) #ESC index= False --> index = True
+df[["SMILES", "Molecule ChEMBL ID", "y"]].to_csv("%s" % outputpath_finalfile, sep = ";", index = True) #ESC index= False --> index = True
 

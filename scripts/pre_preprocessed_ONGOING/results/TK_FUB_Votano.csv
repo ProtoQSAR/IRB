@@ -15,7 +15,7 @@ C=C1CC2C(CCC3(C)C(=O)CCC23)C2(C)C=CC(=O)C=C12;90.0;270;271;;exemestane;%PBR;SMIL
 C=C1CCC2(O)C3Cc4ccc(O)c5c4C2(CCN3CC2CC2)C1O5;38.0;471;472;;nalmefene;%PBR;SMILES
 C=CC1=C(C(=O)O)N2C(=O)C(NC(=O)C(=NOCC(=O)O)c3csc(N)n3)C2SC1;67.0;132;133;;cefixime;%PBR;SMILES
 C=CC1CN2CCC1CC2C(O)c1ccnc2ccc(OC)cc12;80.0;651;652;;quinine;%PBR;SMILES
-C=CCC1(C(C)CCC)C(=O)NC(=O)NC1=O;56.5;[649, 682];[650, 683];[nan, nan];['secobarbital', 'quinalbarbitone'];%PBR;SMILES
+C=CCC1(C(C)CCC)C(=O)NC(=O)NC1=O;56.5;[649, 682];[650, 683];[nan, nan];['quinalbarbitone', 'secobarbital'];%PBR;SMILES
 C=CCN1CC(C(=O)N(CCCN(C)C)C(=O)NCC)CC2c3cccc4[nH]cc(c34)CC21;41.0;112;113;;cabergoline;%PBR;SMILES
 C=CCNc1nc(NCC=C)nc(N2CCN(C(c3ccc(F)cc3)c3ccc(F)cc3)CC2)n1;99.0;27;28;;almitrine;%PBR;SMILES
 C=CCOc1ccc(CC(=O)O)cc1Cl;99.0;20;21;;alclofenac;%PBR;SMILES
@@ -256,7 +256,7 @@ CCN(CC)CCCC(C)Nc1ccnc2cc(Cl)ccc12;60.0;164;165;;chloroquine;%PBR;SMILES
 CCN(CC)CCCN(c1ccccc1)C1Cc2ccccc2C1;95.0;52;53;;aprindine;%PBR;SMILES
 CCN(CC)CCN1C(=O)CN=C(c2ccccc2F)c2cc(Cl)ccc21;97.0;303;304;;flurazepam;%PBR;SMILES
 CCN(CC)CCNC(=O)c1cc(Cl)c(N)cc1OC;35.0;440;441;;metoclopramide;%PBR;SMILES
-CCN(CC)CCNC(=O)c1ccc(NC(C)=O)cc1;10.0;[466, 5];[467, 6];[nan, nan];['N-acetylprocainamide', 'acecainide'];%PBR;SMILES
+CCN(CC)CCNC(=O)c1ccc(NC(C)=O)cc1;10.0;[466, 5];[467, 6];[nan, nan];['acecainide', 'N-acetylprocainamide'];%PBR;SMILES
 CCN(CC)CCOC(=O)C(Cc1cccc2ccccc12)CC1CCCO1;90.0;469;470;;nafronyl;%PBR;SMILES
 CCN(CC)CCOC(=O)c1ccc(N)cc1;6.0;630;631;;procaine;%PBR;SMILES
 CCN(CC)CCS(=O)(=O)C1CCN2C(=O)c3coc(n3)CC(=O)CC(O)C=C(C)C=CCNC(=O)C=CC(C)C(C(C)C)OC(=O)C12;53.0;202;203;;dalfopristin;%PBR;SMILES

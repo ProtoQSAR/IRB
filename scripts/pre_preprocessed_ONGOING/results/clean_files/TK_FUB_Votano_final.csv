@@ -15,7 +15,7 @@ ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
 471;472;C=C1CCC2(O)C3Cc4ccc(O)c5c4C2(CCN3CC2CC2)C1O5;38.0;;nalmefene;%PBR;SMILES
 132;133;C=CC1=C(C(=O)O)N2C(=O)C(NC(=O)C(=NOCC(=O)O)c3csc(N)n3)C2SC1;67.0;;cefixime;%PBR;SMILES
 651;652;C=CC1CN2CCC1CC2C(O)c1ccnc2ccc(OC)cc12;80.0;;quinine;%PBR;SMILES
-[649, 682];[650, 683];C=CCC1(C(C)CCC)C(=O)NC(=O)NC1=O;56.5;;['secobarbital', 'quinalbarbitone'];%PBR;SMILES
+[649, 682];[650, 683];C=CCC1(C(C)CCC)C(=O)NC(=O)NC1=O;56.5;;['quinalbarbitone', 'secobarbital'];%PBR;SMILES
 112;113;C=CCN1CC(C(=O)N(CCCN(C)C)C(=O)NCC)CC2c3cccc4[nH]cc(c34)CC21;41.0;;cabergoline;%PBR;SMILES
 27;28;C=CCNc1nc(NCC=C)nc(N2CCN(C(c3ccc(F)cc3)c3ccc(F)cc3)CC2)n1;99.0;;almitrine;%PBR;SMILES
 20;21;C=CCOc1ccc(CC(=O)O)cc1Cl;99.0;;alclofenac;%PBR;SMILES
@@ -256,7 +256,7 @@ ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
 52;53;CCN(CC)CCCN(c1ccccc1)C1Cc2ccccc2C1;95.0;;aprindine;%PBR;SMILES
 303;304;CCN(CC)CCN1C(=O)CN=C(c2ccccc2F)c2cc(Cl)ccc21;97.0;;flurazepam;%PBR;SMILES
 440;441;CCN(CC)CCNC(=O)c1cc(Cl)c(N)cc1OC;35.0;;metoclopramide;%PBR;SMILES
-[466, 5];[467, 6];CCN(CC)CCNC(=O)c1ccc(NC(C)=O)cc1;10.0;;['N-acetylprocainamide', 'acecainide'];%PBR;SMILES
+[466, 5];[467, 6];CCN(CC)CCNC(=O)c1ccc(NC(C)=O)cc1;10.0;;['acecainide', 'N-acetylprocainamide'];%PBR;SMILES
 469;470;CCN(CC)CCOC(=O)C(Cc1cccc2ccccc12)CC1CCCO1;90.0;;nafronyl;%PBR;SMILES
 630;631;CCN(CC)CCOC(=O)c1ccc(N)cc1;6.0;;procaine;%PBR;SMILES
 202;203;CCN(CC)CCS(=O)(=O)C1CCN2C(=O)c3coc(n3)CC(=O)CC(O)C=C(C)C=CCNC(=O)C=CC(C)C(C(C)C)OC(=O)C12;53.0;;dalfopristin;%PBR;SMILES

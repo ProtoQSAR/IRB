@@ -78,7 +78,7 @@ CC(C)Nc1ccc(Nc2ccccc2)cc1;0;493;hERG494;;;classhERGinh;Smiles
 CC(C)[N+](C)(CCOC(=O)C1c2ccccc2Oc2ccccc21)C(C)C;0;361;hERG362;;;classhERGinh;Smiles
 CC(C=CC1=C(C)CCCC1(C)C)=CC=CC(C)=CC(=O)Nc1ccc(O)cc1;0;439;hERG440;;;classhERGinh;Smiles
 CC(C=CC1=C(C)CCCC1(C)C)=CC=CC(C)=CCO;0;401;hERG402;;;classhERGinh;Smiles
-CC(C=CC=C(C)C=CC1=C(C)CCCC1(C)C)=CC=O;0;[524, 534];['hERG535', 'hERG525'];[nan, nan];[nan, nan];classhERGinh;Smiles
+CC(C=CC=C(C)C=CC1=C(C)CCCC1(C)C)=CC=O;0;[524, 534];['hERG525', 'hERG535'];[nan, nan];[nan, nan];classhERGinh;Smiles
 CC(C=O)Cc1ccc(C(C)(C)C)cc1;0;519;hERG520;;;classhERGinh;Smiles
 CC(CC(c1ccccc1)c1ccccc1)NC(C)(C)C;1;52;hERG053;;;classhERGinh;Smiles
 CC(CCC(=O)O)C1CCC2C3CCC4CC(O)CCC4(C)C3CCC12C;0;591;hERG592;;;classhERGinh;Smiles
@@ -114,7 +114,7 @@ CC=C(C)C(=O)OC1C(C)=C2C(C1OC(=O)CCCCCCC)C(C)(OC(C)=O)CC(OC(=O)CCC)C1(O)C2OC(=O)C
 CC=C1C(=O)CC2C3CCC4=CC(=O)CCC4(C)C3CCC12C;0;664;hERG665;;;classhERGinh;Smiles
 CCC(=C(CC)c1ccc(O)cc1)c1ccc(O)cc1;0;387;hERG388;;;classhERGinh;Smiles
 CCC(=C(c1ccccc1)c1ccc(OCCN(C)C)cc1)c1ccc(O)cc1;0;326;hERG327;;;classhERGinh;Smiles
-CCC(=C(c1ccccc1)c1ccc(OCCN(C)C)cc1)c1ccccc1;1;[233, 54];['hERG234', 'hERG055'];[nan, nan];[nan, nan];classhERGinh;Smiles
+CCC(=C(c1ccccc1)c1ccc(OCCN(C)C)cc1)c1ccccc1;1;[233, 54];['hERG055', 'hERG234'];[nan, nan];[nan, nan];classhERGinh;Smiles
 CCC(=O)C(CC(C)N(C)C)(c1ccccc1)c1ccccc1;1;185;hERG186;;;classhERGinh;Smiles
 CCC(=O)C=CC1C(C)=CCCC1(C)C;0;388;hERG389;;;classhERGinh;Smiles
 CCC(=O)N(c1ccccc1)C1CCN(CCc2ccccc2)CC1;1;61;hERG062;;;classhERGinh;Smiles
@@ -129,7 +129,7 @@ CCC(Cl)CC(Cl)C(Cl)C(Cl)C(Cl)C(C)Cl;0;430;hERG431;;;classhERGinh;Smiles
 CCC(NC(=O)c1c(C)c(-c2ccccc2)nc2ccccc12)c1ccccc1;0;529;hERG530;;;classhERGinh;Smiles
 CCC(NC(C)C)C(O)c1ccc(O)c(O)c1;0;464;hERG465;;;classhERGinh;Smiles
 CCC(O)c1cn(-c2ccc(F)cc2)c2ccc(Cl)cc12;1;73;hERG074;;;classhERGinh;Smiles
-CCC(OC(C)=O)C(CC(C)N(C)C)(c1ccccc1)c1ccccc1;1;[79, 71];['hERG072', 'hERG080'];[nan, nan];[nan, nan];classhERGinh;Smiles
+CCC(OC(C)=O)C(CC(C)N(C)C)(c1ccccc1)c1ccccc1;1;[79, 71];['hERG080', 'hERG072'];[nan, nan];[nan, nan];classhERGinh;Smiles
 CCC1(O)CC2CN(CCc3c([nH]c4ccccc34)C(C(=O)OC)(c3cc4c(cc3OC)N(C)C3C(O)(C(=O)OC)C(OC(C)=O)C5(CC)C=CCN6CCC43C65)C2)C1;0;551;hERG552;;;classhERGinh;Smiles
 CCC1Cc2cc(O)ccc2C2=C1c1ccc(O)cc1CC2CC;0;541;hERG542;;;classhERGinh;Smiles
 CCC=CCC=CCC=CCCCCCCCC(=O)OCC;0;643;hERG644;;;classhERGinh;Smiles
@@ -311,7 +311,7 @@ COc1c(N2CCNC(C)C2)c(F)cc2c(=O)c(C(=O)O)cn(C3CC3)c12;0;322;hERG323;;;classhERGinh
 COc1cc(-n2cnc3cc(-c4ccc(Cl)cc4)sc3c2=O)ccc1N1CCC(O)C1;1;125;hERG126;;;classhERGinh;Smiles
 COc1cc(CC(C)N)c(OC)cc1I;0;588;hERG589;;;classhERGinh;Smiles
 COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O;0;476;hERG477;;;classhERGinh;Smiles
-COc1cc(N)c(Cl)cc1C(=O)NC1CCN(CCCOc2ccc(F)cc2)CC1OC;1;[162, 132];['hERG133', 'hERG163'];[nan, nan];[nan, nan];classhERGinh;Smiles
+COc1cc(N)c(Cl)cc1C(=O)NC1CCN(CCCOc2ccc(F)cc2)CC1OC;1;[162, 132];['hERG163', 'hERG133'];[nan, nan];[nan, nan];classhERGinh;Smiles
 COc1cc(N)c(Cl)cc1C(=O)NC1CCN(Cc2ccccc2)CC1;1;5;hERG006;;;classhERGinh;Smiles
 COc1cc(N)c(Cl)cc1C(=O)NC1CCN2CCCC1C2;1;67;hERG068;;;classhERGinh;Smiles
 COc1cc(N)c(Cl)cc1C(=O)OCCN1CCCCC1;0;320;hERG321;;;classhERGinh;Smiles

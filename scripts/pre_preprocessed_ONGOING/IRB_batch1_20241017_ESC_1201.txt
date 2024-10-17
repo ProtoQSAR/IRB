@@ -365,12 +365,12 @@ Index(['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS',
 [+] Eliminating inorganic and organometallic compounds
 
 Your dataset had 6 molecules with forbiden atoms. They have been eliminated.
-	 [Gd+3].COCCNC(=O)CN(CCN(CCN(CC([O-])=O)CC(=O)NCCOC)CC([O-])=O)CC([O-])=O
 	 C[As](C)(O)=O
-	 O[Sn](c1ccccc1)(c2ccccc2)c3ccccc3
-	 O=C(N[C@@H](Cc1ccccc1)C(=O)N[C@@H](CC(C)C)B(O)O)c2cnccn2
-	 O=C2O[Pt](N)(N)OC(=O)C12CCC1
 	 C[Sn](C)(C)Cl
+	 O=C(N[C@@H](Cc1ccccc1)C(=O)N[C@@H](CC(C)C)B(O)O)c2cnccn2
+	 [Gd+3].COCCNC(=O)CN(CCN(CCN(CC([O-])=O)CC(=O)NCCOC)CC([O-])=O)CC([O-])=O
+	 O[Sn](c1ccccc1)(c2ccccc2)c3ccccc3
+	 O=C2O[Pt](N)(N)OC(=O)C12CCC1
 [+] Checking for repeated compounds considering extra data
 	Your dataset has duplicated compounds.
 2
@@ -443,8 +443,8 @@ Index(['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS',
 [+] Eliminating inorganic and organometallic compounds
 
 Your dataset had 2 molecules with forbiden atoms. They have been eliminated.
-	 CC(C)CC(NC(=O)C(CC1=CC=CC=C1)NC(=O)C1=NC=CN=C1)B(O)O
 	 O=CC([Se]C1=CC=CC=C1)C(CC1=CC=CC=C1)NC(=O)OCC1C2=CC=CC=C2C2=CC=CC=C12
+	 CC(C)CC(NC(=O)C(CC1=CC=CC=C1)NC(=O)C1=NC=CN=C1)B(O)O
 [+] Checking for repeated compounds considering extra data
 	Congratulations, your dataset has not duplicated compounds.
 [+] Checking for mixtures
@@ -503,30 +503,30 @@ Index(['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS',
 [+] Eliminating inorganic and organometallic compounds
 
 Your dataset had 24 molecules with forbiden atoms. They have been eliminated.
-	 OB(O)c1ccc(Br)cc1
-	 OB(O)c1ccc(Cl)s1
-	 c1ccc(B2OCC(C3OB(c4ccccc4)OC4COB(c5ccccc5)OC43)O2)cc1
-	 [Ir]
-	 Nc1cccc(B(O)O)c1
-	 O=C(O)/C=C/c1cccc(B(O)O)c1
-	 c1ccc(B2OC[C@@H]3OB(c4ccccc4)O[C@H]([C@@H]4COB(c5ccccc5)O4)[C@@H]3O2)cc1
-	 Cc1ccc(B(O)O)cc1
-	 OB(O)c1cc2ccccc2s1
 	 O=C(O)c1ccc(B(O)O)cc1
-	 NCCOB(c1ccccc1)c1ccccc1
-	 [Zr+2]
-	 COc1ccc(B(O)O)cc1
-	 O=[N+]([O-])c1cccc(B(O)O)c1
-	 OB(O)O
-	 CC(=O)c1ccsc1B(O)O
-	 OB(O)c1ccc(B(O)O)cc1
-	 [Pt+4]
-	 O=Cc1ccsc1B(O)O
 	 O=Cc1ccc(B(O)O)cc1
+	 c1ccc(B2OCC(C3OB(c4ccccc4)OC4COB(c5ccccc5)OC43)O2)cc1
 	 Cc1csc(B(O)O)c1
-	 OB(O)c1cc2ccccc2o1
-	 OB(O)c1csc2ccccc12
+	 OB(O)c1ccc(Br)cc1
+	 Nc1cccc(B(O)O)c1
+	 [Zr+2]
+	 O=C(O)/C=C/c1cccc(B(O)O)c1
+	 [Pt+4]
+	 CC(=O)c1ccsc1B(O)O
 	 [Cd+2]
+	 OB(O)c1csc2ccccc12
+	 OB(O)c1ccc(Cl)s1
+	 Cc1ccc(B(O)O)cc1
+	 c1ccc(B2OC[C@@H]3OB(c4ccccc4)O[C@H]([C@@H]4COB(c5ccccc5)O4)[C@@H]3O2)cc1
+	 [Ir]
+	 O=Cc1ccsc1B(O)O
+	 OB(O)c1cc2ccccc2o1
+	 COc1ccc(B(O)O)cc1
+	 NCCOB(c1ccccc1)c1ccccc1
+	 OB(O)O
+	 OB(O)c1cc2ccccc2s1
+	 OB(O)c1ccc(B(O)O)cc1
+	 O=[N+]([O-])c1cccc(B(O)O)c1
 [+] Checking for repeated compounds considering extra data
 	Congratulations, your dataset has not duplicated compounds.
 [+] Checking for mixtures
@@ -588,12 +588,12 @@ Index(['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS',
 
 Your dataset had 7 molecules with forbiden atoms. They have been eliminated.
 	 c1ccc(B2OCC(C3OB(c4ccccc4)OC4COB(c5ccccc5)OC43)O2)cc1
-	 [Pt+4]
+	 NCCOB(c1ccccc1)c1ccccc1
+	 c1ccc(B2OC[C@@H]3OB(c4ccccc4)O[C@H]([C@@H]4COB(c5ccccc5)O4)[C@@H]3O2)cc1
 	 [Zr+2]
 	 [Pt+2]
-	 c1ccc(B2OC[C@@H]3OB(c4ccccc4)O[C@H]([C@@H]4COB(c5ccccc5)O4)[C@@H]3O2)cc1
 	 [Ir]
-	 NCCOB(c1ccccc1)c1ccccc1
+	 [Pt+4]
 [+] Checking for repeated compounds considering extra data
 	Congratulations, your dataset has not duplicated compounds.
 [+] Checking for mixtures
@@ -655,14 +655,14 @@ Index(['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS',
 [+] Eliminating inorganic and organometallic compounds
 
 Your dataset had 8 molecules with forbiden atoms. They have been eliminated.
-	 c1ccc(B2OCC(C3OB(c4ccccc4)OC4COB(c5ccccc5)OC43)O2)cc1
-	 [Ir]
+	 [Pt+4]
 	 [Rb+]
-	 c1ccc(B2OC[C@@H]3OB(c4ccccc4)O[C@H]([C@@H]4COB(c5ccccc5)O4)[C@@H]3O2)cc1
-	 [Zr+2]
 	 NCCOB(c1ccccc1)c1ccccc1
 	 [Pt+2]
-	 [Pt+4]
+	 c1ccc(B2OCC(C3OB(c4ccccc4)OC4COB(c5ccccc5)OC43)O2)cc1
+	 [Zr+2]
+	 [Ir]
+	 c1ccc(B2OC[C@@H]3OB(c4ccccc4)O[C@H]([C@@H]4COB(c5ccccc5)O4)[C@@H]3O2)cc1
 [+] Checking for repeated compounds considering extra data
 	Congratulations, your dataset has not duplicated compounds.
 [+] Checking for mixtures
@@ -724,13 +724,13 @@ Index(['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS',
 [+] Eliminating inorganic and organometallic compounds
 
 Your dataset had 7 molecules with forbiden atoms. They have been eliminated.
-	 [Pt+4]
-	 NCCOB(c1ccccc1)c1ccccc1
-	 [Rb+]
-	 c1ccc(B2OCC(C3OB(c4ccccc4)OC4COB(c5ccccc5)OC43)O2)cc1
-	 [Zr+2]
-	 c1ccc(B2OC[C@@H]3OB(c4ccccc4)O[C@H]([C@@H]4COB(c5ccccc5)O4)[C@@H]3O2)cc1
 	 [Ir]
+	 [Pt+4]
+	 [Zr+2]
+	 c1ccc(B2OCC(C3OB(c4ccccc4)OC4COB(c5ccccc5)OC43)O2)cc1
+	 [Rb+]
+	 c1ccc(B2OC[C@@H]3OB(c4ccccc4)O[C@H]([C@@H]4COB(c5ccccc5)O4)[C@@H]3O2)cc1
+	 NCCOB(c1ccccc1)c1ccccc1
 [+] Checking for repeated compounds considering extra data
 	Congratulations, your dataset has not duplicated compounds.
 [+] Checking for mixtures
@@ -791,13 +791,13 @@ Index(['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS',
 [+] Eliminating inorganic and organometallic compounds
 
 Your dataset had 7 molecules with forbiden atoms. They have been eliminated.
+	 c1ccc(B2OC[C@@H]3OB(c4ccccc4)O[C@H]([C@@H]4COB(c5ccccc5)O4)[C@@H]3O2)cc1
+	 NCCOB(c1ccccc1)c1ccccc1
+	 c1ccc(B2OCC(C3OB(c4ccccc4)OC4COB(c5ccccc5)OC43)O2)cc1
+	 [Ir]
 	 [Pt+2]
 	 [Zr+2]
 	 [Rb+]
-	 NCCOB(c1ccccc1)c1ccccc1
-	 [Ir]
-	 c1ccc(B2OCC(C3OB(c4ccccc4)OC4COB(c5ccccc5)OC43)O2)cc1
-	 c1ccc(B2OC[C@@H]3OB(c4ccccc4)O[C@H]([C@@H]4COB(c5ccccc5)O4)[C@@H]3O2)cc1
 [+] Checking for repeated compounds considering extra data
 	Congratulations, your dataset has not duplicated compounds.
 [+] Checking for mixtures
@@ -1915,9 +1915,9 @@ Index(['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS',
 [+] Eliminating inorganic and organometallic compounds
 
 Your dataset had 3 molecules with forbiden atoms. They have been eliminated.
+	 O=C1N(c2ccccc2)[Se]c(c13)cccc3
 	 CC(O[Hg]c1ccccc1)=O
 	 C[Hg]Cl
-	 O=C1N(c2ccccc2)[Se]c(c13)cccc3
 [+] Checking for repeated compounds considering extra data
 	Your dataset has duplicated compounds.
 2
