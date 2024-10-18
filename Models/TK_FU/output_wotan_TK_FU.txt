@@ -1,0 +1,998 @@
+#########################################################################
+######################### WELCOME TO WOTAN script #######################
+#########################################################################
+This script will allow you to: 
+ 	- calculate descriptors for your molecules
+ 	- imputate nan values in the resulting dataframe by KNN imputation
+
+Please input your PATH (enter to: "F:/RITA/ONTOX/pKa_models/"): /home/carmen/Escritorio/contratas/IRB_nuevo_ordenador/IRB/scripts/compare_ONGOING/results/         
+Please input your MODEL NAME (enter to: pKa1s_experim_wtn): TK_FU	
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+[1] Calculate descriptors
+[2] Perform NAN imputation. WARNING: Do not use this option if you are going to run NEO. For new models, imputation is done by NEO properly!!
+[3] Exit WOTAN
+
+Your choice: 1
+A file located in "/home/carmen/Escritorio/contratas/IRB_nuevo_ordenador/IRB/scripts/compare_ONGOING/results/" folder is needed
+This file must be called: "TK_FU.csv"
+Continue (Y/n)?
+
+WOTAN will calculate the following descriptor modules: 
+
+['AtomCentred', 'Autocorrelation', 'BurdenEigenvalues', 'ConnectivityIndices', 'Constitutional', 'EdgeAdjacency', 'Eigenvalues', 'GETAWAY', 'InformationIndices', 'Rdkit3D', 'Topological', 'TopologicalCharge', 'TwoDimensional', 'WalkPathCounts', 'FunctionalGroup', 'MoeType', 'CPSA', 'EState', 'SLogP']
+
+ In total 19 out of 19 available modules 
+
+Continue (Y/n)?
+[+] Reading input df
+   ID_all                                             SMILES         y
+0       0                         CC(=NC#N)N(C)Cc1ccc(Cl)nc1  0.574609
+1       1                       CCOCN(C(=O)CCl)c1c(C)cccc1CC  0.153616
+2       2        COc1cc2c(c3oc(=O)c4c(c13)CCOC4=O)C1C=COC1O2  0.458000
+3       3                       CCc1cccc(CC)c1N(COC)C(=O)CCl  0.137092
+4       5  Nc1nc(N)c2nc(CNc3ccc(C(=O)N[C@@H](CCC(=O)O)C(=...  0.750000
+(1887, 3)
+The following additional columns have been found in the input.
+['ID_all']
+Do you want to keep them in the output to be used as additional descriptors: (Y/n)n
+Your selection was [n]
+The columns will be ignored.
+[+] Preprocessing input df
+[+] Splitting input df and descriptors calculation
+Cluster 4: AtomCentred_all calculated in --- 6.976041555404663 seconds ---
+Cluster 6: AtomCentred_all calculated in --- 7.134165525436401 seconds ---
+Cluster 3: AtomCentred_all calculated in --- 7.2772605419158936 seconds ---
+Cluster 11: AtomCentred_all calculated in --- 7.367383003234863 seconds ---
+Cluster 2: AtomCentred_all calculated in --- 7.514466047286987 seconds ---
+Cluster 7: AtomCentred_all calculated in --- 12.522746801376343 seconds ---
+Cluster 12: AtomCentred_all calculated in --- 12.74009919166565 seconds ---
+Cluster 14: AtomCentred_all calculated in --- 13.456973552703857 seconds ---
+Cluster 9: AtomCentred_all calculated in --- 15.695912837982178 seconds ---
+Cluster 13: AtomCentred_all calculated in --- 17.013395071029663 seconds ---
+Cluster 1: AtomCentred_all calculated in --- 17.17750334739685 seconds ---
+Cluster 0: AtomCentred_all calculated in --- 17.46877908706665 seconds ---
+Cluster 10: AtomCentred_all calculated in --- 17.449787616729736 seconds ---
+Cluster 5: AtomCentred_all calculated in --- 18.482468605041504 seconds ---
+Cluster 8: AtomCentred_all calculated in --- 18.49215030670166 seconds ---
+Cluster 9: Autocorrelation_all calculated in --- 536.3908340930939 seconds ---
+Cluster 9: BurdenEigenvalues_all calculated in --- 13.633201360702515 seconds ---
+Cluster 6: Autocorrelation_all calculated in --- 608.0874662399292 seconds ---
+Cluster 9: ConnectivityIndices_all calculated in --- 57.814990520477295 seconds ---
+Cluster 6: BurdenEigenvalues_all calculated in --- 10.225112915039062 seconds ---
+Cluster 13: Autocorrelation_all calculated in --- 635.2543659210205 seconds ---
+Cluster 0: Autocorrelation_all calculated in --- 637.3755433559418 seconds ---
+Cluster 13: BurdenEigenvalues_all calculated in --- 14.172844409942627 seconds ---
+Cluster 6: ConnectivityIndices_all calculated in --- 41.15010857582092 seconds ---
+Cluster 0: BurdenEigenvalues_all calculated in --- 12.286682844161987 seconds ---
+Cluster 4: Autocorrelation_all calculated in --- 660.9991097450256 seconds ---
+Cluster 3: Autocorrelation_all calculated in --- 665.5778894424438 seconds ---
+Cluster 4: BurdenEigenvalues_all calculated in --- 20.011173248291016 seconds ---
+Cluster 12: Autocorrelation_all calculated in --- 677.9205167293549 seconds ---
+Cluster 3: BurdenEigenvalues_all calculated in --- 27.868751049041748 seconds ---
+Cluster 8: Autocorrelation_all calculated in --- 682.6708920001984 seconds ---
+Cluster 10: Autocorrelation_all calculated in --- 685.4730763435364 seconds ---
+Cluster 12: BurdenEigenvalues_all calculated in --- 14.787681102752686 seconds ---
+Cluster 8: BurdenEigenvalues_all calculated in --- 9.009055137634277 seconds ---
+Cluster 10: BurdenEigenvalues_all calculated in --- 12.45801329612732 seconds ---
+Cluster 5: Autocorrelation_all calculated in --- 700.7690742015839 seconds ---
+Cluster 7: Autocorrelation_all calculated in --- 710.6910841464996 seconds ---
+Cluster 0: ConnectivityIndices_all calculated in --- 56.642394065856934 seconds ---
+Cluster 13: ConnectivityIndices_all calculated in --- 60.347455978393555 seconds ---
+Cluster 4: ConnectivityIndices_all calculated in --- 41.57042622566223 seconds ---
+Cluster 5: BurdenEigenvalues_all calculated in --- 10.597846508026123 seconds ---
+Cluster 7: BurdenEigenvalues_all calculated in --- 10.339753150939941 seconds ---
+Cluster 11: Autocorrelation_all calculated in --- 729.174031496048 seconds ---
+Cluster 10: ConnectivityIndices_all calculated in --- 25.790222883224487 seconds ---
+Cluster 8: ConnectivityIndices_all calculated in --- 31.120002508163452 seconds ---
+Cluster 12: ConnectivityIndices_all calculated in --- 36.53170990943909 seconds ---
+Cluster 3: ConnectivityIndices_all calculated in --- 41.58469319343567 seconds ---
+Cluster 11: BurdenEigenvalues_all calculated in --- 8.095824003219604 seconds ---
+Cluster 2: Autocorrelation_all calculated in --- 737.6714763641357 seconds ---
+Cluster 1: Autocorrelation_all calculated in --- 733.0015668869019 seconds ---
+Cluster 2: BurdenEigenvalues_all calculated in --- 10.17960000038147 seconds ---
+Cluster 5: ConnectivityIndices_all calculated in --- 26.83390736579895 seconds ---
+Cluster 7: ConnectivityIndices_all calculated in --- 23.457855701446533 seconds ---
+Cluster 1: BurdenEigenvalues_all calculated in --- 9.060008764266968 seconds ---
+Cluster 11: ConnectivityIndices_all calculated in --- 38.9584014415741 seconds ---
+Cluster 2: ConnectivityIndices_all calculated in --- 37.57317233085632 seconds ---
+Cluster 1: ConnectivityIndices_all calculated in --- 37.299887895584106 seconds ---
+Cluster 14: Autocorrelation_all calculated in --- 813.4171488285065 seconds ---
+Cluster 14: BurdenEigenvalues_all calculated in --- 23.898935079574585 seconds ---
+Cluster 0: Constitutional_all calculated in --- 154.11279559135437 seconds ---
+Cluster 6: Constitutional_all calculated in --- 220.88490629196167 seconds ---
+Cluster 9: Constitutional_all calculated in --- 272.3474223613739 seconds ---
+Cluster 12: Constitutional_all calculated in --- 154.5207269191742 seconds ---
+Cluster 14: ConnectivityIndices_all calculated in --- 48.08031415939331 seconds ---
+Cluster 13: Constitutional_all calculated in --- 206.29354310035706 seconds ---
+Cluster 4: Constitutional_all calculated in --- 207.25546836853027 seconds ---
+Cluster 10: Constitutional_all calculated in --- 197.90640330314636 seconds ---
+Cluster 5: Constitutional_all calculated in --- 194.3001172542572 seconds ---
+Cluster 8: Constitutional_all calculated in --- 227.40606474876404 seconds ---
+Cluster 7: Constitutional_all calculated in --- 214.89408659934998 seconds ---
+Cluster 3: Constitutional_all calculated in --- 252.777090549469 seconds ---
+Cluster 9: EdgeAdjacency_all calculated in --- 115.5064024925232 seconds ---
+Cluster 6: EdgeAdjacency_all calculated in --- 154.24067735671997 seconds ---
+Cluster 0: EdgeAdjacency_all calculated in --- 165.72476625442505 seconds ---
+Cluster 1: Constitutional_all calculated in --- 251.35890936851501 seconds ---
+Cluster 11: Constitutional_all calculated in --- 296.2810273170471 seconds ---
+Cluster 2: Constitutional_all calculated in --- 301.2726833820343 seconds ---
+Cluster 4: EdgeAdjacency_all calculated in --- 185.74571681022644 seconds ---
+Cluster 12: EdgeAdjacency_all calculated in --- 260.70325899124146 seconds ---
+Cluster 9: Eigenvalues_all calculated in --- 160.0549647808075 seconds ---
+Cluster 10: EdgeAdjacency_all calculated in --- 240.96641731262207 seconds ---
+Cluster 13: EdgeAdjacency_all calculated in --- 255.28542304039001 seconds ---
+Cluster 5: EdgeAdjacency_all calculated in --- 238.86156463623047 seconds ---
+Cluster 6: Eigenvalues_all calculated in --- 179.8855438232422 seconds ---
+Cluster 0: Eigenvalues_all calculated in --- 188.00383400917053 seconds ---
+Cluster 8: EdgeAdjacency_all calculated in --- 265.37545824050903 seconds ---
+Cluster 7: EdgeAdjacency_all calculated in --- 272.778329372406 seconds ---
+Cluster 3: EdgeAdjacency_all calculated in --- 306.56258392333984 seconds ---
+Cluster 4: Eigenvalues_all calculated in --- 187.46734762191772 seconds ---
+Cluster 9: GETAWAY_all calculated in --- 154.96175265312195 seconds ---
+Cluster 10: Eigenvalues_all calculated in --- 183.81915760040283 seconds ---
+[16:58:47] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 12: Eigenvalues_all calculated in --- 216.6208622455597 seconds ---
+Cluster 5: Eigenvalues_all calculated in --- 185.6184287071228 seconds ---
+Cluster 9: InformationIndices_all calculated in --- 55.46520185470581 seconds ---
+Cluster 13: Eigenvalues_all calculated in --- 202.04820108413696 seconds ---
+Cluster 0: GETAWAY_all calculated in --- 162.97831439971924 seconds ---
+Cluster 1: EdgeAdjacency_all calculated in --- 348.46388268470764 seconds ---
+Cluster 14: Constitutional_all calculated in --- 506.3355448246002 seconds ---
+Cluster 6: GETAWAY_all calculated in --- 184.72669577598572 seconds ---
+Cluster 8: Eigenvalues_all calculated in --- 181.7642161846161 seconds ---
+[16:59:42] UFFTYPER: Unrecognized charge state for atom: 54
+[16:59:45] Molecule does not have explicit Hs. Consider calling AddHs()
+[16:59:45] UFFTYPER: Unrecognized charge state for atom: 42
+Cluster 7: Eigenvalues_all calculated in --- 191.8018205165863 seconds ---
+Cluster 0: InformationIndices_all calculated in --- 50.65766429901123 seconds ---
+Cluster 11: EdgeAdjacency_all calculated in --- 372.36420726776123 seconds ---
+Cluster 4: GETAWAY_all calculated in --- 149.34893012046814 seconds ---
+Cluster 6: InformationIndices_all calculated in --- 54.47465658187866 seconds ---
+[17:00:16] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 2: EdgeAdjacency_all calculated in --- 372.5931520462036 seconds ---
+Cluster 3: Eigenvalues_all calculated in --- 174.01545572280884 seconds ---
+[17:00:37] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 10: GETAWAY_all calculated in --- 125.68677353858948 seconds ---
+[17:00:46] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 12: GETAWAY_all calculated in --- 122.16414403915405 seconds ---
+Cluster 4: InformationIndices_all calculated in --- 44.316242933273315 seconds ---
+Cluster 5: GETAWAY_all calculated in --- 138.74488759040833 seconds ---
+Cluster 13: GETAWAY_all calculated in --- 126.26224327087402 seconds ---
+Cluster 10: InformationIndices_all calculated in --- 41.982723236083984 seconds ---
+Cluster 8: GETAWAY_all calculated in --- 128.6442792415619 seconds ---
+Cluster 1: Eigenvalues_all calculated in --- 149.06995129585266 seconds ---
+Cluster 12: InformationIndices_all calculated in --- 56.88024187088013 seconds ---
+Cluster 5: InformationIndices_all calculated in --- 45.431843280792236 seconds ---
+Cluster 13: InformationIndices_all calculated in --- 43.722662687301636 seconds ---
+[17:01:54] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:01:56] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:01:57] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:01:58] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:01:59] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:02:00] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:02:00] 
+
+****
+Pre-condition Violation
+molecule has no conformers
+Violation occurred on line 192 in file /home/conda/feedstock_root/build_artifacts/rdkit_1660289053912/work/Code/GraphMol/Descriptors/RDF.cpp
+Failed Expression: mol.getNumConformers() >= 1
+****
+
+[17:02:01] 
+
+****
+Pre-condition Violation
+molecule has no conformers
+Violation occurred on line 382 in file /home/conda/feedstock_root/build_artifacts/rdkit_1660289053912/work/Code/GraphMol/Descriptors/WHIM.cpp
+Failed Expression: mol.getNumConformers() >= 1
+****
+
+[17:02:01] 
+
+****
+Pre-condition Violation
+molecule has no conformers
+Violation occurred on line 238 in file /home/conda/feedstock_root/build_artifacts/rdkit_1660289053912/work/Code/GraphMol/Descriptors/AUTOCORR3D.cpp
+Failed Expression: mol.getNumConformers() >= 1
+****
+
+[17:02:01] 
+
+****
+Pre-condition Violation
+molecule has no conformers
+Violation occurred on line 172 in file /home/conda/feedstock_root/build_artifacts/rdkit_1660289053912/work/Code/GraphMol/Descriptors/MORSE.cpp
+Failed Expression: mol.getNumConformers() >= 1
+****
+
+[17:02:04] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:02:05] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 7: GETAWAY_all calculated in --- 135.31816482543945 seconds ---
+[17:02:06] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:02:07] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:02:09] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:02:11] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 8: InformationIndices_all calculated in --- 33.916895151138306 seconds ---
+Cluster 3: GETAWAY_all calculated in --- 123.50982284545898 seconds ---
+Cluster 2: Eigenvalues_all calculated in --- 138.6875147819519 seconds ---
+Cluster 11: Eigenvalues_all calculated in --- 162.97946524620056 seconds ---
+Cluster 7: InformationIndices_all calculated in --- 45.83238506317139 seconds ---
+Cluster 3: InformationIndices_all calculated in --- 31.848525285720825 seconds ---
+Cluster 1: GETAWAY_all calculated in --- 90.03744864463806 seconds ---
+Cluster 1: InformationIndices_all calculated in --- 32.11830234527588 seconds ---
+Cluster 2: GETAWAY_all calculated in --- 70.50418448448181 seconds ---
+Cluster 11: GETAWAY_all calculated in --- 71.47680568695068 seconds ---
+[17:04:17] UFFTYPER: Unrecognized charge state for atom: 54
+[17:04:18] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:04:18] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:18] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:18] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:04:18] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:19] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:19] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:04:19] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:19] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:20] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:04:20] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:20] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:21] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:04:21] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:21] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:22] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:04:22] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:22] 
+
+****
+Pre-condition Violation
+molecule has no conformers
+Violation occurred on line 192 in file /home/conda/feedstock_root/build_artifacts/rdkit_1660289053912/work/Code/GraphMol/Descriptors/RDF.cpp
+Failed Expression: mol.getNumConformers() >= 1
+****
+
+[17:04:22] 
+
+****
+Pre-condition Violation
+molecule has no conformers
+Violation occurred on line 382 in file /home/conda/feedstock_root/build_artifacts/rdkit_1660289053912/work/Code/GraphMol/Descriptors/WHIM.cpp
+Failed Expression: mol.getNumConformers() >= 1
+****
+
+[17:04:22] 
+
+****
+Pre-condition Violation
+molecule has no conformers
+Violation occurred on line 238 in file /home/conda/feedstock_root/build_artifacts/rdkit_1660289053912/work/Code/GraphMol/Descriptors/AUTOCORR3D.cpp
+Failed Expression: mol.getNumConformers() >= 1
+****
+
+[17:04:23] 
+
+****
+Pre-condition Violation
+molecule has no conformers
+Violation occurred on line 172 in file /home/conda/feedstock_root/build_artifacts/rdkit_1660289053912/work/Code/GraphMol/Descriptors/MORSE.cpp
+Failed Expression: mol.getNumConformers() >= 1
+****
+
+[17:04:24] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:25] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:04:25] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:25] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:26] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:04:26] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:26] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:27] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:04:27] UFFTYPER: Unrecognized charge state for atom: 42
+Cluster 2: InformationIndices_all calculated in --- 37.780553102493286 seconds ---
+[17:04:27] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:29] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:04:29] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:29] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:30] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:04:30] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:30] UFFTYPER: Unrecognized charge state for atom: 42
+[17:04:31] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:04:31] UFFTYPER: Unrecognized charge state for atom: 42
+Cluster 11: InformationIndices_all calculated in --- 36.496060848236084 seconds ---
+Cluster 14: EdgeAdjacency_all calculated in --- 361.61899042129517 seconds ---
+[17:05:49] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 9: Rdkit3D_all calculated in --- 443.00116300582886 seconds ---
+Cluster 4: Rdkit3D_all calculated in --- 376.79280638694763 seconds ---
+[17:07:27] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:07:29] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:07:30] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:07:31] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:07:32] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:07:34] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:07:37] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:07:38] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:07:39] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:07:42] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:07:43] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:07:45] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 14: Eigenvalues_all calculated in --- 151.59229516983032 seconds ---
+Cluster 0: Rdkit3D_all calculated in --- 477.9004864692688 seconds ---
+Cluster 10: Rdkit3D_all calculated in --- 404.52364802360535 seconds ---
+[17:08:13] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:08:22] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:08:27] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:08:27] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 8: Rdkit3D_all calculated in --- 381.2648174762726 seconds ---
+Cluster 6: Rdkit3D_all calculated in --- 506.2345914840698 seconds ---
+Cluster 12: Rdkit3D_all calculated in --- 430.0819025039673 seconds ---
+[17:09:09] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 14: GETAWAY_all calculated in --- 81.13698887825012 seconds ---
+Cluster 13: Rdkit3D_all calculated in --- 460.696729183197 seconds ---
+Cluster 14: InformationIndices_all calculated in --- 26.59129548072815 seconds ---
+Cluster 5: Rdkit3D_all calculated in --- 468.0343201160431 seconds ---
+Cluster 3: Rdkit3D_all calculated in --- 411.7361385822296 seconds ---
+Cluster 7: Rdkit3D_all calculated in --- 443.65907311439514 seconds ---
+Cluster 1: Rdkit3D_all calculated in --- 427.70449924468994 seconds ---
+Cluster 2: Rdkit3D_all calculated in --- 392.04440689086914 seconds ---
+[17:12:04] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:12:05] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:12:06] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:12:07] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:12:09] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:12:10] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:12:13] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:12:14] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:12:15] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:12:16] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:12:17] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:12:18] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 11: Rdkit3D_all calculated in --- 494.4629888534546 seconds ---
+[17:13:14] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:15] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:17] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:18] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:19] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:21] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:24] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:25] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:27] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:28] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:29] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:31] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:45] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:46] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:48] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:50] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:52] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:53] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:57] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:13:59] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:14:00] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:14:02] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 9: Topological_all calculated in --- 463.98146295547485 seconds ---
+[17:14:04] Molecule does not have explicit Hs. Consider calling AddHs()
+[17:14:05] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 9: TopologicalCharge_all calculated in --- 4.448966026306152 seconds ---
+/home/carmen/anaconda3/envs/Protocosas/lib/python3.9/site-packages/rdkit/Chem/GraphDescriptors.py:488: RuntimeWarning: invalid value encountered in sqrt
+  sum_ += 1. / numpy.sqrt(si * s[j])
+[17:17:33] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 14: Rdkit3D_all calculated in --- 509.9672112464905 seconds ---
+Cluster 4: Topological_all calculated in --- 679.0909626483917 seconds ---
+Cluster 4: TopologicalCharge_all calculated in --- 4.672791004180908 seconds ---
+Cluster 6: Topological_all calculated in --- 803.6155104637146 seconds ---
+Cluster 6: TopologicalCharge_all calculated in --- 4.790759325027466 seconds ---
+Cluster 8: Topological_all calculated in --- 1089.1546123027802 seconds ---
+Cluster 8: TopologicalCharge_all calculated in --- 5.192574739456177 seconds ---
+Cluster 5: Topological_all calculated in --- 1057.7929410934448 seconds ---
+Cluster 5: TopologicalCharge_all calculated in --- 6.239168882369995 seconds ---
+Cluster 13: Topological_all calculated in --- 1289.5285863876343 seconds ---
+Cluster 0: Topological_all calculated in --- 1387.7420053482056 seconds ---
+Cluster 0: TopologicalCharge_all calculated in --- 2.7665021419525146 seconds ---
+Cluster 13: TopologicalCharge_all calculated in --- 5.45745849609375 seconds ---
+Cluster 12: Topological_all calculated in --- 1362.3995957374573 seconds ---
+Cluster 12: TopologicalCharge_all calculated in --- 6.271505355834961 seconds ---
+Cluster 10: Topological_all calculated in --- 1415.9987211227417 seconds ---
+Cluster 10: TopologicalCharge_all calculated in --- 5.704575777053833 seconds ---
+Cluster 9: TwoDimensional_all calculated in --- 1334.9120199680328 seconds ---
+Cluster 9: WalkPathCounts_all calculated in --- 72.34371781349182 seconds ---
+Cluster 9: FunctionalGroup_all calculated in --- 4.817770957946777 seconds ---
+Cluster 9: MoeType_all calculated in --- 8.569932222366333 seconds ---
+Cluster 9: CPSA_all calculated in --- 160.3366105556488 seconds ---
+Cluster 9: EState_all calculated in --- 109.58367562294006 seconds ---
+Cluster 9: SLogP_all calculated in --- 0.6663227081298828 seconds ---
+Cluster 2: Topological_all calculated in --- 1991.7463200092316 seconds ---
+Cluster 2: TopologicalCharge_all calculated in --- 4.246118545532227 seconds ---
+Cluster 4: TwoDimensional_all calculated in --- 2009.6478946208954 seconds ---
+Cluster 4: WalkPathCounts_all calculated in --- 81.62691521644592 seconds ---
+Cluster 4: FunctionalGroup_all calculated in --- 4.696705102920532 seconds ---
+Cluster 4: MoeType_all calculated in --- 8.754566431045532 seconds ---
+Cluster 8: TwoDimensional_all calculated in --- 1679.5991592407227 seconds ---
+Cluster 8: WalkPathCounts_all calculated in --- 105.6658570766449 seconds ---
+Cluster 8: FunctionalGroup_all calculated in --- 4.769350290298462 seconds ---
+Cluster 8: MoeType_all calculated in --- 9.298346281051636 seconds ---
+Cluster 4: CPSA_all calculated in --- 234.14379835128784 seconds ---
+Cluster 13: TwoDimensional_all calculated in --- 1596.9989576339722 seconds ---
+Cluster 4: EState_all calculated in --- 99.22619557380676 seconds ---
+Cluster 4: SLogP_all calculated in --- 0.30321264266967773 seconds ---
+Cluster 13: WalkPathCounts_all calculated in --- 140.41321206092834 seconds ---
+Cluster 13: FunctionalGroup_all calculated in --- 4.958359241485596 seconds ---
+Cluster 13: MoeType_all calculated in --- 9.843482255935669 seconds ---
+Cluster 0: TwoDimensional_all calculated in --- 1782.15984749794 seconds ---
+Cluster 0: WalkPathCounts_all calculated in --- 104.70198798179626 seconds ---
+Cluster 0: FunctionalGroup_all calculated in --- 4.780732154846191 seconds ---
+Cluster 0: MoeType_all calculated in --- 9.182942390441895 seconds ---
+Cluster 8: CPSA_all calculated in --- 363.5167281627655 seconds ---
+Cluster 8: EState_all calculated in --- 122.6613359451294 seconds ---
+Cluster 8: SLogP_all calculated in --- 0.30794429779052734 seconds ---
+Cluster 3: Topological_all calculated in --- 3419.414309978485 seconds ---
+Cluster 3: TopologicalCharge_all calculated in --- 4.967878818511963 seconds ---
+Cluster 10: TwoDimensional_all calculated in --- 2119.970068216324 seconds ---
+Cluster 13: CPSA_all calculated in --- 424.5518865585327 seconds ---
+Cluster 0: CPSA_all calculated in --- 308.03516936302185 seconds ---
+Cluster 10: WalkPathCounts_all calculated in --- 86.39784741401672 seconds ---
+Cluster 10: FunctionalGroup_all calculated in --- 4.533083915710449 seconds ---
+Cluster 10: MoeType_all calculated in --- 7.995981216430664 seconds ---
+Cluster 5: TwoDimensional_all calculated in --- 2487.7619240283966 seconds ---
+[18:08:57] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:08:57] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:08:58] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:08:58] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:08:58] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:08:59] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:08:59] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:00] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:00] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:01] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:01] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:02] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:02] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:02] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:03] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:03] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:04] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:04] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:05] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:05] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:05] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:06] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:06] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:07] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:07] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:08] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:08] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:08] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:09] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:09] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:10] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:10] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:11] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:11] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:11] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:12] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:12] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:13] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:13] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:14] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:14] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:14] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:09:15] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 6: TwoDimensional_all calculated in --- 2846.5441460609436 seconds ---
+Cluster 0: EState_all calculated in --- 104.24103093147278 seconds ---
+Cluster 0: SLogP_all calculated in --- 0.30614566802978516 seconds ---
+Cluster 13: EState_all calculated in --- 178.27945852279663 seconds ---
+Cluster 13: SLogP_all calculated in --- 0.47561168670654297 seconds ---
+Cluster 7: Topological_all calculated in --- 3619.14124751091 seconds ---
+Cluster 7: TopologicalCharge_all calculated in --- 2.8416664600372314 seconds ---
+Cluster 6: WalkPathCounts_all calculated in --- 70.82801055908203 seconds ---
+Cluster 12: TwoDimensional_all calculated in --- 2342.724063396454 seconds ---
+Cluster 2: TwoDimensional_all calculated in --- 1593.333992242813 seconds ---
+Cluster 6: FunctionalGroup_all calculated in --- 4.589334964752197 seconds ---
+Cluster 6: MoeType_all calculated in --- 8.17537260055542 seconds ---
+[18:11:29] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:31] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:33] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:34] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:36] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:38] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:40] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:41] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:43] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:45] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:46] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:47] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:48] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:48] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:49] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:50] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:51] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 5: WalkPathCounts_all calculated in --- 177.78994369506836 seconds ---
+[18:11:52] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:53] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:53] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:54] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:55] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:56] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:57] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:58] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:59] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:11:59] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:12:00] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:12:01] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 5: FunctionalGroup_all calculated in --- 10.277480363845825 seconds ---
+[18:12:02] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:12:03] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:12:04] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:12:04] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:12:05] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:12:06] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:12:07] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:12:08] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:12:08] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:12:09] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:12:10] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:12:11] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:12:12] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:12:12] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 5: MoeType_all calculated in --- 14.387620210647583 seconds ---
+Cluster 12: WalkPathCounts_all calculated in --- 108.83254051208496 seconds ---
+Cluster 12: FunctionalGroup_all calculated in --- 4.747485399246216 seconds ---
+Cluster 12: MoeType_all calculated in --- 9.101004123687744 seconds ---
+Cluster 2: WalkPathCounts_all calculated in --- 182.25550818443298 seconds ---
+Cluster 2: FunctionalGroup_all calculated in --- 4.65599799156189 seconds ---
+Cluster 10: CPSA_all calculated in --- 308.6495666503906 seconds ---
+Cluster 2: MoeType_all calculated in --- 8.49293851852417 seconds ---
+[18:14:36] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:37] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:37] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:37] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:37] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:37] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:37] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:37] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:37] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:37] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:38] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:38] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:38] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:38] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:38] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:38] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:39] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:39] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:39] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:39] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:39] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:39] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:39] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:39] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:40] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:40] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:40] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:40] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:40] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:40] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:40] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:41] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:41] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:41] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:41] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:41] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:41] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:42] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:42] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:42] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:42] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:42] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:42] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:42] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:42] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:42] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:43] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:43] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:43] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:43] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:43] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:43] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:44] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:44] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:44] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:44] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:44] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:44] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:44] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:44] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:44] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:45] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:45] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:45] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:45] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:45] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:45] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:46] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:46] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:46] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:46] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:46] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:46] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:46] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:47] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:47] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:47] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:47] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:47] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:47] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:47] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:48] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:48] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:48] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:48] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:49] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:49] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:49] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:50] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:50] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:50] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:51] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:51] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:51] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:52] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:52] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:52] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:52] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:52] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:53] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:53] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:53] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:53] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:54] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:54] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:54] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:55] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:55] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:55] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:55] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:55] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:55] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:56] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:56] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:56] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:56] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:56] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:56] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:57] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:57] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:57] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:57] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:57] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:57] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:57] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:57] UFFTYPER: Unrecognized charge state for atom: 42
+[18:14:57] UFFTYPER: Unrecognized charge state for atom: 54
+[18:14:58] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:14:58] UFFTYPER: Unrecognized charge state for atom: 42
+Cluster 10: EState_all calculated in --- 91.26680731773376 seconds ---
+Cluster 10: SLogP_all calculated in --- 0.2719144821166992 seconds ---
+Cluster 6: CPSA_all calculated in --- 386.62010431289673 seconds ---
+[18:18:05] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:06] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:08] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:10] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:12] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:13] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:15] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:17] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:18] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:20] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:22] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:24] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:25] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:25] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:26] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:26] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:27] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:27] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:28] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:28] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:29] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:29] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:30] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:30] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:31] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:31] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:32] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:33] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:33] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:33] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:34] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:34] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:35] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:35] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:36] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:36] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:37] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:37] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:38] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:38] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:39] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:39] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:40] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:40] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:41] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:41] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:41] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:42] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:43] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:43] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:43] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:44] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:45] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:45] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:45] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:46] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:47] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:47] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:48] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 6: EState_all calculated in --- 81.27031564712524 seconds ---
+Cluster 6: SLogP_all calculated in --- 0.4222421646118164 seconds ---
+[18:18:48] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:49] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:49] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:49] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:50] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:50] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:51] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:51] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:52] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:52] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:53] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:53] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:54] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:55] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:57] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:18:59] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:19:00] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:19:01] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 12: CPSA_all calculated in --- 369.6991424560547 seconds ---
+[18:19:02] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:19:02] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:19:03] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:19:04] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:19:04] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:19:05] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:19:06] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:19:07] Molecule does not have explicit Hs. Consider calling AddHs()
+[18:19:09] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 12: EState_all calculated in --- 89.18956446647644 seconds ---
+Cluster 12: SLogP_all calculated in --- 0.27231574058532715 seconds ---
+Cluster 5: CPSA_all calculated in --- 517.6915247440338 seconds ---
+Cluster 5: EState_all calculated in --- 80.4861261844635 seconds ---
+Cluster 5: SLogP_all calculated in --- 0.2718338966369629 seconds ---
+Cluster 2: CPSA_all calculated in --- 545.0180976390839 seconds ---
+Cluster 2: EState_all calculated in --- 87.43908953666687 seconds ---
+Cluster 2: SLogP_all calculated in --- 0.2587573528289795 seconds ---
+Cluster 11: Topological_all calculated in --- 4355.634343385696 seconds ---
+Cluster 11: TopologicalCharge_all calculated in --- 2.7502996921539307 seconds ---
+Cluster 1: Topological_all calculated in --- 4572.1185874938965 seconds ---
+Cluster 1: TopologicalCharge_all calculated in --- 2.587470769882202 seconds ---
+Cluster 3: TwoDimensional_all calculated in --- 1245.4169862270355 seconds ---
+Cluster 3: WalkPathCounts_all calculated in --- 110.69297623634338 seconds ---
+Cluster 3: FunctionalGroup_all calculated in --- 4.263808727264404 seconds ---
+Cluster 3: MoeType_all calculated in --- 7.866014719009399 seconds ---
+Cluster 7: TwoDimensional_all calculated in --- 1192.517997264862 seconds ---
+Cluster 7: WalkPathCounts_all calculated in --- 85.4081859588623 seconds ---
+Cluster 7: FunctionalGroup_all calculated in --- 4.343772888183594 seconds ---
+Cluster 7: MoeType_all calculated in --- 8.014785051345825 seconds ---
+Cluster 3: CPSA_all calculated in --- 323.3537211418152 seconds ---
+Cluster 3: EState_all calculated in --- 75.21114826202393 seconds ---
+Cluster 3: SLogP_all calculated in --- 0.2452690601348877 seconds ---
+Cluster 7: CPSA_all calculated in --- 462.8022458553314 seconds ---
+Cluster 7: EState_all calculated in --- 69.59245419502258 seconds ---
+Cluster 7: SLogP_all calculated in --- 0.24484801292419434 seconds ---
+Cluster 11: TwoDimensional_all calculated in --- 1050.3353412151337 seconds ---
+Cluster 1: TwoDimensional_all calculated in --- 1031.579241991043 seconds ---
+Cluster 11: WalkPathCounts_all calculated in --- 106.12294483184814 seconds ---
+Cluster 11: FunctionalGroup_all calculated in --- 4.023707389831543 seconds ---
+Cluster 11: MoeType_all calculated in --- 7.330137491226196 seconds ---
+Cluster 1: WalkPathCounts_all calculated in --- 109.86619806289673 seconds ---
+Cluster 1: FunctionalGroup_all calculated in --- 4.2111968994140625 seconds ---
+Cluster 1: MoeType_all calculated in --- 7.480754852294922 seconds ---
+Cluster 11: CPSA_all calculated in --- 399.962858915329 seconds ---
+Cluster 11: EState_all calculated in --- 76.5524034500122 seconds ---
+Cluster 11: SLogP_all calculated in --- 0.25922298431396484 seconds ---
+Cluster 1: CPSA_all calculated in --- 406.70894861221313 seconds ---
+Cluster 1: EState_all calculated in --- 66.36471343040466 seconds ---
+Cluster 1: SLogP_all calculated in --- 0.20730805397033691 seconds ---
+Cluster 14: Topological_all calculated in --- 46059.272523880005 seconds ---
+Cluster 14: TopologicalCharge_all calculated in --- 2.9630777835845947 seconds ---
+Cluster 14: TwoDimensional_all calculated in --- 817.9664995670319 seconds ---
+Cluster 14: WalkPathCounts_all calculated in --- 130.87115478515625 seconds ---
+Cluster 14: FunctionalGroup_all calculated in --- 3.9017903804779053 seconds ---
+Cluster 14: MoeType_all calculated in --- 7.302356958389282 seconds ---
+[06:24:00] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:00] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:01] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:02] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:02] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:03] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:04] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:04] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:05] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:06] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:06] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:07] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:08] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:08] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:09] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:10] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:10] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:11] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:11] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:12] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:13] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:13] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:14] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:15] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:15] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:16] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:17] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:17] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:18] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:19] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:19] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:20] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:20] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:21] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:22] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:22] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:23] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:23] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:24] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:25] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:25] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:26] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:24:27] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:25:50] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:25:51] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:25:52] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:25:52] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:25:53] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:25:54] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:25:55] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:25:55] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:25:56] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:25:57] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:25:58] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:25:58] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:25:59] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:00] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:01] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:01] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:02] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:03] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:04] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:04] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:05] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:06] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:07] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:07] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:08] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:09] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:10] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:10] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:11] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:12] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:13] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:13] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:14] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:15] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:16] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:17] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:17] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:18] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:18] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:19] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:20] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:21] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:21] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:29] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:30] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:31] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:32] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:33] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:34] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:34] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:35] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:36] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:37] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:38] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:39] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:40] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:41] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:42] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:42] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:43] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:44] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:45] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:46] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:47] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:48] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:49] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:50] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:50] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:51] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:52] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:53] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:54] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:55] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:56] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:57] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:58] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:58] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:26:59] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:27:00] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:27:01] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:27:02] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:27:02] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:27:03] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:27:04] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:27:05] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:27:06] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:03] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:04] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:04] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:05] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:05] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:06] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:06] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:07] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:07] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:08] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:08] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:08] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:09] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:09] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:10] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:10] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:11] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:11] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:12] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:12] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:13] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:13] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:14] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:14] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:15] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:15] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:16] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:16] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:16] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:17] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:17] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:18] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:18] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:19] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:19] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:20] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:20] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:20] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:21] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:21] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:22] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:22] Molecule does not have explicit Hs. Consider calling AddHs()
+[06:31:23] Molecule does not have explicit Hs. Consider calling AddHs()
+Cluster 14: CPSA_all calculated in --- 593.9553544521332 seconds ---
+Cluster 14: EState_all calculated in --- 74.67986464500427 seconds ---
+Cluster 14: SLogP_all calculated in --- 0.23740506172180176 seconds ---
+Num mols 1887
+Num descriptors 4678
+
+The following files have been created:
+
+/home/carmen/Escritorio/contratas/IRB_nuevo_ordenador/IRB/scripts/compare_ONGOING/results/TK_FU-paralel_calculated_with_y.csv
+
+ Profile: RSS: 324.93MB | VMS: 197.26MB | time: 50235.56178689003
+
+Do you want to perform any other step?(y/n):  n
+
+Thanks for using WOTAN!
+
