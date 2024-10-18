@@ -1,0 +1,3 @@
+Se descargaron los datos disponibles en formato .txt para las CYP (1A2, 2C9, 2C19, 2D6, 3A4, 2C8, 2E1) del repositorio de Metrabase, en el siguiente link: http://www-metrabase.ch.cam.ac.uk. 
+
+El archivo de texto fue procesado para generar un archivo csv que guardase las columnas cmpd_id	cmpd_name, y action_type. Mediante un script en python se transformo la información de action_type (inhibitor, substrate, non-substrate) en números (-1, 0, 1). Además se obtuvieron los smiles también por el script. Aquellos smiles que no fueron obtenidos por el script se comprobaron manualmente.

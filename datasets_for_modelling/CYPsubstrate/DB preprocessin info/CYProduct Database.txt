@@ -1,0 +1,5 @@
+Los datos para crear los modelos de sustratos de las enzimas CYP se han obtenido a partir del siguiente artículo: https://doi.org/10.1021/acs.jcim.1c00144
+
+Se ha descargado la base de datos de EBoMD.sdf y EBoMD2.sdf, compuesta por dos archivos en formato sdf y que contenía las columnas: Molecule Name, Name, InChiKey, PubChem, CYP (1A2, 2A6, 2B6, 2C8, 2C9, 2C19, 2D6, 2E1 y 3A4), References y Comments. Se utilizó el script "sdf_to_csv.py" para añadir la columna con los SMILES y transformar el archivo sdf a csv. A continuación se modificaron las columnas de las CYP, mediant el script "Zaretzki_dataset_modf", para que apareciese 1 o 0, en función de si aparecía alguna información o no en la celda de cada CYP 
+
+Finalmente, mediante un script (CYPstrate_DB_processing), he creado las bases de datos de sustratos/no-sustratos para cada enzima y he añadido los compuestos de la base de datos de Hunt a cada una (ya que los sustratos para cada enzima están separados en hojas de Excel).

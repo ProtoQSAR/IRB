@@ -1,0 +1,3 @@
+La información para los sustratos de las CYP (2C9, 2D6, 3A4) se obtuvieron del siguiente artículo: https://doi.org/10.1002/minf.201100069
+
+Las bases de datos estaban compuestas por tres columnas: SMILES, Compound, substrate. Se creó un archivo CSV para cada CYP, seleccionando las columnas de SMILES y substrate. La columna de substrate estaba dividida en 1 para sustrato -1 para no sustrato. Se modifico el -1 a 0 de manera manual

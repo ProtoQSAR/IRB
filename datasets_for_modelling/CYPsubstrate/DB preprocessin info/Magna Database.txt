@@ -1,0 +1,3 @@
+Los datos para crear los modelos de sustratos de las enzimas CYP se han obtenido a partir del siguiente artículo: https://doi.org/10.1080/10629360412331319871
+
+El nombre de los compuestos y sus smiles aparecen en el propio artículo, al ser todos sustratos se creó un excel con el nombre del compuesto, el smiles y se etiquetaron todos como 1 al ser sustratos.

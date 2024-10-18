@@ -1,0 +1,3 @@
+Los datos para crear los modelos de sustratos de las enzimas CYP se han obtenido a partir del siguiente artículo: 10.1021/ci700010t
+
+La base de datos descargada con el nombre ci0500536_si_001.xls estaba compuesta por inhibidores y sustratos para las CYP (3A4, 2D6 y 2C9). Se seleccionaron las hojas correspondientes con los sustratos, compuestas por las columnas Compound, Class, Set. Mediante un script en python se utilizó el nombre de los compuestos para descargar la información sobre los SMILES. Aquellos smiles que no se encontraron se revisaron manualmente. También se transformo la columna de Class (P+, P-) a numérica (1, 0)

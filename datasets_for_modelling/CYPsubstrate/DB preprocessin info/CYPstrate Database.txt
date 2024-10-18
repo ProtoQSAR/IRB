@@ -1,0 +1,11 @@
+Los datos para crear los modelos de sustratos de las enzimas CYP se han obtenido a partir del siguiente artículo: 10.3390/molecules26154678
+
+Para el desarrollo del modelo, se compiló un "conjunto de datos principal" de sustratos y no sustratos de nueve isoenzimas humanas del CYP (1A2, 2A6, 2B6, 2C8, 2C9, 2C19, 2D6, 2E1 y 3A4) a partir de los trabajos de Hunt et al. y Tian et al. El conjunto de datos de Hunt es una colección bien curada de un total de 484 sustratos conocidos de siete de los nueve CYP investigados (excluyendo CYPs 2A6 y 2B6). El conjunto de datos de Tian contiene un total de 1800 sustratos y no sustratos conocidos para los mismos nueve CYPs. Los sustratos incluidos en este conjunto de datos provienen, en gran parte, del conjunto de datos de sitios de metabolismo de Zaretzki et al. Dado que el conjunto de datos de Zaretzki ha sido revisado desde entonces, la parte de los datos que proviene del conjunto original de Zaretzki fue reemplazada por los datos del conjunto de datos revisado de Zaretzki para los fines de este estudio.  
+
+En primer lugar se ha descargado la base de datos de Tian, compuesta por dos archivos (Train y Test) en formato sdf y que contenía las columnas: Molecule Name, Name, InChiKey, CYP (1A2, 2A6, 2B6, 2C8, 2C9, 2C19, 2D6, 2E1 y 3A4), References y Comments. Se utilizó el script "sdf_to_csv.py" para añadir la columna con los SMILES y transformar el archivo sdf a csv. A continuación se eliminaron todos aquellos compuestos marcados con una R, que hacían referencia a los sustratos.
+
+En segundo lugar se descargó la base de datos de sustratos actualizada de Zaretzki. Se utilizó el script "sdf_to_csv.py" para añadir la columna con los SMILES y transformar el archivo sdf a csv. A continuación se modificaron las columnas de las CYP, mediant el script "Zaretzki_dataset_modf", para que apareciese 1 o 0, en función de si aparecía algún numero o no en la celda de cada CYP 
+
+En tercer lugar se creó una hoja de excel llamada CYP_generalDB.csv. En este archivo se juntaron manualmente la información de las tres bases de datos.
+
+Finalmente, mediante un script (CYPstrate_DB_processing), he creado las bases de datos de sustratos/no-sustratos para cada enzima y he añadido los compuestos de la base de datos de Hunt a cada una (ya que los sustratos para cada enzima están separados en hojas de Excel).
