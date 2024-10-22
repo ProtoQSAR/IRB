@@ -1,0 +1,276 @@
+ID_UNIQUE;ID_SET;IRB WELL;LIBRARY;IRB PLATE;ID NUMBER;ID;ORIGINAL WELL;ROMol;SMILES
+IRB_147646;set_4;;FDA;PLATE_158;HY-B0330A;empty mol;N09;<rdkit.Chem.rdchem.Mol object at 0x783247ceea50>;
+IRB_145897;set_4;;Natural products;PLATE_169;HY-114557;empty mol;I13;<rdkit.Chem.rdchem.Mol object at 0x78324816f120>;
+IRB_146111;set_4;;Natural products;PLATE_170;HY-106302;empty mol;B17;<rdkit.Chem.rdchem.Mol object at 0x7832480b3040>;
+IRB_146245;set_4;;Natural products;PLATE_171;HY-W010668;empty mol;D11;<rdkit.Chem.rdchem.Mol object at 0x78324802dba0>;
+IRB_141169;set_4;;metabolites;PLATE_198;HY-N0681;empty mol;D16;<rdkit.Chem.rdchem.Mol object at 0x783246e31ba0>;
+IRB_146453;set_4;;FDA;PLATE_152;HY-B0144;empty mol;I18;<rdkit.Chem.rdchem.Mol object at 0x783247fa2820>;
+IRB_141119;set_4;;metabolites;PLATE_198;HY-B0152B;empty mol;A13;<rdkit.Chem.rdchem.Mol object at 0x783246c43580>;
+IRB_146480;set_4;;FDA;PLATE_152;HY-N0093;atoms 0 bonds 0;L03;<rdkit.Chem.rdchem.Mol object at 0x783247fb4430>;
+IRB_146566;set_4;;FDA;PLATE_153;HY-B0225B;empty mol;C03;<rdkit.Chem.rdchem.Mol object at 0x783247f55a50>;
+IRB_146714;set_4;;FDA;PLATE_153;HY-14806A;empty mol;O05;<rdkit.Chem.rdchem.Mol object at 0x783247e95c10>;
+IRB_140699;set_4;;kinasas;PLATE_193;HY-100530C;empty mol;L10;<rdkit.Chem.rdchem.Mol object at 0x7832456a4ac0>;
+IRB_146750;set_4;;FDA;PLATE_154;HY-B0593A;empty mol;B10;<rdkit.Chem.rdchem.Mol object at 0x783247eaec10>;
+IRB_140607;set_4;;kinasas;PLATE_193;HY-120940A;empty mol;M03;<rdkit.Chem.rdchem.Mol object at 0x7832452bd200>;
+IRB_140536;set_4;;kinasas;PLATE_192;HY-122858A;empty mol;K18;<rdkit.Chem.rdchem.Mol object at 0x783244c85270>;
+IRB_145880;set_4;;Natural products;PLATE_169;HY-N0148A;empty mol;C12;<rdkit.Chem.rdchem.Mol object at 0x78324815b970>;
+IRB_146751;set_4;;FDA;PLATE_154;HY-B0802;empty mol;B11;<rdkit.Chem.rdchem.Mol object at 0x783247eaec80>;
+IRB_140056;set_4;;kinasas;PLATE_190;HY-110135A;empty mol;C22;<rdkit.Chem.rdchem.Mol object at 0x78324c639cf0>;
+IRB_140047;set_4;;kinasas;PLATE_190;HY-110171A;empty mol;I21;<rdkit.Chem.rdchem.Mol object at 0x78324c639900>;
+IRB_140014;set_4;;kinasas;PLATE_190;HY-135827A;empty mol;E19;<rdkit.Chem.rdchem.Mol object at 0x78324c44ba50>;
+IRB_143623;set_4;;Immunology/Inflamation;PLATE_181;HY-B1888B;empty mol;F11;<rdkit.Chem.rdchem.Mol object at 0x783248d0be40>;
+IRB_139884;set_4;;kinasas;PLATE_190;HY-B0764A;empty mol;E09;<rdkit.Chem.rdchem.Mol object at 0x78324b96c0b0>;
+IRB_139786;set_4;;kinasas;PLATE_189;HY-15369;empty mol;H21;<rdkit.Chem.rdchem.Mol object at 0x78324af24510>;
+IRB_139606;set_4;;kinasas;PLATE_189;HY-50767C;empty mol;K07;<rdkit.Chem.rdchem.Mol object at 0x78324a415510>;
+IRB_139540;set_4;;kinasas;PLATE_188;HY-103712C;empty mol;K22;<rdkit.Chem.rdchem.Mol object at 0x78324a19e7b0>;
+IRB_139284;set_4;;kinasas;PLATE_188;HY-103019B;empty mol;A04;<rdkit.Chem.rdchem.Mol object at 0x7832497605f0>;
+IRB_139218;set_4;;kinasas;PLATE_187;HY-P3580A;empty mol;C19;<rdkit.Chem.rdchem.Mol object at 0x78324cbb3890>;
+IRB_139143;set_4;;kinasas;PLATE_187;HY-16069A;empty mol;O13;<rdkit.Chem.rdchem.Mol object at 0x78324c11c740>;
+IRB_139065;set_4;;kinasas;PLATE_187;HY-148365;empty mol;E08;<rdkit.Chem.rdchem.Mol object at 0x78324b9ba4a0>;
+IRB_146852;set_4;;FDA;PLATE_154;HY-B1496;empty mol;L15;<rdkit.Chem.rdchem.Mol object at 0x783247e66970>;
+IRB_140132;set_4;;kinasas;PLATE_191;HY-N6012;empty mol;F08;<rdkit.Chem.rdchem.Mol object at 0x78324cbe4eb0>;
+IRB_145570;set_4;;Natural products;PLATE_167;HY-N0471A;empty mol;C10;<rdkit.Chem.rdchem.Mol object at 0x7832483a0f90>;
+IRB_141629;set_4;;Ppi;PLATE_196;HY-18204A;empty mol;I03;<rdkit.Chem.rdchem.Mol object at 0x783248060820>;
+IRB_141645;set_4;;Ppi;PLATE_196;HY-B1276;empty mol;D05;<rdkit.Chem.rdchem.Mol object at 0x783248060f20>;
+IRB_143670;set_4;;Immunology/Inflamation;PLATE_181;HY-B0290A;empty mol;P14;<rdkit.Chem.rdchem.Mol object at 0x783248d34350>;
+IRB_143583;set_4;;Immunology/Inflamation;PLATE_181;HY-12752A;empty mol;M07;<rdkit.Chem.rdchem.Mol object at 0x783248dbbc80>;
+IRB_143935;set_4;;Immunology/Inflamation;PLATE_182;HY-17507B;empty mol;O19;<rdkit.Chem.rdchem.Mol object at 0x783248b84900>;
+IRB_143938;set_4;;Immunology/Inflamation;PLATE_182;HY-B0076;empty mol;B20;<rdkit.Chem.rdchem.Mol object at 0x783248b84a50>;
+IRB_144185;set_4;;Immunology/Inflamation;PLATE_184;HY-17476;empty mol;G06;<rdkit.Chem.rdchem.Mol object at 0x783248b12820>;
+IRB_143390;set_4;;Immunology/Inflamation;PLATE_180;HY-103265D;empty mol;J08;<rdkit.Chem.rdchem.Mol object at 0x783248dce6d0>;
+IRB_144345;set_4;;Immunology/Inflamation;PLATE_184;HY-N7068;empty mol;L20;<rdkit.Chem.rdchem.Mol object at 0x783248aeff20>;
+IRB_144352;set_4;;Immunology/Inflamation;PLATE_184;HY-N7074;empty mol;F21;<rdkit.Chem.rdchem.Mol object at 0x783248a92270>;
+IRB_144484;set_4;;Immunology/Inflamation;PLATE_185;HY-B1165;empty mol;J13;<rdkit.Chem.rdchem.Mol object at 0x783248abfcf0>;
+IRB_144545;set_4;;Immunology/Inflamation;PLATE_185;HY-N0182A;empty mol;B20;<rdkit.Chem.rdchem.Mol object at 0x783248a21820>;
+IRB_144843;set_4;;Natural products;PLATE_162;HY-P0163;empty mol;O14;<rdkit.Chem.rdchem.Mol object at 0x783248748c80>;
+IRB_142907;set_4;;Immunology/Inflamation;PLATE_177;HY-B0288B;empty mol;O16;<rdkit.Chem.rdchem.Mol object at 0x78324926b040>;
+IRB_142813;set_4;;Immunology/Inflamation;PLATE_177;HY-B1359;empty mol;D08;<rdkit.Chem.rdchem.Mol object at 0x7832492c3660>;
+IRB_142718;set_4;;Immunology/Inflamation;PLATE_176;HY-107589A;empty mol;M19;<rdkit.Chem.rdchem.Mol object at 0x783249308c10>;
+IRB_144900;set_4;;Natural products;PLATE_162;HY-B0542;empty mol;K19;<rdkit.Chem.rdchem.Mol object at 0x7832487755f0>;
+IRB_142623;set_4;;Immunology/Inflamation;PLATE_176;HY-112146A;empty mol;H11;<rdkit.Chem.rdchem.Mol object at 0x78324935b200>;
+IRB_144992;set_4;;Natural products;PLATE_163;HY-107802;empty mol;G09;<rdkit.Chem.rdchem.Mol object at 0x78324871beb0>;
+IRB_142571;set_4;;Immunology/Inflamation;PLATE_176;HY-B2114;empty mol;J06;<rdkit.Chem.rdchem.Mol object at 0x7832493f9ac0>;
+IRB_142540;set_4;;Immunology/Inflamation;PLATE_176;HY-P3466;empty mol;N03;<rdkit.Chem.rdchem.Mol object at 0x7832493dfcf0>;
+IRB_142514;set_4;;Immunology/Inflamation;PLATE_175;HY-131150;empty mol;N21;<rdkit.Chem.rdchem.Mol object at 0x7832493df190>;
+IRB_147614;set_4;;FDA;PLATE_158;HY-15295;empty mol;J17;<rdkit.Chem.rdchem.Mol object at 0x783247cd9c10>;
+IRB_145198;set_4;;Natural products;PLATE_164;HY-105088;empty mol;M12;<rdkit.Chem.rdchem.Mol object at 0x783248553a50>;
+IRB_145321;set_4;;Natural products;PLATE_165;HY-N0457A;empty mol;H08;<rdkit.Chem.rdchem.Mol object at 0x7832484e8120>;
+IRB_142037;set_4;;Immunology/Inflamation;PLATE_173;HY-P1099;empty mol;B10;<rdkit.Chem.rdchem.Mol object at 0x783248c20d60>;
+IRB_145493;set_4;;Natural products;PLATE_166;HY-B0394;empty mol;P15;<rdkit.Chem.rdchem.Mol object at 0x7832483fdd60>;
+IRB_141819;set_4;;Ppi;PLATE_196;HY-114162A;empty mol;H19;<rdkit.Chem.rdchem.Mol object at 0x783248539c80>;
+IRB_141812;set_4;;Ppi;PLATE_196;HY-A0003B;empty mol;N18;<rdkit.Chem.rdchem.Mol object at 0x783248539970>;
+IRB_145524;set_4;;Natural products;PLATE_166;HY-Y1297;empty mol;G21;<rdkit.Chem.rdchem.Mol object at 0x78324838fb30>;
+IRB_141662;set_4;;Ppi;PLATE_196;HY-12882A;empty mol;J06;<rdkit.Chem.rdchem.Mol object at 0x7832481fd6d0>;
+IRB_138989;set_4;;kinasas;PLATE_186;HY-148366;empty mol;B22;<rdkit.Chem.rdchem.Mol object at 0x78324b17c2e0>;
+IRB_146867;set_4;;FDA;PLATE_154;HY-A0119;empty mol;M12;<rdkit.Chem.rdchem.Mol object at 0x783247e7b040>;
+IRB_139983;set_4;;kinasas;PLATE_190;HY-103019;empty mol;N16;<rdkit.Chem.rdchem.Mol object at 0x78324c099c80>;
+IRB_146892;set_4;;FDA;PLATE_154;HY-15407A;empty mol;O17;<rdkit.Chem.rdchem.Mol object at 0x783247e7bb30>;
+IRB_137334;set_4;;Clinical;PLATE_525;HY-19485;empty mol;L21;<rdkit.Chem.rdchem.Mol object at 0x78324a388350>;
+IRB_146935;set_4;;FDA;PLATE_155;HY-10225;empty mol;C10;<rdkit.Chem.rdchem.Mol object at 0x783247e03e40>;
+IRB_137022;set_3;;kinasas;IRB195-S10C1;HY-12432A;empty mol;J06;<rdkit.Chem.rdchem.Mol object at 0x78324d7adf90>;
+IRB_146995;set_4;;FDA;PLATE_155;HY-B0590;empty mol;H15;<rdkit.Chem.rdchem.Mol object at 0x783247e2d900>;
+IRB_136999;set_3;;kinasas;IRB195-S10C1;HY-P0035;empty mol;C05;<rdkit.Chem.rdchem.Mol object at 0x78324d7ad580>;
+IRB_147016;set_4;;FDA;PLATE_155;HY-76772;empty mol;I19;<rdkit.Chem.rdchem.Mol object at 0x783247dd2270>;
+IRB_147023;set_4;;FDA;PLATE_155;HY-17398;empty mol;J10;<rdkit.Chem.rdchem.Mol object at 0x783247dd2580>;
+IRB_147056;set_4;;FDA;PLATE_155;HY-107794;empty mol;M09;<rdkit.Chem.rdchem.Mol object at 0x783247dcb430>;
+IRB_138825;set_4;;kinasas;PLATE_186;HY-13064A;empty mol;E10;<rdkit.Chem.rdchem.Mol object at 0x78324aabe9e0>;
+IRB_147130;set_4;;FDA;PLATE_156;HY-17504;empty mol;B10;<rdkit.Chem.rdchem.Mol object at 0x783247df3510>;
+IRB_147135;set_4;;FDA;PLATE_156;HY-B0314;empty mol;B17;<rdkit.Chem.rdchem.Mol object at 0x783247df3740>;
+IRB_147165;set_4;;FDA;PLATE_156;HY-P0002A;empty mol;E15;<rdkit.Chem.rdchem.Mol object at 0x783247d804a0>;
+IRB_137390;set_4;;Clinical;PLATE_526;HY-10400;empty mol;D05;<rdkit.Chem.rdchem.Mol object at 0x78324baabc10>;
+IRB_147182;set_4;;FDA;PLATE_156;HY-11101;empty mol;G07;<rdkit.Chem.rdchem.Mol object at 0x783247d80c10>;
+IRB_147219;set_4;;FDA;PLATE_156;HY-P0053;empty mol;J06;<rdkit.Chem.rdchem.Mol object at 0x783247d95c80>;
+IRB_147271;set_4;;FDA;PLATE_156;HY-B1154;empty mol;N21;<rdkit.Chem.rdchem.Mol object at 0x783247dba3c0>;
+IRB_147289;set_4;;FDA;PLATE_156;HY-B1828A;empty mol;P05;<rdkit.Chem.rdchem.Mol object at 0x783247dbaba0>;
+IRB_147364;set_4;;FDA;PLATE_157;HY-15777C;empty mol;F06;<rdkit.Chem.rdchem.Mol object at 0x783247d61cf0>;
+IRB_147374;set_4;;FDA;PLATE_157;HY-12542A;empty mol;F20;<rdkit.Chem.rdchem.Mol object at 0x783247d6f190>;
+IRB_147385;set_4;;FDA;PLATE_157;HY-15232B;empty mol;G18;<rdkit.Chem.rdchem.Mol object at 0x783247d6f660>;
+IRB_147390;set_4;;FDA;PLATE_157;HY-B0467B;empty mol;H05;<rdkit.Chem.rdchem.Mol object at 0x783247d6f890>;
+IRB_147419;set_4;;FDA;PLATE_157;HY-N0565B;empty mol;J11;<rdkit.Chem.rdchem.Mol object at 0x783247d1c580>;
+IRB_147456;set_4;;FDA;PLATE_157;HY-I0383;empty mol;M07;<rdkit.Chem.rdchem.Mol object at 0x783247d125f0>;
+IRB_147544;set_4;;FDA;PLATE_158;HY-B0875;empty mol;D12;<rdkit.Chem.rdchem.Mol object at 0x783247d3ccf0>;
+IRB_147552;set_4;;FDA;PLATE_158;HY-100490A;empty mol;D22;<rdkit.Chem.rdchem.Mol object at 0x783247cc20b0>;
+IRB_147596;set_4;;FDA;PLATE_158;HY-B0031;empty mol;I03;<rdkit.Chem.rdchem.Mol object at 0x783247cd9430>;
+IRB_147188;set_4;;FDA;PLATE_156;HY-B0436;empty mol;G21;<rdkit.Chem.rdchem.Mol object at 0x783247d80eb0>;
+IRB_137463;set_4;;Clinical;PLATE_526;HY-145723B;empty mol;M09;<rdkit.Chem.rdchem.Mol object at 0x78324986dc80>;
+IRB_143633;set_4;;Immunology/Inflamation;PLATE_181;HY-17379;empty mol;B12;<rdkit.Chem.rdchem.Mol object at 0x783248d1f2e0>;
+IRB_137566;set_4;;Clinical;PLATE_526;HY-119726;empty mol;D16;<rdkit.Chem.rdchem.Mol object at 0x78324a22da50>;
+IRB_138143;set_4;;Clinical;PLATE_528;HY-109150A;empty mol;G12;<rdkit.Chem.rdchem.Mol object at 0x7832488a1ac0>;
+IRB_137467;set_4;;Clinical;PLATE_526;HY-112038A;empty mol;A10;<rdkit.Chem.rdchem.Mol object at 0x78324986de40>;
+IRB_138129;set_4;;Clinical;PLATE_528;HY-145723C;empty mol;I11;<rdkit.Chem.rdchem.Mol object at 0x7832488a14a0>;
+IRB_138114;set_4;;Clinical;PLATE_528;HY-100401A;empty mol;J10;<rdkit.Chem.rdchem.Mol object at 0x783248109dd0>;
+IRB_146919;set_4;;FDA;PLATE_155;HY-113035A;empty mol;B03;<rdkit.Chem.rdchem.Mol object at 0x783247e03740>;
+IRB_138028;set_4;;Clinical;PLATE_528;HY-109091B;empty mol;C05;<rdkit.Chem.rdchem.Mol object at 0x7832467cb7b0>;
+IRB_137899;set_4;;Clinical;PLATE_527;HY-19867A;empty mol;B17;<rdkit.Chem.rdchem.Mol object at 0x783244beae40>;
+IRB_146906;set_4;;FDA;PLATE_154;HY-B0395C;empty mol;P22;<rdkit.Chem.rdchem.Mol object at 0x783247e03190>;
+IRB_138282;set_4;;Clinical;PLATE_528;HY-N0794;empty mol;B21;<rdkit.Chem.rdchem.Mol object at 0x78324c6e8890>;
+IRB_137843;set_4;;Clinical;PLATE_527;HY-137958;empty mol;J13;<rdkit.Chem.rdchem.Mol object at 0x78324bb26580>;
+IRB_138410;set_4;;Clinical;PLATE_529;HY-114153A;empty mol;B09;<rdkit.Chem.rdchem.Mol object at 0x783249bfe190>;
+IRB_138681;set_4;;Clinical;PLATE_530;HY-103712B;empty mol;B06;<rdkit.Chem.rdchem.Mol object at 0x78324a57e9e0>;
+IRB_146894;set_4;;FDA;PLATE_154;HY-14560C;empty mol;O20;<rdkit.Chem.rdchem.Mol object at 0x783247e7bc10>;
+IRB_137739;set_4;;Clinical;PLATE_527;HY-13217;empty mol;B07;<rdkit.Chem.rdchem.Mol object at 0x78324bfdd740>;
+IRB_138507;set_4;;Clinical;PLATE_529;HY-129040A;empty mol;C15;<rdkit.Chem.rdchem.Mol object at 0x783249f12c80>;
+IRB_143902;set_4;;Immunology/Inflamation;PLATE_182;HY-110159;atoms 19 bonds 19;L16;<rdkit.Chem.rdchem.Mol object at 0x783248befa50>;C/C(O)=C(\C#N)C(=O)Nc1ccc(C(F)(F)F)cc1
+IRB_144128;set_4;;Immunology/Inflamation;PLATE_183;HY-15405;atoms 19 bonds 19;E20;<rdkit.Chem.rdchem.Mol object at 0x783248b71eb0>;C/C(O)=C(\C#N)C(=O)Nc1ccc(C(F)(F)F)cc1
+IRB_142975;set_4;;Immunology/Inflamation;PLATE_178;HY-N6065;atoms 30 bonds 32;M03;<rdkit.Chem.rdchem.Mol object at 0x783249257e40>;C/C=C(/C)C(=O)O[C@H]1[C@@H](OC(C)=O)c2c(ccc3ccc(=O)oc23)OC1(C)C
+IRB_141690;set_4;;Ppi;PLATE_196;HY-N0081;atoms 30 bonds 32;O08;<rdkit.Chem.rdchem.Mol object at 0x7832482da350>;C/C=C(/C)C(=O)O[C@H]1[C@@H](OC(C)=O)c2c(ccc3ccc(=O)oc23)OC1(C)C
+IRB_139507;set_4;;kinasas;PLATE_188;HY-W013411A;atoms 19 bonds 20;F20;<rdkit.Chem.rdchem.Mol object at 0x783249e8f900>;C/C=C/C(=O)N1C(=O)OC[C@@H]1Cc1ccccc1
+IRB_139657;set_4;;kinasas;PLATE_189;HY-W013411;atoms 19 bonds 20;J11;<rdkit.Chem.rdchem.Mol object at 0x78324a5d8ba0>;C/C=C/C(=O)N1C(=O)OC[C@@H]1Cc1ccccc1
+IRB_145300;set_4;;Natural products;PLATE_165;HY-N0367;atoms 11 bonds 11;G05;<rdkit.Chem.rdchem.Mol object at 0x7832484cd7b0>;C/C=C/c1ccc(OC)cc1
+IRB_145997;set_4;;Natural products;PLATE_170;HY-B0900;atoms 11 bonds 11;J04;<rdkit.Chem.rdchem.Mol object at 0x7832480d7d60>;C/C=C/c1ccc(OC)cc1
+IRB_139867;set_4;;kinasas;PLATE_190;HY-139612A;atoms 38 bonds 44;M07;<rdkit.Chem.rdchem.Mol object at 0x78324b1e1900>;C=CC(=O)N1CC2(CC(n3nc(-c4ccc5c(cnn5C)c4)c(-c4c(Cl)c(C)cc5[nH]ncc45)c3C)C2)C1
+IRB_140226;set_4;;kinasas;PLATE_191;HY-139612;atoms 38 bonds 44;I15;<rdkit.Chem.rdchem.Mol object at 0x783243e2b890>;C=CC(=O)N1CC2(CC(n3nc(-c4ccc5c(cnn5C)c4)c(-c4c(Cl)c(C)cc5[nH]ncc45)c3C)C2)C1
+IRB_140387;set_4;;kinasas;PLATE_192;HY-114277;atoms 42 bonds 46;J07;<rdkit.Chem.rdchem.Mol object at 0x783244905040>;C=CC(=O)N1CCN(c2nc(=O)n(-c3c(C)ccnc3C(C)C)c3nc(-c4c(O)cccc4F)c(F)cc23)[C@@H](C)C1
+IRB_137024;set_3;;kinasas;IRB195-S10C1;HY-114277A;atoms 42 bonds 46;L06;<rdkit.Chem.rdchem.Mol object at 0x78324cde90b0>;C=CC(=O)N1CCN(c2nc(=O)n(-c3c(C)ccnc3C(C)C)c3nc(-c4c(O)cccc4F)c(F)cc23)[C@@H](C)C1
+IRB_145698;set_4;;Natural products;PLATE_168;HY-N6635;atoms 16 bonds 15;P09;<rdkit.Chem.rdchem.Mol object at 0x7832482b9890>;C=CC(C)(O)CC/C=C(\C)CCC=C(C)C
+IRB_141238;set_4;;metabolites;PLATE_198;HY-N1944;atoms 16 bonds 15;M20;<rdkit.Chem.rdchem.Mol object at 0x783247130a50>;C=CC(C)(O)CC/C=C(\C)CCC=C(C)C
+IRB_52262;set_2;K21;Diverse;PLATE_215;7999-4519;2-amino-5-{3-methoxy-4-[(prop-2-en-1-yl)oxy]phenyl}-5,8-dihydropyrido[2,3-d]pyrimidine-4,7(3H,6H)-dione;K21;<rdkit.Chem.rdchem.Mol object at 0x78324c44e510>;C=CCOc1ccc(C2CC(=O)Nc3nc(N)[nH]c(=O)c32)cc1OC
+IRB_142453;set_4;;Immunology/Inflamation;PLATE_175;HY-133529;atoms 25 bonds 27;G17;<rdkit.Chem.rdchem.Mol object at 0x783249439660>;C=CCOc1ccc(C2CC(=O)Nc3nc(N)[nH]c(=O)c32)cc1OC
+IRB_139827;set_4;;kinasas;PLATE_190;HY-B0105;atoms 37 bonds 41;J04;<rdkit.Chem.rdchem.Mol object at 0x78324b0f2740>;CC(=O)N1CCN(c2ccc(OC[C@H]3CO[C@](Cn4ccnc4)(c4ccc(Cl)cc4Cl)O3)cc2)CC1
+IRB_146808;set_4;;FDA;PLATE_154;HY-B0105A;atoms 37 bonds 41;H08;<rdkit.Chem.rdchem.Mol object at 0x783247e4d5f0>;CC(=O)N1CCN(c2ccc(OC[C@H]3CO[C@](Cn4ccnc4)(c4ccc(Cl)cc4Cl)O3)cc2)CC1
+IRB_144821;set_4;;Natural products;PLATE_162;HY-N0756A;atoms 16 bonds 17;J12;<rdkit.Chem.rdchem.Mol object at 0x7832487482e0>;CC(=O)O[C@@H]1C[C@@H]2CC[C@@]1(C)C2(C)C
+IRB_145920;set_4;;Natural products;PLATE_169;HY-N0756;atoms 16 bonds 17;H16;<rdkit.Chem.rdchem.Mol object at 0x78324816fb30>;CC(=O)O[C@@H]1C[C@@H]2CC[C@@]1(C)C2(C)C
+IRB_144866;set_4;;Natural products;PLATE_162;HY-N2623;atoms 20 bonds 22;N16;<rdkit.Chem.rdchem.Mol object at 0x78324875b6d0>;CC(C)=CCc1c2ccoc2c(O)c2oc(=O)ccc12
+IRB_93573;set_2;E03;Diverse;PLATE_345;8019-4973;9-hydroxy-4-(3-methylbut-2-en-1-yl)-7H-furo[3,2-g][1]benzopyran-7-one;E03;<rdkit.Chem.rdchem.Mol object at 0x78324740fc80>;CC(C)=CCc1c2ccoc2c(O)c2oc(=O)ccc12
+IRB_141010;set_4;;metabolites;PLATE_198;HY-75161;atoms 14 bonds 14;O05;<rdkit.Chem.rdchem.Mol object at 0x783246a3c510>;CC(C)[C@@H]1CC[C@@H](C)C[C@H]1O
+IRB_145423;set_4;;Natural products;PLATE_166;HY-Y1683;atoms 14 bonds 14;H05;<rdkit.Chem.rdchem.Mol object at 0x7832483cce40>;CC(C)[C@@H]1CC[C@@H](C)C[C@H]1O
+IRB_141658;set_4;;Ppi;PLATE_196;HY-16950;atoms 29 bonds 31;E06;<rdkit.Chem.rdchem.Mol object at 0x7832481fd510>;CC/C(=C(\c1ccc(O)cc1)c1ccc(OCCN(C)C)cc1)c1ccccc1
+IRB_137689;set_4;;Clinical;PLATE_527;HY-16950A;atoms 29 bonds 31;P03;<rdkit.Chem.rdchem.Mol object at 0x78324b8a3120>;CC/C(=C(\c1ccc(O)cc1)c1ccc(OCCN(C)C)cc1)c1ccccc1
+IRB_139224;set_4;;kinasas;PLATE_187;HY-N2208;atoms 24 bonds 26;I19;<rdkit.Chem.rdchem.Mol object at 0x78324cbb3b30>;CC1(C)C=Cc2c(ccc(C(=O)/C=C/c3ccc(O)cc3)c2O)O1
+IRB_146121;set_4;;Natural products;PLATE_170;HY-N2208A;atoms 24 bonds 26;O17;<rdkit.Chem.rdchem.Mol object at 0x7832480b34a0>;CC1(C)C=Cc2c(ccc(C(=O)/C=C/c3ccc(O)cc3)c2O)O1
+IRB_145176;set_4;;Natural products;PLATE_164;HY-B2064;atoms 16 bonds 17;E10;<rdkit.Chem.rdchem.Mol object at 0x7832485530b0>;CC1=C(C(=O)Nc2ccccc2)SCCO1
+IRB_35472;set_1;A13;Lead-like;PLATE_113;4271-0012;atoms 16 bonds 17;;<rdkit.Chem.rdchem.Mol object at 0x78324a3d6200>;CC1=C(C(=O)Nc2ccccc2)SCCO1
+IRB_147304;set_4;;FDA;PLATE_157;HY-B0099;atoms 13 bonds 14;A09;<rdkit.Chem.rdchem.Mol object at 0x783247d48270>;CC1=NN(c2ccccc2)C(=O)C1
+IRB_134373;set_2;A13;Fragment;PLATE_472;0804-0056;5-methyl-2-phenyl-2,4-dihydro-3H-pyrazol-3-one;A13;<rdkit.Chem.rdchem.Mol object at 0x78324410aba0>;CC1=NN(c2ccccc2)C(=O)C1
+IRB_98034;set_2;E22;Diverse;PLATE_358;H027-5021;rel-(3R,4R,5S)-4-acetamido-5-amino-3-[(pentan-3-yl)oxy]cyclohex-1-ene-1-carboxylic acid;E22;<rdkit.Chem.rdchem.Mol object at 0x783246eb5270>;CCC(CC)O[C@@H]1C=C(C(=O)O)C[C@H](N)[C@H]1NC(C)=O
+IRB_146785;set_4;;FDA;PLATE_154;HY-13318;atoms 23 bonds 23;E13;<rdkit.Chem.rdchem.Mol object at 0x783247e41ba0>;CCC(CC)O[C@@H]1C=C(C(=O)O)C[C@H](N)[C@H]1NC(C)=O
+IRB_147532;set_4;;FDA;PLATE_158;HY-11063;atoms 22 bonds 22;C12;<rdkit.Chem.rdchem.Mol object at 0x783247d3c7b0>;CCCCCCCCc1ccc(CCC(N)(CO)CO)cc1
+IRB_137016;set_3;;kinasas;IRB195-S10C1;HY-11063;atoms 22 bonds 22;D06;<rdkit.Chem.rdchem.Mol object at 0x78324d7adcf0>;CCCCCCCCc1ccc(CCC(N)(CO)CO)cc1
+IRB_47738;set_2;D18;Diverse;PLATE_201;0700-1608;butyl 4-aminobenzoate;D18;<rdkit.Chem.rdchem.Mol object at 0x78324a111660>;CCCCOC(=O)c1ccc(N)cc1
+IRB_147451;set_4;;FDA;PLATE_157;HY-B1430;atoms 14 bonds 14;L22;<rdkit.Chem.rdchem.Mol object at 0x783247d123c0>;CCCCOC(=O)c1ccc(N)cc1
+IRB_135221;set_2;F06;Fragment;PLATE_475;Z606-8028;N,N-diethyl-5-methyl[1,2,4]triazolo[1,5-a]pyrimidin-7-amine;F06;<rdkit.Chem.rdchem.Mol object at 0x783244016cf0>;CCN(CC)c1cc(C)nc2ncnn12
+IRB_146460;set_4;;FDA;PLATE_152;HY-B1016;atoms 15 bonds 16;J13;<rdkit.Chem.rdchem.Mol object at 0x783247fa2b30>;CCN(CC)c1cc(C)nc2ncnn12
+IRB_131141;set_2;H11;Diverse;PLATE_462;Y030-3450;2-ethoxybenzamide;H11;<rdkit.Chem.rdchem.Mol object at 0x783244505d60>;CCOc1ccccc1C(N)=O
+IRB_146841;set_4;;FDA;PLATE_154;HY-B1428;atoms 12 bonds 12;K11;<rdkit.Chem.rdchem.Mol object at 0x783247e664a0>;CCOc1ccccc1C(N)=O
+IRB_143759;set_4;;Immunology/Inflamation;PLATE_181;HY-111226A;atoms 31 bonds 33;J22;<rdkit.Chem.rdchem.Mol object at 0x783248c62ac0>;CN(C)CCOc1ccc(/C(=C(/CCCO)c2ccccc2)c2ccc(O)cc2)cc1
+IRB_143469;set_4;;Immunology/Inflamation;PLATE_180;HY-111226;atoms 31 bonds 33;L16;<rdkit.Chem.rdchem.Mol object at 0x783248dff9e0>;CN(C)CCOc1ccc(/C(=C(/CCCO)c2ccccc2)c2ccc(O)cc2)cc1
+IRB_145469;set_4;;Natural products;PLATE_166;HY-N1434;atoms 13 bonds 13;O12;<rdkit.Chem.rdchem.Mol object at 0x7832483fd2e0>;COC(=O)/C=C/c1ccc(O)cc1
+IRB_145466;set_4;;Natural products;PLATE_166;HY-N2492;atoms 13 bonds 13;C12;<rdkit.Chem.rdchem.Mol object at 0x7832483fd190>;COC(=O)/C=C/c1ccc(O)cc1
+IRB_47489;set_2;A03;Diverse;PLATE_201;000A-0027;methyl [6-(thiophene-2-carbonyl)-1H-benzimidazol-2-yl]carbamate;A03;<rdkit.Chem.rdchem.Mol object at 0x78324cdb4580>;COC(=O)Nc1nc2ccc(C(=O)c3cccs3)cc2[nH]1
+IRB_140512;set_4;;kinasas;PLATE_192;HY-13520;atoms 21 bonds 23;P16;<rdkit.Chem.rdchem.Mol object at 0x783244b507b0>;COC(=O)Nc1nc2ccc(C(=O)c3cccs3)cc2[nH]1
+IRB_77210;set_2;B20;Diverse;PLATE_293;N008-0010;4-methoxy-7H-furo[3,2-g][1]benzopyran-7-one;B20;<rdkit.Chem.rdchem.Mol object at 0x7832488fdac0>;COc1c2ccoc2cc2oc(=O)ccc12
+IRB_138687;set_4;;Clinical;PLATE_530;HY-N0370;atoms 16 bonds 18;H06;<rdkit.Chem.rdchem.Mol object at 0x78324a57ec80>;COc1c2ccoc2cc2oc(=O)ccc12
+IRB_145804;set_4;;Natural products;PLATE_169;HY-N0060B;atoms 14 bonds 14;H03;<rdkit.Chem.rdchem.Mol object at 0x7832481b47b0>;COc1cc(/C=C/C(=O)O)ccc1O
+IRB_140686;set_4;;kinasas;PLATE_193;HY-N0060;atoms 14 bonds 14;I09;<rdkit.Chem.rdchem.Mol object at 0x7832456a4510>;COc1cc(/C=C/C(=O)O)ccc1O
+IRB_78858;set_2;J03;Diverse;PLATE_299;R092-0031;3,4,5-trimethoxybenzoic acid;J03;<rdkit.Chem.rdchem.Mol object at 0x783248691c80>;COc1cc(C(=O)O)cc(OC)c1OC
+IRB_145112;set_4;;Natural products;PLATE_164;HY-Y0084;atoms 15 bonds 15;B03;<rdkit.Chem.rdchem.Mol object at 0x7832485ae430>;COc1cc(C(=O)O)cc(OC)c1OC
+IRB_145704;set_4;;Natural products;PLATE_168;HY-W009713;atoms 16 bonds 16;H10;<rdkit.Chem.rdchem.Mol object at 0x7832482b9b30>;COc1cc(CC(=O)O)cc(OC)c1OC
+IRB_47508;set_2;I04;Diverse;PLATE_201;0242-1181;(3,4,5-trimethoxyphenyl)acetic acid;I04;<rdkit.Chem.rdchem.Mol object at 0x783249711120>;COc1cc(CC(=O)O)cc(OC)c1OC
+IRB_145299;set_4;;Natural products;PLATE_165;HY-10448;atoms 22 bonds 22;D05;<rdkit.Chem.rdchem.Mol object at 0x7832484cd740>;COc1cc(CNC(=O)CCCC/C=C/C(C)C)ccc1O
+IRB_142262;set_4;;Immunology/Inflamation;PLATE_174;HY-10448A;atoms 22 bonds 22;N16;<rdkit.Chem.rdchem.Mol object at 0x783244050190>;COc1cc(CNC(=O)CCCC/C=C/C(C)C)ccc1O
+IRB_142048;set_4;;Immunology/Inflamation;PLATE_173;HY-14592;atoms 20 bonds 22;C11;<rdkit.Chem.rdchem.Mol object at 0x783248d4b270>;COc1cc(O)c2c(=O)cc(-c3ccccc3)oc2c1
+IRB_107868;set_2;J16;Diverse;PLATE_389;Y043-7228;5-hydroxy-7-methoxy-2-phenyl-4H-1-benzopyran-4-one;J16;<rdkit.Chem.rdchem.Mol object at 0x78324621f7b0>;COc1cc(O)c2c(=O)cc(-c3ccccc3)oc2c1
+IRB_146151;set_4;;Natural products;PLATE_170;HY-N1378;atoms 20 bonds 21;K20;<rdkit.Chem.rdchem.Mol object at 0x78324801e200>;COc1cc(O)cc(O)c1C(=O)/C=C/c1ccccc1
+IRB_140076;set_4;;kinasas;PLATE_191;HY-N0279;atoms 20 bonds 21;N03;<rdkit.Chem.rdchem.Mol object at 0x78324c7b75f0>;COc1cc(O)cc(O)c1C(=O)/C=C/c1ccccc1
+IRB_143728;set_4;;Immunology/Inflamation;PLATE_181;HY-B0195;atoms 24 bonds 25;J19;<rdkit.Chem.rdchem.Mol object at 0x783248c47cf0>;COc1ccc(/C=C/C(=O)Nc2ccccc2C(=O)O)cc1OC
+IRB_143801;set_4;;Immunology/Inflamation;PLATE_182;HY-18706;atoms 24 bonds 25;M06;<rdkit.Chem.rdchem.Mol object at 0x783248c76d60>;COc1ccc(/C=C/C(=O)Nc2ccccc2C(=O)O)cc1OC
+IRB_145755;set_4;;Natural products;PLATE_168;HY-W068771;atoms 13 bonds 13;A17;<rdkit.Chem.rdchem.Mol object at 0x78324819a200>;COc1ccc(/C=C/C(=O)O)cc1
+IRB_141592;set_4;;metabolites;PLATE_200;HY-N1387;atoms 13 bonds 13;D06;<rdkit.Chem.rdchem.Mol object at 0x783247ef87b0>;COc1ccc(/C=C/C(=O)O)cc1
+IRB_145748;set_4;;Natural products;PLATE_168;HY-N0761;atoms 14 bonds 14;C16;<rdkit.Chem.rdchem.Mol object at 0x783248185eb0>;COc1ccc(/C=C/C(=O)O)cc1O
+IRB_144568;set_4;;Immunology/Inflamation;PLATE_185;HY-N0761A;atoms 14 bonds 14;D22;<rdkit.Chem.rdchem.Mol object at 0x783248a3e270>;COc1ccc(/C=C/C(=O)O)cc1O
+IRB_142233;set_4;;Immunology/Inflamation;PLATE_174;HY-N1778;atoms 15 bonds 15;K13;<rdkit.Chem.rdchem.Mol object at 0x78324bb4b4a0>;COc1ccc(/C=C/C(=O)O)cc1OC
+IRB_143139;set_4;;Immunology/Inflamation;PLATE_178;HY-N1778A;atoms 15 bonds 15;I21;<rdkit.Chem.rdchem.Mol object at 0x783248e41740>;COc1ccc(/C=C/C(=O)O)cc1OC
+IRB_144855;set_4;;Natural products;PLATE_162;HY-N7516;atoms 21 bonds 22;O15;<rdkit.Chem.rdchem.Mol object at 0x78324875b200>;COc1ccc(/C=C/C(=O)c2ccc(O)cc2)c(OC)c1
+IRB_113767;set_2;O05;Diverse;PLATE_408;Y510-2523;3-(2,4-dimethoxyphenyl)-1-(4-hydroxyphenyl)prop-2-en-1-one;O05;<rdkit.Chem.rdchem.Mol object at 0x783245a86190>;COc1ccc(/C=C/C(=O)c2ccc(O)cc2)c(OC)c1
+IRB_139723;set_4;;kinasas;PLATE_189;HY-W412264;atoms 16 bonds 17;J16;<rdkit.Chem.rdchem.Mol object at 0x78324aae1900>;COc1ccc(/C=C2\SC(=O)NC2=O)cc1
+IRB_114127;set_2;L07;Diverse;PLATE_409;2189-1018;;L07;<rdkit.Chem.rdchem.Mol object at 0x783245a71b30>;COc1ccc(/C=C2\SC(=O)NC2=O)cc1
+IRB_143150;set_4;;Immunology/Inflamation;PLATE_178;HY-N2007;atoms 13 bonds 13;I22;<rdkit.Chem.rdchem.Mol object at 0x783248e41c10>;COc1ccc(C(=O)O)cc1OC
+IRB_78859;set_2;P03;Diverse;PLATE_299;R094-0015;3,4-dimethoxybenzoic acid;P03;<rdkit.Chem.rdchem.Mol object at 0x783248691cf0>;COc1ccc(C(=O)O)cc1OC
+IRB_144627;set_4;;Natural products;PLATE_161;HY-W001213;atoms 10 bonds 10;E07;<rdkit.Chem.rdchem.Mol object at 0x78324898ac80>;COc1ccc(O)c(N)c1
+IRB_92381;set_2;L08;Diverse;PLATE_341;8017-6160;2-amino-4-methoxyphenol;L08;<rdkit.Chem.rdchem.Mol object at 0x783247590f90>;COc1ccc(O)c(N)c1
+IRB_29802;set_1;K05;Singletons;PLATE_094;1481-0002;atoms 19 bonds 21;;<rdkit.Chem.rdchem.Mol object at 0x78324aa369e0>;COc1ccc2c(OC)c3ccoc3nc2c1OC
+IRB_142600;set_4;;Immunology/Inflamation;PLATE_176;HY-N2081;atoms 19 bonds 21;C09;<rdkit.Chem.rdchem.Mol object at 0x7832493457b0>;COc1ccc2c(OC)c3ccoc3nc2c1OC
+IRB_70965;set_2;B10;Diverse;PLATE_274;H027-2001;[1-(4-chlorobenzoyl)-5-methoxy-2-methyl-1H-indol-3-yl]acetic acid;B10;<rdkit.Chem.rdchem.Mol object at 0x7832492e0190>;COc1ccc2c(c1)c(CC(=O)O)c(C)n2C(=O)c1ccc(Cl)cc1
+IRB_143535;set_4;;Immunology/Inflamation;PLATE_181;HY-14397;atoms 25 bonds 27;C04;<rdkit.Chem.rdchem.Mol object at 0x783248da0740>;COc1ccc2c(c1)c(CC(=O)O)c(C)n2C(=O)c1ccc(Cl)cc1
+IRB_144971;set_4;;Natural products;PLATE_163;HY-77995;atoms 10 bonds 10;M06;<rdkit.Chem.rdchem.Mol object at 0x78324871b580>;COc1ccccc1C=O
+IRB_135519;set_2;E04;Covalent;PLATE_476;3327-0129;2-methoxybenzaldehyde;E04;<rdkit.Chem.rdchem.Mol object at 0x783243ff9190>;COc1ccccc1C=O
+IRB_139463;set_4;;kinasas;PLATE_188;HY-10517A;atoms 23 bonds 25;C17;<rdkit.Chem.rdchem.Mol object at 0x783249e73580>;Cc1[nH]c(/C=C2\C(=O)Nc3ccccc32)c(C)c1CCC(=O)O
+IRB_138166;set_4;;Clinical;PLATE_528;HY-10517;atoms 23 bonds 25;N13;<rdkit.Chem.rdchem.Mol object at 0x7832492b1510>;Cc1[nH]c(/C=C2\C(=O)Nc3ccccc32)c(C)c1CCC(=O)O
+IRB_141976;set_4;;Immunology/Inflamation;PLATE_173;HY-N0683A;atoms 33 bonds 34;B03;<rdkit.Chem.rdchem.Mol object at 0x783248a76270>;Cc1c(C)c2c(c(C)c1O)CC[C@@](C)(CCC[C@H](C)CCC[C@H](C)CCCC(C)C)O2
+IRB_143489;set_4;;Immunology/Inflamation;PLATE_180;HY-N0683;atoms 33 bonds 34;K18;<rdkit.Chem.rdchem.Mol object at 0x783248d902e0>;Cc1c(C)c2c(c(C)c1O)CC[C@@](C)(CCC[C@H](C)CCC[C@H](C)CCCC(C)C)O2
+IRB_85196;set_2;M19;Diverse;PLATE_318;Y040-6802;5,7-dihydroxy-4-methyl-2H-1-benzopyran-2-one;M19;<rdkit.Chem.rdchem.Mol object at 0x783247e9a350>;Cc1cc(=O)oc2cc(O)cc(O)c12
+IRB_145935;set_4;;Natural products;PLATE_169;HY-N4102;atoms 14 bonds 15;C18;<rdkit.Chem.rdchem.Mol object at 0x7832480c0200>;Cc1cc(=O)oc2cc(O)cc(O)c12
+IRB_141820;set_4;;Ppi;PLATE_196;HY-108608;atoms 23 bonds 24;I19;<rdkit.Chem.rdchem.Mol object at 0x783248539cf0>;Cc1cc(C)c(S(=O)(=O)Nc2ccccc2C(F)(F)F)c(C)c1
+IRB_29906;set_1;C12;Singletons;PLATE_094;1763-0664;atoms 23 bonds 24;;<rdkit.Chem.rdchem.Mol object at 0x78324a9d4820>;Cc1cc(C)c(S(=O)(=O)Nc2ccccc2C(F)(F)F)c(C)c1
+IRB_146966;set_4;;FDA;PLATE_155;HY-B0322;atoms 17 bonds 18;E19;<rdkit.Chem.rdchem.Mol object at 0x783247e13c10>;Cc1cc(NS(=O)(=O)c2ccc(N)cc2)no1
+IRB_49634;set_2;L17;Diverse;PLATE_207;3731-0084;4-amino-N-(5-methyl-1,2-oxazol-3-yl)benzene-1-sulfonamide;L17;<rdkit.Chem.rdchem.Mol object at 0x78324ca4a430>;Cc1cc(NS(=O)(=O)c2ccc(N)cc2)no1
+IRB_145154;set_4;;Natural products;PLATE_164;HY-113068;atoms 32 bonds 33;G07;<rdkit.Chem.rdchem.Mol object at 0x7832485546d0>;Cc1cc(O)c(C)c2c1O[C@](C)(CCC[C@H](C)CCC[C@H](C)CCCC(C)C)CC2
+IRB_144913;set_4;;Natural products;PLATE_162;HY-133680;atoms 32 bonds 33;K20;<rdkit.Chem.rdchem.Mol object at 0x783248775ba0>;Cc1cc(O)c(C)c2c1O[C@](C)(CCC[C@H](C)CCC[C@H](C)CCCC(C)C)CC2
+IRB_143592;set_4;;Immunology/Inflamation;PLATE_181;HY-123352;atoms 34 bonds 37;J08;<rdkit.Chem.rdchem.Mol object at 0x783248d0b0b0>;Cc1noc(=O)c2ccc(NC(=O)C(O)(CC(C)(C)c3cccc4c3OCC4)C(F)(F)F)cc12
+IRB_143513;set_4;;Immunology/Inflamation;PLATE_180;HY-123352A;atoms 34 bonds 37;A22;<rdkit.Chem.rdchem.Mol object at 0x783248d90d60>;Cc1noc(=O)c2ccc(NC(=O)C(O)(CC(C)(C)c3cccc4c3OCC4)C(F)(F)F)cc12
+IRB_30250;set_1;K13;Singletons;PLATE_095;3039-0505;atoms 17 bonds 18;;<rdkit.Chem.rdchem.Mol object at 0x78324a9b7120>;Cn1c(=O)c2c(ncn2CC(=O)O)n(C)c1=O
+IRB_145652;set_4;;Natural products;PLATE_168;HY-B1505;atoms 17 bonds 18;I03;<rdkit.Chem.rdchem.Mol object at 0x7832482a3430>;Cn1c(=O)c2c(ncn2CC(=O)O)n(C)c1=O
+IRB_140853;set_4;;kinasas;PLATE_193;HY-107459;atoms 22 bonds 23;D22;<rdkit.Chem.rdchem.Mol object at 0x783246009f20>;N#C/C(=C\c1ccc(O)c(O)c1)C(=O)NCc1ccccc1
+IRB_138974;set_4;;kinasas;PLATE_186;HY-12000;atoms 22 bonds 23;P20;<rdkit.Chem.rdchem.Mol object at 0x78324afb4c10>;N#C/C(=C\c1ccc(O)c(O)c1)C(=O)NCc1ccccc1
+IRB_90609;set_2;M18;Diverse;PLATE_335;8013-1502;6-chloro-2,3,4,9-tetrahydro-1H-carbazole-1-carboxamide;M18;<rdkit.Chem.rdchem.Mol object at 0x7832477dc7b0>;NC(=O)C1CCCc2c1[nH]c1ccc(Cl)cc21
+IRB_138663;set_4;;Clinical;PLATE_530;HY-15452;atoms 17 bonds 19;P04;<rdkit.Chem.rdchem.Mol object at 0x78324a57e200>;NC(=O)C1CCCc2c1[nH]c1ccc(Cl)cc21
+IRB_47564;set_2;I07;Diverse;PLATE_201;0083-0060;N-(2,5-dioxoimidazolidin-4-yl)urea;I07;<rdkit.Chem.rdchem.Mol object at 0x78324d935190>;NC(=O)NC1NC(=O)NC1=O
+IRB_141532;set_4;;metabolites;PLATE_199;HY-N0543;atoms 11 bonds 11;O21;<rdkit.Chem.rdchem.Mol object at 0x783247a16cf0>;NC(=O)NC1NC(=O)NC1=O
+IRB_24438;set_1;G10;CNS;PLATE_077;C066-2825;atoms 15 bonds 17;;<rdkit.Chem.rdchem.Mol object at 0x78324afef9e0>;Nc1c2c(nc3ccccc13)CCCC2
+IRB_141766;set_4;;Ppi;PLATE_196;HY-111338;atoms 15 bonds 17;P14;<rdkit.Chem.rdchem.Mol object at 0x783248407510>;Nc1c2c(nc3ccccc13)CCCC2
+IRB_143937;set_4;;Immunology/Inflamation;PLATE_182;HY-B0212;atoms 17 bonds 18;A20;<rdkit.Chem.rdchem.Mol object at 0x783248b849e0>;Nc1ccc(S(=O)(=O)Nc2ccccn2)cc1
+IRB_30234;set_1;K12;Singletons;PLATE_095;3278-0012;atoms 17 bonds 18;;<rdkit.Chem.rdchem.Mol object at 0x78324a9ac9e0>;Nc1ccc(S(=O)(=O)Nc2ccccn2)cc1
+IRB_144893;set_4;;Natural products;PLATE_162;HY-N0459;atoms 40 bonds 42;P18;<rdkit.Chem.rdchem.Mol object at 0x7832487752e0>;O=C(/C=C/c1ccc(O)c(O)c1)O[C@@H]1C[C@](O)(C(=O)O)C[C@@H](OC(=O)/C=C/c2ccc(O)c(O)c2)[C@H]1O
+IRB_142044;set_4;;Immunology/Inflamation;PLATE_173;HY-N0056;atoms 40 bonds 42;L10;<rdkit.Chem.rdchem.Mol object at 0x783248d4b0b0>;O=C(/C=C/c1ccc(O)c(O)c1)O[C@@H]1C[C@](O)(C(=O)O)C[C@@H](OC(=O)/C=C/c2ccc(O)c(O)c2)[C@H]1O
+IRB_145284;set_4;;Natural products;PLATE_165;HY-N0007;atoms 23 bonds 24;G03;<rdkit.Chem.rdchem.Mol object at 0x7832484cd0b0>;O=C(/C=C/c1ccc(O)cc1)CC(=O)/C=C/c1ccc(O)cc1
+IRB_144140;set_4;;Immunology/Inflamation;PLATE_183;HY-N0007A;atoms 23 bonds 24;N21;<rdkit.Chem.rdchem.Mol object at 0x783248b19430>;O=C(/C=C/c1ccc(O)cc1)CC(=O)/C=C/c1ccc(O)cc1
+IRB_143297;set_4;;Immunology/Inflamation;PLATE_179;HY-Y0598;atoms 16 bonds 17;N17;<rdkit.Chem.rdchem.Mol object at 0x783248e0dd60>;O=C(/C=C/c1ccccc1)c1ccccc1
+IRB_143387;set_4;;Immunology/Inflamation;PLATE_180;HY-121054;atoms 16 bonds 17;G08;<rdkit.Chem.rdchem.Mol object at 0x783248dce580>;O=C(/C=C/c1ccccc1)c1ccccc1
+IRB_105191;set_2;I09;Diverse;PLATE_381;Y021-4858;1-{4-[(2H-1,3-benzodioxol-5-yl)methyl]piperazin-1-yl}-2-(4-chlorophenoxy)ethan-1-one;I09;<rdkit.Chem.rdchem.Mol object at 0x783246543a50>;O=C(COc1ccc(Cl)cc1)N1CCN(Cc2ccc3c(c2)OCO3)CC1
+IRB_147227;set_4;;FDA;PLATE_156;HY-B1124;atoms 27 bonds 30;J20;<rdkit.Chem.rdchem.Mol object at 0x783247dae040>;O=C(COc1ccc(Cl)cc1)N1CCN(Cc2ccc3c(c2)OCO3)CC1
+IRB_48179;set_2;D06;Diverse;PLATE_203;1763-0549;N-(4-iodophenyl)-5-nitrofuran-2-carboxamide;D06;<rdkit.Chem.rdchem.Mol object at 0x78324c58c200>;O=C(Nc1ccc(I)cc1)c1ccc([N+](=O)[O-])o1
+IRB_142178;set_4;;Immunology/Inflamation;PLATE_173;HY-112906;atoms 18 bonds 19;N21;<rdkit.Chem.rdchem.Mol object at 0x783249388c10>;O=C(Nc1ccc(I)cc1)c1ccc([N+](=O)[O-])o1
+IRB_141856;set_4;;Ppi;PLATE_197;HY-19831;atoms 29 bonds 31;A03;<rdkit.Chem.rdchem.Mol object at 0x7832485e2cf0>;O=C(O)/C(Cc1ccccc1[N+](=O)[O-])=N/Nc1nc(-c2ccc(Cl)c(Cl)c2)cs1
+IRB_141879;set_4;;Ppi;PLATE_197;HY-19831A;atoms 29 bonds 31;B05;<rdkit.Chem.rdchem.Mol object at 0x7832486e7740>;O=C(O)/C(Cc1ccccc1[N+](=O)[O-])=N/Nc1nc(-c2ccc(Cl)c(Cl)c2)cs1
+IRB_141145;set_4;;metabolites;PLATE_198;HY-N0351;atoms 12 bonds 12;L14;<rdkit.Chem.rdchem.Mol object at 0x783246e31120>;O=C(O)/C=C/c1ccc(O)cc1
+IRB_141546;set_4;;metabolites;PLATE_199;HY-N2391;atoms 12 bonds 12;O22;<rdkit.Chem.rdchem.Mol object at 0x783247a89350>;O=C(O)/C=C/c1ccc(O)cc1
+IRB_144833;set_4;;Natural products;PLATE_162;HY-W009993;atoms 14 bonds 15;N13;<rdkit.Chem.rdchem.Mol object at 0x783248748820>;O=C(O)/C=C/c1ccc2c(c1)OCO2
+IRB_145293;set_4;;Natural products;PLATE_165;HY-W068783;atoms 14 bonds 15;G04;<rdkit.Chem.rdchem.Mol object at 0x7832484cd4a0>;O=C(O)/C=C/c1ccc2c(c1)OCO2
+IRB_143542;set_4;;Immunology/Inflamation;PLATE_181;HY-113357;atoms 12 bonds 12;L04;<rdkit.Chem.rdchem.Mol object at 0x783248da0a50>;O=C(O)/C=C/c1cccc(O)c1
+IRB_141609;set_4;;metabolites;PLATE_200;HY-N7127;atoms 14 bonds 14;H07;<rdkit.Chem.rdchem.Mol object at 0x783247ef8f20>;O=C(O)/C=C/c1cccc(O)c1
+IRB_141548;set_4;;metabolites;PLATE_200;HY-N0610;atoms 11 bonds 11;A03;<rdkit.Chem.rdchem.Mol object at 0x783247a89430>;O=C(O)/C=C/c1ccccc1
+IRB_141309;set_4;;metabolites;PLATE_199;HY-N0610A;atoms 11 bonds 11;H05;<rdkit.Chem.rdchem.Mol object at 0x7832472c99e0>;O=C(O)/C=C/c1ccccc1
+IRB_143360;set_4;;Immunology/Inflamation;PLATE_180;HY-113008B;atoms 10 bonds 10;D05;<rdkit.Chem.rdchem.Mol object at 0x783248e3c970>;O=C(O)/C=C/c1cnc[nH]1
+IRB_141562;set_4;;metabolites;PLATE_200;HY-113008;atoms 10 bonds 10;A04;<rdkit.Chem.rdchem.Mol object at 0x783247a89a50>;O=C(O)/C=C/c1cnc[nH]1
+IRB_85480;set_2;F17;Diverse;PLATE_319;Y043-8167;({[2-(2,6-dichloroanilino)phenyl]acetyl}oxy)acetic acid;F17;<rdkit.Chem.rdchem.Mol object at 0x783247e75510>;O=C(O)COC(=O)Cc1ccccc1Nc1c(Cl)cccc1Cl
+IRB_144307;set_4;;Immunology/Inflamation;PLATE_184;HY-B0634;atoms 23 bonds 24;G17;<rdkit.Chem.rdchem.Mol object at 0x783248ad1e40>;O=C(O)COC(=O)Cc1ccccc1Nc1c(Cl)cccc1Cl
+IRB_138710;set_4;;Clinical;PLATE_530;HY-W011890;atoms 19 bonds 21;O07;<rdkit.Chem.rdchem.Mol object at 0x78324a6ca6d0>;O=C(O)Cn1c2ccccc2c(=O)c2ccccc21
+IRB_114049;set_2;A03;Diverse;PLATE_409;000A-0059;(9-oxoacridin-10(9H)-yl)acetic acid;A03;<rdkit.Chem.rdchem.Mol object at 0x783245a620b0>;O=C(O)Cn1c2ccccc2c(=O)c2ccccc21
+IRB_142992;set_4;;Immunology/Inflamation;PLATE_178;HY-15701;atoms 29 bonds 32;K05;<rdkit.Chem.rdchem.Mol object at 0x7832492705f0>;O=C(O)c1ccc(-c2ccc(/C=C3\SC(=S)N(Cc4ccccc4)C3=O)o2)cc1
+IRB_142708;set_4;;Immunology/Inflamation;PLATE_176;HY-15701A;atoms 29 bonds 32;P18;<rdkit.Chem.rdchem.Mol object at 0x7832493087b0>;O=C(O)c1ccc(-c2ccc(/C=C3\SC(=S)N(Cc4ccccc4)C3=O)o2)cc1
+IRB_144501;set_4;;Immunology/Inflamation;PLATE_185;HY-N0609;atoms 10 bonds 10;D15;<rdkit.Chem.rdchem.Mol object at 0x783248a0f4a0>;O=C/C=C/c1ccccc1
+IRB_145580;set_4;;Natural products;PLATE_167;HY-W019711;atoms 10 bonds 10;C12;<rdkit.Chem.rdchem.Mol object at 0x7832483b9430>;O=C/C=C/c1ccccc1
+IRB_140653;set_4;;kinasas;PLATE_193;HY-126144;atoms 17 bonds 19;B07;<rdkit.Chem.rdchem.Mol object at 0x783245564660>;O=C1Nc2ccccc2/C1=C/c1ccccn1
+IRB_140834;set_4;;kinasas;PLATE_193;HY-126144A;atoms 17 bonds 19;P20;<rdkit.Chem.rdchem.Mol object at 0x7832460096d0>;O=C1Nc2ccccc2/C1=C/c1ccccn1
+IRB_138994;set_4;;kinasas;PLATE_186;HY-19807;atoms 21 bonds 24;I22;<rdkit.Chem.rdchem.Mol object at 0x78324b17c510>;O=C1Nc2ccccc2/C1=C1\Nc2ccccc2\C1=N/O
+IRB_140841;set_4;;kinasas;PLATE_193;HY-139254;atoms 21 bonds 24;G21;<rdkit.Chem.rdchem.Mol object at 0x7832460099e0>;O=C1Nc2ccccc2/C1=C1\Nc2ccccc2\C1=N/O
+IRB_142067;set_4;;Immunology/Inflamation;PLATE_173;HY-B0166GL;atoms 14 bonds 14;E13;<rdkit.Chem.rdchem.Mol object at 0x783248d4bac0>;O=C1O[C@H]([C@@H](O)CO)C(O)=C1O
+IRB_140985;set_4;;metabolites;PLATE_198;HY-B0166;atoms 14 bonds 14;B04;<rdkit.Chem.rdchem.Mol object at 0x7832468e79e0>;O=C1O[C@H]([C@@H](O)CO)C(O)=C1O
+IRB_141282;set_4;;metabolites;PLATE_199;HY-N0059;atoms 13 bonds 12;L03;<rdkit.Chem.rdchem.Mol object at 0x78324719ddd0>;O=C[C@@H](O)[C@H](O)[C@H](O)CO
+IRB_141228;set_4;;metabolites;PLATE_198;HY-N2353;atoms 13 bonds 12;B20;<rdkit.Chem.rdchem.Mol object at 0x7832471305f0>;O=C[C@@H](O)[C@H](O)[C@H](O)CO
+IRB_147276;set_4;;FDA;PLATE_156;HY-B1070;atoms 13 bonds 12;O08;<rdkit.Chem.rdchem.Mol object at 0x783247dba5f0>;O=C[C@H](O)[C@@H](O)[C@H](O)CO
+IRB_141172;set_4;;metabolites;PLATE_198;HY-N0537;atoms 13 bonds 12;G16;<rdkit.Chem.rdchem.Mol object at 0x783246e31cf0>;O=C[C@H](O)[C@@H](O)[C@H](O)CO
+IRB_141215;set_4;;metabolites;PLATE_198;HY-W007539;atoms 10 bonds 10;D19;<rdkit.Chem.rdchem.Mol object at 0x783247130040>;O=Cc1ccc(O)cc1O
+IRB_135404;set_2;C17;Covalent;PLATE_475;0402-0094;2,4-dihydroxybenzaldehyde;C17;<rdkit.Chem.rdchem.Mol object at 0x783243fd3350>;O=Cc1ccc(O)cc1O
+IRB_136684;set_2;C17;Covalent;PLATE_479;8018-8700;1-[(4-chlorophenyl)methyl]-1H-indole-3-carbaldehyde;C17;<rdkit.Chem.rdchem.Mol object at 0x783243e710b0>;O=Cc1cn(Cc2ccc(Cl)cc2)c2ccccc12
+IRB_140314;set_4;;kinasas;PLATE_191;HY-16662;atoms 19 bonds 21;A22;<rdkit.Chem.rdchem.Mol object at 0x783243f1bf90>;O=Cc1cn(Cc2ccc(Cl)cc2)c2ccccc12
+IRB_33482;set_1;K05;Antiviral;PLATE_106;8209-0032;atoms 23 bonds 26;;<rdkit.Chem.rdchem.Mol object at 0x78324a62bd60>;O=S1(=O)N=C(Nc2ccccc2N2CCCC2)c2ccccc21
+IRB_142124;set_4;;Immunology/Inflamation;PLATE_173;HY-111547;atoms 23 bonds 26;A18;<rdkit.Chem.rdchem.Mol object at 0x783248fa5430>;O=S1(=O)N=C(Nc2ccccc2N2CCCC2)c2ccccc21
+IRB_135304;set_2;K11;Covalent;PLATE_475;0168-0391;1,3,5-tris[(oxiran-2-yl)methyl]-1,3,5-triazinane-2,4,6-trione;K11;<rdkit.Chem.rdchem.Mol object at 0x783244032a50>;O=c1n(CC2CO2)c(=O)n(CC2CO2)c(=O)n1CC1CO1
+IRB_143493;set_4;;Immunology/Inflamation;PLATE_180;HY-W011434;atoms 21 bonds 24;D19;<rdkit.Chem.rdchem.Mol object at 0x783248d904a0>;O=c1n(CC2CO2)c(=O)n(CC2CO2)c(=O)n1CC1CO1
+IRB_137053;set_4;;Clinical;PLATE_525;HY-B0183;atoms 22 bonds 25;B04;<rdkit.Chem.rdchem.Mol object at 0x78324c4dc660>;O=c1oc2c(O)c(O)cc3c(=O)oc4c(O)c(O)cc1c4c23
+IRB_137002;set_3;;kinasas;IRB195-S10C1;HY-B0183;atoms 22 bonds 25;F05;<rdkit.Chem.rdchem.Mol object at 0x78324d7ad6d0>;O=c1oc2c(O)c(O)cc3c(=O)oc4c(O)c(O)cc1c4c23
+IRB_138228;set_4;;Clinical;PLATE_528;HY-N0120A;atoms 33 bonds 35;L17;<rdkit.Chem.rdchem.Mol object at 0x78324bfbe0b0>;OC[C@H]1O[C@@H](Oc2cc(O)cc(/C=C/c3ccc(O)cc3)c2)[C@H](O)[C@@H](O)[C@@H]1O
+IRB_143532;set_4;;Immunology/Inflamation;PLATE_181;HY-N0120;atoms 33 bonds 35;P03;<rdkit.Chem.rdchem.Mol object at 0x783248da05f0>;OC[C@H]1O[C@@H](Oc2cc(O)cc(/C=C/c3ccc(O)cc3)c2)[C@H](O)[C@@H](O)[C@@H]1O
+IRB_143216;set_4;;Immunology/Inflamation;PLATE_179;HY-N0898;atoms 23 bonds 25;B09;<rdkit.Chem.rdchem.Mol object at 0x783248e68970>;Oc1cc(O)c2c(c1)O[C@H](c1ccc(O)c(O)c1)[C@@H](O)C2
+IRB_143722;set_4;;Immunology/Inflamation;PLATE_181;HY-B1890;atoms 23 bonds 25;B19;<rdkit.Chem.rdchem.Mol object at 0x783248c47a50>;Oc1cc(O)c2c(c1)O[C@H](c1ccc(O)c(O)c1)[C@@H](O)C2

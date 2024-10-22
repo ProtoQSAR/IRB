@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-PATH = "C:/Users/Enrique/Documents/GitHub/IRB/Models/CYP3A4 Inhibitor/calc/"
+PATH = "C:/Users/Enrique/Documents/GitHub/IRB/Models/CYP2C19 Inhibitor/descriptor calc"
 
 df = pd.DataFrame()
 
@@ -13,5 +13,5 @@ for root, dirs, files in os.walk(PATH):
             df = pd.concat([df, info], ignore_index=True) 
 
 
-output_path = os.path.join(PATH, 'CYP2D6_Inhibitor-paralel_calculated_with_y.csv')
+output_path = os.path.join(PATH, 'CYP2C19_Inhibitor-paralel_calculated_with_y.csv')
 df.to_csv(output_path, sep=';', index=False)
