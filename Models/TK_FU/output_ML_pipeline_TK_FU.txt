@@ -1,0 +1,110 @@
+#########################################################################
+##################### WELCOME TO ML_pipeline script #####################
+#########################################################################
+This script will allow you to: 
+ 	- generate ML models for regression or classification
+
+Please input your PATH (enter to: "../data/Af_MIC80_definitva/no3D/OWNdesc/"): /home/carmen/Escritorio/contratas/IRB/Models/TK_FU/
+Please input your MODEL NAME (enter to: Af_MIC80): TK_FU_no3D
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+	[1] Perform a MODEL for Regression
+	[2] Perform a MODEL for Classification
+	[3] Exit
+
+Your choice: º
+
+Incorrect input. Your choice: 1
+
+Please select the method used for DESCRIPTOR SELECTION:
+	[1] RFE
+	[2] GBM
+	[3] PI
+	[4] OWN
+
+
+Your choice: 3
+You want to perform a Regression model, by using descriptors selected by PI.
+
+Is that correct?(Y/n):  
+The following files located in "/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/" folder are needed:
+TK_FU_no3D-train_reduction_PI.csv
+TK_FU_no3D-test_reduction_PI.csv
+Continue (Y/n)?
+
+PARAMETERS:
+	train molecules: 1415
+	test molecules: 472
+	total molecules: 1887
+
+DESCRIPTORS: ( 20 )
+['SLogP', 'nR_3_True_False_True_False', 'ESpm03d', 'N-068', 'ATSC1dv', 'GATS2dv', 'AATS0dv', 'GATS2d', 'AATS0p', 'MATS5Z', 'AATSC5c', 'nArCOO', 'ARR', 'X0vA', 'AATS5i', 'ATSC7c', 'AATSC7i', 'BELv0', 'GATS6i', 'AATSC6v']
+	mols/descriptor ratio: 70.75
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+
+[+] Training the model...
+
+Best parameters for ExtraTreesRegressor:
+{'max_depth': 11, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 300, 'n_jobs': -1, 'random_state': 42}
+
+Grid test score: 0.7051773293170455
+------------------------------
+
+Best model and parameters:
+ExtraTreesRegressor(max_depth=11, max_features=None, n_estimators=300,
+                    n_jobs=-1, random_state=42)
+
+Best model and parameters:
+{'max_depth': 11, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 300, 'n_jobs': -1, 'random_state': 42}
+
+GridSearch parameters:
+GridSearchCV(cv=10, estimator=ExtraTreesRegressor(), n_jobs=-1,
+             param_grid={'max_depth': [9, 10, 11], 'max_features': [None],
+                         'min_samples_leaf': [1], 'min_samples_split': [2],
+                         'n_estimators': [300], 'n_jobs': [-1],
+                         'random_state': [42]},
+             return_train_score=True, scoring='r2')
+-------------------------------
+
+ A JSON file with the descriptors has been saved as /home/carmen/Escritorio/contratas/IRB/Models/TK_FU/TK_FU_no3D.json
+
+######################################################
+################### Model results ####################
+######################################################
+
+Train results R^2:	 0.9417172178525097
+Test results R^2:	 0.6344082637620272
+
+Train results MSE:	 0.006855220747608905
+Test results MSE	 0.03983851316014942
+
+	|Train | Test
+    EV	|0.94  |0.64
+   MAE	|0.06  |0.15
+   MSE	|0.01  |0.04
+ MEDAE	|0.05  |0.10
+Rscore	|0.94  |0.63
+
+######################################################
+############## Cross-validation results ##############
+######################################################
+
+	|Train          | Test
+    EV	|0.93 +/- 0.004 |0.69  +/- 0.033
+   MAE	|0.07 +/- 0.002 |0.14  +/- 0.003
+   MSE	|0.01 +/- 0.000 |0.04  +/- 0.003
+ MEDAE	|0.05 +/- 0.002 |0.10  +/- 0.003
+Rscore	|0.93 +/- 0.004 |0.69  +/- 0.032
+Please, close the plots to continue...
+
+Do you want to perform any other step?(y/n):  n
+
+Thanks for using ML_pipeline!
+

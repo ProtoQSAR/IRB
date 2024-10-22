@@ -1,0 +1,420 @@
+#########################################################################
+######################### WELCOME TO NEO script #########################
+#########################################################################
+This script will allow you to: 
+ 	- eliminate 3D descriptors
+ 	- "y" transformation
+ 	- perform the initial unsupervised feature reduction
+ 	- perform the train/test split based on kmeans
+ 	- descriptor standarization
+ 	- select the relevant features based on:
+		 · Recursive feature elimination (RFE)
+		 · Feature importance (FI) based on Ligth gradient boosting machine (LGBM)
+		 · Permutation importance (PI)
+ 	- select your own features features
+
+Please input your PATH (enter to: "../data/Af_MIC80_definitva/no3D/OWNdesc/"): /home/carmen/Escritorio/contratas/IRB/Models/TK_FU/
+Please input your MODEL NAME (enter to: Af_MIC80_no3D): TK_FU
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 01
+This part will eliminate 3D descriptors from your dataset.
+The output dataset will be renamed as "[The_name_of_your_dataset]_no3D-paralel_calculated_with_y.csv".
+Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+A file located in "/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/" folder is needed
+This file must be called: "TK_FU-paralel_calculated_with_y.csv"
+Continue (Y/n)?
+
+Initial number of descriptors: 4678
+Final number of descriptors: 3729
+
+
+The following files have been created:
+
+/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/TK_FU_no3D-paralel_calculated_with_y.csv
+
+Do you want to perform any other step?(y/n):  
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 1
+This part of the code will do the y" transformation, randomization of the dataset order and  Knn imputation.
+From this version of NEO is its compulsory to perform the inputation here, as this will create the un-imputed file needed for reimputation.
+[+] "y" transformation
+A file located in "/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/" folder is needed
+This file must be called: "TK_FU_no3D-paralel_calculated_with_y.csv"
+Continue (Y/n)?
+
+Please select your type of model: 
+[1] Regression
+[2] Classification
+Your choice: 1
+
+Please select how do you want to transform your y: 
+Current values are (first three):
+0    0.574609
+1    0.153616
+2    0.458000
+3    0.137092
+Name: y, dtype: float64
+[1] Nothing
+[2] Logarithm_10 of 1/"y"  (p)
+[3] Converts mg/l (or ug/ml) to Molar and does [2] with it
+Your choice: 1
+[+] dataset random sort
+
+	The following file has been created (save it as you will need it for feature reduction):
+
+	/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/TK_FU_no3D-calculated_preimputation.csv
+[+] dataset imputation
+Size of the database, preimputation: (1887, 3727)
+Warning! Some of descriptors have too many NaN values and have been removed: ['LPRS', 'VDA', 'MDDD', 'MAXsLi', 'MAXssBe', 'MAXssssBe', 'MAXssBH', 'MAXsssB', 'MAXssssB', 'MAXsCH3', 'MAXdCH2', 'MAXssCH2', 'MAXtCH', 'MAXdsCH', 'MAXaaCH', 'MAXsssCH', 'MAXddC', 'MAXtsC', 'MAXdssC', 'MAXaasC', 'MAXaaaC', 'MAXssssC', 'MAXsNH3', 'MAXsNH2', 'MAXssNH2', 'MAXdNH', 'MAXssNH', 'MAXaaNH', 'MAXtN', 'MAXsssNH', 'MAXdsN', 'MAXaaN', 'MAXsssN', 'MAXddsN', 'MAXaasN', 'MAXssssN', 'MAXsOH', 'MAXdO', 'MAXssO', 'MAXaaO', 'MAXsF', 'MAXsSiH3', 'MAXssSiH2', 'MAXsssSiH', 'MAXssssSi', 'MAXsPH2', 'MAXssPH', 'MAXsssP', 'MAXdsssP', 'MAXsssssP', 'MAXsSH', 'MAXdS', 'MAXssS', 'MAXaaS', 'MAXdssS', 'MAXddssS', 'MAXsCl', 'MAXsGeH3', 'MAXssGeH2', 'MAXsssGeH', 'MAXssssGe', 'MAXsAsH2', 'MAXssAsH', 'MAXsssAs', 'MAXsssdAs', 'MAXsssssAs', 'MAXsSeH', 'MAXdSe', 'MAXssSe', 'MAXaaSe', 'MAXdssSe', 'MAXddssSe', 'MAXsBr', 'MAXsSnH3', 'MAXssSnH2', 'MAXsssSnH', 'MAXssssSn', 'MAXsI', 'MAXsPbH3', 'MAXssPbH2', 'MAXsssPbH', 'MAXssssPb', 'MINsLi', 'MINssBe', 'MINssssBe', 'MINssBH', 'MINsssB', 'MINssssB', 'MINsCH3', 'MINdCH2', 'MINssCH2', 'MINtCH', 'MINdsCH', 'MINaaCH', 'MINsssCH', 'MINddC', 'MINtsC', 'MINdssC', 'MINaasC', 'MINaaaC', 'MINssssC', 'MINsNH3', 'MINsNH2', 'MINssNH2', 'MINdNH', 'MINssNH', 'MINaaNH', 'MINtN', 'MINsssNH', 'MINdsN', 'MINaaN', 'MINsssN', 'MINddsN', 'MINaasN', 'MINssssN', 'MINsOH', 'MINdO', 'MINssO', 'MINaaO', 'MINsF', 'MINsSiH3', 'MINssSiH2', 'MINsssSiH', 'MINssssSi', 'MINsPH2', 'MINssPH', 'MINsssP', 'MINdsssP', 'MINsssssP', 'MINsSH', 'MINdS', 'MINssS', 'MINaaS', 'MINdssS', 'MINddssS', 'MINsCl', 'MINsGeH3', 'MINssGeH2', 'MINsssGeH', 'MINssssGe', 'MINsAsH2', 'MINssAsH', 'MINsssAs', 'MINsssdAs', 'MINsssssAs', 'MINsSeH', 'MINdSe', 'MINssSe', 'MINaaSe', 'MINdssSe', 'MINddssSe', 'MINsBr', 'MINsSnH3', 'MINssSnH2', 'MINsssSnH', 'MINssssSn', 'MINsI', 'MINsPbH3', 'MINssPbH2', 'MINsssPbH', 'MINssssPb'] The limit is marked to the  15.0 %
+[+] fitting
+[+] transforming
+Size of the database, postimputation: (1887, 3566)
+      C-001  C-002  C-003  C-004  C-005  C-006  C-007  C-008  C-009  C-010  C-011  C-012  ...  SsBr  SsSnH3  SssSnH2  SsssSnH  SssssSn  SsI  SsPbH3  SssPbH2  SsssPbH  SssssPb    SLogP       SMR
+0       0.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0    1.0    0.0  ...   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0  4.06760   87.0368
+1       0.0    9.0    2.0    0.0    0.0    3.0    0.0    1.0    0.0    0.0    0.0    0.0  ...   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0  4.16170  116.7581
+2       1.0    0.0    0.0    0.0    0.0    1.0    0.0    0.0    0.0    0.0    0.0    0.0  ...   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0  2.76350   50.3150
+3       0.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0  ...   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0  3.58600   53.7200
+4       3.0    0.0    1.0    0.0    1.0    1.0    0.0    0.0    0.0    0.0    0.0    0.0  ...   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0  4.80460   98.3088
+...     ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...  ...   ...     ...      ...      ...      ...  ...     ...      ...      ...      ...      ...       ...
+1882    2.0    1.0    1.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0  ...   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0  2.72210   60.1216
+1883    4.0    0.0    1.0    0.0    1.0    0.0    0.0    1.0    0.0    0.0    0.0    0.0  ...   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0  2.58220   96.3247
+1884    0.0    0.0    0.0    0.0    3.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0  ...   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0 -1.02930   51.1960
+1885    0.0    3.0    0.0    0.0    0.0    3.0    0.0    2.0    0.0    0.0    0.0    0.0  ...   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0  1.10957  123.7129
+1886    4.0   14.0    4.0    2.0    0.0    5.0    0.0    4.0    0.0    0.0    0.0    0.0  ...   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0  6.91220  170.1274
+
+[1887 rows x 3566 columns]
+
+The following files have been created:
+
+/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/TK_FU_no3D-calculated_imputed_ytransformed.csv
+
+Do you want to perform any other step?(y/n):  
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 2
+A file located in "/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/" folder is needed
+This file must be called: "TK_FU_no3D-calculated_imputed_ytransformed.csv"
+Continue (Y/n)?
+[1] Initial feature reduction: infinite, correlated, constant and empty values
+Checking how many infinite values in dataset
+C-001      False
+C-002      False
+C-003      False
+C-004      False
+C-005      False
+           ...  
+SssPbH2    False
+SsssPbH    False
+SssssPb    False
+SLogP      False
+SMR        False
+Length: 3566, dtype: bool
+0 infinite values
+0 features with greater than 0.00 missing values.
+
+1499 features with a correlation magnitude greater than 0.90.
+
+1018 features with a single unique value.
+
+Data has not been one-hot encoded
+Removed 2517 features including one-hot features.
+
+The following files have been created:
+
+/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/TK_FU_no3D-initial_reduction.csv
+
+Do you want to perform any other step?(y/n):  
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 3
+
+Please select your type of model: 
+[1] Regression
+[2] Classification
+Your choice (1/2)?: 1
+Please input your desired TEST SIZE (enter to: "0.25"): 
+A file located in "/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/" folder is needed
+This file must be called: "TK_FU_no3D-initial_reduction.csv"
+Continue (Y/n)?
+[+] Generation of train and test sets based in kmeans
+
+OPTIMAL NUMBER OF CLUSTERS:  4
+
+NUMBER OF CLUSTERS:  4
+	SETS:  {72, 1809, 2, 4}
+	ALERTS!!
+		compound number:  451 
+			SMILE:  CNC1C(=O)NC2Cc3ccc(cc3)Oc3cc4cc(c3OC3OC(C(=O)O)C(O)C(O)C3NC(=O)CCCCCCCCC(C)C)Oc3ccc(cc3Cl)C(O)C3NC(=O)C(NC(=O)C4NC(=O)C(NC2=O)c2cc(cc(O)c2Cl)Oc2cc1ccc2O)c1ccc(O)c(c1)-c1c(OC2OC(CO)C(O)C(O)C2O)cc(O)cc1C(C(=O)NCCCN(C)C)NC3=O 0.02
+		compound number:  740 
+			SMILE:  CCCCCCCCCC(=O)NC1C(Oc2c3cc4cc2Oc2ccc(cc2Cl)C(OC2OC(CO)C(O)C(O)C2NC(C)=O)C2NC(=O)C(NC(=O)C4NC(=O)C4NC(=O)C(Cc5ccc(c(Cl)c5)O3)NC(=O)C(N)c3ccc(O)c(c3)Oc3cc(O)cc4c3)c3ccc(O)c(c3)-c3c(OC4OC(CO)C(O)C(O)C4O)cc(O)cc3C(C(=O)O)NC2=O)OC(CO)C(O)C1O 0.1099999999999999
+[451, 740]
+you have some molecular alerts. It means that these molecules are quite dissimilar
+You can (1) eliminate them or (2) maintain them
+What is your choice (1/2)?2
+Ok, continue with entire dataframe.
+
+NUMBER OF CLUSTERS:  3
+	SETS:  {1881, 2, 4}
+	ALERTS!!
+		compound number:  451 
+			SMILE:  CNC1C(=O)NC2Cc3ccc(cc3)Oc3cc4cc(c3OC3OC(C(=O)O)C(O)C(O)C3NC(=O)CCCCCCCCC(C)C)Oc3ccc(cc3Cl)C(O)C3NC(=O)C(NC(=O)C4NC(=O)C(NC2=O)c2cc(cc(O)c2Cl)Oc2cc1ccc2O)c1ccc(O)c(c1)-c1c(OC2OC(CO)C(O)C(O)C2O)cc(O)cc1C(C(=O)NCCCN(C)C)NC3=O 0.02
+		compound number:  740 
+			SMILE:  CCCCCCCCCC(=O)NC1C(Oc2c3cc4cc2Oc2ccc(cc2Cl)C(OC2OC(CO)C(O)C(O)C2NC(C)=O)C2NC(=O)C(NC(=O)C4NC(=O)C4NC(=O)C(Cc5ccc(c(Cl)c5)O3)NC(=O)C(N)c3ccc(O)c(c3)Oc3cc(O)cc4c3)c3ccc(O)c(c3)-c3c(OC4OC(CO)C(O)C(O)C4O)cc(O)cc3C(C(=O)O)NC2=O)OC(CO)C(O)C1O 0.1099999999999999
+[451, 740]
+you have some molecular alerts. It means that these molecules are quite dissimilar
+You can (1) eliminate them or (2) maintain them
+What is your choice (1/2)?2
+Ok, continue with entire dataframe.
+
+NUMBER OF CLUSTERS:  2
+	SETS:  {3, 1884}
+	ALERTS!!
+		compound number:  451 
+			SMILE:  CNC1C(=O)NC2Cc3ccc(cc3)Oc3cc4cc(c3OC3OC(C(=O)O)C(O)C(O)C3NC(=O)CCCCCCCCC(C)C)Oc3ccc(cc3Cl)C(O)C3NC(=O)C(NC(=O)C4NC(=O)C(NC2=O)c2cc(cc(O)c2Cl)Oc2cc1ccc2O)c1ccc(O)c(c1)-c1c(OC2OC(CO)C(O)C(O)C2O)cc(O)cc1C(C(=O)NCCCN(C)C)NC3=O 0.02
+		compound number:  740 
+			SMILE:  CCCCCCCCCC(=O)NC1C(Oc2c3cc4cc2Oc2ccc(cc2Cl)C(OC2OC(CO)C(O)C(O)C2NC(C)=O)C2NC(=O)C(NC(=O)C4NC(=O)C4NC(=O)C(Cc5ccc(c(Cl)c5)O3)NC(=O)C(N)c3ccc(O)c(c3)Oc3cc(O)cc4c3)c3ccc(O)c(c3)-c3c(OC4OC(CO)C(O)C(O)C4O)cc(O)cc3C(C(=O)O)NC2=O)OC(CO)C(O)C1O 0.1099999999999999
+		compound number:  1652 
+			SMILE:  CCCCCCCCCCNCCNC1(C)CC(OC2C(Oc3c4cc5cc3Oc3ccc(cc3Cl)C(O)C3NC(=O)C(NC(=O)C5NC(=O)C(CC(N)=O)NC(=O)C(NC(=O)C(CC(C)C)NC)C(O)c5ccc(c(Cl)c5)O4)c4ccc(O)c(c4)-c4c(cc(O)c(CNCP(=O)(O)O)c4O)C(C(=O)O)NC3=O)OC(CO)C(O)C2O)OC(C)C1O 0.0699999999999999
+[451, 740, 1652]
+you have some molecular alerts. It means that these molecules are quite dissimilar
+You can (1) eliminate them or (2) maintain them
+What is your choice (1/2)?2
+Ok, continue with entire dataframe.
+
+NUMBER OF CLUSTERS:  1
+	SETS:  {1887}
+	ALERTS!!
+[]
+      index                                             SMILES         y  C-001  C-002  C-003  C-004  C-005  ...  NdssS    SssCH2   SsssCH    SdssC    SaasC    SaaaC    SLogP  cluster
+0         0               OC(c1ccc(Cl)cc1)(c1cncnc1)c1ccccc1Cl  0.036710    0.0    0.0    0.0    0.0    0.0  ...    0.0   0.00000  0.00000  0.00000  2.78925  0.00000  4.06760        0
+1         1  O=C(O)C1CC(C2CCCCC2)CN1C(=O)CP(=O)(O)CCCCc1ccccc1  0.020000    0.0    9.0    2.0    0.0    0.0  ...    0.0   8.49128 -0.19525 -1.47973  1.19118  0.00000  4.16170        0
+2         2                            CCOc1nc(C(Cl)(Cl)Cl)ns1  0.000000    1.0    0.0    0.0    0.0    0.0  ...    0.0   0.52231  0.00000  0.00000  0.56924  0.00000  2.76350        0
+3         3                              c1ccc2c(c1)oc1ccccc12  0.000000    0.0    0.0    0.0    0.0    0.0  ...    0.0   0.00000  0.00000  0.00000  0.00000  4.30889  3.58600        0
+4         4  CCO/C(O)=C1/C(C)=NC(C)=C(C(=O)OC)C1c1cccc(Cl)c1Cl  0.005000    3.0    0.0    1.0    0.0    1.0  ...    0.0   0.25879 -0.70583  0.77908  1.19513  0.00000  4.80460        0
+...     ...                                                ...       ...    ...    ...    ...    ...    ...  ...    ...       ...      ...      ...      ...      ...      ...      ...
+1882   1882        CCC(C)c1cc([N+](=O)[O-])cc([N+](=O)[O-])c1O  0.000430    2.0    1.0    1.0    0.0    0.0  ...    0.0   0.61695 -0.18648  0.00000 -1.27532  0.00000  2.72210        0
+1883   1883  COC(=O)C1=C(C)NC(C)=C(C(=O)OC(C)C)C1c1cccc2nonc12  0.040000    4.0    0.0    1.0    0.0    1.0  ...    0.0   0.00000 -1.03047  0.78318  0.61579  1.00313  2.58220        0
+1884   1884                         Cn1c(=O)c2c(ncn2C)n(C)c1=O  0.670403    0.0    0.0    0.0    0.0    3.0  ...    0.0   0.00000  0.00000  0.00000  0.00000  0.85667 -1.02930        0
+1885   1885  N=C(N)c1ccc(C(=O)NC(Cc2ccc(O)cc2)C(=O)N2CCC(OC...  0.940000    0.0    3.0    0.0    0.0    0.0  ...    0.0   1.63884 -1.07769 -1.83336  1.68357  0.00000  1.10957        0
+1886   1886  C=CC[N+]1(C2CC3C4CCC5CC(OC(C)=O)C(N6CCCCC6)CC5...  0.320000    4.0   14.0    4.0    2.0    0.0  ...    0.0  22.15311  3.38975 -0.13122  0.00000  0.00000  6.91220        0
+
+[1887 rows x 1053 columns]
+0
+cluster0
+      index                                             SMILES         y  C-001  C-002  C-003  C-004  C-005  ...  NdssS    SssCH2   SsssCH    SdssC    SaasC    SaaaC    SLogP  cluster
+0         0               OC(c1ccc(Cl)cc1)(c1cncnc1)c1ccccc1Cl  0.036710    0.0    0.0    0.0    0.0    0.0  ...    0.0   0.00000  0.00000  0.00000  2.78925  0.00000  4.06760        0
+1         1  O=C(O)C1CC(C2CCCCC2)CN1C(=O)CP(=O)(O)CCCCc1ccccc1  0.020000    0.0    9.0    2.0    0.0    0.0  ...    0.0   8.49128 -0.19525 -1.47973  1.19118  0.00000  4.16170        0
+2         2                            CCOc1nc(C(Cl)(Cl)Cl)ns1  0.000000    1.0    0.0    0.0    0.0    0.0  ...    0.0   0.52231  0.00000  0.00000  0.56924  0.00000  2.76350        0
+3         3                              c1ccc2c(c1)oc1ccccc12  0.000000    0.0    0.0    0.0    0.0    0.0  ...    0.0   0.00000  0.00000  0.00000  0.00000  4.30889  3.58600        0
+4         4  CCO/C(O)=C1/C(C)=NC(C)=C(C(=O)OC)C1c1cccc(Cl)c1Cl  0.005000    3.0    0.0    1.0    0.0    1.0  ...    0.0   0.25879 -0.70583  0.77908  1.19513  0.00000  4.80460        0
+...     ...                                                ...       ...    ...    ...    ...    ...    ...  ...    ...       ...      ...      ...      ...      ...      ...      ...
+1882   1882        CCC(C)c1cc([N+](=O)[O-])cc([N+](=O)[O-])c1O  0.000430    2.0    1.0    1.0    0.0    0.0  ...    0.0   0.61695 -0.18648  0.00000 -1.27532  0.00000  2.72210        0
+1883   1883  COC(=O)C1=C(C)NC(C)=C(C(=O)OC(C)C)C1c1cccc2nonc12  0.040000    4.0    0.0    1.0    0.0    1.0  ...    0.0   0.00000 -1.03047  0.78318  0.61579  1.00313  2.58220        0
+1884   1884                         Cn1c(=O)c2c(ncn2C)n(C)c1=O  0.670403    0.0    0.0    0.0    0.0    3.0  ...    0.0   0.00000  0.00000  0.00000  0.00000  0.85667 -1.02930        0
+1885   1885  N=C(N)c1ccc(C(=O)NC(Cc2ccc(O)cc2)C(=O)N2CCC(OC...  0.940000    0.0    3.0    0.0    0.0    0.0  ...    0.0   1.63884 -1.07769 -1.83336  1.68357  0.00000  1.10957        0
+1886   1886  C=CC[N+]1(C2CC3C4CCC5CC(OC(C)=O)C(N6CCCCC6)CC5...  0.320000    4.0   14.0    4.0    2.0    0.0  ...    0.0  22.15311  3.38975 -0.13122  0.00000  0.00000  6.91220        0
+
+[1887 rows x 1053 columns]
+      index                                             SMILES     y  C-001  C-002  C-003  C-004  C-005  C-006  ...  NaaS  NdssS   SssCH2   SsssCH    SdssC    SaasC    SaaaC   SLogP  cluster
+1052   1052       O=[N+]([O-])OCC(CO[N+](=O)[O-])O[N+](=O)[O-]  0.40    0.0    0.0    0.0    0.0    0.0    2.0  ...   0.0    0.0 -1.69083 -1.54556  0.00000  0.00000  0.00000 -1.0201        0
+1245   1245    C[C@@H](c1ncncc1F)[C@](O)(Cn1cncn1)c1ccc(F)cc1F  0.42    1.0    0.0    1.0    0.0    0.0    1.0  ...   0.0    0.0 -0.23595 -0.98642  0.00000 -2.77783  0.00000  2.1769        0
+869     869                                 NCC1CCC(C(=O)O)CC1  0.97    0.0    4.0    2.0    0.0    0.0    1.0  ...   0.0    0.0  4.33499  0.47537 -0.63845  0.00000  0.00000  0.8361        0
+1106   1106                          Nc1cc(-c2ccncc2)c[nH]c1=O  0.89    0.0    0.0    0.0    0.0    0.0    0.0  ...   0.0    0.0  0.00000  0.00000  0.00000  2.07571  0.00000  1.0191        0
+1010   1010  O=C(O)c1cn(-c2ccc(O)cc2)c2cc(N3CCNCC3)c(F)cc2c1=O  0.65    0.0    0.0    0.0    0.0    0.0    4.0  ...   0.0    0.0  2.69301  0.00000 -1.38332 -0.04771  0.38887  1.9432        0
+
+[5 rows x 1053 columns]
+      index                                             SMILES     y  C-001  C-002  C-003  C-004  C-005  C-006  ...  NaaS  NdssS   SssCH2   SsssCH    SdssC    SaasC    SaaaC   SLogP  cluster
+1052   1052       O=[N+]([O-])OCC(CO[N+](=O)[O-])O[N+](=O)[O-]  0.40    0.0    0.0    0.0    0.0    0.0    2.0  ...   0.0    0.0 -1.69083 -1.54556  0.00000  0.00000  0.00000 -1.0201        0
+1245   1245    C[C@@H](c1ncncc1F)[C@](O)(Cn1cncn1)c1ccc(F)cc1F  0.42    1.0    0.0    1.0    0.0    0.0    1.0  ...   0.0    0.0 -0.23595 -0.98642  0.00000 -2.77783  0.00000  2.1769        0
+869     869                                 NCC1CCC(C(=O)O)CC1  0.97    0.0    4.0    2.0    0.0    0.0    1.0  ...   0.0    0.0  4.33499  0.47537 -0.63845  0.00000  0.00000  0.8361        0
+1106   1106                          Nc1cc(-c2ccncc2)c[nH]c1=O  0.89    0.0    0.0    0.0    0.0    0.0    0.0  ...   0.0    0.0  0.00000  0.00000  0.00000  2.07571  0.00000  1.0191        0
+1010   1010  O=C(O)c1cn(-c2ccc(O)cc2)c2cc(N3CCNCC3)c(F)cc2c1=O  0.65    0.0    0.0    0.0    0.0    0.0    4.0  ...   0.0    0.0  2.69301  0.00000 -1.38332 -0.04771  0.38887  1.9432        0
+
+[5 rows x 1053 columns]
+
+The following files have been created:
+
+/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/TK_FU_no3D-cleaned_from_kmeans.csv
+/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/TK_FU_no3D-train_set.csv
+/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/TK_FU_no3D-test_set.csv
+
+Do you want to perform any other step?(y/n):  
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 4
+[+] Descriptor standarization
+
+Please select the method to standarize the descriptors: 
+[1] StandardScaler
+[2] MinMaxScaler
+Your choice (1/2)?: 1
+Two files located in "/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/" folder are needed
+These files must be called:
+	"TK_FU_no3D-train_set.csv"
+	"TK_FU_no3D-test_set.csv"
+Continue (Y/n)?
+
+The following files have been created:
+
+/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/TK_FU_no3D-stand_train_set.csv
+/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/TK_FU_no3D-stand_test_set.csv
+/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/TK_FU_no3D-alldataset.sca
+
+Do you want to perform any other step?(y/n):  
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 7
+[+] Feature selection by Permutation importance
+Two files located in "/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/" folder are needed
+These files must be called:
+	"TK_FU_no3D-stand_train_set.csv"
+	"TK_FU_no3D-stand_test_set.csv"
+Continue (Y/n)?
+
+Please select your estimator for perform Permutation importance: 
+For regression models:
+	 [0] Ridge [alpha = 10]
+	 [02] SVR [kernel = linear] [remember that other kernels can be used:‘linear’, ‘poly’, ‘rbf’, ‘sigmoid’, ‘precomputed’]
+	 [1] ExtraTreesRegressor
+	 [2] DecisionTreeRegressor
+	 [3] GradientBoostingRegressor
+	 [4] MLPRegressor
+	 [5] RandomForestRegressor
+	 [6] KNeighborsRegressor
+For classification models:
+	 [7] RandomForestClassifier
+	 [8] ExtraTreesClassifier
+	 [9] DecisionTreeClassifier
+	[10] GradientBoostingClassifier
+	[11] MLPClassifier
+	[12] KNeighborsClassifier
+	[13] LinearDiscriminantAnalysis
+	[14] LogisticRegression
+Your choice: 2
+Please wait...
+Step 1/2 done...
+Step 2/2 done...
+
+Now you can select a number of features.
+Please, indicate the number of selected features: 20
+
+Selected features:
+
+                         feature  importance
+1048                       SLogP    1.353521
+433   nR_3_True_False_True_False    0.368096
+508                      ESpm03d    0.309692
+61                         N-068    0.184337
+144                      ATSC1dv    0.152683
+333                      GATS2dv    0.135684
+97                       AATS0dv    0.074825
+334                       GATS2d    0.072195
+101                       AATS0p    0.068122
+311                       MATS5Z    0.067333
+255                      AATSC5c    0.061380
+927                       nArCOO    0.060477
+506                          ARR    0.055604
+404                         X0vA    0.044675
+122                       AATS5i    0.044166
+196                       ATSC7c    0.039953
+281                      AATSC7i    0.034281
+397                        BELv0    0.034128
+373                       GATS6i    0.033516
+269                      AATSC6v    0.032813
+
+Selected features (as list):
+ ['SLogP', 'nR_3_True_False_True_False', 'ESpm03d', 'N-068', 'ATSC1dv', 'GATS2dv', 'AATS0dv', 'GATS2d', 'AATS0p', 'MATS5Z', 'AATSC5c', 'nArCOO', 'ARR', 'X0vA', 'AATS5i', 'ATSC7c', 'AATSC7i', 'BELv0', 'GATS6i', 'AATSC6v']
+Size of the database, preimputation: (1415, 20)
+[+] fitting
+[+] transforming
+Size of the database, postimputation: (1415, 20)
+
+The following files have been created:
+
+/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/TK_FU_no3D-train_reduction_PI.csv
+/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/TK_FU_no3D-test_reduction_PI.csv
+/home/carmen/Escritorio/contratas/IRB/Models/TK_FU/TK_FU_no3D-train_set.sca
+train_set (1415, 22)
+test_set (472, 22) 
+
+
+Do you agree with that number of features?(y/n): y
+
+Do you want to perform any other step?(y/n):  n
+
+Thanks for using NEO!
+
