@@ -1,0 +1,84 @@
+{
+    "functional_group$nRCOO": {
+        "group": "nRCOO"
+    },
+    "AATSC$AATSC1c": {
+        "order": 1,
+        "prop": "c"
+    },
+    "EStates$SssssC": {
+        "estate": "ssssC",
+        "type": "sum"
+    },
+    "AATSC$AATSC0v": {
+        "order": 0,
+        "prop": "v"
+    },
+    "SMR_VSA$SMR_VSA6": {
+        "k": 6
+    },
+    "EdgeAdjacencyIndex$ESpm03d": {
+        "order": 3,
+        "type": "spectral",
+        "weight": "dipole"
+    },
+    "mol_properties$nR_4_False_False_False_True": {
+        "aromatic": false,
+        "fused": false,
+        "greater": false,
+        "hetero": true,
+        "length": 4,
+        "prop": "nr"
+    },
+    "ATSC$ATSC3c": {
+        "order": 3,
+        "prop": "c"
+    },
+    "ATSC$ATSC3dv": {
+        "order": 3,
+        "prop": "dv"
+    },
+    "functional_group$nNH2": {
+        "group": "nNH2"
+    },
+    "AATS$AATS3i": {
+        "order": 3,
+        "prop": "i"
+    },
+    "functional_group$nAmide": {
+        "group": "nAmide"
+    },
+    "EStates$NdssC": {
+        "estate": "dssC",
+        "type": "count"
+    },
+    "Jhetw$JhetZ": {
+        "weight": "Z"
+    },
+    "topological_distance$F09[C-N]": {
+        "atoms": [
+            6,
+            7
+        ],
+        "distance": 9,
+        "type": "frequency"
+    },
+    "PEOE_VSA$PEOE_VSA8": {
+        "k": 8
+    },
+    "DistanceDetourIndex$D/Dr10": {
+        "length": 10
+    },
+    "GATS$GATS4i": {
+        "order": 4,
+        "prop": "i"
+    },
+    "MATS$MATS1s": {
+        "order": 1,
+        "prop": "s"
+    },
+    "EStates$MAXssCH2": {
+        "estate": "ssCH2",
+        "type": "max"
+    }
+}

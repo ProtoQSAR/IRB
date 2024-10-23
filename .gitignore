@@ -2,3 +2,6 @@ Administrative/
 
 # large files
 libreria/files
+
+#precompiled files
+*.pyc 

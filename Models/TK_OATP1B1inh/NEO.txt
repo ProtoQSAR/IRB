@@ -1,0 +1,329 @@
+
+(base) F:\ProtoQSAR\GENERATE_MODELS_3_0\NEO>conda activate Protocosas
+
+(Protocosas) F:\ProtoQSAR\GENERATE_MODELS_3_0\NEO>python NEO.py
+
+#########################################################################
+######################### WELCOME TO NEO script #########################
+#########################################################################
+This script will allow you to:
+        - eliminate 3D descriptors
+        - "y" transformation
+        - perform the initial unsupervised feature reduction
+        - perform the train/test split based on kmeans
+        - descriptor standarization
+        - select the relevant features based on:
+                 · Recursive feature elimination (RFE)
+                 · Feature importance (FI) based on Ligth gradient boosting machine (LGBM)
+                 · Permutation importance (PI)
+        - select your own features features
+
+Please input your PATH (enter to: "../data/TK_OATP1B1inh/"):
+Please input your MODEL NAME (enter to: TK_OATP1B1inh):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 1
+This part of the code will do the y" transformation, randomization of the dataset order and  Knn imputation.
+From this version of NEO is its compulsory to perform the inputation here, as this will create the un-imputed file needed for reimputation.
+[+] "y" transformation
+A file located in "../data/TK_OATP1B1inh/" folder is needed
+This file must be called: "TK_OATP1B1inh-paralel_calculated_with_y.csv"
+Continue (Y/n)?
+
+Please select your type of model:
+[1] Regression
+[2] Classification
+Your choice: 2
+
+I am so sorry, there is nothing yet for your request. Please try tomorrow with more coffee and cookies.
+[+] dataset random sort
+
+        The following file has been created (save it as you will need it for feature reduction):
+
+        ../data/TK_OATP1B1inh/TK_OATP1B1inh-calculated_preimputation.csv
+[+] dataset imputation
+Size of the database, preimputation: (1851, 4676)
+Warning! Some of descriptors have too many NaN values and have been removed: ['LPRS', 'VDA', 'MDDD', 'MAXsLi', 'MAXssBe', 'MAXssssBe', 'MAXssBH', 'MAXsssB', 'MAXssssB', 'MAXsCH3', 'MAXdCH2', 'MAXssCH2', 'MAXtCH', 'MAXdsCH', 'MAXaaCH', 'MAXsssCH', 'MAXddC', 'MAXtsC', 'MAXdssC', 'MAXaasC', 'MAXaaaC', 'MAXssssC', 'MAXsNH3', 'MAXsNH2', 'MAXssNH2', 'MAXdNH', 'MAXssNH', 'MAXaaNH', 'MAXtN', 'MAXsssNH', 'MAXdsN', 'MAXaaN', 'MAXsssN', 'MAXddsN', 'MAXaasN', 'MAXssssN', 'MAXsOH', 'MAXdO', 'MAXssO', 'MAXaaO', 'MAXsF', 'MAXsSiH3', 'MAXssSiH2', 'MAXsssSiH', 'MAXssssSi', 'MAXsPH2', 'MAXssPH', 'MAXsssP', 'MAXdsssP', 'MAXsssssP', 'MAXsSH', 'MAXdS', 'MAXssS', 'MAXaaS', 'MAXdssS', 'MAXddssS', 'MAXsCl', 'MAXsGeH3', 'MAXssGeH2', 'MAXsssGeH', 'MAXssssGe', 'MAXsAsH2', 'MAXssAsH', 'MAXsssAs', 'MAXsssdAs', 'MAXsssssAs', 'MAXsSeH', 'MAXdSe', 'MAXssSe', 'MAXaaSe', 'MAXdssSe', 'MAXddssSe', 'MAXsBr', 'MAXsSnH3', 'MAXssSnH2', 'MAXsssSnH', 'MAXssssSn', 'MAXsI', 'MAXsPbH3', 'MAXssPbH2', 'MAXsssPbH', 'MAXssssPb', 'MINsLi', 'MINssBe', 'MINssssBe', 'MINssBH', 'MINsssB', 'MINssssB', 'MINsCH3', 'MINdCH2', 'MINssCH2', 'MINtCH', 'MINdsCH', 'MINaaCH', 'MINsssCH', 'MINddC', 'MINtsC', 'MINdssC', 'MINaasC', 'MINaaaC', 'MINssssC', 'MINsNH3', 'MINsNH2', 'MINssNH2', 'MINdNH', 'MINssNH', 'MINaaNH', 'MINtN', 'MINsssNH', 'MINdsN', 'MINaaN', 'MINsssN', 'MINddsN', 'MINaasN', 'MINssssN', 'MINsOH', 'MINdO', 'MINssO', 'MINaaO', 'MINsF', 'MINsSiH3', 'MINssSiH2', 'MINsssSiH', 'MINssssSi', 'MINsPH2', 'MINssPH', 'MINsssP', 'MINdsssP', 'MINsssssP', 'MINsSH', 'MINdS', 'MINssS', 'MINaaS', 'MINdssS', 'MINddssS', 'MINsCl', 'MINsGeH3', 'MINssGeH2', 'MINsssGeH', 'MINssssGe', 'MINsAsH2', 'MINssAsH', 'MINsssAs', 'MINsssdAs', 'MINsssssAs', 'MINsSeH', 'MINdSe', 'MINssSe', 'MINaaSe', 'MINdssSe', 'MINddssSe', 'MINsBr', 'MINsSnH3', 'MINssSnH2', 'MINsssSnH', 'MINssssSn', 'MINsI', 'MINsPbH3', 'MINssPbH2', 'MINsssPbH', 'MINssssPb'] The limit is marked to the  15.0 %
+[+] fitting
+[+] transforming
+Size of the database, postimputation: (1851, 4515)
+      C-001  C-002  C-003  C-004  C-005  C-006  C-007  C-008  C-009  C-010  C-011  C-012  C-013  ...  SddssSe  SsBr  SsSnH3  SssSnH2  SsssSnH  SssssSn  SsI  SsPbH3  SssPbH2  SsssPbH  SssssPb    SLogP       SMR
+0       0.0    2.0    0.0    0.0    1.0    2.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0  ...      0.0   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0  4.67870   89.7600
+1       8.0   11.0    3.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0    1.0    0.0    0.0  ...      0.0   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0  8.84026  134.3908
+2       0.0    0.0    0.0    0.0    3.0    2.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0  ...      0.0   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0  6.34940  150.7888
+3       2.0    5.0    3.0    2.0    0.0    1.0    0.0    0.0    0.0    0.0    1.0    0.0    0.0  ...      0.0   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0  1.76580   94.0486
+4       4.0    8.0    4.0    2.0    0.0    1.0    0.0    1.0    0.0    0.0    1.0    0.0    0.0  ...      0.0   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0  3.00310  114.2608
+...     ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...  ...      ...   ...     ...      ...      ...      ...  ...     ...      ...      ...      ...      ...       ...
+1846    0.0    0.0    0.0    0.0    0.0    4.0    0.0   11.0    2.0    0.0    0.0    1.0    0.0  ...      0.0   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0 -7.57140  101.2748
+1847    4.0    6.0    1.0    0.0    3.0    0.0    0.0    8.0    3.0    0.0    1.0    0.0    0.0  ...      0.0   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0  3.15770  201.2272
+1848    0.0    0.0    0.0    0.0    2.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0  ...      0.0   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0 -0.65980   18.1194
+1849    0.0    1.0    1.0    0.0    0.0    0.0    0.0    1.0    0.0    0.0    0.0    0.0    0.0  ...      0.0   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0  1.50120   41.7754
+1850    0.0    0.0    0.0    0.0    1.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0    0.0  ...      0.0   0.0     0.0      0.0      0.0      0.0  0.0     0.0      0.0      0.0      0.0  2.54780   58.8080
+
+[1851 rows x 4515 columns]
+
+The following files have been created:
+
+../data/TK_OATP1B1inh/TK_OATP1B1inh-calculated_imputed_ytransformed.csv
+
+Do you want to perform any other step?(y/n):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 2
+A file located in "../data/TK_OATP1B1inh/" folder is needed
+This file must be called: "TK_OATP1B1inh-calculated_imputed_ytransformed.csv"
+Continue (Y/n)?
+[1] Initial feature reduction: infinite, correlated, constant and empty values
+0 infinite values
+0 features with greater than 0.00 missing values.
+
+2134 features with a correlation magnitude greater than 0.90.
+
+1077 features with a single unique value.
+
+Data has not been one-hot encoded
+Removed 3211 features including one-hot features.
+
+The following files have been created:
+
+../data/TK_OATP1B1inh/TK_OATP1B1inh-initial_reduction.csv
+
+Do you want to perform any other step?(y/n):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 3
+
+Please select your type of model:
+[1] Regression
+[2] Classification
+Your choice (1/2)?: 2
+Please input your desired TEST SIZE (enter to: "0.25"):
+A file located in "../data/TK_OATP1B1inh/" folder is needed
+This file must be called: "TK_OATP1B1inh-initial_reduction.csv"
+Continue (Y/n)?
+[+] Generation of train and test sets based in kmeans
+
+OPTIMAL NUMBER OF CLUSTERS:  5
+
+NUMBER OF CLUSTERS:  5
+        SETS:  {1, 3, 6, 39, 1802}
+        ALERTS!!
+                compound number:  26
+                        SMILE:  C[C@@H]1O[C@H](O[C@H]2[C@@H](O[C@H]3CC[C@]4(C)[C@@H](CC[C@]5(C)[C@@H]4CC=C4[C@H]6CC(C)(C)CC[C@@]6(C(=O)O[C@@H]6O[C@H](CO[C@@H]7O[C@H](CO)[C@@H](O[C@H]8O[C@@H](C)[C@H](O)[C@@H](O)[C@H]8O)[C@H](O)[C@H]7O)[C@@H](O)[C@H](O)[C@H]6O)CC[C@]45C)[C@]3(C)CO)OC[C@H](O)[C@@H]2O)[C@H](O)[C@H](O)[C@H]1O 0
+                compound number:  866
+                        SMILE:  CN[C@H](CC(C)C)C(=O)N[C@@H]1C(=O)N[C@@H](CC(N)=O)C(=O)N[C@H]2C(=O)N[C@@H]3C(=O)C[C@H](C(=O)N[C@@H](C(=O)O)c4cc(O)cc(O)c4-c4cc3ccc4O)[C@H](O)c3ccc(c(Cl)c3)Oc3cc2cc(c3O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O[C@H]2C[C@](C)(N)[C@H](O)[C@H](C)O2)Oc2ccc(cc2Cl)[C@H]1O 0
+                compound number:  1082
+                        SMILE:  C[C@@H]1O[C@H](O[C@H]2[C@H](OC(=O)[C@]34CCC(C)(C)C[C@H]3C3=CC[C@@H]5[C@]6(C)CC[C@H](O[C@H]7O[C@@H](C)[C@H](O[C@@H]8OC[C@@H](O)[C@H](O)[C@H]8O)[C@@H](O)[C@H]7O)C(C)(C)[C@@H]6CC[C@@]5(C)[C@]3(C)C[C@@H]4O)OC[C@H](O)[C@H]2O)[C@H](O)[C@H](O)[C@H]1O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O 1
+                compound number:  1288
+                        SMILE:  C[C@@H]1CC[C@@]2(OC1)O[C@@H]1[C@@H](O)[C@H]3[C@@H]4CC[C@H]5C[C@H](O[C@@H]6O[C@H](CO)[C@H](O[C@@H]7O[C@H](CO)[C@@H](O)[C@H](O[C@@H]8OC[C@@H](O)[C@H](O)[C@H]8O)[C@H]7O[C@@H]7O[C@H](CO)[C@H](O)[C@H](O[C@@H]8O[C@H](CO)[C@@H](O)[C@H](O)[C@H]8O)[C@H]7O)[C@H](O)[C@H]6O)[C@H](O)C[C@]5(C)[C@H]4CC[C@]3(C)[C@H]1[C@@H]2C 0
+[26, 866, 1082, 1288]
+you have some molecular alerts. It means that these molecules are quite dissimilar
+You can (1) eliminate them or (2) maintain them
+What is your choice (1/2)?1
+Ok,eliminating
+(1851, 1307)
+(1847, 1307)
+
+NUMBER OF CLUSTERS:  5
+        SETS:  {6, 103, 9, 1706, 23}
+        ALERTS!!
+[]
+      index                                             SMILES  y  C-001  C-002  C-003  C-004  C-005  C-006  C-007  ...  NdssS    SssCH2    SsssCH    SdssC    SaasC    SaaaC   SssssC  SsssNH    SLogP  cluster
+0         0                   CN1CCC(=C2c3ccccc3Sc3ccccc32)CC1  0    0.0    2.0    0.0    0.0    1.0    2.0    0.0  ...    0.0   4.74103   0.00000  3.14014  5.66367  0.00000  0.00000     0.0  4.67870        0
+1         1  Cc1c(C)c2c(c(C)c1O)CC[C@@](C)(CCC[C@@H](C)CCC[...  0    8.0   11.0    3.0    0.0    0.0    0.0    0.0  ...    0.0  14.05317   2.54212  0.00000  5.79278  0.00000 -0.07117     0.0  8.84026        0
+2         2  COc1cc(-c2coc3cc(OCc4ccccc4)c(OC)c(O)c3c2=O)cc...  0    0.0    0.0    0.0    0.0    3.0    2.0    0.0  ...    0.0   0.51562   0.00000  0.00000  3.57693  0.11027  0.00000     0.0  6.34940        0
+3         3  C[C@]12CC(=O)[C@@H]3[C@H](CCC4=CC(=O)C=C[C@]43...  0    2.0    5.0    3.0    2.0    0.0    1.0    0.0  ...    0.0   1.99367  -0.06169  0.50197  0.00000  0.00000 -2.89265     0.0  1.76580        0
+4         4  CC(=O)OCC(=O)[C@@]1(O)CC[C@H]2[C@@H]3CC[C@@H]4...  0    4.0    8.0    4.0    2.0    0.0    1.0    0.0  ...    0.0   5.01179   0.41194 -1.15673  0.00000  0.00000 -2.61156     0.0  3.00310        0
+...     ...                                                ... ..    ...    ...    ...    ...    ...    ...    ...  ...    ...       ...       ...      ...      ...      ...      ...     ...      ...      ...
+1846   1846  OC[C@H]1O[C@@](CO)(O[C@@H]2O[C@H](CO)[C@@H](O)...  0    0.0    0.0    0.0    0.0    0.0    4.0    0.0  ...    0.0  -3.48814 -22.34422  0.00000  0.00000  0.00000 -2.43126     0.0 -7.57140        0
+1847   1847  CC[C@@]1(O)C[C@H](O[C@H]2C[C@H](N(C)C)[C@H](O[...  0    4.0    6.0    1.0    0.0    3.0    0.0    0.0  ...    0.0   0.90918  -9.23179 -2.22342 -1.76329  0.00000 -1.75752     0.0  3.15770        1
+1848   1848                                               CNNC  0    0.0    0.0    0.0    0.0    2.0    0.0    0.0  ...    0.0   0.00000   0.00000  0.00000  0.00000  0.00000  0.00000     0.0 -0.65980        0
+1849   1849                            N[C@@H]1C[C@H]1c1ccccc1  0    0.0    1.0    1.0    0.0    0.0    0.0    0.0  ...    0.0   1.17065   1.08667  0.00000  1.39815  0.00000  0.00000     0.0  1.50120        0
+1850   1850                          COc1c2ccoc2cc2oc(=O)ccc12  0    0.0    0.0    0.0    0.0    1.0    0.0    0.0  ...    0.0   0.00000   0.00000  0.00000  0.65741  2.72717  0.00000     0.0  2.54780        0
+
+[1847 rows x 1308 columns]
+0
+1
+2
+3
+4
+cluster0
+      index                                             SMILES  y  C-001  C-002  C-003  C-004  C-005  C-006  C-007  ...  NdssS    SssCH2    SsssCH    SdssC    SaasC    SaaaC   SssssC  SsssNH    SLogP  cluster
+0         0                   CN1CCC(=C2c3ccccc3Sc3ccccc32)CC1  0    0.0    2.0    0.0    0.0    1.0    2.0    0.0  ...    0.0   4.74103   0.00000  3.14014  5.66367  0.00000  0.00000     0.0  4.67870        0
+1         1  Cc1c(C)c2c(c(C)c1O)CC[C@@](C)(CCC[C@@H](C)CCC[...  0    8.0   11.0    3.0    0.0    0.0    0.0    0.0  ...    0.0  14.05317   2.54212  0.00000  5.79278  0.00000 -0.07117     0.0  8.84026        0
+2         2  COc1cc(-c2coc3cc(OCc4ccccc4)c(OC)c(O)c3c2=O)cc...  0    0.0    0.0    0.0    0.0    3.0    2.0    0.0  ...    0.0   0.51562   0.00000  0.00000  3.57693  0.11027  0.00000     0.0  6.34940        0
+3         3  C[C@]12CC(=O)[C@@H]3[C@H](CCC4=CC(=O)C=C[C@]43...  0    2.0    5.0    3.0    2.0    0.0    1.0    0.0  ...    0.0   1.99367  -0.06169  0.50197  0.00000  0.00000 -2.89265     0.0  1.76580        0
+4         4  CC(=O)OCC(=O)[C@@]1(O)CC[C@H]2[C@@H]3CC[C@@H]4...  0    4.0    8.0    4.0    2.0    0.0    1.0    0.0  ...    0.0   5.01179   0.41194 -1.15673  0.00000  0.00000 -2.61156     0.0  3.00310        0
+...     ...                                                ... ..    ...    ...    ...    ...    ...    ...    ...  ...    ...       ...       ...      ...      ...      ...      ...     ...      ...      ...
+1845   1845  C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@]4(C)[C...  0    3.0    4.0    3.0    2.0    0.0    1.0    0.0  ...    0.0   0.60819  -2.69114 -0.11987  0.00000  0.00000 -5.87203     0.0  1.89570        0
+1846   1846  OC[C@H]1O[C@@](CO)(O[C@@H]2O[C@H](CO)[C@@H](O)...  0    0.0    0.0    0.0    0.0    0.0    4.0    0.0  ...    0.0  -3.48814 -22.34422  0.00000  0.00000  0.00000 -2.43126     0.0 -7.57140        0
+1848   1848                                               CNNC  0    0.0    0.0    0.0    0.0    2.0    0.0    0.0  ...    0.0   0.00000   0.00000  0.00000  0.00000  0.00000  0.00000     0.0 -0.65980        0
+1849   1849                            N[C@@H]1C[C@H]1c1ccccc1  0    0.0    1.0    1.0    0.0    0.0    0.0    0.0  ...    0.0   1.17065   1.08667  0.00000  1.39815  0.00000  0.00000     0.0  1.50120        0
+1850   1850                          COc1c2ccoc2cc2oc(=O)ccc12  0    0.0    0.0    0.0    0.0    1.0    0.0    0.0  ...    0.0   0.00000   0.00000  0.00000  0.65741  2.72717  0.00000     0.0  2.54780        0
+
+[1706 rows x 1308 columns]
+      index                                             SMILES  y  C-001  C-002  C-003  C-004  C-005  C-006  C-007  ...  NdssS    SssCH2   SsssCH    SdssC    SaasC    SaaaC   SssssC  SsssNH    SLogP  cluster
+1464   1464                    O=C(O)CCCCCCCCCCCC[C@@H]1C=CCC1  0    0.0   14.0    1.0    0.0    0.0    0.0    0.0  ...    0.0  17.16084  0.88963 -0.65454  0.00000  0.00000  0.00000     0.0  5.71840        0
+1623   1623                     O=C(O)[C@@H](O)[C@@H](O)C(=O)O  0    0.0    0.0    0.0    0.0    0.0    0.0    0.0  ...    0.0   0.00000 -4.53241 -3.53722  0.00000  0.00000  0.00000     0.0 -2.12260        0
+1169   1169  CC1(C)O[C@@H]2C[C@H]3[C@H]4CCC5=CC(=O)C=C[C@]5...  0    4.0    4.0    2.0    2.0    0.0    1.0    0.0  ...    0.0   0.75956 -2.78510  0.08645  0.00000  0.00000 -6.39147     0.0  2.41880        0
+1061   1061                       Cc1cc(=O)c2c(O)cc(O)c(C)c2o1  0    2.0    0.0    0.0    0.0    0.0    0.0    0.0  ...    0.0   0.00000  0.00000  0.00000  0.54148  0.34111  0.00000     0.0  1.82104        0
+854     854                Cc1cc(O)c2c(c1)C(=O)c1cccc(O)c1C2=O  0    1.0    0.0    0.0    0.0    0.0    0.0    0.0  ...    0.0   0.00000  0.00000 -0.88917  0.48295  0.00000  0.00000     0.0  2.18162        0
+
+[5 rows x 1308 columns]
+cluster1
+      index                                             SMILES  y  C-001  C-002  C-003  C-004  C-005  C-006  C-007  ...  NdssS   SssCH2    SsssCH     SdssC     SaasC    SaaaC    SssssC  SsssNH    SLogP  cluster
+333     333  CC1(C)[C@@H](O[C@H]2O[C@H](C(=O)O)[C@@H](O)[C@...  1    7.0    9.0    3.0    6.0    0.0    0.0    0.0  ...    0.0  6.10176 -20.69589  -2.89731   0.00000  0.00000  -2.91499     0.0  2.24560        1
+340     340  O=C(O[C@@H]1Cc2c(O)cc(O)cc2O[C@@H]1c1cc(O)c(=O...  1    0.0    2.0    0.0    0.0    0.0    0.0    0.0  ...    0.0 -0.79319  -6.35710  -2.45268 -12.18522 -1.07736   0.00000     0.0  4.17640        1
+411     411  CC[C@@H](C)C(=O)O[C@@H]1C[C@@]2(C)[C@H](c3ccoc...  1    9.0    5.0    2.0    3.0    1.0    0.0    0.0  ...    0.0 -1.04581  -8.66369  -3.89387   0.42019  0.00000 -20.26642     0.0  2.70850        1
+437     437  COc1ccc2cc1Oc1ccc(cc1)C[C@H]1c3cc(c(OC)cc3CCN1...  0    0.0    4.0    0.0    0.0    6.0    2.0    0.0  ...    0.0  5.23217   0.16658   0.00000  12.56404  0.00000   0.00000     0.0  7.16240        1
+445     445  O=C(OC[C@H]1O[C@H](OC(=O)c2cc(O)c(O)c(OC(=O)c3...  1    0.0    0.0    0.0    0.0    0.0    1.0    0.0  ...    0.0 -1.70788 -15.05279 -18.38030 -47.47616  0.00000   0.00000     0.0  4.83810        1
+447     447  C[C@H]1O[C@@H](O[C@H]2[C@@H](O)C[C@H](O[C@H]3[...  0    5.0   11.0    4.0    2.0    0.0    1.0    0.0  ...    0.0  7.07743  -9.37323   0.56856   0.00000  0.00000  -1.79601     0.0  2.21810        1
+500     500  O=C(O)c1cc(O)c2c(c1)[C@@H]([C@H]1c3cc(C(=O)O)c...  0    0.0    0.0    2.0    0.0    0.0    2.0    0.0  ...    0.0 -1.64217 -20.51863  -4.95280  -5.20679  0.00000   0.00000     0.0 -1.09560        1
+517     517  COc1ccc2cc1Oc1ccc(cc1)C[C@H]1c3c(cc4c(c3Oc3cc5...  0    0.0    4.0    0.0    0.0    4.0    2.0    1.0  ...    0.0  5.49336   0.20691   0.00000  12.95733  0.00000   0.00000     0.0  6.87390        1
+574     574  COC(=O)C[C@H]1[C@@]2(C)C[C@]34O[C@]5(C)O[C@@]6...  1   11.0    2.0    4.0    3.0    1.0    0.0    0.0  ...    0.0 -0.61277 -13.03915  -6.19477   0.23877  0.00000 -17.22529     0.0  3.66560        1
+594     594  COc1cc2c3cc1Oc1c(OC)c(OC)cc4c1[C@@H](Cc1cccc(c...  0    0.0    4.0    0.0    0.0    5.0    2.0    0.0  ...    0.0  4.88629   0.02663   0.00000  11.27947  0.00000   0.00000     0.0  6.85940        1
+672     672  CC[C@@H](C)C(=O)O[C@H]1[C@H](O)[C@H]2[C@H](CN3...  0    9.0    7.0    7.0    1.0    0.0    2.0    0.0  ...    0.0  3.34993 -13.09403  -3.22598   0.00000  0.00000 -10.74889     0.0  1.60720        1
+767     767  C[C@H]1O[C@@H](O[C@H]2[C@@H](O)C[C@H](O[C@H]3[...  0    5.0   12.0    4.0    2.0    0.0    1.0    0.0  ...    0.0  9.51373  -7.53451   0.81528   0.00000  0.00000  -0.85196     0.0  3.24730        1
+816     816  CC[C@@H](C)C(=O)O[C@H]1[C@H](O)[C@H]2[C@H](CN3...  0    9.0    6.0    7.0    1.0    0.0    2.0    0.0  ...    0.0  3.03945 -15.19619  -3.56228   0.00000  0.00000 -11.50022     0.0  0.57800        1
+856     856  O=C(O[C@@H]1Cc2c(O)cc(O)cc2O[C@@H]1c1cc(O)c(O)...  0    0.0    2.0    0.0    0.0    0.0    0.0    0.0  ...    0.0 -1.04502  -7.20286  -2.63666 -19.76881  0.00000   0.00000     0.0  4.44680        1
+989     989  CC[C@@H](C)C(=O)O[C@@H]1C[C@]2(C)[C@H](c3ccoc3...  1   10.0    5.0    3.0    3.0    1.0    0.0    0.0  ...    0.0 -1.05498  -9.54581  -3.79418   0.42175  0.00000 -20.37880     0.0  3.34460        1
+1030   1030  Oc1cc(O)c2c(c1)O[C@H](c1cc(O)c(O)c(O)c1)[C@H](...  0    0.0    1.0    2.0    0.0    0.0    0.0    0.0  ...    0.0 -0.46770 -14.47923   0.00000 -16.57585  0.00000   0.00000     0.0  3.56070        1
+1080   1080  COc1cc(C(=O)O[C@@H]2CC[C@]3(C)[C@@H]4CC[C@H]5[...  0    3.0    8.0    4.0    1.0    3.0    2.0    0.0  ...    0.0  3.40141  -4.97957  -0.71698   0.99007  0.00000 -11.70197     0.0  1.36460        1
+1208   1208  COc1cc2c3cc1Oc1cc(ccc1O)O[C@H]1c4c(cc(OC)c(O)c...  0    0.0    3.0    0.0    0.0    4.0    2.0    0.0  ...    0.0  4.01025  -0.49783   0.00000   8.12134  0.00000   0.00000     0.0  6.35020        1
+1545   1545  COC(=O)C[C@H]1[C@@]2(C)C[C@]34O[C@]5(C)O[C@@]6...  1    9.0    2.0    4.0    3.0    5.0    0.0    0.0  ...    0.0 -0.00923  -9.11191  -2.05683   0.46833  0.00000 -12.98623     0.0  4.57470        1
+1654   1654  C[C@H]1O[C@@H](O[C@H]2[C@@H](O)C[C@H](O[C@H]3[...  0    5.0   11.0    4.0    2.0    0.0    1.0    0.0  ...    0.0  7.26423  -9.31395   0.44926   0.00000  0.00000  -1.50098     0.0  2.21810        1
+1766   1766  CO[C@H]1/C=C/O[C@@]2(C)Oc3c(C)c(O)c4c(O)c(c5c(...  0    9.0    0.0    4.0    0.0    1.0    0.0    0.0  ...    0.0  0.00000  -6.15795  -1.53524   0.15856  0.92634  -1.95770     0.0  6.15784        1
+1792   1792  C[C@H]1O[C@H](O[C@@H]2[C@@H](O[C@H]3CC[C@@]4(C...  0    7.0   10.0    3.0    6.0    0.0    2.0    0.0  ...    0.0  7.93035 -12.06879   0.74752   0.00000  0.00000  -1.61943     0.0  3.52110        1
+1847   1847  CC[C@@]1(O)C[C@H](O[C@H]2C[C@H](N(C)C)[C@H](O[...  0    4.0    6.0    1.0    0.0    3.0    0.0    0.0  ...    0.0  0.90918  -9.23179  -2.22342  -1.76329  0.00000  -1.75752     0.0  3.15770        1
+
+[23 rows x 1308 columns]
+      index                                             SMILES  y  C-001  C-002  C-003  C-004  C-005  C-006  C-007  ...  NdssS   SssCH2   SsssCH    SdssC     SaasC    SaaaC    SssssC  SsssNH    SLogP  cluster
+447     447  C[C@H]1O[C@@H](O[C@H]2[C@@H](O)C[C@H](O[C@H]3[...  0    5.0   11.0    4.0    2.0    0.0    1.0    0.0  ...    0.0  7.07743 -9.37323  0.56856   0.00000  0.00000  -1.79601     0.0  2.21810        1
+411     411  CC[C@@H](C)C(=O)O[C@@H]1C[C@@]2(C)[C@H](c3ccoc...  1    9.0    5.0    2.0    3.0    1.0    0.0    0.0  ...    0.0 -1.04581 -8.66369 -3.89387   0.42019  0.00000 -20.26642     0.0  2.70850        1
+1766   1766  CO[C@H]1/C=C/O[C@@]2(C)Oc3c(C)c(O)c4c(O)c(c5c(...  0    9.0    0.0    4.0    0.0    1.0    0.0    0.0  ...    0.0  0.00000 -6.15795 -1.53524   0.15856  0.92634  -1.95770     0.0  6.15784        1
+594     594  COc1cc2c3cc1Oc1c(OC)c(OC)cc4c1[C@@H](Cc1cccc(c...  0    0.0    4.0    0.0    0.0    5.0    2.0    0.0  ...    0.0  4.88629  0.02663  0.00000  11.27947  0.00000   0.00000     0.0  6.85940        1
+1545   1545  COC(=O)C[C@H]1[C@@]2(C)C[C@]34O[C@]5(C)O[C@@]6...  1    9.0    2.0    4.0    3.0    5.0    0.0    0.0  ...    0.0 -0.00923 -9.11191 -2.05683   0.46833  0.00000 -12.98623     0.0  4.57470        1
+
+[5 rows x 1308 columns]
+cluster2
+      index                                             SMILES  y  C-001  C-002  C-003  C-004  C-005  C-006  C-007  ...  NdssS   SssCH2    SsssCH    SdssC    SaasC    SaaaC   SssssC  SsssNH    SLogP  cluster
+476     476  CC[C@]1(O)C[C@@H]2CN(CCc3c([nH]c4ccccc34)[C@@]...  1    3.0    6.0    1.0    3.0    4.0    5.0    0.0  ...    0.0  6.38717  -2.59291 -1.91939  4.46402  1.93794 -6.54571     0.0  3.99090        2
+503     503  CC(=O)O[C@H]1C[C@H](O[C@H]2[C@@H](O)C[C@H](O[C...  0    6.0   11.0    4.0    2.0    0.0    2.0    0.0  ...    0.0  5.85326 -18.53174 -0.09732  0.00000  0.00000 -1.89953     0.0  0.61310        2
+541     541  CC[C@]1(O)C[C@H]2CN(CCc3c([nH]c4ccccc34)[C@@](...  0    3.0    6.0    1.0    3.0    3.0    5.0    0.0  ...    0.0  5.64272  -3.31856 -2.21672  3.54119  1.84978 -7.25283     0.0  3.51750        2
+765     765  C/C=C(/C)C(=O)O[C@@H]1[C@H](OC(C)=O)[C@]2(CO)[...  1    9.0    7.0    3.0    6.0    0.0    4.0    0.0  ...    0.0  0.14160 -34.12829 -1.60707  0.00000  0.00000 -5.15128     0.0 -1.32110        2
+1092   1092  Cc1c2oc3c(C)ccc(C(=O)O[C@@H](C)[C@@H]4NC(=O)[C...  0   12.0    4.0    4.0    0.0    4.0    4.0    0.0  ...    0.0  1.05749 -15.86121 -9.49131 -2.05448 -0.31252  0.00000     0.0  0.72564        2
+1379   1379  C[C@H]1CC[C@]2(NC1)O[C@@H]1[C@H]3CC[C@H]4C[C@@...  0    4.0    9.0    5.0    2.0    0.0    5.0    0.0  ...    0.0  6.99422 -29.91399  0.00000  0.00000  0.00000 -0.07882     0.0 -3.33340        2
+
+[6 rows x 1308 columns]
+      index                                             SMILES  y  C-001  C-002  C-003  C-004  C-005  C-006  C-007  ...  NdssS   SssCH2    SsssCH    SdssC    SaasC    SaaaC   SssssC  SsssNH   SLogP  cluster
+1379   1379  C[C@H]1CC[C@]2(NC1)O[C@@H]1[C@H]3CC[C@H]4C[C@@...  0    4.0    9.0    5.0    2.0    0.0    5.0    0.0  ...    0.0  6.99422 -29.91399  0.00000  0.00000  0.00000 -0.07882     0.0 -3.3334        2
+503     503  CC(=O)O[C@H]1C[C@H](O[C@H]2[C@@H](O)C[C@H](O[C...  0    6.0   11.0    4.0    2.0    0.0    2.0    0.0  ...    0.0  5.85326 -18.53174 -0.09732  0.00000  0.00000 -1.89953     0.0  0.6131        2
+541     541  CC[C@]1(O)C[C@H]2CN(CCc3c([nH]c4ccccc34)[C@@](...  0    3.0    6.0    1.0    3.0    3.0    5.0    0.0  ...    0.0  5.64272  -3.31856 -2.21672  3.54119  1.84978 -7.25283     0.0  3.5175        2
+765     765  C/C=C(/C)C(=O)O[C@@H]1[C@H](OC(C)=O)[C@]2(CO)[...  1    9.0    7.0    3.0    6.0    0.0    4.0    0.0  ...    0.0  0.14160 -34.12829 -1.60707  0.00000  0.00000 -5.15128     0.0 -1.3211        2
+
+[4 rows x 1308 columns]
+cluster3
+      index                                             SMILES  y  C-001  C-002  C-003  C-004  C-005  C-006  C-007  ...  NdssS   SssCH2    SsssCH     SdssC    SaasC  SaaaC   SssssC  SsssNH    SLogP  cluster
+28       28  C[C@@H]1[C@H](O)[C@@H](C)/C=C/C=C/C=C/C=C/C=C/...  0    4.0    8.0    3.0    0.0    0.0    0.0    0.0  ...    0.0 -3.14764 -20.95747  -2.42327  0.00000    0.0 -2.34318     0.0  -1.3398        3
+180     180  CC[C@@H](C)[C@@H]([NH3+])C1=N[C@H](C(=O)N[C@@H...  0    8.0   15.0    4.0    0.0    0.0    3.0    0.0  ...    0.0 -1.68086 -17.46667 -13.99815  0.77882    0.0  0.00000     0.0  -5.7806        3
+224     224  C[C@@H]1[C@H](O)[C@@H](C)/C=C/C=C/CC/C=C/C=C/C...  1    4.0   10.0    3.0    0.0    0.0    0.0    0.0  ...    0.0 -1.48540 -21.14517  -2.18034  0.00000    0.0 -2.35345     0.0   0.9357        3
+247     247  CC(C)C[C@@H]1NC(=O)[C@H](CCCN)NC(=O)[C@H](C(C)...  0    4.0   12.0    2.0    0.0    0.0    2.0    0.0  ...    0.0 -2.45626 -16.04767 -12.25092  1.92450    0.0  0.00000     0.0   0.8111        3
+865     865  C/C=C/C[C@@H](C)C(=O)[C@H]1C(=O)N[C@@H](C(C)C)...  1   18.0    5.0    8.0    0.0    7.0    1.0    0.0  ...    0.0  0.22549 -15.93285  -8.34871  0.00000    0.0  0.00000     0.0   3.7232        3
+1140   1140  C/C=C/C[C@@H](C)[C@@H](O)[C@H]1C(=O)N[C@@H](CC...  1   17.0    6.0    7.0    0.0    7.0    1.0    0.0  ...    0.0  0.41779 -16.11916  -7.41864  0.00000    0.0  0.00000     0.0   3.2690        3
+1431   1431  CC[C@H](C)[C@@H]1NC(=O)[C@@H](CC[NH2+]CS(=O)(=...  0    8.0   12.0    3.0    0.0    0.0    6.0    5.0  ...    0.0 -9.84353 -23.69016 -13.11129  0.00000    0.0  0.00000     0.0 -15.2945        3
+1468   1468  CC[C@@H](C)CCCCC(=O)N[C@@H](CCN)C(=O)N[C@@H](C...  0    6.0   13.0    2.0    0.0    0.0    6.0    0.0  ...    0.0  0.91490 -17.64148  -9.72945  0.58528    0.0  0.00000     0.0  -5.2448        3
+1839   1839  CNc1ccc(C(=O)C[C@@H](O)CC[C@@H](C)[C@@H]2OC(=O...  0    3.0   12.0    3.0    0.0    2.0    0.0    0.0  ...    0.0 -3.66955 -21.01970  -2.50011  1.30644    0.0 -2.28776     0.0   2.8343        3
+
+[9 rows x 1308 columns]
+      index                                             SMILES  y  C-001  C-002  C-003  C-004  C-005  C-006  C-007  ...  NdssS   SssCH2    SsssCH     SdssC    SaasC  SaaaC   SssssC  SsssNH   SLogP  cluster
+1140   1140  C/C=C/C[C@@H](C)[C@@H](O)[C@H]1C(=O)N[C@@H](CC...  1   17.0    6.0    7.0    0.0    7.0    1.0    0.0  ...    0.0  0.41779 -16.11916  -7.41864  0.00000    0.0  0.00000     0.0  3.2690        3
+28       28  C[C@@H]1[C@H](O)[C@@H](C)/C=C/C=C/C=C/C=C/C=C/...  0    4.0    8.0    3.0    0.0    0.0    0.0    0.0  ...    0.0 -3.14764 -20.95747  -2.42327  0.00000    0.0 -2.34318     0.0 -1.3398        3
+247     247  CC(C)C[C@@H]1NC(=O)[C@H](CCCN)NC(=O)[C@H](C(C)...  0    4.0   12.0    2.0    0.0    0.0    2.0    0.0  ...    0.0 -2.45626 -16.04767 -12.25092  1.92450    0.0  0.00000     0.0  0.8111        3
+865     865  C/C=C/C[C@@H](C)C(=O)[C@H]1C(=O)N[C@@H](C(C)C)...  1   18.0    5.0    8.0    0.0    7.0    1.0    0.0  ...    0.0  0.22549 -15.93285  -8.34871  0.00000    0.0  0.00000     0.0  3.7232        3
+1839   1839  CNc1ccc(C(=O)C[C@@H](O)CC[C@@H](C)[C@@H]2OC(=O...  0    3.0   12.0    3.0    0.0    2.0    0.0    0.0  ...    0.0 -3.66955 -21.01970  -2.50011  1.30644    0.0 -2.28776     0.0  2.8343        3
+
+[5 rows x 1308 columns]
+cluster4
+      index                                             SMILES  y  C-001  C-002  C-003  C-004  C-005  C-006  C-007  ...  NdssS    SssCH2   SsssCH    SdssC     SaasC    SaaaC    SssssC  SsssNH     SLogP  cluster
+9         9  CC(=O)Oc1cc2c(c(C)c1OC(C)=O)CC=C1[C@]2(C)CC[C@...  1    8.0    8.0    1.0    5.0    0.0    0.0    0.0  ...    0.0   7.28153  0.32883 -0.12222   3.75957  0.00000  -0.88109     0.0   7.08332        4
+24       24  CC(=O)O[C@H]1CC[C@@]2(C)C3=CC(=O)[C@@]4(C)[C@@...  0    5.0    7.0    6.0    2.0    0.0    1.0    0.0  ...    0.0   7.80352  2.40879  1.52834   0.00000  0.00000  -0.96886     0.0   5.83710        4
+32       32  O=C(Oc1cc(OC(=O)c2ccccc2)c2c(c1)O[C@H](c1ccc(O...  0    0.0    1.0    0.0    0.0    0.0    0.0    0.0  ...    0.0  -0.04884 -2.18661 -3.45763   1.95811  0.00000   0.00000     0.0   9.46520        4
+74       74  C/C=C(/C)C(=O)O[C@@H]1CC[C@]2(C)[C@@H]3CC[C@H]...  0    5.0    8.0    4.0    1.0    0.0    2.0    0.0  ...    0.0   3.91941 -4.50488 -0.08211   0.00000  0.00000 -11.19047     0.0   0.99120        4
+84       84  CC[C@@]1([C@@H]2O[C@@H]([C@@H]3O[C@@](O)(CC)[C...  0    9.0    9.0    6.0    0.0    1.0    0.0    0.0  ...    0.0   6.54823 -2.74015 -0.92164   0.00000  0.00000  -3.16524     0.0   5.69060        4
+...     ...                                                ... ..    ...    ...    ...    ...    ...    ...    ...  ...    ...       ...      ...      ...       ...      ...       ...     ...       ...      ...
+1786   1786  CC(C)c1c(O)c(-c2cc3c(c(C(C)C)c2O)CC[C@@H]2C(C)...  0   10.0   10.0    4.0    4.0    0.0    0.0    0.0  ...    0.0  12.00129  1.71663  0.00000  10.48905  0.00000   0.82042     0.0  11.07200        4
+1801   1801  CC(=O)OC1CC(O)C(C)(C)C2C[C@@H](OC(C)=O)[C@@]3(...  0    7.0    4.0    2.0    4.0    0.0    0.0    0.0  ...    0.0   2.15880 -3.45845 -1.22076   0.76840  0.00000  -3.49105     0.0   4.11810        4
+1804   1804  CC[C@@H](C(=O)[C@@H](C)[C@@H](O)[C@H](C)[C@@H]...  1   10.0   10.0    7.0    0.0    0.0    0.0    0.0  ...    0.0   5.98401 -6.20162 -0.95233   0.00000  0.00000  -4.24324     0.0   6.18800        4
+1820   1820  CC(=O)O[C@H]1C[C@@H](OC(C)=O)C(C)(C)[C@@H]2C[C...  0    8.0    4.0    2.0    4.0    0.0    0.0    0.0  ...    0.0   2.21768 -2.43333 -0.76380   0.77615  0.00000  -2.44172     0.0   5.47770        4
+1831   1831  O=c1c(O)cc([C@H]2Oc3cc(O)cc(O)c3C[C@H]2O)cc2c(...  0    0.0    2.0    0.0    0.0    0.0    0.0    0.0  ...    0.0  -0.24452 -5.16016  0.00000  -3.06918 -0.58063   0.00000     0.0   2.21340        4
+
+[103 rows x 1308 columns]
+      index                                             SMILES  y  C-001  C-002  C-003  C-004  C-005  C-006  C-007  ...  NdssS   SssCH2    SsssCH    SdssC    SaasC  SaaaC   SssssC  SsssNH   SLogP  cluster
+1191   1191  CCC(=O)O[C@H]1[C@H](O[C@H]2[C@@H](C)[C@H](O[C@...  1   11.0    5.0    4.0    0.0    3.0    0.0    0.0  ...    0.0  0.66715 -14.58635 -1.66646  0.00000    0.0 -4.92173     0.0  2.7465        4
+84       84  CC[C@@]1([C@@H]2O[C@@H]([C@@H]3O[C@@](O)(CC)[C...  0    9.0    9.0    6.0    0.0    1.0    0.0    0.0  ...    0.0  6.54823  -2.74015 -0.92164  0.00000    0.0 -3.16524     0.0  5.6906        4
+1138   1138  COc1cc([C@@H]2c3cc4c(cc3[C@@H](O[C@@H]3O[C@@H]...  1    0.0    0.0    3.0    0.0    2.0    2.0    1.0  ...    0.0  0.17108  -8.99629 -0.43349  4.02024    0.0  0.00000     0.0  2.7529        4
+337     337  CC(C)=CCC[C@@]1(C)C=Cc2c(O)c3c(c(CC=C(C)C)c2O1...  1    8.0    6.0    3.0    0.0    0.0    0.0    0.0  ...    0.0  3.02118  -2.15012  1.15721  1.91450    0.0 -4.05919     0.0  7.1110        4
+1110   1110  C/C=C(\C)C(=O)O[C@@H]1[C@@H]2C=C3[C@H]4CC(=O)O...  1    6.0    3.0    4.0    3.0    1.0    0.0    0.0  ...    0.0  1.37394  -5.45434 -0.61681  0.77468    0.0 -2.65150     0.0  4.4996        4
+
+[5 rows x 1308 columns]
+      index                                             SMILES  y  C-001  C-002  C-003  C-004  C-005  C-006  C-007  ...  NdssS    SssCH2   SsssCH    SdssC    SaasC    SaaaC   SssssC  SsssNH    SLogP  cluster
+1464   1464                    O=C(O)CCCCCCCCCCCC[C@@H]1C=CCC1  0    0.0   14.0    1.0    0.0    0.0    0.0    0.0  ...    0.0  17.16084  0.88963 -0.65454  0.00000  0.00000  0.00000     0.0  5.71840        0
+1623   1623                     O=C(O)[C@@H](O)[C@@H](O)C(=O)O  0    0.0    0.0    0.0    0.0    0.0    0.0    0.0  ...    0.0   0.00000 -4.53241 -3.53722  0.00000  0.00000  0.00000     0.0 -2.12260        0
+1169   1169  CC1(C)O[C@@H]2C[C@H]3[C@H]4CCC5=CC(=O)C=C[C@]5...  0    4.0    4.0    2.0    2.0    0.0    1.0    0.0  ...    0.0   0.75956 -2.78510  0.08645  0.00000  0.00000 -6.39147     0.0  2.41880        0
+1061   1061                       Cc1cc(=O)c2c(O)cc(O)c(C)c2o1  0    2.0    0.0    0.0    0.0    0.0    0.0    0.0  ...    0.0   0.00000  0.00000  0.00000  0.54148  0.34111  0.00000     0.0  1.82104        0
+854     854                Cc1cc(O)c2c(c1)C(=O)c1cccc(O)c1C2=O  0    1.0    0.0    0.0    0.0    0.0    0.0    0.0  ...    0.0   0.00000  0.00000 -0.88917  0.48295  0.00000  0.00000     0.0  2.18162        0
+
+[5 rows x 1308 columns]
+Train set contains:
+        1203 negative values
+        180 positive values
+        ratio neg / pos: 6.683333333333334
+Test set contains:
+        403 negative values
+        61 positive values
+        ratio neg / pos: 6.60655737704918
+If you find this imbalanced, try to decomment line 44 of split_by_kmeans.py module. It can give an error!
+
+The following files have been created:
+
+../data/TK_OATP1B1inh/TK_OATP1B1inh-cleaned_from_kmeans.csv
+../data/TK_OATP1B1inh/TK_OATP1B1inh-train_set.csv
+../data/TK_OATP1B1inh/TK_OATP1B1inh-test_set.csv
+
+Do you want to perform any other step?(y/n):  ^E

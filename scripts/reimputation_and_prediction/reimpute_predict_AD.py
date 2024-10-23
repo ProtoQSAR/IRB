@@ -82,7 +82,7 @@ import warnings
 warnings.filterwarnings('ignore')
 import json
 from rdkit import Chem
-from utils.get_metrics import getMetrics
+
 ########################  IMPORTS FOR  PARALLELIZATION ########################
 
 
@@ -90,15 +90,13 @@ from utils.get_metrics import getMetrics
 import multiprocessing
 from multiprocessing import Process
 from descriptors import wotan
+from utils.get_metrics import getMetrics
+from utils.AD import calculate_ADs
 import time
 ##############################################################################
 ##############################################################################
 ##############################################################################
 
-################################ INITIAL VARIABLES ###########################
-input_data_folder =  '..' + os.path.sep + '..' + os.path.sep + 'Models'
-
-##############################################################################
 
 #%% FUNCTIONS
 
@@ -185,7 +183,17 @@ def calculate_all(molec_struc, model_dict, wotan_path):
         results[desc_name] = pd.Series(lista)
         # results[desc_name] = [desc_fn(mol, **kwargs) for mol in molec_struc]
 
-#     return results
+    return results
+
+def inputoutput_files(model, path_model):
+    
+    train_df = pd.read_csv(path_model + os.path.sep + f'{mod_name}-descriptors-train.txt', sep = '\t')
+    test_df = pd.read_csv(path_model + os.path.sep + f'{mod_name}-descriptors-test.txt', sep = '\t')
+    model = pickle.load(open(path_model + os.path.sep + f'{mod_name}.sav', "rb"))
+    model_dict =  load_json(path_model + os.path.sep + f'{mod_name}.json')
+    scaler =  pickle.load(open(path_model + os.path.sep + f'{mod_name}-train_set.sca', "rb"))
+
+    return  train_df, test_df, model, model_dict, scaler  
 
 
 def load_json(json_path):
@@ -196,11 +204,11 @@ def load_json(json_path):
 
     return json_dict
 
-def nanify(feats_df):
+def nanify(df):
     ### substitute text in descriptors by NaN
-    print("antes de nanify", feats_df.shape)
 
-    df_nan = feats_df.replace(to_replace=r"[a-zA-Z]",
+
+    df_nan = df.replace(to_replace=r"[a-zA-Z]",
                                 value=np.nan,
                                 regex=True).replace(np.inf,np.nan)
     to_cast=list(df_nan.select_dtypes(include=[object]).columns)
@@ -208,133 +216,104 @@ def nanify(feats_df):
     df_nan[df_nan <= -1e38] = np.nan
     df_nan[df_nan >= 1e38] = np.nan
 
-    print("después de nanify", df_nan.shape)
+
 
     return df_nan
 
-def Knn_imputation(dataset):
-
-    # This is a Copied version of the Knn_imputation function in wotan
-    # The only difference (I think) is that does not remove the first columns, this is done before
-    from time import perf_counter
-
-    set_config(working_memory=4)
-
-    # print(dataset.shape)
-
-    features = dataset
-
-    out_columns = list(features.columns)  # SME EDIT
-
-    df_nan = features.replace(
-        to_replace=r'[a-zA-Z]', value=np.nan, regex=True).replace(np.inf, np.nan)
-
-    to_cast = list(df_nan.select_dtypes(include=[object]).columns)
-    df_nan[to_cast] = df_nan[to_cast].astype(dtype=np.float64)
-
-    df_nan[df_nan <= -1e38] = np.nan
-    df_nan[df_nan >= 1e38] = np.nan
-
-    all_nan = df_nan.columns[df_nan.isna().all()].tolist()
-    if len(all_nan) > 0:  # SME EDIT
-        print('Warning! Some of descriptors are NaN along the full data set:', len(
-            all_nan), 'BIC0_core' in all_nan)  # SME EDIT
-    for i in all_nan:  # SME EDIT
-        out_columns.remove(i)  # SME EDIT
-    df_nan = df_nan.dropna(axis=1, how='all')
-
-    #df_nan = df_nan.round(3)
-
-    t1 = perf_counter()
-    imputer = KNNImputer(missing_values=np.nan,
-                         n_neighbors=3, weights="uniform")
-    print('[+] fitting')
-    result = imputer.fit(df_nan)
-    print('[+] transforming')
-    result = imputer.transform(df_nan)
-
-    # print(result.shape,len(list(features.columns)))  #SME EDIT
-    imputed_df = pd.DataFrame(result, columns=out_columns)  # SME EDIT
-    t2 = perf_counter()
-    # print((t2-t1)/60)
-    set_config(working_memory=1024)
-    return imputed_df, imputer
 
 
 
 
-def calc_descriptors(option, mod_name, input_df, model_dict, model, set_data, output_path):
+
+
+def calc_descriptors(option, mod_name, input_df, model_dict, set_data, output_path):
     
     
 
-    if option == "reffiting":
 
-        ######### in case that non-parallel option is desired #################
-        # print('[+] Calculating w/o parallelization')
-        # start_total_time = time.time()
-        # mols = [Chem.MolFromSmiles(mol) for mol in list(validation_data['SMILES'])]
+
+    ######### in case that non-parallel option is desired #################
+    # print('[+] Calculating w/o parallelization')
+    # start_total_time = time.time()
+    # mols = [Chem.MolFromSmiles(mol) for mol in list(validation_data['SMILES'])]
+    
+    # descriptors = calculate_all(mols, model_dict, wotan_path)
+    # # print(descriptors)
+    
+    # elapsed_time = time.time() - start_total_time
+    # print(f'{round(elapsed_time, 2)} seconds')
+    #######################################################################
+    
+    start_total_time = time.time()
+    print(f'\t\t[+++] Calculating descriptors with parallelization for {set_data}')
+
+    cores = multiprocessing.cpu_count()
+
+    NUM_PROCESOS = 3*int(cores/4)
+    # NUM_PROCESOS = 1
+    shape = input_df.shape
+    
+    interv = int(shape[0]/NUM_PROCESOS)
+
+    jobs = []
+
+    manager = multiprocessing.Manager()
+    return_dict = manager.dict()
+
+    for i in range(NUM_PROCESOS):
+
+        if i == NUM_PROCESOS-1:
+            ini =  i*interv
+            fin = shape[0]
+        else:
+            ini =  i*interv
+            fin = (i+1)*interv
+
+        jobs.append(Calculate(input_df,i,ini,fin,model_dict,return_dict))
+        jobs[i].start()
+
+    for job in jobs:
+        job.join()
+
+
+    descriptors_df = pd.DataFrame()
+
+    for i in range(NUM_PROCESOS):
+        descriptors_df = pd.concat([descriptors_df,return_dict[i]], axis=0, sort=False)
+
+    
+    elapsed_time = time.time() - start_total_time
+    print(f'\t\t\t{round(elapsed_time, 2)} seconds')
+
+    raw_descriptors_file_name = output_path + os.path.sep + f'raw_{mod_name}-descriptors-{set_data}.txt'
+    descriptors_df.to_csv(raw_descriptors_file_name, sep = '\t', index = False)
+    print(f'\t\t file with raw descriptors created: {raw_descriptors_file_name}')
+
+    return descriptors_df
+
+def impute(df, imputer):
         
-        # descriptors = calculate_all(mols, model_dict, wotan_path)
-        # # print(descriptors)
-        
-        # elapsed_time = time.time() - start_total_time
-        # print(f'{round(elapsed_time, 2)} seconds')
-        #######################################################################
-        
-        start_total_time = time.time()
-        print('\t\t[+++] Calculating descriptors with parallelization')
+    imputed_df = imputer.transform(df)
+    
+    return imputed_df
 
-        cores = multiprocessing.cpu_count()
+def scale(df, scaler):
+    
+    scaled_df = scaler.transform(df)
+    
+    return scaled_df
+    
+def predict(df, model):
+    Y_pred = model.predict(df)
+    
+    return Y_pred
 
-        NUM_PROCESOS = 3*int(cores/4)
-        # NUM_PROCESOS = 1
-        shape = input_df.shape
-        
-        interv = int(shape[0]/NUM_PROCESOS)
-
-        jobs = []
-
-        manager = multiprocessing.Manager()
-        return_dict = manager.dict()
-
-        for i in range(NUM_PROCESOS):
-
-            if i == NUM_PROCESOS-1:
-                ini =  i*interv
-                fin = shape[0]
-            else:
-                ini =  i*interv
-                fin = (i+1)*interv
-
-            jobs.append(Calculate(input_df,i,ini,fin,model_dict,return_dict))
-            jobs[i].start()
-
-        for job in jobs:
-            job.join()
-
-
-        descriptors_df = pd.DataFrame()
-
-        for i in range(NUM_PROCESOS):
-            descriptors_df = pd.concat([descriptors_df,return_dict[i]], axis=0, sort=False)
-
-        #print(final_df,data_df)
-        # final_df = pd.concat([final_df.reset_index(drop=True),data_df[extra_data]], axis=1, sort=False) 
-        
-        # print(descriptors_df)
-        elapsed_time = time.time() - start_total_time
-        print(f'{round(elapsed_time, 2)} seconds')
-
-
-        descriptors_df.to_csv(output_path + os.path.sep + f'raw_{mod_name}-descriptors-train.txt', sep = '\t', index = False)
-
-        return descriptors_df
-
-
-def refit ():
-    print('pppp')
-
-
+def makedir(path):
+    if not os.path.exists(path):
+        os.makedirs(path)
+        print(f"\t\tOutput directory created: {path}")
+    else:
+        print(f"\t\tOutput directory already exists: {path}")    
 #%%
 
 
@@ -345,164 +324,390 @@ if __name__ == '__main__':
     os.chdir(parent)
     print(f'Working on: \n {os.getcwd()}')
     
-    df_models_to_process = pd.read_excel('../reimputation_and_prediction_data.xlsx')
     
-    print('\n[!] Yo are in reimputation mode[!]')
     
-    option = 'reffiting'
+    
+    
+    option = 'mergeJSONS'
+    
+    calculate = 'WITH'
+    
     '''
-    reffiting --> reffits locally a previus model
-                     needs training-set, test-set, sav file, json file
-    prediction --> predicts a new dataset
-                   needs training-set, test-set, sav file, json file
+    
+    all of them need reimputation_and_prediction_data.xlsx file
+    reffit --> reffits locally a previus model
+                     needs training_df, test_df, sav file, json file, optional: scaler file
+                     
+                     calculate = 'WITHOUT' --> I have already recalculate new descriptors for train and test
+                     calculate = 'WITH' --> I need to calculate them
+    calculate --> calculate descriptors of a custom json file 
+                   needs new_dataset, json file                     
+                     
+    predict --> predicts a new dataset with precalculated descriptors
+                   needs new_dataset, training_df, test_df, sav file, json file, imp file, scaler file 
+                   
+                   
+    mergeJSONS --> create a consensus json file for different models 
+                   needs a set of json files
+                   
     '''
-    df_metrics = pd.DataFrame()
-    ### IF mode = = reimpute
-    if option == 'reffiting':
-     
-        df_models_to_process = df_models_to_process[df_models_to_process['reffit'] == 'yes']
-        
 
-        
-    for mod_name in df_models_to_process['final_model_name']:
-        
-        print(f'\n[+] Working on {mod_name}')
-        
-        print('\t[++] Reading input files')
-        #read input files
-        
-        path_model = input_data_folder + os.path.sep + mod_name
-        
-        train_df = pd.read_csv(path_model + os.path.sep + f'{mod_name}-descriptors-train.txt', sep = '\t')
-        test_df = pd.read_csv(path_model + os.path.sep + f'{mod_name}-descriptors-test.txt', sep = '\t')
-        model = pickle.load(open(path_model + os.path.sep + f'{mod_name}.sav', "rb"))
-        model_dict =  load_json(path_model + os.path.sep + f'{mod_name}.json')
-        scaler =  pickle.load(open(path_model + os.path.sep + f'{mod_name}-train_set.sca', "rb"))
-       
-        print(f'\t\t Model type: {model._estimator_type}')
-        
-        print('\t[++] Calculating original metrics')
-        
-        df_metrics_byone = getMetrics(mod_name, model, train_df, test_df, option)
-        
-        df_metrics = pd.concat([df_metrics,df_metrics_byone], axis = 0)
+    
+    
+    df_models_to_process = pd.read_excel('reimputation_and_prediction_data.xlsx', sheet_name = 'models')
 
+    df_models_to_process = df_models_to_process[df_models_to_process[option] == 'yes']    
+    
 
-        print('\t[++] Refitting model')
-
-        results_folder = path_model + os.path.sep + f'imputed-{mod_name}'
-
-        if not os.path.exists(results_folder):
-            os.makedirs(results_folder)
+    if option != 'reffit' :
         
-        train_descriptors = calc_descriptors(option, mod_name, train_df, model_dict, model, 'train', results_folder)
-        test_descriptors = calc_descriptors(option, mod_name, test_df, model_dict, model, 'test', results_folder)
+        
+        print(f'\n[!] You are in {option} mode [!] ')
+        
+        
+        if option != 'mergeJSONS':
             
+            df_df_to_process = pd.read_excel('reimputation_and_prediction_data.xlsx', sheet_name = 'df_to_predict')
+            
+            df_df_to_process = df_df_to_process[df_df_to_process[option] == 'yes']
+        
+        
+        
+    else :
+        print(f'\n[!] You are in {option} mode {calculate} calculating descriptors [!]')
+    
+        
+    ##########################################################################     
+        
+        
+    if option == 'reffit':
+        
+        df_metrics = pd.DataFrame() 
+        
+        for mod_name in df_models_to_process['final_model_name']:
+            
+            print(f'\n[+] Working on {mod_name} model')
+            
+            print('\t[++] Reading input files and creating putput directory')
+
+            model_data_folder =  '..' + os.path.sep + '..' + os.path.sep + 'Models'
+            path_model = model_data_folder + os.path.sep + mod_name
+            results_folder = path_model + os.path.sep + f'imputed-{mod_name}'
+    
+            makedir(results_folder)
+                
+                
+            train_df, test_df, model, model_dict, scaler = inputoutput_files(mod_name, path_model)
 
 
-        print('\t\t[+++] Imputing')
-        
-        descriptors = train_descriptors.iloc[:,1:]
-        
+            train_df_smiles = train_df['SMILES'] 
+            y_train_obs = train_df['observed'] 
     
-        imputed_df, imputer = Knn_imputation(descriptors)
+            test_df_smiles = test_df['SMILES'] 
+            y_test_obs = test_df['observed'] 
     
-        pickle.dump(imputer, open(output_path + os.path.sep + f'{mod_name}-train_set.imp', 'wb'))
-        
-        
-        
-        print('\t\t[+++] Scaling')
-        
-        
+            print(f'\t\t Model type: {model._estimator_type}')
+            
+            print('\t[++] Calculating original metrics')
+            
+            old_new = 'old'
+            
+            df_metrics_byone = getMetrics(mod_name, model, train_df, test_df, old_new)
+            
+            df_metrics = pd.concat([df_metrics,df_metrics_byone], axis = 0)
+
+            print('\t[++] Refitting model')
     
+            
+            
+            
+            if calculate == 'WITH':
+            
+                
+                print('\t\t[+++] Recalculating descriptors')
         
-        print('\t\t[+++] Fitting new model')
+                
+                train_with_descriptors = calc_descriptors(option, mod_name, train_df, model_dict, 'train', results_folder)
+                test_with_descriptors = calc_descriptors(option, mod_name, test_df, model_dict, 'test', results_folder)
+                
+            else:
+                
+                print('\t\t[+++] Loading new calculated descriptors')
+                
+                train_with_descriptors = pd.read_csv(results_folder + os.path.sep + f'raw_{mod_name}-descriptors-train.txt', sep ='\t')
+                test_with_descriptors = pd.read_csv(results_folder + os.path.sep + f'raw_{mod_name}-descriptors-test.txt', sep ='\t')
+                
+    
+    
+            print('\t\t[+++] Imputing')
+            
+            if 'SMILES' in train_with_descriptors.columns:
+                train_with_descriptors = train_with_descriptors.iloc[:, 1:]
+                test_with_descriptors = test_with_descriptors.iloc[:, 1:]
+    
+            set_config(working_memory=4)
+        
+            train_descriptors_nanyfied = nanify(train_with_descriptors)
+    
+            imputer_estimator = KNNImputer(missing_values=np.nan,
+                                 n_neighbors=3, weights="uniform")
+    
+            imputer = imputer_estimator.fit(train_with_descriptors)
+            set_config(working_memory=1024)
+    
+    
+            test_descriptors_nanyfied = nanify(test_with_descriptors)
+            
+            imputed_train_df = impute(train_descriptors_nanyfied, imputer)
+            imputed_test_df = impute(test_descriptors_nanyfied, imputer)
+            
+            ##@@
+            imputed_test_as_df = pd.DataFrame(imputed_test_df)
+            imputed_test_as_df.columns = test_descriptors_nanyfied.columns
+            imputed_test_as_df.to_csv(results_folder + os.path.sep + f'EX_{mod_name}-test_imputed.txt', sep = '\t', index = False)
+            ##@@
+
+            
+            imputer_file_name = results_folder + os.path.sep + f'{mod_name}-train_set.imp'
+            pickle.dump(imputer, open(imputer_file_name, 'wb'))
+            print(f'\t\t\t imputer file created: {imputer_file_name}')
+            
+            
+            print('\t\t[+++] Scaling')
+            
+            if isinstance(scaler, StandardScaler):
+                print(f"\t\t\tusing {mod_name}-train_set.sca as StandardScaler")
+                new_scaler = StandardScaler()
+            elif isinstance(scaler, MinMaxScaler):
+                print(f"\t\t\tusing {mod_name}-train_set.sca as MinMaxScaler")
+                new_scaler = MinMaxScaler()
+            else:
+                print("Scaler file not found.")
+                print("StandardScaler used by default")
+                new_scaler = StandardScaler()        
+            
+            fitted_scaler = new_scaler.fit(imputed_train_df)
+            
+            scaler_file_name = results_folder + os.path.sep + f'{mod_name}-train_set.sca'
+            pickle.dump(fitted_scaler, open(scaler_file_name, 'wb'))
+            print(f'\t\t\t scaler file created: {scaler_file_name}')
+            
+            imputed_scaled_train = scale(imputed_train_df, fitted_scaler)
+            imputed_scaled_train_df = pd.DataFrame(imputed_scaled_train)
+            imputed_scaled_train_df.columns = train_with_descriptors.columns
+            
+            
+            imputed_scaled_test = scale(imputed_test_df, fitted_scaler)
+            imputed_scaled_test_df  = pd.DataFrame(imputed_scaled_test)
+            imputed_scaled_test_df.columns = test_with_descriptors.columns
+            
+            ##@@
+            imputed_scaled_test_df.to_csv(results_folder + os.path.sep + f'EX_{mod_name}-test_scaled.txt', sep = '\t', index = False)
+            ##@@
+            print('\t\t[+++] Fitting new model and predicting')
+            
+            fitted_model = model.fit(imputed_scaled_train_df, y_train_obs)
+            
+            model_file_name = results_folder + os.path.sep + f'{mod_name}.sav'
+            pickle.dump(fitted_model, open(model_file_name, 'wb'))
+            print(f'\t\t\t new model file created: {model_file_name}')        
+            
+            
+            y_pred_train = predict(imputed_scaled_train_df, fitted_model)
+            y_pred_test = predict(imputed_scaled_test_df, fitted_model)
+            
+            imputed_scaled_train_df.insert(0, 'SMILES', train_df_smiles)
+            imputed_scaled_train_df.insert(len(imputed_scaled_train_df.columns), 'observed', y_train_obs)
+            imputed_scaled_train_df.insert(len(imputed_scaled_train_df.columns), 'predicted', y_pred_train)
+            
+            imputed_scaled_test_df.insert(0, 'SMILES', test_df_smiles)
+            imputed_scaled_test_df.insert(len(imputed_scaled_test_df.columns), 'observed', y_test_obs)
+            imputed_scaled_test_df.insert(len(imputed_scaled_test_df.columns), 'predicted', y_pred_test)
+    
+    
+            
+            descriptors_file_name_train = results_folder + os.path.sep + f'{mod_name}-descriptors-train.txt'
+            imputed_scaled_train_df.to_csv(descriptors_file_name_train, sep = '\t', index = False)
+            descriptors_file_name_test = results_folder + os.path.sep + f'{mod_name}-descriptors-test.txt'
+            imputed_scaled_test_df.to_csv(descriptors_file_name_test, sep = '\t', index = False)
+            print(f'\t\t\t new file with descriptors created: {descriptors_file_name_train}')
+            print(f'\t\t\t new file with descriptors created: {descriptors_file_name_test}')
+            
+            json_file_name = results_folder + os.path.sep + f'{mod_name}.json'
+            with open(json_file_name, 'w', encoding='utf8') as json_file:
+                json.dump(model_dict, json_file, ensure_ascii=False, indent=4)
+            print(f'\t\t\t new json file created: {json_file_name}')
+                
+            print('\t[++] Calculating new metrics')
+            
+            old_new = 'new'
+            
+            df_metrics_byone = getMetrics(mod_name, model, imputed_scaled_train_df, imputed_scaled_test_df, old_new)
+            
+            df_metrics = pd.concat([df_metrics,df_metrics_byone], axis = 0)    
+                
+                
+                
+                
+        output_metrics_filename =   f'metrics_{time.strftime("%Y%m%d_%H%M%S")}.csv'  
+        print(f'\t\t metrics file created: {output_metrics_filename}')
+        df_metrics.to_csv(output_metrics_filename, sep = ';')    
+                
+
+    elif option == 'calculate':
+        
+        for mod_name in df_models_to_process['final_model_name']:
+        
+            model_data_folder =  '..' + os.path.sep + '..' + os.path.sep + 'Models'
+            path_model = model_data_folder + os.path.sep + mod_name + os.path.sep + f'imputed-{mod_name}'
+            
+            topredict_folder = '.' + os.path.sep + 'predictions'
+            
+            model_dict =  load_json(path_model + os.path.sep + f'{mod_name}.json')
+            
+            for row, value in df_df_to_process.iterrows():
+                
+                dataset_name = value['dataset_iD']
+                
+                print(f'\t\t[+++] Working on {dataset_name} dataframe')
+                
+                df_to_calculate = pd.read_csv(topredict_folder + os.path.sep +  f'{value["file_to_calculate"]}' , sep = value['sep_for_calculation'])
+            
+                df_calculated = calc_descriptors(option, mod_name, df_to_calculate, model_dict, dataset_name, topredict_folder)
+
+
+            
+    elif option == 'predict':
+        
+        for mod_name in df_models_to_process['final_model_name']:
+            
+            print(f'\n[+] Working on {mod_name} model')
+            
+            print('\t[++] Reading input model files')
  
-    # #Scaler
 
-    # sc_file = f"{mod_name}-train_set.sca"
-    # old_scaler = pickle.load(open(PATH + sc_file,"rb"))
-    # if isinstance(old_scaler, StandardScaler):
-    #     print(f"cojo el {mod_name}-train_set.sca")
-    #     scaler = StandardScaler()
-    # elif isinstance(old_scaler, MinMaxScaler):
-    #     scaler = MinMaxScaler()
-    # else:
-    #     print(f"Scaler file {sc_file} not found.")
-    #     print("StandardScaler used by default")
-    #     scaler = StandardScaler()
-    # # scaler = StandardScaler()
-    # train2scale = pd.read_csv(PATH+f"{mod_name}-train_set.csv", sep=";")
-    # train2scale_feats = train2scale[sel_feats]
-    # train_scaled = scaler.fit(train2scale_feats)
+            model_data_folder =  '..' + os.path.sep + '..' + os.path.sep + 'Models' 
+            path_model = model_data_folder + os.path.sep + mod_name + os.path.sep + f'imputed-{mod_name}'
+            
+            topredict_folder = '.' + os.path.sep + 'predictions' 
+            predictions_folder = '.' + os.path.sep + 'predictions' + os.path.sep + 'df_predicted'
+    
+            makedir(predictions_folder)
+               
+            train_df, test_df, model, model_dict, scaler = inputoutput_files(mod_name, path_model)
+            
+                        
+            model_type = model._estimator_type
+            
+            imputer = pickle.load(open(path_model + os.path.sep + f'{mod_name}-train_set.imp', "rb"))
 
-    # #impute and scale validation data
-    # val_nan = nanify(descriptors)
-    # val_feats_imput = imputer.transform(val_nan)
-    # val_feats_scaled = scaler.transform(val_feats_imput)
+            for row, value in df_df_to_process.iterrows():
+                
+                
+                dataset_name = value['dataset_iD']
+                
+                print(f'\t\t[+++] Working on {dataset_name} dataframe')
 
-    # if class_reg == 1:
-    #     print("classification model")
+                
+                df_to_predict = pd.read_csv(topredict_folder + os.path.sep +  f'raw_{mod_name}-descriptors-{dataset_name}.txt', sep = '\t')
+                # df_to_predict = pd.read_csv(path_model + os.path.sep +  f'raw_{mod_name}-descriptors-train.txt', sep = '\t')
+               
+                descriptors_model = [descriptor.split('$')[1] for descriptor in list(model_dict.keys())]
+                
+                dfpredict_smiles = df_to_predict['SMILES']
+                
+                descriptors_dfpredict = df_to_predict[descriptors_model]
+                
+                print('\t\t\t[++++] Imputing')
+                
+                descriptors_dfpredict_nanyfied = nanify(descriptors_dfpredict)
+                imputed_dfpredict = impute(descriptors_dfpredict_nanyfied, imputer)
 
-    #     #predict classes
-    #     predictions = model.predict(val_feats_scaled)
-    #     pred_prob = model.predict_proba(val_feats_scaled)
-    #     pred_prob_max = [max(probs) for probs in pred_prob]
+                ##@@
+                imputed_dfpredict_as_df = pd.DataFrame(imputed_dfpredict)
+                imputed_dfpredict_as_df.columns = descriptors_dfpredict_nanyfied.columns
+                imputed_dfpredict_as_df.to_csv(topredict_folder + os.path.sep + f'EX_{mod_name}-new_imputed.txt', sep = '\t', index = False)
+                ##@@
 
-    #     # classification results
+                
+                print('\t\t\t[++++] Scaling')
+                
+                imputed_scaled_dfpredict = scale(imputed_dfpredict, scaler)
+                imputed_scaled_dfpredict_df  = pd.DataFrame(imputed_scaled_dfpredict)
+                imputed_scaled_dfpredict_df.columns = descriptors_dfpredict.columns
 
-    #     val_feats_scaled_df = pd.DataFrame(val_feats_scaled, columns=sel_feats)
-    #     results = pd.concat([validation_data.loc[:,["SMILES", "predicted"]], val_feats_scaled_df],axis=1)
-    #     results["class_pred"] = predictions
-    #     results["class_pred_prob"] = pred_prob_max
+                ##@@
 
-    # else:
-    #     print("regression model")
+                imputed_scaled_dfpredict_df.to_csv(topredict_folder + os.path.sep + f'EX_{mod_name}-new_scaled.txt', sep = '\t', index = False)
+                ##@@
 
-    #     #predict pKa
-    #     predictions = model.predict(val_feats_scaled)
-
-    #     #regression results
-    #     val_feats_scaled_df = pd.DataFrame(val_feats_scaled, columns=sel_feats)
-    #     results = pd.concat([validation_data.loc[:,["SMILES", "y"]], val_feats_scaled_df],axis=1)
-    #     #results.rename(columns={"y":"pKa_exp"}, inplace=True)
-    #     results["y_pred"] = predictions
-
-    # if out_type == "1":
-    #     return results
-    # elif  out_type == "2":
-    #     return scaler, imputer
-
-
-
-
-
+                
+                ##@@
+                
+                ##@@               
+                print('\t\t\t[++++] Predicting')
+                
+                y_pred_dfpredict = predict(imputed_scaled_dfpredict_df, model)
+    
+                imputed_scaled_dfpredict_df.insert(0, 'SMILES', dfpredict_smiles)
+                imputed_scaled_dfpredict_df.insert(len(imputed_scaled_dfpredict_df.columns), 'predicted', y_pred_dfpredict)
+                
+                predicted_filename = predictions_folder + os.path.sep + f'{dataset_name}-{mod_name}-onlypredicted.csv'
+                imputed_scaled_dfpredict_df.to_csv(predicted_filename, sep = ';', index = False)
+                print(f'\t\t\t new file with descriptors created: {predicted_filename}')
+                
+                print('\t\t\t[++++] Extracting experimental values')
+                
+                combined_train_test = pd.concat([train_df, test_df], axis = 0)
+                
+                combined_train_test.set_index('SMILES', inplace = True)
+                
+                combined_train_test_dict = combined_train_test.T.to_dict()
+                
+                experimentals = []
+                
+                for smi in imputed_scaled_dfpredict_df['SMILES']:
+                    if smi in combined_train_test_dict.keys():
+                        if model_type == 'classifier':
+                            experimentals.append(int(combined_train_test_dict[smi]['observed']))
+                        else:
+                            experimentals.append(combined_train_test_dict[smi]['observed'])
+                    else:
+                        experimentals.append(np.nan)
+                        
+                imputed_scaled_dfpredict_df.insert(len(imputed_scaled_dfpredict_df.columns), 'experimental', experimentals)
+                
+                print('\t\t\t[++++] Calculating AD')
+                
+                df_predict_with_ads = calculate_ADs(train_df,imputed_scaled_dfpredict_df,descriptors_model, mod_name)
+                
+                
+                final_predicted_filename = predictions_folder + os.path.sep + f'{dataset_name}-{mod_name}-predictedAD.csv'
+                df_predict_with_ads.to_csv(final_predicted_filename, sep = ';', index = False)
+                print(f'\t\t\t new file with descriptors created: {final_predicted_filename}')
 
         
-        #set outputs
+    elif option == 'mergeJSONS':
         
-        results_folder = path_model + os.path.sep + f'imputed-{mod_name}'
-
-        if not os.path.exists(results_folder):
-            os.makedirs(results_folder)
-            print(f"Output directory created: {results_folder}")
-        else:
-            print(f"Output directory already exists: {results_folder}")
-            
-            
-            
-            
-            
-            
-            
-    output_metrics_filename =   f'metrics_{time.strftime("%Y%m%d_%H%M%S")}.csv'  
-    print(f'\t\t metrics file created: {output_metrics_filename}')
-    df_metrics.to_csv(output_metrics_filename, sep = ';')    
-            
-            
-        #obtain metrics original model
-
+        merged_dict = {}
         
+        counter = 0
+        
+        for mod_name in df_models_to_process['final_model_name']:
+            
+            model_data_folder =  '..' + os.path.sep + '..' + os.path.sep + 'Models' 
+            path_model = model_data_folder + os.path.sep + mod_name + os.path.sep + f'imputed-{mod_name}'
+            
+            model_dict =  load_json(path_model + os.path.sep + f'{mod_name}.json')
+            
+            merged_dict.update(model_dict)
+            
+            counter = counter + len(model_dict)
+            
+        print(counter, len(merged_dict))
+            
+            
+            
 
 #%% ADs
 # PATH2 = r'C:\Users\proto\Desktop\tothexinxol\IRB\Models\TK_OATP1B1inh_no3D_us\predictions'    
