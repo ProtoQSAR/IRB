@@ -1,0 +1,56 @@
+{
+    "EState_VSA$EState_VSA2": {
+        "k": 2
+    },
+    "ATS$ATS0d": {
+        "order": 0,
+        "prop": "d"
+    },
+    "SLogP_PA$SLogP": {},
+    "ATS$ATS0Z": {
+        "order": 0,
+        "prop": "Z"
+    },
+    "Topological_Charge$JGI9": {
+        "order": 9,
+        "prop": "mean"
+    },
+    "ATSC$ATSC8d": {
+        "order": 8,
+        "prop": "d"
+    },
+    "ATSC$ATSC0c": {
+        "order": 0,
+        "prop": "c"
+    },
+    "EStates$SdssC": {
+        "estate": "dssC",
+        "type": "sum"
+    },
+    "AATS$AATS8i": {
+        "order": 8,
+        "prop": "i"
+    },
+    "BELpk$BELi0": {
+        "order": 0,
+        "prop": "i"
+    },
+    "HyperDetour$ww": {
+        "type": ""
+    },
+    "ATSC$ATSC1v": {
+        "order": 1,
+        "prop": "v"
+    },
+    "SLogP_VSA$SLogP_VSA5": {
+        "k": 5
+    },
+    "ATSC$ATSC1s": {
+        "order": 1,
+        "prop": "s"
+    },
+    "ATSC$ATSC3p": {
+        "order": 3,
+        "prop": "p"
+    }
+}

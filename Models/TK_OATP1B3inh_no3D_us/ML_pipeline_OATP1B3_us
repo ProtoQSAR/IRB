@@ -1,0 +1,249 @@
+#########################################################################
+##################### WELCOME TO ML_pipeline script #####################
+#########################################################################
+This script will allow you to: 
+ 	- generate ML models for regression or classification
+
+Please input your PATH (enter to: "../data/Af_MIC80_definitva/no3D/OWNdesc/"): /home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/
+Please input your MODEL NAME (enter to: Af_MIC80): TK_OATP1B3inh_no3D_us
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+	[1] Perform a MODEL for Regression
+	[2] Perform a MODEL for Classification
+	[3] Exit
+
+Your choice: 2
+
+Please select the method used for DESCRIPTOR SELECTION:
+	[1] RFE
+	[2] GBM
+	[3] PI
+	[4] OWN
+
+
+Your choice: 2
+You want to perform a Classification model, by using descriptors selected by GBM.
+
+Is that correct?(Y/n):  
+The following files located in "/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/" folder are needed:
+TK_OATP1B3inh_no3D_us-train_reduction_GBM.csv
+TK_OATP1B3inh_no3D_us-test_reduction_GBM.csv
+Continue (Y/n)?
+
+PARAMETERS:
+	train molecules: 312
+	test molecules: 104
+	total molecules: 416
+
+DESCRIPTORS: ( 15 )
+['SLogP', 'PEOE_VSA6', 'EState_VSA2', 'O-056', 'ATSC6v', 'ATSC8d', 'ATSC5s', 'PEOE_VSA10', 'GATS2c', 'ATS0dv', 'ATS0Z', 'X3A', 'ATSC5se', 'GATS5Z', 'ATSC8v']
+	mols/descriptor ratio: 20.8
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+
+[+] Training the model...
+/home/lauri/anaconda3/envs/Protocosas/lib/python3.9/site-packages/sklearn/model_selection/_validation.py:372: FitFailedWarning: 
+320 fits failed out of a total of 960.
+The score on these train-test partitions for these parameters will be set to nan.
+If these failures are not expected, you can try to debug them by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+320 fits failed with the following error:
+Traceback (most recent call last):
+  File "/home/lauri/anaconda3/envs/Protocosas/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 680, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/home/lauri/anaconda3/envs/Protocosas/lib/python3.9/site-packages/sklearn/svm/_base.py", line 243, in fit
+    raise ValueError(
+ValueError: When 'gamma' is a string, it should be either 'scale' or 'auto'. Got 'auto_deprecated' instead.
+
+  warnings.warn(some_fits_failed_message, FitFailedWarning)
+/home/lauri/anaconda3/envs/Protocosas/lib/python3.9/site-packages/sklearn/model_selection/_search.py:969: UserWarning: One or more of the test scores are non-finite: [0.70860215 0.72437276 0.73420379 0.58663594        nan        nan
+        nan        nan 0.70860215 0.72437276 0.72775218 0.58991295
+ 0.70860215 0.72437276 0.73420379 0.58663594        nan        nan
+        nan        nan 0.70860215 0.72437276 0.72775218 0.58991295
+ 0.70860215 0.75012801 0.75360983 0.58346134        nan        nan
+        nan        nan 0.70860215 0.7500768  0.74720942 0.58028674
+ 0.70860215 0.75012801 0.75360983 0.58346134        nan        nan
+        nan        nan 0.70860215 0.7500768  0.74720942 0.58028674
+ 0.71177675 0.73102919 0.70209933 0.63809524        nan        nan
+        nan        nan 0.71177675 0.73420379 0.70527394 0.63492063
+ 0.71177675 0.73102919 0.70209933 0.63809524        nan        nan
+        nan        nan 0.71177675 0.73420379 0.70527394 0.63492063
+ 0.71827957 0.71177675 0.64741423 0.65734767        nan        nan
+        nan        nan 0.71827957 0.71177675 0.64736303 0.65089606
+ 0.71827957 0.71177675 0.64741423 0.65734767        nan        nan
+        nan        nan 0.71827957 0.71177675 0.64736303 0.65089606
+ 0.71827957 0.69272913 0.66364567 0.69897593        nan        nan
+        nan        nan 0.71827957 0.68955453 0.66692268 0.69897593
+ 0.71827957 0.69272913 0.66364567 0.69897593        nan        nan
+        nan        nan 0.71827957 0.68955453 0.66692268 0.69897593
+ 0.70870456 0.67665131 0.66682028 0.69585253        nan        nan
+        nan        nan 0.70870456 0.67665131 0.66364567 0.71182796
+ 0.70870456 0.67665131 0.66682028 0.69585253        nan        nan
+        nan        nan 0.70870456 0.67665131 0.66364567 0.71182796
+ 0.71500256 0.71817716 0.66016385 0.64147465        nan        nan
+        nan        nan 0.71500256 0.72135177 0.66338966 0.64459805
+ 0.71500256 0.71817716 0.66016385 0.64147465        nan        nan
+        nan        nan 0.71500256 0.72135177 0.66338966 0.64459805
+ 0.70855095 0.73092678 0.72483359 0.62534562        nan        nan
+        nan        nan 0.70855095 0.73737839 0.7280594  0.62852023
+ 0.70855095 0.73092678 0.72483359 0.62534562        nan        nan
+        nan        nan 0.70855095 0.73737839 0.7280594  0.62852023]
+  warnings.warn(
+/home/lauri/anaconda3/envs/Protocosas/lib/python3.9/site-packages/sklearn/model_selection/_search.py:969: UserWarning: One or more of the train scores are non-finite: [0.75563052 0.95112932 0.9447261  0.60420884        nan        nan
+        nan        nan 0.75563052 0.9495261  0.9447261  0.59938956
+ 0.75563052 0.95112932 0.9447261  0.60420884        nan        nan
+        nan        nan 0.75563052 0.9495261  0.9447261  0.59938956
+ 0.75643052 0.92309398 0.91508434 0.62018635        nan        nan
+        nan        nan 0.75643052 0.92389398 0.91909076 0.61538313
+ 0.75643052 0.92309398 0.91508434 0.62018635        nan        nan
+        nan        nan 0.75643052 0.92389398 0.91909076 0.61538313
+ 0.7508241  0.84537189 0.82377831 0.64422811        nan        nan
+        nan        nan 0.7508241  0.84617189 0.82216867 0.64182811
+ 0.7508241  0.84537189 0.82377831 0.64422811        nan        nan
+        nan        nan 0.7508241  0.84617189 0.82216867 0.64182811
+ 0.75402731 0.80211084 0.76049157 0.6714988         nan        nan
+        nan        nan 0.75402731 0.80131084 0.76209478 0.6746988
+ 0.75402731 0.80211084 0.76049157 0.6714988         nan        nan
+        nan        nan 0.75402731 0.80131084 0.76209478 0.6746988
+ 0.75322731 0.72918876 0.70756627 0.7123502         nan        nan
+        nan        nan 0.75322731 0.72998876 0.71478233 0.71395663
+ 0.75322731 0.72918876 0.70756627 0.7123502         nan        nan
+        nan        nan 0.75322731 0.72998876 0.71478233 0.71395663
+ 0.7500241  0.75481767 0.7596498  0.7051502         nan        nan
+        nan        nan 0.7500241  0.75482088 0.75644659 0.70836627
+ 0.7500241  0.75481767 0.7596498  0.7051502         nan        nan
+        nan        nan 0.7500241  0.75482088 0.75644659 0.70836627
+ 0.7524241  0.81893333 0.79735261 0.65304418        nan        nan
+        nan        nan 0.7524241  0.82053333 0.79413976 0.65464739
+ 0.7524241  0.81893333 0.79735261 0.65304418        nan        nan
+        nan        nan 0.7524241  0.82053333 0.79413976 0.65464739
+ 0.75242731 0.88223293 0.87904257 0.6177992         nan        nan
+        nan        nan 0.75242731 0.88142651 0.87903936 0.6217992
+ 0.75242731 0.88223293 0.87904257 0.6177992         nan        nan
+        nan        nan 0.75242731 0.88142651 0.87903936 0.6217992 ]
+  warnings.warn(
+
+Best parameters for SVC:
+{'C': 5, 'class_weight': {0: 1, 1: 1.67}, 'decision_function_shape': 'ovr', 'gamma': 'auto', 'kernel': 'poly', 'max_iter': -1, 'random_state': 9}
+
+Grid test score: 0.753609831029186
+
+Best parameters for LGBMClassifier:
+{'boosting_type': 'gbdt', 'class_weight': {0: 1, 1: 1.67}, 'learning_rate': 0.05, 'max_depth': 10, 'min_child_samples': 20, 'n_estimators': 60, 'num_leaves': 5, 'random_state': 9, 'subsample': 0.7}
+
+Grid test score: 0.8014336917562724
+------------------------------
+
+Best model and parameters:
+LGBMClassifier(class_weight={0: 1, 1: 1.67}, learning_rate=0.05, max_depth=10,
+               n_estimators=60, num_leaves=5, random_state=9, subsample=0.7)
+
+Best model and parameters:
+{'boosting_type': 'gbdt', 'class_weight': {0: 1, 1: 1.67}, 'learning_rate': 0.05, 'max_depth': 10, 'min_child_samples': 20, 'n_estimators': 60, 'num_leaves': 5, 'random_state': 9, 'subsample': 0.7}
+
+GridSearch parameters:
+GridSearchCV(cv=5, estimator=LGBMClassifier(), n_jobs=-1,
+             param_grid={'boosting_type': ['gbdt'],
+                         'class_weight': [{0: 1, 1: 1.67}],
+                         'learning_rate': [0.05], 'max_depth': [10, 15],
+                         'min_child_samples': [20], 'n_estimators': [60],
+                         'num_leaves': [4, 5, 7], 'random_state': [9],
+                         'subsample': [0.7]},
+             return_train_score=True, scoring='f1_micro')
+-------------------------------
+
+ A JSON file with the descriptors has been saved as /home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/TK_OATP1B3inh_no3D_us.json
+
+######################################################
+################### Model results ####################
+######################################################
+
+############### Training set results ###############
+
+               precision    recall  f1-score   support
+
+           0       0.97      0.88      0.92       195
+           1       0.82      0.96      0.89       117
+
+    accuracy                           0.91       312
+   macro avg       0.90      0.92      0.90       312
+weighted avg       0.92      0.91      0.91       312
+
+Confussion matrix:
+
+    OBS\PRED           0           1
+           0         171          24
+           1           5         112
+
+############### Test set results ###############
+
+               precision    recall  f1-score   support
+
+           0       0.79      0.71      0.75        65
+           1       0.59      0.69      0.64        39
+
+    accuracy                           0.70       104
+   macro avg       0.69      0.70      0.69       104
+weighted avg       0.72      0.70      0.71       104
+
+Confussion matrix:
+
+    OBS\PRED           0           1
+           0          46          19
+           1          12          27
+
+################ Global results ###############
+
+	        |Train| Test
+       acc	|0.91 |0.70  
+  prec_PPV	|0.82 |0.59  
+    recall	|0.96 |0.69  
+        f1	|0.89 |0.64  
+       auc	|0.92 |0.70  
+sensit_TPR	|0.96 |0.69  
+  spec_TNR	|0.88 |0.71  
+       NPV	|0.97 |0.79  
+       FNR	|0.04 |0.31  
+       FPR	|0.12 |0.29  
+       FDR	|0.18 |0.41  
+       FOR	|0.03 |0.21  
+   F_score	|0.89 |0.64  
+       MCC	|0.81 |0.39  
+       CSI	|0.79 |0.47  
+
+######################################################
+############## Cross-validation results ##############
+######################################################
+
+	|Train          | Test
+    acc	|0.87 +/- 0.008 |0.76  +/- 0.038
+   prec	|0.78 +/- 0.013 |0.66  +/- 0.052
+ recall	|0.92 +/- 0.006 |0.77  +/- 0.056
+     f1	|0.85 +/- 0.009 |0.71  +/- 0.044
+    auc	|0.95 +/- 0.005 |0.83  +/- 0.038
+ sensit	|0.92 +/- 0.006 |0.77  +/- 0.056
+   spec	|0.84 +/- 0.011 |0.76  +/- 0.050
+    NPV	|0.95 +/- 0.004 |0.85  +/- 0.033
+    FNR	|0.08 +/- 0.006 |0.23  +/- 0.056
+    FPR	|0.16 +/- 0.011 |0.24  +/- 0.050
+    FDR	|0.22 +/- 0.013 |0.34  +/- 0.052
+    FOR	|0.05 +/- 0.004 |0.15  +/- 0.033
+F_score	|0.85 +/- 0.009 |0.71  +/- 0.044
+    MCC	|0.75 +/- 0.016 |0.52  +/- 0.076
+    CSI	|0.73 +/- 0.014 |0.55  +/- 0.051
+
+Please, close the plots to continue...
+
+TRAIN experimental Positive:  117
+TRAIN experimental Negative:  195
+TEST experimental Positive:  39
+TEST experimental Negative:  65
+
+Do you want to perform any other step?(y/n):  n
+
+Thanks for using ML_pipeline!
+

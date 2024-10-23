@@ -1,0 +1,403 @@
+(Protocosas) lauri@ProtoALIEN:~/Desktop/ProtoQSAR/generate_models/NEO$ python NEO.py 
+
+#########################################################################
+######################### WELCOME TO NEO script #########################
+#########################################################################
+This script will allow you to: 
+ 	- eliminate 3D descriptors
+ 	- "y" transformation
+ 	- perform the initial unsupervised feature reduction
+ 	- perform the train/test split based on kmeans
+ 	- descriptor standarization
+ 	- select the relevant features based on:
+		 · Recursive feature elimination (RFE)
+		 · Feature importance (FI) based on Ligth gradient boosting machine (LGBM)
+		 · Permutation importance (PI)
+ 	- select your own features features
+
+Please input your PATH (enter to: "../data/Af_MIC80_definitva/no3D/OWNdesc/"): /home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/
+Please input your MODEL NAME (enter to: Af_MIC80_no3D): TK_OATP1B3inh_no3D_us
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 1
+This part of the code will do the y" transformation, randomization of the dataset order and  Knn imputation.
+From this version of NEO is its compulsory to perform the inputation here, as this will create the un-imputed file needed for reimputation.
+[+] "y" transformation
+A file located in "/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/" folder is needed
+This file must be called: "TK_OATP1B3inh_no3D_us-paralel_calculated_with_y.csv"
+Continue (Y/n)?
+
+Please select your type of model: 
+[1] Regression
+[2] Classification
+Your choice: 2
+
+I am so sorry, there is nothing yet for your request. Please try tomorrow with more coffee and cookies.
+[+] dataset random sort
+
+	The following file has been created (save it as you will need it for feature reduction):
+
+	/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/TK_OATP1B3inh_no3D_us-calculated_preimputation.csv
+[+] dataset imputation
+Size of the database, preimputation: (416, 998)
+[+] fitting
+[+] transforming
+Size of the database, postimputation: (416, 998)
+     C-001  C-002  C-003  C-004  C-005  ...    SaasC    SaaaC   SssssC  SsssNH   SLogP
+0      2.0    1.0    0.0    0.0    1.0  ...  0.00000  0.00000 -1.35162     0.0 -5.6130
+1      4.0    5.0    3.0    2.0    0.0  ...  0.00000  0.00000 -5.54011     0.0  4.1031
+2      2.0    1.0    2.0    0.0    2.0  ...  5.61910  0.00000  0.00000     0.0  3.7832
+3      7.0    4.0    4.0    2.0    1.0  ...  0.42721  0.00000 -8.31390     0.0  2.5058
+4      0.0    1.0    0.0    0.0    4.0  ...  5.68110  0.00000  0.00000     0.0  3.3627
+..     ...    ...    ...    ...    ...  ...      ...      ...      ...     ...     ...
+411    0.0    0.0    0.0    0.0    3.0  ...  3.40212  0.85705  0.00000     0.0  3.2145
+412   18.0    5.0    8.0    0.0    7.0  ...  0.00000  0.00000  0.00000     0.0  3.7232
+413    0.0    0.0    0.0    0.0    2.0  ... -0.34315  0.00000  0.00000     0.0  1.1076
+414   11.0    3.0    5.0    0.0    3.0  ...  0.00000  0.00000 -1.18871     0.0  3.6209
+415    0.0    2.0    1.0    0.0    1.0  ...  5.30575  0.00000  0.00000     0.0  5.1796
+
+[416 rows x 998 columns]
+
+The following files have been created:
+
+/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/TK_OATP1B3inh_no3D_us-calculated_imputed_ytransformed.csv
+
+Do you want to perform any other step?(y/n):  y
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 2
+A file located in "/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/" folder is needed
+This file must be called: "TK_OATP1B3inh_no3D_us-calculated_imputed_ytransformed.csv"
+Continue (Y/n)?
+[1] Initial feature reduction: infinite, correlated, constant and empty values
+0 infinite values
+0 features with greater than 0.00 missing values.
+
+118 features with a correlation magnitude greater than 0.90.
+
+81 features with a single unique value.
+
+Data has not been one-hot encoded
+Removed 199 features including one-hot features.
+
+The following files have been created:
+
+/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/TK_OATP1B3inh_no3D_us-initial_reduction.csv
+
+Do you want to perform any other step?(y/n):  
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 3
+
+Please select your type of model: 
+[1] Regression
+[2] Classification
+Your choice (1/2)?: 2
+Please input your desired TEST SIZE (enter to: "0.25"): 0.25
+A file located in "/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/" folder is needed
+This file must be called: "TK_OATP1B3inh_no3D_us-initial_reduction.csv"
+Continue (Y/n)?
+[+] Generation of train and test sets based in kmeans
+
+OPTIMAL NUMBER OF CLUSTERS:  4
+
+NUMBER OF CLUSTERS:  4
+	SETS:  {24, 41, 350, 1}
+	ALERTS!!
+		compound number:  377 
+			SMILE:  C[C@@H]1O[C@H](O[C@H]2[C@H](OC(=O)[C@]34CCC(C)(C)C[C@H]3C3=CC[C@@H]5[C@]6(C)CC[C@H](O[C@H]7O[C@@H](C)[C@H](O[C@@H]8OC[C@@H](O)[C@H](O)[C@H]8O)[C@@H](O)[C@H]7O)C(C)(C)[C@@H]6CC[C@@]5(C)[C@]3(C)C[C@@H]4O)OC[C@H](O)[C@H]2O)[C@H](O)[C@H](O)[C@H]1O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O 1
+[377]
+you have some molecular alerts. It means that these molecules are quite dissimilar
+You can (1) eliminate them or (2) maintain them
+What is your choice (1/2)?2
+Ok, continue with entire dataframe.
+
+NUMBER OF CLUSTERS:  3
+	SETS:  {1, 26, 389}
+	ALERTS!!
+		compound number:  377 
+			SMILE:  C[C@@H]1O[C@H](O[C@H]2[C@H](OC(=O)[C@]34CCC(C)(C)C[C@H]3C3=CC[C@@H]5[C@]6(C)CC[C@H](O[C@H]7O[C@@H](C)[C@H](O[C@@H]8OC[C@@H](O)[C@H](O)[C@H]8O)[C@@H](O)[C@H]7O)C(C)(C)[C@@H]6CC[C@@]5(C)[C@]3(C)C[C@@H]4O)OC[C@H](O)[C@H]2O)[C@H](O)[C@H](O)[C@H]1O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O 1
+[377]
+you have some molecular alerts. It means that these molecules are quite dissimilar
+You can (1) eliminate them or (2) maintain them
+What is your choice (1/2)?2
+Ok, continue with entire dataframe.
+
+NUMBER OF CLUSTERS:  2
+	SETS:  {1, 415}
+	ALERTS!!
+		compound number:  377 
+			SMILE:  C[C@@H]1O[C@H](O[C@H]2[C@H](OC(=O)[C@]34CCC(C)(C)C[C@H]3C3=CC[C@@H]5[C@]6(C)CC[C@H](O[C@H]7O[C@@H](C)[C@H](O[C@@H]8OC[C@@H](O)[C@H](O)[C@H]8O)[C@@H](O)[C@H]7O)C(C)(C)[C@@H]6CC[C@@]5(C)[C@]3(C)C[C@@H]4O)OC[C@H](O)[C@H]2O)[C@H](O)[C@H](O)[C@H]1O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O 1
+[377]
+you have some molecular alerts. It means that these molecules are quite dissimilar
+You can (1) eliminate them or (2) maintain them
+What is your choice (1/2)?2
+Ok, continue with entire dataframe.
+
+NUMBER OF CLUSTERS:  1
+	SETS:  {416}
+	ALERTS!!
+[]
+     index                                             SMILES  y  ...   SssssC   SLogP  cluster
+0        0  CN[C@@H]1[C@@H](O)[C@@H](O[C@@H]2[C@H](O)[C@@H...  0  ... -1.35162 -5.6130        0
+1        1  CCC(=O)O[C@@]1(C(=O)CCl)[C@H](C)C[C@H]2[C@H]3C...  1  ... -5.54011  4.1031        0
+2        2  COc1cc2c(cc1OC)[C@@H]1C(=O)c3ccc4c(c3O[C@@H]1C...  0  ...  0.00000  3.7832        0
+3        3  C=C1[C@H]([C@@]2(C)[C@@H](OC(C)=O)CC(=O)O[C@](...  1  ... -8.31390  2.5058        0
+4        4  COc1ccc([C@H]2Oc3c(I)c(OC)cc(OC)c3C[C@@H]2O)cc1OC  0  ...  0.00000  3.3627        0
+..     ...                                                ... ..  ...      ...     ...      ...
+411    411     COc1cc(OC)c2c(OC)c(-c3ccc4c(c3)OCO4)c(=O)oc2c1  0  ...  0.00000  3.2145        0
+412    412  C/C=C/C[C@@H](C)C(=O)[C@H]1C(=O)N[C@@H](C(C)C)...  1  ...  0.00000  3.7232        0
+413    413                            COc1ccc(C(=O)O)c(O)c1OC  0  ...  0.00000  1.1076        0
+414    414  CO[C@H]1C[C@H](O[C@H]2[C@H](C)[C@@H](O[C@H]3O[...  1  ... -1.18871  3.6209        0
+415    415        CN[C@H]1CC[C@@H](c2ccc(Cl)c(Cl)c2)c2ccccc21  0  ...  0.00000  5.1796        0
+
+[416 rows x 803 columns]
+0
+cluster0
+     index                                             SMILES  y  ...   SssssC   SLogP  cluster
+0        0  CN[C@@H]1[C@@H](O)[C@@H](O[C@@H]2[C@H](O)[C@@H...  0  ... -1.35162 -5.6130        0
+1        1  CCC(=O)O[C@@]1(C(=O)CCl)[C@H](C)C[C@H]2[C@H]3C...  1  ... -5.54011  4.1031        0
+2        2  COc1cc2c(cc1OC)[C@@H]1C(=O)c3ccc4c(c3O[C@@H]1C...  0  ...  0.00000  3.7832        0
+3        3  C=C1[C@H]([C@@]2(C)[C@@H](OC(C)=O)CC(=O)O[C@](...  1  ... -8.31390  2.5058        0
+4        4  COc1ccc([C@H]2Oc3c(I)c(OC)cc(OC)c3C[C@@H]2O)cc1OC  0  ...  0.00000  3.3627        0
+..     ...                                                ... ..  ...      ...     ...      ...
+411    411     COc1cc(OC)c2c(OC)c(-c3ccc4c(c3)OCO4)c(=O)oc2c1  0  ...  0.00000  3.2145        0
+412    412  C/C=C/C[C@@H](C)C(=O)[C@H]1C(=O)N[C@@H](C(C)C)...  1  ...  0.00000  3.7232        0
+413    413                            COc1ccc(C(=O)O)c(O)c1OC  0  ...  0.00000  1.1076        0
+414    414  CO[C@H]1C[C@H](O[C@H]2[C@H](C)[C@@H](O[C@H]3O[...  1  ... -1.18871  3.6209        0
+415    415        CN[C@H]1CC[C@@H](c2ccc(Cl)c(Cl)c2)c2ccccc21  0  ...  0.00000  5.1796        0
+
+[416 rows x 803 columns]
+     index                                             SMILES  y  ...   SssssC   SLogP  cluster
+324    324  CC(=O)Oc1ccc2c(c1OC(C)=O)OC[C@]1(O)Cc3c(cc(OC(...  0  ... -1.59423  2.1246        0
+341    341  CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2cc3c(CN(C)C...  0  ... -1.84067  1.8468        0
+157    157  O=C(O[C@@H]1Cc2c(O)cc(O)cc2O[C@@H]1c1cc(O)c(O)...  0  ...  0.00000  4.4468        0
+400    400           O=c1c(O)c(-c2ccc(O)cc2O)oc2cc(O)cc(O)c12  1  ...  0.00000  1.9880        0
+273    273  COC(=O)N[C@H](C(=O)N[C@@H](Cc1ccccc1)[C@@H](O)...  1  ... -1.40090  4.2116        0
+
+[5 rows x 803 columns]
+     index                                             SMILES  y  ...   SssssC   SLogP  cluster
+324    324  CC(=O)Oc1ccc2c(c1OC(C)=O)OC[C@]1(O)Cc3c(cc(OC(...  0  ... -1.59423  2.1246        0
+341    341  CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2cc3c(CN(C)C...  0  ... -1.84067  1.8468        0
+157    157  O=C(O[C@@H]1Cc2c(O)cc(O)cc2O[C@@H]1c1cc(O)c(O)...  0  ...  0.00000  4.4468        0
+400    400           O=c1c(O)c(-c2ccc(O)cc2O)oc2cc(O)cc(O)c12  1  ...  0.00000  1.9880        0
+273    273  COC(=O)N[C@H](C(=O)N[C@@H](Cc1ccccc1)[C@@H](O)...  1  ... -1.40090  4.2116        0
+
+[5 rows x 803 columns]
+Train set contains:
+	195 negative values
+	117 positive values
+	ratio neg / pos: 1.6666666666666667
+Test set contains:
+	65 negative values
+	39 positive values
+	ratio neg / pos: 1.6666666666666667
+If you find this imbalanced, try to decomment line 44 of split_by_kmeans.py module. It can give an error! 
+
+The following files have been created:
+
+/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/TK_OATP1B3inh_no3D_us-cleaned_from_kmeans.csv
+/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/TK_OATP1B3inh_no3D_us-train_set.csv
+/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/TK_OATP1B3inh_no3D_us-test_set.csv
+
+Do you want to perform any other step?(y/n):  
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 4
+[+] Descriptor standarization
+
+Please select the method to standarize the descriptors: 
+[1] StandardScaler
+[2] MinMaxScaler
+Your choice (1/2)?: 1
+Two files located in "/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/" folder are needed
+These files must be called:
+	"TK_OATP1B3inh_no3D_us-train_set.csv"
+	"TK_OATP1B3inh_no3D_us-test_set.csv"
+Continue (Y/n)?
+
+The following files have been created:
+
+/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/TK_OATP1B3inh_no3D_us-stand_train_set.csv
+/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/TK_OATP1B3inh_no3D_us-stand_test_set.csv
+/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/TK_OATP1B3inh_no3D_us-alldataset.sca
+
+Do you want to perform any other step?(y/n):  
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 6
+[+] Reduction by FI based on lgbm
+Two files located in "/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/" folder are needed
+These files must be called:
+	"TK_OATP1B3inh_no3D_us-stand_train_set.csv"
+	"TK_OATP1B3inh_no3D_us-stand_test_set.csv"
+Continue (Y/n)?
+
+Please define if your model is for [1] classification or [2] regression:1
+
+Please define your parameters for lgbm selection for classification parameters: 
+eval_metric (l2/auc/binary_logloss):l2
+Training Gradient Boosting Model
+
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[73]	valid_0's l2: 0.119004	valid_0's binary_logloss: 0.37447
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[30]	valid_0's l2: 0.175268	valid_0's binary_logloss: 0.529013
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[58]	valid_0's l2: 0.174971	valid_0's binary_logloss: 0.522282
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[48]	valid_0's l2: 0.178154	valid_0's binary_logloss: 0.535614
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[37]	valid_0's l2: 0.184219	valid_0's binary_logloss: 0.545414
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[45]	valid_0's l2: 0.134086	valid_0's binary_logloss: 0.413728
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[41]	valid_0's l2: 0.175128	valid_0's binary_logloss: 0.528712
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[16]	valid_0's l2: 0.208517	valid_0's binary_logloss: 0.599802
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[58]	valid_0's l2: 0.147132	valid_0's binary_logloss: 0.455998
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[70]	valid_0's l2: 0.142247	valid_0's binary_logloss: 0.457137
+
+407 features with zero importance after one-hot encoding.
+
+Please, close the plots to continue...
+229 features required for 0.90 of cumulative importance
+Please, close the plots to continue...
+228 features required for cumulative importance of 0.90 after one hot encoding.
+571 features do not contribute to cumulative importance of 0.90.
+
+         feature  importance  normalized_importance  cumulative_importance
+0          SLogP        22.7               0.050411               0.050411
+1      PEOE_VSA6        21.8               0.048412               0.098823
+2    EState_VSA2        18.9               0.041972               0.140795
+3          O-056         8.2               0.018210               0.159005
+4         ATSC6v         7.6               0.016878               0.175883
+..           ...         ...                    ...                    ...
+521        SaaaC         0.0               0.000000               1.000000
+520        H-048         0.0               0.000000               1.000000
+519        C-006         0.0               0.000000               1.000000
+529       NssssN         0.0               0.000000               1.000000
+798     F05[O-O]         0.0               0.000000               1.000000
+
+[799 rows x 4 columns]
+
+The following files have been created:
+
+/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/TK_OATP1B3inh_no3D_us-train_featured_importances.csv
+
+Now you can select a number of features.
+Please, indicate the number of selected features: 20
+
+Selected features: 
+ ['SLogP', 'PEOE_VSA6', 'EState_VSA2', 'O-056', 'ATSC6v', 'ATSC8d', 'ATSC5s', 'PEOE_VSA10', 'GATS2c', 'ATS0dv', 'ATS0Z', 'X3A', 'ATSC5se', 'GATS5Z', 'ATSC8v', 'GATS3c', 'SLogP_VSA5', 'PNSA3', 'AATS7i', 'X0A']
+Size of the database, preimputation: (312, 20)
+[+] fitting
+[+] transforming
+Size of the database, postimputation: (312, 20)
+
+The following files have been created:
+
+/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/TK_OATP1B3inh_no3D_us-train_reduction_GBM.csv
+/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/TK_OATP1B3inh_no3D_us-test_reduction_GBM.csv
+/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/TK_OATP1B3inh_no3D_us-train_set.sca
+train_set (312, 22)
+test_set (104, 22) 
+
+
+Do you agree with that number of features?(y/n): n
+Please, indicate the number of selected features: 15
+
+Selected features: 
+ ['SLogP', 'PEOE_VSA6', 'EState_VSA2', 'O-056', 'ATSC6v', 'ATSC8d', 'ATSC5s', 'PEOE_VSA10', 'GATS2c', 'ATS0dv', 'ATS0Z', 'X3A', 'ATSC5se', 'GATS5Z', 'ATSC8v']
+Size of the database, preimputation: (312, 15)
+[+] fitting
+[+] transforming
+Size of the database, postimputation: (312, 15)
+
+The following files have been created:
+
+/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/TK_OATP1B3inh_no3D_us-train_reduction_GBM.csv
+/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/TK_OATP1B3inh_no3D_us-test_reduction_GBM.csv
+/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_OATP1B3inh/us/TK_OATP1B3inh_no3D_us-train_set.sca
+train_set (312, 17)
+test_set (104, 17) 
+
+
+Do you agree with that number of features?(y/n): y
+
+Do you want to perform any other step?(y/n):  n
+
+Thanks for using NEO!
+
