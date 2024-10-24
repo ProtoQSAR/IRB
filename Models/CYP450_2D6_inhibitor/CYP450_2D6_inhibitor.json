@@ -1,0 +1,77 @@
+{
+    "atom_centred$C-019": {
+        "key": "C-019"
+    },
+    "AATS$AATS6d": {
+        "order": 6,
+        "prop": "d"
+    },
+    "ATSC$ATSC8se": {
+        "order": 8,
+        "prop": "se"
+    },
+    "AATSC$AATSC7c": {
+        "order": 7,
+        "prop": "c"
+    },
+    "AATSC$AATSC7i": {
+        "order": 7,
+        "prop": "i"
+    },
+    "GATS$GATS7se": {
+        "order": 7,
+        "prop": "se"
+    },
+    "mol_properties$nR_9_False_True_True_True": {
+        "aromatic": true,
+        "fused": true,
+        "greater": false,
+        "hetero": true,
+        "length": 9,
+        "prop": "nr"
+    },
+    "topological_distance$B05[C-C]": {
+        "atoms": [
+            6,
+            6
+        ],
+        "distance": 5,
+        "type": "binary"
+    },
+    "topological_distance$B07[C-O]": {
+        "atoms": [
+            6,
+            8
+        ],
+        "distance": 7,
+        "type": "binary"
+    },
+    "topological_distance$B08[C-F]": {
+        "atoms": [
+            6,
+            9
+        ],
+        "distance": 8,
+        "type": "binary"
+    },
+    "topological_distance$B09[O-F]": {
+        "atoms": [
+            8,
+            9
+        ],
+        "distance": 9,
+        "type": "binary"
+    },
+    "functional_group$nCOO": {
+        "group": "nCOO"
+    },
+    "functional_group$nHOCCN": {
+        "group": "nHOCCN"
+    },
+    "functional_group$nAllOx": {
+        "group": "nAllOx"
+    },
+    "functional_group$nImidazoles": {
+        "group": "nImidazoles"
+    }
+}

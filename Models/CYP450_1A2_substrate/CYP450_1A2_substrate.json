@@ -1,0 +1,98 @@
+{
+    "SLogP_PA$SLogP": {},
+    "ATSC$ATSC3dv": {
+        "order": 3,
+        "prop": "dv"
+    },
+    "ATSC$ATSC1dv": {
+        "order": 1,
+        "prop": "dv"
+    },
+    "EdgeAdjacencyIndex$ESpm02u": {
+        "order": 2,
+        "type": "spectral",
+        "weight": "none"
+    },
+    "GATS$GATS4dv": {
+        "order": 4,
+        "prop": "dv"
+    },
+    "AATSC$AATSC5d": {
+        "order": 5,
+        "prop": "d"
+    },
+    "ATSC$ATSC8p": {
+        "order": 8,
+        "prop": "p"
+    },
+    "GATS$GATS7i": {
+        "order": 7,
+        "prop": "i"
+    },
+    "ATSC$ATSC5d": {
+        "order": 5,
+        "prop": "d"
+    },
+    "SLogP_VSA$SLogP_VSA3": {
+        "k": 3
+    },
+    "AATS$AATS8i": {
+        "order": 8,
+        "prop": "i"
+    },
+    "MATS$MATS6s": {
+        "order": 6,
+        "prop": "s"
+    },
+    "GATS$GATS5i": {
+        "order": 5,
+        "prop": "i"
+    },
+    "GATS$GATS6d": {
+        "order": 6,
+        "prop": "d"
+    },
+    "EStates$SdssC": {
+        "estate": "dssC",
+        "type": "sum"
+    },
+    "GATS$GATS7dv": {
+        "order": 7,
+        "prop": "dv"
+    },
+    "ATSC$ATSC8d": {
+        "order": 8,
+        "prop": "d"
+    },
+    "ATSC$ATSC4dv": {
+        "order": 4,
+        "prop": "dv"
+    },
+    "GATS$GATS6Z": {
+        "order": 6,
+        "prop": "Z"
+    },
+    "VSA_EState$VSA_EState9": {
+        "k": 9
+    },
+    "GATS$GATS5s": {
+        "order": 5,
+        "prop": "s"
+    },
+    "ATSC$ATSC7s": {
+        "order": 7,
+        "prop": "s"
+    },
+    "ATSC$ATSC5dv": {
+        "order": 5,
+        "prop": "dv"
+    },
+    "ATSC$ATSC7dv": {
+        "order": 7,
+        "prop": "dv"
+    },
+    "GATS$GATS2se": {
+        "order": 2,
+        "prop": "se"
+    }
+}
