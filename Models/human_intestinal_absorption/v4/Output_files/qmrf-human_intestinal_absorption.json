@@ -1,0 +1,53 @@
+{
+	"Owner": {
+		"Authors": [
+			"Aparicio-Sánchez, P.",
+			"Gozalbes, R."
+			],
+		"Company": "Moldrug AI Systems, S.L.",
+		"Label": "Moldrug AI Systems",
+		"Logo":"moldrug"
+	},
+	"Contact details": {
+		"Phone": "+34 96 202 18 11",
+		"Email": "info@moldrug.com",
+		"Web": "https://www.moldrug.com/"
+	},
+	"Model": {
+		"Model release version": "v2.0",
+		"Model date": "May 2022",
+		"QMRF date": "May 2022"
+	},
+	"Software": {
+		"Name": "ProtoADME",
+		"Version": "v4.0"
+
+	},
+	"Endpoint": {
+		"Name": "Human Intestinal Absorption",
+		"Description":"ADME properties: Human Intestinal Absorption (HIA)",
+		"Species": "N/A",
+		"Experimental protocol": "N/A",
+		"Units": "N/A",
+		"Dependent_variable_reg" : "N/A",
+		"Dependent_variable_class": "Binary classification: positive ({}) / negative ({}).",
+		"Classif_variables": {
+			"1":"Positive: Good absorption, more than 30% HIA",
+			"0":"Negative: Poor absorption, less than 30% HIA"
+		},
+		"Reach code": "N/A",
+		"Observations": "N/A",
+		"References": [ "N/A"
+		]
+	},
+	"Database": {
+		"Source": "N/A",
+		"References": [
+			"Wang, N.N.; Huang, C.; Dong, J.; Yao, Z.J.; Zhu, M.F.; Deng, Z.K.; Lv, B.; Lu, A.P.; Chen, A.F. & Cao, D.S. (2017). Predicting human intestinal absorption with modified random forest approach: a comprehensive evaluation of molecular representation, unbalanced data, and applicability domain issues. RSC Adv., 2017, 7, 19007."
+		]
+	},
+	"FR_Algorithm": {
+		"Code": "LGBM",
+		"argument" : "N/A"
+	}
+}

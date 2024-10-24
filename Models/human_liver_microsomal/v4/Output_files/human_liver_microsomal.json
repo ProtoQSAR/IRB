@@ -1,0 +1,75 @@
+{
+    "SLogP_PA$SLogP": {},
+    "GATS$GATS6s": {
+        "order": 6,
+        "prop": "s"
+    },
+    "PEOE_VSA$PEOE_VSA6": {
+        "k": 6
+    },
+    "GATS$GATS3se": {
+        "order": 3,
+        "prop": "se"
+    },
+    "VSA_EState$VSA_EState5": {
+        "k": 5
+    },
+    "EState_VSA$EState_VSA3": {
+        "k": 3
+    },
+    "ATSC$ATSC3dv": {
+        "order": 3,
+        "prop": "dv"
+    },
+    "ATSC$ATSC8p": {
+        "order": 8,
+        "prop": "p"
+    },
+    "Topological_Charge$JGI10": {
+        "order": 10,
+        "prop": "mean"
+    },
+    "Topological_Charge$JGI8": {
+        "order": 8,
+        "prop": "mean"
+    },
+    "GATS$GATS1d": {
+        "order": 1,
+        "prop": "d"
+    },
+    "VSA_EState$VSA_EState3": {
+        "k": 3
+    },
+    "GATS$GATS4p": {
+        "order": 4,
+        "prop": "p"
+    },
+    "mol_properties$MCBO": {
+        "prop": "bo",
+        "type": "mean"
+    },
+    "AATSC$AATSC0v": {
+        "order": 0,
+        "prop": "v"
+    },
+    "GATS$GATS8d": {
+        "order": 8,
+        "prop": "d"
+    },
+    "ATSC$ATSC6se": {
+        "order": 6,
+        "prop": "se"
+    },
+    "GATS$GATS3d": {
+        "order": 3,
+        "prop": "d"
+    },
+    "GATS$GATS6Z": {
+        "order": 6,
+        "prop": "Z"
+    },
+    "EStates$MINssCH2": {
+        "estate": "ssCH2",
+        "type": "min"
+    }
+}

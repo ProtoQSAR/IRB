@@ -1,0 +1,10 @@
+{
+	"ATSC$ATSC0c":{"prop": "c", "order": 0},
+	"SlogP_VSA$SlogP_VSA2": {"k": 2},
+	"PEOE_VSA$PEOE_VSA5": {"k": 5},
+	"EStates$NssssN": {"type":"count", "estate":"ssssN"},
+	"PWk$PW2": {"order": 2},
+	"AATSC$AATSC1c":{"prop": "c", "order": 1},
+	"ATSC$ATSC1se":{"prop": "se", "order": 1},
+
+}
