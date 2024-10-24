@@ -501,6 +501,12 @@ dictio_properties = {
                              'classreg' : 'class'},
     'BIO_AbaumanniiMIC' :        {'desired_units' : 'nM',
                              'classreg' : 'reg'},
+    
+    'TK_Pgpsub':        {'desired_units' : 'classPsub',
+                             'classreg' : 'class'},
+
+    'TK_HIA':        {'desired_units' : 'classHIA',
+                             'classreg' : 'class'},
      }
 
 
@@ -538,12 +544,22 @@ dictios_dfs = {
      #            'vnnADMET':   {'file' : 'TOX_hERGinh_vnnADMET'},
      #            'DeepPK':   {'file' : 'TOX_hERGinh_DeepPK'}
      #            },
-     'BIO_AbaumanniiMIC' : ##↓ okis
-                {'ChEMBL':   {'file' : 'BIO_AbaumanniiMIC_ChEMBL'}
-                },
-              
+     # 'BIO_AbaumanniiMIC' : ##↓ okis
+     #            {'ChEMBL':   {'file' : 'BIO_AbaumanniiMIC_ChEMBL'}
+     #            },
+     'TK_Pgpsub' : ##↓ okis
+                  {'Wang':   {'file' : 'TK_Pgpsub_Wang'},
+                   'Li':   {'file' : 'TK_Pgpsub_Li'},
+                   'livertox':   {'file' : 'TK_Pgpsub_livertox'},
+                   },
+     'TK_HIA' : ##↓ okis
+                  {'Wangdf1':   {'file' : 'TK_HIA_Wangdf1'},
+                   'Wangdf2':   {'file' : 'TK_HIA_Wangdf2'},
+                   'Wangdf3':   {'file' : 'TK_HIA_Wangdf3'},
+                   },              
 
     } 
+
 
 
 ##############################################################################
