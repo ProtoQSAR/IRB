@@ -1,0 +1,77 @@
+{
+    "AATS$AATS7se": {
+        "order": 7,
+        "prop": "se"
+    },
+    "AATSC$AATSC2dv": {
+        "order": 2,
+        "prop": "dv"
+    },
+    "GATS$GATS2se": {
+        "order": 2,
+        "prop": "se"
+    },
+    "BELpk$BELpe-1": {
+        "order": -1,
+        "prop": "pe"
+    },
+    "Getaway$HATS0u": {
+        "name": "HATS0u"
+    },
+    "Getaway$HATS5v": {
+        "name": "HATS5v"
+    },
+    "Getaway$HATS0s": {
+        "name": "HATS0s"
+    },
+    "Getaway$R1m+": {
+        "name": "R1m+"
+    },
+    "topological_distance$F02[N-O]": {
+        "atoms": [
+            7,
+            8
+        ],
+        "distance": 2,
+        "type": "frequency"
+    },
+    "topological_distance$F03[C-N]": {
+        "atoms": [
+            6,
+            7
+        ],
+        "distance": 3,
+        "type": "frequency"
+    },
+    "topological_distance$B03[O-O]": {
+        "atoms": [
+            8,
+            8
+        ],
+        "distance": 3,
+        "type": "binary"
+    },
+    "topological_distance$F04[N-N]": {
+        "atoms": [
+            7,
+            7
+        ],
+        "distance": 4,
+        "type": "frequency"
+    },
+    "topological_distance$B07[N-F]": {
+        "atoms": [
+            7,
+            9
+        ],
+        "distance": 7,
+        "type": "binary"
+    },
+    "EState_VSA$EState_VSA8": {
+        "k": 8
+    },
+    "EStates$SaasC": {
+        "estate": "aasC",
+        "type": "sum"
+    }
+}
