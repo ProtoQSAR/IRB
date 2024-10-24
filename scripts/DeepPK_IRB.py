@@ -17,9 +17,6 @@ for i in list(globals().keys()):
 import os
 from pathlib import Path
 
-from rdkit import Chem, DataStructs
-from rdkit.Chem import rdMolDescriptors, AllChem
-import pubchempy as pcp
 import numpy as np
 import pandas as pd
 import time
@@ -36,7 +33,9 @@ outputpath =  'pre_preprocessed_ONGOING' + os.path.sep + 'input_data'
 import pandas as pd
 
 
-properties = ['fdamdd_reg', 'cyp1a2_inhibitor','cyp2c9_inhibitor', 'cyp2c19_inhibitor', 'cyp2d6_inhibitor', 'cyp3a4_inhibitor', 'herg']
+#properties = ['fdamdd_reg', 'cyp1a2_inhibitor','cyp2c9_inhibitor', 'cyp2c19_inhibitor', 'cyp2d6_inhibitor', 'cyp3a4_inhibitor', 'herg']
+
+properties = ['nr_ar'] #for HYPIEND
 
 for properti in properties:
     df_train = pd.read_csv(inputpath + os.path.sep + f'{properti}_train.csv', sep = ',')
