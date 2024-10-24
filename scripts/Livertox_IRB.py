@@ -24,7 +24,7 @@ parent = Path(__file__).resolve().parent
 os.chdir(parent)
 print(f'Working on: \n {os.getcwd()}')
 
-input_path = '../datasets_for_modelling'
+input_path = '../datasets_for_modelling/to_work'
 
 for (root, dirs, files) in os.walk(input_path):
     continue
@@ -40,7 +40,9 @@ for (root, dirs, files) in os.walk(input_path):
 
 #%%
 
-sdfs_to_process = ['Oatp1b1INH_test.sdf','Oatp1b1INH_training.sdf','Oatp1b3INH_test.sdf','Oatp1b3INH_training.sdf']
+# sdfs_to_process = ['Oatp1b1INH_test.sdf','Oatp1b1INH_training.sdf','Oatp1b3INH_test.sdf','Oatp1b3INH_training.sdf'] # batch 1
+
+sdfs_to_process = ['PgpTRANSP_test.sdf','PgpTRANSP_training.sdf'] #batch 2
 
 
 dict_properties = {}
@@ -54,6 +56,8 @@ for sdf in files:
         print("\t", sdf)
         
         prop = sdf.split('_')[0]
+
+        print(prop)
         
         if prop not in dict_properties.keys():
             dict_properties[prop] = {}
