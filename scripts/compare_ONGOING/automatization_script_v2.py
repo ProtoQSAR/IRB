@@ -507,43 +507,46 @@ dictio_properties = {
 
     'TK_HIA':        {'desired_units' : 'classHIA',
                              'classreg' : 'class'},
+    'TK_HLM':        {'desired_units' : 'classHLM',
+                             'classreg' : 'class'},
+
      }
 
 
 dictios_dfs = {
               
-    # 'TK_FU' : ##↓ okis
-    #               {'Tonnelier':   {'file' : 'TK_FUB_Tonnelier'},
-    #                 'Yamazaki':    {'file' : 'TK_FUB_Yamazaki'},
-    #                 'Lombardo':    {'file' : 'TK_FUB_Lombardo'},
-    #                 'Riley':       {'file' : 'TK_FUB_Riley'},
-    #                 # 'Sohlenius*':   {'file' : 'TK_FUB_Sohlenius'}, # not considered because poor correlation
-    #                 'Votano':      {'file' : 'TK_FUB_Votano'},
-    #                 'cran':        {'file' : 'TK_FUB_cran'},
-    #                 'Zhu':         {'file' : 'TK_FUB_Zhu'},
-    #               },                 
-    # 'TK_OATP1B1inh' : ##↓ okis
-    #             {'Livertox':   {'file' : 'TK_OATP1B1inh_livertox'}
-    #             },
-    # 'TK_OATP1B3inh' : ##↓ okis
-    #             {'Livertox':   {'file' : 'TK_OATP1B3inh_livertox'}
-    #             },                
-    # 'TOX_MRDD' : ##↓ okis
-    #             {'DeepPK':   {'file' : 'TOX_MRDD_DeepPK'}
-                # },
-     # 'TOX_Cav12inh' : ##↓ okis
-     #            {'ChEMBL':   {'file' : 'TOX_Cav12inh_ChEMBL'},
-     #            'CtoxPred':   {'file' : 'TOX_Cav12inh_CtoxPred'}
-     #            },
-     # 'TOX_Nav15inh' : ##↓ okis
-     #            {'ChEMBL':   {'file' : 'TOX_Nav15inh_ChEMBL'},
-     #            'CtoxPred':   {'file' : 'TOX_Nav15inh_CtoxPred'}
-     #            },
-     # 'TOX_hERGinh' : ##↓ okis
-     #            {'ChEMBL':   {'file' : 'TOX_hERGinh_ChEMBL'},
-     #            'vnnADMET':   {'file' : 'TOX_hERGinh_vnnADMET'},
-     #            'DeepPK':   {'file' : 'TOX_hERGinh_DeepPK'}
-     #            },
+    'TK_FU' : ##↓ okis
+                  {'Tonnelier':   {'file' : 'TK_FUB_Tonnelier'},
+                    'Yamazaki':    {'file' : 'TK_FUB_Yamazaki'},
+                    'Lombardo':    {'file' : 'TK_FUB_Lombardo'},
+                    'Riley':       {'file' : 'TK_FUB_Riley'},
+                    # 'Sohlenius*':   {'file' : 'TK_FUB_Sohlenius'}, # not considered because poor correlation
+                    'Votano':      {'file' : 'TK_FUB_Votano'},
+                    'cran':        {'file' : 'TK_FUB_cran'},
+                    'Zhu':         {'file' : 'TK_FUB_Zhu'},
+                  },                 
+    'TK_OATP1B1inh' : ##↓ okis
+                {'Livertox':   {'file' : 'TK_OATP1B1inh_livertox'}
+                },
+    'TK_OATP1B3inh' : ##↓ okis
+                {'Livertox':   {'file' : 'TK_OATP1B3inh_livertox'}
+                },                
+    'TOX_MRDD' : ##↓ okis
+                {'DeepPK':   {'file' : 'TOX_MRDD_DeepPK'}
+                },
+      'TOX_Cav12inh' : ##↓ okis
+                 {'ChEMBL':   {'file' : 'TOX_Cav12inh_ChEMBL'},
+                 'CtoxPred':   {'file' : 'TOX_Cav12inh_CtoxPred'}
+                 },
+      'TOX_Nav15inh' : ##↓ okis
+                 {'ChEMBL':   {'file' : 'TOX_Nav15inh_ChEMBL'},
+                 'CtoxPred':   {'file' : 'TOX_Nav15inh_CtoxPred'}
+                 },
+      'TOX_hERGinh' : ##↓ okis
+                 {'ChEMBL':   {'file' : 'TOX_hERGinh_ChEMBL'},
+                 'vnnADMET':   {'file' : 'TOX_hERGinh_vnnADMET'},
+                 'DeepPK':   {'file' : 'TOX_hERGinh_DeepPK'}
+                 },
      # 'BIO_AbaumanniiMIC' : ##↓ okis
      #            {'ChEMBL':   {'file' : 'BIO_AbaumanniiMIC_ChEMBL'}
      #            },
@@ -557,7 +560,9 @@ dictios_dfs = {
                    'Wangdf2':   {'file' : 'TK_HIA_Wangdf2'},
                    'Wangdf3':   {'file' : 'TK_HIA_Wangdf3'},
                    },              
-
+     'TK_HLM' : ##↓ okis
+                  {'Li':   {'file' : 'TK_HLM_Li'},
+                   }, 
     } 
 
 

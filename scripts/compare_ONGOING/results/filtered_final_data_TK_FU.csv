@@ -120,7 +120,7 @@ ID_all;SMILES;y_consensus;y_consensus_sd;valid/outlier;ID_Tonnelier;NAME_Tonneli
 118;CCN(CC)CCCN(c1ccccc1)C1Cc2ccccc2C1;0.04666666666666671;0.005773502691896262;valid;;;;;5.0;Aprindine;37640-71-4;0.040000000000000036;;;;;;;;;52;aprindine;;0.050000000000000044;;;;;579.0;aprindine;;0.050000000000000044;ratioFU
 119;CCN(CC)CCN1C(=O)CN=C(c2ccccc2F)c2cc(Cl)ccc21;0.030000000000000027;0.0;valid;;;;;37.0;Flurazepam;17617-23-1;0.030000000000000027;;;;;;;;;303;flurazepam;;0.030000000000000027;;;;;;;;;ratioFU
 120;CCN(CC)CCNC(=O)c1cc(Cl)c(N)cc1OC;0.6399999999999999;0.04183300132670377;valid;;;;;117.0;Metoclopramide;364-62-5;0.7;37.0;metoclopramide;364-62-5;0.6;;;;;440;metoclopramide;;0.65;968;Metoclopramide;364-62-5;0.6;203.0;metoclopramide;;0.65;ratioFU
-121;CCN(CC)CCNC(=O)c1ccc(NC(C)=O)cc1;0.9;0.0;valid;;;;;57.0;N-acetylprocainamide;32795-44-1;0.9;;;;;;;;;[466, 5];['N-acetylprocainamide', 'acecainide'];;0.9;639;Acecainide (n-acetylprocainamide);32795-44-1;0.9;72.0;acecainide;;0.9;ratioFU
+121;CCN(CC)CCNC(=O)c1ccc(NC(C)=O)cc1;0.9;0.0;valid;;;;;57.0;N-acetylprocainamide;32795-44-1;0.9;;;;;;;;;[466, 5];['acecainide', 'N-acetylprocainamide'];;0.9;639;Acecainide (n-acetylprocainamide);32795-44-1;0.9;72.0;acecainide;;0.9;ratioFU
 122;CCNC(C)Cc1cccc(C(F)(F)F)c1;0.6533333333333333;0.005773502691896198;valid;;;;;33.0;Fenfluramine;458-24-2;0.6599999999999999;;;;;;;;;208;dexfenfluramine;;0.65;;;;;200.0;dexfenfluramine;;0.65;ratioFU
 123;CCOC(=O)/C=C(C)/C=C/C=C(C)/C=C/c1c(C)cc(OC)c(C)c1C;;;outlier;;;;;31.0;Etretinate;54350-48-0;;;;;;;;;;;;;;;;;;743.0;etretinate;;;ratioFU
 124;CCOC(=O)C1(c2ccccc2)CCN(C)CC1;;;outlier;;;;;68.0;Pethidine;57-42-1;;;;;;;;;;411;meperidine;;;954;Meperidine;57-42-1;;290.0;meperidine;;;ratioFU
@@ -150,7 +150,7 @@ ID_all;SMILES;y_consensus;y_consensus_sd;valid/outlier;ID_Tonnelier;NAME_Tonneli
 148;CN=C1CN(O)C(c2ccccc2)=c2cc(Cl)ccc2=N1;0.04500000000000004;0.007071067811865481;valid;;;;;13.0;Chlordiazepoxide;58-25-3;0.040000000000000036;;;;;;;;;159;chlordiazepoxide;;0.050000000000000044;;;;;;;;;ratioFU
 149;CNC1(c2ccccc2Cl)CCCCC1=O;;;outlier;;;;;39.0;Ketaminee;6740-88-1;;;;;;;;;;367;ketamine;;;429;Ketamine;6740-88-1;;201.0;ketamine;;;ratioFU
 150;CNCCC=C1c2ccccc2CCc2ccccc21;;;outlier;;;;;65.0;Nortriptyline;72-69-5;;;;;;;;;;499;nortriptyline;;;1011;Nortriptyline;72-69-5;;557.0;nortriptyline;;;ratioFU
-151;CNCCCC12CCC(c3ccccc31)c1ccccc12;0.10519999999999999;0.009873871243505935;valid;;;;;44.0;Maprotiline;10262-69-8;0.12;;;;;;;;;402;maprotiline;;0.09999999999999998;[945, 623];['Maprotiline', 'Maprotinline'];['010262-69-8', '10262-69-8'];0.1008;504.0;maprotiline;;0.09999999999999998;ratioFU
+151;CNCCCC12CCC(c3ccccc31)c1ccccc12;0.10519999999999999;0.009873871243505935;valid;;;;;44.0;Maprotiline;10262-69-8;0.12;;;;;;;;;402;maprotiline;;0.09999999999999998;[945, 623];['Maprotinline', 'Maprotiline'];['10262-69-8', '010262-69-8'];0.1008;504.0;maprotiline;;0.09999999999999998;ratioFU
 152;CNCCCN1c2ccccc2CCc2ccccc21;;;outlier;;;;;21.0;Desipramine;50-47-5;;20.0;desipramine;50-47-5;;21.0;Desipramine;;;205;desipramine;;;427;Desipramine;50-47-5;;461.0;desipramine;;;ratioFU
 153;COC(=O)C1=C(C)NC(C)=C(C(=O)OC)C1c1ccccc1[N+](=O)[O-];;;outlier;;;;;59.0;Nifedipine;21829-25-4;;44.0;nifedipine;21829-25-4;;46.0;Nifedipine;;;488;nifedipine;;;481;Nifedipine;21829-25-4;;;;;;ratioFU
 154;COC(=O)C1=C(C)NC(C)=C(C(=O)OCC(C)C)C1c1ccccc1[N+](=O)[O-];;;outlier;;;;;61.0;Nisoldipine;63675-72-9;;;;;;;;;;491;nisoldipine;;;1004;Nisoldipine;63675-72-9;;;;;;ratioFU
@@ -167,7 +167,7 @@ ID_all;SMILES;y_consensus;y_consensus_sd;valid/outlier;ID_Tonnelier;NAME_Tonneli
 165;COc1ccc(C(=O)Nc2ccccc2CCC2CCCCN2C)cc1;0.275;0.03535533905932741;valid;;;;;27.0;Encainide;66778-36-7;0.25;;;;;;;;;;;;;;;;;901.0;encainide;;0.30000000000000004;ratioFU
 166;COc1ccc(CCN2CCC(Nc3nc4ccccc4n3Cc3ccc(F)cc3)CC2)cc1;0.030000000000000027;0.0;valid;;;;;6.0;Astemizole;68844-77-9;0.030000000000000027;;;;;;;;;56;astemizole;;0.030000000000000027;;;;;658.0;astemizole;;0.030000000000000027;ratioFU
 167;COc1ccc(CCNCC(O)COc2cccc(C)c2)cc1OC;0.04333333333333337;0.005773502691896262;valid;;;;;93.0;Bevantolol;59170-23-9;0.050000000000000044;;;;;;;;;87;bevantolol;;0.040000000000000036;;;;;635.0;bevantolol;;0.040000000000000036;ratioFU
-168;COc1ccc([C@@H]2Sc3ccccc3N(CCN(C)C)C(=O)[C@@H]2OC(C)=O)cc1;;;outlier;;;;;24.0;Diltiazem;33286-22-5;;23.0;diltiazem;33286-22-5;;22.0;Diltiazem;;;;;;;[425, 484];['Diltiazem', 'Diltiazem hydrochloride'];['33286-22-5', '42399-41-7'];;;;;;ratioFU
+168;COc1ccc([C@@H]2Sc3ccccc3N(CCN(C)C)C(=O)[C@@H]2OC(C)=O)cc1;;;outlier;;;;;24.0;Diltiazem;33286-22-5;;23.0;diltiazem;33286-22-5;;22.0;Diltiazem;;;;;;;[425, 484];['Diltiazem hydrochloride', 'Diltiazem'];['33286-22-5', '42399-41-7'];;;;;;ratioFU
 169;COc1ccc2c3c1O[C@H]1[C@@H](O)C=C[C@H]4[C@@H](C2)N(C)CC[C@]314;0.965;0.049497474683058366;valid;;;;;101.0;Codeine;76-57-3;0.9299999999999999;;;;;;;;;;;;;508;Codeine;76-57-3;1.0;;;;;ratioFU
 170;COc1ccc2nc(S(=O)Cc3ncc(C)c(OC)c3C)[nH]c2c1;0.050000000000000024;2.549512416582222e-17;valid;;;;;123.0;Omeprazole;73590-58-6;0.050000000000000044;46.0;omeprazole;73590-58-6;0.05;;;;;503;omeprazole;;0.050000000000000044;;;;;;;;;ratioFU
 171;COc1cccc([C@@]2(O)CCCC[C@@H]2CN(C)C)c1;0.88;0.11313708498984755;valid;;;;;83.0;Tramadol;27203-92-5;0.96;;;;;;;;;;;;;1145;Tramadol;27203-92-5;0.8;;;;;ratioFU
@@ -272,7 +272,7 @@ ID_all;SMILES;y_consensus;y_consensus_sd;valid/outlier;ID_Tonnelier;NAME_Tonneli
 270;C=C1CCC2(O)C3Cc4ccc(O)c5c4C2(CCN3CC2CC2)C1O5;0.62;0.0;valid;;;;;;;;;;;;;;;;;471;nalmefene;;0.62;;;;;211.0;nalmefene;;0.62;ratioFU
 271;C=CC1=C(C(=O)O)N2C(=O)C(NC(=O)C(=NOCC(=O)O)c3csc(N)n3)C2SC1;0.32999999999999996;;valid;;;;;;;;;;;;;;;;;132;cefixime;;0.32999999999999996;;;;;;;;;ratioFU
 272;C=CC1CN2CCC1CC2C(O)c1ccnc2ccc(OC)cc12;;;outlier;;;;;;;;;;;;;;;;;651;quinine;;;;;;;552.0;quinine;;;ratioFU
-273;C=CCC1(C(C)CCC)C(=O)NC(=O)NC1=O;0.4675;0.04596194077712555;valid;;;;;;;;;;;;;;;;;[649, 682];['secobarbital', 'quinalbarbitone'];;0.43500000000000005;;;;;266.0;quinalbarbitone ;;0.5;ratioFU
+273;C=CCC1(C(C)CCC)C(=O)NC(=O)NC1=O;0.4675;0.04596194077712555;valid;;;;;;;;;;;;;;;;;[649, 682];['quinalbarbitone', 'secobarbital'];;0.43500000000000005;;;;;266.0;quinalbarbitone ;;0.5;ratioFU
 274;C=CCN1CC(C(=O)N(CCCN(C)C)C(=O)NCC)CC2c3cccc4[nH]cc(c34)CC21;0.5900000000000001;0.0;valid;;;;;;;;;;;;;;;;;112;cabergoline;;0.5900000000000001;;;;;223.0;cabergoline;;0.5900000000000001;ratioFU
 275;C=CCNc1nc(NCC=C)nc(N2CCN(C(c3ccc(F)cc3)c3ccc(F)cc3)CC2)n1;0.010000000000000009;0.0;valid;;;;;;;;;;;;;;;;;27;almitrine;;0.010000000000000009;;;;;732.0;almitrine;;0.010000000000000009;ratioFU
 276;C=CCOc1ccc(CC(=O)O)cc1Cl;0.010000000000000009;0.0;valid;;;;;;;;;;;;;;;;;20;alclofenac;;0.010000000000000009;;;;;731.0;alclofenac;;0.010000000000000009;ratioFU
@@ -1162,7 +1162,7 @@ ID_all;SMILES;y_consensus;y_consensus_sd;valid/outlier;ID_Tonnelier;NAME_Tonneli
 1160;CN1COCN(Cc2cnc(Cl)s2)C1=N[N+](=O)[O-];0.828565877623412;;valid;;;;;;;;;;;;;;;;;;;;;219;Thiamethoxam;153719-23-4;0.828565877623412;;;;;ratioFU
 1161;CN1CSC(=S)N(C)C1;0.891427273096711;;valid;;;;;;;;;;;;;;;;;;;;;56;Dazomet;533-74-4;0.891427273096711;;;;;ratioFU
 1162;CN1[C@H]2CCC[C@@H]1C[C@H](NC(=O)c1nn(C)c3ccccc13)C2;0.35;;valid;;;;;;;;;;;;;;;;;;;;;512;Granisetron;109889-09-0;0.35;;;;;ratioFU
-1163;CN1[C@H]2CC[C@@H]1C[C@H](OC(=O)C(CO)c1ccccc1)C2;0.6218;;valid;;;;;;;;;;;;;;;;;;;;;[674, 612];Atropine;['000051-55-8', '51-55-8'];0.6218;;;;;ratioFU
+1163;CN1[C@H]2CC[C@@H]1C[C@H](OC(=O)C(CO)c1ccccc1)C2;0.6218;;valid;;;;;;;;;;;;;;;;;;;;;[674, 612];Atropine;['51-55-8', '000051-55-8'];0.6218;;;;;ratioFU
 1164;CN1[C@H]2C[C@H](OC(=O)[C@H](CO)c3ccccc3)C[C@@H]1[C@H]1O[C@@H]21;0.9;;valid;;;;;;;;;;;;;;;;;;;;;519;Scopolamine;51-34-3;0.9;;;;;ratioFU
 1165;CNC(=C[N+](=O)[O-])NCCSCc1csc(CN(C)C)n1;0.65;;valid;;;;;;;;;;;;;;;;;;;;;1007;Nizatidine;76963-41-2;0.65;;;;;ratioFU
 1166;CNC(=O)CSP(=S)(OC)OC;0.964917711396585;;valid;;;;;;;;;;;;;;;;;;;;;72;Dimethoate;60-51-5;0.964917711396585;;;;;ratioFU
@@ -1434,7 +1434,7 @@ ID_all;SMILES;y_consensus;y_consensus_sd;valid/outlier;ID_Tonnelier;NAME_Tonneli
 1432;O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.0;;valid;;;;;;;;;;;;;;;;;;;;;302;Perfluoroundecanoic acid;2058-94-8;0.0;;;;;ratioFU
 1433;O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.0;;valid;;;;;;;;;;;;;;;;;;;;;323;Perfluorodecanoic acid;335-76-2;0.0;;;;;ratioFU
 1434;O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.000992;;valid;;;;;;;;;;;;;;;;;;;;;329;Perfluorononanoic acid;375-95-1;0.000992;;;;;ratioFU
-1435;O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.0043234159534055;;valid;;;;;;;;;;;;;;;;;;;;;[330, 172];['Perfluorooctanoic acid', 'Pentadecafluorooctanoic acid ammonium salt'];['335-67-1', '3825-26-1'];0.0043234159534055;;;;;ratioFU
+1435;O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.0043234159534055;;valid;;;;;;;;;;;;;;;;;;;;;[330, 172];['Perfluorooctanoic acid', 'Pentadecafluorooctanoic acid ammonium salt'];['3825-26-1', '335-67-1'];0.0043234159534055;;;;;ratioFU
 1436;O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.00164;;valid;;;;;;;;;;;;;;;;;;;;;328;Perfluoroheptanoic acid;375-85-9;0.00164;;;;;ratioFU
 1437;O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;0.0167609999999999;;valid;;;;;;;;;;;;;;;;;;;;;320;Perfluorohexanoic acid;307-24-4;0.0167609999999999;;;;;ratioFU
 1438;O=C(O)C1(C(=O)Nc2ccc(Cl)cc2Cl)CC1;0.984014545442395;;valid;;;;;;;;;;;;;;;;;;;;;50;Cyclanilide;113136-77-9;0.984014545442395;;;;;ratioFU

@@ -10,7 +10,7 @@ C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CCC4=C3[C@@H](c3ccc(N(C)C)cc3)C[C@@]21C;1.0
 C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@@H]4[C@H]3CC[C@@]21C;1.0;649;;;Norethindrone;classHIA;SMI
 C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@@H]4[C@H]3CC[C@@]21CC;1.0;631;;;Levonorgestrel;classHIA;SMI
 C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CCCC[C@@H]4[C@H]3CC[C@@]21C;1.0;634;;;Lynestrenol;classHIA;SMI
-C#C[C@]1(O)CC[C@H]2[C@@H]3CCc4cc(O)ccc4[C@H]3CC[C@@]21C;1.0;[931, 725];[nan, nan];[nan, nan];['Ethinyl_Estradiol', 'ethynylestradiol'];classHIA;SMI
+C#C[C@]1(O)CC[C@H]2[C@@H]3CCc4cc(O)ccc4[C@H]3CC[C@@]21C;1.0;[931, 725];[nan, nan];[nan, nan];['ethynylestradiol', 'Ethinyl_Estradiol'];classHIA;SMI
 C#C[C@]1(OC(C)=O)CC[C@H]2[C@@H]3CCC4=C/C(=N/O)CC[C@@H]4[C@H]3CC[C@@]21CC;1.0;650;;;Norgestimate;classHIA;SMI
 C#C[C@]1(OC(C)=O)CC[C@H]2[C@@H]3CCC4=C[C@@H](OC(C)=O)CC[C@@H]4[C@H]3CC[C@@]21C;1.0;607;;;Ethynodiol_diacetate;classHIA;SMI
 C/C=C/C1=C(C(=O)O)N2C(=O)[C@@H](NC(=O)[C@H](N)c3ccc(O)cc3)[C@H]2SC1;1.0;500;;;cefprozil;classHIA;SMI
@@ -76,7 +76,7 @@ CC(C(=O)O)c1ccc(C(=O)c2cccs2)cc1;1.0;430;;;suprofen;classHIA;SMI
 CC(C(=O)O)c1ccc(CC2CCCC2=O)cc1;1.0;159;;;loxoprofen;classHIA;SMI
 CC(C(=O)O)c1ccc2c(c1)[nH]c1ccc(Cl)cc12;1.0;955;;;carprofen;classHIA;SMI
 CC(C)(C#N)c1cc(Cn2cncn2)cc(C(C)(C)C#N)c1;1.0;578;;;Anastrozole;classHIA;SMI
-CC(C)(C(=O)c1cccnc1)c1cccnc1;1.0;[852, 237];[nan, nan];[nan, nan];['Metopirone', 'metyrapone'];classHIA;SMI
+CC(C)(C(=O)c1cccnc1)c1cccnc1;1.0;[852, 237];[nan, nan];[nan, nan];['metyrapone', 'Metopirone'];classHIA;SMI
 CC(C)(C)NC(=O)C1CC2CCCCC2CN1CC(O)C(Cc1ccccc1)NC(=O)C(CC(N)=O)NC(=O)c1ccc2ccccc2n1;1.0;111;;;saquinavir mesilate;classHIA;SMI
 CC(C)(C)NC(=O)C1CCC2C3CC=C4C=C(C(=O)O)CCC4(C)C3CCC12C;1.0;439;;;epristeride;classHIA;SMI
 CC(C)(C)NC(=O)C1CN(Cc2cccnc2)CCN1CC(O)CC(Cc1ccccc1)C(=O)NC1c2ccccc2CC1O;0.0;94;;;indinavir sulfate;classHIA;SMI
@@ -231,7 +231,7 @@ CCCN(CCC)CCc1cccc2c1CC(=O)N2;1.0;558;;;Ropinirole;classHIA;SMI
 CCCN(CCC)S(=O)(=O)c1ccc(C(=O)O)cc1;1.0;667;;;Probenecid;classHIA;SMI
 CCCN1CC(CSC)CC2c3cccc4[nH]cc(c34)CC21;1.0;173;;;pergolide mesilate;classHIA;SMI
 CCCN1C[C@H](NS(=O)(=O)N(CC)CC)C[C@@H]2Cc3c(O)cccc3C[C@@H]21;1.0;673;;;Quinagolide;classHIA;SMI
-CCCNC(=O)NS(=O)(=O)c1ccc(Cl)cc1;1.0;[892, 437];[nan, nan];[nan, nan];['chlorpropamide', 'Chorpropamide'];classHIA;SMI
+CCCNC(=O)NS(=O)(=O)c1ccc(Cl)cc1;1.0;[892, 437];[nan, nan];[nan, nan];['Chorpropamide', 'chlorpropamide'];classHIA;SMI
 CCCNC[C@H](O)COc1ccccc1C(=O)CCc1ccccc1;1.0;900;;;Propafenone;classHIA;SMI
 CCCN[C@H]1CCc2nc(N)sc2C1;1.0;258;;;Pramipexole;classHIA;SMI
 CCCOC(C(=O)OC1CCN(C)CC1)(c1ccccc1)c1ccccc1;1.0;293;;;Propiverine;classHIA;SMI
@@ -284,7 +284,7 @@ CCNC(C)Cc1cccc(C(F)(F)F)c1;1.0;339;;;dexfenfluramine hydrochloride;classHIA;SMI
 CCNCC(O)c1cccc(O)c1;1.0;726;;;etilefrine;classHIA;SMI
 CCNC[C@H](C)c1cccc(C(F)(F)F)c1;1.0;463;;;Fenfluramine;classHIA;SMI
 CCN[C@@H]1C[C@H](N)[C@@H](O[C@@H]2OC(CN)=CC[C@@H]2N)[C@H](O)[C@H]1O[C@H]1OC[C@](C)(O)[C@H](NC)[C@H]1O;0.0;6;;;Netilmicin;classHIA;SMI
-CCO;1.0;[962, 606];[nan, nan];[nan, nan];['Ethyl_alcohol', 'ethanol'];classHIA;SMI
+CCO;1.0;[962, 606];[nan, nan];[nan, nan];['ethanol', 'Ethyl_alcohol'];classHIA;SMI
 CCOC(=O)C(C)(C)Oc1ccc(Cl)cc1;1.0;516;;;Clofibrate;classHIA;SMI
 CCOC(=O)C(CCc1ccccc1)NC(C)C(=O)N1Cc2ccccc2CC1C(=O)O;1.0;175;;;quinapril hydrochloride;classHIA;SMI
 CCOC(=O)C(CCc1ccccc1)NC1CCc2ccccc2N(CC(=O)O)C1=O;1.0;135;;;benazepril;classHIA;SMI
@@ -373,7 +373,7 @@ CN(C)CCC=C1c2ccccc2CCc2ccccc21;1.0;449;;;Amitriptyline;classHIA;SMI
 CN(C)CCC=C1c2ccccc2CSc2ccccc21;1.0;505;;;dosulepin hydrochloride;classHIA;SMI
 CN(C)CCCN1c2ccccc2CCc2ccc(Cl)cc21;1.0;458;;;Clomipramine;classHIA;SMI
 CN(C)CCCN1c2ccccc2CCc2ccccc21;1.0;547;;;Imipramine;classHIA;SMI
-CN(C)CCCN1c2ccccc2Sc2ccc(Cl)cc21;1.0;[882, 539];[nan, nan];[nan, nan];['Chlorpromazine', 'chloropromazine'];classHIA;SMI
+CN(C)CCCN1c2ccccc2Sc2ccc(Cl)cc21;1.0;[882, 539];[nan, nan];[nan, nan];['chloropromazine', 'Chlorpromazine'];classHIA;SMI
 CN(C)CCCN1c2ccccc2Sc2ccccc21;1.0;130;;;promazine;classHIA;SMI
 CN(C)CCCOc1nn(Cc2ccccc2)c2ccccc12;1.0;322;;;Benzydamine;classHIA;SMI
 CN(C)CCC[C@@]1(c2ccc(F)cc2)OCc2cc(C#N)ccc21;1.0;598;;;Citalopram;classHIA;SMI
@@ -416,7 +416,7 @@ CN1C(C(=O)Nc2nccs2)=C(O)c2ccccc2S1(=O)=O;1.0;678;;;Sudoxicam;classHIA;SMI
 CN1CCC(=C2c3ccccc3C=Cc3ccccc32)CC1;1.0;241;;;Cyproheptadine;classHIA;SMI
 CN1CCC(=C2c3ccccc3CC(=O)c3sccc32)CC1;1.0;367;;;Ketotifen;classHIA;SMI
 CN1CCC(=C2c3ccccc3CCc3cccnc32)CC1;1.0;350;;;Azatadine;classHIA;SMI
-CN1CCC(=C2c3ccccc3CCc3sccc32)CC1;1.0;[257, 854];[nan, nan];[nan, nan];['pizotifen malate', 'Pizotyline'];classHIA;SMI
+CN1CCC(=C2c3ccccc3CCc3sccc32)CC1;1.0;[257, 854];[nan, nan];[nan, nan];['Pizotyline', 'pizotifen malate'];classHIA;SMI
 CN1CCC[C@@H](N2N[C@H](Cc3ccc(Cl)cc3)c3ccccc3C2=O)CC1;1.0;580;;;Azelastine;classHIA;SMI
 CN1CCC[C@@H]1CCO[C@](C)(c1ccccc1)c1ccc(Cl)cc1;1.0;402;;;clemastine funurate;classHIA;SMI
 CN1CCC[C@@H]1c1cccnc1;1.0;645;;;Nicotine;classHIA;SMI
@@ -528,7 +528,7 @@ COc1ccc(CCN(C)CCC[C@@](C#N)(c2cc(OC)c(OC)c(OC)c2)C(C)C)cc1OC;1.0;529;;;Gallopami
 COc1ccc(CCN2CCC(Nc3nc4ccccc4n3Cc3ccc(F)cc3)CC2)cc1;1.0;579;;;Astemizole;classHIA;SMI
 COc1ccc(C[C@@H](C)NC[C@H](O)c2ccc(O)c(NC=O)c2)cc1;1.0;184;;;formoterol_fumarate;classHIA;SMI
 COc1ccc(Cc2nccc3cc(OC)c(OC)cc23)cc1OC;1.0;379;;;Papaverine;classHIA;SMI
-COc1ccc(Cl)cc1C(=O)NCCc1ccc(S(=O)(=O)NC(=O)NC2CCCCC2)cc1;1.0;[544, 508];[nan, nan];[nan, nan];['glibenclamide', 'Glyburide'];classHIA;SMI
+COc1ccc(Cl)cc1C(=O)NCCc1ccc(S(=O)(=O)NC(=O)NC2CCCCC2)cc1;1.0;[544, 508];[nan, nan];[nan, nan];['Glyburide', 'glibenclamide'];classHIA;SMI
 COc1ccc([C@@H]2Sc3ccccc3N(CCN(C)C)C(=O)[C@@H]2OC(C)=O)cc1;1.0;418;;;Diltiazem;classHIA;SMI
 COc1ccc([C@H](CN(C)C)C2([O-])CCCCC2)cc1;1.0;497;;;Venlafaxine;classHIA;SMI
 COc1ccc2[n-]c(S(=O)Cc3ncc(C)c(OC)c3C)nc2c1;1.0;255;;;Omeprazole;classHIA;SMI
@@ -690,7 +690,7 @@ Cc1nnc(SCC2=C(C(=O)O)N3C(=O)[C@@H](NC(=O)Cn4cnnn4)[C@H]3SC2)s1;1.0;957;;;cefazol
 Cc1nnc(SCC2=C(C(=O)O)N3C(=O)[C@@H](NC(=O)[C@H](O)c4ccccc4)[C@H]3SC2)s1;1.0;133;;;cefcanel;classHIA;SMI
 Cc1nnc2n1-c1ccc(Cl)cc1C(c1ccccc1)=NC2;1.0;348;;;Alprazolam;classHIA;SMI
 Cc1noc(NS(=O)(=O)c2ccc(N)cc2)c1C;1.0;492;;;Sulfisoxazole;classHIA;SMI
-Cc1onc(-c2c(F)cccc2Cl)c1C(=O)N[C@@H]1C(=O)N2[C@@H](C(=O)O)C(C)(C)S[C@H]12;1.0;[242, 268];[nan, nan];[nan, nan];['Floxacillin', 'flucloxacillin'];classHIA;SMI
+Cc1onc(-c2c(F)cccc2Cl)c1C(=O)N[C@@H]1C(=O)N2[C@@H](C(=O)O)C(C)(C)S[C@H]12;1.0;[242, 268];[nan, nan];[nan, nan];['flucloxacillin', 'Floxacillin'];classHIA;SMI
 Cc1onc(-c2ccccc2)c1-c1ccc(S(N)(=O)=O)cc1;1.0;861;;;valdecoxib;classHIA;SMI
 Cc1onc(-c2ccccc2Cl)c1C(=O)N[C@@H]1C(=O)N2[C@@H](C(=O)O)C(C)(C)S[C@H]12;1.0;222;;;cloxacillin;classHIA;SMI
 Cc1oncc1C(=O)Nc1ccc(C(F)(F)F)cc1;1.0;272;;;leflunomide;classHIA;SMI
@@ -859,7 +859,7 @@ O=C(O)c1cc(O)c2c(c1)C(C1c3cccc(O)c3C(=O)c3c(OC4OC(CO)C(O)C(O)C4O)cccc31)c1cccc(O
 O=C(O)c1cc2ccccc2c(Cc2c(O)c(C(=O)O)cc3ccccc23)c1O;0.0;788;;;pyrantel embonate;classHIA;SMI
 O=C(O)c1ccccc1C(=O)Nc1ccc(S(=O)(=O)Nc2nccs2)cc1;0.0;63;;;Phthalylsulfathiazole;classHIA;SMI
 O=C(O)c1ccccc1O;1.0;753;;;salicylic acid;classHIA;SMI
-O=C(O)c1cccnc1;1.0;[424, 888];[nan, nan];[nan, nan];['niacin', 'Nicotinic_acid'];classHIA;SMI
+O=C(O)c1cccnc1;1.0;[424, 888];[nan, nan];[nan, nan];['Nicotinic_acid', 'niacin'];classHIA;SMI
 O=C(O)c1cn(C2CC2)c2cc(N3CCNCC3)c(F)cc2c1=O;1.0;214;;;ciprofloxacin;classHIA;SMI
 O=C(OC1C[C@@H]2CC3C[C@H](C1)N2CC3=O)c1c[nH]c2ccccc12;1.0;299;;;Dolasetron;classHIA;SMI
 O=C(OC1C[C@@H]2CC[C@H](C1)[N+]21CCCC1)C(O)(c1ccccc1)c1ccccc1;0.0;795;;;Trospium;classHIA;SMI
@@ -905,7 +905,7 @@ O=P(O)(O)C(O)(Cc1cccnc1)P(=O)(O)O;0.0;38;;;Risedronic_acid;classHIA;SMI
 O=P1(N(CCCl)CCCl)NCCCO1;1.0;285;;;cyclophosphamide;classHIA;SMI
 O=P1(N(CCCl)CCCl)OCCCN1CCCl;1.0;695;;;Trofosfamide;classHIA;SMI
 O=P1(NCCCl)OCCCN1CCCl;1.0;731;;;ifosfamide;classHIA;SMI
-O=S(=O)(O)CCS;1.0;[232, 218];[nan, nan];[nan, nan];['Mesna', 'mercaptoethanesulfonic acid'];classHIA;SMI
+O=S(=O)(O)CCS;1.0;[232, 218];[nan, nan];[nan, nan];['mercaptoethanesulfonic acid', 'Mesna'];classHIA;SMI
 O=S(=O)([O-])OCC1OC(OC2(COS(=O)(=O)[O-])OC(OS(=O)(=O)[O-])C(OS(=O)(=O)[O-])C2OS(=O)(=O)[O-])C(OS(=O)(=O)[O-])C(OS(=O)(=O)[O-])C1OS(=O)(=O)[O-];0.0;41;;;sucralfate;classHIA;SMI
 O=[N+]([O-])OCC(O)CO;1.0;346;;;glycerylnitrate;classHIA;SMI
 O=[N+]([O-])O[C@H]1CO[C@@H]2[C@@H](O)CO[C@H]12;1.0;626;;;Isosorbide-2-mononitrate;classHIA;SMI

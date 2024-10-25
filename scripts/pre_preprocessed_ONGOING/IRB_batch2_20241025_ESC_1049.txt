@@ -1,0 +1,544 @@
+
+#########################################################################
+####################### WELCOME TO HYGIEIA script #######################
+#########################################################################
+This script will process your dataframe and: 
+ 	- eliminate incorrect molecules ans sanitize smiles
+ 	- clean salts
+ 	- eliminate inorganic and organometallic compounds
+ 	- check for duplicated molecules
+ 	- check for mixtures.
+A file located in ".\results" folder is needed
+This file must be called: "\TK_Pgpsub_Wang-preprocessed.csv"
+Extra columns are available in the input file:
+
+['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+What to you want to do with them?.
+
+	[1] Ignore extra data and remove it from following steps.
+
+		  "SMILES" will be the only filtered/sanitized column and "y" will be the only redirected output.
+
+	[2] Keep them in the output.
+
+		  SMILES will be only the filtered/sanitized column but all the rest will be redirected in the output.
+
+	[3] Keep them in the output and use them to check duplicates.
+
+		  More than one column will be used for filtering: SMILES will be for sanitize, mixture, salts and inorganics,
+		  the rest of the columns (except y) for checking for duplicates.
+
+	[4] Select which columns I want to keep and  which to use them to check duplicates.
+
+		  Provide a list with two lists [check dups, keep] do not include your SMILES and y
+SMILES y ['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+[+] Sanitizing smiles (Always done)
+Index(['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS',
+       'smiles_source'],
+      dtype='object')
+[+] Eliminating salts 
+	Congratulations, your dataset has not salts.
+[+] Eliminating inorganic and organometallic compounds
+
+Your dataset had 1 molecules with forbiden atoms. They have been eliminated.
+	 N[Pt]1(N)OC(=O)C2(CCC2)C(=O)O1
+[+] Checking for repeated compounds considering extra data
+	Your dataset has duplicated compounds.
+2
+	All duplicated compounds (including those with equivalent target) are save in a file called \TK_Pgpsub_Wang-duplicates_for_manual_check.csv
+[+] Checking for mixtures
+[]
+	Congratulations, your dataset has not mixtures.
+
+A new file has been generated:
+
+.\results\TK_Pgpsub_Wang.csv: contains the unique molecules, following your instructions
+['ID', 'orig_ID', 'CAS', 'NAME', 'UNITS', 'smiles_source'] [] Index(['SAN_SMILES', 'y', 'ID', 'orig_ID', 'CAS', 'NAME', 'UNITS',
+       'smiles_source', 'ORIGINAL_SMILES', 'MOL_OBJECT', 'SMILES', 'y_old'],
+      dtype='object')
+Your input dataset has 332 molecules.
+Your output dataset has 327 molecules.
+thanks for using HYGIEIA!
+
+#########################################################################
+####################### WELCOME TO HYGIEIA script #######################
+#########################################################################
+This script will process your dataframe and: 
+ 	- eliminate incorrect molecules ans sanitize smiles
+ 	- clean salts
+ 	- eliminate inorganic and organometallic compounds
+ 	- check for duplicated molecules
+ 	- check for mixtures.
+A file located in ".\results" folder is needed
+This file must be called: "\TK_Pgpsub_Li-preprocessed.csv"
+Extra columns are available in the input file:
+
+['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+What to you want to do with them?.
+
+	[1] Ignore extra data and remove it from following steps.
+
+		  "SMILES" will be the only filtered/sanitized column and "y" will be the only redirected output.
+
+	[2] Keep them in the output.
+
+		  SMILES will be only the filtered/sanitized column but all the rest will be redirected in the output.
+
+	[3] Keep them in the output and use them to check duplicates.
+
+		  More than one column will be used for filtering: SMILES will be for sanitize, mixture, salts and inorganics,
+		  the rest of the columns (except y) for checking for duplicates.
+
+	[4] Select which columns I want to keep and  which to use them to check duplicates.
+
+		  Provide a list with two lists [check dups, keep] do not include your SMILES and y
+SMILES y ['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+[+] Sanitizing smiles (Always done)
+Index(['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS',
+       'smiles_source'],
+      dtype='object')
+[+] Eliminating salts 
+	Congratulations, your dataset has not salts.
+[+] Eliminating inorganic and organometallic compounds
+
+Your dataset had 1 molecules with forbiden atoms. They have been eliminated.
+	 n1c(C(N[C@H](Cc2ccccc2)C(N[C@H](CC(C)C)B(O)O)=O)=O)cncc1
+[+] Checking for repeated compounds considering extra data
+	Congratulations, your dataset has not duplicated compounds.
+[+] Checking for mixtures
+[]
+	Congratulations, your dataset has not mixtures.
+
+A new file has been generated:
+
+.\results\TK_Pgpsub_Li.csv: contains the unique molecules, following your instructions
+['ID', 'orig_ID', 'CAS', 'NAME', 'UNITS', 'smiles_source'] [] Index(['ID', 'SAN_SMILES', 'MOL_OBJECT', 'ORIGINAL_SMILES', 'orig_ID',
+       'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source'],
+      dtype='object')
+Your input dataset has 822 molecules.
+Your output dataset has 819 molecules.
+thanks for using HYGIEIA!
+
+#########################################################################
+####################### WELCOME TO HYGIEIA script #######################
+#########################################################################
+This script will process your dataframe and: 
+ 	- eliminate incorrect molecules ans sanitize smiles
+ 	- clean salts
+ 	- eliminate inorganic and organometallic compounds
+ 	- check for duplicated molecules
+ 	- check for mixtures.
+A file located in ".\results" folder is needed
+This file must be called: "\TK_HIA_Wangdf1-preprocessed.csv"
+Extra columns are available in the input file:
+
+['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+What to you want to do with them?.
+
+	[1] Ignore extra data and remove it from following steps.
+
+		  "SMILES" will be the only filtered/sanitized column and "y" will be the only redirected output.
+
+	[2] Keep them in the output.
+
+		  SMILES will be only the filtered/sanitized column but all the rest will be redirected in the output.
+
+	[3] Keep them in the output and use them to check duplicates.
+
+		  More than one column will be used for filtering: SMILES will be for sanitize, mixture, salts and inorganics,
+		  the rest of the columns (except y) for checking for duplicates.
+
+	[4] Select which columns I want to keep and  which to use them to check duplicates.
+
+		  Provide a list with two lists [check dups, keep] do not include your SMILES and y
+SMILES y ['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+[+] Sanitizing smiles (Always done)
+Index(['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS',
+       'smiles_source'],
+      dtype='object')
+[+] Eliminating salts 
+	Your dataset had salts, that have been eliminated:
+
+	[I-].[I-].[I-].O(CC[N+](CC)(CC)CC)c1c(OCC[N+](CC)(CC)CC)cccc1OCC[N+](CC)(CC)CC --> CC[N+](CC)(CC)CCOc1cccc(OCC[N+](CC)(CC)CC)c1OCC[N+](CC)(CC)CC
+[+] Eliminating inorganic and organometallic compounds
+	Congratulations, your dataset has not inorganic and organometallic compounds.
+[+] Checking for repeated compounds considering extra data
+	Congratulations, your dataset has not duplicated compounds.
+[+] Checking for mixtures
+[]
+	Congratulations, your dataset has not mixtures.
+
+A new file has been generated:
+
+.\results\TK_HIA_Wangdf1.csv: contains the unique molecules, following your instructions
+['ID', 'orig_ID', 'CAS', 'NAME', 'UNITS', 'smiles_source'] [] Index(['ID', 'SAN_SMILES', 'MOL_OBJECT', 'ORIGINAL_SMILES', 'orig_ID',
+       'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source'],
+      dtype='object')
+Your input dataset has 578 molecules.
+Your output dataset has 578 molecules.
+thanks for using HYGIEIA!
+
+#########################################################################
+####################### WELCOME TO HYGIEIA script #######################
+#########################################################################
+This script will process your dataframe and: 
+ 	- eliminate incorrect molecules ans sanitize smiles
+ 	- clean salts
+ 	- eliminate inorganic and organometallic compounds
+ 	- check for duplicated molecules
+ 	- check for mixtures.
+A file located in ".\results" folder is needed
+This file must be called: "\TK_HIA_Wangdf2-preprocessed.csv"
+Extra columns are available in the input file:
+
+['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+What to you want to do with them?.
+
+	[1] Ignore extra data and remove it from following steps.
+
+		  "SMILES" will be the only filtered/sanitized column and "y" will be the only redirected output.
+
+	[2] Keep them in the output.
+
+		  SMILES will be only the filtered/sanitized column but all the rest will be redirected in the output.
+
+	[3] Keep them in the output and use them to check duplicates.
+
+		  More than one column will be used for filtering: SMILES will be for sanitize, mixture, salts and inorganics,
+		  the rest of the columns (except y) for checking for duplicates.
+
+	[4] Select which columns I want to keep and  which to use them to check duplicates.
+
+		  Provide a list with two lists [check dups, keep] do not include your SMILES and y
+SMILES y ['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+[+] Sanitizing smiles (Always done)
+Index(['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS',
+       'smiles_source'],
+      dtype='object')
+[+] Eliminating salts 
+	Your dataset had salts, that have been eliminated:
+
+	[I-].[I-].[I-].O(CC[N+](CC)(CC)CC)c1c(OCC[N+](CC)(CC)CC)cccc1OCC[N+](CC)(CC)CC --> CC[N+](CC)(CC)CCOc1cccc(OCC[N+](CC)(CC)CC)c1OCC[N+](CC)(CC)CC
+	[Pt]1OC(=O)C2(CCC2)C(O1)=O.N.N --> O=C1O[Pt]OC(=O)C12CCC2
+	Cl.Clc1cc2c(CCNC[C@@H]2C)cc1 --> C[C@H]1CNCCc2ccc(Cl)cc21
+	Cl.o1c2c(cc1C(=O)N)cc(N1CCN(CC1)CCCCc1c3cc(ccc3[nH]c1)C#N)cc2 --> N#Cc1ccc2[nH]cc(CCCCN3CCN(c4ccc5oc(C(N)=O)cc5c4)CC3)c2c1
+[+] Eliminating inorganic and organometallic compounds
+
+Your dataset had 1 molecules with forbiden atoms. They have been eliminated.
+	 O=C1O[Pt]OC(=O)C12CCC2
+[+] Checking for repeated compounds considering extra data
+	Your dataset has duplicated compounds.
+2
+	All duplicated compounds (including those with equivalent target) are save in a file called \TK_HIA_Wangdf2-duplicates_for_manual_check.csv
+[+] Checking for mixtures
+[]
+	Congratulations, your dataset has not mixtures.
+
+A new file has been generated:
+
+.\results\TK_HIA_Wangdf2.csv: contains the unique molecules, following your instructions
+['ID', 'orig_ID', 'CAS', 'NAME', 'UNITS', 'smiles_source'] [] Index(['SAN_SMILES', 'y', 'ID', 'orig_ID', 'CAS', 'NAME', 'UNITS',
+       'smiles_source', 'ORIGINAL_SMILES', 'MOL_OBJECT', 'SMILES', 'y_old'],
+      dtype='object')
+Your input dataset has 970 molecules.
+Your output dataset has 955 molecules.
+thanks for using HYGIEIA!
+
+#########################################################################
+####################### WELCOME TO HYGIEIA script #######################
+#########################################################################
+This script will process your dataframe and: 
+ 	- eliminate incorrect molecules ans sanitize smiles
+ 	- clean salts
+ 	- eliminate inorganic and organometallic compounds
+ 	- check for duplicated molecules
+ 	- check for mixtures.
+A file located in ".\results" folder is needed
+This file must be called: "\TK_HIA_Wangdf3-preprocessed.csv"
+Extra columns are available in the input file:
+
+['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+What to you want to do with them?.
+
+	[1] Ignore extra data and remove it from following steps.
+
+		  "SMILES" will be the only filtered/sanitized column and "y" will be the only redirected output.
+
+	[2] Keep them in the output.
+
+		  SMILES will be only the filtered/sanitized column but all the rest will be redirected in the output.
+
+	[3] Keep them in the output and use them to check duplicates.
+
+		  More than one column will be used for filtering: SMILES will be for sanitize, mixture, salts and inorganics,
+		  the rest of the columns (except y) for checking for duplicates.
+
+	[4] Select which columns I want to keep and  which to use them to check duplicates.
+
+		  Provide a list with two lists [check dups, keep] do not include your SMILES and y
+SMILES y ['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+[+] Sanitizing smiles (Always done)
+Index(['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS',
+       'smiles_source'],
+      dtype='object')
+[+] Eliminating salts 
+	Your dataset had salts, that have been eliminated:
+
+	Cl.Clc1cc2c(CCNC[C@@H]2C)cc1 --> C[C@H]1CNCCc2ccc(Cl)cc21
+	[I-].[I-].[I-].O(CC[N+](CC)(CC)CC)c1c(OCC[N+](CC)(CC)CC)cccc1OCC[N+](CC)(CC)CC --> CC[N+](CC)(CC)CCOc1cccc(OCC[N+](CC)(CC)CC)c1OCC[N+](CC)(CC)CC
+	[Pt]1OC(=O)C2(CCC2)C(O1)=O.N.N --> O=C1O[Pt]OC(=O)C12CCC2
+	Cl.o1c2c(cc1C(=O)N)cc(N1CCN(CC1)CCCCc1c3cc(ccc3[nH]c1)C#N)cc2 --> N#Cc1ccc2[nH]cc(CCCCN3CCN(c4ccc5oc(C(N)=O)cc5c4)CC3)c2c1
+[+] Eliminating inorganic and organometallic compounds
+
+Your dataset had 1 molecules with forbiden atoms. They have been eliminated.
+	 O=C1O[Pt]OC(=O)C12CCC2
+[+] Checking for repeated compounds considering extra data
+	Your dataset has duplicated compounds.
+2
+	All duplicated compounds (including those with equivalent target) are save in a file called \TK_HIA_Wangdf3-duplicates_for_manual_check.csv
+[+] Checking for mixtures
+[]
+	Congratulations, your dataset has not mixtures.
+
+A new file has been generated:
+
+.\results\TK_HIA_Wangdf3.csv: contains the unique molecules, following your instructions
+['ID', 'orig_ID', 'CAS', 'NAME', 'UNITS', 'smiles_source'] [] Index(['SAN_SMILES', 'y', 'ID', 'orig_ID', 'CAS', 'NAME', 'UNITS',
+       'smiles_source', 'ORIGINAL_SMILES', 'MOL_OBJECT', 'SMILES', 'y_old'],
+      dtype='object')
+Your input dataset has 971 molecules.
+Your output dataset has 956 molecules.
+thanks for using HYGIEIA!
+
+#########################################################################
+####################### WELCOME TO HYGIEIA script #######################
+#########################################################################
+This script will process your dataframe and: 
+ 	- eliminate incorrect molecules ans sanitize smiles
+ 	- clean salts
+ 	- eliminate inorganic and organometallic compounds
+ 	- check for duplicated molecules
+ 	- check for mixtures.
+A file located in ".\results" folder is needed
+This file must be called: "\TK_HLM_Li-preprocessed.csv"
+Extra columns are available in the input file:
+
+['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+What to you want to do with them?.
+
+	[1] Ignore extra data and remove it from following steps.
+
+		  "SMILES" will be the only filtered/sanitized column and "y" will be the only redirected output.
+
+	[2] Keep them in the output.
+
+		  SMILES will be only the filtered/sanitized column but all the rest will be redirected in the output.
+
+	[3] Keep them in the output and use them to check duplicates.
+
+		  More than one column will be used for filtering: SMILES will be for sanitize, mixture, salts and inorganics,
+		  the rest of the columns (except y) for checking for duplicates.
+
+	[4] Select which columns I want to keep and  which to use them to check duplicates.
+
+		  Provide a list with two lists [check dups, keep] do not include your SMILES and y
+SMILES y ['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+[+] Sanitizing smiles (Always done)
+Index(['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS',
+       'smiles_source'],
+      dtype='object')
+[+] Eliminating salts 
+	Your dataset had salts, that have been eliminated:
+
+	Cl.CCCCCCSc1nccnc1O[C@H]2CN3CCC2C3 --> CCCCCCSc1nccnc1O[C@H]1CN2CCC1C2
+	Cl.CCOc1ccccc1C[C@H](N2CCNCC2)c3ccccc3 --> CCOc1ccccc1C[C@@H](c1ccccc1)N1CCNCC1
+	Cl.CCOc1ccccc1C[C@@H](N2CCNCC2)c3ccccc3 --> CCOc1ccccc1C[C@H](c1ccccc1)N1CCNCC1
+	Cl.Clc1ccccc1CC(N2CCNCC2)c3ccccc3 --> Clc1ccccc1CC(c1ccccc1)N1CCNCC1
+	Cl.CNCCCOc1cc(F)c(c(F)c1)c2c(Cl)nc3ncnn3c2N[C@@H](C)C(F)(F)F --> CNCCCOc1cc(F)c(-c2c(Cl)nc3ncnn3c2N[C@@H](C)C(F)(F)F)c(F)c1
+	Cl.COc1ccc(F)cc1c2ccc3NC(C)(C)C=C(C(C)OCC=C)c3c2 --> C=CCOC(C)C1=CC(C)(C)Nc2ccc(-c3cc(F)ccc3OC)cc21
+	Br.COc1ccc(F)cc1c2ccc3NC(C)(C)C=C(C(C)OCC=C)c3c2 --> C=CCOC(C)C1=CC(C)(C)Nc2ccc(-c3cc(F)ccc3OC)cc21
+	Cl.NC1CN(CC1c2cc(F)c(F)cc2F)c3cc(ncn3)c4ccsc4 --> NC1CN(c2cc(-c3ccsc3)ncn2)CC1c1cc(F)c(F)cc1F
+	Cl.CC(C)CCN1N=C(C(=C(C1=O)C2=NS(=O)(=O)c3cc(OCC(=O)N4CCNC4)ccc3N2)O)c5cccs5 --> CC(C)CCn1nc(-c2cccs2)c(O)c(C2=NS(=O)(=O)c3cc(OCC(=O)N4CCNC4)ccc3N2)c1=O
+	Cl.COc1ccc2nc(NC(=O)C(CC3CCCC3)c4ccc(cc4)S(=O)(=O)N5CCNCC5)sc2n1 --> COc1ccc2nc(NC(=O)C(CC3CCCC3)c3ccc(S(=O)(=O)N4CCNCC4)cc3)sc2n1
+	Cl.Cl.ONC(=O)\C=C\c1ccc2c(c1)nc(CCc3ccccc3)n2CCN4CCCCC4 --> O=C(/C=C/c1ccc2c(c1)nc(CCc1ccccc1)n2CCN1CCCCC1)NO
+	Cl.Cl.CN(C)CC(C)(C)Cn1c(CCc2ccccc2)nc3cc(\C=C\C(=O)NO)ccc13 --> CN(C)CC(C)(C)Cn1c(CCc2ccccc2)nc2cc(/C=C/C(=O)NO)ccc21
+	Cl.Cl.CCN(CC)CCn1c(CCc2ccccc2)nc3cc(\C=C\C(=O)NO)ccc13 --> CCN(CC)CCn1c(CCc2ccccc2)nc2cc(/C=C/C(=O)NO)ccc21
+	Cl.Cl.ONC(=O)\C=C\c1ccc2c(c1)nc(CCc3ccccc3)n2CCN4CCCC4 --> O=C(/C=C/c1ccc2c(c1)nc(CCc1ccccc1)n2CCN1CCCC1)NO
+	Cl.Cn1c(CCc2ccccc2)nc3cc(\C=C\C(=O)NO)ccc13 --> Cn1c(CCc2ccccc2)nc2cc(/C=C/C(=O)NO)ccc21
+	Cl.COc1cccc2c(cn(CC3CCCCC3)c12)C(=O)N4CCN5CCCC[C@H]5C4 --> COc1cccc2c(C(=O)N3CCN4CCCC[C@H]4C3)cn(CC3CCCCC3)c12
+	Cl.COc1cccc2c(cn(CC3CCCCC3)c12)C(=O)N4CCN5CCC[C@H]5C4 --> COc1cccc2c(C(=O)N3CCN4CCC[C@H]4C3)cn(CC3CCCCC3)c12
+	Cl.COc1cccc2c(cn(CC3CCCCC3)c12)C(=O)N4C[C@H]5CCCN5C[C@H]4C --> COc1cccc2c(C(=O)N3C[C@H]4CCCN4C[C@H]3C)cn(CC3CCCCC3)c12
+	Cl.COc1cccc2c(cn(CC3CCCCC3)c12)C(=O)N4C[C@H]5CCCN5C[C@@H]4C --> COc1cccc2c(C(=O)N3C[C@H]4CCCN4C[C@@H]3C)cn(CC3CCCCC3)c12
+	Cl.COc1cccc2c(cn(CC3CCCCC3)c12)C(=O)N4C[C@@H]5CCCN5C[C@H]4C --> COc1cccc2c(C(=O)N3C[C@@H]4CCCN4C[C@H]3C)cn(CC3CCCCC3)c12
+	Cl.COc1cccc2c(cn(CC3CCCCC3)c12)C(=O)N4CCN5CCC[C@@]5(C)C4 --> COc1cccc2c(C(=O)N3CCN4CCC[C@@]4(C)C3)cn(CC3CCCCC3)c12
+	Cl.COc1cccc2c(cn(CC3CCCCC3)c12)C(=O)N4C[C@]5(C)CSCN5C[C@@H]4C --> COc1cccc2c(C(=O)N3C[C@]4(C)CSCN4C[C@@H]3C)cn(CC3CCCCC3)c12
+	Cl.Cl.C[C@@H](N)[C@@H]1CC[C@H](CC1)C(=O)Nc2ccncc2 --> C[C@@H](N)[C@H]1CC[C@H](C(=O)Nc2ccncc2)CC1
+	Cl.FC(F)(F)c1ccc(cc1)c2cc(NCCCN3CCOCC3)n4c5ccccc5nc4c2C#N --> N#Cc1c(-c2ccc(C(F)(F)F)cc2)cc(NCCCN2CCOCC2)n2c1nc1ccccc12
+	Cl.Cl.CCN(CC)CCNc1cc(c2ccc(cc2)C(F)(F)F)c(C#N)c3nc4ccccc4n13 --> CCN(CC)CCNc1cc(-c2ccc(C(F)(F)F)cc2)c(C#N)c2nc3ccccc3n12
+	Cl.FC(F)(F)c1ccc(cc1)c2cc(NCCN3CCOCC3)n4c5ccccc5nc4c2C#N --> N#Cc1c(-c2ccc(C(F)(F)F)cc2)cc(NCCN2CCOCC2)n2c1nc1ccccc12
+	Cl.FC(F)(F)c1ccc(cc1)c2cc(NCCN3CCCC3)n4c5ccccc5nc4c2C#N --> N#Cc1c(-c2ccc(C(F)(F)F)cc2)cc(NCCN2CCCC2)n2c1nc1ccccc12
+	Br.CN(C)Cc1cc2c(NC(=O)c3cccc(O)c23)s1 --> CN(C)Cc1cc2c([nH]c(=O)c3cccc(O)c32)s1
+	Cl.FC(F)(F)c1ccc(cc1)c2cc(NCCN3CCCCC3)n4c5ccccc5nc4c2C#N --> N#Cc1c(-c2ccc(C(F)(F)F)cc2)cc(NCCN2CCCCC2)n2c1nc1ccccc12
+	Cl.Cc1cc(NCCCN2CCOCC2)c3ccc4c(ccc5c(NCCCN6CCOCC6)cc(C)nc45)c3n1 --> Cc1cc(NCCCN2CCOCC2)c2ccc3c(ccc4c(NCCCN5CCOCC5)cc(C)nc43)c2n1
+	Cl.Cl.CCCCCCc1nc2cc(\C=C\C(=O)NO)ccc2n1CCNCC --> CCCCCCc1nc2cc(/C=C/C(=O)NO)ccc2n1CCNCC
+	Cl.ONC(=O)\C=C\c1ccc2c(c1)nc(CCc3ccccc3)n2CCN4CCCC4 --> O=C(/C=C/c1ccc2c(c1)nc(CCc1ccccc1)n2CCN1CCCC1)NO
+	Cl.Cl.CCNCCNc1cc(c2ccc(cc2)C(F)(F)F)c(C#N)c3nc4ccccc4n13 --> CCNCCNc1cc(-c2ccc(C(F)(F)F)cc2)c(C#N)c2nc3ccccc3n12
+	O.Cl.C[C@@H]1CN[C@@H](C2CC2)C(=O)N(C)[C@H](C)C(=O)N[C@H](Cc3ccc(F)cc3)C(=O)NCCCc4ccccc4O1 --> C[C@@H]1CN[C@@H](C2CC2)C(=O)N(C)[C@H](C)C(=O)N[C@H](Cc2ccc(F)cc2)C(=O)NCCCc2ccccc2O1
+	Cl.C[C@@H]1CCCN1CCCOc2ccc(cc2)C3=NNC(=O)C=C3 --> C[C@@H]1CCCN1CCCOc1ccc(-c2ccc(=O)[nH]n2)cc1
+	Cl.Cc1cc(NCCN2CCOCC2)c3ccc4c(ccc5c(NCCN6CCOCC6)cc(C)nc45)c3n1 --> Cc1cc(NCCN2CCOCC2)c2ccc3c(ccc4c(NCCN5CCOCC5)cc(C)nc43)c2n1
+	Cl.CCN(CC)CCNc1cc(C)nc2c1ccc3c2ccc4c(NCCN(CC)CC)cc(C)nc34 --> CCN(CC)CCNc1cc(C)nc2c1ccc1c2ccc2c(NCCN(CC)CC)cc(C)nc21
+	Cl.Cl.CCCCc1nc2cc(\C=C\C(=O)NO)ccc2n1CCN(CC)CC --> CCCCc1nc2cc(/C=C/C(=O)NO)ccc2n1CCN(CC)CC
+	Cl.Cl.CCCCc1nc2cc(\C=C\C(=O)NO)ccc2n1CCNC(C)C --> CCCCc1nc2cc(/C=C/C(=O)NO)ccc2n1CCNC(C)C
+	Cl.Cl.CN(C)CC(C)(C)Cn1c(CC(C)(C)C)nc2cc(\C=C\C(=O)NO)ccc12 --> CN(C)CC(C)(C)Cn1c(CC(C)(C)C)nc2cc(/C=C/C(=O)NO)ccc21
+	Cl.Cl.CCCCCCc1nc2cc(\C=C\C(=O)NO)ccc2n1CCN(C)C --> CCCCCCc1nc2cc(/C=C/C(=O)NO)ccc2n1CCN(C)C
+	Cl.Cc1cc(nn1C[C@H](O)CN)c2ccc(Cl)c(c2)C(=O)NCC3(O)CCCCCC3 --> Cc1cc(-c2ccc(Cl)c(C(=O)NCC3(O)CCCCCC3)c2)nn1C[C@H](O)CN
+	Cl.Cc1cc(nn1C[C@@H](O)CN)c2ccc(Cl)c(c2)C(=O)NCC3(O)CCCCCC3 --> Cc1cc(-c2ccc(Cl)c(C(=O)NCC3(O)CCCCCC3)c2)nn1C[C@@H](O)CN
+	Cl.Cl.COc1ccc(CN([C@@H](C)c2nc(c[nH]2)c3ccccc3)C(=O)[C@@H](N)Cc4c(C)cc(cc4C)C(=O)N)cc1C(=O)O --> COc1ccc(CN(C(=O)[C@@H](N)Cc2c(C)cc(C(N)=O)cc2C)[C@@H](C)c2nc(-c3ccccc3)c[nH]2)cc1C(=O)O
+	Cl.O=S(=O)(c1ccccc1)c2ccc3c4CCNCc4oc3c2 --> O=S(=O)(c1ccccc1)c1ccc2c3c(oc2c1)CNCC3
+	Cl.O=S(=O)(c1ccccc1)c2ccc3[C@@H]4CCNC[C@@H]4Oc3c2 --> O=S(=O)(c1ccccc1)c1ccc2c(c1)O[C@H]1CNCC[C@@H]21
+	Cl.COc1cc(OC(C)C)cc(c1)S(=O)(=O)c2ccc3[C@@H]4CCNC[C@@H]4Oc3c2 --> COc1cc(OC(C)C)cc(S(=O)(=O)c2ccc3c(c2)O[C@H]2CNCC[C@@H]32)c1
+	Cl.Fc1ccc(CN2CCN(CC2)c3ccc(C(=O)N[C@@H](Cc4c[nH]c5ccccc45)C(=O)Nc6ccncc6)c(F)c3)cc1 --> O=C(N[C@@H](Cc1c[nH]c2ccccc12)C(=O)Nc1ccncc1)c1ccc(N2CCN(Cc3ccc(F)cc3)CC2)cc1F
+	Cl.Fc1cc(ccc1C(=O)N[C@@H](Cc2c[nH]c3ccccc23)C(=O)Nc4ccncc4)N5CCNCC5 --> O=C(N[C@@H](Cc1c[nH]c2ccccc12)C(=O)Nc1ccncc1)c1ccc(N2CCNCC2)cc1F
+	Cl.Fc1ccccc1CN[C@@H](Cc2c[nH]c3ccccc23)C(=O)Nc4ccncc4 --> O=C(Nc1ccncc1)[C@H](Cc1c[nH]c2ccccc12)NCc1ccccc1F
+	Cl.CN1CCCC(C1)C(=O)N[C@@H](Cc2c[nH]c3ccccc23)C(=O)Nc4ccncc4 --> CN1CCCC(C(=O)N[C@@H](Cc2c[nH]c3ccccc23)C(=O)Nc2ccncc2)C1
+	Cl.CN1CCC(CC1)C(=O)N[C@@H](Cc2c[nH]c3ccccc23)C(=O)Nc4ccncc4 --> CN1CCC(C(=O)N[C@@H](Cc2c[nH]c3ccccc23)C(=O)Nc2ccncc2)CC1
+	Cl.O=C1C2CCCN2C(=O)N1CCCCNCCOc3cccc4ccccc34 --> O=C1C2CCCN2C(=O)N1CCCCNCCOc1cccc2ccccc12
+	Cl.CCc1ccccc1OCCNCCCCN2C(=O)C3CCCN3C2=O --> CCc1ccccc1OCCNCCCCN1C(=O)C2CCCN2C1=O
+	Cl.O=C1C2CCCN2C(=O)N1CCCCNCCOc3ccccc3 --> O=C1C2CCCN2C(=O)N1CCCCNCCOc1ccccc1
+	Cl.CCOc1ccccc1OCCNCCCCN2C(=O)C3CCCN3C2=O --> CCOc1ccccc1OCCNCCCCN1C(=O)C2CCCN2C1=O
+	Cl.COc1ccccc1OCCNCCCCN2C(=O)C3CCCN3C2=O --> COc1ccccc1OCCNCCCCN1C(=O)C2CCCN2C1=O
+	Cl.O=C(Nc1ccncc1)[C@H](Cc2c[nH]c3ccccc23)NC(=O)C4CCNCC4 --> O=C(N[C@@H](Cc1c[nH]c2ccccc12)C(=O)Nc1ccncc1)C1CCNCC1
+	Cl.NCCc1c[nH]c2C(=O)C3=C(C(=O)c12)S(=O)(=O)C=CN3 --> NCCc1c[nH]c2c1C(=O)C1=C(NC=CS1(=O)=O)C2=O
+	Cl.CNCCc1c[nH]c2C(=O)C3=C(C(=O)c12)S(=O)(=O)C=CN3 --> CNCCc1c[nH]c2c1C(=O)C1=C(NC=CS1(=O)=O)C2=O
+	Br.CN1C(=N)N(CCOc2ccc(Cl)cc2)c3ccccc13 --> Cn1c(=N)n(CCOc2ccc(Cl)cc2)c2ccccc21
+	Br.CN1C(=N)N(CCOc2ccc(Cl)cc2)c3cccc(Cl)c13 --> Cn1c(=N)n(CCOc2ccc(Cl)cc2)c2cccc(Cl)c21
+	Br.CN1C(=N)N(CCOc2ccc(Cl)cc2)c3ccc(Cl)cc13 --> Cn1c(=N)n(CCOc2ccc(Cl)cc2)c2ccc(Cl)cc21
+	Br.CN1C(=N)N(CCOc2ccc(Cl)cc2)c3cc(Cl)ccc13 --> Cn1c(=N)n(CCOc2ccc(Cl)cc2)c2cc(Cl)ccc21
+	Br.CN1C(=N)N(CCOc2ccc(Cl)cc2)c3c(Cl)cccc13 --> Cn1c(=N)n(CCOc2ccc(Cl)cc2)c2c(Cl)cccc21
+	Br.CN1C(=N)N(CCOc2ccc(Cl)cc2)c3cccc(C)c13 --> Cc1cccc2c1n(C)c(=N)n2CCOc1ccc(Cl)cc1
+	Br.CN1C(=N)N(CCOc2ccc(Cl)cc2)c3ccc(C)cc13 --> Cc1ccc2c(c1)n(C)c(=N)n2CCOc1ccc(Cl)cc1
+	Br.CN1C(=N)N(CCOc2ccc(Cl)cc2)c3cc(C)ccc13 --> Cc1ccc2c(c1)n(CCOc1ccc(Cl)cc1)c(=N)n2C
+	Cl.CNCCc1cn(C)c2C(=O)C3=C(C(=O)c12)S(=O)(=O)C=CN3 --> CNCCc1cn(C)c2c1C(=O)C1=C(NC=CS1(=O)=O)C2=O
+	Cl.Cn1cc(CCN)c2C(=O)C3=C(NC=CS3(=O)=O)C(=O)c12 --> Cn1cc(CCN)c2c1C(=O)C1=C(C2=O)S(=O)(=O)C=CN1
+[+] Eliminating inorganic and organometallic compounds
+
+Your dataset had 2 molecules with forbiden atoms. They have been eliminated.
+	 CC(C)C[C@H](NC(=O)[C@@H](NC(=O)c1cccc(n1)c2ccccc2)[C@@H](C)O)B(O)O
+	 CC(C)C[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)c2cnccn2)B(O)O
+[+] Checking for repeated compounds considering extra data
+	Your dataset has duplicated compounds.
+2
+[1, 0] True 1.4142135623730951 0.7071067811865476 0.5
+[1, 0] True 1.4142135623730951 0.7071067811865476 0.5
+[1, 0] True 1.4142135623730951 0.7071067811865476 0.5
+WARNING: Some rows have been eliminated for being null (this is normal if outliers have been removed)
+	All duplicated compounds (including those with equivalent target) are save in a file called \TK_HLM_Li-duplicates_for_manual_check.csv
+[+] Checking for mixtures
+['CC(C)(C)c1ccc(cc1)C(=O)N[C@@H]2CC[C@@]3(O)[C@H]4Cc5ccc(O)c6O[C@@H]2[C@]3(CCN4CC7CC7)c56.OC(=O)C(=O)O', 'CNC1(CC1)c2ccc(cc2)N3CCc4c(C3=O)n(nc4C(F)(F)F)c5ccc(OC)cc5.OC(=O)C(F)(F)F', 'CNC1(CC1)c2ccc(cc2)N3CCc4c(nn(c5ccc(OC)cc5)c4C3=O)C(=O)N.OC(=O)C(F)(F)F', 'COC(=O)[C@H](C(C)C)N1CCCO[P@@]1(=O)COCCn2cnc3c(N)ncnc23.OC(=O)\\C=C\\C(=O)O', 'COC(=O)[C@H](C(C)C)N1CCCO[P@]1(=O)COCCn2cnc3c(N)ncnc23.OC(=O)\\C=C\\C(=O)O', 'COc1ccc(cc1)n2nc(C#N)c3CCN(C(=O)c23)c4ccc(cc4)C5(CN(C)C)CC5.OC(=O)C(F)(F)F', 'COc1ccc(cc1)n2nc(C#N)c3CCN(C(=O)c23)c4ccc(cc4)C5(CN6CCCC6)CC5.OC(=O)C(F)(F)F', 'COc1ccc(cc1)n2nc(C(=O)N)c3CCN(C(=O)c23)c4ccc(cc4)C5(CC(=O)N)CC5.OC(=O)C(F)(F)F', 'COc1ccc(cc1)n2nc(C(=O)N)c3CCN(C(=O)c23)c4ccc(cc4)C5(CN6CCCC6)CC5.OC(=O)C(F)(F)F', 'COc1ccc(cc1)n2nc(C(=O)N)c3CCN(C(=O)c23)c4ccc(cc4)C5(CN6CCCC6=O)CC5.OC(=O)C(F)(F)F', 'COc1ccc(cc1)n2nc(C(=O)N)c3CCN(C(=O)c23)c4ccc(cc4)C5(CC5)N(C)CCO.OC(=O)C(F)(F)F', 'COc1ccc(cc1)n2nc(c3CCN(C(=O)c23)c4ccc(cc4)C5(CN6CCOCC6)CC5)S(=O)(=O)C.OC(=O)C(F)(F)F', 'COc1ccc(cc1)n2nc(c3CCN(C(=O)c23)c4ccc(cc4)C5(Cn6ccnc6C)CC5)S(=O)(=O)C.OC(=O)C(F)(F)F', 'COc1ccc(cc1)N2N=C(C3CCN(C(=O)C23)c4ccc(cc4)C5(CN6CCCC6)CC5)S(=O)(=O)C.OC(=O)C(F)(F)F', 'C[N+]1=C2C=C(NCCc3ccc(O)cc3)C(=O)c4[nH]cc(CC1)c24.[O-]C(=O)C(F)(F)F', 'C[N+]1=C2C=C(N\\C=C\\c3ccc(O)cc3)C(=O)c4c2c(CC1)cn4C.[O-]C(=O)C(F)(F)F', 'OC(=O)C(=O)O.Oc1ccc2C[C@H]3N(CC4CC4)CC[C@@]56[C@@H](Oc1c25)[C@@H](CC[C@@]36O)NC(=O)c7ccc(Cl)c(Cl)c7', 'OC(=O)C(=O)O.Oc1ccc2C[C@H]3N(CC4CC4)CC[C@@]56[C@@H](Oc1c25)[C@@H](CC[C@@]36O)NC(=O)c7ccc(I)cc7']
+
+Your dataset had 18 mixtures
+	 CC(C)(C)c1ccc(cc1)C(=O)N[C@@H]2CC[C@@]3(O)[C@H]4Cc5ccc(O)c6O[C@@H]2[C@]3(CCN4CC7CC7)c56.OC(=O)C(=O)O
+	 CNC1(CC1)c2ccc(cc2)N3CCc4c(C3=O)n(nc4C(F)(F)F)c5ccc(OC)cc5.OC(=O)C(F)(F)F
+	 CNC1(CC1)c2ccc(cc2)N3CCc4c(nn(c5ccc(OC)cc5)c4C3=O)C(=O)N.OC(=O)C(F)(F)F
+	 COC(=O)[C@H](C(C)C)N1CCCO[P@@]1(=O)COCCn2cnc3c(N)ncnc23.OC(=O)\C=C\C(=O)O
+	 COC(=O)[C@H](C(C)C)N1CCCO[P@]1(=O)COCCn2cnc3c(N)ncnc23.OC(=O)\C=C\C(=O)O
+	 COc1ccc(cc1)n2nc(C#N)c3CCN(C(=O)c23)c4ccc(cc4)C5(CN(C)C)CC5.OC(=O)C(F)(F)F
+	 COc1ccc(cc1)n2nc(C#N)c3CCN(C(=O)c23)c4ccc(cc4)C5(CN6CCCC6)CC5.OC(=O)C(F)(F)F
+	 COc1ccc(cc1)n2nc(C(=O)N)c3CCN(C(=O)c23)c4ccc(cc4)C5(CC(=O)N)CC5.OC(=O)C(F)(F)F
+	 COc1ccc(cc1)n2nc(C(=O)N)c3CCN(C(=O)c23)c4ccc(cc4)C5(CN6CCCC6)CC5.OC(=O)C(F)(F)F
+	 COc1ccc(cc1)n2nc(C(=O)N)c3CCN(C(=O)c23)c4ccc(cc4)C5(CN6CCCC6=O)CC5.OC(=O)C(F)(F)F
+	 COc1ccc(cc1)n2nc(C(=O)N)c3CCN(C(=O)c23)c4ccc(cc4)C5(CC5)N(C)CCO.OC(=O)C(F)(F)F
+	 COc1ccc(cc1)n2nc(c3CCN(C(=O)c23)c4ccc(cc4)C5(CN6CCOCC6)CC5)S(=O)(=O)C.OC(=O)C(F)(F)F
+	 COc1ccc(cc1)n2nc(c3CCN(C(=O)c23)c4ccc(cc4)C5(Cn6ccnc6C)CC5)S(=O)(=O)C.OC(=O)C(F)(F)F
+	 COc1ccc(cc1)N2N=C(C3CCN(C(=O)C23)c4ccc(cc4)C5(CN6CCCC6)CC5)S(=O)(=O)C.OC(=O)C(F)(F)F
+	 C[N+]1=C2C=C(NCCc3ccc(O)cc3)C(=O)c4[nH]cc(CC1)c24.[O-]C(=O)C(F)(F)F
+	 C[N+]1=C2C=C(N\C=C\c3ccc(O)cc3)C(=O)c4c2c(CC1)cn4C.[O-]C(=O)C(F)(F)F
+	 OC(=O)C(=O)O.Oc1ccc2C[C@H]3N(CC4CC4)CC[C@@]56[C@@H](Oc1c25)[C@@H](CC[C@@]36O)NC(=O)c7ccc(Cl)c(Cl)c7
+	 OC(=O)C(=O)O.Oc1ccc2C[C@H]3N(CC4CC4)CC[C@@]56[C@@H](Oc1c25)[C@@H](CC[C@@]36O)NC(=O)c7ccc(I)cc7
+
+The mixtures with their values will be saved in a csv file
+                                             SAN_SMILES  ... y_old
+283   CC(C)(C)c1ccc(C(=O)N[C@@H]2CC[C@@]3(O)[C@H]4Cc...  ...   [0]
+1347  CNC1(c2ccc(N3CCc4c(C(F)(F)F)nn(-c5ccc(OC)cc5)c...  ...   [0]
+1348  CNC1(c2ccc(N3CCc4c(C(N)=O)nn(-c5ccc(OC)cc5)c4C...  ...   [0]
+1460  COC(=O)[C@H](C(C)C)N1CCCO[P@@]1(=O)COCCn1cnc2c...  ...   [0]
+1461  COC(=O)[C@H](C(C)C)N1CCCO[P@]1(=O)COCCn1cnc2c(...  ...   [0]
+1700  COc1ccc(-n2nc(C#N)c3c2C(=O)N(c2ccc(C4(CN(C)C)C...  ...   [0]
+1701  COc1ccc(-n2nc(C#N)c3c2C(=O)N(c2ccc(C4(CN5CCCC5...  ...   [0]
+1704  COc1ccc(-n2nc(C(N)=O)c3c2C(=O)N(c2ccc(C4(CC(N)...  ...   [0]
+1705  COc1ccc(-n2nc(C(N)=O)c3c2C(=O)N(c2ccc(C4(CN5CC...  ...   [0]
+1706  COc1ccc(-n2nc(C(N)=O)c3c2C(=O)N(c2ccc(C4(CN5CC...  ...   [1]
+1707  COc1ccc(-n2nc(C(N)=O)c3c2C(=O)N(c2ccc(C4(N(C)C...  ...   [0]
+1708  COc1ccc(-n2nc(S(C)(=O)=O)c3c2C(=O)N(c2ccc(C4(C...  ...   [1]
+1709  COc1ccc(-n2nc(S(C)(=O)=O)c3c2C(=O)N(c2ccc(C4(C...  ...   [1]
+1770  COc1ccc(N2N=C(S(C)(=O)=O)C3CCN(c4ccc(C5(CN6CCC...  ...   [0]
+2304  C[N+]1=C2C=C(NCCc3ccc(O)cc3)C(=O)c3[nH]cc(c32)...  ...   [0]
+2799  Cn1cc2c3c1C(=O)C(N/C=C/c1ccc(O)cc1)=CC3=[N+](C...  ...   [1]
+3314  O=C(N[C@@H]1CC[C@@]2(O)[C@H]3Cc4ccc(O)c5c4[C@@...  ...   [0]
+3315  O=C(N[C@@H]1CC[C@@]2(O)[C@H]3Cc4ccc(O)c5c4[C@@...  ...   [0]
+
+[18 rows x 12 columns]
+
+A new file has been generated:
+
+.\results\TK_HLM_Li.csv: contains the unique molecules, following your instructions
+['ID', 'orig_ID', 'CAS', 'NAME', 'UNITS', 'smiles_source'] [] Index(['SAN_SMILES', 'y', 'ID', 'orig_ID', 'CAS', 'NAME', 'UNITS',
+       'smiles_source', 'ORIGINAL_SMILES', 'MOL_OBJECT', 'SMILES', 'y_old'],
+      dtype='object')
+Your input dataset has 3654 molecules.
+Your output dataset has 3621 molecules.
+thanks for using HYGIEIA!
+Working on: 
+ C:\Users\proto\Desktop\tothexinxol\IRB\scripts\pre_preprocessed_ONGOING
+Output directory already exists: ../results/
+Output directory already exists: ../results/clean_files
+   project_name             tag  ... notes_2  preprocessin steps info
+7     ONTOX_WP1  TK_Pgpsub_Wang  ...     NaN                      NaN
+8     ONTOX_WP1    TK_Pgpsub_Li  ...     NaN                      NaN
+27          IRB  TK_HIA_Wangdf1  ...     NaN                      NaN
+28          IRB  TK_HIA_Wangdf2  ...     NaN                      NaN
+29          IRB  TK_HIA_Wangdf3  ...     NaN                      NaN
+30          IRB       TK_HLM_Li  ...     NaN                      NaN
+
+[6 rows x 23 columns]
+
+[+] Analysing "pgp_testset|pgp_trainingset" dataset
+	[++] Dataframe file created: TK_Pgpsub_Wang-original.csv
+	[++] Dataframe file created: TK_Pgpsub_Wang-entiredata.csv
+	[++] Preprocessed dataframe file created: TK_Pgpsub_Wang-preprocessed.csv
+	[++] Process file by HYGIEIA
+	[+++] Dataframe curated file created: TK_Pgpsub_Wang
+
+[+] Analysing "Pgp_Substrates.csv" dataset
+	[++] Dataframe file created: TK_Pgpsub_Li-entiredata.csv
+	[++] Preprocessed dataframe file created: TK_Pgpsub_Li-preprocessed.csv
+	[++] Process file by HYGIEIA
+	[+++] Dataframe curated file created: TK_Pgpsub_Li
+
+[+] Analysing "c6ra28442f1_df1.xlsx" dataset
+	[++] Dataframe file created: TK_HIA_Wangdf1-original.csv
+	[++] Dataframe file created: TK_HIA_Wangdf1-entiredata.csv
+	[++] Preprocessed dataframe file created: TK_HIA_Wangdf1-preprocessed.csv
+	[++] Process file by HYGIEIA
+	[+++] Dataframe curated file created: TK_HIA_Wangdf1
+
+[+] Analysing "c6ra28442f1_df2.xlsx" dataset
+	[++] Dataframe file created: TK_HIA_Wangdf2-original.csv
+	[++] Dataframe file created: TK_HIA_Wangdf2-entiredata.csv
+	[++] Preprocessed dataframe file created: TK_HIA_Wangdf2-preprocessed.csv
+	[++] Process file by HYGIEIA
+	[+++] Dataframe curated file created: TK_HIA_Wangdf2
+
+[+] Analysing "c6ra28442f1_df3.xlsx" dataset
+	[++] Dataframe file created: TK_HIA_Wangdf3-original.csv
+	[++] Dataframe file created: TK_HIA_Wangdf3-entiredata.csv
+	[++] Preprocessed dataframe file created: TK_HIA_Wangdf3-preprocessed.csv
+	[++] Process file by HYGIEIA
+	[+++] Dataframe curated file created: TK_HIA_Wangdf3
+
+[+] Analysing "ci5b00255_si_001.xlsx" dataset
+	[++] Dataframe file created: TK_HLM_Li-original.csv
+	[++] Dataframe file created: TK_HLM_Li-entiredata.csv
+	[++] Preprocessed dataframe file created: TK_HLM_Li-preprocessed.csv
+	[++] Process file by HYGIEIA
+	[+++] Dataframe curated file created: TK_HLM_Li

@@ -10,7 +10,7 @@ ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
 521;;C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@@H]4[C@H]3CC[C@@]21C;1;;Norethindrone;classHIA;SMI
 497;;C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@@H]4[C@H]3CC[C@@]21CC;1;;Levonorgestrel;classHIA;SMI
 502;;C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CCCC[C@@H]4[C@H]3CC[C@@]21C;1;;Lynestrenol;classHIA;SMI
-[465, 923];;C#C[C@]1(O)CC[C@H]2[C@@H]3CCc4cc(O)ccc4[C@H]3CC[C@@]21C;1;;['ethynylestradiol', 'Ethinyl_Estradiol'];classHIA;SMI
+[465, 923];;C#C[C@]1(O)CC[C@H]2[C@@H]3CCc4cc(O)ccc4[C@H]3CC[C@@]21C;1;;['Ethinyl_Estradiol', 'ethynylestradiol'];classHIA;SMI
 522;;C#C[C@]1(OC(C)=O)CC[C@H]2[C@@H]3CCC4=C/C(=N/O)CC[C@@H]4[C@H]3CC[C@@]21CC;1;;Norgestimate;classHIA;SMI
 467;;C#C[C@]1(OC(C)=O)CC[C@H]2[C@@H]3CCC4=C[C@@H](OC(C)=O)CC[C@@H]4[C@H]3CC[C@@]21C;1;;Ethynodiol_diacetate;classHIA;SMI
 851;;C/C=C/C1=C(C(=O)O)N2C(=O)[C@@H](NC(=O)[C@H](N)c3ccc(O)cc3)[C@H]2SC1;1;;cefprozil;classHIA;SMI
@@ -76,7 +76,7 @@ ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
 697;;CC(C(=O)O)c1ccc(CC2CCCC2=O)cc1;1;;loxoprofen;classHIA;SMI
 900;;CC(C(=O)O)c1ccc2c(c1)[nH]c1ccc(Cl)cc12;1;;carprofen;classHIA;SMI
 431;;CC(C)(C#N)c1cc(Cn2cncn2)cc(C(C)(C)C#N)c1;1;;Anastrozole;classHIA;SMI
-[148, 756];;CC(C)(C(=O)c1cccnc1)c1cccnc1;1;;['metyrapone', 'Metopirone'];classHIA;SMI
+[148, 756];;CC(C)(C(=O)c1cccnc1)c1cccnc1;1;;['Metopirone', 'metyrapone'];classHIA;SMI
 654;;CC(C)(C)NC(=O)C1CC2CCCCC2CN1CC(O)C(Cc1ccccc1)NC(=O)C(CC(N)=O)NC(=O)c1ccc2ccccc2n1;1;;saquinavir mesilate;classHIA;SMI
 842;;CC(C)(C)NC(=O)C1CCC2C3CC=C4C=C(C(=O)O)CCC4(C)C3CCC12C;1;;epristeride;classHIA;SMI
 636;;CC(C)(C)NC(=O)C1CN(Cc2cccnc2)CCN1CC(O)CC(Cc1ccccc1)C(=O)NC1c2ccccc2CC1O;0;;indinavir sulfate;classHIA;SMI
@@ -205,7 +205,7 @@ ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
 194;;CCCC(=O)Nc1ccc(OC[C@@H](O)CNC(C)C)c(C(C)=O)c1;1;;Acebutolol;classHIA;SMI
 564;;CCCC(=O)[C@@]1(c2ccccc2)CCC=C[C@@H]1N(C)C;1;;Tilidine;classHIA;SMI
 822;;CCCC(C)(COC(N)=O)COC(N)=O;1;;meprobamate;classHIA;SMI
-[957, 407];;CCCC(CCC)C(=O)O;1;;['sodium valproate', 'Valproic_acid'];classHIA;SMI
+[957, 407];;CCCC(CCC)C(=O)O;1;;['Valproic_acid', 'sodium valproate'];classHIA;SMI
 387;;CCCC(CCC)CCC[C@H]1COCCN1CCO;1;;Delmopinol;classHIA;SMI
 94;;CCCCC(=O)N(Cc1ccc(-c2ccccc2-c2nnn[nH]2)cc1)[C@H](C(=O)O)C(C)C;1;;Valsartan;classHIA;SMI
 489;;CCCCC1=NC2(CCCC2)C(=O)N1Cc1ccc(-c2ccccc2-c2nn[nH]n2)cc1;1;;Irbesartan;classHIA;SMI
@@ -231,7 +231,7 @@ ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
 541;;CCCN(CCC)S(=O)(=O)c1ccc(C(=O)O)cc1;1;;Probenecid;classHIA;SMI
 707;;CCCN1CC(CSC)CC2c3cccc4[nH]cc(c34)CC21;1;;pergolide mesilate;classHIA;SMI
 548;;CCCN1C[C@H](NS(=O)(=O)N(CC)CC)C[C@@H]2Cc3c(O)cccc3C[C@@H]21;1;;Quinagolide;classHIA;SMI
-[312, 840];;CCCNC(=O)NS(=O)(=O)c1ccc(Cl)cc1;1;;['chlorpropamide', 'Chorpropamide'];classHIA;SMI
+[312, 840];;CCCNC(=O)NS(=O)(=O)c1ccc(Cl)cc1;1;;['Chorpropamide', 'chlorpropamide'];classHIA;SMI
 351;;CCCNC[C@H](O)COc1ccccc1C(=O)CCc1ccccc1;1;;Propafenone;classHIA;SMI
 174;;CCCN[C@H]1CCc2nc(N)sc2C1;1;;Pramipexole;classHIA;SMI
 193;;CCCOC(C(=O)OC1CCN(C)CC1)(c1ccccc1)c1ccccc1;1;;Propiverine;classHIA;SMI
@@ -284,7 +284,7 @@ ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
 924;;CCNCC(O)c1cccc(O)c1;1;;etilefrine;classHIA;SMI
 322;;CCNC[C@H](C)c1cccc(C(F)(F)F)c1;1;;Fenfluramine;classHIA;SMI
 10;;CCN[C@@H]1C[C@H](N)[C@@H](O[C@@H]2OC(CN)=CC[C@@H]2N)[C@H](O)[C@H]1O[C@H]1OC[C@](C)(O)[C@H](NC)[C@H]1O;0;;Netilmicin;classHIA;SMI
-[466, 922];;CCO;1;;['Ethyl_alcohol', 'ethanol'];classHIA;SMI
+[466, 922];;CCO;1;;['ethanol', 'Ethyl_alcohol'];classHIA;SMI
 368;;CCOC(=O)C(C)(C)Oc1ccc(Cl)cc1;1;;Clofibrate;classHIA;SMI
 709;;CCOC(=O)C(CCc1ccccc1)NC(C)C(=O)N1Cc2ccccc2CC1C(=O)O;1;;quinapril hydrochloride;classHIA;SMI
 676;;CCOC(=O)C(CCc1ccccc1)NC1CCc2ccccc2N(CC(=O)O)C1=O;1;;benazepril;classHIA;SMI
@@ -416,7 +416,7 @@ ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
 154;;CN1CCC(=C2c3ccccc3C=Cc3ccccc32)CC1;1;;Cyproheptadine;classHIA;SMI
 252;;CN1CCC(=C2c3ccccc3CC(=O)c3sccc32)CC1;1;;Ketotifen;classHIA;SMI
 231;;CN1CCC(=C2c3ccccc3CCc3cccnc32)CC1;1;;Azatadine;classHIA;SMI
-[173, 759];;CN1CCC(=C2c3ccccc3CCc3sccc32)CC1;1;;['Pizotyline', 'pizotifen malate'];classHIA;SMI
+[173, 759];;CN1CCC(=C2c3ccccc3CCc3sccc32)CC1;1;;['pizotifen malate', 'Pizotyline'];classHIA;SMI
 433;;CN1CCC[C@@H](N2N[C@H](Cc3ccc(Cl)cc3)c3ccccc3C2=O)CC1;1;;Azelastine;classHIA;SMI
 808;;CN1CCC[C@@H]1CCO[C@](C)(c1ccccc1)c1ccc(Cl)cc1;1;;clemastine funurate;classHIA;SMI
 517;;CN1CCC[C@@H]1c1cccnc1;1;;Nicotine;classHIA;SMI
@@ -453,7 +453,7 @@ ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
 388;;CNCCCN1c2ccccc2CCc2ccccc21;1;;Desipramine;classHIA;SMI
 160;;CNCC[C@@H](Oc1ccc(C(F)(F)F)cc1)c1ccccc1;1;;Fluoxetine;classHIA;SMI
 892;;CNCC[C@@H](Oc1ccccc1C)c1ccccc1;1;;atomoxetine;classHIA;SMI
-[945, 438];;CNCCc1ccccn1;1;;['n-methyl-2-pyridineethanamine', 'Betahistine'];classHIA;SMI
+[945, 438];;CNCCc1ccccn1;1;;['Betahistine', 'n-methyl-2-pyridineethanamine'];classHIA;SMI
 934;;CNC[C@H](O)CC12CCC(c3ccccc31)c1ccccc12;1;;levoprotiline;classHIA;SMI
 542;;CNNCc1ccc(C(=O)NC(C)C)cc1;1;;Procarbazine;classHIA;SMI
 123;;CNS(=O)(=O)CCc1ccc2[nH]c(C3CCN(C)CC3)cc2c1;1;;Naratriptan;classHIA;SMI
@@ -528,7 +528,7 @@ ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
 432;;COc1ccc(CCN2CCC(Nc3nc4ccccc4n3Cc3ccc(F)cc3)CC2)cc1;1;;Astemizole;classHIA;SMI
 714;;COc1ccc(C[C@@H](C)NC[C@H](O)c2ccc(O)c(NC=O)c2)cc1;1;;formoterol_fumarate;classHIA;SMI
 265;;COc1ccc(Cc2nccc3cc(OC)c(OC)cc23)cc1OC;1;;Papaverine;classHIA;SMI
-[860, 390];;COc1ccc(Cl)cc1C(=O)NCCc1ccc(S(=O)(=O)NC(=O)NC2CCCCC2)cc1;1;;['glibenclamide', 'Glyburide'];classHIA;SMI
+[860, 390];;COc1ccc(Cl)cc1C(=O)NCCc1ccc(S(=O)(=O)NC(=O)NC2CCCCC2)cc1;1;;['Glyburide', 'glibenclamide'];classHIA;SMI
 285;;COc1ccc([C@@H]2Sc3ccccc3N(CCN(C)C)C(=O)[C@@H]2OC(C)=O)cc1;1;;Diltiazem;classHIA;SMI
 364;;COc1ccc([C@H](CN(C)C)C2([O-])CCCCC2)cc1;1;;Venlafaxine;classHIA;SMI
 171;;COc1ccc2[n-]c(S(=O)Cc3ncc(C)c(OC)c3C)nc2c1;1;;Omeprazole;classHIA;SMI
@@ -556,7 +556,7 @@ ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
 508;;COc1ccccc1OC[C@@H](O)COC(N)=O;1;;Methocarbamol;classHIA;SMI
 719;;COc1ccccc1Oc1c(NS(=O)(=O)c2ccc(C(C)(C)C)cc2)nc(-c2ncccn2)nc1OCCO;1;;bosentan;classHIA;SMI
 140;;COc1ccnc(CS(=O)c2nc3cc(OC(F)F)ccc3[nH]2)c1OC;1;;Pantoprazole;classHIA;SMI
-[220, 796];;COc1nc(C)nc(Cl)c1NC1=NCCN1;1;;['monoxidine', 'Moxonidine'];classHIA;SMI
+[220, 796];;COc1nc(C)nc(Cl)c1NC1=NCCN1;1;;['Moxonidine', 'monoxidine'];classHIA;SMI
 878;;CS(=O)(=O)OCC(O)C(O)COS(C)(=O)=O;1;;treosulfan;classHIA;SMI
 898;;CS(=O)(=O)OCCCCOS(C)(=O)=O;1;;busulfan;classHIA;SMI
 718;;CS(=O)(=O)c1ccc(C(=O)Nc2ccc(Cl)c(-c3ccccn3)c2)c(Cl)c1;1;;vismodegib;classHIA;SMI
@@ -660,7 +660,7 @@ ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
 741;;Cc1cccc(C)c1NC(=O)c1cc(S(N)(=O)=O)c(Cl)cc1O;1;;xipamide;classHIA;SMI
 399;;Cc1cccc(C)c1OC[C@@H](C)N;1;;Mexiletine;classHIA;SMI
 256;;Cc1cccc(Nc2ccccc2C(=O)O)c1C;1;;Mefenamic_acid;classHIA;SMI
-[870, 374];;Cc1cccc(Nc2ccncc2S(=O)(=O)NC(=O)NC(C)C)c1;1;;['Torsemide', 'torasemide'];classHIA;SMI
+[870, 374];;Cc1cccc(Nc2ccncc2S(=O)(=O)NC(=O)NC(C)C)c1;1;;['torasemide', 'Torsemide'];classHIA;SMI
 827;;Cc1cccc(OCC(O)CNC(C)C)c1;1;;toliprolol;classHIA;SMI
 963;;Cc1ccccc1;1;;toluene;classHIA;SMI
 108;;Cc1ccccc1N1C(=O)c2cc(S(N)(=O)=O)c(Cl)cc2N[C@H]1C;1;;Metolazone;classHIA;SMI
@@ -858,7 +858,7 @@ ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
 607;;O=C(O)c1cc2ccccc2c(Cc2c(O)c(C(=O)O)cc3ccccc23)c1O;0;;pyrantel embonate;classHIA;SMI
 68;;O=C(O)c1ccccc1C(=O)Nc1ccc(S(=O)(=O)Nc2nccs2)cc1;0;;Phthalylsulfathiazole;classHIA;SMI
 956;;O=C(O)c1ccccc1O;1;;salicylic acid;classHIA;SMI
-[301, 830];;O=C(O)c1cccnc1;1;;['Nicotinic_acid', 'niacin'];classHIA;SMI
+[301, 830];;O=C(O)c1cccnc1;1;;['niacin', 'Nicotinic_acid'];classHIA;SMI
 730;;O=C(O)c1cn(C2CC2)c2cc(N3CCNCC3)c(F)cc2c1=O;1;;ciprofloxacin;classHIA;SMI
 197;;O=C(OC1C[C@@H]2CC3C[C@H](C1)N2CC3=O)c1c[nH]c2ccccc12;1;;Dolasetron;classHIA;SMI
 39;;O=C(OC1C[C@@H]2CC[C@H](C1)[N+]21CCCC1)C(O)(c1ccccc1)c1ccccc1;0;;Trospium;classHIA;SMI
