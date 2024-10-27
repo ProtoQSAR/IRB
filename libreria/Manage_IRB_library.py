@@ -158,7 +158,7 @@ merged.set_index('ID_UNIQUE', inplace = True)
 
 merged_reordered = merged[['ID_SET', 'IRB WELL', 'LIBRARY', 'IRB PLATE', 'ID NUMBER', 'ID', 'ORIGINAL WELL', 'ROMol', 'SMILES']]
 
-merged_reordered.to_csv(results_folder+ os.path.sep + name + 'merged_all.csv', sep = ';')
+merged_reordered.to_csv(results_folder+ os.path.sep + name + 'merged_all-pre.csv', sep = ';')
 
 ##################################prepare for HYGIEIA##########################
 
