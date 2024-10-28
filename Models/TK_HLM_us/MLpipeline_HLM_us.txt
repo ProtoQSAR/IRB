@@ -1,0 +1,154 @@
+
+(Protocosas) F:\ProtoQSAR\GENERATE_MODELS_3_0\ML_pipeline>python ML_pipeline.py
+
+#########################################################################
+##################### WELCOME TO ML_pipeline script #####################
+#########################################################################
+This script will allow you to:
+        - generate ML models for regression or classification
+
+Please input your PATH (enter to: "../data/TK_HLM_us/"):
+Please input your MODEL NAME (enter to: TK_HLM_us):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+        [1] Perform a MODEL for Regression
+        [2] Perform a MODEL for Classification
+        [3] Exit
+
+Your choice: 2
+
+Please select the method used for DESCRIPTOR SELECTION:
+        [1] RFE
+        [2] GBM
+        [3] PI
+        [4] OWN
+
+
+Your choice: 2
+You want to perform a Classification model, by using descriptors selected by GBM.
+
+Is that correct?(Y/n):
+The following files located in "../data/TK_HLM_us/" folder are needed:
+TK_HLM_us-train_reduction_GBM.csv
+TK_HLM_us-test_reduction_GBM.csv
+Continue (Y/n)?
+
+PARAMETERS:
+        train molecules: 2181
+        test molecules: 729
+        total molecules: 2910
+
+DESCRIPTORS: ( 10 )
+['SLogP', 'JGI8', 'Wap', 'PEOE_VSA6', 'GATS5d', 'VSA_EState3', 'GATS4d', 'MAXDP', 'PEOE_VSA1', 'ATS0d']
+        mols/descriptor ratio: 218.1
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+
+[+] Training the model...
+
+Best parameters for RandomForestClassifier:
+{'class_weight': {0: 1, 1: 1.5}, 'max_depth': 8, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_jobs': -1, 'random_state': 9}
+
+Grid test score: 0.7340667184514937
+------------------------------
+
+Best model and parameters:
+RandomForestClassifier(class_weight={0: 1, 1: 1.5}, max_depth=8,
+                       min_samples_leaf=2, n_jobs=-1, random_state=9)
+
+Best model and parameters:
+{'class_weight': {0: 1, 1: 1.5}, 'max_depth': 8, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_jobs': -1, 'random_state': 9}
+
+GridSearch parameters:
+GridSearchCV(cv=5, estimator=RandomForestClassifier(), n_jobs=-1,
+             param_grid={'class_weight': [{0: 1, 1: 1.5}], 'max_depth': [8],
+                         'min_samples_leaf': [2], 'min_samples_split': [2],
+                         'n_jobs': [-1], 'random_state': [9]},
+             return_train_score=True, scoring='f1_micro')
+-------------------------------
+
+ A JSON file with the descriptors has been saved as ../data/TK_HLM_us/TK_HLM_us.json
+
+######################################################
+################### Model results ####################
+######################################################
+
+############### Training set results ###############
+
+               precision    recall  f1-score   support
+
+           0       0.94      0.86      0.89      1182
+           1       0.84      0.93      0.89       999
+
+    accuracy                           0.89      2181
+   macro avg       0.89      0.89      0.89      2181
+weighted avg       0.89      0.89      0.89      2181
+
+Confussion matrix:
+
+    OBS\PRED           0           1
+           0        1011         171
+           1          68         931
+
+############### Test set results ###############
+
+               precision    recall  f1-score   support
+
+           0       0.80      0.69      0.74       396
+           1       0.69      0.80      0.74       333
+
+    accuracy                           0.74       729
+   macro avg       0.74      0.75      0.74       729
+weighted avg       0.75      0.74      0.74       729
+
+Confussion matrix:
+
+    OBS\PRED           0           1
+           0         274         122
+           1          67         266
+
+################ Global results ###############
+
+                |Train| Test
+       acc      |0.89 |0.74
+  prec_PPV      |0.84 |0.69
+    recall      |0.93 |0.80
+        f1      |0.89 |0.74
+       auc      |0.89 |0.75
+sensit_TPR      |0.93 |0.80
+  spec_TNR      |0.86 |0.69
+       NPV      |0.94 |0.80
+       FNR      |0.07 |0.20
+       FPR      |0.14 |0.31
+       FDR      |0.16 |0.31
+       FOR      |0.06 |0.20
+   F_score      |0.89 |0.74
+       MCC      |0.78 |0.49
+       CSI      |0.80 |0.58
+
+######################################################
+############## Cross-validation results ##############
+######################################################
+
+        |Train          | Test
+    acc |0.89 +/- 0.007 |0.75  +/- 0.013
+   prec |0.84 +/- 0.008 |0.70  +/- 0.017
+ recall |0.93 +/- 0.006 |0.79  +/- 0.018
+     f1 |0.88 +/- 0.007 |0.74  +/- 0.012
+    auc |0.96 +/- 0.002 |0.83  +/- 0.007
+ sensit |0.93 +/- 0.006 |0.79  +/- 0.018
+   spec |0.85 +/- 0.009 |0.71  +/- 0.025
+    NPV |0.94 +/- 0.005 |0.80  +/- 0.013
+    FNR |0.07 +/- 0.006 |0.21  +/- 0.018
+    FPR |0.15 +/- 0.009 |0.29  +/- 0.025
+    FDR |0.16 +/- 0.008 |0.30  +/- 0.017
+    FOR |0.06 +/- 0.005 |0.20  +/- 0.013
+F_score |0.88 +/- 0.007 |0.74  +/- 0.012
+    MCC |0.78 +/- 0.013 |0.50  +/- 0.024
+    CSI |0.79 +/- 0.010 |0.59  +/- 0.015
+
+Please, close the plots to continue...
+
+Do you want to perform any other step?(y/n):

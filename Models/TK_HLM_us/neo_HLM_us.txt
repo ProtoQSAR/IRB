@@ -1,0 +1,349 @@
+
+(Protocosas) F:\ProtoQSAR\GENERATE_MODELS_3_0\NEO>python NEO.py
+
+#########################################################################
+######################### WELCOME TO NEO script #########################
+#########################################################################
+This script will allow you to:
+        - eliminate 3D descriptors
+        - "y" transformation
+        - perform the initial unsupervised feature reduction
+        - perform the train/test split based on kmeans
+        - descriptor standarization
+        - select the relevant features based on:
+                 · Recursive feature elimination (RFE)
+                 · Feature importance (FI) based on Ligth gradient boosting machine (LGBM)
+                 · Permutation importance (PI)
+        - select your own features features
+
+Please input your PATH (enter to: "../data/TK_HLM_us/"):
+Please input your MODEL NAME (enter to: TK_HLM_us):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 3
+
+Please select your type of model:
+[1] Regression
+[2] Classification
+Your choice (1/2)?: 2
+Please input your desired TEST SIZE (enter to: "0.25"):
+A file located in "../data/TK_HLM_us/" folder is needed
+This file must be called: "TK_HLM_us-initial_reduction.csv"
+Continue (Y/n)?
+[+] Generation of train and test sets based in kmeans
+
+OPTIMAL NUMBER OF CLUSTERS:  4
+
+NUMBER OF CLUSTERS:  4
+        SETS:  {2400, 27, 69, 414}
+        ALERTS!!
+[]
+      index                                             SMILES  y  ...  MINaaCH    SLogP  cluster
+0         0                                      NCC#Cc1cccnc1  0  ...  1.71097  0.39180        0
+1         1                              c1cncc(-c2c[nH]cn2)c1  0  ...  1.65509  1.47170        0
+2         2                              c1cncc(-c2cc[nH]n2)c1  0  ...  1.74618  1.47170        0
+3         3                                     CNCC#Cc1cccnc1  0  ...  1.73934  0.65250        0
+4         4                                  Cc1nccn1-c1cccnc1  0  ...  1.75968  1.57572        0
+...     ...                                                ... ..  ...      ...      ...      ...
+2905   2905          Nc1nccc2cc(O[C@H]3CCCN(Cc4ccccc4)C3)ccc12  1  ...  1.73973  3.86040        0
+2906   2906  O=S(=O)(c1ccc(Cl)c(Cl)c1)N1CCN(c2ccccc2C(F)(F)...  1  ...  1.02198  4.52310        0
+2907   2907          CSc1nc2ccc(Br)cn2c(=N)c1S(=O)(=O)c1ccccc1  1  ...  1.52247  3.13097        0
+2908   2908      C[C@H](Cc1cccc(F)c1)Oc1nc(N2CCNC[C@H]2C)ncc1F  1  ...  1.14020  2.56290        0
+2909   2909  O=C1CN(Cc2ccc(-c3ccc(F)c(CN4CCCCC4)n3)cc2)C(=O...  1  ...  1.49850  4.04780        0
+
+[2910 rows x 897 columns]
+0
+1
+2
+3
+cluster0
+      index                                             SMILES  y  ...  MINaaCH    SLogP  cluster
+0         0                                      NCC#Cc1cccnc1  0  ...  1.71097  0.39180        0
+1         1                              c1cncc(-c2c[nH]cn2)c1  0  ...  1.65509  1.47170        0
+2         2                              c1cncc(-c2cc[nH]n2)c1  0  ...  1.74618  1.47170        0
+3         3                                     CNCC#Cc1cccnc1  0  ...  1.73934  0.65250        0
+4         4                                  Cc1nccn1-c1cccnc1  0  ...  1.75968  1.57572        0
+...     ...                                                ... ..  ...      ...      ...      ...
+2905   2905          Nc1nccc2cc(O[C@H]3CCCN(Cc4ccccc4)C3)ccc12  1  ...  1.73973  3.86040        0
+2906   2906  O=S(=O)(c1ccc(Cl)c(Cl)c1)N1CCN(c2ccccc2C(F)(F)...  1  ...  1.02198  4.52310        0
+2907   2907          CSc1nc2ccc(Br)cn2c(=N)c1S(=O)(=O)c1ccccc1  1  ...  1.52247  3.13097        0
+2908   2908      C[C@H](Cc1cccc(F)c1)Oc1nc(N2CCNC[C@H]2C)ncc1F  1  ...  1.14020  2.56290        0
+2909   2909  O=C1CN(Cc2ccc(-c3ccc(F)c(CN4CCCCC4)n3)cc2)C(=O...  1  ...  1.49850  4.04780        0
+
+[2400 rows x 897 columns]
+      index                                             SMILES  y  ...  MINaaCH    SLogP  cluster
+2432   2432  CC(C)CCn1nc(-c2cccs2)c(O)c(C2=NS(=O)(=O)c3cc(O...  1  ...  1.21011  2.53710        0
+156     156          O=C(Nc1cc2cc[nH]c(=O)c2cc1Cl)[C@@H]1CCNC1  0  ...  1.57447  1.72950        0
+240     240      N#CCCN[C@H]1CC[C@H](n2nnc3cnc4[nH]ccc4c32)CC1  0  ...  1.78447  2.29458        0
+396     396       CC1(n2nnc3cnc4[nH]ccc4c32)CCN(S(C)(=O)=O)CC1  0  ...  1.71494  1.07820        0
+415     415        CC1(n2cnc3cnc4[nH]ccc4c32)CCN(CC(F)(F)F)CC1  0  ...  1.72898  3.28590        0
+
+[5 rows x 897 columns]
+cluster1
+      index                                             SMILES  y  ...   MINaaCH   SLogP  cluster
+1432   1432  CC1=C2C[C@H]3[C@@H](CC[C@@H]4Cc5nn(C)cc5C[C@@]...  0  ...  2.314370  5.4594        1
+1433   1433  CC1=C2C[C@H]3[C@@H](CC[C@@H]4Cc5[nH][nH]c(=O)c...  0  ...  2.124557  4.7423        1
+1434   1434  CC1=C2C[C@H]3[C@@H](CC[C@@H]4C[C@H](n5ccnn5)CC...  0  ...  1.845090  5.9438        1
+1435   1435  CC1=C2C[C@H]3[C@@H](CC[C@@H]4C[C@@H](n5ccnn5)C...  0  ...  1.845090  5.9438        1
+1436   1436  CCNCC(=O)Nc1ccc(-c2nc(=O)n(CCOC)c3c2oc2ccc(-c4...  0  ...  1.803330  4.6590        1
+...     ...                                                ... ..  ...       ...     ...      ...
+2683   2683  CC(=O)O[C@H]1C[C@H]2[C@@H]([C@H](OC(C)=O)C[C@@...  1  ...  1.810620  7.3560        1
+2688   2688  COCCOc1cc2ncnc(N3CCN(C(=O)Nc4ccc(Oc5ccc6[nH]cc...  1  ...  1.549740  5.2913        1
+2802   2802  CC(=O)O[C@H]1C[C@H]2[C@@H]([C@H](OC(C)=O)C[C@@...  1  ...  1.810920  7.4090        1
+2901   2901  COCCOc1cc2ncnc(N3CCN(C(=O)Nc4ccc(Oc5cccc6c5CCN...  1  ...  1.552110  4.7946        1
+2903   2903  CC1=C2C[C@H]3[C@@H](CC[C@@H]4c5c[nH]nc5CC[C@@]...  1  ...  2.228380  5.7640        1
+
+[69 rows x 897 columns]
+      index                                             SMILES  y  ...  MINaaCH   SLogP  cluster
+1441   1441  COC(=O)N1CCC(n2ncc3c(N4CCOCC4)nc(-c4ccc(NC(=O)...  0  ...  1.85156  4.1671        1
+1990   1990  CC(C)N1C[C@@H]2C[C@H]1CN2c1cc(F)c(-c2ccnc3c(-c...  1  ...  1.46378  5.9511        1
+2588   2588  COc1cc(N2CCN(C3CCN(c4cccc5c(OC)cc(C(F)(F)F)nc4...  1  ...  0.97459  5.6100        1
+2187   2187  CC(=O)O[C@H]1C[C@H]2[C@@H]([C@H](OC(C)=O)C[C@@...  1  ...  1.81843  7.6982        1
+2303   2303  COCCOc1cc2ncnc(N3CCN(C(=O)Nc4ccc(Oc5cccc6ncccc...  1  ...  1.54729  5.3748        1
+
+[5 rows x 897 columns]
+cluster2
+      index                                             SMILES  y  ...   MINaaCH   SLogP  cluster
+1210   1210  CC1=C2C[C@H]3[C@@H](CC[C@@H]4CCCC[C@@]43C)[C@@...  0  ...  1.931837  6.5011        2
+1211   1211  CN1CCC2(CC1)CNC(=O)c1cc(-c3ccnc(-c4cc5ccccc5o4...  0  ...  1.732230  3.5917        2
+1212   1212  CC1=C2C[C@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@@...  0  ...  1.931837  5.6002        2
+1213   1213  CC1=C2C[C@H]3[C@@H](CC[C@@H]4CC(=O)CC[C@@]43C)...  0  ...  1.931837  5.6801        2
+1214   1214  CC1=C2C[C@H]3[C@@H](CC[C@H]4CC(=O)CC[C@@]43C)[...  0  ...  1.931837  5.6801        2
+...     ...                                                ... ..  ...       ...     ...      ...
+2890   2890  OCC1(N2CCN(C3CCc4ccc(OCc5noc(-c6ccccc6F)n5)cc4...  1  ...  1.370980  4.3647        2
+2892   2892  CC(C)OC(=O)C1=CN(C(=O)c2cccc(CN3CCCCC3)c2)CC(C...  1  ...  1.869590  5.8799        2
+2896   2896  Nc1nccc(-c2ccc3nc(C4COc5ccc(C(=O)NCCc6cccnc6)c...  1  ...  1.645190  3.6883        2
+2898   2898  CC(=O)N1CC2CC(C1)CN(C(=O)CN1CCC[C@H](NS(=O)(=O...  1  ...  1.496080  2.0893        2
+2899   2899  CN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2cc(cc(NC(=...  1  ...  1.412570  5.1585        2
+
+[414 rows x 897 columns]
+      index                                             SMILES  y  ...  MINaaCH   SLogP  cluster
+1348   1348  CS(=O)(=O)Nc1ccc2c(c1)S(=O)(=O)N=C(C1=C(O)[C@@...  0  ...  0.76176  3.2573        2
+1400   1400  C=Cc1cc(C(NC(=O)OC(C)(C)C)C(=O)Nc2cccc(C(=O)NS...  0  ...  0.57611  7.9295        2
+1283   1283  CCn1nnc2c(N3CCOCC3)nc(-c3ccc(NC(=O)Nc4ccc(C(=O...  0  ...  1.67799  2.6802        2
+1661   1661  C=CC(=O)N1CCC[C@@H](n2nc(-c3cccc(C(=O)Nc4ccc(C...  1  ...  1.42018  4.8007        2
+1631   1631  COc1cccc2c1N(C1CCN(CC(=O)Nc3ccc4c(c3)-c3ccccc3...  1  ...  1.83816  4.3170        2
+
+[5 rows x 897 columns]
+cluster3
+      index                                             SMILES  y  ...   MINaaCH    SLogP  cluster
+1353   1353  CC1=C2C[C@H]3[C@@H](CC[C@@H]4Cc5nn(S(=O)(=O)c6...  0  ...  1.696770  6.46782        3
+1384   1384  COc1ccc2c(c1)[C@@H]1C[C@]1(C(=O)N1C3CCC1CN(C)C...  0  ...  1.742820  4.69310        3
+1388   1388  NC(=O)Cn1cc(CN2CCN(c3cc(C(=O)Nc4ccc5c(c4)-c4c(...  0  ...  1.325620  3.18060        3
+1389   1389  NC(=O)c1nn(-c2ccc(F)cc2)c2c1CCc1ccc(NC(=O)c3cc...  0  ...  1.322140  3.77990        3
+1390   1390  NC(=O)c1nn(-c2ccc(F)cc2)c2c1CCc1ccc(NC(=O)c3cc...  0  ...  1.324270  2.80380        3
+1391   1391  COC(=O)N[C@H](C(=O)N1CCC[C@H]1c1ncc(-c2ccc(-c3...  0  ...  1.799600  6.22200        3
+1392   1392  CN(C)CCCNC(=O)Cn1cc(CN2CCN(c3cc(C(=O)Nc4ccc5c(...  0  ...  1.330450  3.76320        3
+1393   1393  COC(=O)N[C@H](C(=O)N1CCC[C@H]1c1nc(F)c(-c2ccc(...  0  ...  1.774100  6.50020        3
+1402   1402  CC(=O)O[C@H]1C[C@H]2[C@@H]([C@H](OC(C)=O)C[C@@...  0  ...  1.933577  4.99320        3
+1403   1403  COC(=O)N[C@H](C(=O)N1CCC[C@H]1c1nc(Cl)c(-c2ccc...  0  ...  1.968540  7.52880        3
+1405   1405  CC(=O)O[C@H]1C[C@H]2[C@@H]([C@H](OC(C)=O)C[C@@...  0  ...  1.875860  8.91500        3
+1411   1411  COC1[C@H](NC(=O)CC2OC(COCc3ccccc3)C(OCc3ccccc3...  0  ...  1.795590  7.93050        3
+1413   1413  COc1ccc2c(O[C@@H]3C[C@H]4C(=O)N[C@]5(C(=O)NS(=...  0  ...  1.015870  4.24832        3
+1414   1414  COC(=O)N[C@H](C(=O)N1CCC[C@H]1c1nc(Br)c(-c2ccc...  0  ...  2.036600  7.74700        3
+1810   1810  N#CCCn1cc(CN2CCN(c3cc(C(=O)Nc4ccc5c(c4)-c4c(c(...  1  ...  1.330820  4.60898        3
+2004   2004  COCCCn1cc(CN2CCN(c3cc(C(=O)Nc4ccc5c(c4)-c4c(c(...  1  ...  1.336550  4.73180        3
+2079   2079  CCOC(=O)Cn1cc(CN2CCN(c3cc(C(=O)Nc4ccc5c(c4)-c4...  1  ...  1.327280  4.25840        3
+2097   2097  CCOC(=O)CCn1cc(CN2CCN(c3cc(C(=O)Nc4ccc5c(c4)-c...  1  ...  1.329000  4.64850        3
+2287   2287  CNC(=O)Cn1cc(CN2CCN(c3cc(C(=O)Nc4ccc5c(c4)-c4c...  1  ...  1.328220  3.44130        3
+2302   2302  COCCNC(=O)Cn1cc(CN2CCN(c3cc(C(=O)Nc4ccc5c(c4)-...  1  ...  1.327700  3.45790        3
+2371   2371  COCCOCCCn1cc(CN2CCN(c3cc(C(=O)Nc4ccc5c(c4)-c4c...  1  ...  1.336060  4.74840        3
+2375   2375  CCOC(=O)Cn1cc(CN2CCN(c3cc(C(=O)Nc4ccc5c(c4)-c4...  1  ...  1.334670  4.25840        3
+2438   2438  COCCOC(=O)Cn1cc(CN2CCN(c3cc(C(=O)Nc4ccc5c(c4)-...  1  ...  1.325970  3.88490        3
+2445   2445  CN(C)CCCn1cc(CN2CCN(c3cc(C(=O)Nc4ccc5c(c4)-c4c...  1  ...  1.338950  4.64700        3
+2690   2690  CN(C)C(=O)Cn1cc(CN2CCN(c3cc(C(=O)Nc4ccc5c(c4)-...  1  ...  1.329090  3.78350        3
+2782   2782  NC(=O)c1nn(-c2ccc(F)cc2)c2c1CCc1ccc(NC(=O)c3cc...  1  ...  1.332550  4.07770        3
+2845   2845  CSCCNC(=O)Cn1cc(CN2CCN(c3cc(C(=O)Nc4ccc5c(c4)-...  1  ...  1.329990  4.17450        3
+
+[27 rows x 897 columns]
+      index                                             SMILES  y  ...   MINaaCH   SLogP  cluster
+2004   2004  COCCCn1cc(CN2CCN(c3cc(C(=O)Nc4ccc5c(c4)-c4c(c(...  1  ...  1.336550  4.7318        3
+1411   1411  COC1[C@H](NC(=O)CC2OC(COCc3ccccc3)C(OCc3ccccc3...  0  ...  1.795590  7.9305        3
+1402   1402  CC(=O)O[C@H]1C[C@H]2[C@@H]([C@H](OC(C)=O)C[C@@...  0  ...  1.933577  4.9932        3
+1403   1403  COC(=O)N[C@H](C(=O)N1CCC[C@H]1c1nc(Cl)c(-c2ccc...  0  ...  1.968540  7.5288        3
+2438   2438  COCCOC(=O)Cn1cc(CN2CCN(c3cc(C(=O)Nc4ccc5c(c4)-...  1  ...  1.325970  3.8849        3
+
+[5 rows x 897 columns]
+      index                                             SMILES  y  ...  MINaaCH    SLogP  cluster
+2432   2432  CC(C)CCn1nc(-c2cccs2)c(O)c(C2=NS(=O)(=O)c3cc(O...  1  ...  1.21011  2.53710        0
+156     156          O=C(Nc1cc2cc[nH]c(=O)c2cc1Cl)[C@@H]1CCNC1  0  ...  1.57447  1.72950        0
+240     240      N#CCCN[C@H]1CC[C@H](n2nnc3cnc4[nH]ccc4c32)CC1  0  ...  1.78447  2.29458        0
+396     396       CC1(n2nnc3cnc4[nH]ccc4c32)CCN(S(C)(=O)=O)CC1  0  ...  1.71494  1.07820        0
+415     415        CC1(n2cnc3cnc4[nH]ccc4c32)CCN(CC(F)(F)F)CC1  0  ...  1.72898  3.28590        0
+
+[5 rows x 897 columns]
+Train set contains:
+        1182 negative values
+        999 positive values
+        ratio neg / pos: 1.1831831831831832
+Test set contains:
+        396 negative values
+        333 positive values
+        ratio neg / pos: 1.1891891891891893
+If you find this imbalanced, try to decomment line 44 of split_by_kmeans.py module. It can give an error!
+
+The following files have been created:
+
+../data/TK_HLM_us/TK_HLM_us-cleaned_from_kmeans.csv
+../data/TK_HLM_us/TK_HLM_us-train_set.csv
+../data/TK_HLM_us/TK_HLM_us-test_set.csv
+
+Do you want to perform any other step?(y/n):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 4
+[+] Descriptor standarization
+
+Please select the method to standarize the descriptors:
+[1] StandardScaler
+[2] MinMaxScaler
+Your choice (1/2)?: 1
+Two files located in "../data/TK_HLM_us/" folder are needed
+These files must be called:
+        "TK_HLM_us-train_set.csv"
+        "TK_HLM_us-test_set.csv"
+Continue (Y/n)?
+
+The following files have been created:
+
+../data/TK_HLM_us/TK_HLM_us-stand_train_set.csv
+../data/TK_HLM_us/TK_HLM_us-stand_test_set.csv
+../data/TK_HLM_us/TK_HLM_us-alldataset.sca
+
+Do you want to perform any other step?(y/n):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 6
+[+] Reduction by FI based on lgbm
+Two files located in "../data/TK_HLM_us/" folder are needed
+These files must be called:
+        "TK_HLM_us-stand_train_set.csv"
+        "TK_HLM_us-stand_test_set.csv"
+Continue (Y/n)?
+
+Please define if your model is for [1] classification or [2] regression:1
+
+Please define your parameters for lgbm selection for classification parameters:
+eval_metric (l2/auc/binary_logloss):auc
+Training Gradient Boosting Model
+
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[132]   valid_0's auc: 0.86413  valid_0's binary_logloss: 0.468063
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[78]    valid_0's auc: 0.851637 valid_0's binary_logloss: 0.475615
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[66]    valid_0's auc: 0.827281 valid_0's binary_logloss: 0.506933
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[118]   valid_0's auc: 0.881856 valid_0's binary_logloss: 0.435038
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[111]   valid_0's auc: 0.845337 valid_0's binary_logloss: 0.496086
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[92]    valid_0's auc: 0.840753 valid_0's binary_logloss: 0.494228
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[77]    valid_0's auc: 0.887341 valid_0's binary_logloss: 0.425963
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[101]   valid_0's auc: 0.87935  valid_0's binary_logloss: 0.436475
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[134]   valid_0's auc: 0.889163 valid_0's binary_logloss: 0.418913
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[98]    valid_0's auc: 0.870354 valid_0's binary_logloss: 0.452047
+
+311 features with zero importance after one-hot encoding.
+
+Please, close the plots to continue...
+304 features required for 0.90 of cumulative importance
+Please, close the plots to continue...
+303 features required for cumulative importance of 0.90 after one hot encoding.
+590 features do not contribute to cumulative importance of 0.90.
+
+        feature  importance  normalized_importance  cumulative_importance
+0         SLogP        52.9               0.017511               0.017511
+1          JGI8        40.5               0.013406               0.030917
+2           Wap        31.7               0.010493               0.041410
+3     PEOE_VSA6        29.1               0.009633               0.051043
+4        GATS5d        27.2               0.009004               0.060046
+..          ...         ...                    ...                    ...
+681    B10[S-F]         0.0               0.000000               1.000000
+680    B10[S-S]         0.0               0.000000               1.000000
+679  nThiophene         0.0               0.000000               1.000000
+686   B10[F-Cl]         0.0               0.000000               1.000000
+892   F06[N-Cl]         0.0               0.000000               1.000000
+
+[893 rows x 4 columns]
+
+The following files have been created:
+
+../data/TK_HLM_us/TK_HLM_us-train_featured_importances.csv
+
+Now you can select a number of features.
+Please, indicate the number of selected features: 10
+
+Selected features:
+ ['SLogP', 'JGI8', 'Wap', 'PEOE_VSA6', 'GATS5d', 'VSA_EState3', 'GATS4d', 'MAXDP', 'PEOE_VSA1', 'ATS0d']
+Size of the database, preimputation: (2181, 10)
+[+] fitting
+[+] transforming
+Size of the database, postimputation: (2181, 10)
+
+The following files have been created:
+
+../data/TK_HLM_us/TK_HLM_us-train_reduction_GBM.csv
+../data/TK_HLM_us/TK_HLM_us-test_reduction_GBM.csv
+../data/TK_HLM_us/TK_HLM_us-train_set.sca
+train_set (2181, 12)
+test_set (729, 12)
+
+
+Do you agree with that number of features?(y/n): y
+
+Do you want to perform any other step?(y/n):  n
+
+Thanks for using NEO!
+
+(Protocosas) F:\ProtoQSAR\GENERATE_MODELS_3_0\NEO>
