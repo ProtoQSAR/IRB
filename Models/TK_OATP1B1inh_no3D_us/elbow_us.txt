@@ -1,0 +1,66 @@
+
+# -------------- 0 CLUSTER ------------------ #
+
+# Take only the Cluester 0 values
+df_filtered_0 = df[df['Cluster'] == 0]
+
+# Define number of split parts
+parts = np.array_split(df_filtered_0, 5)
+
+# Save the results in a new DataFrame
+result_df_0 = pd.DataFrame()
+
+# Remove values
+for part in parts:
+
+    num_values_to_remove = len(part) - 52
+
+    index_to_remove = np.random.choice(part.index, size=num_values_to_remove, replace=False)
+
+    part = part.drop(index_to_remove)
+
+    result_df_0 = pd.concat([result_df_0, part])
+
+# # -------------- 1 CLUSTER ---------------- #
+
+# # Take only the Cluester 1 values
+# df_filtered_1 = df[df['Cluster'] == 1]
+
+# # Define number of split parts
+# parts = np.array_split(df_filtered_1, 10)
+
+# # Save the results in a new DataFrame
+# result_df_1 = pd.DataFrame()
+
+# # Remove values
+# for part in parts:
+
+#     num_values_to_remove = len(part) - 1
+
+#     index_to_remove = np.random.choice(part.index, size=num_values_to_remove, replace=False)
+
+#     part = part.drop(index_to_remove)
+
+#     result_df_1 = pd.concat([result_df_1, part])
+
+# -------------- 2 CLUSTER ---------------- #
+
+# Take only the Cluester 2 values
+df_filtered_2 = df[df['Cluster'] == 2]
+
+# Define number of split parts
+parts = np.array_split(df_filtered_2, 2)
+
+# Save the results in a new DataFrame
+result_df_2 = pd.DataFrame()
+
+# Remove values
+for part in parts:
+
+    num_values_to_remove = len(part) - 31
+
+    index_to_remove = np.random.choice(part.index, size=num_values_to_remove, replace=False)
+
+    part = part.drop(index_to_remove)
+
+    result_df_2 = pd.concat([result_df_2, part])
