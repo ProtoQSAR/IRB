@@ -1,0 +1,157 @@
+
+(Protocosas) F:\ProtoQSAR\GENERATE_MODELS_3_0\ML_pipeline>python ML_pipeline.py
+
+#########################################################################
+##################### WELCOME TO ML_pipeline script #####################
+#########################################################################
+This script will allow you to:
+        - generate ML models for regression or classification
+
+Please input your PATH (enter to: "../data/TK_OATP1B1inh_no3D_us/"):
+Please input your MODEL NAME (enter to: TK_OATP1B1inh_no3D_us):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+        [1] Perform a MODEL for Regression
+        [2] Perform a MODEL for Classification
+        [3] Exit
+
+Your choice: 2
+
+Please select the method used for DESCRIPTOR SELECTION:
+        [1] RFE
+        [2] GBM
+        [3] PI
+        [4] OWN
+
+
+Your choice: 2
+You want to perform a Classification model, by using descriptors selected by GBM.
+
+Is that correct?(Y/n):
+The following files located in "../data/TK_OATP1B1inh_no3D_us/" folder are needed:
+TK_OATP1B1inh_no3D_us-train_reduction_GBM.csv
+TK_OATP1B1inh_no3D_us-test_reduction_GBM.csv
+Continue (Y/n)?
+
+PARAMETERS:
+        train molecules: 444
+        test molecules: 149
+        total molecules: 593
+
+DESCRIPTORS: ( 20 )
+['ATS0d', 'SLogP', 'GATS2c', 'AATS7i', 'AATS2i', 'EState_VSA3', 'PEOE_VSA6', 'AATS4i', 'ATSC8se', 'AATS5i', 'PNSA3', 'AATS1i', 'AATSC1Z', 'RBF', 'GATS1i', 'PNSA1', 'SMR_VSA7', 'MAXDN', 'AATSC3s', 'AATS3i']
+        mols/descriptor ratio: 22.2
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+
+[+] Training the model...
+
+Best parameters for LGBMClassifier:
+{'boosting_type': 'gbdt', 'class_weight': {0: 1, 1: 1.2}, 'learning_rate': 0.05, 'max_depth': 10, 'min_child_samples': 20, 'n_estimators': 60, 'num_leaves': 4, 'random_state': 9, 'subsample': 0.7}
+
+Grid test score: 0.770173646578141
+------------------------------
+
+Best model and parameters:
+LGBMClassifier(class_weight={0: 1, 1: 1.2}, learning_rate=0.05, max_depth=10,
+               n_estimators=60, num_leaves=4, random_state=9, subsample=0.7)
+
+Best model and parameters:
+{'boosting_type': 'gbdt', 'class_weight': {0: 1, 1: 1.2}, 'learning_rate': 0.05, 'max_depth': 10, 'min_child_samples': 20, 'n_estimators': 60, 'num_leaves': 4, 'random_state': 9, 'subsample': 0.7}
+
+GridSearch parameters:
+GridSearchCV(cv=5, estimator=LGBMClassifier(), n_jobs=-1,
+             param_grid={'boosting_type': ['gbdt'],
+                         'class_weight': [{0: 1, 1: 1.2}],
+                         'learning_rate': [0.05], 'max_depth': [10, 15],
+                         'min_child_samples': [20], 'n_estimators': [60],
+                         'num_leaves': [4, 5, 7], 'random_state': [9],
+                         'subsample': [0.7]},
+             return_train_score=True, scoring='f1_micro')
+-------------------------------
+
+ A JSON file with the descriptors has been saved as ../data/TK_OATP1B1inh_no3D_us/TK_OATP1B1inh_no3D_us.json
+
+######################################################
+################### Model results ####################
+######################################################
+
+############### Training set results ###############
+
+               precision    recall  f1-score   support
+
+           0       0.88      0.85      0.86       263
+           1       0.79      0.83      0.81       181
+
+    accuracy                           0.84       444
+   macro avg       0.83      0.84      0.84       444
+weighted avg       0.84      0.84      0.84       444
+
+Confussion matrix:
+
+    OBS\PRED           0           1
+           0         223          40
+           1          31         150
+
+############### Test set results ###############
+
+               precision    recall  f1-score   support
+
+           0       0.75      0.81      0.78        88
+           1       0.69      0.61      0.64        61
+
+    accuracy                           0.72       149
+   macro avg       0.72      0.71      0.71       149
+weighted avg       0.72      0.72      0.72       149
+
+Confussion matrix:
+
+    OBS\PRED           0           1
+           0          71          17
+           1          24          37
+
+################ Global results ###############
+
+                |Train| Test
+       acc      |0.84 |0.72
+  prec_PPV      |0.79 |0.69
+    recall      |0.83 |0.61
+        f1      |0.81 |0.64
+       auc      |0.84 |0.71
+sensit_TPR      |0.83 |0.61
+  spec_TNR      |0.85 |0.81
+       NPV      |0.88 |0.75
+       FNR      |0.17 |0.39
+       FPR      |0.15 |0.19
+       FDR      |0.21 |0.31
+       FOR      |0.12 |0.25
+   F_score      |0.81 |0.64
+       MCC      |0.67 |0.42
+       CSI      |0.68 |0.47
+
+######################################################
+############## Cross-validation results ##############
+######################################################
+
+        |Train          | Test
+    acc |0.84 +/- 0.011 |0.74  +/- 0.037
+   prec |0.78 +/- 0.017 |0.67  +/- 0.024
+ recall |0.83 +/- 0.019 |0.70  +/- 0.133
+     f1 |0.81 +/- 0.013 |0.68  +/- 0.073
+    auc |0.91 +/- 0.007 |0.81  +/- 0.042
+ sensit |0.83 +/- 0.019 |0.70  +/- 0.133
+   spec |0.84 +/- 0.016 |0.76  +/- 0.048
+    NPV |0.88 +/- 0.012 |0.79  +/- 0.064
+    FNR |0.17 +/- 0.019 |0.30  +/- 0.133
+    FPR |0.16 +/- 0.016 |0.24  +/- 0.048
+    FDR |0.22 +/- 0.017 |0.33  +/- 0.024
+    FOR |0.12 +/- 0.012 |0.21  +/- 0.064
+F_score |0.81 +/- 0.013 |0.68  +/- 0.073
+    MCC |0.67 +/- 0.022 |0.46  +/- 0.087
+    CSI |0.67 +/- 0.018 |0.52  +/- 0.082
+
+Please, close the plots to continue...
+
+Do you want to perform any other step?(y/n):  ^E
