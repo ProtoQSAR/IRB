@@ -1,0 +1,30 @@
+{
+    "SLogP_PA$SLogP": {},
+    "Topological_Charge$JGI8": {
+        "order": 8,
+        "prop": "mean"
+    },
+    "Wap$Wap": {},
+    "PEOE_VSA$PEOE_VSA6": {
+        "k": 6
+    },
+    "GATS$GATS5d": {
+        "order": 5,
+        "prop": "d"
+    },
+    "VSA_EState$VSA_EState3": {
+        "k": 3
+    },
+    "GATS$GATS4d": {
+        "order": 4,
+        "prop": "d"
+    },
+    "MAXDP$MAXDP": {},
+    "PEOE_VSA$PEOE_VSA1": {
+        "k": 1
+    },
+    "ATS$ATS0d": {
+        "order": 0,
+        "prop": "d"
+    }
+}
