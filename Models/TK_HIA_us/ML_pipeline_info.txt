@@ -1,0 +1,302 @@
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+	[1] Perform a MODEL for Regression
+	[2] Perform a MODEL for Classification
+	[3] Exit
+
+Your choice: 2
+
+Please select the method used for DESCRIPTOR SELECTION:
+	[1] RFE
+	[2] GBM
+	[3] PI
+	[4] OWN
+
+
+Your choice: 2
+You want to perform a Classification model, by using descriptors selected by GBM.
+
+Is that correct?(Y/n):  
+The following files located in "/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_HIA_us/" folder are needed:
+TK_HIA_us-train_reduction_GBM.csv
+TK_HIA_us-test_reduction_GBM.csv
+Continue (Y/n)?
+
+PARAMETERS:
+	train molecules: 296
+	test molecules: 99
+	total molecules: 395
+
+DESCRIPTORS: ( 10 )
+['AATSC1c', 'GATS1se', 'N-079', 'GATS7d', 'SIC3', 'SLogP_VSA2', 'AATSC0c', 'JGI7', 'AATSC3c', 'ATSC3c']
+	mols/descriptor ratio: 29.6
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+
+[+] Training the model...
+/home/lauri/anaconda3/envs/Protocosas/lib/python3.9/site-packages/sklearn/model_selection/_validation.py:372: FitFailedWarning: 
+640 fits failed out of a total of 1920.
+The score on these train-test partitions for these parameters will be set to nan.
+If these failures are not expected, you can try to debug them by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+640 fits failed with the following error:
+Traceback (most recent call last):
+  File "/home/lauri/anaconda3/envs/Protocosas/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 680, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/home/lauri/anaconda3/envs/Protocosas/lib/python3.9/site-packages/sklearn/svm/_base.py", line 243, in fit
+    raise ValueError(
+ValueError: When 'gamma' is a string, it should be either 'scale' or 'auto'. Got 'auto_deprecated' instead.
+
+  warnings.warn(some_fits_failed_message, FitFailedWarning)
+/home/lauri/anaconda3/envs/Protocosas/lib/python3.9/site-packages/sklearn/model_selection/_search.py:969: UserWarning: One or more of the test scores are non-finite: [0.61819209 0.80435028 0.7839548  0.60813559        nan        nan
+        nan        nan 0.61819209 0.79423729 0.77384181 0.60474576
+ 0.61819209 0.80435028 0.7839548  0.60813559        nan        nan
+        nan        nan 0.61819209 0.79423729 0.77384181 0.60474576
+ 0.78728814 0.80107345 0.79412429 0.71305085        nan        nan
+        nan        nan 0.78728814 0.80440678 0.79412429 0.6960452
+ 0.78728814 0.80107345 0.79412429 0.71305085        nan        nan
+        nan        nan 0.78728814 0.80440678 0.79412429 0.6960452
+ 0.61819209 0.79762712 0.75361582 0.61152542        nan        nan
+        nan        nan 0.61819209 0.79423729 0.74689266 0.60474576
+ 0.61819209 0.79762712 0.75361582 0.61152542        nan        nan
+        nan        nan 0.61819209 0.79423729 0.74689266 0.60474576
+ 0.7940678  0.81446328 0.77728814 0.72988701        nan        nan
+        nan        nan 0.7940678  0.81107345 0.78062147 0.73322034
+ 0.7940678  0.81446328 0.77728814 0.72988701        nan        nan
+        nan        nan 0.7940678  0.81107345 0.78062147 0.73322034
+ 0.61819209 0.72655367 0.70632768 0.61152542        nan        nan
+        nan        nan 0.61819209 0.72655367 0.70966102 0.61152542
+ 0.61819209 0.72655367 0.70632768 0.61152542        nan        nan
+        nan        nan 0.61819209 0.72655367 0.70966102 0.61152542
+ 0.7940678  0.79084746 0.73338983 0.77717514        nan        nan
+        nan        nan 0.7940678  0.78745763 0.73338983 0.78056497
+ 0.7940678  0.79084746 0.73338983 0.77717514        nan        nan
+        nan        nan 0.7940678  0.78745763 0.73338983 0.78056497
+ 0.61485876 0.71305085 0.70293785 0.61152542        nan        nan
+        nan        nan 0.61485876 0.70966102 0.70299435 0.61152542
+ 0.61485876 0.71305085 0.70293785 0.61152542        nan        nan
+        nan        nan 0.61485876 0.70966102 0.70299435 0.61152542
+ 0.79073446 0.80101695 0.71316384 0.7840113         nan        nan
+        nan        nan 0.79073446 0.80774011 0.71649718 0.7840678
+ 0.79073446 0.80101695 0.71316384 0.7840113         nan        nan
+        nan        nan 0.79073446 0.80774011 0.71649718 0.7840678
+ 0.61485876 0.61485876 0.67587571 0.61485876        nan        nan
+        nan        nan 0.61485876 0.61485876 0.67248588 0.61485876
+ 0.61485876 0.61485876 0.67587571 0.61485876        nan        nan
+        nan        nan 0.61485876 0.61485876 0.67248588 0.61485876
+ 0.78740113 0.79073446 0.68265537 0.76372881        nan        nan
+        nan        nan 0.78740113 0.79073446 0.68265537 0.76028249
+ 0.78740113 0.79073446 0.68265537 0.76372881        nan        nan
+        nan        nan 0.78740113 0.79073446 0.68265537 0.76028249
+ 0.61485876 0.6419209  0.67587571 0.61152542        nan        nan
+        nan        nan 0.61485876 0.6419209  0.67587571 0.61152542
+ 0.61485876 0.6419209  0.67587571 0.61152542        nan        nan
+        nan        nan 0.61485876 0.6419209  0.67587571 0.61152542
+ 0.7940678  0.80084746 0.69627119 0.76711864        nan        nan
+        nan        nan 0.7940678  0.79751412 0.69288136 0.76372881
+ 0.7940678  0.80084746 0.69627119 0.76711864        nan        nan
+        nan        nan 0.7940678  0.79751412 0.69288136 0.76372881
+ 0.61485876 0.71988701 0.70966102 0.60819209        nan        nan
+        nan        nan 0.61485876 0.71988701 0.70299435 0.60819209
+ 0.61485876 0.71988701 0.70966102 0.60819209        nan        nan
+        nan        nan 0.61485876 0.71988701 0.70299435 0.60819209
+ 0.79067797 0.79762712 0.72322034 0.7839548         nan        nan
+        nan        nan 0.79067797 0.79762712 0.72666667 0.77717514
+ 0.79067797 0.79762712 0.72322034 0.7839548         nan        nan
+        nan        nan 0.79067797 0.79762712 0.72666667 0.77717514
+ 0.61819209 0.76039548 0.72322034 0.60474576        nan        nan
+        nan        nan 0.61819209 0.76378531 0.73       0.60474576
+ 0.61819209 0.76039548 0.72322034 0.60474576        nan        nan
+        nan        nan 0.61819209 0.76378531 0.73       0.60474576
+ 0.7940678  0.78740113 0.7839548  0.75361582        nan        nan
+        nan        nan 0.7940678  0.7840113  0.78056497 0.76372881
+ 0.7940678  0.78740113 0.7839548  0.75361582        nan        nan
+        nan        nan 0.7940678  0.7840113  0.78056497 0.76372881]
+  warnings.warn(
+/home/lauri/anaconda3/envs/Protocosas/lib/python3.9/site-packages/sklearn/model_selection/_search.py:969: UserWarning: One or more of the train scores are non-finite: [0.64534077 0.92400057 0.9037331  0.63264321        nan        nan
+        nan        nan 0.64534077 0.92484088 0.90288207 0.63349067
+ 0.64534077 0.92400057 0.9037331  0.63264321        nan        nan
+        nan        nan 0.64534077 0.92484088 0.90288207 0.63349067
+ 0.82856683 0.93498176 0.90794894 0.71371666        nan        nan
+        nan        nan 0.82856683 0.93413431 0.90710148 0.72468712
+ 0.82856683 0.93498176 0.90794894 0.71371666        nan        nan
+        nan        nan 0.82856683 0.93413431 0.90710148 0.72468712
+ 0.64534077 0.90879997 0.87078595 0.63347994        nan        nan
+        nan        nan 0.64534077 0.90710506 0.86740685 0.63264321
+ 0.64534077 0.90879997 0.87078595 0.63347994        nan        nan
+        nan        nan 0.64534077 0.90710506 0.86740685 0.63264321
+ 0.82856326 0.91808625 0.89358864 0.72976114        nan        nan
+        nan        nan 0.82856326 0.91808625 0.89189373 0.72975756
+ 0.82856326 0.91808625 0.89358864 0.72976114        nan        nan
+        nan        nan 0.82856326 0.91808625 0.89189373 0.72975756
+ 0.64196524 0.81675249 0.78716656 0.6258707         nan        nan
+        nan        nan 0.64196524 0.82096117 0.78462776 0.6258707
+ 0.64196524 0.81675249 0.78716656 0.6258707         nan        nan
+        nan        nan 0.64196524 0.82096117 0.78462776 0.6258707
+ 0.834474   0.89023457 0.81758922 0.76100622        nan        nan
+        nan        nan 0.834474   0.88769577 0.81841879 0.75763427
+ 0.834474   0.89023457 0.81758922 0.76100622        nan        nan
+        nan        nan 0.834474   0.88769577 0.81841879 0.75763427
+ 0.6402739  0.76099549 0.76183938 0.62248087        nan        nan
+        nan        nan 0.6402739  0.75930416 0.75930058 0.62332833
+ 0.6402739  0.76099549 0.76183938 0.62248087        nan        nan
+        nan        nan 0.6402739  0.75930416 0.75930058 0.62332833
+ 0.82941071 0.86573697 0.78464207 0.78381249        nan        nan
+        nan        nan 0.82941071 0.86488951 0.78126296 0.78634413
+ 0.82941071 0.86573697 0.78464207 0.78381249        nan        nan
+        nan        nan 0.82941071 0.86488951 0.78126296 0.78634413
+ 0.63688765 0.61486448 0.72214117 0.61486448        nan        nan
+        nan        nan 0.63688765 0.61486448 0.72298148 0.61486448
+ 0.63688765 0.61486448 0.72214117 0.61486448        nan        nan
+        nan        nan 0.63688765 0.61486448 0.72298148 0.61486448
+ 0.82603876 0.82011371 0.72974684 0.77282414        nan        nan
+        nan        nan 0.82603876 0.82011729 0.73058357 0.7702925
+ 0.82603876 0.82011371 0.72974684 0.77282414        nan        nan
+        nan        nan 0.82603876 0.82011729 0.73058357 0.7702925
+ 0.63942645 0.65966173 0.73565758 0.61486448        nan        nan
+        nan        nan 0.63942645 0.65881785 0.73481013 0.61486448
+ 0.63942645 0.65966173 0.73565758 0.61486448        nan        nan
+        nan        nan 0.63942645 0.65881785 0.73481013 0.61486448
+ 0.83363727 0.83531789 0.74917757 0.78296145        nan        nan
+        nan        nan 0.83363727 0.83447043 0.7500143  0.78465279
+ 0.83363727 0.83531789 0.74917757 0.78296145        nan        nan
+        nan        nan 0.83363727 0.83447043 0.7500143  0.78465279
+ 0.6402739  0.78887578 0.76859401 0.62248087        nan        nan
+        nan        nan 0.6402739  0.79055997 0.77027819 0.62417578
+ 0.6402739  0.78887578 0.76859401 0.62248087        nan        nan
+        nan        nan 0.6402739  0.79055997 0.77027819 0.62417578
+ 0.83278624 0.87757277 0.79731817 0.77704713        nan        nan
+        nan        nan 0.83278624 0.87926053 0.79815848 0.77199099
+ 0.83278624 0.87757277 0.79731817 0.77704713        nan        nan
+        nan        nan 0.83278624 0.87926053 0.79815848 0.77199099
+ 0.64534077 0.87247372 0.82771937 0.63010084        nan        nan
+        nan        nan 0.64534077 0.8699385  0.82432597 0.62925338
+ 0.64534077 0.87247372 0.82771937 0.63010084        nan        nan
+        nan        nan 0.64534077 0.8699385  0.82432597 0.62925338
+ 0.83025459 0.90120503 0.84968533 0.74497604        nan        nan
+        nan        nan 0.83025459 0.90120146 0.85136952 0.74074233
+ 0.83025459 0.90120503 0.84968533 0.74497604        nan        nan
+        nan        nan 0.83025459 0.90120146 0.85136952 0.74074233]
+  warnings.warn(
+
+Best parameters for SVC:
+{'C': 5, 'class_weight': {0: 1, 1: 1}, 'decision_function_shape': 'ovr', 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': -1, 'random_state': 9}
+
+Grid test score: 0.8144632768361582
+
+Best parameters for LGBMClassifier:
+{'boosting_type': 'gbdt', 'class_weight': {0: 1, 1: 1}, 'learning_rate': 0.05, 'max_depth': 10, 'min_child_samples': 20, 'n_estimators': 60, 'num_leaves': 4, 'random_state': 9, 'subsample': 0.7}
+
+Grid test score: 0.8008474576271187
+------------------------------
+
+Best model and parameters:
+SVC(C=5, class_weight={0: 1, 1: 1}, gamma='auto', random_state=9)
+
+Best model and parameters:
+{'C': 5, 'class_weight': {0: 1, 1: 1}, 'decision_function_shape': 'ovr', 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': -1, 'random_state': 9}
+
+GridSearch parameters:
+GridSearchCV(cv=5, estimator=SVC(), n_jobs=-1,
+             param_grid={'C': [10, 5, 1, 0.5, 0.1, 0.2, 0.7, 2],
+                         'class_weight': [{0: 1, 1: 63}, {0: 1, 1: 1}],
+                         'decision_function_shape': ['ovr', 'ovo'],
+                         'gamma': ['auto', 'auto_deprecated', 'scale'],
+                         'kernel': ['linear', 'rbf', 'poly', 'sigmoid'],
+                         'max_iter': [-1], 'random_state': [9]},
+             return_train_score=True, scoring='f1_micro')
+-------------------------------
+
+ A JSON file with the descriptors has been saved as /home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/Models/TK_HIA_us/TK_HIA_us.json
+
+######################################################
+################### Model results ####################
+######################################################
+
+############### Training set results ###############
+
+               precision    recall  f1-score   support
+
+         0.0       0.94      0.84      0.89       114
+         1.0       0.91      0.97      0.94       182
+
+    accuracy                           0.92       296
+   macro avg       0.92      0.90      0.91       296
+weighted avg       0.92      0.92      0.92       296
+
+Confussion matrix:
+
+    OBS\PRED           0           1
+           0          96          18
+           1           6         176
+
+############### Test set results ###############
+
+               precision    recall  f1-score   support
+
+         0.0       0.84      0.82      0.83        38
+         1.0       0.89      0.90      0.89        61
+
+    accuracy                           0.87        99
+   macro avg       0.86      0.86      0.86        99
+weighted avg       0.87      0.87      0.87        99
+
+Confussion matrix:
+
+    OBS\PRED           0           1
+           0          31           7
+           1           6          55
+
+################ Global results ###############
+
+	        |Train| Test
+       acc	|0.92 |0.87  
+  prec_PPV	|0.91 |0.89  
+    recall	|0.97 |0.90  
+        f1	|0.94 |0.89  
+       auc	|0.90 |0.86  
+sensit_TPR	|0.97 |0.90  
+  spec_TNR	|0.84 |0.82  
+       NPV	|0.94 |0.84  
+       FNR	|0.03 |0.10  
+       FPR	|0.16 |0.18  
+       FDR	|0.09 |0.11  
+       FOR	|0.06 |0.16  
+   F_score	|0.94 |0.89  
+       MCC	|0.83 |0.72  
+       CSI	|0.88 |0.81  
+
+######################################################
+############## Cross-validation results ##############
+######################################################
+
+	|Train          | Test
+    acc	|0.92 +/- 0.011 |0.83  +/- 0.017
+   prec	|0.91 +/- 0.012 |0.85  +/- 0.037
+ recall	|0.96 +/- 0.010 |0.88  +/- 0.039
+     f1	|0.94 +/- 0.009 |0.86  +/- 0.014
+    auc	|0.96 +/- 0.006 |0.87  +/- 0.024
+ sensit	|0.96 +/- 0.010 |0.88  +/- 0.039
+   spec	|0.85 +/- 0.021 |0.75  +/- 0.071
+    NPV	|0.93 +/- 0.016 |0.80  +/- 0.040
+    FNR	|0.04 +/- 0.010 |0.12  +/- 0.039
+    FPR	|0.15 +/- 0.021 |0.25  +/- 0.071
+    FDR	|0.09 +/- 0.012 |0.15  +/- 0.037
+    FOR	|0.07 +/- 0.016 |0.20  +/- 0.040
+F_score	|0.94 +/- 0.009 |0.86  +/- 0.014
+    MCC	|0.83 +/- 0.024 |0.64  +/- 0.038
+    CSI	|0.88 +/- 0.015 |0.76  +/- 0.022
+
+Please, close the plots to continue...
+
+TRAIN experimental Positive:  182
+TRAIN experimental Negative:  114
+TEST experimental Positive:  61
+TEST experimental Negative:  38
+
+Do you want to perform any other step?(y/n):  
+
