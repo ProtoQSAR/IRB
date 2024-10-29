@@ -1,0 +1,159 @@
+#########################################################################
+##################### WELCOME TO ML_pipeline script #####################
+#########################################################################
+This script will allow you to: 
+ 	- generate ML models for regression or classification
+
+Please input your PATH (enter to: "../data/Af_MIC80_definitva/no3D/OWNdesc/"): /home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/
+Please input your MODEL NAME (enter to: Af_MIC80): TOX_Nav15inh_removed_outliers_no3D_us
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+	[1] Perform a MODEL for Regression
+	[2] Perform a MODEL for Classification
+	[3] Exit
+
+Your choice: 2
+
+Please select the method used for DESCRIPTOR SELECTION:
+	[1] RFE
+	[2] GBM
+	[3] PI
+	[4] OWN
+
+
+Your choice: 
+
+Incorrect input. Your choice: 3
+You want to perform a Classification model, by using descriptors selected by PI.
+
+Is that correct?(Y/n):  
+The following files located in "/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/" folder are needed:
+TOX_Nav15inh_removed_outliers_no3D_us-train_reduction_PI.csv
+TOX_Nav15inh_removed_outliers_no3D_us-test_reduction_PI.csv
+Continue (Y/n)?
+
+PARAMETERS:
+	train molecules: 1060
+	test molecules: 458
+	total molecules: 1518
+
+DESCRIPTORS: ( 15 )
+['X0A', 'ATSC8p', 'F06[O-Cl]', 'nR_5_False_False_False_True', 'PEOE_VSA2', 'C-025', 'B06[N-F]', 'F06[N-F]', 'B06[N-Cl]', 'B06[N-Br]', 'B06[O-O]', 'F06[O-O]', 'B06[O-S]', 'B06[O-F]', 'B06[O-Cl]']
+	mols/descriptor ratio: 70.66666666666667
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+
+[+] Training the model...
+
+Best parameters for LGBMClassifier:
+{'class_weight': {0: 1, 1: 0.8}, 'max_depth': 9, 'min_child_samples': 50, 'random_state': 9}
+
+Grid test score: 0.7452830188679245
+------------------------------
+
+Best model and parameters:
+LGBMClassifier(class_weight={0: 1, 1: 0.8}, max_depth=9, min_child_samples=50,
+               random_state=9)
+
+Best model and parameters:
+{'class_weight': {0: 1, 1: 0.8}, 'max_depth': 9, 'min_child_samples': 50, 'random_state': 9}
+
+GridSearch parameters:
+GridSearchCV(cv=5, estimator=LGBMClassifier(), n_jobs=-1,
+             param_grid={'class_weight': [{0: 1, 1: 0.8}], 'max_depth': [9],
+                         'min_child_samples': [50], 'random_state': [9]},
+             return_train_score=True, scoring='f1_micro')
+-------------------------------
+
+ A JSON file with the descriptors has been saved as /home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/TOX_Nav15inh_removed_outliers_no3D_us.json
+
+######################################################
+################### Model results ####################
+######################################################
+
+############### Training set results ###############
+
+               precision    recall  f1-score   support
+
+         0.0       0.84      0.90      0.87       493
+         1.0       0.91      0.85      0.88       567
+
+    accuracy                           0.88      1060
+   macro avg       0.88      0.88      0.88      1060
+weighted avg       0.88      0.88      0.88      1060
+
+Confussion matrix:
+
+    OBS\PRED           0           1
+           0         446          47
+           1          83         484
+
+############### Test set results ###############
+
+               precision    recall  f1-score   support
+
+         0.0       0.69      0.72      0.70       214
+         1.0       0.75      0.71      0.73       244
+
+    accuracy                           0.72       458
+   macro avg       0.72      0.72      0.72       458
+weighted avg       0.72      0.72      0.72       458
+
+Confussion matrix:
+
+    OBS\PRED           0           1
+           0         155          59
+           1          71         173
+
+################ Global results ###############
+
+	        |Train| Test
+       acc	|0.88 |0.72  
+  prec_PPV	|0.91 |0.75  
+    recall	|0.85 |0.71  
+        f1	|0.88 |0.73  
+       auc	|0.88 |0.72  
+sensit_TPR	|0.85 |0.71  
+  spec_TNR	|0.90 |0.72  
+       NPV	|0.84 |0.69  
+       FNR	|0.15 |0.29  
+       FPR	|0.10 |0.28  
+       FDR	|0.09 |0.25  
+       FOR	|0.16 |0.31  
+   F_score	|0.88 |0.73  
+       MCC	|0.76 |0.43  
+       CSI	|0.79 |0.57  
+
+######################################################
+############## Cross-validation results ##############
+######################################################
+
+	|Train          | Test
+    acc	|0.87 +/- 0.005 |0.75  +/- 0.018
+   prec	|0.91 +/- 0.006 |0.79  +/- 0.028
+ recall	|0.85 +/- 0.009 |0.74  +/- 0.005
+     f1	|0.88 +/- 0.005 |0.76  +/- 0.014
+    auc	|0.95 +/- 0.003 |0.82  +/- 0.018
+ sensit	|0.85 +/- 0.009 |0.74  +/- 0.005
+   spec	|0.90 +/- 0.007 |0.77  +/- 0.038
+    NPV	|0.84 +/- 0.007 |0.72  +/- 0.011
+    FNR	|0.15 +/- 0.009 |0.26  +/- 0.005
+    FPR	|0.10 +/- 0.007 |0.23  +/- 0.038
+    FDR	|0.09 +/- 0.006 |0.21  +/- 0.028
+    FOR	|0.16 +/- 0.007 |0.28  +/- 0.011
+F_score	|0.88 +/- 0.005 |0.76  +/- 0.014
+    MCC	|0.75 +/- 0.010 |0.51  +/- 0.039
+    CSI	|0.78 +/- 0.008 |0.61  +/- 0.018
+
+Please, close the plots to continue...
+
+TRAIN experimental Positive:  567
+TRAIN experimental Negative:  493
+TEST experimental Positive:  244
+TEST experimental Negative:  214
+
+Do you want to perform any other step?(y/n):  n
+
+Thanks for using ML_pipeline!

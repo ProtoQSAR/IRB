@@ -1,0 +1,464 @@
+#########################################################################
+######################### WELCOME TO NEO script #########################
+#########################################################################
+This script will allow you to: 
+ 	- eliminate 3D descriptors
+ 	- "y" transformation
+ 	- perform the initial unsupervised feature reduction
+ 	- perform the train/test split based on kmeans
+ 	- descriptor standarization
+ 	- select the relevant features based on:
+		 · Recursive feature elimination (RFE)
+		 · Feature importance (FI) based on Ligth gradient boosting machine (LGBM)
+		 · Permutation importance (PI)
+ 	- select your own features features
+
+Please input your PATH (enter to: "../data/Af_MIC80_definitva/no3D/OWNdesc/"): /home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/
+Please input your MODEL NAME (enter to: Af_MIC80_no3D): TOX_Nav15inh_removed_outliers_no3D_us
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 1
+This part of the code will do the y" transformation, randomization of the dataset order and  Knn imputation.
+From this version of NEO is its compulsory to perform the inputation here, as this will create the un-imputed file needed for reimputation.
+[+] "y" transformation
+A file located in "/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/" folder is needed
+This file must be called: "TOX_Nav15inh_removed_outliers_no3D_us-paralel_calculated_with_y.csv"
+Continue (Y/n)?
+
+Please select your type of model: 
+[1] Regression
+[2] Classification
+Your choice: 2
+
+I am so sorry, there is nothing yet for your request. Please try tomorrow with more coffee and cookies.
+[+] dataset random sort
+
+	The following file has been created (save it as you will need it for feature reduction):
+
+	/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/TOX_Nav15inh_removed_outliers_no3D_us-calculated_preimputation.csv
+[+] dataset imputation
+Size of the database, preimputation: (1518, 802)
+[+] fitting
+[+] transforming
+Size of the database, postimputation: (1518, 802)
+      C-001  C-002  C-003  C-004  C-005  C-006  C-007  C-008  C-009  C-010  C-011  ...  NaasN  NaaO   SssCH2   SsssCH    SdssC    SaasC  MAXaaCH     MAXdO  MINaaCH     MINdO    SLogP
+0       1.0    2.0    1.0    0.0    1.0    3.0    0.0    0.0    0.0    0.0    0.0  ...    0.0   0.0  4.68421  0.35833 -0.57428  4.17488  2.07990  12.25262  1.48256  12.25262  5.59200
+1       0.0    0.0    0.0    0.0    2.0    6.0    0.0    0.0    0.0    0.0    0.0  ...    0.0   0.0  4.08615  0.00000 -0.72131  0.35708  1.86705  12.19271  0.77089  12.19271  3.13250
+2       0.0    0.0    0.0    0.0    1.0    3.0    0.0    0.0    0.0    0.0    0.0  ...    1.0   0.0  1.14803  0.00000 -0.14018  3.23459  1.87877  12.79336  1.26709  12.79336  4.02050
+3       3.0    1.0    1.0    0.0    1.0    4.0    0.0    1.0    0.0    0.0    0.0  ...    1.0   1.0  4.17147  0.52981  0.00000  6.37677  2.14901  13.08979  1.85405  12.40673  5.60034
+4       1.0    6.0    1.0    1.0    0.0    2.0    0.0    3.0    0.0    0.0    0.0  ...    0.0   0.0  7.42900  0.95684  0.39407  1.44793  1.89109  12.11341  1.80587  12.11341  2.87658
+...     ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...  ...    ...   ...      ...      ...      ...      ...      ...       ...      ...       ...      ...
+1513    0.0    0.0    0.0    0.0    0.0    2.0    0.0    1.0    1.0    0.0    0.0  ...    0.0   0.0  0.75954 -1.54723  0.00000 -2.60686  1.70140  12.38594  0.52878  12.38594  2.55478
+1514    0.0    0.0    0.0    0.0    1.0    0.0    0.0    0.0    0.0    0.0    0.0  ...    1.0   0.0  0.00000  0.00000  0.00000  1.29457  1.77665  12.59561  1.22864  12.59561  4.39620
+1515    0.0    0.0    0.0    0.0    1.0    0.0    0.0    0.0    0.0    0.0    0.0  ...    0.0   0.0  0.00000  0.00000  0.00000  2.66233  1.71459  12.80766  1.33233  12.80766  5.24048
+1516    1.0    0.0    0.0    0.0    1.0    0.0    0.0    0.0    0.0    0.0    0.0  ...    0.0   0.0  0.00000  0.00000  0.00000  6.18058  2.03217  12.90237  1.28070  12.90237  6.13002
+1517    0.0    0.0    0.0    0.0    1.0    0.0    0.0    0.0    0.0    0.0    0.0  ...    1.0   0.0  0.00000  0.00000  0.00000  1.67848  1.79840  12.81595  1.04644  12.81595  6.18340
+
+[1518 rows x 802 columns]
+
+The following files have been created:
+
+/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/TOX_Nav15inh_removed_outliers_no3D_us-calculated_imputed_ytransformed.csv
+
+Do you want to perform any other step?(y/n):  
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 2
+A file located in "/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/" folder is needed
+This file must be called: "TOX_Nav15inh_removed_outliers_no3D_us-calculated_imputed_ytransformed.csv"
+Continue (Y/n)?
+[1] Initial feature reduction: infinite, correlated, constant and empty values
+Checking how many infinite values in dataset
+C-001      False
+C-002      False
+C-003      False
+C-004      False
+C-005      False
+           ...  
+MAXaaCH    False
+MAXdO      False
+MINaaCH    False
+MINdO      False
+SLogP      False
+Length: 802, dtype: bool
+0 infinite values
+0 features with greater than 0.00 missing values.
+
+11 features with a correlation magnitude greater than 0.90.
+
+7 features with a single unique value.
+
+Data has not been one-hot encoded
+Removed 18 features including one-hot features.
+
+The following files have been created:
+
+/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/TOX_Nav15inh_removed_outliers_no3D_us-initial_reduction.csv
+
+Do you want to perform any other step?(y/n):  
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 3
+
+Please select your type of model: 
+[1] Regression
+[2] Classification
+Your choice (1/2)?: 2
+Please input your desired TEST SIZE (enter to: "0.25"): 0.3
+A file located in "/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/" folder is needed
+This file must be called: "TOX_Nav15inh_removed_outliers_no3D_us-initial_reduction.csv"
+Continue (Y/n)?
+[+] Generation of train and test sets based in kmeans
+
+OPTIMAL NUMBER OF CLUSTERS:  4
+
+NUMBER OF CLUSTERS:  4
+	SETS:  {60, 477, 14, 967}
+	ALERTS!!
+[]
+      index                                             SMILES    y  C-001  C-002  C-003  C-004  C-005  ...    SdssC    SaasC  MAXaaCH     MAXdO  MINaaCH     MINdO    SLogP  cluster
+0         0  CCOc1cc2ncc(C(N)=O)c(Nc3cccc(Cl)c3Cl)c2cc1C1CC...  0.0    1.0    2.0    1.0    0.0    1.0  ... -0.57428  4.17488  2.07990  12.25262  1.48256  12.25262  5.59200        1
+1         1  COCCOc1cc2ncc(C(N)=O)c(Nc3ccc(F)cc3F)c2cc1N1CC...  0.0    0.0    0.0    0.0    0.0    2.0  ... -0.72131  0.35708  1.86705  12.19271  0.77089  12.19271  3.13250        1
+2         2  Cn1cc(C(=O)N2CCOc3ccc(-c4ccc(OC(F)(F)F)cc4)cc3...  1.0    0.0    0.0    0.0    0.0    1.0  ... -0.14018  3.23459  1.87877  12.79336  1.26709  12.79336  4.02050        1
+3         3  COCc1nc2cnc3cc(-c4c(C)noc4C)c(OC[C@H]4CCNC4)cc...  0.0    3.0    1.0    1.0    0.0    1.0  ...  0.00000  6.37677  2.14901  13.08979  1.85405  12.40673  5.60034        0
+4         4  C[C@]12CCC(=O)C[C@H]1C[C@@H](N1CCC[C@@H](N)C1)...  0.0    1.0    6.0    1.0    1.0    0.0  ...  0.39407  1.44793  1.89109  12.11341  1.80587  12.11341  2.87658        1
+...     ...                                                ...  ...    ...    ...    ...    ...    ...  ...      ...      ...      ...       ...      ...       ...      ...      ...
+1513   1513  N#Cc1ccc(C2NCCOC2Oc2cc(F)c(S(=O)(=O)Nc3ncns3)c...  0.0    0.0    0.0    0.0    0.0    0.0  ...  0.00000 -2.60686  1.70140  12.38594  0.52878  12.38594  2.55478        1
+1514   1514  Cn1cc(-c2ccc(OC(F)(F)F)cc2)c2ccc(S(=O)(=O)Nc3n...  1.0    0.0    0.0    0.0    0.0    1.0  ...  0.00000  1.29457  1.77665  12.59561  1.22864  12.59561  4.39620        1
+1515   1515  COc1cc(-c2cccc(F)c2)c(C#N)cc1-c1nccc2cc(S(=O)(...  0.0    0.0    0.0    0.0    0.0    1.0  ...  0.00000  2.66233  1.71459  12.80766  1.33233  12.80766  5.24048        2
+1516   1516  COc1cc(-c2ccc(Cl)c(C)c2)ccc1-c1nccc2cc(S(=O)(=...  0.0    1.0    0.0    0.0    0.0    1.0  ...  0.00000  6.18058  2.03217  12.90237  1.28070  12.90237  6.13002        2
+1517   1517  Cn1nccc1-c1cc(C(F)(F)F)ccc1-c1cccc2cc(S(=O)(=O...  1.0    0.0    0.0    0.0    0.0    1.0  ...  0.00000  1.67848  1.79840  12.81595  1.04644  12.81595  6.18340        2
+
+[1518 rows x 788 columns]
+0
+1
+2
+3
+cluster0
+      index                                             SMILES    y  C-001  C-002  C-003  C-004  C-005  ...    SdssC    SaasC  MAXaaCH     MAXdO  MINaaCH     MINdO    SLogP  cluster
+3         3  COCc1nc2cnc3cc(-c4c(C)noc4C)c(OC[C@H]4CCNC4)cc...  0.0    3.0    1.0    1.0    0.0    1.0  ...  0.00000  6.37677  2.14901  13.08979  1.85405  12.40673  5.60034        0
+11       11  COc1ccc2c(c1)NC1(CCN(C(=O)c3ccc4c(c3)N(C)CCO4)...  1.0    0.0    2.0    0.0    0.0    2.0  ...  0.08323  6.82487  2.19144  13.36532  1.88615  13.36532  3.87150        0
+37       37  O=S1(=O)CCN(c2cc(C(F)(F)F)ccc2[C@H]2CCOc3cc(S(...  1.0    0.0    1.0    1.0    0.0    0.0  ...  0.00000 -0.44276  1.52912  12.86574  0.81034  11.94519  3.58450        0
+59       59  COc1cc(Cl)cc(-c2cc(OC)c(-n3c(=O)ccc4cc(S(=O)(=...  1.0    0.0    0.0    0.0    0.0    2.0  ...  0.00000  1.00021  1.62895  13.02302  1.18188  12.90652  5.05820        0
+69       69  CC(C)(C)OC(=O)N1CCc2c(cccc2-c2cccc3c2CCN(S(=O)...  1.0    3.0    2.0    0.0    0.0    0.0  ... -0.29252  7.04330  2.12273  12.89303  1.32697  12.61983  4.21330        0
+82       82  C[C@@]1(c2cc(F)cc(F)c2)CNC2(CCCC2)C(=O)N1CC(=O...  0.0    1.0    6.0    0.0    1.0    0.0  ... -0.82209  2.24390  1.90067  13.96527  0.78744  13.02699  3.34200        0
+110     110  O=C(c1ccc(C[C@@H]2CC[C@H]([C@H](O)c3ccccc3)N2)...  0.0    0.0    5.0    1.0    0.0    0.0  ...  0.09235  3.67215  2.07217  13.11440  1.95574  13.11440  2.43780        0
+125     125  CC(C)n1cc(CN2CCC3(CC2)CC(=O)N(c2ccc(C(=O)O)cc2...  1.0    2.0    5.0    1.0    1.0    0.0  ... -0.79212  4.02464  2.38215  12.95294  1.58537  11.17696  5.81690        0
+128     128  Cn1nccc1-c1ccc2c(c1)C(=O)CC1(CCN(C(=O)N[C@H]3C...  1.0    0.0    4.0    1.0    0.0    1.0  ...  0.09119  4.46395  2.12146  13.11034  1.74709  12.83678  4.15260        0
+130     130  Cc1ncc(-c2nc3c(-c4ccc5c(c4)[C@@]4(CCCN4C(=O)C4...  0.0    1.0    4.0    1.0    0.0    2.0  ...  0.07879  5.40585  2.02812  13.71204  1.53525  13.26812  2.99982        0
+135     135  COc1ccc(-c2cccc(C(F)(F)F)c2)cc1-c1nccc2cc(S(=O...  0.0    0.0    0.0    0.0    0.0    1.0  ...  0.00000  1.81540  1.70577  12.91299  1.01928  12.91299  6.18700        0
+148     148  COc1ccc2ncc(F)c(CC[C@@]3(O)CO[C@@H]4[C@@H](NCc...  0.0    0.0    2.0    0.0    0.0    1.0  ...  0.00000  2.41800  1.85838  13.45075  1.18230  13.00280  1.56340        0
+161     161  Cc1noc(-c2cccc(CN3CCN(C(=O)c4ccc(C[C@@H]5CC[C@...  0.0    1.0    3.0    0.0    0.0    0.0  ...  0.07697  5.50113  2.06514  13.20840  1.87078  13.20840  3.79472        0
+178     178  COc1cc(-c2cccc(C(F)(F)F)c2)ccc1-c1nccc2cc(S(=O...  0.0    0.0    0.0    0.0    0.0    1.0  ...  0.00000  1.90128  1.71976  12.88122  1.02051  12.88122  6.18700        0
+235     235  CCCCc1nc2cc(C(=O)N3CCC4(CC3)Nc3cc(OC)ccc3-n3cc...  1.0    1.0    5.0    0.0    0.0    1.0  ...  0.04918  5.65968  2.18679  13.39633  1.85750  13.39633  5.52670        0
+250     250  CCn1c(-c2cnc(C)nc2)nc2c(-c3cnc4c(c3)[C@](C)(NC...  0.0    5.0    0.0    0.0    0.0    0.0  ... -0.28597  4.45063  1.84709  12.80851  1.48673  12.80851  3.17862        0
+268     268  N=C1N[C@H]2[C@H](CN3C(=O)CCC3=O)NC(=N)N3C[C@H]...  0.0    0.0    2.0    0.0    0.0    0.0  ... -3.74875 -4.67604  0.15684  12.99469 -0.00722  12.18008 -0.93286        0
+271     271  COc1cc(-c2cccc(C(F)(F)F)c2)ccc1-c1ncnc2cc(S(=O...  0.0    0.0    0.0    0.0    0.0    1.0  ...  0.00000  1.65186  1.69198  12.85344  1.01357  12.85344  5.58200        0
+292     292  CC1(C)CCOc2c(C(=O)N[C@H]3CN4C(=N)N[C@@H](CN5C(...  0.0    2.0    1.0    0.0    1.0    0.0  ... -2.09967  1.58558  1.90803  13.51141  1.60929  12.16754 -2.50756        0
+336     336  O=C(O)c1ccc(N2CC3(CCN(Cc4cc(Cl)c(-c5ccc(F)cc5F...  1.0    0.0    4.0    1.0    0.0    0.0  ... -1.43687  3.00523  2.10136  12.68726  0.89074  11.13681  6.85220        0
+342     342   O=C1C2CN(Cc3ccccc3)CC2CN1c1cccc2c1cnn2-c1ccccc1F  1.0    0.0    0.0    2.0    0.0    0.0  ...  0.17750  2.21779  2.13507  13.37205  1.42964  13.37205  4.25940        0
+376     376  O=C1N(Cc2ccc(C(F)(F)F)o2)c2ccccc2[C@]12COc1cc3...  1.0    0.0    0.0    0.0    1.0    0.0  ... -0.29512  2.49736  1.83289  13.76746  0.86724  13.76746  4.25240        0
+403     403  CC1(C(=O)O)CCC(C)(c2nc(-c3ccc(C(=O)Nc4cc(C(F)(...  0.0    2.0    4.0    0.0    2.0    0.0  ... -1.42059  1.31027  1.77545  12.71868  0.76955  11.77950  5.56720        0
+421     421  CC(C)(C)OC(=O)N1CC=C(c2cc(C(F)(F)F)ccc2-c2cccc...  1.0    3.0    2.0    0.0    0.0    0.0  ...  0.22730  2.83053  1.85180  13.06639  1.06929  12.55907  5.90160        0
+438     438  C[C@H]1CC[C@@H](c2nc(-c3ccc(C(=O)Nc4cc(C(F)(F)...  0.0    1.0    4.0    2.0    0.0    0.0  ... -0.67102 -1.12722  1.69881  12.93216  0.69696  12.73582  5.28820        0
+505     505  C[C@H](NC(=O)c1c(CN2CCC(N3CCCCC3)CC2)c(-c2cccc...  0.0    1.0    5.0    0.0    0.0    0.0  ... -0.25798  2.15386  1.96931  14.22913  1.07416  14.22913  7.86190        0
+554     554  Cc1sc(NS(=O)(=O)c2ccc3c(-c4ccc(C(F)(F)F)cc4-c4...  1.0    1.0    0.0    0.0    0.0    2.0  ...  0.00000 -1.11196  1.66344  13.03089  0.97421  13.03089  6.84912        0
+564     564  O=C(NC1CC1c1ccccc1)N1CCC(c2nc(-c3nccc4ccccc34)...  1.0    0.0    3.0    2.0    0.0    0.0  ...  0.03061  3.18101  2.13367  12.73731  1.77085  12.73731  4.72990        0
+600     600  N#Cc1cc(S(=O)(=O)Nc2ncns2)ccc1Oc1ccc(-c2cccc(C...  0.0    0.0    3.0    1.0    0.0    0.0  ...  0.00000  2.33068  1.88458  12.93483  1.01967  12.93483  7.22998        0
+604     604  COc1ccc2c(c1)NC1(CC3CN(C(=O)c4ccc(OC)c(N(C)C)c...  1.0    0.0    2.0    2.0    0.0    4.0  ...  0.10580  6.83479  2.24035  13.44452  1.87862  13.44452  4.36350        0
+614     614  C[C@]1(C(=O)O)CCC[C@@](C)(c2nc(-c3ccc(C(=O)Nc4...  0.0    2.0    4.0    0.0    2.0    0.0  ... -1.46527  1.14520  1.74937  12.72802  0.76588  12.05871  5.56720        0
+640     640  COCCOc1ccc2c(c1)NC1(CCN(C(=O)c3ccc(OC)c(N(C)C)...  1.0    0.0    2.0    0.0    0.0    4.0  ...  0.05187  6.51585  2.18378  13.42340  1.85110  13.42340  4.13410        0
+843     843  C[C@]1(C(=O)O)CC[C@@](C)(c2nc(-c3ccc(C(=O)Nc4c...  0.0    2.0    3.0    0.0    2.0    0.0  ... -1.47310  1.12705  1.73917  12.69547  0.76366  11.90593  5.17710        0
+915     915  COc1ccc2c(c1)NC1(CCN(C(=O)c3ccc4ccccc4n3)CC1)c...  1.0    0.0    2.0    0.0    0.0    1.0  ... -0.00105  4.76122  2.18308  13.21338  1.83490  13.21338  4.59110        0
+957     957  COc1ccc2c(c1)NC1(CCN(C(=O)c3cccc4ncccc34)CC1)c...  1.0    0.0    2.0    0.0    0.0    1.0  ...  0.07566  4.98941  2.18852  13.41840  1.76184  13.41840  4.59110        0
+971     971  COc1ccc2c(c1)NC1(CCN(C(=O)c3ccc4c(cnn4C)c3)CC1...  1.0    0.0    2.0    0.0    0.0    2.0  ...  0.08228  4.99123  2.18848  13.25547  1.80866  13.25547  3.92960        0
+1003   1003  O=C(c1ccc(C[C@@H]2CC[C@H]([C@H](O)c3ccccc3)N2)...  0.0    0.0    3.0    0.0    0.0    0.0  ... -0.02887  3.03952  1.99510  13.04213  1.09866  13.04213  3.19510        0
+1026   1026  COc1ccc2c(c1)NC1(CCN(C(=O)c3ccc(OC)c(N4CCCC4)c...  1.0    0.0    4.0    0.0    0.0    2.0  ...  0.09371  6.88378  2.19787  13.53959  1.90044  13.53959  4.65170        0
+1081   1081  COc1cc(-c2cc(OC)c(-n3c(=O)ccc4cc(S(=O)(=O)Nc5c...  1.0    0.0    0.0    0.0    0.0    2.0  ...  0.00000  1.19636  1.64236  13.01995  1.19085  12.91696  5.05820        0
+1084   1084  O=C(c1ccc(C[C@@H]2CC[C@H]([C@H](O)c3ccccc3)N2)...  0.0    0.0    3.0    0.0    0.0    0.0  ... -0.04122  2.90972  1.98815  13.03213  1.85930  13.03213  2.59010        0
+1100   1100  COc1ccc(C(=O)N2CCC3(CC2)Nc2cc(OC(F)(F)F)ccc2-n...  1.0    0.0    2.0    0.0    0.0    3.0  ... -0.06661  4.14261  2.01427  13.33476  1.31338  13.33476  5.00750        0
+1102   1102  COc1ccc2c(c1)NC1(CCN(C(=O)c3ccc4cccnc4c3)CC1)c...  1.0    0.0    2.0    0.0    0.0    1.0  ...  0.07006  4.96383  2.18716  13.24810  1.76184  13.24810  4.59110        0
+1161   1161  Cc1nnc(-c2cccc(CN3CCN(C(=O)c4ccc(C[C@@H]5CC[C@...  0.0    1.0    3.0    0.0    0.0    0.0  ...  0.07697  5.43169  2.06514  13.20840  1.87078  13.20840  3.79472        0
+1203   1203  CC(C)(C)OC(=O)N1CC=C(c2cc(C(F)(F)F)ccc2N2CCOc3...  1.0    3.0    1.0    0.0    0.0    0.0  ...  0.16662  0.89014  1.55962  12.88773  1.02298  12.53097  5.91240        0
+1231   1231  CC(C)(C)OC(=O)N1CC=C(c2cc(C(F)(F)F)ccc2-c2cccc...  1.0    3.0    2.0    0.0    0.0    0.0  ...  0.23064  2.86212  1.85215  12.96365  1.06963  12.54548  5.96310        0
+1233   1233  O=S1(=O)CCN(c2cc(C(F)(F)F)ccc2[C@H]2CCOc3cc(S(...  1.0    0.0    1.0    1.0    0.0    0.0  ...  0.00000 -0.40465  1.53655  12.90342  0.98948  11.94891  4.18950        0
+1268   1268  COc1ccc2c(c1)NC1(CCN(C(=O)c3ccc4c(ccn4C)c3)CC1...  1.0    0.0    2.0    0.0    0.0    2.0  ...  0.11006  5.05746  2.19542  13.27588  1.94601  13.27588  4.53460        0
+1275   1275  CC(C)[C@@]1(C(=O)O)CC[C@@](C)(c2nc(-c3ccc(C(=O...  0.0    3.0    3.0    1.0    2.0    0.0  ... -1.44001  1.14437  1.75278  12.75044  0.76662  12.34760  5.81320        0
+1290   1290  O=C1CC2(CCN(C(=O)N[C@H]3C[C@@H]3c3ccccc3)CC2)O...  1.0    0.0    4.0    1.0    0.0    0.0  ...  0.09866  4.57547  2.12178  13.09722  1.74709  12.83415  4.81410        0
+1306   1306  N=C1N[C@@]23[C@H]([C@H]4NC(=N)N2C[C@](OS(=O)(=...  1.0    0.0    1.0    1.0    0.0    0.0  ... -3.48681  0.00000  2.04146  13.74287  1.54342  11.50773 -5.41996        0
+1318   1318  O=C1c2cc(-c3ccc(OC(F)(F)F)cc3)ccc2OCCN1Cc1ncc(...  1.0    0.0    0.0    0.0    0.0    0.0  ... -0.35556  1.56288  1.69378  13.38200  0.87056  13.38200  6.15780        0
+1331   1331  Cn1nccc1Nc1ccc2c(c1)C(=O)CC1(CCN(C(=O)N[C@H]3C...  1.0    0.0    4.0    1.0    0.0    1.0  ...  0.06777  4.16857  2.11968  13.10229  1.71990  12.84519  4.22920        0
+1333   1333  O=c1n(Cc2nc(-c3c(Cl)cccc3Cl)no2)nc2ccc(-c3ccc(...  1.0    0.0    0.0    0.0    0.0    0.0  ...  0.00000  2.21699  1.69042  12.89852  1.19209  12.89852  5.46670        0
+1355   1355  COc1cc(-c2cc(OC)c(-n3c(=O)ccc4cc(S(=O)(=O)Nc5n...  1.0    0.0    0.0    0.0    0.0    2.0  ...  0.00000  1.03887  1.64182  13.01863  1.18953  12.90474  5.05820        0
+1390   1390  CCOc1cc(C(=O)Nc2cc(C(F)(F)F)ccn2)ccc1-c1nc(C23...  0.0    1.0    6.0    0.0    2.0    0.0  ... -1.40431  1.39837  1.79580  13.03642  0.76460  12.01383  5.71990        0
+1403   1403  CS(=O)(=O)CCNCc1ccc(-c2ccc3ncnc(Nc4ccc(OCc5ccc...  0.0    0.0    0.0    0.0    0.0    1.0  ...  0.00000  4.74791  1.93992  11.29668  1.38222  11.29668  6.13910        0
+1409   1409  CCn1cc([C@@]2(c3nn(C)c(=O)o3)N[C@@H](c3nc(-c4c...  0.0    1.0    1.0    0.0    0.0    1.0  ...  0.00000  4.19555  2.06733  12.56002  1.16693  12.56002  3.17410        0
+1432   1432  O=C(NC1CC1c1ccccc1)N1CCC(c2nc(-c3ccc4ccccc4n3)...  1.0    0.0    3.0    2.0    0.0    0.0  ...  0.03098  3.14860  2.13334  12.71995  1.92113  12.71995  4.72990        0
+1450   1450  COc1ccc2c(c1)NC1(CN(C(=O)c3ccc4ncccc4c3)C1)c1c...  0.0    0.0    0.0    0.0    0.0    1.0  ...  0.04419  4.78216  2.12865  13.14383  1.76360  13.14383  3.81090        0
+1463   1463  COc1ccc2c(c1)NC1(CCN(C(=O)c3ccc4ncccc4c3)CC1)c...  1.0    0.0    2.0    0.0    0.0    1.0  ...  0.08228  4.99123  2.18848  13.25547  1.77249  13.25547  4.59110        0
+
+[60 rows x 788 columns]
+      index                                             SMILES    y  C-001  C-002  C-003  C-004  C-005  ...    SdssC    SaasC  MAXaaCH     MAXdO  MINaaCH     MINdO    SLogP  cluster
+69       69  CC(C)(C)OC(=O)N1CCc2c(cccc2-c2cccc3c2CCN(S(=O)...  1.0    3.0    2.0    0.0    0.0    0.0  ... -0.29252  7.04330  2.12273  12.89303  1.32697  12.61983  4.21330        0
+128     128  Cn1nccc1-c1ccc2c(c1)C(=O)CC1(CCN(C(=O)N[C@H]3C...  1.0    0.0    4.0    1.0    0.0    1.0  ...  0.09119  4.46395  2.12146  13.11034  1.74709  12.83678  4.15260        0
+3         3  COCc1nc2cnc3cc(-c4c(C)noc4C)c(OC[C@H]4CCNC4)cc...  0.0    3.0    1.0    1.0    0.0    1.0  ...  0.00000  6.37677  2.14901  13.08979  1.85405  12.40673  5.60034        0
+1331   1331  Cn1nccc1Nc1ccc2c(c1)C(=O)CC1(CCN(C(=O)N[C@H]3C...  1.0    0.0    4.0    1.0    0.0    1.0  ...  0.06777  4.16857  2.11968  13.10229  1.71990  12.84519  4.22920        0
+971     971  COc1ccc2c(c1)NC1(CCN(C(=O)c3ccc4c(cnn4C)c3)CC1...  1.0    0.0    2.0    0.0    0.0    2.0  ...  0.08228  4.99123  2.18848  13.25547  1.80866  13.25547  3.92960        0
+
+[5 rows x 788 columns]
+cluster1
+      index                                             SMILES    y  C-001  C-002  C-003  C-004  C-005  ...    SdssC    SaasC  MAXaaCH     MAXdO  MINaaCH     MINdO    SLogP  cluster
+0         0  CCOc1cc2ncc(C(N)=O)c(Nc3cccc(Cl)c3Cl)c2cc1C1CC...  0.0    1.0    2.0    1.0    0.0    1.0  ... -0.57428  4.17488  2.07990  12.25262  1.48256  12.25262  5.59200        1
+1         1  COCCOc1cc2ncc(C(N)=O)c(Nc3ccc(F)cc3F)c2cc1N1CC...  0.0    0.0    0.0    0.0    0.0    2.0  ... -0.72131  0.35708  1.86705  12.19271  0.77089  12.19271  3.13250        1
+2         2  Cn1cc(C(=O)N2CCOc3ccc(-c4ccc(OC(F)(F)F)cc4)cc3...  1.0    0.0    0.0    0.0    0.0    1.0  ... -0.14018  3.23459  1.87877  12.79336  1.26709  12.79336  4.02050        1
+4         4  C[C@]12CCC(=O)C[C@H]1C[C@@H](N1CCC[C@@H](N)C1)...  0.0    1.0    6.0    1.0    1.0    0.0  ...  0.39407  1.44793  1.89109  12.11341  1.80587  12.11341  2.87658        1
+5         5  O=C(O)CNC(=O)c1c(O)c2c(n(Cc3ccc(C(F)(F)F)cc3)c...  0.0    0.0    0.0    0.0    0.0    0.0  ... -2.41835 -1.25553  1.20287  12.82532  0.87300  10.63769  1.46560        1
+...     ...                                                ...  ...    ...    ...    ...    ...    ...  ...      ...      ...      ...       ...      ...       ...      ...      ...
+1508   1508             Cc1ccc(C(=O)NC(=N)Nc2ccc(C(C)C)cc2)cc1  0.0    3.0    0.0    1.0    0.0    0.0  ... -0.33410  3.64044  2.01595  12.00808  1.74541  12.00808  3.89509        1
+1510   1510      O=S(=O)(Nc1nccs1)c1ccc2c(c1)OCCN2c1cncc(Cl)c1  1.0    0.0    0.0    0.0    0.0    0.0  ...  0.00000  3.01435  1.80390  12.54045  1.50933  12.54045  3.52280        1
+1511   1511  CC(C)COc1ncc(-c2ccc(C(=O)NS(C)(=O)=O)cc2C2=CCO...  0.0    2.0    0.0    1.0    0.0    1.0  ...  0.20247  3.26889  1.75959  12.30989  1.56230  11.41111  3.53980        1
+1513   1513  N#Cc1ccc(C2NCCOC2Oc2cc(F)c(S(=O)(=O)Nc3ncns3)c...  0.0    0.0    0.0    0.0    0.0    0.0  ...  0.00000 -2.60686  1.70140  12.38594  0.52878  12.38594  2.55478        1
+1514   1514  Cn1cc(-c2ccc(OC(F)(F)F)cc2)c2ccc(S(=O)(=O)Nc3n...  1.0    0.0    0.0    0.0    0.0    1.0  ...  0.00000  1.29457  1.77665  12.59561  1.22864  12.59561  4.39620        1
+
+[967 rows x 788 columns]
+      index                                             SMILES    y  C-001  C-002  C-003  C-004  C-005  ...    SdssC    SaasC  MAXaaCH     MAXdO  MINaaCH     MINdO    SLogP  cluster
+717     717           O=C1NCCN1CCOc1nn(-c2ccccc2F)c2ccc(F)cc12  1.0    0.0    0.0    0.0    0.0    0.0  ... -0.13760 -0.43416  1.69639  11.54855  1.29137  11.54855  2.70770        1
+580     580   O=C(O)CCCCC1(c2ccccc2)CCCN(C(=O)Nc2ccc(Cl)cc2)C1  1.0    0.0    6.0    0.0    1.0    0.0  ... -0.87108  2.57082  2.12281  12.89493  1.75406  10.86679  5.55070        1
+397     397     Cc1cc(-c2cc(OC(F)(F)F)ccc2Cl)cc(C)c1OCCCC(=O)O  1.0    2.0    2.0    0.0    0.0    0.0  ... -0.89075  3.10392  1.74813  10.54356  1.15175  10.54356  5.76604        1
+688     688  CC(CC#N)N1C(=O)c2ccccc2C1C(=O)NCc1ccc(OC(F)(F)...  0.0    1.0    1.0    0.0    0.0    0.0  ... -0.75383  1.17251  1.72642  12.93927  1.15741  12.78441  3.70068        1
+1468   1468  COc1ccc(CCNC(=O)c2ccc(OCCC(F)(F)F)nc2)c(-c2cnc...  0.0    0.0    2.0    0.0    0.0    2.0  ... -0.36372  3.78347  1.90198  12.42301  1.25571  12.42301  3.85950        1
+
+[5 rows x 788 columns]
+cluster2
+      index                                             SMILES    y  C-001  C-002  C-003  C-004  C-005  ...    SdssC    SaasC  MAXaaCH     MAXdO  MINaaCH     MINdO    SLogP  cluster
+6         6  COc1cc(-c2cc(F)cc(F)c2)c(F)cc1-c1nccc2cc(S(=O)...  0.0    0.0    0.0    0.0    0.0    1.0  ...  0.00000 -1.50765  1.62056  12.75252  0.69925  12.75252  5.64700        2
+12       12  Cn1nccc1-c1cc(Cl)ccc1-c1cn(C)c2cc(S(=O)(=O)Nc3...  1.0    0.0    0.0    0.0    0.0    2.0  ...  0.00000  4.81858  1.98844  12.80997  1.30669  12.80997  4.55150        2
+18       18  O=S(=O)(Nc1nccs1)c1ccc2c(c1)OCCN2c1ccc(C(F)(F)...  1.0    0.0    0.0    0.0    0.0    0.0  ...  0.00000  1.76866  1.64895  12.78138  1.03367  12.78138  5.55520        2
+19       19  O=C(c1ccccc1)c1ccccc1OCC(O)CN1CCC(N2Cc3ccccc3C...  0.0    0.0    2.0    0.0    0.0    0.0  ...  0.03479  3.50724  2.03203  12.88504  1.74976  12.77297  3.77770        2
+22       22  Cn1nccc1-c1cc(C(F)(F)F)ccc1-c1cccc2c1CCN(S(=O)...  1.0    0.0    1.0    0.0    0.0    1.0  ...  0.00000  3.63101  1.86039  12.86141  1.07553  12.86141  4.94440        2
+...     ...                                                ...  ...    ...    ...    ...    ...    ...  ...      ...      ...      ...       ...      ...       ...      ...      ...
+1509   1509  O=C(Cn1cnc2ccccc2c1=O)Nc1ccc(C[C@@H]2CC[C@H]([...  0.0    0.0    3.0    0.0    0.0    0.0  ... -0.28506  2.77322  2.00198  12.59286  1.40669  12.51836  3.43190        2
+1512   1512  O=S(=O)(Nc1ncccn1)c1ccc2c(c1)CC[C@@H]2c1ccc(C(...  1.0    0.0    2.0    1.0    0.0    0.0  ...  0.00000  2.53431  1.75811  12.82890  1.12488  12.82890  4.21090        2
+1515   1515  COc1cc(-c2cccc(F)c2)c(C#N)cc1-c1nccc2cc(S(=O)(...  0.0    0.0    0.0    0.0    0.0    1.0  ...  0.00000  2.66233  1.71459  12.80766  1.33233  12.80766  5.24048        2
+1516   1516  COc1cc(-c2ccc(Cl)c(C)c2)ccc1-c1nccc2cc(S(=O)(=...  0.0    1.0    0.0    0.0    0.0    1.0  ...  0.00000  6.18058  2.03217  12.90237  1.28070  12.90237  6.13002        2
+1517   1517  Cn1nccc1-c1cc(C(F)(F)F)ccc1-c1cccc2cc(S(=O)(=O...  1.0    0.0    0.0    0.0    0.0    1.0  ...  0.00000  1.67848  1.79840  12.81595  1.04644  12.81595  6.18340        2
+
+[477 rows x 788 columns]
+      index                                             SMILES    y  C-001  C-002  C-003  C-004  C-005  ...    SdssC    SaasC  MAXaaCH     MAXdO  MINaaCH     MINdO   SLogP  cluster
+485     485  COc1ccc2c(c1)NC1(CCCN(C(=O)c3ccc(OC)c(N(C)C)c3...  1.0    0.0    3.0    0.0    0.0    4.0  ...  0.06580  6.61964  2.19889  13.50008  1.86246  13.50008  4.5076        2
+170     170  O=S(=O)(Nc1ncns1)N1CCc2c(cccc2-c2ccc(C(F)(F)F)...  1.0    0.0    2.0    0.0    0.0    0.0  ...  0.87845  3.41242  1.89902  12.84356  1.11650  12.84356  4.3156        2
+1344   1344  O=C(c1ccc(C[C@@H]2CC[C@H]([C@H](O)c3ccccc3)N2)...  0.0    0.0    3.0    0.0    0.0    0.0  ...  0.01442  3.28628  2.02134  13.04747  1.33346  13.04747  2.8979        2
+660     660  CN1CC=C(c2ccc(C(F)(F)F)cc2-c2cccc3c2CCN(S(=O)(...  1.0    0.0    2.0    0.0    0.0    1.0  ...  0.99937  2.05408  1.79969  12.89374  0.93724  12.89374  5.4019        2
+154     154  Cn1nccc1-c1cc(Cl)ccc1-c1cccc2cc(S(=O)(=O)Nc3nc...  0.0    0.0    0.0    0.0    0.0    1.0  ...  0.00000  4.82374  2.01300  12.78605  1.30669  12.78605  5.2130        2
+
+[5 rows x 788 columns]
+cluster3
+      index                                             SMILES    y  C-001  C-002  C-003  C-004  C-005  ...    SdssC    SaasC  MAXaaCH     MAXdO  MINaaCH     MINdO     SLogP  cluster
+73       73  CCN1CC2CC(C1)N2C(=O)[C@]12C[C@H]1c1cc(OC)ccc1-...  0.0    1.0    7.0    2.0    1.0    3.0  ... -0.41087  5.82250  2.16553  14.84685  1.74165  12.57493   4.69310        3
+107     107  C[C@H]1CN(C2COC2)CCN1c1ccc(Nc2cc(-c3ccnc(N4CCn...  1.0    3.0    2.0    0.0    1.0    1.0  ... -0.11168  7.55368  2.04453  13.86671  1.65928  13.29092   3.57420        3
+247     247  CNC(=O)c1c(-c2ccc(F)cc2)oc2cc(N(C)S(C)(=O)=O)c...  0.0    0.0    1.0    0.0    0.0    3.0  ... -0.42760  3.77631  1.94701  13.21658  1.27046  12.79545   6.37320        3
+328     328  COc1ccc([C@H]2OC(=O)N[C@@H]2C)cc1-c1ccc(C(F)(F...  1.0    1.0    2.0    0.0    0.0    1.0  ... -1.77535 -3.60597  1.61690  13.29152 -0.04639  11.85042   8.98500        3
+338     338  COc1ncc(-c2ccc(C(=O)O)cc2C)cc1-c1ncc(C(F)(F)F)...  0.0    1.0    2.0    0.0    0.0    1.0  ... -2.32129 -3.78417  1.52090  13.32944 -0.06188  11.45265   9.27922        3
+341     341  COc1cc(F)c(-c2ccc(C(=O)O)cc2C)cc1-c1ccc(C(F)(F...  1.0    1.0    2.0    0.0    0.0    1.0  ... -2.21272 -3.70373  1.40246  13.28883  0.30233  11.45493   9.74862        3
+446     446  CNC(=O)c1c(-c2ccc(F)cc2)oc2cc(N(C)S(C)(=O)=O)c...  0.0    0.0    0.0    0.0    0.0    3.0  ... -0.44674  1.06550  1.78551  13.20071  1.25904  12.77632   6.14950        3
+566     566  COc1ccc2c(c1)[C@@H]1C[C@]1(C(=O)N1C3CC1CN(C)C3...  0.0    0.0    7.0    2.0    1.0    4.0  ... -0.41922  5.81003  2.16140  14.75853  1.73869  12.55567   4.30300        3
+572     572  COc1cc(F)c(-c2ccc(C(=O)O)cc2C)cc1-c1ccc(C(F)(F...  0.0    1.0    2.0    0.0    0.0    1.0  ... -2.40364 -5.45416  1.36215  13.35727 -0.07267  11.46613  10.62832        3
+578     578  COc1ncc(-c2ccc(C(=O)O)cc2C)cc1-c1c(C)cc(C(F)(F...  1.0    2.0    2.0    0.0    0.0    1.0  ... -2.28048 -2.79113  1.58983  13.43478 -0.05086  11.49839  10.19264        3
+797     797  COc1cc(F)c(-c2ccc(C(=O)O)cc2C)cc1-c1ccc(F)cc1[...  0.0    1.0    2.0    0.0    0.0    1.0  ... -2.18752 -3.31878  1.44341  13.28883 -0.01303  11.44502   9.74862        3
+850     850  CNC(=O)c1c(-c2ccc(F)cc2)oc2cc(N(C)S(C)(=O)=O)c...  0.0    0.0    0.0    0.0    0.0    3.0  ... -0.43674  1.21717  1.87989  13.20898  1.26495  12.78632   6.75450        3
+1214   1214  Cn1nc(C(=O)OCCCCNC[C@H](O)c2ccc(O)c3[nH]c(=O)c...  0.0    0.0    4.0    1.0    0.0    1.0  ... -0.96933  3.73312  1.97228  13.22046  1.35518  11.66932   4.71620        3
+1308   1308  CNC(=O)c1c(-c2ccc(F)cc2)oc2cc(N(C)S(C)(=O)=O)c...  0.0    0.0    0.0    0.0    0.0    3.0  ... -0.43760  3.20103  1.83676  13.20832  1.26455  12.78545   6.20010        3
+
+[14 rows x 788 columns]
+      index                                             SMILES    y  C-001  C-002  C-003  C-004  C-005  ...    SdssC    SaasC  MAXaaCH     MAXdO  MINaaCH     MINdO     SLogP  cluster
+1214   1214  Cn1nc(C(=O)OCCCCNC[C@H](O)c2ccc(O)c3[nH]c(=O)c...  0.0    0.0    4.0    1.0    0.0    1.0  ... -0.96933  3.73312  1.97228  13.22046  1.35518  11.66932   4.71620        3
+338     338  COc1ncc(-c2ccc(C(=O)O)cc2C)cc1-c1ncc(C(F)(F)F)...  0.0    1.0    2.0    0.0    0.0    1.0  ... -2.32129 -3.78417  1.52090  13.32944 -0.06188  11.45265   9.27922        3
+328     328  COc1ccc([C@H]2OC(=O)N[C@@H]2C)cc1-c1ccc(C(F)(F...  1.0    1.0    2.0    0.0    0.0    1.0  ... -1.77535 -3.60597  1.61690  13.29152 -0.04639  11.85042   8.98500        3
+247     247  CNC(=O)c1c(-c2ccc(F)cc2)oc2cc(N(C)S(C)(=O)=O)c...  0.0    0.0    1.0    0.0    0.0    3.0  ... -0.42760  3.77631  1.94701  13.21658  1.27046  12.79545   6.37320        3
+578     578  COc1ncc(-c2ccc(C(=O)O)cc2C)cc1-c1c(C)cc(C(F)(F...  1.0    2.0    2.0    0.0    0.0    1.0  ... -2.28048 -2.79113  1.58983  13.43478 -0.05086  11.49839  10.19264        3
+
+[5 rows x 788 columns]
+      index                                             SMILES    y  C-001  C-002  C-003  C-004  C-005  ...    SdssC    SaasC  MAXaaCH     MAXdO  MINaaCH     MINdO    SLogP  cluster
+69       69  CC(C)(C)OC(=O)N1CCc2c(cccc2-c2cccc3c2CCN(S(=O)...  1.0    3.0    2.0    0.0    0.0    0.0  ... -0.29252  7.04330  2.12273  12.89303  1.32697  12.61983  4.21330        0
+128     128  Cn1nccc1-c1ccc2c(c1)C(=O)CC1(CCN(C(=O)N[C@H]3C...  1.0    0.0    4.0    1.0    0.0    1.0  ...  0.09119  4.46395  2.12146  13.11034  1.74709  12.83678  4.15260        0
+3         3  COCc1nc2cnc3cc(-c4c(C)noc4C)c(OC[C@H]4CCNC4)cc...  0.0    3.0    1.0    1.0    0.0    1.0  ...  0.00000  6.37677  2.14901  13.08979  1.85405  12.40673  5.60034        0
+1331   1331  Cn1nccc1Nc1ccc2c(c1)C(=O)CC1(CCN(C(=O)N[C@H]3C...  1.0    0.0    4.0    1.0    0.0    1.0  ...  0.06777  4.16857  2.11968  13.10229  1.71990  12.84519  4.22920        0
+971     971  COc1ccc2c(c1)NC1(CCN(C(=O)c3ccc4c(cnn4C)c3)CC1...  1.0    0.0    2.0    0.0    0.0    2.0  ...  0.08228  4.99123  2.18848  13.25547  1.80866  13.25547  3.92960        0
+
+[5 rows x 788 columns]
+Train set contains:
+	493 negative values
+	567 positive values
+	ratio neg / pos: 0.8694885361552028
+Test set contains:
+	214 negative values
+	244 positive values
+	ratio neg / pos: 0.8770491803278688
+If you find this imbalanced, try to decomment line 44 of split_by_kmeans.py module. It can give an error! 
+
+The following files have been created:
+
+/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/TOX_Nav15inh_removed_outliers_no3D_us-cleaned_from_kmeans.csv
+/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/TOX_Nav15inh_removed_outliers_no3D_us-train_set.csv
+/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/TOX_Nav15inh_removed_outliers_no3D_us-test_set.csv
+
+Do you want to perform any other step?(y/n):  
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 4
+[+] Descriptor standarization
+
+Please select the method to standarize the descriptors: 
+[1] StandardScaler
+[2] MinMaxScaler
+Your choice (1/2)?: 1
+Two files located in "/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/" folder are needed
+These files must be called:
+	"TOX_Nav15inh_removed_outliers_no3D_us-train_set.csv"
+	"TOX_Nav15inh_removed_outliers_no3D_us-test_set.csv"
+Continue (Y/n)?
+
+The following files have been created:
+
+/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/TOX_Nav15inh_removed_outliers_no3D_us-stand_train_set.csv
+/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/TOX_Nav15inh_removed_outliers_no3D_us-stand_test_set.csv
+/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/TOX_Nav15inh_removed_outliers_no3D_us-alldataset.sca
+
+Do you want to perform any other step?(y/n):  
+######################### MAIN MENU #########################
+
+Please select what do you want to do: 
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 7
+[+] Feature selection by Permutation importance
+Two files located in "/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/" folder are needed
+These files must be called:
+	"TOX_Nav15inh_removed_outliers_no3D_us-stand_train_set.csv"
+	"TOX_Nav15inh_removed_outliers_no3D_us-stand_test_set.csv"
+Continue (Y/n)?
+
+Please select your estimator for perform Permutation importance: 
+For regression models:
+	 [0] Ridge [alpha = 10]
+	 [02] SVR [kernel = linear] [remember that other kernels can be used:‘linear’, ‘poly’, ‘rbf’, ‘sigmoid’, ‘precomputed’]
+	 [1] ExtraTreesRegressor
+	 [2] DecisionTreeRegressor
+	 [3] GradientBoostingRegressor
+	 [4] MLPRegressor
+	 [5] RandomForestRegressor
+	 [6] KNeighborsRegressor
+For classification models:
+	 [7] RandomForestClassifier
+	 [8] ExtraTreesClassifier
+	 [9] DecisionTreeClassifier
+	[10] GradientBoostingClassifier
+	[11] MLPClassifier
+	[12] KNeighborsClassifier
+	[13] LinearDiscriminantAnalysis
+	[14] LogisticRegression
+Your choice: 8
+Please wait...
+Step 1/2 done...
+Step 2/2 done...
+
+Now you can select a number of features.
+Please, indicate the number of selected features: 15
+
+Selected features:
+
+                         feature  importance
+272                          X0A    0.000377
+177                       ATSC8p    0.000189
+525                    F06[O-Cl]    0.000189
+306  nR_5_False_False_False_True    0.000189
+720                    PEOE_VSA2    0.000189
+21                         C-025    0.000189
+515                     B06[N-F]    0.000000
+516                     F06[N-F]    0.000000
+517                    B06[N-Cl]    0.000000
+518                    B06[N-Br]    0.000000
+519                     B06[O-O]    0.000000
+520                     F06[O-O]    0.000000
+521                     B06[O-S]    0.000000
+522                     B06[O-F]    0.000000
+524                    B06[O-Cl]    0.000000
+
+Selected features (as list):
+ ['X0A', 'ATSC8p', 'F06[O-Cl]', 'nR_5_False_False_False_True', 'PEOE_VSA2', 'C-025', 'B06[N-F]', 'F06[N-F]', 'B06[N-Cl]', 'B06[N-Br]', 'B06[O-O]', 'F06[O-O]', 'B06[O-S]', 'B06[O-F]', 'B06[O-Cl]']
+Size of the database, preimputation: (1060, 15)
+[+] fitting
+[+] transforming
+Size of the database, postimputation: (1060, 15)
+
+The following files have been created:
+
+/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/TOX_Nav15inh_removed_outliers_no3D_us-train_reduction_PI.csv
+/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/TOX_Nav15inh_removed_outliers_no3D_us-test_reduction_PI.csv
+/home/carmen/Escritorio/contratas/IRB/Models/Nav-1.5/undersampling_split/us_split_15/TOX_Nav15inh_removed_outliers_no3D_us-train_set.sca
+train_set (1060, 17)
+test_set (458, 17) 
+
+
+Do you agree with that number of features?(y/n): y
+
+Do you want to perform any other step?(y/n):  n
+
+Thanks for using NEO
