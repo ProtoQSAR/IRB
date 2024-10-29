@@ -1,0 +1,182 @@
+
+#########################################################################
+####################### WELCOME TO HYGIEIA script #######################
+#########################################################################
+This script will process your dataframe and: 
+ 	- eliminate incorrect molecules ans sanitize smiles
+ 	- clean salts
+ 	- eliminate inorganic and organometallic compounds
+ 	- check for duplicated molecules
+ 	- check for mixtures.
+A file located in ".\results" folder is needed
+This file must be called: "\TOX_MRDD_DSSTOX-preprocessed.csv"
+Extra columns are available in the input file:
+
+['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+What to you want to do with them?.
+
+	[1] Ignore extra data and remove it from following steps.
+
+		  "SMILES" will be the only filtered/sanitized column and "y" will be the only redirected output.
+
+	[2] Keep them in the output.
+
+		  SMILES will be only the filtered/sanitized column but all the rest will be redirected in the output.
+
+	[3] Keep them in the output and use them to check duplicates.
+
+		  More than one column will be used for filtering: SMILES will be for sanitize, mixture, salts and inorganics,
+		  the rest of the columns (except y) for checking for duplicates.
+
+	[4] Select which columns I want to keep and  which to use them to check duplicates.
+
+		  Provide a list with two lists [check dups, keep] do not include your SMILES and y
+SMILES y ['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source']
+[+] Sanitizing smiles (Always done)
+Index(['ID', 'orig_ID', 'SMILES', 'y', 'CAS', 'NAME', 'UNITS',
+       'smiles_source'],
+      dtype='object')
+[+] Eliminating salts 
+	Your dataset had salts, that have been eliminated:
+
+	CC(=O)[N-]S(=O)(=O)C1=C(C=CC(=C1)N)S(=O)(=O)C2=CC=C(C=C2)N.[Na+] --> CC(=O)[N-]S(=O)(=O)c1cc(N)ccc1S(=O)(=O)c1ccc(N)cc1
+	CC[N+](CC)(CCNC(=O)C(=O)NCC[N+](CC)(CC)CC1=CC=CC=C1Cl)CC2=CC=CC=C2Cl.[Cl-].[Cl-] --> CC[N+](CC)(CCNC(=O)C(=O)NCC[N+](CC)(CC)Cc1ccccc1Cl)Cc1ccccc1Cl
+	CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)[C@@H](C3=CC=C(C=C3)O)N)C(=O)O)C.O.O.O --> CC1(C)S[C@@H]2[C@H](NC(=O)[C@H](N)c3ccc(O)cc3)C(=O)N2[C@H]1C(=O)O
+	CCCC(CCC)C(=O)OC1C[C@H]2CC[C@@H](C1)[N+]2(C)C.[Br-] --> CCCC(CCC)C(=O)OC1C[C@@H]2CC[C@H](C1)[N+]2(C)C
+	CCCC1C(=O)N2C3=C(C=CC(=C3)C)N=C(N2C1=O)N(C)C.O.O --> CCCC1C(=O)N2C(N(C)C)=Nc3ccc(C)cc3N2C1=O
+	CC(C[N+](C)(C)C)OC(=O)N.[Cl-] --> CC(C[N+](C)(C)C)OC(N)=O
+	C1=CC=C2C(=C1)C(=CC=C2S(=O)(=O)[O-])N/N=C\3/C=C(C(=O)/C(=N\NC4=CC=C(C5=CC=CC=C54)S(=O)(=O)[O-])/C3=O)CO.[Na+].[Na+] --> O=c1c(CO)c/c(=N/Nc2ccc(S(=O)(=O)[O-])c3ccccc23)c(=O)/c1=N/Nc1ccc(S(=O)(=O)[O-])c2ccccc12
+	CCCCOC1=CC=C(C=C1)C[N+]2([C@@H]3CC[C@H]2CC(C3)OC(=O)[C@H](CO)C4=CC=CC=C4)C.[Br-] --> CCCCOc1ccc(C[N+]2(C)[C@H]3CC[C@@H]2CC(OC(=O)[C@H](CO)c2ccccc2)C3)cc1
+	CCCC[N+]1([C@@H]2CC(C[C@H]1[C@H]3[C@@H]2O3)OC(=O)[C@H](CO)C4=CC=CC=C4)C.[Br-] --> CCCC[N+]1(C)[C@H]2CC(OC(=O)[C@H](CO)c3ccccc3)C[C@@H]1[C@H]1O[C@@H]21
+	C[N+](C)(C)CCOC(=O)N.[Cl-] --> C[N+](C)(C)CCOC(N)=O
+	CN1C(CC2=CC(=C(C=C21)O)N=NC(=O)N)S(=O)(=O)[O-].[Na+] --> CN1c2cc(O)c(N=NC(N)=O)cc2CC1S(=O)(=O)[O-]
+	CN1C(=NN=N1)SCC2=C(N3[C@@H]([C@@H](C3=O)NC(=O)[C@@H](C4=CC=CC=C4)OC=O)SC2)C(=O)[O-].[Na+] --> Cn1nnnc1SCC1=C(C(=O)[O-])N2C(=O)[C@@H](NC(=O)[C@H](OC=O)c3ccccc3)[C@H]2SC1
+	C[C@@H]1O[C@]2(CN3CCC2CC3)CS1.C[C@@H]1O[C@]2(CN3CCC2CC3)CS1.O.Cl.Cl --> C[C@@H]1O[C@@]2(CS1)CN1CCC2CC1.C[C@@H]1O[C@@]2(CS1)CN1CCC2CC1
+	C1=C2C(=C3C=C(C(=O)C(=C3OC2=C(C(=C1I)[O-])I)I)I)C4=C(C(=C(C(=C4Cl)Cl)Cl)Cl)C(=O)[O-].[Na+].[Na+] --> O=C([O-])c1c(Cl)c(Cl)c(Cl)c(Cl)c1-c1c2cc(I)c(=O)c(I)c-2oc2c(I)c([O-])c(I)cc12
+	CC1=C(C=CC(=C1)C2=CC(=C(C=C2)N=NC3=C(C4=C(C=C3)C(=CC(=C4N)S(=O)(=O)[O-])S(=O)(=O)[O-])O)C)N=NC5=C(C6=C(C=C5)C(=CC(=C6N)S(=O)(=O)[O-])S(=O)(=O)[O-])O.[Na+].[Na+].[Na+].[Na+] --> Cc1cc(-c2ccc(N=Nc3ccc4c(S(=O)(=O)[O-])cc(S(=O)(=O)[O-])c(N)c4c3O)c(C)c2)ccc1N=Nc1ccc2c(S(=O)(=O)[O-])cc(S(=O)(=O)[O-])c(N)c2c1O
+	C1=CC=C2C(=C1)C(=CC(=C2N)N=NC3=CC=C(C=C3)C4=CC=C(C=C4)N=NC5=C(C6=CC=CC=C6C(=C5)S(=O)(=O)[O-])N)S(=O)(=O)[O-].[Na+].[Na+] --> Nc1c(N=Nc2ccc(-c3ccc(N=Nc4cc(S(=O)(=O)[O-])c5ccccc5c4N)cc3)cc2)cc(S(=O)(=O)[O-])c2ccccc12
+	C[N+]12CCC(CC1)C(C2)OC(=O)C(C3=CC=CC=C3)(C4=CC=CC=C4)O.[Br-] --> C[N+]12CCC(CC1)C(OC(=O)C(O)(c1ccccc1)c1ccccc1)C2
+	C[N+](C)(C)CCCCCCCCCC[N+](C)(C)C.[Br-].[Br-] --> C[N+](C)(C)CCCCCCCCCC[N+](C)(C)C
+	CC(=O)NC1=C(C(=C(C(=C1I)C(=O)[O-])I)NC(=O)C)I.[Na+] --> CC(=O)Nc1c(I)c(NC(C)=O)c(I)c(C(=O)[O-])c1I
+	C[N+]1(CCC2=CC(=C3C=C2[C@@H]1CC4=CC=C(C=C4)OC5=C6[C@@H](CC7=CC(=C(C=C7)OC)O3)[N+](CCC6=CC(=C5OC)OC)(C)C)OC)C.[I-].[I-] --> COc1ccc2cc1Oc1cc3c(cc1OC)CC[N+](C)(C)[C@H]3Cc1ccc(cc1)Oc1c(OC)c(OC)cc3c1[C@@H](C2)[N+](C)(C)CC3
+	CCN\1C2=CC=CC=C2S/C1=C\C=C\C=C\C3=[N+](C4=CC=CC=C4S3)CC.[I-] --> CCN1/C(=C/C=C/C=C/c2sc3ccccc3[n+]2CC)Sc2ccccc21
+	CCN(CC)C(=S)[S-].[Na+] --> CCN(CC)C(=S)[S-]
+	CCCCC(CC)COC(=O)CC(C(=O)OCC(CC)CCCC)S(=O)(=O)[O-].[Na+] --> CCCCC(CC)COC(=O)CC(C(=O)OCC(CC)CCCC)S(=O)(=O)[O-]
+	C[N@+]1(CCC2=CC(=C(C(=C2[C@H]1CC3=CC(=C(C(=C3)OC)OC)OC)OC)OC)OC)CCCOC(=O)CCC(=O)OCCC[N@+]4(CCC5=CC(=C(C(=C5[C@@H]4CC6=CC(=C(C(=C6)OC)OC)OC)OC)OC)OC)C.[Cl-].[Cl-] --> COc1cc(C[C@H]2c3c(cc(OC)c(OC)c3OC)CC[N@+]2(C)CCCOC(=O)CCC(=O)OCCC[N@+]2(C)CCc3cc(OC)c(OC)c(OC)c3[C@H]2Cc2cc(OC)c(OC)c(OC)c2)cc(OC)c1OC
+	CCOP(=O)(OCC)SCC[N+](C)(C)C.[I-] --> CCOP(=O)(OCC)SCC[N+](C)(C)C
+	CC[N+](C)(C)C1=CC(=CC=C1)O.[Cl-] --> CC[N+](C)(C)c1cccc(O)c1
+	CC1=C(N(C2=CC=CC=[N+]12)/N=N/N3C4=CC=CC=[N+]4C(=C3C5=CC=CC=C5)C)C6=CC=CC=C6.[Br-].[Br-] --> Cc1c(-c2ccccc2)n(/N=N/n2c(-c3ccccc3)c(C)[n+]3ccccc23)c2cccc[n+]12
+	C(=O)([O-])P(=O)([O-])[O-].[Na+].[Na+].[Na+] --> O=C([O-])P(=O)([O-])[O-]
+	CC[N+](CC)(CC)CCOC1=C(C(=CC=C1)OCC[N+](CC)(CC)CC)OCC[N+](CC)(CC)CC.[I-].[I-].[I-] --> CC[N+](CC)(CC)CCOc1cccc(OCC[N+](CC)(CC)CC)c1OCC[N+](CC)(CC)CC
+	C[N+]1(CCC(C1)OC(=O)CC(C2CCCC2)(C3=CC=CC=C3)O)C.[Br-] --> C[N+]1(C)CCC(OC(=O)CC(O)(c2ccccc2)C2CCCC2)C1
+	CC(C)(C)NC(=O)[C@@H]1CN(CCN1C[C@H](C[C@@H](CC2=CC=CC=C2)C(=O)N[C@@H]3[C@@H](CC4=CC=CC=C34)O)O)CC5=CN=CC=C5.O --> CC(C)(C)NC(=O)[C@@H]1CN(Cc2cccnc2)CCN1C[C@@H](O)C[C@@H](Cc1ccccc1)C(=O)N[C@H]1c2ccccc2C[C@H]1O
+	CC1(C(=[N+](C2=C1C3=CC=CC=C3C=C2)CCCCS(=O)(=O)[O-])/C=C\C=C/C=C\C=C\4/C(C5=C(N4CCCCS(=O)(=O)[O-])C=CC6=CC=CC=C65)(C)C)C.[Na+] --> CC1(C)C(/C=C\C=C/C=C\C=C2\N(CCCCS(=O)(=O)[O-])c3ccc4ccccc4c3C2(C)C)=[N+](CCCCS(=O)(=O)[O-])c2ccc3ccccc3c21
+	C1CC(=C(N2[C@H]1[C@@H](C2=O)NC(=O)[C@@H](C3=CC=CC=C3)N)C(=O)O)Cl.O --> N[C@@H](C(=O)N[C@@H]1C(=O)N2C(C(=O)O)=C(Cl)CC[C@H]12)c1ccccc1
+	C[N+]1(CCCC(C1)OC(=O)C(C2=CC=CC=C2)(C3=CC=CC=C3)O)C.[Br-] --> C[N+]1(C)CCCC(OC(=O)C(O)(c2ccccc2)c2ccccc2)C1
+	CC(C[N+](C)(C)C)OC(=O)C.[Cl-] --> CC(=O)OC(C)C[N+](C)(C)C
+	CC[N+](C)(CC)CCOC(=O)C1C2=CC=CC=C2OC3=CC=CC=C13.[Br-] --> CC[N+](C)(CC)CCOC(=O)C1c2ccccc2Oc2ccccc21
+	CN(C)C1=CC2=C(C=C1)N=C3C=CC(=[N+](C)C)C=C3S2.[Cl-] --> CN(C)c1ccc2nc3ccc(=[N+](C)C)cc-3sc2c1
+	C[C@H]1C[C@H]2[C@@H]3CC[C@@]([C@]3(C[C@@H]([C@@H]2[C@@]4(C1=CC(=O)C=C4)C)O)C)(C(=O)COC(=O)CCC(=O)[O-])O.[Na+] --> C[C@H]1C[C@H]2[C@@H]3CC[C@](O)(C(=O)COC(=O)CCC(=O)[O-])[C@@]3(C)C[C@H](O)[C@@H]2[C@@]2(C)C=CC(=O)C=C12
+	C[C@H]1C[C@H]2[C@@H]3CC[C@@]([C@]3(C[C@@H]([C@@H]2[C@@]4(C1=CC(=O)C=C4)C)O)C)(C(=O)COC(=O)CCCCCCC(=O)N(C)CCS(=O)(=O)[O-])O.[Na+] --> C[C@H]1C[C@H]2[C@@H]3CC[C@](O)(C(=O)COC(=O)CCCCCCC(=O)N(C)CCS(=O)(=O)[O-])[C@@]3(C)C[C@H](O)[C@@H]2[C@@]2(C)C=CC(=O)C=C12
+	C[N+]1(CCC2=CC(=C(C=C2C1CC3=CC(=C(C(=C3)OC)OC)OC)OC)OC)CCCOC(=O)CC/C=C/CCC(=O)OCCC[N+]4(CCC5=CC(=C(C=C5C4CC6=CC(=C(C(=C6)OC)OC)OC)OC)OC)C.[Cl-].[Cl-] --> COc1cc2c(cc1OC)C(Cc1cc(OC)c(OC)c(OC)c1)[N+](C)(CCCOC(=O)CC/C=C/CCC(=O)OCCC[N+]1(C)CCc3cc(OC)c(OC)cc3C1Cc1cc(OC)c(OC)c(OC)c1)CC2
+	C[N+](CCCl)(CCCl)[O-].Cl --> C[N+]([O-])(CCCl)CCCl
+	CC1=C(C=CC2=C1OC(=O)C(=C2[O-])NC(=O)C3=CC(=C(C=C3)O)CC=C(C)C)O[C@H]4[C@@H]([C@@H]([C@H](C(O4)(C)C)OC)OC(=O)N)O.[Na+] --> CO[C@@H]1[C@@H](OC(N)=O)[C@@H](O)[C@H](Oc2ccc3c([O-])c(NC(=O)c4ccc(O)c(CC=C(C)C)c4)c(=O)oc3c2C)OC1(C)C
+	CC[N+]1([C@@H]2CC(C[C@H]1[C@H]3[C@@H]2O3)OC(=O)[C@H](CO)C4=CC=CC=C4)C.[Br-] --> CC[N+]1(C)[C@H]2CC(OC(=O)[C@H](CO)c3ccccc3)C[C@@H]1[C@H]1O[C@@H]21
+	C[C@@]1([C@H]2[C@@H]([C@H]3[C@@H](C(=O)C(=C([C@]3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O)O.O.O --> CN(C)[C@@H]1C(=O)C(C(N)=O)=C(O)[C@@]2(O)C(=O)C3=C(O)c4c(O)cccc4[C@@](C)(O)[C@H]3[C@H](O)[C@@H]12
+	CC(=O)O[C@H]1C[C@@H]2CC[C@@H]3[C@@H]([C@]2(C[C@@H]1[N+]4(CCCCC4)C)C)CC[C@]5([C@H]3C[C@@H]([C@@H]5OC(=O)C)[N+]6(CCCCC6)C)C.[Br-].[Br-] --> CC(=O)O[C@H]1C[C@@H]2CC[C@@H]3[C@H](CC[C@@]4(C)[C@H]3C[C@H]([N+]3(C)CCCCC3)[C@@H]4OC(C)=O)[C@@]2(C)C[C@@H]1[N+]1(C)CCCCC1
+	CC(=O)O[C@H]1C[C@@H]2CC[C@@H]3[C@@H]([C@]2(C[C@@H]1N4CC[N+](CC4)(C)C)C)CC[C@]5([C@H]3C[C@@H]([C@@H]5OC(=O)C)N6CC[N+](CC6)(C)C)C.[Br-].[Br-] --> CC(=O)O[C@H]1C[C@@H]2CC[C@@H]3[C@H](CC[C@@]4(C)[C@H]3C[C@H](N3CC[N+](C)(C)CC3)[C@@H]4OC(C)=O)[C@@]2(C)C[C@@H]1N1CC[N+](C)(C)CC1
+	CC[N+]1(CCCC(C1)OC(=O)C(C2=CC=CC=C2)(C3=CC=CC=C3)O)C.[Br-] --> CC[N+]1(C)CCCC(OC(=O)C(O)(c2ccccc2)c2ccccc2)C1
+	C[N+]1=CC=CC=C1/C=N/O.[Cl-] --> C[n+]1ccccc1/C=N/O
+	C[C@]12C[C@@H]([C@H]3[C@H]([C@@H]1CC[C@@]2(C(=O)COC(=O)CCC(=O)[O-])O)CCC4=CC(=O)C=C[C@]34C)O.[Na+] --> C[C@]12C[C@H](O)[C@H]3[C@@H](CCC4=CC(=O)C=C[C@@]43C)[C@@H]1CC[C@]2(O)C(=O)COC(=O)CCC(=O)[O-]
+	CC[N+]1(CCC(=C(C2=CC=CC=C2)C3=CC=CC=C3)C1C)CC.[Br-] --> CC[N+]1(CC)CCC(=C(c2ccccc2)c2ccccc2)C1C
+	CC(C)[N+](C)(CCOC(=O)C1C2=CC=CC=C2OC3=CC=CC=C13)C(C)C.[Br-] --> CC(C)[N+](C)(CCOC(=O)C1c2ccccc2Oc2ccccc21)C(C)C
+	C[N+]1=CC=CC(=C1)OC(=O)N(C)C.[Br-] --> CN(C)C(=O)Oc1ccc[n+](C)c1
+	CC(=O)O[C@H]1[C@H](C[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(C[C@@H]([C@H](C4)O)N5CCOCC5)C)C)[N+]6(CCCC6)CC=C.[Br-] --> C=CC[N+]1([C@H]2C[C@H]3[C@@H]4CC[C@H]5C[C@H](O)[C@@H](N6CCOCC6)C[C@]5(C)[C@H]4CC[C@]3(C)[C@H]2OC(C)=O)CCCC1
+	CCCC(C)C1(C(=O)NC(=NC1=O)[O-])CC=C.[Na+] --> C=CCC1(C(C)CCC)C(=O)N=C([O-])NC1=O
+	C1CN(CCC12NC(=O)CS2)CCCN3C4=CC=CC=C4SC5=C3C=C(C=C5)Cl.Cl --> O=C1CSC2(CCN(CCCN3c4ccccc4Sc4ccc(Cl)cc43)CC2)N1
+	C[N+](C)(C)CCOC(=O)CCC(=O)OCC[N+](C)(C)C.[Cl-].[Cl-] --> C[N+](C)(C)CCOC(=O)CCC(=O)OCC[N+](C)(C)C
+	C1=CC(=C(C=C1C2(C3=C(C(=C(C(=C3Br)Br)Br)Br)C(=O)O2)C4=CC(=C(C=C4)O)S(=O)(=O)[O-])S(=O)(=O)[O-])O.[Na+].[Na+] --> O=C1OC(c2ccc(O)c(S(=O)(=O)[O-])c2)(c2ccc(O)c(S(=O)(=O)[O-])c2)c2c(Br)c(Br)c(Br)c(Br)c21
+	C1=CC(=CC=C1NCS(=O)[O-])S(=O)(=O)C2=CC=C(C=C2)NCS(=O)[O-].[Na+].[Na+] --> O=S([O-])CNc1ccc(S(=O)(=O)c2ccc(NCS(=O)[O-])cc2)cc1
+	C1=CC(=CC=C1N=NC2=C(NN(C2=O)C3=CC=C(C=C3)S(=O)(=O)[O-])C(=O)[O-])S(=O)(=O)[O-].[Na+].[Na+].[Na+] --> O=C([O-])c1[nH]n(-c2ccc(S(=O)(=O)[O-])cc2)c(=O)c1N=Nc1ccc(S(=O)(=O)[O-])cc1
+	CC1=C(SC=[N+]1CC2=CN=C(N=C2N)C)CCO.[Cl-] --> Cc1ncc(C[n+]2csc(CCO)c2C)c(N)n1
+	CS(=O)(=O)C1=CC=C(C=C1)[C@H]([C@@H](COC(=O)CN)NC(=O)C(Cl)Cl)O.Cl --> CS(=O)(=O)c1ccc([C@@H](O)[C@@H](COC(=O)CN)NC(=O)C(Cl)Cl)cc1
+	C[N+]1(CC(CC(=C(C2=CC=CS2)C3=CC=CS3)C1)OC)C.[Br-] --> COC1CC(=C(c2cccs2)c2cccs2)C[N+](C)(C)C1
+	CC[N+](CC)(CC)CCC(C1CCCCC1)(C2=CC=CC=C2)O.[Cl-] --> CC[N+](CC)(CC)CCC(O)(c1ccccc1)C1CCCCC1
+	C1CC[N+]2(C1)C3CCC2CC(C3)OC(=O)C(C4=CC=CC=C4)(C5=CC=CC=C5)O.[Cl-] --> O=C(OC1CC2CCC(C1)[N+]21CCCC1)C(O)(c1ccccc1)c1ccccc1
+	C[NH+]1CCC2=CC(=C3C=C2[C@@H]1CC4=CC=C(C=C4)OC5=C6[C@@H](CC7=CC(=C(C=C7)O)O3)[N+](CCC6=CC(=C5O)OC)(C)C)OC.[Cl-].[Cl-] --> COc1cc2c3cc1Oc1cc(ccc1O)C[C@@H]1c4c(cc(OC)c(O)c4Oc4ccc(cc4)C[C@@H]3[NH+](C)CC2)CC[N+]1(C)C
+	CCCC(=O)NC1=C(C=C(C(=C1I)CC(CC)C(=O)[O-])I)I.[Na+] --> CCCC(=O)Nc1c(I)cc(I)c(CC(CC)C(=O)[O-])c1I
+	CC(=O)O[C@H]1C[C@@H]2CC[C@@H]3[C@@H]([C@]2(CC1N4CCCCC4)C)CC[C@]5([C@H]3CC(C5OC(=O)C)[N+]6(CCCCC6)C)C.[Br-] --> CC(=O)OC1C([N+]2(C)CCCCC2)C[C@H]2[C@@H]3CC[C@H]4C[C@H](OC(C)=O)C(N5CCCCC5)C[C@]4(C)[C@H]3CC[C@]12C
+	C[C@H]1[C@H]([C@H](C[C@@H](O1)O[C@H]2C[C@@](CC3=C2C(=C4C(=C3O)C(=O)C5=C(C4=O)C(=CC=C5)OC)O)(/C(=N/NC(=O)C6=CC=CC=C6)/C)O)N)O.Cl --> COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(/C(C)=N/NC(=O)c1ccccc1)C[C@@H]3O[C@H]1C[C@H](N)[C@H](O)[C@H](C)O1
+[+] Eliminating inorganic and organometallic compounds
+	Congratulations, your dataset has not inorganic and organometallic compounds.
+[+] Checking for repeated compounds considering extra data
+	Congratulations, your dataset has not duplicated compounds.
+[+] Checking for mixtures
+['C[N+]1(CCC2=CC(=C(C=C2C1CC3=CC(=C(C=C3)OC)OC)OC)OC)CCC(=O)OCCCCCOC(=O)CC[N+]4(CCC5=CC(=C(C=C5C4CC6=CC(=C(C=C6)OC)OC)OC)OC)C.C1=CC=C(C=C1)S(=O)(=O)[O-].C1=CC=C(C=C1)S(=O)(=O)[O-]', 'C[N+](C)(CCOC1=CC=CC=C1)CC2=CC=CC=C2.C1=CC=C2C=C(C(=CC2=C1)C(=O)O)[O-]', 'CC[N+](C)(C)CC1=CC=CC=C1Br.CC1=CC=C(C=C1)S(=O)(=O)[O-]', 'C[C@@H]1O[C@@]2(CS1)CN1CCC2CC1.C[C@@H]1O[C@@]2(CS1)CN1CCC2CC1', 'CC1=CC(=O)N(N1C)C2=CC=CC=C2.C(C(Cl)(Cl)Cl)(O)O.C(C(Cl)(Cl)Cl)(O)O', 'CC(=O)NCC(=O)O.CC(=O)NCC(=O)O.C1=CC(=CC=C1C(=N)N)NN=NC2=CC=C(C=C2)C(=N)N', 'C[N+]1(CCC(=C(C2=CC=CC=C2)C3=CC=CC=C3)CC1)C.COS(=O)(=O)[O-]', 'CCCCCCCCCCCCCCCCCC(=O)O.CC[C@@H]1[C@@]([C@@H]([C@H](C(=O)[C@@H](C[C@@]([C@@H]([C@H]([C@@H]([C@H](C(=O)O1)C)O[C@H]2C[C@@]([C@H]([C@@H](O2)C)O)(C)OC)C)O[C@H]3[C@@H]([C@H](C[C@H](O3)C)N(C)C)OC(=O)C)(C)O)C)C)O)(C)O', 'C[C@]12CC[C@H]3[C@H]([C@@H]1CCC2=O)CCC4=C3C=CC(=C4)OS(=O)(=O)O.C1CNCCN1', 'CCCCCCCC/C=C\\CCCCCCCC(=O)O.C(CO)N', 'C[N+]1(CCN(CC1)CC(C2CCCCC2)(C3=CC=CC=C3)O)C.COS(=O)(=O)[O-]', 'CN1[C@@H]2CC[C@H]1CC(C2)OC(=O)C(C3=CC=CC=C3)O.CBr', 'C1=C(C(=O)C(=CN1CC(=O)O)I)I.C(CO)NCCO', 'CC1=CC(=C(N1C2=CC=CC=C2)C)/C=C/C3=[N+](C4=C(C=C(C=C4)N(C)C)C=C3)C.CC1=CC(=C(N1C2=CC=CC=C2)C)/C=C/C3=[N+](C4=C(C=C(C=C4)N(C)C)C=C3)C.C1=CC=C2C(=C(C(=CC2=C1)C(=O)O)[O-])CC3=C(C(=CC4=CC=CC=C34)C(=O)O)[O-]', 'CN(CCOC1=CC=C(C=C1)CC2C(=O)NC(=O)S2)C3=CC=CC=N3.C(=C\\C(=O)O)\\C(=O)O', 'C1CC(OC1)N2C=C(C(=O)NC2=O)F.C1=CNC(=O)NC1=O', 'CC1(C2CCC1(C(=O)C2)CS(=O)(=O)[O-])C.C1CC2C3C(C[S+]2C1)N(C(=O)N3CC4=CC=CC=C4)CC5=CC=CC=C5', 'CN1C2=C(C(=O)N(C1=O)C)N(C=N2)CC(CN(C)CCO)O.C1=CC(=CN=C1)C(=O)O']
+
+Your dataset had 18 mixtures
+	 C[N+]1(CCC2=CC(=C(C=C2C1CC3=CC(=C(C=C3)OC)OC)OC)OC)CCC(=O)OCCCCCOC(=O)CC[N+]4(CCC5=CC(=C(C=C5C4CC6=CC(=C(C=C6)OC)OC)OC)OC)C.C1=CC=C(C=C1)S(=O)(=O)[O-].C1=CC=C(C=C1)S(=O)(=O)[O-]
+	 C[N+](C)(CCOC1=CC=CC=C1)CC2=CC=CC=C2.C1=CC=C2C=C(C(=CC2=C1)C(=O)O)[O-]
+	 CC[N+](C)(C)CC1=CC=CC=C1Br.CC1=CC=C(C=C1)S(=O)(=O)[O-]
+	 C[C@@H]1O[C@@]2(CS1)CN1CCC2CC1.C[C@@H]1O[C@@]2(CS1)CN1CCC2CC1
+	 CC1=CC(=O)N(N1C)C2=CC=CC=C2.C(C(Cl)(Cl)Cl)(O)O.C(C(Cl)(Cl)Cl)(O)O
+	 CC(=O)NCC(=O)O.CC(=O)NCC(=O)O.C1=CC(=CC=C1C(=N)N)NN=NC2=CC=C(C=C2)C(=N)N
+	 C[N+]1(CCC(=C(C2=CC=CC=C2)C3=CC=CC=C3)CC1)C.COS(=O)(=O)[O-]
+	 CCCCCCCCCCCCCCCCCC(=O)O.CC[C@@H]1[C@@]([C@@H]([C@H](C(=O)[C@@H](C[C@@]([C@@H]([C@H]([C@@H]([C@H](C(=O)O1)C)O[C@H]2C[C@@]([C@H]([C@@H](O2)C)O)(C)OC)C)O[C@H]3[C@@H]([C@H](C[C@H](O3)C)N(C)C)OC(=O)C)(C)O)C)C)O)(C)O
+	 C[C@]12CC[C@H]3[C@H]([C@@H]1CCC2=O)CCC4=C3C=CC(=C4)OS(=O)(=O)O.C1CNCCN1
+	 CCCCCCCC/C=C\CCCCCCCC(=O)O.C(CO)N
+	 C[N+]1(CCN(CC1)CC(C2CCCCC2)(C3=CC=CC=C3)O)C.COS(=O)(=O)[O-]
+	 CN1[C@@H]2CC[C@H]1CC(C2)OC(=O)C(C3=CC=CC=C3)O.CBr
+	 C1=C(C(=O)C(=CN1CC(=O)O)I)I.C(CO)NCCO
+	 CC1=CC(=C(N1C2=CC=CC=C2)C)/C=C/C3=[N+](C4=C(C=C(C=C4)N(C)C)C=C3)C.CC1=CC(=C(N1C2=CC=CC=C2)C)/C=C/C3=[N+](C4=C(C=C(C=C4)N(C)C)C=C3)C.C1=CC=C2C(=C(C(=CC2=C1)C(=O)O)[O-])CC3=C(C(=CC4=CC=CC=C34)C(=O)O)[O-]
+	 CN(CCOC1=CC=C(C=C1)CC2C(=O)NC(=O)S2)C3=CC=CC=N3.C(=C\C(=O)O)\C(=O)O
+	 C1CC(OC1)N2C=C(C(=O)NC2=O)F.C1=CNC(=O)NC1=O
+	 CC1(C2CCC1(C(=O)C2)CS(=O)(=O)[O-])C.C1CC2C3C(C[S+]2C1)N(C(=O)N3CC4=CC=CC=C4)CC5=CC=CC=C5
+	 CN1C2=C(C(=O)N(C1=O)C)N(C=N2)CC(CN(C)CCO)O.C1=CC(=CN=C1)C(=O)O
+
+The mixtures with their values will be saved in a csv file
+        ID  ...                  smiles_source
+90      90  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+122    122  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+145    145  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+248    248  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+379    379  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+405    405  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+408    408  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+451    451  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+464    464  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+467    467  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+582    582  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+586    586  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+613    613  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+1004  1004  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+1028  1028  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+1094  1094  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+1169  1169  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+1202  1202  ...  PUBCHEM_EXT_DATASOURCE_SMILES
+
+[18 rows x 11 columns]
+
+A new file has been generated:
+
+.\results\TOX_MRDD_DSSTOX.csv: contains the unique molecules, following your instructions
+['ID', 'orig_ID', 'CAS', 'NAME', 'UNITS', 'smiles_source'] [] Index(['ID', 'SAN_SMILES', 'MOL_OBJECT', 'ORIGINAL_SMILES', 'orig_ID',
+       'SMILES', 'y', 'CAS', 'NAME', 'UNITS', 'smiles_source'],
+      dtype='object')
+Your input dataset has 1216 molecules.
+Your output dataset has 1198 molecules.
+thanks for using HYGIEIA!
+Working on: 
+ C:\Users\proto\Desktop\tothexinxol\IRB\scripts\pre_preprocessed_ONGOING
+Output directory already exists: ../results/
+Output directory already exists: ../results/clean_files
+   project_name              tag  ... notes_2  preprocessin steps info
+16          IRB  TOX_MRDD_DSSTOX  ...     NaN                      NaN
+
+[1 rows x 23 columns]
+
+[+] Analysing "AID_1195_datatable_all.csv" dataset
+	[++] Dataframe file created: TOX_MRDD_DSSTOX-entiredata.csv
+	[++] Preprocessed dataframe file created: TOX_MRDD_DSSTOX-preprocessed.csv
+	[++] Process file by HYGIEIA
+	[+++] Dataframe curated file created: TOX_MRDD_DSSTOX

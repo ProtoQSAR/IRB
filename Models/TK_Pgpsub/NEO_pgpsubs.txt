@@ -1,0 +1,666 @@
+
+(base) F:\ProtoQSAR\GENERATE_MODELS_3_0\NEO>conda activate Protocosas
+
+(Protocosas) F:\ProtoQSAR\GENERATE_MODELS_3_0\NEO>python NEO.py
+
+#########################################################################
+######################### WELCOME TO NEO script #########################
+#########################################################################
+This script will allow you to:
+        - eliminate 3D descriptors
+        - "y" transformation
+        - perform the initial unsupervised feature reduction
+        - perform the train/test split based on kmeans
+        - descriptor standarization
+        - select the relevant features based on:
+                 · Recursive feature elimination (RFE)
+                 · Feature importance (FI) based on Ligth gradient boosting machine (LGBM)
+                 · Permutation importance (PI)
+        - select your own features features
+
+Please input your PATH (enter to: "../data/TK_Pgpsub/"):
+Please input your MODEL NAME (enter to: TK_Pgpsub):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 1
+This part of the code will do the y" transformation, randomization of the dataset order and  Knn imputation.
+From this version of NEO is its compulsory to perform the inputation here, as this will create the un-imputed file needed for reimputation.
+[+] "y" transformation
+A file located in "../data/TK_Pgpsub/" folder is needed
+This file must be called: "TK_Pgpsub-paralel_calculated_with_y.csv"
+Continue (Y/n)?
+
+Please select your type of model:
+[1] Regression
+[2] Classification
+Your choice: 2
+
+I am so sorry, there is nothing yet for your request. Please try tomorrow with more coffee and cookies.
+[+] dataset random sort
+
+        The following file has been created (save it as you will need it for feature reduction):
+
+        ../data/TK_Pgpsub/TK_Pgpsub-calculated_preimputation.csv
+[+] dataset imputation
+Size of the database, preimputation: (2695, 3722)
+Warning! Some of descriptors have too many NaN values and have been removed: ['LPRS', 'VDA', 'MDDD', 'MAXsLi', 'MAXssBe', 'MAXssssBe', 'MAXssBH', 'MAXsssB', 'MAXssssB', 'MAXsCH3', 'MAXdCH2', 'MAXssCH2', 'MAXtCH', 'MAXdsCH', 'MAXaaCH', 'MAXsssCH', 'MAXddC', 'MAXtsC', 'MAXdssC', 'MAXaasC', 'MAXaaaC', 'MAXssssC', 'MAXsNH3', 'MAXsNH2', 'MAXssNH2', 'MAXdNH', 'MAXssNH', 'MAXaaNH', 'MAXtN', 'MAXsssNH', 'MAXdsN', 'MAXaaN', 'MAXsssN', 'MAXddsN', 'MAXaasN', 'MAXssssN', 'MAXsOH', 'MAXdO', 'MAXssO', 'MAXaaO', 'MAXsF', 'MAXsSiH3', 'MAXssSiH2', 'MAXsssSiH', 'MAXssssSi', 'MAXsPH2', 'MAXssPH', 'MAXsssP', 'MAXdsssP', 'MAXsssssP', 'MAXsSH', 'MAXdS', 'MAXssS', 'MAXaaS', 'MAXdssS', 'MAXddssS', 'MAXsCl', 'MAXsGeH3', 'MAXssGeH2', 'MAXsssGeH', 'MAXssssGe', 'MAXsAsH2', 'MAXssAsH', 'MAXsssAs', 'MAXsssdAs', 'MAXsssssAs', 'MAXsSeH', 'MAXdSe', 'MAXssSe', 'MAXaaSe', 'MAXdssSe', 'MAXddssSe', 'MAXsBr', 'MAXsSnH3', 'MAXssSnH2', 'MAXsssSnH', 'MAXssssSn', 'MAXsI', 'MAXsPbH3', 'MAXssPbH2', 'MAXsssPbH', 'MAXssssPb', 'MINsLi', 'MINssBe', 'MINssssBe', 'MINssBH', 'MINsssB', 'MINssssB', 'MINsCH3', 'MINdCH2', 'MINssCH2', 'MINtCH', 'MINdsCH', 'MINaaCH', 'MINsssCH', 'MINddC', 'MINtsC', 'MINdssC', 'MINaasC', 'MINaaaC', 'MINssssC', 'MINsNH3', 'MINsNH2', 'MINssNH2', 'MINdNH', 'MINssNH', 'MINaaNH', 'MINtN', 'MINsssNH', 'MINdsN', 'MINaaN', 'MINsssN', 'MINddsN', 'MINaasN', 'MINssssN', 'MINsOH', 'MINdO', 'MINssO', 'MINaaO', 'MINsF', 'MINsSiH3', 'MINssSiH2', 'MINsssSiH', 'MINssssSi', 'MINsPH2', 'MINssPH', 'MINsssP', 'MINdsssP', 'MINsssssP', 'MINsSH', 'MINdS', 'MINssS', 'MINaaS', 'MINdssS', 'MINddssS', 'MINsCl', 'MINsGeH3', 'MINssGeH2', 'MINsssGeH', 'MINssssGe', 'MINsAsH2', 'MINssAsH', 'MINsssAs', 'MINsssdAs', 'MINsssssAs', 'MINsSeH', 'MINdSe', 'MINssSe', 'MINaaSe', 'MINdssSe', 'MINddssSe', 'MINsBr', 'MINsSnH3', 'MINssSnH2', 'MINsssSnH', 'MINssssSn', 'MINsI', 'MINsPbH3', 'MINssPbH2', 'MINsssPbH', 'MINssssPb'] The limit is marked to the  15.0 %
+[+] fitting
+[+] transforming
+Size of the database, postimputation: (2695, 3561)
+      C-001  C-002  C-003  C-004  C-005  C-006  C-007  ...  SsI  SsPbH3  SssPbH2  SsssPbH  SssssPb    SLogP       SMR
+0       1.0    0.0    0.0    0.0    1.0    5.0    0.0  ...  0.0     0.0      0.0      0.0      0.0  1.54400   95.0413
+1       1.0    5.0    3.0    1.0    0.0    0.0    0.0  ...  0.0     0.0      0.0      0.0      0.0  2.58000   80.1204
+2       0.0    0.0    0.0    0.0    0.0    0.0    0.0  ...  0.0     0.0      0.0      0.0      0.0  2.38810   57.6250
+3       0.0    0.0    3.0    0.0    3.0    1.0    1.0  ...  0.0     0.0      0.0      0.0      0.0  2.40920  103.4048
+4       0.0    6.0    0.0    0.0    0.0    2.0    0.0  ...  0.0     0.0      0.0      0.0      0.0  3.76970  111.0352
+...     ...    ...    ...    ...    ...    ...    ...  ...  ...     ...      ...      ...      ...      ...       ...
+2690    1.0    3.0    0.0    0.0    1.0    4.0    0.0  ...  0.0     0.0      0.0      0.0      0.0  0.26698  154.4930
+2691    0.0    0.0    0.0    0.0    2.0    1.0    0.0  ...  0.0     0.0      0.0      0.0      0.0  3.19759   86.2890
+2692    1.0    0.0    1.0    0.0    1.0    2.0    0.0  ...  0.0     0.0      0.0      0.0      0.0 -1.65120   80.1105
+2693    0.0    0.0    0.0    0.0    0.0    0.0    0.0  ...  0.0     0.0      0.0      0.0      0.0  3.13320   81.0780
+2694    2.0    2.0    0.0    0.0    0.0    2.0    0.0  ...  0.0     0.0      0.0      0.0      0.0  2.19550   72.7421
+
+[2695 rows x 3561 columns]
+
+The following files have been created:
+
+../data/TK_Pgpsub/TK_Pgpsub-calculated_imputed_ytransformed.csv
+
+Do you want to perform any other step?(y/n):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 3
+
+Please select your type of model:
+[1] Regression
+[2] Classification
+Your choice (1/2)?: 2
+Please input your desired TEST SIZE (enter to: "0.25"):
+A file located in "../data/TK_Pgpsub/" folder is needed
+This file must be called: "TK_Pgpsub-initial_reduction.csv"
+Continue (Y/n)?
+Traceback (most recent call last):
+  File "F:\ProtoQSAR\GENERATE_MODELS_3_0\NEO\NEO.py", line 1439, in <module>
+    main()
+  File "F:\ProtoQSAR\GENERATE_MODELS_3_0\NEO\NEO.py", line 512, in main
+    back_to_main()
+  File "F:\ProtoQSAR\GENERATE_MODELS_3_0\NEO\NEO.py", line 170, in back_to_main
+    main()
+  File "F:\ProtoQSAR\GENERATE_MODELS_3_0\NEO\NEO.py", line 665, in main
+    initial_red = read_dataframe(INPUT_FILE)
+  File "F:\ProtoQSAR\GENERATE_MODELS_3_0\NEO\NEO.py", line 97, in read_dataframe
+    dataset = pd.read_csv(
+  File "C:\Users\proto\.conda\envs\Protocosas\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\proto\.conda\envs\Protocosas\lib\site-packages\pandas\io\parsers\readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\proto\.conda\envs\Protocosas\lib\site-packages\pandas\io\parsers\readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\proto\.conda\envs\Protocosas\lib\site-packages\pandas\io\parsers\readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "C:\Users\proto\.conda\envs\Protocosas\lib\site-packages\pandas\io\parsers\readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "C:\Users\proto\.conda\envs\Protocosas\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "C:\Users\proto\.conda\envs\Protocosas\lib\site-packages\pandas\io\parsers\base_parser.py", line 222, in _open_handles
+    self.handles = get_handle(
+  File "C:\Users\proto\.conda\envs\Protocosas\lib\site-packages\pandas\io\common.py", line 701, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/TK_Pgpsub/TK_Pgpsub-initial_reduction.csv'
+
+(Protocosas) F:\ProtoQSAR\GENERATE_MODELS_3_0\NEO>python NEO.py
+
+#########################################################################
+######################### WELCOME TO NEO script #########################
+#########################################################################
+This script will allow you to:
+        - eliminate 3D descriptors
+        - "y" transformation
+        - perform the initial unsupervised feature reduction
+        - perform the train/test split based on kmeans
+        - descriptor standarization
+        - select the relevant features based on:
+                 · Recursive feature elimination (RFE)
+                 · Feature importance (FI) based on Ligth gradient boosting machine (LGBM)
+                 · Permutation importance (PI)
+        - select your own features features
+
+Please input your PATH (enter to: "../data/TK_Pgpsub/"):
+Please input your MODEL NAME (enter to: TK_Pgpsub):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 2
+A file located in "../data/TK_Pgpsub/" folder is needed
+This file must be called: "TK_Pgpsub-calculated_imputed_ytransformed.csv"
+Continue (Y/n)?
+[1] Initial feature reduction: infinite, correlated, constant and empty values
+0 infinite values
+0 features with greater than 0.00 missing values.
+
+1490 features with a correlation magnitude greater than 0.90.
+
+981 features with a single unique value.
+
+Data has not been one-hot encoded
+Removed 2471 features including one-hot features.
+
+The following files have been created:
+
+../data/TK_Pgpsub/TK_Pgpsub-initial_reduction.csv
+
+Do you want to perform any other step?(y/n):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 3
+
+Please select your type of model:
+[1] Regression
+[2] Classification
+Your choice (1/2)?: 2
+Please input your desired TEST SIZE (enter to: "0.25"):
+A file located in "../data/TK_Pgpsub/" folder is needed
+This file must be called: "TK_Pgpsub-initial_reduction.csv"
+Continue (Y/n)?
+[+] Generation of train and test sets based in kmeans
+
+OPTIMAL NUMBER OF CLUSTERS:  5
+
+NUMBER OF CLUSTERS:  5
+        SETS:  {2649, 2, 3, 38}
+        ALERTS!!
+                compound number:  270
+                        SMILE:  CC1C2C(C=C3C4CCC5Cc6nc7c(nc6CC5(C)C4CC(O)C32CO)CC2CCC3C4=CC5OC6(OC(C)(CO)CC6O)C(C)C5(O)C4(C)C(O)CC3C2(C)C7)OC12CCC(C)(C)O2 0.0
+                compound number:  389
+                        SMILE:  CC1c2cc(c3c(c2O)CN(C(C)C2CCCCC2)CO3)C(C)c2cc(c3c(c2O)CN(C(C)C2CCCCC2)CO3)C(C)c2cc(c3c(c2O)CN(C(C)C2CCCCC2)CO3)C(C)c2cc1c1c(c2O)CN(C(C)C2CCCCC2)CO1 0.0
+                compound number:  411
+                        SMILE:  CC1C2CC=C3C4CCC5Cc6nc7c(nc6CC5(C)C4CC(=O)C32COC12OC(C)(C)CC2O)CC1CCC2C3=CC4OC5(OC(C)(CO)CC5O)C(C)C4(O)C3(C)C(O)CC2C1(C)C7 0.0
+                compound number:  878
+                        SMILE:  COC(=O)NC1C(C)OC(OC2C/C=C(\C)C3C=CC4C(OC5CC(OC6CCC(OC7CC(O)C(OC8CCC(O)C(C)O8)C(C)O7)C(C)O6)C(OC(C)=O)C(C)O5)C(C)CC(C)C4C3(C)C(=O)C3C(=O)OC4(CC(C=O)=CC(O)C4/C=C\2C)C3=O)CC1(C)[N+](=O)[O-] 1.0
+                compound number:  894
+                        SMILE:  C=C(NC(=O)C(=C)NC(=O)c1csc(C2=NC3c4csc(n4)C4NC(=O)c5csc(n5)C([C@](C)(O)C(C)O)NC(=O)C5CSC(=N5)/C(=C/C)NC(=O)C(C(C)O)NC(=O)c5csc(n5)[C@@]3(CC2)NC(=O)C(C)NC(=O)C(=C)NC(=O)C(C)NC(=O)C(C(C)CC)NC2C=Cc3c(C(C)O)cc(nc3C2O)C(=O)OC4C)n1)C(N)=O 1.0
+                compound number:  1567
+                        SMILE:  C=C(NC(=O)C(=C)NC(=O)c1csc(C2=NC3c4csc(n4)C4NC(=O)c5csc(n5)C(C(C)(O)C(C)O)NC(=O)C5CSC(=N5)/C(=C/C)NC(=O)C(C(C)O)NC(=O)c5csc(n5)C3(CC2)NC(=O)C(C)NC(=O)C(=C)NC(=O)C(=C)NC(=O)C(C(C)C)NC2C=Cc3c(C(C)O)cc(nc3C2O)C(=O)OC4C)n1)C(N)=O 1.0
+                compound number:  1927
+                        SMILE:  Cc1cc(O)c2c(c1)CC(O)C1=C2C(=O)c2c(O)ccc(OC3CC(O)C(OC4CC(OC5CCC(OC6CC(O)C(OC7CC(OC8CCC(O)C(C)O8)C(O)C(C)O7)C(C)O6)C(C)O5)C(O)C(C)O4)C(C)O3)c2C1=O 0.0
+                compound number:  2046
+                        SMILE:  C=C(NC(=O)C(=C)NC(=O)c1csc(C2=NC3c4csc(n4)C4NC(=O)c5csc(n5)C(C(C)(O)C(C)O)NC(=O)C5CSC(=N5)/C(=C/C)NC(=O)C(C(C)O)NC(=O)c5csc(n5)C3(CC2)NC(=O)C(C)NC(=O)C(=C)NC(=O)C(C)NC(=O)C(C(C)CC)NC2C=Cc3c(C(C)O)cc(nc3C2O)C(=O)OC4C)n1)C(N)=O 1.0
+[270, 389, 411, 878, 894, 1567, 1927, 2046]
+you have some molecular alerts. It means that these molecules are quite dissimilar
+You can (1) eliminate them or (2) maintain them
+What is your choice (1/2)?1
+Ok,eliminating
+(2695, 1093)
+(2687, 1093)
+
+NUMBER OF CLUSTERS:  5
+        SETS:  {199, 20, 54, 23, 2391}
+        ALERTS!!
+[]
+      index                                             SMILES    y  C-001  ...   SssssC  SddsN    SLogP  cluster
+0         0   CC1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23  1.0    1.0  ...  0.00000    0.0  1.54400        1
+1         1               C[C@]12CCC3c4ccc(O)cc4CCC3C1CC(O)C2O  1.0    1.0  ... -0.11607    0.0  2.58000        1
+2         2                  O=C1C(Cl)=C(Cl)C(=O)N1c1ccc(F)cc1  0.0    0.0  ...  0.00000    0.0  2.38810        1
+3         3  COc1cc(C2c3cc4c(cc3C(O)C3COC(=O)C23)OCO4)cc(OC...  0.0    0.0  ...  0.00000    0.0  2.40920        1
+4         4  O=C(O[C@H]1C[C@H]2CC[C@@H](C1)[N+]21CCCC1)C(O)...  1.0    0.0  ... -1.77885    0.0  3.76970        1
+...     ...                                                ...  ...    ...  ...      ...    ...      ...      ...
+2690   2690  COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)...  0.0    1.0  ... -2.28895    0.0  0.26698        3
+2691   2691                  CN(C)C(=S)/N=c1\ssc(=S)n1Cc1cccs1  0.0    0.0  ...  0.00000    0.0  3.19759        1
+2692   2692  COC12C(COC(N)=O)C3=C(C(=O)C(C)=C(N)C3=O)N1CC1NC12  1.0    1.0  ... -0.95734    0.0 -1.65120        1
+2693   2693              O=C1C=CC(=O)c2cc(Sc3ccccc3)c(=O)ccc21  0.0    0.0  ...  0.00000    0.0  3.13320        1
+2694   2694                 CCCN(CCC)S(=O)(=O)c1ccc(C(=O)O)cc1  0.0    2.0  ...  0.00000    0.0  2.19550        1
+
+[2687 rows x 1094 columns]
+0
+1
+2
+3
+4
+cluster0
+      index                                             SMILES    y  C-001  ...   SssssC  SddsN    SLogP  cluster
+50       50  CC1OC(=O)C(C(C)C)NC(=O)C(C(C)C)OC(=O)C(C(C)C)N...  1.0   21.0  ...  0.00000    0.0  2.34330        0
+100     100  CSC1SCC2C(=O)N(C)C(C(C)C)C(=O)OCC(NC(=O)c3cnc4...  1.0    6.0  ...  0.00000    0.0  0.63530        0
+129     129  CC1/C=C/C=C/C=C/C=C/C=C/CC/C=C/C(OC2OC(C)C(O)C...  1.0    5.0  ... -2.29907    0.0  2.21090        0
+242     242  COC(c1ccc(O)cc1)C1NC(=O)C(CCC(N)=O)N(C)C(=O)C(...  0.0   12.0  ...  0.00000    0.0 -5.02536        0
+259     259  COC1CC2CCC(C)[C@@](O)(O2)C(=O)C(=O)N2CCCCC2C(=...  1.0    8.0  ... -3.95641    0.0  5.72240        0
+325     325  CC(C)C[C@H](NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=...  1.0   15.0  ...  0.00000    0.0  3.12790        0
+605     605  CCC(C)SC1SCC2C(=O)N(C)C3(CC3C)C(=O)OCC(NC(=O)c...  1.0    6.0  ... -3.35986    0.0  1.93320        0
+811     811  CCC1NC(=O)C2CCCN2C(=O)C(Cc2ccccc2)NC(=O)C(CC(C...  1.0    7.0  ...  0.00000    0.0  0.98180        0
+1056   1056  CC(C)[C@@H]1NC(=O)[C@H](C(C)C)OC(=O)[C@H](C)OC...  1.0   21.0  ...  0.00000    0.0  2.34330        0
+1305   1305  CS[C@@H]1SC[C@@H]2C(=O)N(C)[C@H](C(C)C)C(=O)OC...  1.0    6.0  ...  0.00000    0.0  0.63530        0
+1362   1362  CC[C@@H](C)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](N)...  1.0   11.0  ...  0.00000    0.0  5.40530        0
+1363   1363  C/C=C/CC(C)C(=O)C1C(=O)NC(C(C)C)C(=O)N(C)CC(=O...  0.0   18.0  ...  0.00000    0.0  3.72320        0
+1700   1700  CC[C@@H](C)[C@@H]1OC(=O)[C@H](C(C)(C)O)N(C)C(=...  1.0   12.0  ... -1.97135    0.0  4.37180        0
+1762   1762  C/C=C/C(C)C(O)C1C(=O)NC(CC)C(=O)N(C)CC(=O)N(C)...  1.0   17.0  ...  0.00000    0.0  3.26900        0
+1769   1769  C/C=C/CC(C)C(O)C1C(=O)NC(CC)C(=O)N(C)CC(=O)N(C...  1.0   17.0  ...  0.00000    0.0  3.26900        0
+1878   1878  C/C=C/CC(C)C(O)C1C(=O)NC(C(C)O)C(=O)N(C)CC(=O)...  1.0   17.0  ...  0.00000    0.0  2.23980        0
+2073   2073  CC(C)C[C@@H]1NC(=O)[C@H](CCCN)NC(=O)[C@H](C(C)...  0.0    8.0  ...  0.00000    0.0  1.22780        0
+2133   2133  CC(C)CC(NC(=O)C(C)NC(=O)CNC(=O)C(NC=O)C(C)C)C(...  1.0   18.0  ...  0.00000    0.0  4.37230        0
+2308   2308  CC(C)CC1NC(=O)C(CCCN)NC(=O)C(C(C)C)NC(=O)C2CCC...  1.0    8.0  ...  0.00000    0.0  1.22780        0
+2496   2496  CC(C)CC(NC(=O)C(C)NC(=O)CNC(=O)C(NC=O)C(C)C)C(...  1.0   18.0  ...  0.00000    0.0  3.89100        0
+2508   2508  O=C(NCCCCCCNC(=O)n1cc(F)c(=O)[nH]c1=O)NCCCOCCO...  0.0    0.0  ...  0.00000    0.0 -5.40190        0
+2517   2517  CCCCCCCCCCCCCC(=O)N[C@H](CCCNC(=N)N)C(=O)N[C@H...  0.0    7.0  ...  0.00000    0.0 -3.12079        0
+2553   2553  C/C=C/C[C@@H](C)[C@@H](O)[C@H]1C(=O)N[C@H](CC)...  1.0   17.0  ...  0.00000    0.0  3.26900        0
+
+[23 rows x 1094 columns]
+      index                                             SMILES    y  C-001  ...   SssssC  SddsN    SLogP  cluster
+100     100  CSC1SCC2C(=O)N(C)C(C(C)C)C(=O)OCC(NC(=O)c3cnc4...  1.0    6.0  ...  0.00000    0.0  0.63530        0
+325     325  CC(C)C[C@H](NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=...  1.0   15.0  ...  0.00000    0.0  3.12790        0
+2133   2133  CC(C)CC(NC(=O)C(C)NC(=O)CNC(=O)C(NC=O)C(C)C)C(...  1.0   18.0  ...  0.00000    0.0  4.37230        0
+242     242  COC(c1ccc(O)cc1)C1NC(=O)C(CCC(N)=O)N(C)C(=O)C(...  0.0   12.0  ...  0.00000    0.0 -5.02536        0
+1700   1700  CC[C@@H](C)[C@@H]1OC(=O)[C@H](C(C)(C)O)N(C)C(=...  1.0   12.0  ... -1.97135    0.0  4.37180        0
+
+[5 rows x 1094 columns]
+cluster1
+      index                                             SMILES    y  C-001  ...   SssssC  SddsN    SLogP  cluster
+0         0   CC1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23  1.0    1.0  ...  0.00000    0.0  1.54400        1
+1         1               C[C@]12CCC3c4ccc(O)cc4CCC3C1CC(O)C2O  1.0    1.0  ... -0.11607    0.0  2.58000        1
+2         2                  O=C1C(Cl)=C(Cl)C(=O)N1c1ccc(F)cc1  0.0    0.0  ...  0.00000    0.0  2.38810        1
+3         3  COc1cc(C2c3cc4c(cc3C(O)C3COC(=O)C23)OCO4)cc(OC...  0.0    0.0  ...  0.00000    0.0  2.40920        1
+4         4  O=C(O[C@H]1C[C@H]2CC[C@@H](C1)[N+]21CCCC1)C(O)...  1.0    0.0  ... -1.77885    0.0  3.76970        1
+...     ...                                                ...  ...    ...  ...      ...    ...      ...      ...
+2689   2689         CCN1CCCC1CNC(=O)c1cc(S(=O)(=O)CC)c(N)cc1OC  1.0    2.0  ...  0.00000    0.0  1.28510        1
+2691   2691                  CN(C)C(=S)/N=c1\ssc(=S)n1Cc1cccs1  0.0    0.0  ...  0.00000    0.0  3.19759        1
+2692   2692  COC12C(COC(N)=O)C3=C(C(=O)C(C)=C(N)C3=O)N1CC1NC12  1.0    1.0  ... -0.95734    0.0 -1.65120        1
+2693   2693              O=C1C=CC(=O)c2cc(Sc3ccccc3)c(=O)ccc21  0.0    0.0  ...  0.00000    0.0  3.13320        1
+2694   2694                 CCCN(CCC)S(=O)(=O)c1ccc(C(=O)O)cc1  0.0    2.0  ...  0.00000    0.0  2.19550        1
+
+[2391 rows x 1094 columns]
+      index                                             SMILES    y  C-001  ...    SssssC  SddsN    SLogP  cluster
+1360   1360              Cc1cc2nc(CC(C(F)(F)F)C(F)(F)F)oc2cc1C  0.0    2.0  ... -10.79616    0.0  4.72794        1
+1670   1670  C[C@]12CC[C@H](O)CC1=CC[C@H]1[C@@H]2CC[C@]2(C)...  1.0    2.0  ...   0.28389    0.0  3.87920        1
+175     175                   COc1cc(CNc2ccc(SC)cc2)cc(OC)c1OC  0.0    0.0  ...   0.00000    0.0  4.04640        1
+565     565            COc1cc(OC(=O)c2ccccc2)cc2c1C(=O)C=CC2=O  0.0    0.0  ...   0.00000    0.0  2.84960        1
+52       52              CN(C)c1ccc(/C=C/C=C(\C#N)c2ccccc2)cc1  0.0    0.0  ...   0.00000    0.0  4.37298        1
+
+[5 rows x 1094 columns]
+cluster2
+      index                                             SMILES    y  C-001  ...   SssssC    SddsN    SLogP  cluster
+174     174  COC1(CCC(C)COC2OC(CO)C(O)C(O)C2O)OC2CC3C4CC=C5...  0.0    6.0  ... -0.88613  0.00000 -1.32560        2
+508     508  COC1(CCC(C)COC2OC(CO)C(O)C(O)C2O)OC2CC3C4CC=C5...  0.0    5.0  ... -0.94824  0.00000 -2.35320        2
+667     667  Cc1c2oc3c(C)ccc(C(=O)N[C@@H]4C(=O)N[C@@H](C(C)...  1.0   12.0  ...  0.00000  0.00000  0.72564        2
+810     810  CCC(C)C1NC(=O)C(NC(=O)c2c3nc4c(C(=O)NC5C(=O)NC...  1.0   12.0  ...  0.00000  0.00000  1.62924        2
+861     861  C=C1C[C@@H]2CC[C@@]34C[C@H]5O[C@H]6[C@@H](O3)[...  1.0    1.0  ... -0.77995  0.00000  3.43800        2
+1121   1121  CO[C@@H]1[C@H](O)C[C@@H](O[C@@H]2C[C@H](Oc3cc(...  1.0    9.0  ...  0.00000  0.00000  2.13810        2
+1142   1142  COC(C(=O)C(O)C(C)O)C1Cc2cc3cc(OC4CC(OC5CC(O)C(...  1.0   10.0  ... -1.54942  0.00000  1.54642        2
+1241   1241  COC(C(=O)C(O)C(C)O)C1Cc2cc3cc(OC4CC(OC(C)=O)C(...  1.0   10.0  ... -1.56324  0.00000  1.87410        2
+1565   1565  COC(C(=O)C(O)C(C)O)C1Cc2cc3cc(OC4CC(OC5CC(O)C(...  1.0   10.0  ... -1.54942  0.00000  1.54642        2
+1723   1723  Cc1c2oc3c(C)ccc(C(=O)NC4C(=O)NC(C(C)C)C(=O)N5C...  1.0   12.0  ...  0.00000  0.00000  0.72564        2
+1886   1886  CC1CCC2(OC1)OC1CC3C4CCC5CC(OC6OC(CO)C(OC7OC(CO...  0.0    5.0  ... -0.31020  0.00000 -2.77940        2
+1987   1987  COC(C(=O)C(O)C(C)O)C1Cc2cc3cc(OC4CC(OC(C)=O)C(...  1.0   10.0  ... -1.56324  0.00000  1.87410        2
+2028   2028  Cc1ccc(C(=O)N[C@H]2C(=O)N[C@@H](C(C)C)C(=O)N3C...  1.0   12.0  ...  0.00000  0.00000  3.55494        2
+2039   2039  CCC12C=CCN3CCC4(c5cc(C6(C(=O)OC)CC7CN(CCc8c6[n...  1.0    2.0  ... -5.36485  0.00000  4.87600        2
+2144   2144  COC(=O)NC1C(C)OC(OC2C/C=C(\C)C3C=CC4C(OC5CC(OC...  1.0   11.0  ... -5.00956 -0.45838  4.94610        2
+2148   2148  CONC1=C2C(=O)N(C)CC(=O)N(C)C(C)C(=O)OC(CO)C(NC...  1.0   12.0  ...  0.00000  0.00000 -1.58636        2
+2157   2157  CC[C@]12C=CCN3CC[C@@]4(c5cc(C6(C(=O)OC)CC7CN(C...  1.0    2.0  ... -5.36485  0.00000  4.87600        2
+2246   2246  COc1c2c(c(O)c3c4c(ccc13)[C@H]1O[C@]3([C@H](OC)...  1.0    7.0  ... -9.85944  0.00000  1.55410        2
+2389   2389  CO[C@@H]1[C@H](O)C[C@@H](O[C@@H]2C[C@H](Oc3cc4...  1.0   10.0  ... -1.54942  0.00000  1.54642        2
+2684   2684  COC(C(=O)C(O)C(C)O)C1Cc2cc3cc(OC4CC(OC5CC(O)C(...  1.0   10.0  ... -1.56347  0.00000  1.87410        2
+
+[20 rows x 1094 columns]
+      index                                             SMILES    y  C-001  ...   SssssC    SddsN    SLogP  cluster
+2144   2144  COC(=O)NC1C(C)OC(OC2C/C=C(\C)C3C=CC4C(OC5CC(OC...  1.0   11.0  ... -5.00956 -0.45838  4.94610        2
+667     667  Cc1c2oc3c(C)ccc(C(=O)N[C@@H]4C(=O)N[C@@H](C(C)...  1.0   12.0  ...  0.00000  0.00000  0.72564        2
+2028   2028  Cc1ccc(C(=O)N[C@H]2C(=O)N[C@@H](C(C)C)C(=O)N3C...  1.0   12.0  ...  0.00000  0.00000  3.55494        2
+1121   1121  CO[C@@H]1[C@H](O)C[C@@H](O[C@@H]2C[C@H](Oc3cc(...  1.0    9.0  ...  0.00000  0.00000  2.13810        2
+2684   2684  COC(C(=O)C(O)C(C)O)C1Cc2cc3cc(OC4CC(OC5CC(O)C(...  1.0   10.0  ... -1.56347  0.00000  1.87410        2
+
+[5 rows x 1094 columns]
+cluster3
+      index                                             SMILES    y  C-001  ...   SssssC   SddsN    SLogP  cluster
+9         9  CO[C@H]1/C=C/O[C@]2(C)Oc3c(C)c(O)c4c(O)c(c(/C=...  1.0    8.0  ... -2.04257  0.0000  4.33542        3
+53       53  CC(=O)NC1COC(COC(=O)CCCCCCCCCCNC(=O)c2ccc([N+]...  0.0    4.0  ...  0.00000 -0.6357  4.04600        3
+91       91  CCC1NC(=O)C(NC(=O)c2ncccc2O)C(C)OC(=O)C(c2cccc...  1.0    2.0  ...  0.00000  0.0000  1.27000        3
+92       92  CC1(C)CCC(c2ccc(Cl)cc2)=C(CN2CCN(c3ccc(C(=O)NS...  1.0    2.0  ... -5.52179  0.0000  8.83320        3
+98       98  CCC(=O)O[C@H]1C(=O)[C@]2(C)[C@H]([C@H](OC(=O)c...  1.0   11.0  ... -9.06300  0.0000  3.96700        3
+...     ...                                                ...  ...    ...  ...      ...     ...      ...      ...
+2649   2649  COc1cc2c(cc1Oc1c(Oc3c(O)c(OC)cc4c3C(CC(C)C)N(C...  1.0    6.0  ...  0.00000  0.0000  9.72790        3
+2659   2659  CC(=O)O[C@@]12COC1CC(O)[C@@]1(C)C(=O)C(O)C3=C(...  1.0    8.0  ... -8.64370  0.0000  3.25960        3
+2674   2674  CC(=O)OC1C(O)C(C)OC(OC2C(OC(=O)C3CCC4C(C3)O[C@...  1.0    5.0  ... -1.95195  0.0000  1.31250        3
+2677   2677  CC(C)C[C@H]1NC(=O)[C@H](Cc2ccccc2)NC(=O)CNC(=O...  1.0    3.0  ...  0.00000  0.0000  1.90530        3
+2690   2690  COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)...  0.0    1.0  ... -2.28895  0.0000  0.26698        3
+
+[199 rows x 1094 columns]
+      index                                             SMILES    y  C-001  ...   SssssC  SddsN    SLogP  cluster
+1281   1281  COC(=O)C1C(O)C(C)C(O)OC1C(C)C(O)C(C)/C=C/C=C(\...  0.0    9.0  ...  0.00000    0.0  3.92442        3
+2289   2289  CC(=O)OC1C(=O)C2(C)C(O)CC3OCC3(OC(C)=O)C2C(OC(...  1.0    8.0  ... -7.82174    0.0  3.46800        3
+2607   2607  CCC(C)n1ncn(-c2ccc(N3CCN(c4ccc(OCC5COC(Cn6cncn...  1.0    2.0  ... -1.15850    0.0  5.57730        3
+485     485  CCC/C=C/C=C/C(=O)OC1/C(=C/C(=O)OC)CC2CC(C(C)O)...  0.0    7.0  ... -7.28468    0.0  4.27990        3
+2274   2274  C/C=C/C(=O)O[C@H]1C(=O)[C@]2(C)[C@H]([C@H](OC(...  1.0   11.0  ... -9.15381    0.0  4.13310        3
+
+[5 rows x 1094 columns]
+cluster4
+      index                                             SMILES    y  C-001  ...   SssssC    SddsN     SLogP  cluster
+25       25  COC1C(O)C(C)OC(OC2C(Oc3cccc4c(O)c5c(=O)oc6ccc(...  0.0    3.0  ...  0.00000  0.00000   4.13082        4
+44       44  CCC(C)C1O[C@]2(C=CC1C)CC1CC(C/C=C(\C)C(OC3CC(O...  1.0    9.0  ... -2.96588  0.00000   5.52120        4
+118     118  COc1ccc2cc1Oc1ccc(cc1)CC1c3cc(c(OC)cc3CCN1C)Oc...  0.0    0.0  ...  0.00000  0.00000   7.16240        4
+200     200  CC1OC(OC2C(O)CC(OC3C(O)CC(OC4CCC5(C)C(CCC6C5CC...  1.0    5.0  ... -0.85196  0.00000   3.24730        4
+210     210  COC1C(O)CC(OC2C(O)CC(OC3C(O)CC(OC4CC[C@@]5(C)C...  1.0    5.0  ... -1.78490  0.00000   2.87220        4
+268     268  CC[C@]1(O)CC2CN(CCc3c([nH]c4ccccc34)[C@@](C(=O...  1.0    3.0  ... -7.25283  0.00000   3.51750        4
+323     323  CCC1(O)CC(OC2CC(N(C)C)C(OC3CC4OC5CC(=O)C(C)OC5...  0.0    4.0  ... -1.80016  0.00000   2.87970        4
+366     366  CC1OC(OC2C(O)CC(OC3C(O)CC(OC4CCC5(C)C(CCC6C5CC...  1.0    5.0  ... -1.79601  0.00000   2.21810        4
+386     386  O=C(CNc1ccc2c(=S)c3ccccc3[nH]c2c1)Nc1ccccc1-c1...  0.0    0.0  ...  0.00000  0.00000  10.18278        4
+501     501  COC(=O)C1c2cc3c(c(O)c2C(OC2OC(C)C(OC)C(C)(OC)C...  1.0    4.0  ... -4.65617  0.00000   1.13800        4
+520     520  CCC1=CC2CN(C1)Cc1c([nH]c3ccccc13)[C@@](C(=O)OC...  1.0    3.0  ... -5.43626  0.00000   4.75360        4
+581     581  CC[C@@]1(O)C[C@H]2CN(CCc3c([nH]c4ccccc34)[C@](...  1.0    3.0  ... -6.54571  0.00000   3.99090        4
+582     582  COC1C(N(C)C(=O)c2ccccc2)CC2O[C@]1(C)n1c3ccccc3...  1.0    1.0  ... -0.97991  0.00000   5.90680        4
+589     589  CC[C@]1(O)CC2CN(CCc3c([nH]c4ccccc34)[C@@](C(=O...  1.0    2.0  ... -6.44653  0.00000   2.73240        4
+685     685  CC(=O)OC1C(O)CC(OC2C(O)CC(OC3C(O)CC(OC4CCC5(C)...  1.0    6.0  ... -1.81647  0.00000   2.78890        4
+700     700  O=[N+]([O-])c1ccc2c(Nc3ccccc3-c3ccccc3Nc3c4ccc...  0.0    0.0  ...  0.00000 -0.83512  10.06000        4
+711     711  CCC1(O)CC2CN(CCc3c([nH]c4ccccc34)C(C(=O)OC)(c3...  1.0    3.0  ... -6.54571  0.00000   3.99090        4
+852     852  COC(C(=O)C(O)C(C)O)C1Cc2cc3cc(OC4CC(OC5CC(O)C(...  1.0    8.0  ... -1.53799  0.00000  -0.24928        4
+875     875  Nc1ccc2c(SCC(=O)Nc3ccccc3-c3ccccc3NC(=O)CSc3c4...  0.0    0.0  ...  0.00000  0.00000   9.38240        4
+897     897  CC[C@]1(O)CC2CN(CCc3c([nH]c4ccccc34)[C@@](C(=O...  1.0    3.0  ... -6.54571  0.00000   3.99090        4
+1075   1075  CO[C@H]1C[C@H](O[C@H]2[C@H](C)O[C@@H](O[C@@H]3...  1.0    9.0  ... -2.96397  0.00000   5.13110        4
+1139   1139  OCCO[P+]1(OCCO)n2c3ccc2/C(c2ccccc2)=C2/C=CC(=N...  1.0    0.0  ...  0.00000  0.00000   7.34700        4
+1147   1147  C[C@H]1O[C@@H](O[C@H]2[C@@H](O)C[C@H](O[C@H]3[...  1.0    5.0  ... -1.79601  0.00000   2.21810        4
+1350   1350  CC1OC(OC2C(O)CC(OC3C(O)CC(OC4CC[C@@]5(C)C(CCC6...  1.0    5.0  ... -1.79601  0.00000   2.21810        4
+1388   1388  CC1OC(OC2C(O)CC(OC3C(O)CC(OC4CC[C@@]5(C)C(CCC6...  1.0    5.0  ... -0.85196  0.00000   3.24730        4
+1426   1426  CC[C@@]1(O)C[C@H]2CN(CCc3c([nH]c4ccccc34)[C@](...  1.0    2.0  ... -6.44653  0.00000   2.73240        4
+1437   1437  CC12CC[C@](C)(C(=O)O)C[C@H]1C1=CC(=O)[C@@H]3[C...  0.0    7.0  ... -2.91499  0.00000   2.24560        4
+1445   1445  CCC1=CC2CN(C1)Cc1c([nH]c3ccccc13)C(C(=O)OC)(c1...  1.0    3.0  ... -5.43626  0.00000   4.75360        4
+1515   1515  COC(=O)C1c2cc3c(c(O)c2C(OC2OC(C)C(OC)[C@@](C)(...  1.0    4.0  ... -4.65617  0.00000   1.13800        4
+1561   1561  COC(=O)[C@@H]1c2cc3c(c(O)c2[C@@H](O[C@@H]2O[C@...  1.0    4.0  ... -4.65617  0.00000   1.13800        4
+1566   1566  Cc1cc2c(C(C)C)c(O)c(O)c(/C=N/CC3CCCN4CCCCC34)c...  0.0    6.0  ...  0.00000  0.00000  10.71284        4
+1592   1592  COc1ccc2cc1Oc1ccc(cc1)CC1c3cc(c(OC)cc3CCN1C)Oc...  0.0    0.0  ...  0.00000  0.00000   6.85940        4
+1600   1600  COC1(C)C(N(C)C(=O)c2ccccc2)C2OC1(C)n1c3ccccc3c...  1.0    2.0  ... -2.00492  0.00000   5.90680        4
+1716   1716  COc1ccc2nc3cc(Cl)ccc3c(Nc3ccccc3-c3ccccc3Nc3c4...  0.0    0.0  ...  0.00000  0.00000  11.56760        4
+1781   1781  CO[C@H](C(=O)[C@@H](O)[C@@H](C)O)[C@@H]1Cc2cc3...  1.0    8.0  ... -1.53799  0.00000  -0.24928        4
+1829   1829  COC(C(=O)C(O)C(C)O)C1Cc2cc3cc(OC4CC(OC5CC(O)C(...  1.0    8.0  ... -1.53799  0.00000  -0.24928        4
+1852   1852  COc1ccc2cc1Oc1ccc(cc1)CC1c3c(cc4c(c3Oc3cc5c(cc...  1.0    0.0  ...  0.00000  0.00000   6.87390        4
+1864   1864  CC(=O)OC1C(O)CC(OC2C(O)CC(OC3C(O)CC(OC4CC[C@@]...  1.0    6.0  ... -1.81647  0.00000   2.78890        4
+1926   1926  COc1ccc2[nH]c3c(C)c4ccnc(NCCCN(C)CCCNC(=O)NCCC...  1.0    4.0  ...  0.00000  0.00000   9.55008        4
+1951   1951  COC1CC(OC2C(C)OC(OC3/C(C)=C/CC4CC(C[C@]5(C=CC(...  1.0    6.0  ... -2.92645  0.00000   5.91160        4
+2109   2109  COC1CC(OC2C(O)CC(OC3C(O)CC(OC4CC[C@@]5(C)C(CCC...  1.0    5.0  ... -1.78379  0.00000   2.87220        4
+2113   2113  COc1cc2c(cc1Oc1ccc(OC)c3c1CC1c4c(cc(OC)c(OC)c4...  0.0    0.0  ...  0.00000  0.00000   7.03470        4
+2295   2295  COc1cc2c(c(OC)c1OC)-c1ccc(OC)c(=O)cc1C(NC(=S)N...  1.0    0.0  ... -1.39670  0.00000   6.70130        4
+2332   2332  COC1CC(OC2C(O)CC(OC3C(O)CC(OC4CCC5(C)C(CCC6C5C...  1.0    5.0  ... -1.78379  0.00000   2.87220        4
+2388   2388  COc1ccc2[nH]c3c(C)c4ccnc(NCCCN(C)CCCNc5ccc6ncn...  0.0    2.0  ...  0.00000  0.00000   7.48284        4
+2424   2424  CCC1=C[C@@H]2CN(C1)Cc1c([nH]c3ccccc13)[C@](C(=...  1.0    3.0  ... -5.43626  0.00000   4.75360        4
+2447   2447  COc1cc2c(cc1O)CCN[C@@]21CS[C@H]2c3c(OC(C)=O)c(...  1.0    3.0  ... -1.35779  0.00000   3.41324        4
+2457   2457  CCC1(O)CC2CN(CCc3c([nH]c4ccccc34)C(C(=O)OC)(c3...  1.0    2.0  ... -6.44653  0.00000   2.73240        4
+2490   2490  COC1C(C)OC(OC2CC(C)(O)Cc3cc4c(c(O)c32)C(=O)c2c...  1.0    4.0  ... -3.95937  0.00000   1.42390        4
+2527   2527  COC1C(C)OC(OC2C[C@@](C)(O)Cc3cc4c(c(O)c32)C(=O...  1.0    4.0  ... -3.95937  0.00000   1.42390        4
+2565   2565  CC[C@@]1(O)C[C@H]2CN(CCc3c([nH]c4ccccc34)[C@](...  1.0    3.0  ... -7.25283  0.00000   3.51750        4
+2586   2586  C[C@H]1O[C@@H](O[C@H]2[C@@H](O)C[C@H](O[C@H]3[...  1.0    5.0  ... -0.85196  0.00000   3.24730        4
+2666   2666  COc1ccc2[nH]cc(C3C4CCC(C4)C3NCc3cccc(CNC4C5CCC...  0.0    0.0  ...  0.00000  0.00000   8.01020        4
+2688   2688  O=C1c2ccccc2C(=O)c2c1nc1ccccc1c2-c1cncc(-c2c3c...  0.0    0.0  ...  0.00000  0.00000   7.06280        4
+
+[54 rows x 1094 columns]
+      index                                             SMILES    y  C-001  ...   SssssC  SddsN     SLogP  cluster
+25       25  COC1C(O)C(C)OC(OC2C(Oc3cccc4c(O)c5c(=O)oc6ccc(...  0.0    3.0  ...  0.00000    0.0   4.13082        4
+1716   1716  COc1ccc2nc3cc(Cl)ccc3c(Nc3ccccc3-c3ccccc3Nc3c4...  0.0    0.0  ...  0.00000    0.0  11.56760        4
+2527   2527  COC1C(C)OC(OC2C[C@@](C)(O)Cc3cc4c(c(O)c32)C(=O...  1.0    4.0  ... -3.95937    0.0   1.42390        4
+1852   1852  COc1ccc2cc1Oc1ccc(cc1)CC1c3c(cc4c(c3Oc3cc5c(cc...  1.0    0.0  ...  0.00000    0.0   6.87390        4
+581     581  CC[C@@]1(O)C[C@H]2CN(CCc3c([nH]c4ccccc34)[C@](...  1.0    3.0  ... -6.54571    0.0   3.99090        4
+
+[5 rows x 1094 columns]
+      index                                             SMILES    y  C-001  ...   SssssC  SddsN    SLogP  cluster
+100     100  CSC1SCC2C(=O)N(C)C(C(C)C)C(=O)OCC(NC(=O)c3cnc4...  1.0    6.0  ...  0.00000    0.0  0.63530        0
+325     325  CC(C)C[C@H](NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=...  1.0   15.0  ...  0.00000    0.0  3.12790        0
+2133   2133  CC(C)CC(NC(=O)C(C)NC(=O)CNC(=O)C(NC=O)C(C)C)C(...  1.0   18.0  ...  0.00000    0.0  4.37230        0
+242     242  COC(c1ccc(O)cc1)C1NC(=O)C(CCC(N)=O)N(C)C(=O)C(...  0.0   12.0  ...  0.00000    0.0 -5.02536        0
+1700   1700  CC[C@@H](C)[C@@H]1OC(=O)[C@H](C(C)(C)O)N(C)C(=...  1.0   12.0  ... -1.97135    0.0  4.37180        0
+
+[5 rows x 1094 columns]
+Train set contains:
+        1263 negative values
+        751 positive values
+        ratio neg / pos: 1.6817576564580559
+Test set contains:
+        422 negative values
+        251 positive values
+        ratio neg / pos: 1.6812749003984064
+If you find this imbalanced, try to decomment line 44 of split_by_kmeans.py module. It can give an error!
+
+The following files have been created:
+
+../data/TK_Pgpsub/TK_Pgpsub-cleaned_from_kmeans.csv
+../data/TK_Pgpsub/TK_Pgpsub-train_set.csv
+../data/TK_Pgpsub/TK_Pgpsub-test_set.csv
+
+Do you want to perform any other step?(y/n):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 4
+[+] Descriptor standarization
+
+Please select the method to standarize the descriptors:
+[1] StandardScaler
+[2] MinMaxScaler
+Your choice (1/2)?: 1
+Two files located in "../data/TK_Pgpsub/" folder are needed
+These files must be called:
+        "TK_Pgpsub-train_set.csv"
+        "TK_Pgpsub-test_set.csv"
+Continue (Y/n)?
+
+The following files have been created:
+
+../data/TK_Pgpsub/TK_Pgpsub-stand_train_set.csv
+../data/TK_Pgpsub/TK_Pgpsub-stand_test_set.csv
+../data/TK_Pgpsub/TK_Pgpsub-alldataset.sca
+
+Do you want to perform any other step?(y/n):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 6
+[+] Reduction by FI based on lgbm
+Two files located in "../data/TK_Pgpsub/" folder are needed
+These files must be called:
+        "TK_Pgpsub-stand_train_set.csv"
+        "TK_Pgpsub-stand_test_set.csv"
+Continue (Y/n)?
+
+Please define if your model is for [1] classification or [2] regression:1
+
+Please define your parameters for lgbm selection for classification parameters:
+eval_metric (l2/auc/binary_logloss):l2
+Training Gradient Boosting Model
+
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[79]    valid_0's l2: 0.144334  valid_0's binary_logloss: 0.453557
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[83]    valid_0's l2: 0.138073  valid_0's binary_logloss: 0.43912
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[99]    valid_0's l2: 0.133174  valid_0's binary_logloss: 0.422718
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[90]    valid_0's l2: 0.126214  valid_0's binary_logloss: 0.413126
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[83]    valid_0's l2: 0.140239  valid_0's binary_logloss: 0.435945
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[105]   valid_0's l2: 0.122887  valid_0's binary_logloss: 0.391643
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[70]    valid_0's l2: 0.156978  valid_0's binary_logloss: 0.483729
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[114]   valid_0's l2: 0.104106  valid_0's binary_logloss: 0.355836
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[60]    valid_0's l2: 0.153422  valid_0's binary_logloss: 0.471738
+Training until validation scores don't improve for 100 rounds
+Early stopping, best iteration is:
+[65]    valid_0's l2: 0.137487  valid_0's binary_logloss: 0.43311
+
+486 features with zero importance after one-hot encoding.
+
+Please, close the plots to continue...
+346 features required for 0.90 of cumulative importance
+Please, close the plots to continue...
+345 features required for cumulative importance of 0.90 after one hot encoding.
+745 features do not contribute to cumulative importance of 0.90.
+
+          feature  importance  normalized_importance  cumulative_importance
+0           MAXDP        28.1               0.011046               0.011046
+1          GATS1Z        23.4               0.009198               0.020244
+2     VSA_EState1        22.9               0.009002               0.029245
+3           N-079        19.8               0.007783               0.037028
+4             IC2        19.4               0.007626               0.044654
+...           ...         ...                    ...                    ...
+758     B10[S-Cl]         0.0               0.000000               1.000000
+757     B10[S-Br]         0.0               0.000000               1.000000
+756      B10[F-F]         0.0               0.000000               1.000000
+754   nImidazoles         0.0               0.000000               1.000000
+1089     B04[O-F]         0.0               0.000000               1.000000
+
+[1090 rows x 4 columns]
+
+The following files have been created:
+
+../data/TK_Pgpsub/TK_Pgpsub-train_featured_importances.csv
+
+Now you can select a number of features.
+Please, indicate the number of selected features: 20
+
+Selected features:
+ ['MAXDP', 'GATS1Z', 'VSA_EState1', 'N-079', 'IC2', 'EState_VSA8', 'H-052', 'SLogP_VSA2', 'H-047', 'AATSC5se', 'AATS4s', 'ATSC6i', 'F07[C-F]', 'GATS1se', 'JGI4', 'AATS0i', 'VSA_EState4', 'GATS6s', 'SMR_VSA4', 'JGI10']
+Size of the database, preimputation: (2014, 20)
+[+] fitting
+[+] transforming
+Size of the database, postimputation: (2014, 20)
+
+The following files have been created:
+
+../data/TK_Pgpsub/TK_Pgpsub-train_reduction_GBM.csv
+../data/TK_Pgpsub/TK_Pgpsub-test_reduction_GBM.csv
+../data/TK_Pgpsub/TK_Pgpsub-train_set.sca
+train_set (2014, 22)
+test_set (673, 22)
+
+
+Do you agree with that number of features?(y/n): n
+Please, indicate the number of selected features: 15
+
+Selected features:
+ ['MAXDP', 'GATS1Z', 'VSA_EState1', 'N-079', 'IC2', 'EState_VSA8', 'H-052', 'SLogP_VSA2', 'H-047', 'AATSC5se', 'AATS4s', 'ATSC6i', 'F07[C-F]', 'GATS1se', 'JGI4']
+Size of the database, preimputation: (2014, 15)
+[+] fitting
+[+] transforming
+Size of the database, postimputation: (2014, 15)
+
+The following files have been created:
+
+../data/TK_Pgpsub/TK_Pgpsub-train_reduction_GBM.csv
+../data/TK_Pgpsub/TK_Pgpsub-test_reduction_GBM.csv
+../data/TK_Pgpsub/TK_Pgpsub-train_set.sca
+train_set (2014, 17)
+test_set (673, 17)
+
+
+Do you agree with that number of features?(y/n): n
+Please, indicate the number of selected features: 12
+
+Selected features:
+ ['MAXDP', 'GATS1Z', 'VSA_EState1', 'N-079', 'IC2', 'EState_VSA8', 'H-052', 'SLogP_VSA2', 'H-047', 'AATSC5se', 'AATS4s', 'ATSC6i']
+Size of the database, preimputation: (2014, 12)
+[+] fitting
+[+] transforming
+Size of the database, postimputation: (2014, 12)
+
+The following files have been created:
+
+../data/TK_Pgpsub/TK_Pgpsub-train_reduction_GBM.csv
+../data/TK_Pgpsub/TK_Pgpsub-test_reduction_GBM.csv
+../data/TK_Pgpsub/TK_Pgpsub-train_set.sca
+train_set (2014, 14)
+test_set (673, 14)
+
+
+Do you agree with that number of features?(y/n): n
+Please, indicate the number of selected features: 15
+
+Selected features:
+ ['MAXDP', 'GATS1Z', 'VSA_EState1', 'N-079', 'IC2', 'EState_VSA8', 'H-052', 'SLogP_VSA2', 'H-047', 'AATSC5se', 'AATS4s', 'ATSC6i', 'F07[C-F]', 'GATS1se', 'JGI4']
+Size of the database, preimputation: (2014, 15)
+[+] fitting
+[+] transforming
+Size of the database, postimputation: (2014, 15)
+
+The following files have been created:
+
+../data/TK_Pgpsub/TK_Pgpsub-train_reduction_GBM.csv
+../data/TK_Pgpsub/TK_Pgpsub-test_reduction_GBM.csv
+../data/TK_Pgpsub/TK_Pgpsub-train_set.sca
+train_set (2014, 17)
+test_set (673, 17)
+
+
+Do you agree with that number of features?(y/n):

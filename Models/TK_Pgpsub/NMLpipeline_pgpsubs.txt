@@ -1,0 +1,158 @@
+
+(Protocosas) F:\ProtoQSAR\GENERATE_MODELS_3_0\ML_pipeline>python ML_pipeline.py
+
+#########################################################################
+##################### WELCOME TO ML_pipeline script #####################
+#########################################################################
+This script will allow you to:
+        - generate ML models for regression or classification
+
+Please input your PATH (enter to: "../data/TK_Pgpsub/"):
+Please input your MODEL NAME (enter to: TK_Pgpsub):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+        [1] Perform a MODEL for Regression
+        [2] Perform a MODEL for Classification
+        [3] Exit
+
+Your choice: 2
+
+Please select the method used for DESCRIPTOR SELECTION:
+        [1] RFE
+        [2] GBM
+        [3] PI
+        [4] OWN
+
+
+Your choice: 2
+You want to perform a Classification model, by using descriptors selected by GBM.
+
+Is that correct?(Y/n):
+The following files located in "../data/TK_Pgpsub/" folder are needed:
+TK_Pgpsub-train_reduction_GBM.csv
+TK_Pgpsub-test_reduction_GBM.csv
+Continue (Y/n)?
+
+PARAMETERS:
+        train molecules: 2014
+        test molecules: 673
+        total molecules: 2687
+
+DESCRIPTORS: ( 15 )
+['MAXDP', 'GATS1Z', 'VSA_EState1', 'N-079', 'IC2', 'EState_VSA8', 'H-052', 'SLogP_VSA2', 'H-047', 'AATSC5se', 'AATS4s', 'ATSC6i', 'F07[C-F]', 'GATS1se', 'JGI4']
+        mols/descriptor ratio: 134.26666666666668
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+
+[+] Training the model...
+
+Best parameters for RandomForestClassifier:
+{'class_weight': {0: 1, 1: 1.5}, 'max_depth': 8, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_jobs': -1, 'random_state': 9}
+
+Grid test score: 0.7864906238040567
+------------------------------
+
+Best model and parameters:
+RandomForestClassifier(class_weight={0: 1, 1: 1.5}, max_depth=8,
+                       min_samples_leaf=2, n_jobs=-1, random_state=9)
+
+Best model and parameters:
+{'class_weight': {0: 1, 1: 1.5}, 'max_depth': 8, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_jobs': -1, 'random_state': 9}
+
+GridSearch parameters:
+GridSearchCV(cv=5, estimator=RandomForestClassifier(), n_jobs=-1,
+             param_grid={'class_weight': [{0: 1, 1: 1.5}], 'max_depth': [8],
+                         'min_samples_leaf': [2], 'min_samples_split': [2],
+                         'n_jobs': [-1], 'random_state': [9]},
+             return_train_score=True, scoring='f1_micro')
+-------------------------------
+
+ A JSON file with the descriptors has been saved as ../data/TK_Pgpsub/TK_Pgpsub.json
+
+######################################################
+################### Model results ####################
+######################################################
+
+############### Training set results ###############
+
+               precision    recall  f1-score   support
+
+         0.0       0.91      0.93      0.92      1263
+         1.0       0.88      0.85      0.86       751
+
+    accuracy                           0.90      2014
+   macro avg       0.90      0.89      0.89      2014
+weighted avg       0.90      0.90      0.90      2014
+
+Confussion matrix:
+
+    OBS\PRED           0           1
+           0        1175          88
+           1         113         638
+
+############### Test set results ###############
+
+               precision    recall  f1-score   support
+
+         0.0       0.82      0.85      0.83       422
+         1.0       0.73      0.69      0.71       251
+
+    accuracy                           0.79       673
+   macro avg       0.78      0.77      0.77       673
+weighted avg       0.79      0.79      0.79       673
+
+Confussion matrix:
+
+    OBS\PRED           0           1
+           0         357          65
+           1          77         174
+
+################ Global results ###############
+
+                |Train| Test
+       acc      |0.90 |0.79
+  prec_PPV      |0.88 |0.73
+    recall      |0.85 |0.69
+        f1      |0.86 |0.71
+       auc      |0.89 |0.77
+sensit_TPR      |0.85 |0.69
+  spec_TNR      |0.93 |0.85
+       NPV      |0.91 |0.82
+       FNR      |0.15 |0.31
+       FPR      |0.07 |0.15
+       FDR      |0.12 |0.27
+       FOR      |0.09 |0.18
+   F_score      |0.86 |0.71
+       MCC      |0.79 |0.54
+       CSI      |0.76 |0.55
+
+######################################################
+############## Cross-validation results ##############
+######################################################
+
+        |Train          | Test
+    acc |0.90 +/- 0.003 |0.79  +/- 0.016
+   prec |0.87 +/- 0.010 |0.71  +/- 0.019
+ recall |0.86 +/- 0.007 |0.72  +/- 0.036
+     f1 |0.86 +/- 0.004 |0.71  +/- 0.024
+    auc |0.96 +/- 0.002 |0.86  +/- 0.019
+ sensit |0.86 +/- 0.007 |0.72  +/- 0.036
+   spec |0.92 +/- 0.007 |0.83  +/- 0.014
+    NPV |0.92 +/- 0.003 |0.83  +/- 0.018
+    FNR |0.14 +/- 0.007 |0.28  +/- 0.036
+    FPR |0.08 +/- 0.007 |0.17  +/- 0.014
+    FDR |0.13 +/- 0.010 |0.29  +/- 0.019
+    FOR |0.08 +/- 0.003 |0.17  +/- 0.018
+F_score |0.86 +/- 0.004 |0.71  +/- 0.024
+    MCC |0.78 +/- 0.007 |0.54  +/- 0.035
+    CSI |0.76 +/- 0.006 |0.55  +/- 0.029
+
+Please, close the plots to continue...
+
+Do you want to perform any other step?(y/n):  n
+
+Thanks for using ML_pipeline!
+
+(Protocosas) F:\ProtoQSAR\GENERATE_MODELS_3_0\ML_pipeline>
