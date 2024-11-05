@@ -1,0 +1,111 @@
+
+(Protocosas) F:\ProtoQSAR\GENERATE_MODELS_3_0\ML_pipeline>python ML_pipeline.py
+
+#########################################################################
+##################### WELCOME TO ML_pipeline script #####################
+#########################################################################
+This script will allow you to:
+        - generate ML models for regression or classification
+
+Please input your PATH (enter to: "../data/TOX_MRDD/"):
+Please input your MODEL NAME (enter to: TOX_MRDD):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+        [1] Perform a MODEL for Regression
+        [2] Perform a MODEL for Classification
+        [3] Exit
+
+Your choice: 1
+
+Please select the method used for DESCRIPTOR SELECTION:
+        [1] RFE
+        [2] GBM
+        [3] PI
+        [4] OWN
+
+
+Your choice: 3
+You want to perform a Regression model, by using descriptors selected by PI.
+
+Is that correct?(Y/n):
+The following files located in "../data/TOX_MRDD/" folder are needed:
+TOX_MRDD-train_reduction_PI.csv
+TOX_MRDD-test_reduction_PI.csv
+Continue (Y/n)?
+
+PARAMETERS:
+        train molecules: 1305
+        test molecules: 437
+        total molecules: 1742
+
+DESCRIPTORS: ( 25 )
+['nR_9_True_True_False_None', 'H-048', 'nR_3_True_False_None_False', 'nR_9_True_True_None_True', 'nR_3_True_True_False_None', 'H-053', 'AATS5se', 'C-009', 'C-002', 'nR_10_True_True_None_None', 'nR_5_False_False_False_False', 'NssCH2', 'FNSA4', 'nR_5_False_False_None_None', 'SdssC', 'nR_11_True_True_False_None', 'AATSC0dv', 'SRW05', 'nR_5_False_False_True_True', 'F05[O-O]', 'SLogP', 'nR_4_False_False_False_True', 'AATSC0c', 'AATS1s', 'SssCH2']
+        mols/descriptor ratio: 52.2
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+PLEASE, ENSURE SEED HYPEPARAM IF USING XGB MODELS AND ENSURE REPRODUCIBILITY!!
+
+[+] Training the model...
+
+Best parameters for ExtraTreesRegressor:
+{'max_depth': 19, 'max_features': 18, 'min_samples_leaf': 3, 'n_jobs': -1, 'random_state': 42}
+
+Grid test score: 0.6069180446571942
+------------------------------
+
+Best model and parameters:
+ExtraTreesRegressor(max_depth=19, max_features=18, min_samples_leaf=3,
+                    n_jobs=-1, random_state=42)
+
+Best model and parameters:
+{'max_depth': 19, 'max_features': 18, 'min_samples_leaf': 3, 'n_jobs': -1, 'random_state': 42}
+
+GridSearch parameters:
+GridSearchCV(cv=10, estimator=ExtraTreesRegressor(), n_jobs=-1,
+             param_grid={'max_depth': [19], 'max_features': [18],
+                         'min_samples_leaf': [3], 'n_jobs': [-1],
+                         'random_state': [42]},
+             return_train_score=True, scoring='r2')
+-------------------------------
+
+ A JSON file with the descriptors has been saved as ../data/TOX_MRDD/TOX_MRDD.json
+
+######################################################
+################### Model results ####################
+######################################################
+
+Train results R^2:       0.893835788332779
+Test results R^2:        0.6045303767269277
+
+Train results MSE:       0.12471128097560541
+Test results MSE         0.524608162604328
+
+        |Train | Test
+    EV  |0.89  |0.60
+   MAE  |0.26  |0.53
+   MSE  |0.12  |0.52
+ MEDAE  |0.18  |0.39
+Rscore  |0.89  |0.60
+
+######################################################
+############## Cross-validation results ##############
+######################################################
+
+        |Train          | Test
+    EV  |0.90 +/- 0.003 |0.64  +/- 0.018
+   MAE  |0.25 +/- 0.003 |0.49  +/- 0.015
+   MSE  |0.12 +/- 0.003 |0.44  +/- 0.047
+ MEDAE  |0.18 +/- 0.002 |0.37  +/- 0.016
+Rscore  |0.90 +/- 0.003 |0.64  +/- 0.017
+Please, close the plots to continue...
+
+Do you want to perform any other step?(y/n):  n
+
+Thanks for using ML_pipeline!
+
+(Protocosas) F:\ProtoQSAR\GENERATE_MODELS_3_0\ML_pipeline>

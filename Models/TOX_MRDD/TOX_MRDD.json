@@ -1,0 +1,139 @@
+{
+    "mol_properties$nR_9_True_True_False_None": {
+        "aromatic": false,
+        "fused": true,
+        "greater": true,
+        "hetero": null,
+        "length": 9,
+        "prop": "nr"
+    },
+    "atom_centred_hybr$H-048": {
+        "key": "H-048"
+    },
+    "mol_properties$nR_3_True_False_None_False": {
+        "aromatic": null,
+        "fused": false,
+        "greater": true,
+        "hetero": false,
+        "length": 3,
+        "prop": "nr"
+    },
+    "mol_properties$nR_9_True_True_None_True": {
+        "aromatic": null,
+        "fused": true,
+        "greater": true,
+        "hetero": true,
+        "length": 9,
+        "prop": "nr"
+    },
+    "mol_properties$nR_3_True_True_False_None": {
+        "aromatic": false,
+        "fused": true,
+        "greater": true,
+        "hetero": null,
+        "length": 3,
+        "prop": "nr"
+    },
+    "atom_centred_hybr$H-053": {
+        "key": "H-053"
+    },
+    "AATS$AATS5se": {
+        "order": 5,
+        "prop": "se"
+    },
+    "atom_centred$C-009": {
+        "key": "C-009"
+    },
+    "atom_centred$C-002": {
+        "key": "C-002"
+    },
+    "mol_properties$nR_10_True_True_None_None": {
+        "aromatic": null,
+        "fused": true,
+        "greater": true,
+        "hetero": null,
+        "length": 10,
+        "prop": "nr"
+    },
+    "mol_properties$nR_5_False_False_False_False": {
+        "aromatic": false,
+        "fused": false,
+        "greater": false,
+        "hetero": false,
+        "length": 5,
+        "prop": "nr"
+    },
+    "EStates$NssCH2": {
+        "estate": "ssCH2",
+        "type": "count"
+    },
+    "FNSA$FNSA4": {
+        "version": 4
+    },
+    "mol_properties$nR_5_False_False_None_None": {
+        "aromatic": null,
+        "fused": false,
+        "greater": false,
+        "hetero": null,
+        "length": 5,
+        "prop": "nr"
+    },
+    "EStates$SdssC": {
+        "estate": "dssC",
+        "type": "sum"
+    },
+    "mol_properties$nR_11_True_True_False_None": {
+        "aromatic": false,
+        "fused": true,
+        "greater": true,
+        "hetero": null,
+        "length": 11,
+        "prop": "nr"
+    },
+    "AATSC$AATSC0dv": {
+        "order": 0,
+        "prop": "dv"
+    },
+    "WCk$SRW05": {
+        "order": 5,
+        "self_returning": true,
+        "total": false
+    },
+    "mol_properties$nR_5_False_False_True_True": {
+        "aromatic": true,
+        "fused": false,
+        "greater": false,
+        "hetero": true,
+        "length": 5,
+        "prop": "nr"
+    },
+    "topological_distance$F05[O-O]": {
+        "atoms": [
+            8,
+            8
+        ],
+        "distance": 5,
+        "type": "frequency"
+    },
+    "SLogP_PA$SLogP": {},
+    "mol_properties$nR_4_False_False_False_True": {
+        "aromatic": false,
+        "fused": false,
+        "greater": false,
+        "hetero": true,
+        "length": 4,
+        "prop": "nr"
+    },
+    "AATSC$AATSC0c": {
+        "order": 0,
+        "prop": "c"
+    },
+    "AATS$AATS1s": {
+        "order": 1,
+        "prop": "s"
+    },
+    "EStates$SssCH2": {
+        "estate": "ssCH2",
+        "type": "sum"
+    }
+}

@@ -104,6 +104,8 @@ def conversion(row, units, desired_units):
         return np.log10(row*10**(-6))
 
     elif units == 'mg/kg-bw/day' and desired_units == 'logmg/kg/day':
+        
+        print(row, np.log10(row))
 
         return np.log10(row)
     else:

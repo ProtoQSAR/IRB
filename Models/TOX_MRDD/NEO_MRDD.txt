@@ -1,0 +1,445 @@
+
+(Protocosas) F:\ProtoQSAR\GENERATE_MODELS_3_0\NEO>python NEO.py
+
+#########################################################################
+######################### WELCOME TO NEO script #########################
+#########################################################################
+This script will allow you to:
+        - eliminate 3D descriptors
+        - "y" transformation
+        - perform the initial unsupervised feature reduction
+        - perform the train/test split based on kmeans
+        - descriptor standarization
+        - select the relevant features based on:
+                 · Recursive feature elimination (RFE)
+                 · Feature importance (FI) based on Ligth gradient boosting machine (LGBM)
+                 · Permutation importance (PI)
+        - select your own features features
+
+Please input your PATH (enter to: "../data/TOX_MRDD/"):
+Please input your MODEL NAME (enter to: TOX_MRDD):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 1
+This part of the code will do the y" transformation, randomization of the dataset order and  Knn imputation.
+From this version of NEO is its compulsory to perform the inputation here, as this will create the un-imputed file needed for reimputation.
+[+] "y" transformation
+A file located in "../data/TOX_MRDD/" folder is needed
+This file must be called: "TOX_MRDD-paralel_calculated_with_y.csv"
+Continue (Y/n)?
+
+Please select your type of model:
+[1] Regression
+[2] Classification
+Your choice: 1
+
+Please select how do you want to transform your y:
+Current values are (first three):
+0    1.000000
+1    1.824126
+2    0.562252
+3    0.620136
+Name: y, dtype: float64
+[1] Nothing
+[2] Logarithm_10 of 1/"y"  (p)
+[3] Converts mg/l (or ug/ml) to Molar and does [2] with it
+Your choice: 1
+[+] dataset random sort
+
+        The following file has been created (save it as you will need it for feature reduction):
+
+        ../data/TOX_MRDD/TOX_MRDD-calculated_preimputation.csv
+[+] dataset imputation
+Size of the database, preimputation: (1742, 4676)
+Warning! Some of descriptors have too many NaN values and have been removed: ['LPRS', 'VDA', 'MDDD', 'MAXsLi', 'MAXssBe', 'MAXssssBe', 'MAXssBH', 'MAXsssB', 'MAXssssB', 'MAXsCH3', 'MAXdCH2', 'MAXtCH', 'MAXdsCH', 'MAXaaCH', 'MAXsssCH', 'MAXddC', 'MAXtsC', 'MAXdssC', 'MAXaasC', 'MAXaaaC', 'MAXssssC', 'MAXsNH3', 'MAXsNH2', 'MAXssNH2', 'MAXdNH', 'MAXssNH', 'MAXaaNH', 'MAXtN', 'MAXsssNH', 'MAXdsN', 'MAXaaN', 'MAXsssN', 'MAXddsN', 'MAXaasN', 'MAXssssN', 'MAXsOH', 'MAXdO', 'MAXssO', 'MAXaaO', 'MAXsF', 'MAXsSiH3', 'MAXssSiH2', 'MAXsssSiH', 'MAXssssSi', 'MAXsPH2', 'MAXssPH', 'MAXsssP', 'MAXdsssP', 'MAXsssssP', 'MAXsSH', 'MAXdS', 'MAXssS', 'MAXaaS', 'MAXdssS', 'MAXddssS', 'MAXsCl', 'MAXsGeH3', 'MAXssGeH2', 'MAXsssGeH', 'MAXssssGe', 'MAXsAsH2', 'MAXssAsH', 'MAXsssAs', 'MAXsssdAs', 'MAXsssssAs', 'MAXsSeH', 'MAXdSe', 'MAXssSe', 'MAXaaSe', 'MAXdssSe', 'MAXddssSe', 'MAXsBr', 'MAXsSnH3', 'MAXssSnH2', 'MAXsssSnH', 'MAXssssSn', 'MAXsI', 'MAXsPbH3', 'MAXssPbH2', 'MAXsssPbH', 'MAXssssPb', 'MINsLi', 'MINssBe', 'MINssssBe', 'MINssBH', 'MINsssB', 'MINssssB', 'MINsCH3', 'MINdCH2', 'MINtCH', 'MINdsCH', 'MINaaCH', 'MINsssCH', 'MINddC', 'MINtsC', 'MINdssC', 'MINaasC', 'MINaaaC', 'MINssssC', 'MINsNH3', 'MINsNH2', 'MINssNH2', 'MINdNH', 'MINssNH', 'MINaaNH', 'MINtN', 'MINsssNH', 'MINdsN', 'MINaaN', 'MINsssN', 'MINddsN', 'MINaasN', 'MINssssN', 'MINsOH', 'MINdO', 'MINssO', 'MINaaO', 'MINsF', 'MINsSiH3', 'MINssSiH2', 'MINsssSiH', 'MINssssSi', 'MINsPH2', 'MINssPH', 'MINsssP', 'MINdsssP', 'MINsssssP', 'MINsSH', 'MINdS', 'MINssS', 'MINaaS', 'MINdssS', 'MINddssS', 'MINsCl', 'MINsGeH3', 'MINssGeH2', 'MINsssGeH', 'MINssssGe', 'MINsAsH2', 'MINssAsH', 'MINsssAs', 'MINsssdAs', 'MINsssssAs', 'MINsSeH', 'MINdSe', 'MINssSe', 'MINaaSe', 'MINdssSe', 'MINddssSe', 'MINsBr', 'MINsSnH3', 'MINssSnH2', 'MINsssSnH', 'MINssssSn', 'MINsI', 'MINsPbH3', 'MINssPbH2', 'MINsssPbH', 'MINssssPb'] The limit is marked to the  15.0 %
+[+] fitting
+[+] transforming
+Size of the database, postimputation: (1742, 4517)
+      C-001  C-002  C-003  C-004  C-005  C-006  ...  SsssPbH  SssssPb  MAXssCH2  MINssCH2   SLogP       SMR
+0       4.0    6.0    1.0    0.0    3.0    0.0  ...      0.0      0.0  0.387360 -0.204930  3.1577  201.2272
+1       2.0    5.0    2.0    0.0    2.0    3.0  ...      0.0      0.0  0.974710 -0.073230  5.2709  139.5277
+2       0.0    4.0    0.0    0.0    0.0    0.0  ...      0.0      0.0  0.462120  0.176180  6.8482  178.8320
+3       0.0    0.0    0.0    0.0    0.0    1.0  ...      0.0      0.0 -0.671340 -0.671340 -1.4074   35.2562
+4       1.0    1.0    0.0    0.0    0.0    0.0  ...      0.0      0.0  0.478890  0.478890  1.5132   39.0668
+...     ...    ...    ...    ...    ...    ...  ...      ...      ...       ...       ...     ...       ...
+1737    0.0    2.0    0.0    0.0    0.0    0.0  ...      0.0      0.0 -1.144210 -1.144210 -1.2485   37.0912
+1738    0.0    0.0    0.0    0.0    2.0    2.0  ...      0.0      0.0  0.363460  0.297880 -0.8698  119.2789
+1739    6.0    8.0    6.0    1.0    0.0    0.0  ...      0.0      0.0  1.392140  0.880330  7.7209  125.6658
+1740    2.0   16.0    4.0    1.0    0.0    0.0  ...      0.0      0.0  1.335110  0.598550  7.1807  124.5830
+1741    2.0    0.0    0.0    0.0    2.0    0.0  ...      0.0      0.0  0.657427  0.355447  0.9491   94.5280
+
+[1742 rows x 4517 columns]
+
+The following files have been created:
+
+../data/TOX_MRDD/TOX_MRDD-calculated_imputed_ytransformed.csv
+
+Do you want to perform any other step?(y/n):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 2
+A file located in "../data/TOX_MRDD/" folder is needed
+This file must be called: "TOX_MRDD-calculated_imputed_ytransformed.csv"
+Continue (Y/n)?
+[1] Initial feature reduction: infinite, correlated, constant and empty values
+0 infinite values
+0 features with greater than 0.00 missing values.
+
+2064 features with a correlation magnitude greater than 0.90.
+
+1138 features with a single unique value.
+
+Data has not been one-hot encoded
+Removed 3202 features including one-hot features.
+
+The following files have been created:
+
+../data/TOX_MRDD/TOX_MRDD-initial_reduction.csv
+
+Do you want to perform any other step?(y/n):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 3
+
+Please select your type of model:
+[1] Regression
+[2] Classification
+Your choice (1/2)?: 1
+Please input your desired TEST SIZE (enter to: "0.25"):
+A file located in "../data/TOX_MRDD/" folder is needed
+This file must be called: "TOX_MRDD-initial_reduction.csv"
+Continue (Y/n)?
+[+] Generation of train and test sets based in kmeans
+
+OPTIMAL NUMBER OF CLUSTERS:  4
+
+NUMBER OF CLUSTERS:  4
+        SETS:  {1680, 9, 14, 39}
+        ALERTS!!
+[]
+      index                                             SMILES         y  C-001  ...  MAXssCH2  MINssCH2   SLogP  cluster
+0         0  CC[C@@]1(O)C[C@H](O[C@H]2C[C@H](N(C)C)[C@H](O[...  0.431364    4.0  ...  0.387360 -0.204930  3.1577        3
+1         1  COCC(=O)O[C@]1(CCN(C)CCCc2nc3ccccc3[nH]2)CCc2c...  0.222716    2.0  ...  0.974710 -0.073230  5.2709        0
+2         2  O=C(CCCCC(=O)Nc1c(I)cc(I)c(C(=O)O)c1I)Nc1c(I)c...  2.222716    0.0  ...  0.462120  0.176180  6.8482        0
+3         3                    O=C1O[C@H]([C@@H](O)CO)C(O)=C1O  2.000000    0.0  ... -0.671340 -0.671340 -1.4074        0
+4         4                                 C#CC(O)(/C=C\Cl)CC  1.222716    1.0  ...  0.478890  0.478890  1.5132        0
+...     ...                                                ...       ...    ...  ...       ...       ...     ...      ...
+1737   1737                         O=C(O)CC(O)(CC(=O)O)C(=O)O  2.000000    0.0  ... -1.144210 -1.144210 -1.2485        0
+1738   1738  CON=C(C(=O)NC1C(=O)N2C(C(=O)O)=C(CSc3nnnn3C)CS...  1.824126    0.0  ...  0.363460  0.297880 -0.8698        0
+1739   1739   CC1CCC(O)CC1=CC=C1CCCC2(C)C1CCC2C(C)C=CC(C)C(C)C -1.379864    6.0  ...  1.392140  0.880330  7.7209        0
+1740   1740  CCCCCCCCCC(=O)O[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O...  0.522444    2.0  ...  1.335110  0.598550  7.1807        0
+1741   1741    COc1cccc(OC)c1C(=O)NC1C(=O)N2C1SC(C)(C)C2C(=O)O  2.301030    2.0  ...  0.657427  0.355447  0.9491        0
+
+[1742 rows x 1319 columns]
+0
+1
+2
+3
+cluster0
+      index                                             SMILES         y  C-001  ...  MAXssCH2  MINssCH2   SLogP  cluster
+1         1  COCC(=O)O[C@]1(CCN(C)CCCc2nc3ccccc3[nH]2)CCc2c...  0.222716    2.0  ...  0.974710 -0.073230  5.2709        0
+2         2  O=C(CCCCC(=O)Nc1c(I)cc(I)c(C(=O)O)c1I)Nc1c(I)c...  2.222716    0.0  ...  0.462120  0.176180  6.8482        0
+3         3                    O=C1O[C@H]([C@@H](O)CO)C(O)=C1O  2.000000    0.0  ... -0.671340 -0.671340 -1.4074        0
+4         4                                 C#CC(O)(/C=C\Cl)CC  1.222716    1.0  ...  0.478890  0.478890  1.5132        0
+5         5                                 CC(=O)Nc1ccc(O)cc1  1.698970    1.0  ...  0.351503  0.351503  1.3506        0
+...     ...                                                ...       ...    ...  ...       ...       ...     ...      ...
+1737   1737                         O=C(O)CC(O)(CC(=O)O)C(=O)O  2.000000    0.0  ... -1.144210 -1.144210 -1.2485        0
+1738   1738  CON=C(C(=O)NC1C(=O)N2C(C(=O)O)=C(CSc3nnnn3C)CS...  1.824126    0.0  ...  0.363460  0.297880 -0.8698        0
+1739   1739   CC1CCC(O)CC1=CC=C1CCCC2(C)C1CCC2C(C)C=CC(C)C(C)C -1.379864    6.0  ...  1.392140  0.880330  7.7209        0
+1740   1740  CCCCCCCCCC(=O)O[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O...  0.522444    2.0  ...  1.335110  0.598550  7.1807        0
+1741   1741    COc1cccc(OC)c1C(=O)NC1C(=O)N2C1SC(C)(C)C2C(=O)O  2.301030    2.0  ...  0.657427  0.355447  0.9491        0
+
+[1680 rows x 1319 columns]
+      index                                             SMILES         y  C-001  ...  MAXssCH2  MINssCH2   SLogP  cluster
+774     774                        COc1cc(NC(C)CCCN)c2ncccc2c1 -0.124939    1.0  ...   1.04369   0.72533  2.7827        0
+1335   1335  CC(C)(C)NC(=O)[C@H]1CC[C@H]2[C@@H]3CC[C@H]4NC(... -1.079355    5.0  ...   1.18741   1.02680  3.8145        0
+616     616                                  Nc1ncnc2nc[nH]c12  1.176091    0.0  ...   0.33057   0.30688 -0.0649        0
+1055   1055  CCOc1nc2cccc(C(=O)OC(C)OC(=O)OC3CCCCC3)c2n1Cc1... -0.573489    2.0  ...   1.13741   0.37764  6.3191        0
+1468   1468        CN1[C@@H]2CC[C@H]1CC(OC(=O)C(CO)c1ccccc1)C2 -2.876148    0.0  ...   1.20569  -0.20603  1.9309        0
+
+[5 rows x 1319 columns]
+cluster1
+      index                                             SMILES         y  ...  MINssCH2    SLogP  cluster
+120     120  CC(=O)O[C@H]1C[C@H](O[C@H]2[C@@H](O)C[C@H](O[C... -1.477556  ...  -0.64728  1.64230        1
+145     145  CC(=O)O[C@H]1C[C@H](O[C@H]2[C@@H](O)C[C@H](O[C... -1.477556  ...  -0.65759 -0.41610        1
+298     298  CC(=O)OC1CC(OC2C(O)CC(OC3C(O)CC(OC4CCC5(C)C(CC... -1.477556  ...  -0.64649  2.23520        1
+792     792  CC(=O)OC1CC(OC2C(O)CC(OC3C(O)CC(OC4CCC5(C)C(CC... -1.477556  ...  -0.65279  0.61310        1
+825     825  CC(=O)OC1CC(OC2C(O)CC(OC3C(O)CC(OC4CCC5(C)C(CC... -1.477556  ...  -0.65178  1.59610        1
+1292   1292  CC(=O)O[C@H]1C[C@H](O[C@H]2[C@@H](O)C[C@H](O[C... -1.477556  ...  -0.65208  0.61310        1
+1386   1386  Cc1c2oc3c(C)ccc(C(=O)N[C@@H]4C(=O)N[C@H](C(C)C... -1.823909  ...  -0.44517  0.72564        1
+1449   1449  CC(=O)O[C@H]1C[C@H](O[C@H]2[C@@H](O)C[C@H](O[C... -1.477556  ...  -0.65279  0.61310        1
+1646   1646  CC(=O)OC1CC(OC2C(O)CC(OC3C(O)CC(OC4CCC5(C)C(CC... -1.477556  ...  -0.65759 -0.41610        1
+
+[9 rows x 1319 columns]
+      index                                             SMILES         y  C-001  ...  MAXssCH2  MINssCH2   SLogP  cluster
+120     120  CC(=O)O[C@H]1C[C@H](O[C@H]2[C@@H](O)C[C@H](O[C... -1.477556    6.0  ...   1.06308  -0.64728  1.6423        1
+1646   1646  CC(=O)OC1CC(OC2C(O)CC(OC3C(O)CC(OC4CCC5(C)C(CC... -1.477556    6.0  ...   0.84786  -0.65759 -0.4161        1
+298     298  CC(=O)OC1CC(OC2C(O)CC(OC3C(O)CC(OC4CCC5(C)C(CC... -1.477556    5.0  ...   1.07576  -0.64649  2.2352        1
+825     825  CC(=O)OC1CC(OC2C(O)CC(OC3C(O)CC(OC4CCC5(C)C(CC... -1.477556    6.0  ...   0.93543  -0.65178  1.5961        1
+792     792  CC(=O)OC1CC(OC2C(O)CC(OC3C(O)CC(OC4CCC5(C)C(CC... -1.477556    6.0  ...   0.93507  -0.65279  0.6131        1
+
+[5 rows x 1319 columns]
+cluster2
+      index                                             SMILES         y  ...  MINssCH2    SLogP  cluster
+65       65  COc1cc2c3cc1Oc1cc(ccc1O)C[C@@H]1c4c(cc(OC)c(O)... -0.175874  ...   0.63418  5.28390        2
+163     163  O=C(O)c1cc(O)c2c(c1)[C@H]([C@H]1c3cc(C(=O)O)cc...  1.222716  ...  -0.82108 -1.09560        2
+245     245  COc1ccc2cc1Oc1cc3c(cc1OC)CC[N+](C)(C)[C@H]3Cc1... -0.397940  ...   0.75020  7.45160        2
+296     296  O=C(O)c1cc(O)c2c(O)c3c(OC4OC(CO)C(O)C(O)C4O)cc...  1.222716  ...  -0.81109  0.54260        2
+402     402  CCC1(O)CC2CN(CCc3c([nH]c4ccccc34)C(C(=O)OC)(c3... -0.966576  ...   0.34806  2.73240        2
+587     587  CC(=O)O[C@H]1C[C@H](O[C@H]2[C@@H](O)C[C@H](O[C... -2.477556  ...   0.09574  3.81810        2
+626     626  COC(C(=O)C(O)C(C)O)C1Cc2cc3cc(OC4CC(OC5CC(O)C(... -1.522879  ...  -0.22734 -0.24928        2
+1076   1076  COc1cc2ccc1Oc1cc3c(cc1OC)CCN(C)C3Cc1ccc(cc1)Oc... -0.397940  ...   0.76151  7.30700        2
+1258   1258  CC(=O)OC1CC(OC2C(O)CC(OC3C(O)CC(OC4CCC5(C)C(CC... -2.477556  ...   0.09574  3.81810        2
+1347   1347  COc1cc2c3cc1Oc1cc(ccc1O)CC1c4c(cc(OC)c(O)c4Oc4... -0.175874  ...   0.63085  6.70100        2
+1508   1508  CC[C@]1(O)C[C@H]2CN(CCc3c([nH]c4ccccc34)[C@@](... -0.966576  ...   0.34806  2.73240        2
+1551   1551  COC1C(O)CC(OC2C(O)CC(OC3C(O)CC(OC4CCC5(C)C(CCC... -2.175874  ...   0.12776  2.87220        2
+1678   1678  CO[C@H]1[C@@H](O)C[C@H](O[C@H]2[C@@H](O)C[C@H]... -2.175874  ...   0.12776  2.87220        2
+1725   1725  CO[C@H](C(=O)[C@@H](O)[C@@H](C)O)C1Cc2cc3cc(O[... -1.522879  ...  -0.23047 -0.24928        2
+
+[14 rows x 1319 columns]
+      index                                             SMILES         y  ...  MINssCH2    SLogP  cluster
+587     587  CC(=O)O[C@H]1C[C@H](O[C@H]2[C@@H](O)C[C@H](O[C... -2.477556  ...   0.09574  3.81810        2
+1258   1258  CC(=O)OC1CC(OC2C(O)CC(OC3C(O)CC(OC4CCC5(C)C(CC... -2.477556  ...   0.09574  3.81810        2
+245     245  COc1ccc2cc1Oc1cc3c(cc1OC)CC[N+](C)(C)[C@H]3Cc1... -0.397940  ...   0.75020  7.45160        2
+163     163  O=C(O)c1cc(O)c2c(c1)[C@H]([C@H]1c3cc(C(=O)O)cc...  1.222716  ...  -0.82108 -1.09560        2
+1725   1725  CO[C@H](C(=O)[C@@H](O)[C@@H](C)O)C1Cc2cc3cc(O[... -1.522879  ...  -0.23047 -0.24928        2
+
+[5 rows x 1319 columns]
+cluster3
+      index                                             SMILES         y  ...  MINssCH2    SLogP  cluster
+0         0  CC[C@@]1(O)C[C@H](O[C@H]2C[C@H](N(C)C)[C@H](O[...  0.431364  ...  -0.20493  3.15770        3
+41       41  CC1CCC2N(C1)CC1C(C(O)C(O)C3(O)C1CC14OC5(O)C(O)... -1.602060  ...   0.17566 -1.84330        3
+42       42  CC(C)CC1C(=O)N2CCCC2C2(O)OC(NC(=O)C3C=C4c5cccc...  0.222716  ...   0.39414  3.19280        3
+164     164  COc1cc(C[C@@H]2c3c(cc(OC)c(OC)c3OC)CC[N@@+]2(C... -1.301030  ...  -0.08985  7.70980        3
+187     187  CCOC(=O)Oc1c(OC)cc(C(=O)OC2CC3CN4CCc5c([nH]c6c... -1.301030  ...   0.11355  4.69780        3
+189     189  CCOC(=O)Oc1c(OC)cc(C(=O)O[C@@H]2C[C@@H]3CN4CCc... -1.301030  ...   0.11355  4.69780        3
+318     318  COc1cc([C@@H]2c3cc4c(cc3C(O[C@@H]3O[C@@H]5COC(...  0.845098  ...   0.02415  2.75290        3
+319     319  COC(=O)C1C2CC3c4[nH]c5cc(OC)ccc5c4CCN3CC2CC(OC... -2.000000  ...   0.56231  4.17110        3
+346     346  CCC1(O)CC(OC2CC(N(C)C)C(OC3CC(O)C(OC4CCC(=O)C(...  0.431364  ...  -0.20493  3.15770        3
+350     350  C[C@H]1CC[C@@H]2N(C1)C[C@@H]1[C@H]([C@@H](O)[C... -1.602060  ...   0.17566 -1.84330        3
+354     354  Cc1cc(-c2ccc(N=Nc3ccc4c(S(=O)(=O)O)cc(S(=O)(=O... -0.477556  ...  -0.06911  6.67004        3
+386     386  CC1(C)C(C=CC=CC=CC=C2Cc3c(ccc4ccccc34)N2CCCCS(... -0.301030  ...  -0.25030  8.32040        3
+423     423  COC1CC2CCC(C)C(O)(O2)C(=O)C(=O)N2CCCCC2C(=O)OC... -0.869666  ...  -0.19981  6.18060        3
+429     429  COC(=O)[C@H]1[C@H]2C[C@@H]3c4[nH]c5cc(OC)ccc5c... -2.000000  ...   0.56231  4.17110        3
+446     446  Nc1c(N=Nc2ccc(-c3ccc(N=Nc4cc(S(=O)(=O)O)c5cccc...  0.574031  ...   0.36629  8.14860        3
+487     487  CO[C@H]1C[C@H](O[C@H]2[C@H](C)O[C@@H](O[C@@H]3... -0.823909  ...   0.04041  5.21130        3
+540     540  Cc1cc(-c2ccc(N=Nc3ccc4c(S(=O)(=O)[O-])cc(S(=O)... -0.477556  ...  -0.06911  5.29964        3
+570     570  CC[C@H](C)[C@H]1O[C@]2(CC[C@@H]1C)C[C@@H]1C[C@... -0.823909  ...   0.04082  5.60140        3
+584     584  C[C@]12CC[C@@H]3c4ccc(OC(=O)Cc5ccc(N(CCCl)CCCl...  1.221936  ...   0.20253  9.41330        3
+672     672  CC(C)C[C@H]1C(=O)N2CCC[C@H]2[C@]2(O)O[C@](NC(=...  0.222716  ...   0.39414  3.19280        3
+687     687  CCC(C)C1OC2(CCC1C)CC1CC(CC=C(C)C(OC3CC(OC)C(OC... -0.823909  ...   0.04082  5.60140        3
+708     708  COC(=O)C1C2CC3c4[nH]c5cc(OC)ccc5c4CCN3CC2CC(OC... -1.777284  ...   0.58374  4.57070        3
+729     729  COc1ccc(CC2c3cc(OC)c(OC)cc3CC[N+]2(C)CCC(=O)OC... -0.301030  ...   0.29074  8.06550        3
+876     876  CC12CCC3c4ccc(OC(=O)Cc5ccc(N(CCCl)CCCl)cc5)cc4...  1.221936  ...   0.20253  9.41330        3
+908     908  COC1C=COC2(C)Oc3c(C)c(O)c4c(O)c(c(C=NN5CCN(C)C...  1.301030  ...   0.56063  4.33542        3
+1095   1095  COc1cc2c(cc1OC)C(Cc1cc(OC)c(OC)c(OC)c1)C[N+](C... -0.602060  ...   0.26090  9.02900        3
+1169   1169  CC1(C)C(/C=C\C=C/C=C\C=C2\N(CCCCS(=O)(=O)[O-])... -0.301030  ...  -0.36647  8.37030        3
+1195   1195  CC(=O)O[C@H]1C(=O)[C@@]2(C)[C@H]([C@H](OC(=O)c...  0.674861  ...  -0.54341  3.73570        3
+1214   1214  CC(=O)OC1=C2C(C)C(OC(=O)C(O)C(NC(=O)c3ccccc3)c...  0.674861  ...  -0.51971  3.94080        3
+1234   1234  COc1cc(C2c3cc4c(cc3C(OC3OC5COC(c6cccs6)OC5C(O)...  0.845098  ...   0.02415  2.75290        3
+1255   1255  COC1CC(OC2C(C)OC(OC3C(C)=CCC4CC(CC5(CCC(C)C(C(... -0.823909  ...   0.04041  5.21130        3
+1298   1298  Nc1c(N=Nc2ccc(-c3ccc(N=Nc4cc(S(=O)(=O)[O-])c5c...  0.574031  ...   0.36629  7.46340        3
+1301   1301  CO[C@H]1/C=C/O[C@@]2(C)Oc3c(C)c(O)c4c(O)c(c(/C...  1.301030  ...   0.56063  4.33542        3
+1354   1354  CO[C@H]1C[C@@H]2CC[C@@H](C)[C@@](O)(O2)C(=O)C(... -0.869666  ...  -0.17610  6.18060        3
+1370   1370  CCC(C)n1ncn(-c2ccc(N3CCN(c4ccc(OC[C@H]5CO[C@](...  1.000000  ...   0.26828  5.57730        3
+1372   1372  COC(=O)[C@H]1[C@H]2C[C@@H]3c4[nH]c5cc(OC)ccc5c... -1.777284  ...   0.58374  4.57070        3
+1499   1499  COc1cc(CC2c3c(cc(OC)c(OC)c3OC)CC[N+]2(C)CCCOC(... -1.301030  ...  -0.08985  7.70980        3
+1588   1588  COc1cc2c(cc1OC)C(Cc1cc(OC)c(OC)c(OC)c1)[N+](C)... -0.602060  ...   0.25814  9.02900        3
+1604   1604  CCC(C)n1ncn(-c2ccc(N3CCN(c4ccc(OCC5COC(Cn6cncn...  1.000000  ...   0.26828  5.57730        3
+
+[39 rows x 1319 columns]
+     index                                             SMILES         y  C-001  ...  MAXssCH2  MINssCH2    SLogP  cluster
+570    570  CC[C@H](C)[C@H]1O[C@]2(CC[C@@H]1C)C[C@@H]1C[C@... -0.823909    8.0  ...   0.96835   0.04082  5.60140        3
+346    346  CCC1(O)CC(OC2CC(N(C)C)C(OC3CC(O)C(OC4CCC(=O)C(...  0.431364    4.0  ...   0.38736  -0.20493  3.15770        3
+540    540  Cc1cc(-c2ccc(N=Nc3ccc4c(S(=O)(=O)[O-])cc(S(=O)... -0.477556    2.0  ...   0.62517  -0.06911  5.29964        3
+423    423  COC1CC2CCC(C)C(O)(O2)C(=O)C(=O)N2CCCCC2C(=O)OC... -0.869666    7.0  ...   0.72108  -0.19981  6.18060        3
+672    672  CC(C)C[C@H]1C(=O)N2CCC[C@H]2[C@]2(O)O[C@](NC(=...  0.222716    4.0  ...   0.81642   0.39414  3.19280        3
+
+[5 rows x 1319 columns]
+      index                                             SMILES         y  C-001  ...  MAXssCH2  MINssCH2   SLogP  cluster
+774     774                        COc1cc(NC(C)CCCN)c2ncccc2c1 -0.124939    1.0  ...   1.04369   0.72533  2.7827        0
+1335   1335  CC(C)(C)NC(=O)[C@H]1CC[C@H]2[C@@H]3CC[C@H]4NC(... -1.079355    5.0  ...   1.18741   1.02680  3.8145        0
+616     616                                  Nc1ncnc2nc[nH]c12  1.176091    0.0  ...   0.33057   0.30688 -0.0649        0
+1055   1055  CCOc1nc2cccc(C(=O)OC(C)OC(=O)OC3CCCCC3)c2n1Cc1... -0.573489    2.0  ...   1.13741   0.37764  6.3191        0
+1468   1468        CN1[C@@H]2CC[C@H]1CC(OC(=O)C(CO)c1ccccc1)C2 -2.876148    0.0  ...   1.20569  -0.20603  1.9309        0
+
+[5 rows x 1319 columns]
+
+The following files have been created:
+
+../data/TOX_MRDD/TOX_MRDD-cleaned_from_kmeans.csv
+../data/TOX_MRDD/TOX_MRDD-train_set.csv
+../data/TOX_MRDD/TOX_MRDD-test_set.csv
+
+Do you want to perform any other step?(y/n):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 4
+[+] Descriptor standarization
+
+Please select the method to standarize the descriptors:
+[1] StandardScaler
+[2] MinMaxScaler
+Your choice (1/2)?: 1
+Two files located in "../data/TOX_MRDD/" folder are needed
+These files must be called:
+        "TOX_MRDD-train_set.csv"
+        "TOX_MRDD-test_set.csv"
+Continue (Y/n)?
+
+The following files have been created:
+
+../data/TOX_MRDD/TOX_MRDD-stand_train_set.csv
+../data/TOX_MRDD/TOX_MRDD-stand_test_set.csv
+../data/TOX_MRDD/TOX_MRDD-alldataset.sca
+
+Do you want to perform any other step?(y/n):
+######################### MAIN MENU #########################
+
+Please select what do you want to do:
+[01] Elimination of 3D descriptors [your dataset will be saved as [Name]_no3D]
+[1] "y" transformation + dataset random order + Knn imputation
+[2] Initial feature reduction: infinite, correlated, constant and empty values
+[3] Generation of train and test sets based in kmeans
+[4] Descriptor standarization
+[5] Feature selection by RFE
+[6] Feature selection by FI based on LGBM
+[7] Feature selection by Permutation importance
+[8] Select own features (inside the script)
+[0] Exit NEO
+
+Your choice: 7
+[+] Feature selection by Permutation importance
+Two files located in "../data/TOX_MRDD/" folder are needed
+These files must be called:
+        "TOX_MRDD-stand_train_set.csv"
+        "TOX_MRDD-stand_test_set.csv"
+Continue (Y/n)?
+
+Please select your estimator for perform Permutation importance:
+For regression models:
+         [0] Ridge [alpha = 10]
+         [02] SVR [kernel = linear] [remember that other kernels can be used:‘linear’, ‘poly’, ‘rbf’, ‘sigmoid’, ‘precomputed’]
+         [1] ExtraTreesRegressor
+         [2] DecisionTreeRegressor
+         [3] GradientBoostingRegressor
+         [4] MLPRegressor
+         [5] RandomForestRegressor
+         [6] KNeighborsRegressor
+For classification models:
+         [7] RandomForestClassifier
+         [8] ExtraTreesClassifier
+         [9] DecisionTreeClassifier
+        [10] GradientBoostingClassifier
+        [11] MLPClassifier
+        [12] KNeighborsClassifier
+        [13] LinearDiscriminantAnalysis
+        [14] LogisticRegression
+Your choice: 1
+Please wait...
+Step 1/2 done...
+Step 2/2 done...
+
+Now you can select a number of features.
+Please, indicate the number of selected features: 25
+
+Selected features:
+
+                           feature  importance
+462      nR_9_True_True_False_None    0.146849
+43                           H-048    0.014694
+432     nR_3_True_False_None_False    0.014220
+463       nR_9_True_True_None_True    0.011299
+423      nR_3_True_True_False_None    0.010540
+48                           H-053    0.010197
+122                        AATS5se    0.010013
+8                            C-009    0.009634
+1                            C-002    0.009387
+473      nR_10_True_True_None_None    0.008233
+442   nR_5_False_False_False_False    0.008138
+1293                        NssCH2    0.007957
+1284                         FNSA4    0.007604
+445     nR_5_False_False_None_None    0.007225
+1308                         SdssC    0.007141
+486     nR_11_True_True_False_None    0.006706
+212                       AATSC0dv    0.006480
+1169                         SRW05    0.006135
+439     nR_5_False_False_True_True    0.005442
+977                       F05[O-O]    0.005322
+1314                         SLogP    0.004942
+437    nR_4_False_False_False_True    0.004714
+211                        AATSC0c    0.004482
+103                         AATS1s    0.003984
+1306                        SssCH2    0.003968
+
+Selected features (as list):
+ ['nR_9_True_True_False_None', 'H-048', 'nR_3_True_False_None_False', 'nR_9_True_True_None_True', 'nR_3_True_True_False_None', 'H-053', 'AATS5se', 'C-009', 'C-002', 'nR_10_True_True_None_None', 'nR_5_False_False_False_False', 'NssCH2', 'FNSA4', 'nR_5_False_False_None_None', 'SdssC', 'nR_11_True_True_False_None', 'AATSC0dv', 'SRW05', 'nR_5_False_False_True_True', 'F05[O-O]', 'SLogP', 'nR_4_False_False_False_True', 'AATSC0c', 'AATS1s', 'SssCH2']
+Size of the database, preimputation: (1305, 25)
+[+] fitting
+[+] transforming
+Size of the database, postimputation: (1305, 25)
+
+The following files have been created:
+
+../data/TOX_MRDD/TOX_MRDD-train_reduction_PI.csv
+../data/TOX_MRDD/TOX_MRDD-test_reduction_PI.csv
+../data/TOX_MRDD/TOX_MRDD-train_set.sca
+train_set (1305, 27)
+test_set (437, 27)
+
+
+Do you agree with that number of features?(y/n): y
+
+Do you want to perform any other step?(y/n):  n
+
+Thanks for using NEO!
+
+(Protocosas) F:\ProtoQSAR\GENERATE_MODELS_3_0\NEO>

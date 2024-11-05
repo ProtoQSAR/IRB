@@ -39,7 +39,7 @@ def mw_calculation(row):
 
 
 #%%
-file_name = "compare_ONGOING/results/TOX_hERGinh.csv"
+file_name = "compare_ONGOING/results/all_merged_TOX_MRDD.csv"
 df = pd.read_csv(file_name, sep = ";")
 print(df)
 
