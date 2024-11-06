@@ -1,0 +1,11 @@
+{
+	"SLogP_PA$SLogP": {},
+	"HyperDetour$ww": {"type": ""},
+	"SMR_VSA$SMR_VSA6": {"k": 6},
+	"ZMICk$ZMIC1": {"order": 1},
+	"ICk$IC3": {"order": 3},
+	"ATSC$ATSC0i":{"prop": "i", "order": 0},
+	"EState_VSA$EState_VSA5": {"k": 5}
+
+
+}

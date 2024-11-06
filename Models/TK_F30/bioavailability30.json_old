@@ -1,0 +1,18 @@
+{
+    "GATS$GATS2Z": { "order": 2, "prop": "Z" },
+    "ATSC$ATSC0c": { "prop": "c", "order": 0 },
+    "SLogP_VSA$SLogP_VSA2": { "k": 2 },
+    "topological_distance$F02[O-O]": { "type": "frequency", "atoms": [8, 8], "distance": 2 },
+    "GATS$GATS2v": { "order": 2, "prop": "v" },
+    "GATS$GATS1se": { "order": 1, "prop": "se" },
+    "ATSC$ATSC1se": { "prop": "se", "order": 1 },
+    "ATSC$ATSC7c": { "prop": "c", "order": 7 },
+    "GATS$GATS2se": { "order": 2, "prop": "se" },
+    "ATSC$ATSC1dv": { "prop": "dv", "order": 1 },
+    "EStates$MINssCH2": { "type": "min", "estate": "ssCH2" },
+    "VSA_EState$VSA_EState2": { "k": 2 },
+    "AATS$AATS4s": { "prop": "s", "order": 4 },
+    "EState_VSA$EState_VSA5": { "k": 5 },
+    "ZMICk$ZMIC1": { "order": 1 }
+
+}

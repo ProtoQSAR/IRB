@@ -1,0 +1,36 @@
+{
+    "SLogP_PA$SLogP": {},
+    "SLogP_VSA$SLogP_VSA2": {
+        "k": 2
+    },
+    "ATSC$ATSC3c": {
+        "prop": "c",
+        "order": 3
+    },
+    "ATSC$ATSC2c": {
+        "prop": "c",
+        "order": 2
+    },
+    "ATSC$ATSC4c": {
+        "prop": "c",
+        "order": 4
+    },
+    "EStates$SdssC": {
+        "type": "sum",
+        "estate": "dssC"
+    },
+    "ATSC$ATSC1dv": {
+        "prop": "dv",
+        "order": 1
+    },
+    "Jhetw$Jhetv": {
+        "weight": "v"
+    },
+    "ATSC$ATSC1p": {
+        "prop": "p",
+        "order": 1
+    },
+    "SLogP_VSA$SLogP_VSA3": {
+        "k": 3
+    }
+}

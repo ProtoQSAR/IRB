@@ -1,0 +1,17 @@
+{
+	"atom_centred$H-050": {"key": "H-050"},
+	"ATSC$ATSC1se":{"prop": "se", "order": 1},
+	"ATSC$ATSC0c":{"prop": "c", "order": 0},
+	"EdgeAdjacencyIndex$EEig03d" : {"type": "eigen", "order": 3, "weight": "dipole"},
+	"EdgeAdjacencyIndex$EEig02d" : {"type": "eigen", "order": 2, "weight": "dipole"},
+	"ATSC$ATSC8c":{"prop": "c", "order": 8},
+	"SLogP_PA$SLogP": {},
+	"SMR_VSA$SMR_VSA2": {"k": 2},
+	"GATS$GATS8d":{"prop": "d", "order": 8},
+	"ATSC$ATSC6dv":{"prop": "dv", "order": 6},
+	"GATS$GATS1se":{"prop": "se", "order": 1},
+	"MAXDP$MAXDP": {},
+	"GATS$GATS2c":{"prop": "c", "order": 2},
+	"ATSC$ATSC1Z":{"prop": "Z", "order": 1},
+	"GATS$GATS5c":{"prop": "c", "order": 5}
+}
