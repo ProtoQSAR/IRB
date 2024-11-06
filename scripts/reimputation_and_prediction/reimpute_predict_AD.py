@@ -328,7 +328,7 @@ if __name__ == '__main__':
     
     
     
-    option = 'mergeJSONS'
+    option = 'reffit'
     
     calculate = 'WITH'
     
