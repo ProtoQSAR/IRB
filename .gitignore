@@ -2,6 +2,10 @@ Administrative/
 
 # large files
 libreria/files
+Models/TK_CYP1A2inh/TK_CYP1A2inh_DeepPK_final-paralel_calculated_with_y.csv
+Models/TK_HLM_us/TK_HLM-paralel_calculated_with_y.csv
+Models/TK_HLM_us/TK_HLM_us-calculated_preimputation.csv
+Models/TOX_hERGinh/TOX_hERGinh-paralel_calculated_with_y.csv
 
 #precompiled files
 *.pyc 
