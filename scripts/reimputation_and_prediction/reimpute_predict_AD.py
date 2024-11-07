@@ -347,7 +347,7 @@ if __name__ == '__main__':
     
     option = 'reffit'
     
-    calculate = 'WITH'
+    calculate = 'WITHOUT'
     
     '''
     
@@ -435,9 +435,9 @@ if __name__ == '__main__':
 
             
 #%%
-            df_metrics_byone = getMetrics(mod_name, model, train_df, test_df, old_new)
+            df_metrics_byone_old = getMetrics(mod_name, model, train_df, test_df, old_new)
             
-            df_metrics = pd.concat([df_metrics,df_metrics_byone], axis = 0)
+            df_metrics = pd.concat([df_metrics,df_metrics_byone_old], axis = 0)
 
             print('\t[++] Refitting model')
     
@@ -478,7 +478,7 @@ if __name__ == '__main__':
             imputer_estimator = KNNImputer(missing_values=np.nan,
                                  n_neighbors=3, weights="uniform")
     
-            imputer = imputer_estimator.fit(train_with_descriptors)
+            imputer = imputer_estimator.fit(train_descriptors_nanyfied)
             set_config(working_memory=1024)
     
     
@@ -579,15 +579,15 @@ if __name__ == '__main__':
             
             old_new = 'new'
             
-            df_metrics_byone = getMetrics(mod_name, model, imputed_scaled_train_df, imputed_scaled_test_df, old_new)
+            df_metrics_byone_new = getMetrics(mod_name, model, imputed_scaled_train_df, imputed_scaled_test_df, old_new)
             
+            df_metrics_byone = pd.concat([df_metrics_byone_old,df_metrics_byone_new], axis = 0) 
+            
+            df_metrics = pd.concat([df_metrics,df_metrics_byone_new], axis = 0)    
+                
             individual_output_metrics_filename =   f'metrics_{mod_name}_{time.strftime("%Y%m%d_%H%M%S")}.csv'  
             print(f'\t\t metrics file created: {individual_output_metrics_filename}')
-            df_metrics_byone.to_csv(individual_output_metrics_filename, sep = ';') 
-            
-            df_metrics = pd.concat([df_metrics,df_metrics_byone], axis = 0)    
-                
-                
+            df_metrics_byone.to_csv(individual_output_metrics_filename, sep = ';')                 
                 
                 
         output_metrics_filename =   f'metrics_{time.strftime("%Y%m%d_%H%M%S")}.csv'  
