@@ -1,0 +1,2071 @@
+(Protocosas) protoqsar@ALIENWARE-Eva:/mnt/Data/IRB/scripts/reimputation_and_prediction$ python reimpute_predict_AD.py 
+Working on: 
+ /mnt/Data/IRB/scripts/reimputation_and_prediction
+
+[!] You are in reffit mode WITH calculating descriptors [!]
+
+[+] Working on TK_Caco2 model
+	[++] Reading input files and creating putput directory
+		Output directory already exists: ../../Models/TK_Caco2/imputed-TK_Caco2
+		 Model type: regressor
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    EV	|0.93 +/- 0.005 |0.73  +/- 0.026
+		   MAE	|0.16 +/- 0.004 |0.31  +/- 0.005
+		   MSE	|0.04 +/- 0.002 |0.16  +/- 0.009
+		 MEDAE	|0.13 +/- 0.004 |0.26  +/- 0.022
+		Rscore	|0.93 +/- 0.005 |0.73  +/- 0.026
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			4.92 seconds
+		 file with raw descriptors created: ../../Models/TK_Caco2/imputed-TK_Caco2/raw_TK_Caco2-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			2.84 seconds
+		 file with raw descriptors created: ../../Models/TK_Caco2/imputed-TK_Caco2/raw_TK_Caco2-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_Caco2/imputed-TK_Caco2/TK_Caco2-train_set.imp
+		[+++] Scaling
+			using TK_Caco2-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_Caco2/imputed-TK_Caco2/TK_Caco2-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_Caco2/imputed-TK_Caco2/TK_Caco2.sav
+			 new file with descriptors created: ../../Models/TK_Caco2/imputed-TK_Caco2/TK_Caco2-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_Caco2/imputed-TK_Caco2/TK_Caco2-descriptors-test.txt
+			 new json file created: ../../Models/TK_Caco2/imputed-TK_Caco2/TK_Caco2.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    EV	|0.93 +/- 0.005 |0.73  +/- 0.030
+		   MAE	|0.16 +/- 0.004 |0.31  +/- 0.006
+		   MSE	|0.04 +/- 0.002 |0.16  +/- 0.010
+		 MEDAE	|0.14 +/- 0.003 |0.25  +/- 0.015
+		Rscore	|0.93 +/- 0.005 |0.73  +/- 0.030
+
+[+] Working on TK_CYP3A4sub_NOoutliers model
+	[++] Reading input files and creating putput directory
+		Output directory already exists: ../../Models/TK_CYP3A4sub_NOoutliers/imputed-TK_CYP3A4sub_NOoutliers
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.87 +/- 0.003 |0.83  +/- 0.027
+		   prec	|0.75 +/- 0.005 |0.70  +/- 0.033
+		 recall	|0.90 +/- 0.009 |0.82  +/- 0.052
+		     f1	|0.82 +/- 0.004 |0.76  +/- 0.040
+		    auc	|0.94 +/- 0.003 |0.90  +/- 0.015
+		 sensit	|0.90 +/- 0.009 |0.82  +/- 0.052
+		   spec	|0.86 +/- 0.005 |0.83  +/- 0.018
+		    NPV	|0.95 +/- 0.005 |0.91  +/- 0.026
+		    FNR	|0.10 +/- 0.009 |0.18  +/- 0.052
+		    FPR	|0.14 +/- 0.005 |0.17  +/- 0.018
+		    FDR	|0.25 +/- 0.005 |0.30  +/- 0.033
+		    FOR	|0.05 +/- 0.005 |0.09  +/- 0.026
+		F_score	|0.82 +/- 0.004 |0.76  +/- 0.040
+		    MCC	|0.73 +/- 0.007 |0.63  +/- 0.062
+		    CSI	|0.69 +/- 0.006 |0.61  +/- 0.050
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			41.42 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP3A4sub_NOoutliers/imputed-TK_CYP3A4sub_NOoutliers/raw_TK_CYP3A4sub_NOoutliers-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			19.17 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP3A4sub_NOoutliers/imputed-TK_CYP3A4sub_NOoutliers/raw_TK_CYP3A4sub_NOoutliers-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_CYP3A4sub_NOoutliers/imputed-TK_CYP3A4sub_NOoutliers/TK_CYP3A4sub_NOoutliers-train_set.imp
+		[+++] Scaling
+			using TK_CYP3A4sub_NOoutliers-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_CYP3A4sub_NOoutliers/imputed-TK_CYP3A4sub_NOoutliers/TK_CYP3A4sub_NOoutliers-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_CYP3A4sub_NOoutliers/imputed-TK_CYP3A4sub_NOoutliers/TK_CYP3A4sub_NOoutliers.sav
+			 new file with descriptors created: ../../Models/TK_CYP3A4sub_NOoutliers/imputed-TK_CYP3A4sub_NOoutliers/TK_CYP3A4sub_NOoutliers-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_CYP3A4sub_NOoutliers/imputed-TK_CYP3A4sub_NOoutliers/TK_CYP3A4sub_NOoutliers-descriptors-test.txt
+			 new json file created: ../../Models/TK_CYP3A4sub_NOoutliers/imputed-TK_CYP3A4sub_NOoutliers/TK_CYP3A4sub_NOoutliers.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.87 +/- 0.004 |0.83  +/- 0.027
+		   prec	|0.75 +/- 0.008 |0.71  +/- 0.036
+		 recall	|0.90 +/- 0.008 |0.83  +/- 0.049
+		     f1	|0.82 +/- 0.006 |0.76  +/- 0.039
+		    auc	|0.94 +/- 0.003 |0.90  +/- 0.016
+		 sensit	|0.90 +/- 0.008 |0.83  +/- 0.049
+		   spec	|0.86 +/- 0.007 |0.84  +/- 0.023
+		    NPV	|0.95 +/- 0.004 |0.91  +/- 0.024
+		    FNR	|0.10 +/- 0.008 |0.17  +/- 0.049
+		    FPR	|0.14 +/- 0.007 |0.16  +/- 0.023
+		    FDR	|0.25 +/- 0.008 |0.29  +/- 0.036
+		    FOR	|0.05 +/- 0.004 |0.09  +/- 0.024
+		F_score	|0.82 +/- 0.006 |0.76  +/- 0.039
+		    MCC	|0.73 +/- 0.009 |0.64  +/- 0.060
+		    CSI	|0.69 +/- 0.008 |0.62  +/- 0.050
+
+[+] Working on TK_CYP2C9sub_NOoutliers_us model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_CYP2C9sub_NOoutliers_us/imputed-TK_CYP2C9sub_NOoutliers_us
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.95 +/- 0.003 |0.79  +/- 0.026
+		   prec	|0.94 +/- 0.004 |0.79  +/- 0.028
+		 recall	|0.95 +/- 0.007 |0.81  +/- 0.033
+		     f1	|0.95 +/- 0.003 |0.80  +/- 0.025
+		    auc	|0.98 +/- 0.002 |0.86  +/- 0.011
+		 sensit	|0.95 +/- 0.007 |0.81  +/- 0.033
+		   spec	|0.94 +/- 0.004 |0.77  +/- 0.036
+		    NPV	|0.95 +/- 0.007 |0.79  +/- 0.031
+		    FNR	|0.05 +/- 0.007 |0.19  +/- 0.033
+		    FPR	|0.06 +/- 0.004 |0.23  +/- 0.036
+		    FDR	|0.06 +/- 0.004 |0.21  +/- 0.028
+		    FOR	|0.05 +/- 0.007 |0.21  +/- 0.031
+		F_score	|0.95 +/- 0.003 |0.80  +/- 0.025
+		    MCC	|0.89 +/- 0.006 |0.58  +/- 0.051
+		    CSI	|0.90 +/- 0.006 |0.67  +/- 0.035
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			70.58 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP2C9sub_NOoutliers_us/imputed-TK_CYP2C9sub_NOoutliers_us/raw_TK_CYP2C9sub_NOoutliers_us-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			41.33 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP2C9sub_NOoutliers_us/imputed-TK_CYP2C9sub_NOoutliers_us/raw_TK_CYP2C9sub_NOoutliers_us-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_CYP2C9sub_NOoutliers_us/imputed-TK_CYP2C9sub_NOoutliers_us/TK_CYP2C9sub_NOoutliers_us-train_set.imp
+		[+++] Scaling
+			using TK_CYP2C9sub_NOoutliers_us-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_CYP2C9sub_NOoutliers_us/imputed-TK_CYP2C9sub_NOoutliers_us/TK_CYP2C9sub_NOoutliers_us-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_CYP2C9sub_NOoutliers_us/imputed-TK_CYP2C9sub_NOoutliers_us/TK_CYP2C9sub_NOoutliers_us.sav
+			 new file with descriptors created: ../../Models/TK_CYP2C9sub_NOoutliers_us/imputed-TK_CYP2C9sub_NOoutliers_us/TK_CYP2C9sub_NOoutliers_us-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_CYP2C9sub_NOoutliers_us/imputed-TK_CYP2C9sub_NOoutliers_us/TK_CYP2C9sub_NOoutliers_us-descriptors-test.txt
+			 new json file created: ../../Models/TK_CYP2C9sub_NOoutliers_us/imputed-TK_CYP2C9sub_NOoutliers_us/TK_CYP2C9sub_NOoutliers_us.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.93 +/- 0.004 |0.78  +/- 0.019
+		   prec	|0.91 +/- 0.012 |0.77  +/- 0.016
+		 recall	|0.94 +/- 0.008 |0.81  +/- 0.029
+		     f1	|0.93 +/- 0.004 |0.79  +/- 0.020
+		    auc	|0.98 +/- 0.002 |0.85  +/- 0.016
+		 sensit	|0.94 +/- 0.008 |0.81  +/- 0.029
+		   spec	|0.91 +/- 0.014 |0.74  +/- 0.020
+		    NPV	|0.94 +/- 0.008 |0.79  +/- 0.026
+		    FNR	|0.06 +/- 0.008 |0.19  +/- 0.029
+		    FPR	|0.09 +/- 0.014 |0.26  +/- 0.020
+		    FDR	|0.09 +/- 0.012 |0.23  +/- 0.016
+		    FOR	|0.06 +/- 0.008 |0.21  +/- 0.026
+		F_score	|0.93 +/- 0.004 |0.79  +/- 0.020
+		    MCC	|0.85 +/- 0.008 |0.56  +/- 0.039
+		    CSI	|0.87 +/- 0.007 |0.66  +/- 0.027
+
+[+] Working on TK_CYP2C19sub_NOoutliers_us model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_CYP2C19sub_NOoutliers_us/imputed-TK_CYP2C19sub_NOoutliers_us
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.83 +/- 0.013 |0.77  +/- 0.045
+		   prec	|0.81 +/- 0.017 |0.74  +/- 0.044
+		 recall	|0.87 +/- 0.007 |0.82  +/- 0.043
+		     f1	|0.84 +/- 0.011 |0.78  +/- 0.041
+		    auc	|0.92 +/- 0.004 |0.84  +/- 0.038
+		 sensit	|0.87 +/- 0.007 |0.82  +/- 0.043
+		   spec	|0.80 +/- 0.022 |0.72  +/- 0.055
+		    NPV	|0.86 +/- 0.008 |0.81  +/- 0.049
+		    FNR	|0.13 +/- 0.007 |0.18  +/- 0.043
+		    FPR	|0.20 +/- 0.022 |0.28  +/- 0.055
+		    FDR	|0.19 +/- 0.017 |0.26  +/- 0.044
+		    FOR	|0.14 +/- 0.008 |0.19  +/- 0.049
+		F_score	|0.84 +/- 0.011 |0.78  +/- 0.041
+		    MCC	|0.67 +/- 0.024 |0.55  +/- 0.090
+		    CSI	|0.72 +/- 0.016 |0.64  +/- 0.054
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			53.51 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP2C19sub_NOoutliers_us/imputed-TK_CYP2C19sub_NOoutliers_us/raw_TK_CYP2C19sub_NOoutliers_us-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			4.55 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP2C19sub_NOoutliers_us/imputed-TK_CYP2C19sub_NOoutliers_us/raw_TK_CYP2C19sub_NOoutliers_us-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_CYP2C19sub_NOoutliers_us/imputed-TK_CYP2C19sub_NOoutliers_us/TK_CYP2C19sub_NOoutliers_us-train_set.imp
+		[+++] Scaling
+			using TK_CYP2C19sub_NOoutliers_us-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_CYP2C19sub_NOoutliers_us/imputed-TK_CYP2C19sub_NOoutliers_us/TK_CYP2C19sub_NOoutliers_us-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_CYP2C19sub_NOoutliers_us/imputed-TK_CYP2C19sub_NOoutliers_us/TK_CYP2C19sub_NOoutliers_us.sav
+			 new file with descriptors created: ../../Models/TK_CYP2C19sub_NOoutliers_us/imputed-TK_CYP2C19sub_NOoutliers_us/TK_CYP2C19sub_NOoutliers_us-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_CYP2C19sub_NOoutliers_us/imputed-TK_CYP2C19sub_NOoutliers_us/TK_CYP2C19sub_NOoutliers_us-descriptors-test.txt
+			 new json file created: ../../Models/TK_CYP2C19sub_NOoutliers_us/imputed-TK_CYP2C19sub_NOoutliers_us/TK_CYP2C19sub_NOoutliers_us.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.83 +/- 0.013 |0.77  +/- 0.053
+		   prec	|0.80 +/- 0.017 |0.75  +/- 0.051
+		 recall	|0.86 +/- 0.011 |0.82  +/- 0.045
+		     f1	|0.83 +/- 0.012 |0.78  +/- 0.048
+		    auc	|0.92 +/- 0.003 |0.84  +/- 0.040
+		 sensit	|0.86 +/- 0.011 |0.82  +/- 0.045
+		   spec	|0.79 +/- 0.022 |0.73  +/- 0.063
+		    NPV	|0.86 +/- 0.011 |0.80  +/- 0.054
+		    FNR	|0.14 +/- 0.011 |0.18  +/- 0.045
+		    FPR	|0.21 +/- 0.022 |0.27  +/- 0.063
+		    FDR	|0.20 +/- 0.017 |0.25  +/- 0.051
+		    FOR	|0.14 +/- 0.011 |0.20  +/- 0.054
+		F_score	|0.83 +/- 0.012 |0.78  +/- 0.048
+		    MCC	|0.65 +/- 0.025 |0.55  +/- 0.105
+		    CSI	|0.71 +/- 0.017 |0.64  +/- 0.062
+
+[+] Working on TK_CYP1A2sub_NOoutliers model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_CYP1A2sub_NOoutliers/imputed-TK_CYP1A2sub_NOoutliers
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.84 +/- 0.007 |0.79  +/- 0.025
+		   prec	|0.55 +/- 0.012 |0.47  +/- 0.038
+		 recall	|0.94 +/- 0.009 |0.80  +/- 0.044
+		     f1	|0.69 +/- 0.011 |0.59  +/- 0.031
+		    auc	|0.95 +/- 0.004 |0.86  +/- 0.038
+		 sensit	|0.94 +/- 0.009 |0.80  +/- 0.044
+		   spec	|0.82 +/- 0.008 |0.79  +/- 0.033
+		    NPV	|0.98 +/- 0.003 |0.94  +/- 0.011
+		    FNR	|0.06 +/- 0.009 |0.20  +/- 0.044
+		    FPR	|0.18 +/- 0.008 |0.21  +/- 0.033
+		    FDR	|0.45 +/- 0.012 |0.53  +/- 0.038
+		    FOR	|0.02 +/- 0.003 |0.06  +/- 0.011
+		F_score	|0.69 +/- 0.011 |0.59  +/- 0.031
+		    MCC	|0.64 +/- 0.013 |0.49  +/- 0.041
+		    CSI	|0.53 +/- 0.013 |0.42  +/- 0.031
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			129.18 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP1A2sub_NOoutliers/imputed-TK_CYP1A2sub_NOoutliers/raw_TK_CYP1A2sub_NOoutliers-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			18.64 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP1A2sub_NOoutliers/imputed-TK_CYP1A2sub_NOoutliers/raw_TK_CYP1A2sub_NOoutliers-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_CYP1A2sub_NOoutliers/imputed-TK_CYP1A2sub_NOoutliers/TK_CYP1A2sub_NOoutliers-train_set.imp
+		[+++] Scaling
+			using TK_CYP1A2sub_NOoutliers-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_CYP1A2sub_NOoutliers/imputed-TK_CYP1A2sub_NOoutliers/TK_CYP1A2sub_NOoutliers-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_CYP1A2sub_NOoutliers/imputed-TK_CYP1A2sub_NOoutliers/TK_CYP1A2sub_NOoutliers.sav
+			 new file with descriptors created: ../../Models/TK_CYP1A2sub_NOoutliers/imputed-TK_CYP1A2sub_NOoutliers/TK_CYP1A2sub_NOoutliers-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_CYP1A2sub_NOoutliers/imputed-TK_CYP1A2sub_NOoutliers/TK_CYP1A2sub_NOoutliers-descriptors-test.txt
+			 new json file created: ../../Models/TK_CYP1A2sub_NOoutliers/imputed-TK_CYP1A2sub_NOoutliers/TK_CYP1A2sub_NOoutliers.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.84 +/- 0.009 |0.79  +/- 0.025
+		   prec	|0.55 +/- 0.015 |0.47  +/- 0.035
+		 recall	|0.94 +/- 0.009 |0.80  +/- 0.046
+		     f1	|0.69 +/- 0.014 |0.59  +/- 0.037
+		    auc	|0.95 +/- 0.004 |0.86  +/- 0.038
+		 sensit	|0.94 +/- 0.009 |0.80  +/- 0.046
+		   spec	|0.82 +/- 0.010 |0.79  +/- 0.027
+		    NPV	|0.98 +/- 0.003 |0.94  +/- 0.013
+		    FNR	|0.06 +/- 0.009 |0.20  +/- 0.046
+		    FPR	|0.18 +/- 0.010 |0.21  +/- 0.027
+		    FDR	|0.45 +/- 0.015 |0.53  +/- 0.035
+		    FOR	|0.02 +/- 0.003 |0.06  +/- 0.013
+		F_score	|0.69 +/- 0.014 |0.59  +/- 0.037
+		    MCC	|0.64 +/- 0.018 |0.49  +/- 0.050
+		    CSI	|0.53 +/- 0.017 |0.42  +/- 0.036
+
+[+] Working on TK_CYP2D6sub_NOoutliers model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_CYP2D6sub_NOoutliers/imputed-TK_CYP2D6sub_NOoutliers
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.89 +/- 0.006 |0.84  +/- 0.014
+		   prec	|0.70 +/- 0.011 |0.63  +/- 0.031
+		 recall	|0.92 +/- 0.008 |0.77  +/- 0.031
+		     f1	|0.79 +/- 0.010 |0.69  +/- 0.021
+		    auc	|0.96 +/- 0.002 |0.91  +/- 0.021
+		 sensit	|0.92 +/- 0.008 |0.77  +/- 0.031
+		   spec	|0.88 +/- 0.006 |0.86  +/- 0.019
+		    NPV	|0.97 +/- 0.003 |0.93  +/- 0.009
+		    FNR	|0.08 +/- 0.008 |0.23  +/- 0.031
+		    FPR	|0.12 +/- 0.006 |0.14  +/- 0.019
+		    FDR	|0.30 +/- 0.011 |0.37  +/- 0.031
+		    FOR	|0.03 +/- 0.003 |0.07  +/- 0.009
+		F_score	|0.79 +/- 0.010 |0.69  +/- 0.021
+		    MCC	|0.73 +/- 0.013 |0.59  +/- 0.029
+		    CSI	|0.66 +/- 0.013 |0.53  +/- 0.025
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			130.53 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP2D6sub_NOoutliers/imputed-TK_CYP2D6sub_NOoutliers/raw_TK_CYP2D6sub_NOoutliers-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			24.19 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP2D6sub_NOoutliers/imputed-TK_CYP2D6sub_NOoutliers/raw_TK_CYP2D6sub_NOoutliers-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_CYP2D6sub_NOoutliers/imputed-TK_CYP2D6sub_NOoutliers/TK_CYP2D6sub_NOoutliers-train_set.imp
+		[+++] Scaling
+			using TK_CYP2D6sub_NOoutliers-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_CYP2D6sub_NOoutliers/imputed-TK_CYP2D6sub_NOoutliers/TK_CYP2D6sub_NOoutliers-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_CYP2D6sub_NOoutliers/imputed-TK_CYP2D6sub_NOoutliers/TK_CYP2D6sub_NOoutliers.sav
+			 new file with descriptors created: ../../Models/TK_CYP2D6sub_NOoutliers/imputed-TK_CYP2D6sub_NOoutliers/TK_CYP2D6sub_NOoutliers-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_CYP2D6sub_NOoutliers/imputed-TK_CYP2D6sub_NOoutliers/TK_CYP2D6sub_NOoutliers-descriptors-test.txt
+			 new json file created: ../../Models/TK_CYP2D6sub_NOoutliers/imputed-TK_CYP2D6sub_NOoutliers/TK_CYP2D6sub_NOoutliers.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.89 +/- 0.004 |0.84  +/- 0.008
+		   prec	|0.70 +/- 0.008 |0.62  +/- 0.017
+		 recall	|0.92 +/- 0.009 |0.78  +/- 0.027
+		     f1	|0.80 +/- 0.007 |0.69  +/- 0.015
+		    auc	|0.96 +/- 0.002 |0.91  +/- 0.021
+		 sensit	|0.92 +/- 0.009 |0.78  +/- 0.027
+		   spec	|0.89 +/- 0.004 |0.86  +/- 0.010
+		    NPV	|0.97 +/- 0.003 |0.93  +/- 0.008
+		    FNR	|0.08 +/- 0.009 |0.22  +/- 0.027
+		    FPR	|0.11 +/- 0.004 |0.14  +/- 0.010
+		    FDR	|0.30 +/- 0.008 |0.38  +/- 0.017
+		    FOR	|0.03 +/- 0.003 |0.07  +/- 0.008
+		F_score	|0.80 +/- 0.007 |0.69  +/- 0.015
+		    MCC	|0.74 +/- 0.009 |0.59  +/- 0.021
+		    CSI	|0.66 +/- 0.010 |0.53  +/- 0.018
+
+[+] Working on TK_CYP3A4inh model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_CYP3A4inh/imputed-TK_CYP3A4inh
+		 Model type: classifier
+	[++] Calculating original metrics
+
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.90 +/- 0.001 |0.77  +/- 0.002
+		   prec	|0.85 +/- 0.004 |0.70  +/- 0.004
+		 recall	|0.92 +/- 0.003 |0.76  +/- 0.015
+		     f1	|0.88 +/- 0.002 |0.73  +/- 0.005
+		    auc	|0.97 +/- 0.001 |0.85  +/- 0.006
+		 sensit	|0.92 +/- 0.003 |0.76  +/- 0.015
+		   spec	|0.89 +/- 0.003 |0.78  +/- 0.008
+		    NPV	|0.95 +/- 0.002 |0.83  +/- 0.007
+		    FNR	|0.08 +/- 0.003 |0.24  +/- 0.015
+		    FPR	|0.11 +/- 0.003 |0.22  +/- 0.008
+		    FDR	|0.15 +/- 0.004 |0.30  +/- 0.004
+		    FOR	|0.05 +/- 0.002 |0.17  +/- 0.007
+		F_score	|0.88 +/- 0.002 |0.73  +/- 0.005
+		    MCC	|0.80 +/- 0.003 |0.53  +/- 0.006
+		    CSI	|0.79 +/- 0.002 |0.57  +/- 0.007
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			21.74 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP3A4inh/imputed-TK_CYP3A4inh/raw_TK_CYP3A4inh-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			5.38 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP3A4inh/imputed-TK_CYP3A4inh/raw_TK_CYP3A4inh-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_CYP3A4inh/imputed-TK_CYP3A4inh/TK_CYP3A4inh-train_set.imp
+		[+++] Scaling
+			using TK_CYP3A4inh-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_CYP3A4inh/imputed-TK_CYP3A4inh/TK_CYP3A4inh-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_CYP3A4inh/imputed-TK_CYP3A4inh/TK_CYP3A4inh.sav
+			 new file with descriptors created: ../../Models/TK_CYP3A4inh/imputed-TK_CYP3A4inh/TK_CYP3A4inh-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_CYP3A4inh/imputed-TK_CYP3A4inh/TK_CYP3A4inh-descriptors-test.txt
+			 new json file created: ../../Models/TK_CYP3A4inh/imputed-TK_CYP3A4inh/TK_CYP3A4inh.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.90 +/- 0.001 |0.77  +/- 0.004
+		   prec	|0.85 +/- 0.002 |0.70  +/- 0.005
+		 recall	|0.93 +/- 0.004 |0.76  +/- 0.012
+		     f1	|0.89 +/- 0.002 |0.73  +/- 0.006
+		    auc	|0.97 +/- 0.000 |0.85  +/- 0.006
+		 sensit	|0.93 +/- 0.004 |0.76  +/- 0.012
+		   spec	|0.89 +/- 0.002 |0.78  +/- 0.006
+		    NPV	|0.95 +/- 0.003 |0.83  +/- 0.006
+		    FNR	|0.07 +/- 0.004 |0.24  +/- 0.012
+		    FPR	|0.11 +/- 0.002 |0.22  +/- 0.006
+		    FDR	|0.15 +/- 0.002 |0.30  +/- 0.005
+		    FOR	|0.05 +/- 0.003 |0.17  +/- 0.006
+		F_score	|0.89 +/- 0.002 |0.73  +/- 0.006
+		    MCC	|0.81 +/- 0.003 |0.53  +/- 0.009
+		    CSI	|0.80 +/- 0.003 |0.57  +/- 0.008
+
+[+] Working on TK_CYP2C9inh model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_CYP2C9inh/imputed-TK_CYP2C9inh
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.91 +/- 0.003 |0.80  +/- 0.004
+		   prec	|0.83 +/- 0.004 |0.70  +/- 0.004
+		 recall	|0.94 +/- 0.005 |0.77  +/- 0.010
+		     f1	|0.88 +/- 0.004 |0.73  +/- 0.006
+		    auc	|0.97 +/- 0.002 |0.87  +/- 0.006
+		 sensit	|0.94 +/- 0.005 |0.77  +/- 0.010
+		   spec	|0.89 +/- 0.003 |0.81  +/- 0.002
+		    NPV	|0.96 +/- 0.003 |0.86  +/- 0.005
+		    FNR	|0.06 +/- 0.005 |0.23  +/- 0.010
+		    FPR	|0.11 +/- 0.003 |0.19  +/- 0.002
+		    FDR	|0.17 +/- 0.004 |0.30  +/- 0.004
+		    FOR	|0.04 +/- 0.003 |0.14  +/- 0.005
+		F_score	|0.88 +/- 0.004 |0.73  +/- 0.006
+		    MCC	|0.81 +/- 0.006 |0.57  +/- 0.009
+		    CSI	|0.79 +/- 0.006 |0.58  +/- 0.008
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			1064.26 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP2C9inh/imputed-TK_CYP2C9inh/raw_TK_CYP2C9inh-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			339.11 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP2C9inh/imputed-TK_CYP2C9inh/raw_TK_CYP2C9inh-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_CYP2C9inh/imputed-TK_CYP2C9inh/TK_CYP2C9inh-train_set.imp
+		[+++] Scaling
+			using TK_CYP2C9inh-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_CYP2C9inh/imputed-TK_CYP2C9inh/TK_CYP2C9inh-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_CYP2C9inh/imputed-TK_CYP2C9inh/TK_CYP2C9inh.sav
+			 new file with descriptors created: ../../Models/TK_CYP2C9inh/imputed-TK_CYP2C9inh/TK_CYP2C9inh-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_CYP2C9inh/imputed-TK_CYP2C9inh/TK_CYP2C9inh-descriptors-test.txt
+			 new json file created: ../../Models/TK_CYP2C9inh/imputed-TK_CYP2C9inh/TK_CYP2C9inh.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.91 +/- 0.001 |0.80  +/- 0.002
+		   prec	|0.83 +/- 0.002 |0.70  +/- 0.003
+		 recall	|0.94 +/- 0.003 |0.77  +/- 0.009
+		     f1	|0.88 +/- 0.001 |0.73  +/- 0.004
+		    auc	|0.98 +/- 0.001 |0.87  +/- 0.006
+		 sensit	|0.94 +/- 0.003 |0.77  +/- 0.009
+		   spec	|0.89 +/- 0.002 |0.81  +/- 0.004
+		    NPV	|0.96 +/- 0.002 |0.86  +/- 0.004
+		    FNR	|0.06 +/- 0.003 |0.23  +/- 0.009
+		    FPR	|0.11 +/- 0.002 |0.19  +/- 0.004
+		    FDR	|0.17 +/- 0.002 |0.30  +/- 0.003
+		    FOR	|0.04 +/- 0.002 |0.14  +/- 0.004
+		F_score	|0.88 +/- 0.001 |0.73  +/- 0.004
+		    MCC	|0.82 +/- 0.001 |0.57  +/- 0.005
+		    CSI	|0.79 +/- 0.001 |0.58  +/- 0.005
+
+[+] Working on TK_CYP2C19inh model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_CYP2C19inh/imputed-TK_CYP2C19inh
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.92 +/- 0.001 |0.80  +/- 0.007
+		   prec	|0.89 +/- 0.002 |0.76  +/- 0.008
+		 recall	|0.94 +/- 0.002 |0.80  +/- 0.010
+		     f1	|0.91 +/- 0.001 |0.78  +/- 0.008
+		    auc	|0.98 +/- 0.001 |0.87  +/- 0.006
+		 sensit	|0.94 +/- 0.002 |0.80  +/- 0.010
+		   spec	|0.90 +/- 0.002 |0.80  +/- 0.008
+		    NPV	|0.95 +/- 0.001 |0.83  +/- 0.007
+		    FNR	|0.06 +/- 0.002 |0.20  +/- 0.010
+		    FPR	|0.10 +/- 0.002 |0.20  +/- 0.008
+		    FDR	|0.11 +/- 0.002 |0.24  +/- 0.008
+		    FOR	|0.05 +/- 0.001 |0.17  +/- 0.007
+		F_score	|0.91 +/- 0.001 |0.78  +/- 0.008
+		    MCC	|0.84 +/- 0.001 |0.60  +/- 0.013
+		    CSI	|0.84 +/- 0.001 |0.64  +/- 0.010
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			186.19 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP2C19inh/imputed-TK_CYP2C19inh/raw_TK_CYP2C19inh-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			52.46 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP2C19inh/imputed-TK_CYP2C19inh/raw_TK_CYP2C19inh-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_CYP2C19inh/imputed-TK_CYP2C19inh/TK_CYP2C19inh-train_set.imp
+		[+++] Scaling
+			using TK_CYP2C19inh-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_CYP2C19inh/imputed-TK_CYP2C19inh/TK_CYP2C19inh-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_CYP2C19inh/imputed-TK_CYP2C19inh/TK_CYP2C19inh.sav
+			 new file with descriptors created: ../../Models/TK_CYP2C19inh/imputed-TK_CYP2C19inh/TK_CYP2C19inh-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_CYP2C19inh/imputed-TK_CYP2C19inh/TK_CYP2C19inh-descriptors-test.txt
+			 new json file created: ../../Models/TK_CYP2C19inh/imputed-TK_CYP2C19inh/TK_CYP2C19inh.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.92 +/- 0.002 |0.80  +/- 0.005
+		   prec	|0.89 +/- 0.004 |0.76  +/- 0.006
+		 recall	|0.94 +/- 0.002 |0.80  +/- 0.005
+		     f1	|0.91 +/- 0.002 |0.78  +/- 0.005
+		    auc	|0.98 +/- 0.001 |0.87  +/- 0.006
+		 sensit	|0.94 +/- 0.002 |0.80  +/- 0.005
+		   spec	|0.90 +/- 0.003 |0.80  +/- 0.006
+		    NPV	|0.95 +/- 0.002 |0.83  +/- 0.004
+		    FNR	|0.06 +/- 0.002 |0.20  +/- 0.005
+		    FPR	|0.10 +/- 0.003 |0.20  +/- 0.006
+		    FDR	|0.11 +/- 0.004 |0.24  +/- 0.006
+		    FOR	|0.05 +/- 0.002 |0.17  +/- 0.004
+		F_score	|0.91 +/- 0.002 |0.78  +/- 0.005
+		    MCC	|0.84 +/- 0.004 |0.60  +/- 0.009
+		    CSI	|0.84 +/- 0.004 |0.64  +/- 0.007
+
+[+] Working on TK_CYP1A2inh model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_CYP1A2inh/imputed-TK_CYP1A2inh
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.89 +/- 0.002 |0.78  +/- 0.006
+		   prec	|0.87 +/- 0.003 |0.78  +/- 0.007
+		 recall	|0.90 +/- 0.002 |0.78  +/- 0.006
+		     f1	|0.89 +/- 0.002 |0.78  +/- 0.005
+		    auc	|0.96 +/- 0.001 |0.85  +/- 0.007
+		 sensit	|0.90 +/- 0.002 |0.78  +/- 0.006
+		   spec	|0.88 +/- 0.003 |0.79  +/- 0.009
+		    NPV	|0.90 +/- 0.002 |0.79  +/- 0.005
+		    FNR	|0.10 +/- 0.002 |0.22  +/- 0.006
+		    FPR	|0.12 +/- 0.003 |0.21  +/- 0.009
+		    FDR	|0.13 +/- 0.003 |0.22  +/- 0.007
+		    FOR	|0.10 +/- 0.002 |0.21  +/- 0.005
+		F_score	|0.89 +/- 0.002 |0.78  +/- 0.005
+		    MCC	|0.77 +/- 0.004 |0.57  +/- 0.011
+		    CSI	|0.79 +/- 0.003 |0.64  +/- 0.007
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			595.43 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP1A2inh/imputed-TK_CYP1A2inh/raw_TK_CYP1A2inh-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			150.39 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP1A2inh/imputed-TK_CYP1A2inh/raw_TK_CYP1A2inh-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_CYP1A2inh/imputed-TK_CYP1A2inh/TK_CYP1A2inh-train_set.imp
+		[+++] Scaling
+			using TK_CYP1A2inh-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_CYP1A2inh/imputed-TK_CYP1A2inh/TK_CYP1A2inh-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_CYP1A2inh/imputed-TK_CYP1A2inh/TK_CYP1A2inh.sav
+			 new file with descriptors created: ../../Models/TK_CYP1A2inh/imputed-TK_CYP1A2inh/TK_CYP1A2inh-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_CYP1A2inh/imputed-TK_CYP1A2inh/TK_CYP1A2inh-descriptors-test.txt
+			 new json file created: ../../Models/TK_CYP1A2inh/imputed-TK_CYP1A2inh/TK_CYP1A2inh.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.89 +/- 0.002 |0.78  +/- 0.009
+		   prec	|0.88 +/- 0.003 |0.77  +/- 0.009
+		 recall	|0.90 +/- 0.002 |0.78  +/- 0.010
+		     f1	|0.89 +/- 0.002 |0.78  +/- 0.009
+		    auc	|0.96 +/- 0.001 |0.86  +/- 0.008
+		 sensit	|0.90 +/- 0.002 |0.78  +/- 0.010
+		   spec	|0.88 +/- 0.003 |0.79  +/- 0.010
+		    NPV	|0.90 +/- 0.002 |0.79  +/- 0.009
+		    FNR	|0.10 +/- 0.002 |0.22  +/- 0.010
+		    FPR	|0.12 +/- 0.003 |0.21  +/- 0.010
+		    FDR	|0.12 +/- 0.003 |0.23  +/- 0.009
+		    FOR	|0.10 +/- 0.002 |0.21  +/- 0.009
+		F_score	|0.89 +/- 0.002 |0.78  +/- 0.009
+		    MCC	|0.78 +/- 0.003 |0.57  +/- 0.017
+		    CSI	|0.80 +/- 0.003 |0.64  +/- 0.012
+
+[+] Working on TK_CYP2D6inh_NOoutliers_us model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_CYP2D6inh_NOoutliers_us/imputed-TK_CYP2D6inh_NOoutliers_us
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.92 +/- 0.002 |0.75  +/- 0.011
+		   prec	|0.93 +/- 0.004 |0.76  +/- 0.012
+		 recall	|0.91 +/- 0.002 |0.73  +/- 0.014
+		     f1	|0.92 +/- 0.002 |0.74  +/- 0.012
+		    auc	|0.98 +/- 0.001 |0.83  +/- 0.011
+		 sensit	|0.91 +/- 0.002 |0.73  +/- 0.014
+		   spec	|0.93 +/- 0.004 |0.77  +/- 0.012
+		    NPV	|0.91 +/- 0.002 |0.74  +/- 0.012
+		    FNR	|0.09 +/- 0.002 |0.27  +/- 0.014
+		    FPR	|0.07 +/- 0.004 |0.23  +/- 0.012
+		    FDR	|0.07 +/- 0.004 |0.24  +/- 0.012
+		    FOR	|0.09 +/- 0.002 |0.26  +/- 0.012
+		F_score	|0.92 +/- 0.002 |0.74  +/- 0.012
+		    MCC	|0.84 +/- 0.004 |0.50  +/- 0.022
+		    CSI	|0.85 +/- 0.003 |0.59  +/- 0.015
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			409.91 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP2D6inh_NOoutliers_us/imputed-TK_CYP2D6inh_NOoutliers_us/raw_TK_CYP2D6inh_NOoutliers_us-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			225.92 seconds
+		 file with raw descriptors created: ../../Models/TK_CYP2D6inh_NOoutliers_us/imputed-TK_CYP2D6inh_NOoutliers_us/raw_TK_CYP2D6inh_NOoutliers_us-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_CYP2D6inh_NOoutliers_us/imputed-TK_CYP2D6inh_NOoutliers_us/TK_CYP2D6inh_NOoutliers_us-train_set.imp
+		[+++] Scaling
+			using TK_CYP2D6inh_NOoutliers_us-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_CYP2D6inh_NOoutliers_us/imputed-TK_CYP2D6inh_NOoutliers_us/TK_CYP2D6inh_NOoutliers_us-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_CYP2D6inh_NOoutliers_us/imputed-TK_CYP2D6inh_NOoutliers_us/TK_CYP2D6inh_NOoutliers_us.sav
+			 new file with descriptors created: ../../Models/TK_CYP2D6inh_NOoutliers_us/imputed-TK_CYP2D6inh_NOoutliers_us/TK_CYP2D6inh_NOoutliers_us-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_CYP2D6inh_NOoutliers_us/imputed-TK_CYP2D6inh_NOoutliers_us/TK_CYP2D6inh_NOoutliers_us-descriptors-test.txt
+			 new json file created: ../../Models/TK_CYP2D6inh_NOoutliers_us/imputed-TK_CYP2D6inh_NOoutliers_us/TK_CYP2D6inh_NOoutliers_us.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.92 +/- 0.002 |0.75  +/- 0.009
+		   prec	|0.93 +/- 0.001 |0.75  +/- 0.010
+		 recall	|0.91 +/- 0.004 |0.73  +/- 0.010
+		     f1	|0.92 +/- 0.002 |0.74  +/- 0.009
+		    auc	|0.98 +/- 0.001 |0.82  +/- 0.011
+		 sensit	|0.91 +/- 0.004 |0.73  +/- 0.010
+		   spec	|0.93 +/- 0.002 |0.76  +/- 0.011
+		    NPV	|0.91 +/- 0.004 |0.74  +/- 0.009
+		    FNR	|0.09 +/- 0.004 |0.27  +/- 0.010
+		    FPR	|0.07 +/- 0.002 |0.24  +/- 0.011
+		    FDR	|0.07 +/- 0.001 |0.25  +/- 0.010
+		    FOR	|0.09 +/- 0.004 |0.26  +/- 0.009
+		F_score	|0.92 +/- 0.002 |0.74  +/- 0.009
+		    MCC	|0.84 +/- 0.004 |0.49  +/- 0.018
+		    CSI	|0.85 +/- 0.003 |0.59  +/- 0.012
+
+[+] Working on TK_HLM_us model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_HLM_us/imputed-TK_HLM_us
+		 Model type: classifier
+	[++] Calculating original metrics
+
+
+--------------------------------------------------------------------------------
+LokyProcess-617 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-615 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-622 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-616 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+exception calling callback for <Future at 0x7e6faa10f430 state=finished raised TerminatedWorkerError>
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/reusable_executor.py", line 177, in submit
+    return super(_ReusablePoolExecutor, self).submit(
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/process_executor.py", line 1115, in submit
+    raise self._flags.broken
+joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+The exit codes of the workers are {EXIT(1)}
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------LokyProcess-624 failed with traceback: 
+
+--------------------------------------------------------------------------------
+LokyProcess-623 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------
+LokyProcess-627 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-625 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-619 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-618 failed with traceback: 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-620 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-621 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-628 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-631 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-626 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-629 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-635 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-630 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-637 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-633 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-632 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-638 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-634 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+LokyProcess-636 failed with traceback: 
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 199, in <module>
+    process_obj = pickle.load(from_parent)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 122, in __setstate__
+    self._semlock = _SemLock._rebuild(*state)
+FileNotFoundError: [Errno 2] No such file or directory
+
+
+--------------------------------------------------------------------------------
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|nan +/- nan |nan  +/- nan
+		   prec	|nan +/- nan |nan  +/- nan
+		 recall	|nan +/- nan |nan  +/- nan
+		     f1	|nan +/- nan |nan  +/- nan
+		    auc	|0.96 +/- 0.002 |0.83  +/- 0.007
+		 sensit	|nan +/- nan |nan  +/- nan
+		   spec	|nan +/- nan |nan  +/- nan
+		    NPV	|nan +/- nan |nan  +/- nan
+		    FNR	|nan +/- nan |nan  +/- nan
+		    FPR	|nan +/- nan |nan  +/- nan
+		    FDR	|nan +/- nan |nan  +/- nan
+		    FOR	|nan +/- nan |nan  +/- nan
+		F_score	|nan +/- nan |nan  +/- nan
+		    MCC	|nan +/- nan |nan  +/- nan
+		    CSI	|nan +/- nan |nan  +/- nan
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			175.17 seconds
+		 file with raw descriptors created: ../../Models/TK_HLM_us/imputed-TK_HLM_us/raw_TK_HLM_us-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			65.76 seconds
+		 file with raw descriptors created: ../../Models/TK_HLM_us/imputed-TK_HLM_us/raw_TK_HLM_us-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_HLM_us/imputed-TK_HLM_us/TK_HLM_us-train_set.imp
+		[+++] Scaling
+			using TK_HLM_us-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_HLM_us/imputed-TK_HLM_us/TK_HLM_us-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_HLM_us/imputed-TK_HLM_us/TK_HLM_us.sav
+			 new file with descriptors created: ../../Models/TK_HLM_us/imputed-TK_HLM_us/TK_HLM_us-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_HLM_us/imputed-TK_HLM_us/TK_HLM_us-descriptors-test.txt
+			 new json file created: ../../Models/TK_HLM_us/imputed-TK_HLM_us/TK_HLM_us.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.89 +/- 0.005 |0.75  +/- 0.010
+		   prec	|0.84 +/- 0.007 |0.70  +/- 0.017
+		 recall	|0.93 +/- 0.006 |0.79  +/- 0.021
+		     f1	|0.89 +/- 0.005 |0.74  +/- 0.007
+		    auc	|0.96 +/- 0.002 |0.83  +/- 0.006
+		 sensit	|0.93 +/- 0.006 |0.79  +/- 0.021
+		   spec	|0.85 +/- 0.008 |0.71  +/- 0.029
+		    NPV	|0.94 +/- 0.005 |0.80  +/- 0.012
+		    FNR	|0.07 +/- 0.006 |0.21  +/- 0.021
+		    FPR	|0.15 +/- 0.008 |0.29  +/- 0.029
+		    FDR	|0.16 +/- 0.007 |0.30  +/- 0.017
+		    FOR	|0.06 +/- 0.005 |0.20  +/- 0.012
+		F_score	|0.89 +/- 0.005 |0.74  +/- 0.007
+		    MCC	|0.78 +/- 0.009 |0.50  +/- 0.017
+		    CSI	|0.79 +/- 0.008 |0.59  +/- 0.009
+
+[+] Working on TK_OATP1B1inh_no3D_us model
+	[++] Reading input files and creating putput directory
+		Output directory already exists: ../../Models/TK_OATP1B1inh_no3D_us/imputed-TK_OATP1B1inh_no3D_us
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.84 +/- 0.011 |0.74  +/- 0.037
+		   prec	|0.78 +/- 0.017 |0.67  +/- 0.024
+		 recall	|0.83 +/- 0.019 |0.70  +/- 0.133
+		     f1	|0.81 +/- 0.013 |0.68  +/- 0.073
+		    auc	|0.91 +/- 0.007 |0.81  +/- 0.042
+		 sensit	|0.83 +/- 0.019 |0.70  +/- 0.133
+		   spec	|0.84 +/- 0.016 |0.76  +/- 0.048
+		    NPV	|0.88 +/- 0.012 |0.79  +/- 0.064
+		    FNR	|0.17 +/- 0.019 |0.30  +/- 0.133
+		    FPR	|0.16 +/- 0.016 |0.24  +/- 0.048
+		    FDR	|0.22 +/- 0.017 |0.33  +/- 0.024
+		    FOR	|0.12 +/- 0.012 |0.21  +/- 0.064
+		F_score	|0.81 +/- 0.013 |0.68  +/- 0.073
+		    MCC	|0.67 +/- 0.022 |0.46  +/- 0.087
+		    CSI	|0.67 +/- 0.018 |0.52  +/- 0.082
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			133.3 seconds
+		 file with raw descriptors created: ../../Models/TK_OATP1B1inh_no3D_us/imputed-TK_OATP1B1inh_no3D_us/raw_TK_OATP1B1inh_no3D_us-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			1757.28 seconds
+		 file with raw descriptors created: ../../Models/TK_OATP1B1inh_no3D_us/imputed-TK_OATP1B1inh_no3D_us/raw_TK_OATP1B1inh_no3D_us-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_OATP1B1inh_no3D_us/imputed-TK_OATP1B1inh_no3D_us/TK_OATP1B1inh_no3D_us-train_set.imp
+		[+++] Scaling
+			using TK_OATP1B1inh_no3D_us-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_OATP1B1inh_no3D_us/imputed-TK_OATP1B1inh_no3D_us/TK_OATP1B1inh_no3D_us-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_OATP1B1inh_no3D_us/imputed-TK_OATP1B1inh_no3D_us/TK_OATP1B1inh_no3D_us.sav
+			 new file with descriptors created: ../../Models/TK_OATP1B1inh_no3D_us/imputed-TK_OATP1B1inh_no3D_us/TK_OATP1B1inh_no3D_us-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_OATP1B1inh_no3D_us/imputed-TK_OATP1B1inh_no3D_us/TK_OATP1B1inh_no3D_us-descriptors-test.txt
+			 new json file created: ../../Models/TK_OATP1B1inh_no3D_us/imputed-TK_OATP1B1inh_no3D_us/TK_OATP1B1inh_no3D_us.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.83 +/- 0.011 |0.73  +/- 0.039
+		   prec	|0.78 +/- 0.019 |0.66  +/- 0.036
+		 recall	|0.83 +/- 0.012 |0.69  +/- 0.098
+		     f1	|0.80 +/- 0.012 |0.67  +/- 0.061
+		    auc	|0.91 +/- 0.008 |0.81  +/- 0.046
+		 sensit	|0.83 +/- 0.012 |0.69  +/- 0.098
+		   spec	|0.84 +/- 0.018 |0.76  +/- 0.038
+		    NPV	|0.88 +/- 0.008 |0.78  +/- 0.050
+		    FNR	|0.17 +/- 0.012 |0.31  +/- 0.098
+		    FPR	|0.16 +/- 0.018 |0.24  +/- 0.038
+		    FDR	|0.22 +/- 0.019 |0.34  +/- 0.036
+		    FOR	|0.12 +/- 0.008 |0.22  +/- 0.050
+		F_score	|0.80 +/- 0.012 |0.67  +/- 0.061
+		    MCC	|0.66 +/- 0.022 |0.45  +/- 0.085
+		    CSI	|0.67 +/- 0.016 |0.51  +/- 0.070
+
+[+] Working on TK_OATP1B3inh_no3D_us model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_OATP1B3inh_no3D_us/imputed-TK_OATP1B3inh_no3D_us
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.87 +/- 0.008 |0.76  +/- 0.038
+		   prec	|0.78 +/- 0.013 |0.66  +/- 0.052
+		 recall	|0.92 +/- 0.006 |0.77  +/- 0.056
+		     f1	|0.85 +/- 0.009 |0.71  +/- 0.044
+		    auc	|0.95 +/- 0.005 |0.83  +/- 0.038
+		 sensit	|0.92 +/- 0.006 |0.77  +/- 0.056
+		   spec	|0.84 +/- 0.011 |0.76  +/- 0.050
+		    NPV	|0.95 +/- 0.004 |0.85  +/- 0.033
+		    FNR	|0.08 +/- 0.006 |0.23  +/- 0.056
+		    FPR	|0.16 +/- 0.011 |0.24  +/- 0.050
+		    FDR	|0.22 +/- 0.013 |0.34  +/- 0.052
+		    FOR	|0.05 +/- 0.004 |0.15  +/- 0.033
+		F_score	|0.85 +/- 0.009 |0.71  +/- 0.044
+		    MCC	|0.75 +/- 0.016 |0.52  +/- 0.076
+		    CSI	|0.73 +/- 0.014 |0.55  +/- 0.051
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			3.14 seconds
+		 file with raw descriptors created: ../../Models/TK_OATP1B3inh_no3D_us/imputed-TK_OATP1B3inh_no3D_us/raw_TK_OATP1B3inh_no3D_us-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			1.32 seconds
+		 file with raw descriptors created: ../../Models/TK_OATP1B3inh_no3D_us/imputed-TK_OATP1B3inh_no3D_us/raw_TK_OATP1B3inh_no3D_us-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_OATP1B3inh_no3D_us/imputed-TK_OATP1B3inh_no3D_us/TK_OATP1B3inh_no3D_us-train_set.imp
+		[+++] Scaling
+			using TK_OATP1B3inh_no3D_us-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_OATP1B3inh_no3D_us/imputed-TK_OATP1B3inh_no3D_us/TK_OATP1B3inh_no3D_us-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_OATP1B3inh_no3D_us/imputed-TK_OATP1B3inh_no3D_us/TK_OATP1B3inh_no3D_us.sav
+			 new file with descriptors created: ../../Models/TK_OATP1B3inh_no3D_us/imputed-TK_OATP1B3inh_no3D_us/TK_OATP1B3inh_no3D_us-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_OATP1B3inh_no3D_us/imputed-TK_OATP1B3inh_no3D_us/TK_OATP1B3inh_no3D_us-descriptors-test.txt
+			 new json file created: ../../Models/TK_OATP1B3inh_no3D_us/imputed-TK_OATP1B3inh_no3D_us/TK_OATP1B3inh_no3D_us.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.87 +/- 0.014 |0.77  +/- 0.051
+		   prec	|0.78 +/- 0.022 |0.67  +/- 0.062
+		 recall	|0.92 +/- 0.012 |0.76  +/- 0.063
+		     f1	|0.85 +/- 0.016 |0.71  +/- 0.061
+		    auc	|0.94 +/- 0.006 |0.83  +/- 0.038
+		 sensit	|0.92 +/- 0.012 |0.76  +/- 0.063
+		   spec	|0.85 +/- 0.019 |0.77  +/- 0.047
+		    NPV	|0.95 +/- 0.008 |0.84  +/- 0.042
+		    FNR	|0.08 +/- 0.012 |0.24  +/- 0.063
+		    FPR	|0.15 +/- 0.019 |0.23  +/- 0.047
+		    FDR	|0.22 +/- 0.022 |0.33  +/- 0.062
+		    FOR	|0.05 +/- 0.008 |0.16  +/- 0.042
+		F_score	|0.85 +/- 0.016 |0.71  +/- 0.061
+		    MCC	|0.75 +/- 0.026 |0.52  +/- 0.104
+		    CSI	|0.73 +/- 0.024 |0.55  +/- 0.071
+
+[+] Working on TK_BSEPinh_no3D model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_BSEPinh_no3D/imputed-TK_BSEPinh_no3D
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.88 +/- 0.006 |0.87  +/- 0.018
+		   prec	|0.62 +/- 0.016 |0.58  +/- 0.046
+		 recall	|0.75 +/- 0.020 |0.72  +/- 0.093
+		     f1	|0.68 +/- 0.015 |0.64  +/- 0.056
+		    auc	|0.92 +/- 0.005 |0.90  +/- 0.017
+		 sensit	|0.75 +/- 0.020 |0.72  +/- 0.093
+		   spec	|0.91 +/- 0.005 |0.90  +/- 0.021
+		    NPV	|0.95 +/- 0.004 |0.94  +/- 0.017
+		    FNR	|0.25 +/- 0.020 |0.28  +/- 0.093
+		    FPR	|0.09 +/- 0.005 |0.10  +/- 0.021
+		    FDR	|0.38 +/- 0.016 |0.42  +/- 0.046
+		    FOR	|0.05 +/- 0.004 |0.06  +/- 0.017
+		F_score	|0.68 +/- 0.015 |0.64  +/- 0.056
+		    MCC	|0.61 +/- 0.019 |0.57  +/- 0.066
+		    CSI	|0.51 +/- 0.018 |0.47  +/- 0.061
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			3.4 seconds
+		 file with raw descriptors created: ../../Models/TK_BSEPinh_no3D/imputed-TK_BSEPinh_no3D/raw_TK_BSEPinh_no3D-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			1.58 seconds
+		 file with raw descriptors created: ../../Models/TK_BSEPinh_no3D/imputed-TK_BSEPinh_no3D/raw_TK_BSEPinh_no3D-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_BSEPinh_no3D/imputed-TK_BSEPinh_no3D/TK_BSEPinh_no3D-train_set.imp
+		[+++] Scaling
+			using TK_BSEPinh_no3D-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_BSEPinh_no3D/imputed-TK_BSEPinh_no3D/TK_BSEPinh_no3D-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_BSEPinh_no3D/imputed-TK_BSEPinh_no3D/TK_BSEPinh_no3D.sav
+			 new file with descriptors created: ../../Models/TK_BSEPinh_no3D/imputed-TK_BSEPinh_no3D/TK_BSEPinh_no3D-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_BSEPinh_no3D/imputed-TK_BSEPinh_no3D/TK_BSEPinh_no3D-descriptors-test.txt
+			 new json file created: ../../Models/TK_BSEPinh_no3D/imputed-TK_BSEPinh_no3D/TK_BSEPinh_no3D.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.88 +/- 0.007 |0.87  +/- 0.018
+		   prec	|0.62 +/- 0.017 |0.58  +/- 0.046
+		 recall	|0.75 +/- 0.023 |0.72  +/- 0.093
+		     f1	|0.68 +/- 0.017 |0.64  +/- 0.056
+		    auc	|0.92 +/- 0.005 |0.90  +/- 0.017
+		 sensit	|0.75 +/- 0.023 |0.72  +/- 0.093
+		   spec	|0.91 +/- 0.006 |0.90  +/- 0.021
+		    NPV	|0.95 +/- 0.005 |0.94  +/- 0.017
+		    FNR	|0.25 +/- 0.023 |0.28  +/- 0.093
+		    FPR	|0.09 +/- 0.006 |0.10  +/- 0.021
+		    FDR	|0.38 +/- 0.017 |0.42  +/- 0.046
+		    FOR	|0.05 +/- 0.005 |0.06  +/- 0.017
+		F_score	|0.68 +/- 0.017 |0.64  +/- 0.056
+		    MCC	|0.61 +/- 0.021 |0.57  +/- 0.066
+		    CSI	|0.51 +/- 0.019 |0.47  +/- 0.061
+
+[+] Working on TK_F20 model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_F20/imputed-TK_F20
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.85 +/- 0.010 |0.70  +/- 0.037
+		   prec	|0.98 +/- 0.004 |0.86  +/- 0.020
+		 recall	|0.81 +/- 0.016 |0.71  +/- 0.041
+		     f1	|0.89 +/- 0.008 |0.78  +/- 0.031
+		    auc	|0.96 +/- 0.002 |0.75  +/- 0.050
+		 sensit	|0.81 +/- 0.016 |0.71  +/- 0.041
+		   spec	|0.94 +/- 0.011 |0.68  +/- 0.046
+		    NPV	|0.64 +/- 0.018 |0.45  +/- 0.045
+		    FNR	|0.19 +/- 0.016 |0.29  +/- 0.041
+		    FPR	|0.06 +/- 0.011 |0.32  +/- 0.046
+		    FDR	|0.02 +/- 0.004 |0.14  +/- 0.020
+		    FOR	|0.36 +/- 0.018 |0.55  +/- 0.045
+		F_score	|0.89 +/- 0.008 |0.78  +/- 0.031
+		    MCC	|0.68 +/- 0.013 |0.35  +/- 0.069
+		    CSI	|0.80 +/- 0.014 |0.64  +/- 0.042
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			2.15 seconds
+		 file with raw descriptors created: ../../Models/TK_F20/imputed-TK_F20/raw_TK_F20-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			0.69 seconds
+		 file with raw descriptors created: ../../Models/TK_F20/imputed-TK_F20/raw_TK_F20-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_F20/imputed-TK_F20/TK_F20-train_set.imp
+		[+++] Scaling
+			using TK_F20-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_F20/imputed-TK_F20/TK_F20-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_F20/imputed-TK_F20/TK_F20.sav
+			 new file with descriptors created: ../../Models/TK_F20/imputed-TK_F20/TK_F20-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_F20/imputed-TK_F20/TK_F20-descriptors-test.txt
+			 new json file created: ../../Models/TK_F20/imputed-TK_F20/TK_F20.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.85 +/- 0.010 |0.70  +/- 0.037
+		   prec	|0.98 +/- 0.004 |0.86  +/- 0.020
+		 recall	|0.81 +/- 0.016 |0.71  +/- 0.041
+		     f1	|0.89 +/- 0.008 |0.78  +/- 0.031
+		    auc	|0.96 +/- 0.002 |0.75  +/- 0.050
+		 sensit	|0.81 +/- 0.016 |0.71  +/- 0.041
+		   spec	|0.94 +/- 0.011 |0.68  +/- 0.046
+		    NPV	|0.64 +/- 0.018 |0.45  +/- 0.045
+		    FNR	|0.19 +/- 0.016 |0.29  +/- 0.041
+		    FPR	|0.06 +/- 0.011 |0.32  +/- 0.046
+		    FDR	|0.02 +/- 0.004 |0.14  +/- 0.020
+		    FOR	|0.36 +/- 0.018 |0.55  +/- 0.045
+		F_score	|0.89 +/- 0.008 |0.78  +/- 0.031
+		    MCC	|0.68 +/- 0.013 |0.35  +/- 0.069
+		    CSI	|0.80 +/- 0.014 |0.64  +/- 0.042
+
+[+] Working on TK_F30 model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_F30/imputed-TK_F30
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.85 +/- 0.013 |0.66  +/- 0.033
+		   prec	|0.96 +/- 0.002 |0.80  +/- 0.028
+		 recall	|0.81 +/- 0.020 |0.66  +/- 0.033
+		     f1	|0.88 +/- 0.012 |0.72  +/- 0.029
+		    auc	|0.96 +/- 0.002 |0.75  +/- 0.036
+		 sensit	|0.81 +/- 0.020 |0.66  +/- 0.033
+		   spec	|0.94 +/- 0.004 |0.68  +/- 0.050
+		    NPV	|0.72 +/- 0.022 |0.50  +/- 0.037
+		    FNR	|0.19 +/- 0.020 |0.34  +/- 0.033
+		    FPR	|0.06 +/- 0.004 |0.32  +/- 0.050
+		    FDR	|0.04 +/- 0.002 |0.20  +/- 0.028
+		    FOR	|0.28 +/- 0.022 |0.50  +/- 0.037
+		F_score	|0.88 +/- 0.012 |0.72  +/- 0.029
+		    MCC	|0.71 +/- 0.022 |0.32  +/- 0.067
+		    CSI	|0.79 +/- 0.020 |0.56  +/- 0.035
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			2.36 seconds
+		 file with raw descriptors created: ../../Models/TK_F30/imputed-TK_F30/raw_TK_F30-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			1.35 seconds
+		 file with raw descriptors created: ../../Models/TK_F30/imputed-TK_F30/raw_TK_F30-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_F30/imputed-TK_F30/TK_F30-train_set.imp
+		[+++] Scaling
+			using TK_F30-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_F30/imputed-TK_F30/TK_F30-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_F30/imputed-TK_F30/TK_F30.sav
+			 new file with descriptors created: ../../Models/TK_F30/imputed-TK_F30/TK_F30-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_F30/imputed-TK_F30/TK_F30-descriptors-test.txt
+			 new json file created: ../../Models/TK_F30/imputed-TK_F30/TK_F30.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.85 +/- 0.013 |0.66  +/- 0.033
+		   prec	|0.96 +/- 0.002 |0.80  +/- 0.028
+		 recall	|0.81 +/- 0.020 |0.66  +/- 0.033
+		     f1	|0.88 +/- 0.012 |0.72  +/- 0.029
+		    auc	|0.96 +/- 0.002 |0.75  +/- 0.036
+		 sensit	|0.81 +/- 0.020 |0.66  +/- 0.033
+		   spec	|0.94 +/- 0.004 |0.68  +/- 0.050
+		    NPV	|0.72 +/- 0.022 |0.50  +/- 0.037
+		    FNR	|0.19 +/- 0.020 |0.34  +/- 0.033
+		    FPR	|0.06 +/- 0.004 |0.32  +/- 0.050
+		    FDR	|0.04 +/- 0.002 |0.20  +/- 0.028
+		    FOR	|0.28 +/- 0.022 |0.50  +/- 0.037
+		F_score	|0.88 +/- 0.012 |0.72  +/- 0.029
+		    MCC	|0.71 +/- 0.022 |0.32  +/- 0.067
+		    CSI	|0.79 +/- 0.020 |0.56  +/- 0.035
+
+[+] Working on TK_HIA_us model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_HIA_us/imputed-TK_HIA_us
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.92 +/- 0.011 |0.83  +/- 0.017
+		   prec	|0.91 +/- 0.012 |0.85  +/- 0.037
+		 recall	|0.96 +/- 0.010 |0.88  +/- 0.039
+		     f1	|0.94 +/- 0.009 |0.86  +/- 0.014
+		    auc	|0.96 +/- 0.006 |0.87  +/- 0.024
+		 sensit	|0.96 +/- 0.010 |0.88  +/- 0.039
+		   spec	|0.85 +/- 0.021 |0.75  +/- 0.071
+		    NPV	|0.93 +/- 0.016 |0.80  +/- 0.040
+		    FNR	|0.04 +/- 0.010 |0.12  +/- 0.039
+		    FPR	|0.15 +/- 0.021 |0.25  +/- 0.071
+		    FDR	|0.09 +/- 0.012 |0.15  +/- 0.037
+		    FOR	|0.07 +/- 0.016 |0.20  +/- 0.040
+		F_score	|0.94 +/- 0.009 |0.86  +/- 0.014
+		    MCC	|0.83 +/- 0.024 |0.64  +/- 0.038
+		    CSI	|0.88 +/- 0.015 |0.76  +/- 0.022
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			1.03 seconds
+		 file with raw descriptors created: ../../Models/TK_HIA_us/imputed-TK_HIA_us/raw_TK_HIA_us-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			0.72 seconds
+		 file with raw descriptors created: ../../Models/TK_HIA_us/imputed-TK_HIA_us/raw_TK_HIA_us-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_HIA_us/imputed-TK_HIA_us/TK_HIA_us-train_set.imp
+		[+++] Scaling
+			using TK_HIA_us-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_HIA_us/imputed-TK_HIA_us/TK_HIA_us-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_HIA_us/imputed-TK_HIA_us/TK_HIA_us.sav
+			 new file with descriptors created: ../../Models/TK_HIA_us/imputed-TK_HIA_us/TK_HIA_us-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_HIA_us/imputed-TK_HIA_us/TK_HIA_us-descriptors-test.txt
+			 new json file created: ../../Models/TK_HIA_us/imputed-TK_HIA_us/TK_HIA_us.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.92 +/- 0.009 |0.83  +/- 0.025
+		   prec	|0.91 +/- 0.011 |0.85  +/- 0.035
+		 recall	|0.96 +/- 0.012 |0.87  +/- 0.040
+		     f1	|0.94 +/- 0.007 |0.86  +/- 0.021
+		    auc	|0.96 +/- 0.006 |0.87  +/- 0.019
+		 sensit	|0.96 +/- 0.012 |0.87  +/- 0.040
+		   spec	|0.85 +/- 0.021 |0.76  +/- 0.066
+		    NPV	|0.93 +/- 0.020 |0.79  +/- 0.045
+		    FNR	|0.04 +/- 0.012 |0.13  +/- 0.040
+		    FPR	|0.15 +/- 0.021 |0.24  +/- 0.066
+		    FDR	|0.09 +/- 0.011 |0.15  +/- 0.035
+		    FOR	|0.07 +/- 0.020 |0.21  +/- 0.045
+		F_score	|0.94 +/- 0.007 |0.86  +/- 0.021
+		    MCC	|0.83 +/- 0.019 |0.64  +/- 0.053
+		    CSI	|0.88 +/- 0.012 |0.76  +/- 0.032
+
+[+] Working on TK_Pgpinh model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_Pgpinh/imputed-TK_Pgpinh
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.92 +/- 0.006 |0.88  +/- 0.019
+		   prec	|0.92 +/- 0.008 |0.88  +/- 0.017
+		 recall	|0.93 +/- 0.006 |0.89  +/- 0.021
+		     f1	|0.93 +/- 0.006 |0.89  +/- 0.018
+		    auc	|0.98 +/- 0.002 |0.94  +/- 0.014
+		 sensit	|0.93 +/- 0.006 |0.89  +/- 0.021
+		   spec	|0.91 +/- 0.010 |0.86  +/- 0.019
+		    NPV	|0.92 +/- 0.006 |0.87  +/- 0.024
+		    FNR	|0.07 +/- 0.006 |0.11  +/- 0.021
+		    FPR	|0.09 +/- 0.010 |0.14  +/- 0.019
+		    FDR	|0.08 +/- 0.008 |0.12  +/- 0.017
+		    FOR	|0.08 +/- 0.006 |0.13  +/- 0.024
+		F_score	|0.93 +/- 0.006 |0.89  +/- 0.018
+		    MCC	|0.84 +/- 0.013 |0.75  +/- 0.039
+		    CSI	|0.86 +/- 0.010 |0.80  +/- 0.030
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			62.83 seconds
+		 file with raw descriptors created: ../../Models/TK_Pgpinh/imputed-TK_Pgpinh/raw_TK_Pgpinh-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			30.8 seconds
+		 file with raw descriptors created: ../../Models/TK_Pgpinh/imputed-TK_Pgpinh/raw_TK_Pgpinh-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_Pgpinh/imputed-TK_Pgpinh/TK_Pgpinh-train_set.imp
+		[+++] Scaling
+			using TK_Pgpinh-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_Pgpinh/imputed-TK_Pgpinh/TK_Pgpinh-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_Pgpinh/imputed-TK_Pgpinh/TK_Pgpinh.sav
+			 new file with descriptors created: ../../Models/TK_Pgpinh/imputed-TK_Pgpinh/TK_Pgpinh-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_Pgpinh/imputed-TK_Pgpinh/TK_Pgpinh-descriptors-test.txt
+			 new json file created: ../../Models/TK_Pgpinh/imputed-TK_Pgpinh/TK_Pgpinh.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.92 +/- 0.006 |0.88  +/- 0.019
+		   prec	|0.92 +/- 0.008 |0.88  +/- 0.017
+		 recall	|0.93 +/- 0.006 |0.89  +/- 0.021
+		     f1	|0.93 +/- 0.006 |0.89  +/- 0.018
+		    auc	|0.98 +/- 0.002 |0.94  +/- 0.014
+		 sensit	|0.93 +/- 0.006 |0.89  +/- 0.021
+		   spec	|0.91 +/- 0.010 |0.86  +/- 0.019
+		    NPV	|0.92 +/- 0.006 |0.87  +/- 0.024
+		    FNR	|0.07 +/- 0.006 |0.11  +/- 0.021
+		    FPR	|0.09 +/- 0.010 |0.14  +/- 0.019
+		    FDR	|0.08 +/- 0.008 |0.12  +/- 0.017
+		    FOR	|0.08 +/- 0.006 |0.13  +/- 0.024
+		F_score	|0.93 +/- 0.006 |0.89  +/- 0.018
+		    MCC	|0.84 +/- 0.013 |0.75  +/- 0.039
+		    CSI	|0.86 +/- 0.010 |0.80  +/- 0.030
+
+[+] Working on TK_Pgpsub model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_Pgpsub/imputed-TK_Pgpsub
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.90 +/- 0.003 |0.79  +/- 0.016
+		   prec	|0.87 +/- 0.010 |0.71  +/- 0.019
+		 recall	|0.86 +/- 0.007 |0.72  +/- 0.036
+		     f1	|0.86 +/- 0.004 |0.71  +/- 0.024
+		    auc	|0.96 +/- 0.002 |0.86  +/- 0.019
+		 sensit	|0.86 +/- 0.007 |0.72  +/- 0.036
+		   spec	|0.92 +/- 0.007 |0.83  +/- 0.014
+		    NPV	|0.92 +/- 0.003 |0.83  +/- 0.018
+		    FNR	|0.14 +/- 0.007 |0.28  +/- 0.036
+		    FPR	|0.08 +/- 0.007 |0.17  +/- 0.014
+		    FDR	|0.13 +/- 0.010 |0.29  +/- 0.019
+		    FOR	|0.08 +/- 0.003 |0.17  +/- 0.018
+		F_score	|0.86 +/- 0.004 |0.71  +/- 0.024
+		    MCC	|0.78 +/- 0.007 |0.54  +/- 0.035
+		    CSI	|0.76 +/- 0.006 |0.55  +/- 0.029
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			10.5 seconds
+		 file with raw descriptors created: ../../Models/TK_Pgpsub/imputed-TK_Pgpsub/raw_TK_Pgpsub-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			4.31 seconds
+		 file with raw descriptors created: ../../Models/TK_Pgpsub/imputed-TK_Pgpsub/raw_TK_Pgpsub-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_Pgpsub/imputed-TK_Pgpsub/TK_Pgpsub-train_set.imp
+		[+++] Scaling
+			using TK_Pgpsub-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_Pgpsub/imputed-TK_Pgpsub/TK_Pgpsub-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_Pgpsub/imputed-TK_Pgpsub/TK_Pgpsub.sav
+			 new file with descriptors created: ../../Models/TK_Pgpsub/imputed-TK_Pgpsub/TK_Pgpsub-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_Pgpsub/imputed-TK_Pgpsub/TK_Pgpsub-descriptors-test.txt
+			 new json file created: ../../Models/TK_Pgpsub/imputed-TK_Pgpsub/TK_Pgpsub.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.90 +/- 0.005 |0.78  +/- 0.012
+		   prec	|0.87 +/- 0.013 |0.71  +/- 0.010
+		 recall	|0.86 +/- 0.011 |0.71  +/- 0.041
+		     f1	|0.87 +/- 0.006 |0.71  +/- 0.023
+		    auc	|0.96 +/- 0.002 |0.86  +/- 0.019
+		 sensit	|0.86 +/- 0.011 |0.71  +/- 0.041
+		   spec	|0.93 +/- 0.009 |0.82  +/- 0.010
+		    NPV	|0.92 +/- 0.006 |0.83  +/- 0.020
+		    FNR	|0.14 +/- 0.011 |0.29  +/- 0.041
+		    FPR	|0.07 +/- 0.009 |0.18  +/- 0.010
+		    FDR	|0.13 +/- 0.013 |0.29  +/- 0.010
+		    FOR	|0.08 +/- 0.006 |0.17  +/- 0.020
+		F_score	|0.87 +/- 0.006 |0.71  +/- 0.023
+		    MCC	|0.79 +/- 0.010 |0.54  +/- 0.031
+		    CSI	|0.76 +/- 0.009 |0.55  +/- 0.028
+
+[+] Working on TK_logKp model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_logKp/imputed-TK_logKp
+		 Model type: regressor
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    EV	|0.98 +/- 0.002 |0.83  +/- 0.053
+		   MAE	|0.12 +/- 0.003 |0.30  +/- 0.028
+		   MSE	|0.02 +/- 0.001 |0.15  +/- 0.032
+		 MEDAE	|0.09 +/- 0.003 |0.25  +/- 0.022
+		Rscore	|0.98 +/- 0.002 |0.83  +/- 0.052
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			0.25 seconds
+		 file with raw descriptors created: ../../Models/TK_logKp/imputed-TK_logKp/raw_TK_logKp-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			0.23 seconds
+		 file with raw descriptors created: ../../Models/TK_logKp/imputed-TK_logKp/raw_TK_logKp-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_logKp/imputed-TK_logKp/TK_logKp-train_set.imp
+		[+++] Scaling
+			using TK_logKp-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_logKp/imputed-TK_logKp/TK_logKp-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_logKp/imputed-TK_logKp/TK_logKp.sav
+			 new file with descriptors created: ../../Models/TK_logKp/imputed-TK_logKp/TK_logKp-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_logKp/imputed-TK_logKp/TK_logKp-descriptors-test.txt
+			 new json file created: ../../Models/TK_logKp/imputed-TK_logKp/TK_logKp.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    EV	|0.98 +/- 0.002 |0.83  +/- 0.054
+		   MAE	|0.12 +/- 0.003 |0.30  +/- 0.029
+		   MSE	|0.02 +/- 0.001 |0.15  +/- 0.033
+		 MEDAE	|0.09 +/- 0.003 |0.25  +/- 0.029
+		Rscore	|0.98 +/- 0.002 |0.83  +/- 0.054
+
+[+] Working on TK_BBB model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_BBB/imputed-TK_BBB
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.93 +/- 0.002 |0.87  +/- 0.012
+		   prec	|0.96 +/- 0.003 |0.92  +/- 0.010
+		 recall	|0.94 +/- 0.003 |0.91  +/- 0.021
+		     f1	|0.95 +/- 0.001 |0.91  +/- 0.009
+		    auc	|0.97 +/- 0.001 |0.91  +/- 0.008
+		 sensit	|0.94 +/- 0.003 |0.91  +/- 0.021
+		   spec	|0.89 +/- 0.009 |0.74  +/- 0.038
+		    NPV	|0.83 +/- 0.006 |0.73  +/- 0.044
+		    FNR	|0.06 +/- 0.003 |0.09  +/- 0.021
+		    FPR	|0.11 +/- 0.009 |0.26  +/- 0.038
+		    FDR	|0.04 +/- 0.003 |0.08  +/- 0.010
+		    FOR	|0.17 +/- 0.006 |0.27  +/- 0.044
+		F_score	|0.95 +/- 0.001 |0.91  +/- 0.009
+		    MCC	|0.81 +/- 0.004 |0.65  +/- 0.029
+		    CSI	|0.91 +/- 0.002 |0.84  +/- 0.015
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			1658.38 seconds
+		 file with raw descriptors created: ../../Models/TK_BBB/imputed-TK_BBB/raw_TK_BBB-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			28.36 seconds
+		 file with raw descriptors created: ../../Models/TK_BBB/imputed-TK_BBB/raw_TK_BBB-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_BBB/imputed-TK_BBB/TK_BBB-train_set.imp
+		[+++] Scaling
+			using TK_BBB-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_BBB/imputed-TK_BBB/TK_BBB-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_BBB/imputed-TK_BBB/TK_BBB.sav
+			 new file with descriptors created: ../../Models/TK_BBB/imputed-TK_BBB/TK_BBB-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_BBB/imputed-TK_BBB/TK_BBB-descriptors-test.txt
+			 new json file created: ../../Models/TK_BBB/imputed-TK_BBB/TK_BBB.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.93 +/- 0.002 |0.87  +/- 0.012
+		   prec	|0.96 +/- 0.003 |0.92  +/- 0.010
+		 recall	|0.94 +/- 0.003 |0.91  +/- 0.021
+		     f1	|0.95 +/- 0.001 |0.91  +/- 0.009
+		    auc	|0.97 +/- 0.001 |0.91  +/- 0.008
+		 sensit	|0.94 +/- 0.003 |0.91  +/- 0.021
+		   spec	|0.89 +/- 0.009 |0.74  +/- 0.038
+		    NPV	|0.83 +/- 0.007 |0.73  +/- 0.044
+		    FNR	|0.06 +/- 0.003 |0.09  +/- 0.021
+		    FPR	|0.11 +/- 0.009 |0.26  +/- 0.038
+		    FDR	|0.04 +/- 0.003 |0.08  +/- 0.010
+		    FOR	|0.17 +/- 0.007 |0.27  +/- 0.044
+		F_score	|0.95 +/- 0.001 |0.91  +/- 0.009
+		    MCC	|0.81 +/- 0.004 |0.65  +/- 0.029
+		    CSI	|0.91 +/- 0.002 |0.84  +/- 0.015
+
+[+] Working on TK_FU_no3D model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TK_FU_no3D/imputed-TK_FU_no3D
+		 Model type: regressor
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    EV	|0.93 +/- 0.004 |0.69  +/- 0.033
+		   MAE	|0.07 +/- 0.002 |0.14  +/- 0.003
+		   MSE	|0.01 +/- 0.000 |0.04  +/- 0.003
+		 MEDAE	|0.05 +/- 0.002 |0.10  +/- 0.003
+		Rscore	|0.93 +/- 0.004 |0.69  +/- 0.032
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			8.37 seconds
+		 file with raw descriptors created: ../../Models/TK_FU_no3D/imputed-TK_FU_no3D/raw_TK_FU_no3D-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			3.28 seconds
+		 file with raw descriptors created: ../../Models/TK_FU_no3D/imputed-TK_FU_no3D/raw_TK_FU_no3D-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TK_FU_no3D/imputed-TK_FU_no3D/TK_FU_no3D-train_set.imp
+		[+++] Scaling
+			using TK_FU_no3D-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TK_FU_no3D/imputed-TK_FU_no3D/TK_FU_no3D-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TK_FU_no3D/imputed-TK_FU_no3D/TK_FU_no3D.sav
+			 new file with descriptors created: ../../Models/TK_FU_no3D/imputed-TK_FU_no3D/TK_FU_no3D-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TK_FU_no3D/imputed-TK_FU_no3D/TK_FU_no3D-descriptors-test.txt
+			 new json file created: ../../Models/TK_FU_no3D/imputed-TK_FU_no3D/TK_FU_no3D.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    EV	|0.93 +/- 0.005 |0.68  +/- 0.032
+		   MAE	|0.07 +/- 0.002 |0.14  +/- 0.003
+		   MSE	|0.01 +/- 0.001 |0.04  +/- 0.003
+		 MEDAE	|0.05 +/- 0.002 |0.10  +/- 0.004
+		Rscore	|0.93 +/- 0.005 |0.68  +/- 0.032
+
+[+] Working on VDss_log10_sin_outliers model
+	[++] Reading input files and creating putput directory
+		Output directory already exists: ../../Models/VDss_log10_sin_outliers/imputed-VDss_log10_sin_outliers
+		 Model type: regressor
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    EV	|0.94 +/- 0.002 |0.71  +/- 0.038
+		   MAE	|0.09 +/- 0.002 |0.22  +/- 0.011
+		   MSE	|0.02 +/- 0.001 |0.12  +/- 0.014
+		 MEDAE	|0.05 +/- 0.001 |0.12  +/- 0.006
+		Rscore	|0.94 +/- 0.002 |0.71  +/- 0.038
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			301.59 seconds
+		 file with raw descriptors created: ../../Models/VDss_log10_sin_outliers/imputed-VDss_log10_sin_outliers/raw_VDss_log10_sin_outliers-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			164.53 seconds
+		 file with raw descriptors created: ../../Models/VDss_log10_sin_outliers/imputed-VDss_log10_sin_outliers/raw_VDss_log10_sin_outliers-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/VDss_log10_sin_outliers/imputed-VDss_log10_sin_outliers/VDss_log10_sin_outliers-train_set.imp
+		[+++] Scaling
+			using VDss_log10_sin_outliers-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/VDss_log10_sin_outliers/imputed-VDss_log10_sin_outliers/VDss_log10_sin_outliers-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/VDss_log10_sin_outliers/imputed-VDss_log10_sin_outliers/VDss_log10_sin_outliers.sav
+			 new file with descriptors created: ../../Models/VDss_log10_sin_outliers/imputed-VDss_log10_sin_outliers/VDss_log10_sin_outliers-descriptors-train.txt
+			 new file with descriptors created: ../../Models/VDss_log10_sin_outliers/imputed-VDss_log10_sin_outliers/VDss_log10_sin_outliers-descriptors-test.txt
+			 new json file created: ../../Models/VDss_log10_sin_outliers/imputed-VDss_log10_sin_outliers/VDss_log10_sin_outliers.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    EV	|0.94 +/- 0.002 |0.71  +/- 0.035
+		   MAE	|0.10 +/- 0.001 |0.22  +/- 0.010
+		   MSE	|0.02 +/- 0.001 |0.12  +/- 0.013
+		 MEDAE	|0.05 +/- 0.001 |0.12  +/- 0.012
+		Rscore	|0.94 +/- 0.002 |0.71  +/- 0.035
+
+[+] Working on TOX_MRDD model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TOX_MRDD/imputed-TOX_MRDD
+		 Model type: regressor
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    EV	|0.90 +/- 0.003 |0.64  +/- 0.018
+		   MAE	|0.25 +/- 0.003 |0.49  +/- 0.015
+		   MSE	|0.12 +/- 0.003 |0.44  +/- 0.047
+		 MEDAE	|0.18 +/- 0.002 |0.37  +/- 0.016
+		Rscore	|0.90 +/- 0.003 |0.64  +/- 0.017
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			96.49 seconds
+		 file with raw descriptors created: ../../Models/TOX_MRDD/imputed-TOX_MRDD/raw_TOX_MRDD-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			3.85 seconds
+		 file with raw descriptors created: ../../Models/TOX_MRDD/imputed-TOX_MRDD/raw_TOX_MRDD-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TOX_MRDD/imputed-TOX_MRDD/TOX_MRDD-train_set.imp
+		[+++] Scaling
+			using TOX_MRDD-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TOX_MRDD/imputed-TOX_MRDD/TOX_MRDD-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TOX_MRDD/imputed-TOX_MRDD/TOX_MRDD.sav
+			 new file with descriptors created: ../../Models/TOX_MRDD/imputed-TOX_MRDD/TOX_MRDD-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TOX_MRDD/imputed-TOX_MRDD/TOX_MRDD-descriptors-test.txt
+			 new json file created: ../../Models/TOX_MRDD/imputed-TOX_MRDD/TOX_MRDD.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    EV	|0.90 +/- 0.003 |0.64  +/- 0.019
+		   MAE	|0.25 +/- 0.002 |0.49  +/- 0.013
+		   MSE	|0.12 +/- 0.003 |0.44  +/- 0.047
+		 MEDAE	|0.18 +/- 0.003 |0.36  +/- 0.012
+		Rscore	|0.90 +/- 0.003 |0.64  +/- 0.018
+
+[+] Working on TOX_hERGinh_NOoutliers model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TOX_hERGinh_NOoutliers/imputed-TOX_hERGinh_NOoutliers
+		 Model type: classifier
+	[++] Calculating original metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.88 +/- 0.002 |0.82  +/- 0.006
+		   prec	|0.90 +/- 0.001 |0.85  +/- 0.004
+		 recall	|0.89 +/- 0.002 |0.84  +/- 0.010
+		     f1	|0.89 +/- 0.001 |0.85  +/- 0.006
+		    auc	|0.95 +/- 0.000 |0.90  +/- 0.002
+		 sensit	|0.89 +/- 0.002 |0.84  +/- 0.010
+		   spec	|0.86 +/- 0.002 |0.78  +/- 0.006
+		    NPV	|0.84 +/- 0.003 |0.77  +/- 0.011
+		    FNR	|0.11 +/- 0.002 |0.16  +/- 0.010
+		    FPR	|0.14 +/- 0.002 |0.22  +/- 0.006
+		    FDR	|0.10 +/- 0.001 |0.15  +/- 0.004
+		    FOR	|0.16 +/- 0.003 |0.23  +/- 0.011
+		F_score	|0.89 +/- 0.001 |0.85  +/- 0.006
+		    MCC	|0.74 +/- 0.003 |0.62  +/- 0.011
+		    CSI	|0.81 +/- 0.002 |0.73  +/- 0.008
+	[++] Refitting model
+		[+++] Recalculating descriptors
+		[+++] Calculating descriptors with parallelization for train
+			1169.25 seconds
+		 file with raw descriptors created: ../../Models/TOX_hERGinh_NOoutliers/imputed-TOX_hERGinh_NOoutliers/raw_TOX_hERGinh_NOoutliers-descriptors-train.txt
+		[+++] Calculating descriptors with parallelization for test
+			488.97 seconds
+		 file with raw descriptors created: ../../Models/TOX_hERGinh_NOoutliers/imputed-TOX_hERGinh_NOoutliers/raw_TOX_hERGinh_NOoutliers-descriptors-test.txt
+		[+++] Imputing
+			 imputer file created: ../../Models/TOX_hERGinh_NOoutliers/imputed-TOX_hERGinh_NOoutliers/TOX_hERGinh_NOoutliers-train_set.imp
+		[+++] Scaling
+			using TOX_hERGinh_NOoutliers-train_set.sca as StandardScaler
+			 scaler file created: ../../Models/TOX_hERGinh_NOoutliers/imputed-TOX_hERGinh_NOoutliers/TOX_hERGinh_NOoutliers-train_set.sca
+		[+++] Fitting new model and predicting
+			 new model file created: ../../Models/TOX_hERGinh_NOoutliers/imputed-TOX_hERGinh_NOoutliers/TOX_hERGinh_NOoutliers.sav
+			 new file with descriptors created: ../../Models/TOX_hERGinh_NOoutliers/imputed-TOX_hERGinh_NOoutliers/TOX_hERGinh_NOoutliers-descriptors-train.txt
+			 new file with descriptors created: ../../Models/TOX_hERGinh_NOoutliers/imputed-TOX_hERGinh_NOoutliers/TOX_hERGinh_NOoutliers-descriptors-test.txt
+			 new json file created: ../../Models/TOX_hERGinh_NOoutliers/imputed-TOX_hERGinh_NOoutliers/TOX_hERGinh_NOoutliers.json
+	[++] Calculating new metrics
+
+		######################################################
+		############## Cross-validation results ##############
+		######################################################
+
+			|Train          | Test
+		    acc	|0.88 +/- 0.001 |0.82  +/- 0.004
+		   prec	|0.90 +/- 0.001 |0.85  +/- 0.002
+		 recall	|0.89 +/- 0.002 |0.84  +/- 0.008
+		     f1	|0.90 +/- 0.001 |0.85  +/- 0.004
+		    auc	|0.95 +/- 0.000 |0.89  +/- 0.002
+		 sensit	|0.89 +/- 0.002 |0.84  +/- 0.008
+		   spec	|0.86 +/- 0.002 |0.78  +/- 0.003
+		    NPV	|0.84 +/- 0.002 |0.77  +/- 0.009
+		    FNR	|0.11 +/- 0.002 |0.16  +/- 0.008
+		    FPR	|0.14 +/- 0.002 |0.22  +/- 0.003
+		    FDR	|0.10 +/- 0.001 |0.15  +/- 0.002
+		    FOR	|0.16 +/- 0.002 |0.23  +/- 0.009
+		F_score	|0.90 +/- 0.001 |0.85  +/- 0.004
+		    MCC	|0.75 +/- 0.003 |0.62  +/- 0.008
+		    CSI	|0.81 +/- 0.002 |0.73  +/- 0.006
+
+[+] Working on TOX_Nav15inh_NOoutliers_no3D_us model
+	[++] Reading input files and creating putput directory
+		Output directory created: ../../Models/TOX_Nav15inh_NOoutliers_no3D_us/imputed-TOX_Nav15inh_NOoutliers_no3D_us
+		 Model type: classifier
+	[++] Calculating original metrics
+[LightGBM] [Fatal] Do not support special JSON characters in feature name.
+[LightGBM] [Fatal] Do not support special JSON characters in feature name.
+[LightGBM] [Fatal] Do not support special JSON characters in feature name.
+[LightGBM] [Fatal] Do not support special JSON characters in feature name.
+[LightGBM] [Fatal] Do not support special JSON characters in feature name.
+Traceback (most recent call last):
+  File "/mnt/Data/IRB/scripts/reimputation_and_prediction/reimpute_predict_AD.py", line 417, in <module>
+    df_metrics_byone = getMetrics(mod_name, model, train_df, test_df, old_new)
+  File "/mnt/Data/IRB/scripts/reimputation_and_prediction/utils/get_metrics.py", line 273, in getMetrics
+    classifier_assessment_cv(merged, model)
+  File "/mnt/Data/IRB/scripts/reimputation_and_prediction/utils/get_metrics.py", line 95, in classifier_assessment_cv
+    scores_together = cross_validate(model, X_together, y_together, cv=5,
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 292, in cross_validate
+    _insert_error_scores(results, error_score)
+  File "/home/protoqsar/anaconda3/envs/Protocosas/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 331, in _insert_error_scores
+    raise NotFittedError("All estimators failed to fit")
+sklearn.exceptions.NotFittedError: All estimators failed to fit
+
