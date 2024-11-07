@@ -1,0 +1,1052 @@
+{
+    "atom_centred$H-050": {
+        "key": "H-050"
+    },
+    "ATSC$ATSC1se": {
+        "order": 1,
+        "prop": "se"
+    },
+    "ATSC$ATSC0c": {
+        "order": 0,
+        "prop": "c"
+    },
+    "EdgeAdjacencyIndex$EEig03d": {
+        "type": "eigen",
+        "order": 3,
+        "weight": "dipole"
+    },
+    "EdgeAdjacencyIndex$EEig02d": {
+        "type": "eigen",
+        "order": 2,
+        "weight": "dipole"
+    },
+    "ATSC$ATSC8c": {
+        "order": 8,
+        "prop": "c"
+    },
+    "SLogP_PA$SLogP": {},
+    "SMR_VSA$SMR_VSA2": {
+        "k": 2
+    },
+    "GATS$GATS8d": {
+        "prop": "d",
+        "order": 8
+    },
+    "ATSC$ATSC6dv": {
+        "prop": "dv",
+        "order": 6
+    },
+    "GATS$GATS1se": {
+        "order": 1,
+        "prop": "se"
+    },
+    "MAXDP$MAXDP": {},
+    "GATS$GATS2c": {
+        "order": 2,
+        "prop": "c"
+    },
+    "ATSC$ATSC1Z": {
+        "prop": "Z",
+        "order": 1
+    },
+    "GATS$GATS5c": {
+        "order": 5,
+        "prop": "c"
+    },
+    "atom_centred$C-017": {
+        "key": "C-017"
+    },
+    "atom_centred_hybr$H-046": {
+        "key": "H-046"
+    },
+    "AATSC$AATSC1dv": {
+        "order": 1,
+        "prop": "dv"
+    },
+    "MATS$MATS4s": {
+        "order": 4,
+        "prop": "s"
+    },
+    "GATS$GATS3d": {
+        "order": 3,
+        "prop": "d"
+    },
+    "BELpk$BELd0": {
+        "order": 0,
+        "prop": "d"
+    },
+    "mol_properties$nR_3_True_False_None_False": {
+        "aromatic": null,
+        "fused": false,
+        "greater": true,
+        "hetero": false,
+        "length": 3,
+        "prop": "nr"
+    },
+    "Getaway$H6m": {
+        "name": "H6m"
+    },
+    "Getaway$R7p": {
+        "name": "R7p"
+    },
+    "RDF$RDF030m": {
+        "order": "RDF030m"
+    },
+    "Topological_Charge$JGI2": {
+        "order": 2,
+        "prop": "mean"
+    },
+    "Topological_Charge$JGI3": {
+        "order": 3,
+        "prop": "mean"
+    },
+    "topological_distance$B02[N-O]": {
+        "atoms": [
+            7,
+            8
+        ],
+        "distance": 2,
+        "type": "binary"
+    },
+    "PNSA$PNSA4": {
+        "version": 4
+    },
+    "atom_centred$C-001": {
+        "key": "C-001"
+    },
+    "ATSC$ATSC3s": {
+        "order": 3,
+        "prop": "s"
+    },
+    "AATSC$AATSC7i": {
+        "order": 7,
+        "prop": "i"
+    },
+    "GATS$GATS4c": {
+        "order": 4,
+        "prop": "c"
+    },
+    "connectivity_index$X3A": {
+        "avg": "A",
+        "order": 3,
+        "type": ""
+    },
+    "mol_properties$RBN": {
+        "prop": "rb",
+        "type": ""
+    },
+    "mol_properties$nR_5_False_False_None_None": {
+        "aromatic": null,
+        "fused": false,
+        "greater": false,
+        "hetero": null,
+        "length": 5,
+        "prop": "nr"
+    },
+    "mol_properties$nR_10_True_True_None_True": {
+        "aromatic": null,
+        "fused": true,
+        "greater": true,
+        "hetero": true,
+        "length": 10,
+        "prop": "nr"
+    },
+    "Getaway$HATS8u": {
+        "name": "HATS8u"
+    },
+    "Getaway$R3v+": {
+        "name": "R3v+"
+    },
+    "Getaway$R3s": {
+        "name": "R3s"
+    },
+    "Getaway$R2s+": {
+        "name": "R2s+"
+    },
+    "WHIM$L3s": {
+        "order": "L3s"
+    },
+    "Morse$Mor27u": {
+        "order": "Mor27u"
+    },
+    "topological_distance$F05[C-S]": {
+        "atoms": [
+            6,
+            16
+        ],
+        "distance": 5,
+        "type": "frequency"
+    },
+    "functional_group$nEster": {
+        "group": "nEster"
+    },
+    "RPCG$RPCG": {},
+    "AATS$AATS7se": {
+        "order": 7,
+        "prop": "se"
+    },
+    "AATSC$AATSC2dv": {
+        "order": 2,
+        "prop": "dv"
+    },
+    "GATS$GATS2se": {
+        "order": 2,
+        "prop": "se"
+    },
+    "BELpk$BELpe-1": {
+        "order": -1,
+        "prop": "pe"
+    },
+    "Getaway$HATS0u": {
+        "name": "HATS0u"
+    },
+    "Getaway$HATS5v": {
+        "name": "HATS5v"
+    },
+    "Getaway$HATS0s": {
+        "name": "HATS0s"
+    },
+    "Getaway$R1m+": {
+        "name": "R1m+"
+    },
+    "topological_distance$F02[N-O]": {
+        "atoms": [
+            7,
+            8
+        ],
+        "distance": 2,
+        "type": "frequency"
+    },
+    "topological_distance$F03[C-N]": {
+        "atoms": [
+            6,
+            7
+        ],
+        "distance": 3,
+        "type": "frequency"
+    },
+    "topological_distance$B03[O-O]": {
+        "atoms": [
+            8,
+            8
+        ],
+        "distance": 3,
+        "type": "binary"
+    },
+    "topological_distance$F04[N-N]": {
+        "atoms": [
+            7,
+            7
+        ],
+        "distance": 4,
+        "type": "frequency"
+    },
+    "topological_distance$B07[N-F]": {
+        "atoms": [
+            7,
+            9
+        ],
+        "distance": 7,
+        "type": "binary"
+    },
+    "EState_VSA$EState_VSA8": {
+        "k": 8
+    },
+    "EStates$SaasC": {
+        "estate": "aasC",
+        "type": "sum"
+    },
+    "Morse$Mor12u": {
+        "order": "Mor12u"
+    },
+    "atom_centred$C-005": {
+        "key": "C-005"
+    },
+    "atom_centred$C-019": {
+        "key": "C-019"
+    },
+    "ATSC$ATSC6p": {
+        "order": 6,
+        "prop": "p"
+    },
+    "AATSC$AATSC8Z": {
+        "order": 8,
+        "prop": "Z"
+    },
+    "MATS$MATS1c": {
+        "order": 1,
+        "prop": "c"
+    },
+    "MATS$MATS1se": {
+        "order": 1,
+        "prop": "se"
+    },
+    "Getaway$R1s": {
+        "name": "R1s"
+    },
+    "WHIM$Vu": {
+        "order": "Vu"
+    },
+    "Autocorr3D$TDB04v": {
+        "order": "TDB04v"
+    },
+    "Morse$Mor09m": {
+        "order": "Mor09m"
+    },
+    "Morse$Mor13m": {
+        "order": "Mor13m"
+    },
+    "Topological_Charge$JGI1": {
+        "order": 1,
+        "prop": "mean"
+    },
+    "topological_distance$B02[O-O]": {
+        "atoms": [
+            8,
+            8
+        ],
+        "distance": 2,
+        "type": "binary"
+    },
+    "topological_distance$B09[C-C]": {
+        "atoms": [
+            6,
+            6
+        ],
+        "distance": 9,
+        "type": "binary"
+    },
+    "SMR_VSA$SMR_VSA6": {
+        "k": 6
+    },
+    "atom_centred$C-024": {
+        "key": "C-024"
+    },
+    "BELpk$BELi0": {
+        "order": 0,
+        "prop": "i"
+    },
+    "RASA$RASA": {},
+    "VSA_EState$VSA_EState5": {
+        "k": 5
+    },
+    "SLogP_VSA$SLogP_VSA3": {
+        "k": 3
+    },
+    "MATS$MATS1dv": {
+        "order": 1,
+        "prop": "dv"
+    },
+    "atom_centred_hybr$H-047": {
+        "key": "H-047"
+    },
+    "AATS$AATS5dv": {
+        "order": 5,
+        "prop": "dv"
+    },
+    "Morse$Mor08u": {
+        "order": "Mor08u"
+    },
+    "Getaway$HATS2u": {
+        "name": "HATS2u"
+    },
+    "ATSC$ATSC2dv": {
+        "order": 2,
+        "prop": "dv"
+    },
+    "GATS$GATS2s": {
+        "order": 2,
+        "prop": "s"
+    },
+    "GATS$GATS7se": {
+        "order": 7,
+        "prop": "se"
+    },
+    "Morse$Mor19m": {
+        "order": "Mor19m"
+    },
+    "atom_centred_hybr$H-049": {
+        "key": "H-049"
+    },
+    "PEOE_VSA$PEOE_VSA7": {
+        "k": 7
+    },
+    "PEOE_VSA$PEOE_VSA8": {
+        "k": 8
+    },
+    "Topological_Charge$JGI6": {
+        "order": 6,
+        "prop": "mean"
+    },
+    "VSA_EState$VSA_EState7": {
+        "k": 7
+    },
+    "ICk$IC2": {
+        "order": 2
+    },
+    "VSA_EState$VSA_EState9": {
+        "k": 9
+    },
+    "SLogP_VSA$SLogP_VSA2": {
+        "k": 2
+    },
+    "mol_properties$RBF": {
+        "prop": "rb",
+        "type": "fraction"
+    },
+    "EStates$SsssCH": {
+        "estate": "sssCH",
+        "type": "sum"
+    },
+    "GATS$GATS1s": {
+        "order": 1,
+        "prop": "s"
+    },
+    "EStates$MAXaasC": {
+        "estate": "aasC",
+        "type": "max"
+    },
+    "BELpk$BELc-1": {
+        "order": -1,
+        "prop": "c"
+    },
+    "WHIM$E3i": {
+        "order": "E3i"
+    },
+    "Morse$Mor04v": {
+        "order": "Mor04v"
+    },
+    "PEOE_VSA$PEOE_VSA3": {
+        "k": 3
+    },
+    "PCR_PCD$PCR": {
+        "type": "PCR"
+    },
+    "Topological_Charge$JGI10": {
+        "order": 10,
+        "prop": "mean"
+    },
+    "RDF$RDF055m": {
+        "order": "RDF055m"
+    },
+    "GATS$GATS3c": {
+        "order": 3,
+        "prop": "c"
+    },
+    "EStates$SdssC": {
+        "estate": "dssC",
+        "type": "sum"
+    },
+    "GATS$GATS4s": {
+        "order": 4,
+        "prop": "s"
+    },
+    "GATS$GATS5s": {
+        "order": 5,
+        "prop": "s"
+    },
+    "GATS$GATS7s": {
+        "order": 7,
+        "prop": "s"
+    },
+    "WHIM$E3p": {
+        "order": "E3p"
+    },
+    "PEOE_VSA$PEOE_VSA6": {
+        "k": 6
+    },
+    "SMR_VSA$SMR_VSA3": {
+        "k": 3
+    },
+    "AATS$AATS0p": {
+        "order": 0,
+        "prop": "p"
+    },
+    "PEOE_VSA$PEOE_VSA2": {
+        "k": 2
+    },
+    "WHIM$L2v": {
+        "order": "L2v"
+    },
+    "EdgeAdjacencyIndex$EEig04d": {
+        "order": 4,
+        "type": "eigen",
+        "weight": "dipole"
+    },
+    "SICk$SIC3": {
+        "order": 3
+    },
+    "RPCS$RPCS": {},
+    "Topological_Charge$JGI5": {
+        "order": 5,
+        "prop": "mean"
+    },
+    "WHIM$P2v": {
+        "order": "P2v"
+    },
+    "MoharIndex$TI2": {
+        "order": 2
+    },
+    "GATS$GATS2i": {
+        "order": 2,
+        "prop": "i"
+    },
+    "AATSC$AATSC4d": {
+        "order": 4,
+        "prop": "d"
+    },
+    "AATS$AATS0s": {
+        "order": 0,
+        "prop": "s"
+    },
+    "ATSC$ATSC7c": {
+        "order": 7,
+        "prop": "c"
+    },
+    "Topological_Charge$JGI8": {
+        "order": 8,
+        "prop": "mean"
+    },
+    "Wap$Wap": {},
+    "GATS$GATS5d": {
+        "order": 5,
+        "prop": "d"
+    },
+    "VSA_EState$VSA_EState3": {
+        "k": 3
+    },
+    "GATS$GATS4d": {
+        "order": 4,
+        "prop": "d"
+    },
+    "PEOE_VSA$PEOE_VSA1": {
+        "k": 1
+    },
+    "ATS$ATS0d": {
+        "order": 0,
+        "prop": "d"
+    },
+    "AATS$AATS7i": {
+        "order": 7,
+        "prop": "i"
+    },
+    "AATS$AATS2i": {
+        "order": 2,
+        "prop": "i"
+    },
+    "EState_VSA$EState_VSA3": {
+        "k": 3
+    },
+    "AATS$AATS4i": {
+        "order": 4,
+        "prop": "i"
+    },
+    "ATSC$ATSC8se": {
+        "order": 8,
+        "prop": "se"
+    },
+    "AATS$AATS5i": {
+        "order": 5,
+        "prop": "i"
+    },
+    "PNSA$PNSA3": {
+        "version": 3
+    },
+    "AATS$AATS1i": {
+        "order": 1,
+        "prop": "i"
+    },
+    "AATSC$AATSC1Z": {
+        "order": 1,
+        "prop": "Z"
+    },
+    "GATS$GATS1i": {
+        "order": 1,
+        "prop": "i"
+    },
+    "PNSA$PNSA1": {
+        "version": 1
+    },
+    "SMR_VSA$SMR_VSA7": {
+        "k": 7
+    },
+    "MAXDN$MAXDN": {},
+    "AATSC$AATSC3s": {
+        "order": 3,
+        "prop": "s"
+    },
+    "AATS$AATS3i": {
+        "order": 3,
+        "prop": "i"
+    },
+    "EState_VSA$EState_VSA2": {
+        "k": 2
+    },
+    "atom_centred$O-056": {
+        "key": "O-056"
+    },
+    "ATSC$ATSC6v": {
+        "order": 6,
+        "prop": "v"
+    },
+    "ATSC$ATSC8d": {
+        "order": 8,
+        "prop": "d"
+    },
+    "ATSC$ATSC5s": {
+        "order": 5,
+        "prop": "s"
+    },
+    "PEOE_VSA$PEOE_VSA10": {
+        "k": 10
+    },
+    "ATS$ATS0dv": {
+        "order": 0,
+        "prop": "dv"
+    },
+    "ATS$ATS0Z": {
+        "order": 0,
+        "prop": "Z"
+    },
+    "ATSC$ATSC5se": {
+        "order": 5,
+        "prop": "se"
+    },
+    "GATS$GATS5Z": {
+        "order": 5,
+        "prop": "Z"
+    },
+    "ATSC$ATSC8v": {
+        "order": 8,
+        "prop": "v"
+    },
+    "atom_centred_hybr$H-052": {
+        "key": "H-052"
+    },
+    "ATSC$ATSC2Z": {
+        "order": 2,
+        "prop": "Z"
+    },
+    "ATSC$ATSC7p": {
+        "order": 7,
+        "prop": "p"
+    },
+    "AATSC$AATSC2se": {
+        "order": 2,
+        "prop": "se"
+    },
+    "MATS$MATS4c": {
+        "order": 4,
+        "prop": "c"
+    },
+    "GATS$GATS3s": {
+        "order": 3,
+        "prop": "s"
+    },
+    "mol_properties$nF": {
+        "atom": "F",
+        "prop": "an"
+    },
+    "topological_distance$F04[C-F]": {
+        "atoms": [
+            6,
+            9
+        ],
+        "distance": 4,
+        "type": "frequency"
+    },
+    "topological_distance$B05[C-Cl]": {
+        "atoms": [
+            6,
+            17
+        ],
+        "distance": 5,
+        "type": "binary"
+    },
+    "topological_distance$B09[C-S]": {
+        "atoms": [
+            6,
+            16
+        ],
+        "distance": 9,
+        "type": "binary"
+    },
+    "topological_distance$B10[N-I]": {
+        "atoms": [
+            7,
+            53
+        ],
+        "distance": 10,
+        "type": "binary"
+    },
+    "topological_distance$F02(O-O)": {
+        "atoms": [
+            8,
+            8
+        ],
+        "distance": 2,
+        "type": "frequency"
+    },
+    "GATS$GATS2Z": {
+        "order": 2,
+        "prop": "Z"
+    },
+    "GATS$GATS6Z": {
+        "order": 6,
+        "prop": "Z"
+    },
+    "SICk$SIC0": {
+        "order": 0
+    },
+    "GATS$GATS1Z": {
+        "order": 1,
+        "prop": "Z"
+    },
+    "GATS$GATS1dv": {
+        "order": 1,
+        "prop": "dv"
+    },
+    "EStates$SssCH2": {
+        "estate": "ssCH2",
+        "type": "sum"
+    },
+    "GATS$GATS5i": {
+        "order": 5,
+        "prop": "i"
+    },
+    "ATSC$ATSC1v": {
+        "order": 1,
+        "prop": "v"
+    },
+    "GATS$GATS2v": {
+        "order": 2,
+        "prop": "v"
+    },
+    "ATSC$ATSC1dv": {
+        "order": 1,
+        "prop": "dv"
+    },
+    "EStates$MINssCH2": {
+        "estate": "ssCH2",
+        "type": "min"
+    },
+    "VSA_EState$VSA_EState2": {
+        "k": 2
+    },
+    "AATS$AATS4s": {
+        "order": 4,
+        "prop": "s"
+    },
+    "EState_VSA$EState_VSA5": {
+        "k": 5
+    },
+    "ZMICk$ZMIC1": {
+        "order": 1
+    },
+    "AATSC$AATSC1c": {
+        "order": 1,
+        "prop": "c"
+    },
+    "atom_centred$N-079": {
+        "key": "N-079"
+    },
+    "GATS$GATS7d": {
+        "order": 7,
+        "prop": "d"
+    },
+    "AATSC$AATSC0c": {
+        "order": 0,
+        "prop": "c"
+    },
+    "Topological_Charge$JGI7": {
+        "order": 7,
+        "prop": "mean"
+    },
+    "AATSC$AATSC3c": {
+        "order": 3,
+        "prop": "c"
+    },
+    "ATSC$ATSC3c": {
+        "order": 3,
+        "prop": "c"
+    },
+    "HyperDetour$ww": {
+        "type": ""
+    },
+    "ICk$IC3": {
+        "order": 3
+    },
+    "ATSC$ATSC0i": {
+        "order": 0,
+        "prop": "i"
+    },
+    "VSA_EState$VSA_EState1": {
+        "k": 1
+    },
+    "AATSC$AATSC5se": {
+        "order": 5,
+        "prop": "se"
+    },
+    "ATSC$ATSC6i": {
+        "order": 6,
+        "prop": "i"
+    },
+    "topological_distance$F07[C-F]": {
+        "atoms": [
+            6,
+            9
+        ],
+        "distance": 7,
+        "type": "frequency"
+    },
+    "Topological_Charge$JGI4": {
+        "order": 4,
+        "prop": "mean"
+    },
+    "ATSC$ATSC2c": {
+        "order": 2,
+        "prop": "c"
+    },
+    "ATSC$ATSC4c": {
+        "order": 4,
+        "prop": "c"
+    },
+    "Jhetw$Jhetv": {
+        "weight": "v"
+    },
+    "ATSC$ATSC1p": {
+        "order": 1,
+        "prop": "p"
+    },
+    "atom_centred$O-057": {
+        "key": "O-057"
+    },
+    "PEOE_VSA$PEOE_VSA9": {
+        "k": 9
+    },
+    "DistanceDetourIndex$D/Dr9": {
+        "length": 9
+    },
+    "MATS$MATS1p": {
+        "order": 1,
+        "prop": "p"
+    },
+    "mol_properties$nR_3_True_False_True_False": {
+        "aromatic": true,
+        "fused": false,
+        "greater": true,
+        "hetero": false,
+        "length": 3,
+        "prop": "nr"
+    },
+    "EdgeAdjacencyIndex$ESpm03d": {
+        "order": 3,
+        "type": "spectral",
+        "weight": "dipole"
+    },
+    "atom_centred$N-068": {
+        "key": "N-068"
+    },
+    "GATS$GATS2dv": {
+        "order": 2,
+        "prop": "dv"
+    },
+    "AATS$AATS0dv": {
+        "order": 0,
+        "prop": "dv"
+    },
+    "GATS$GATS2d": {
+        "order": 2,
+        "prop": "d"
+    },
+    "MATS$MATS5Z": {
+        "order": 5,
+        "prop": "Z"
+    },
+    "AATSC$AATSC5c": {
+        "order": 5,
+        "prop": "c"
+    },
+    "functional_group$nArCOO": {
+        "group": "nArCOO"
+    },
+    "mol_properties$ARR": {
+        "prop": "ar"
+    },
+    "connectivity_index$X0vA": {
+        "avg": "A",
+        "order": 0,
+        "type": "v"
+    },
+    "BELpk$BELv0": {
+        "order": 0,
+        "prop": "v"
+    },
+    "GATS$GATS6i": {
+        "order": 6,
+        "prop": "i"
+    },
+    "AATSC$AATSC6v": {
+        "order": 6,
+        "prop": "v"
+    },
+    "functional_group$nRCOO": {
+        "group": "nRCOO"
+    },
+    "EStates$SssssC": {
+        "estate": "ssssC",
+        "type": "sum"
+    },
+    "AATSC$AATSC0v": {
+        "order": 0,
+        "prop": "v"
+    },
+    "mol_properties$nR_4_False_False_False_True": {
+        "aromatic": false,
+        "fused": false,
+        "greater": false,
+        "hetero": true,
+        "length": 4,
+        "prop": "nr"
+    },
+    "ATSC$ATSC3dv": {
+        "order": 3,
+        "prop": "dv"
+    },
+    "functional_group$nNH2": {
+        "group": "nNH2"
+    },
+    "functional_group$nAmide": {
+        "group": "nAmide"
+    },
+    "EStates$NdssC": {
+        "estate": "dssC",
+        "type": "count"
+    },
+    "Jhetw$JhetZ": {
+        "weight": "Z"
+    },
+    "topological_distance$F09[C-N]": {
+        "atoms": [
+            6,
+            7
+        ],
+        "distance": 9,
+        "type": "frequency"
+    },
+    "DistanceDetourIndex$D/Dr10": {
+        "length": 10
+    },
+    "GATS$GATS4i": {
+        "order": 4,
+        "prop": "i"
+    },
+    "MATS$MATS1s": {
+        "order": 1,
+        "prop": "s"
+    },
+    "EStates$MAXssCH2": {
+        "estate": "ssCH2",
+        "type": "max"
+    },
+    "mol_properties$nR_9_True_True_False_None": {
+        "aromatic": false,
+        "fused": true,
+        "greater": true,
+        "hetero": null,
+        "length": 9,
+        "prop": "nr"
+    },
+    "atom_centred_hybr$H-048": {
+        "key": "H-048"
+    },
+    "mol_properties$nR_9_True_True_None_True": {
+        "aromatic": null,
+        "fused": true,
+        "greater": true,
+        "hetero": true,
+        "length": 9,
+        "prop": "nr"
+    },
+    "mol_properties$nR_3_True_True_False_None": {
+        "aromatic": false,
+        "fused": true,
+        "greater": true,
+        "hetero": null,
+        "length": 3,
+        "prop": "nr"
+    },
+    "atom_centred_hybr$H-053": {
+        "key": "H-053"
+    },
+    "AATS$AATS5se": {
+        "order": 5,
+        "prop": "se"
+    },
+    "atom_centred$C-009": {
+        "key": "C-009"
+    },
+    "atom_centred$C-002": {
+        "key": "C-002"
+    },
+    "mol_properties$nR_10_True_True_None_None": {
+        "aromatic": null,
+        "fused": true,
+        "greater": true,
+        "hetero": null,
+        "length": 10,
+        "prop": "nr"
+    },
+    "mol_properties$nR_5_False_False_False_False": {
+        "aromatic": false,
+        "fused": false,
+        "greater": false,
+        "hetero": false,
+        "length": 5,
+        "prop": "nr"
+    },
+    "EStates$NssCH2": {
+        "estate": "ssCH2",
+        "type": "count"
+    },
+    "FNSA$FNSA4": {
+        "version": 4
+    },
+    "mol_properties$nR_11_True_True_False_None": {
+        "aromatic": false,
+        "fused": true,
+        "greater": true,
+        "hetero": null,
+        "length": 11,
+        "prop": "nr"
+    },
+    "AATSC$AATSC0dv": {
+        "order": 0,
+        "prop": "dv"
+    },
+    "WCk$SRW05": {
+        "order": 5,
+        "self_returning": true,
+        "total": false
+    },
+    "mol_properties$nR_5_False_False_True_True": {
+        "aromatic": true,
+        "fused": false,
+        "greater": false,
+        "hetero": true,
+        "length": 5,
+        "prop": "nr"
+    },
+    "topological_distance$F05[O-O]": {
+        "atoms": [
+            8,
+            8
+        ],
+        "distance": 5,
+        "type": "frequency"
+    },
+    "AATS$AATS1s": {
+        "order": 1,
+        "prop": "s"
+    }
+}

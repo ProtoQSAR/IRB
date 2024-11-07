@@ -1,0 +1,105 @@
+{
+    "connectivity_index$X0A": {
+        "avg": "A",
+        "order": 0,
+        "type": ""
+    },
+    "ATSC$ATSC8p": {
+        "order": 8,
+        "prop": "p"
+    },
+    "topological_distance$F06[O-Cl]": {
+        "atoms": [
+            8,
+            17
+        ],
+        "distance": 6,
+        "type": "frequency"
+    },
+    "mol_properties$nR_5_False_False_False_True": {
+        "aromatic": false,
+        "fused": false,
+        "greater": false,
+        "hetero": true,
+        "length": 5,
+        "prop": "nr"
+    },
+    "PEOE_VSA$PEOE_VSA2": {
+        "k": 2
+    },
+    "atom_centred$C-025": {
+        "key": "C-025"
+    },
+    "topological_distance$B06[N-F]": {
+        "atoms": [
+            7,
+            9
+        ],
+        "distance": 6,
+        "type": "binary"
+    },
+    "topological_distance$F06[N-F]": {
+        "atoms": [
+            7,
+            9
+        ],
+        "distance": 6,
+        "type": "frequency"
+    },
+    "topological_distance$B06[N-Cl]": {
+        "atoms": [
+            7,
+            17
+        ],
+        "distance": 6,
+        "type": "binary"
+    },
+    "topological_distance$B06[N-Br]": {
+        "atoms": [
+            7,
+            35
+        ],
+        "distance": 6,
+        "type": "binary"
+    },
+    "topological_distance$B06[O-O]": {
+        "atoms": [
+            8,
+            8
+        ],
+        "distance": 6,
+        "type": "binary"
+    },
+    "topological_distance$F06[O-O]": {
+        "atoms": [
+            8,
+            8
+        ],
+        "distance": 6,
+        "type": "frequency"
+    },
+    "topological_distance$B06[O-S]": {
+        "atoms": [
+            8,
+            16
+        ],
+        "distance": 6,
+        "type": "binary"
+    },
+    "topological_distance$B06[O-F]": {
+        "atoms": [
+            8,
+            9
+        ],
+        "distance": 6,
+        "type": "binary"
+    },
+    "topological_distance$B06[O-Cl]": {
+        "atoms": [
+            8,
+            17
+        ],
+        "distance": 6,
+        "type": "binary"
+    }
+}

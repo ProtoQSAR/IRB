@@ -316,6 +316,21 @@ def makedir(path):
         print(f"\t\tOutput directory created: {path}")
     else:
         print(f"\t\tOutput directory already exists: {path}")    
+        
+        
+def rename_cols_for_LGBM(df):
+    
+    df.columns = df.columns.str.replace("[", "(", regex=True)
+    df.columns = df.columns.str.replace("]", ")", regex=True)   
+    
+    return df
+
+def revert_rename_cols_for_LGBM(df):
+    
+    df.columns = df.columns.str.replace("(", "[", regex=True)
+    df.columns = df.columns.str.replace(")", "]", regex=True)   
+    
+    return df
 #%%
 
 
@@ -413,7 +428,13 @@ if __name__ == '__main__':
             print('\t[++] Calculating original metrics')
             
             old_new = 'old'
+
+            if type(model).__name__ == 'LGBMClassifier':
+                train_df = rename_cols_for_LGBM(train_df)
+                test_df = rename_cols_for_LGBM(test_df)
+
             
+#%%
             df_metrics_byone = getMetrics(mod_name, model, train_df, test_df, old_new)
             
             df_metrics = pd.concat([df_metrics,df_metrics_byone], axis = 0)
@@ -438,8 +459,11 @@ if __name__ == '__main__':
                 
                 train_with_descriptors = pd.read_csv(results_folder + os.path.sep + f'raw_{mod_name}-descriptors-train.txt', sep ='\t')
                 test_with_descriptors = pd.read_csv(results_folder + os.path.sep + f'raw_{mod_name}-descriptors-test.txt', sep ='\t')
-                
-    
+               
+            if type(model).__name__ == 'LGBMClassifier':
+                train_with_descriptors = rename_cols_for_LGBM(train_with_descriptors)
+                test_with_descriptors = rename_cols_for_LGBM(test_with_descriptors)                
+            
     
             print('\t\t[+++] Imputing')
             
@@ -507,12 +531,15 @@ if __name__ == '__main__':
             imputed_scaled_test_df.to_csv(results_folder + os.path.sep + f'EX_{mod_name}-test_scaled.txt', sep = '\t', index = False)
             ##@@
             print('\t\t[+++] Fitting new model and predicting')
+
             
             fitted_model = model.fit(imputed_scaled_train_df, y_train_obs)
             
             model_file_name = results_folder + os.path.sep + f'{mod_name}.sav'
             pickle.dump(fitted_model, open(model_file_name, 'wb'))
-            print(f'\t\t\t new model file created: {model_file_name}')        
+            print(f'\t\t\t new model file created: {model_file_name}') 
+            
+            
             
             
             y_pred_train = predict(imputed_scaled_train_df, fitted_model)
@@ -525,15 +552,23 @@ if __name__ == '__main__':
             imputed_scaled_test_df.insert(0, 'SMILES', test_df_smiles)
             imputed_scaled_test_df.insert(len(imputed_scaled_test_df.columns), 'observed', y_test_obs)
             imputed_scaled_test_df.insert(len(imputed_scaled_test_df.columns), 'predicted', y_pred_test)
-    
-    
             
+            
+            imputed_scaled_train_df = revert_rename_cols_for_LGBM(imputed_scaled_train_df)
+            imputed_scaled_test_df = revert_rename_cols_for_LGBM(imputed_scaled_test_df)
+    
+    
+
             descriptors_file_name_train = results_folder + os.path.sep + f'{mod_name}-descriptors-train.txt'
             imputed_scaled_train_df.to_csv(descriptors_file_name_train, sep = '\t', index = False)
             descriptors_file_name_test = results_folder + os.path.sep + f'{mod_name}-descriptors-test.txt'
             imputed_scaled_test_df.to_csv(descriptors_file_name_test, sep = '\t', index = False)
             print(f'\t\t\t new file with descriptors created: {descriptors_file_name_train}')
             print(f'\t\t\t new file with descriptors created: {descriptors_file_name_test}')
+            
+            
+            imputed_scaled_train_df = rename_cols_for_LGBM(imputed_scaled_train_df)
+            imputed_scaled_test_df = rename_cols_for_LGBM(imputed_scaled_test_df)
             
             json_file_name = results_folder + os.path.sep + f'{mod_name}.json'
             with open(json_file_name, 'w', encoding='utf8') as json_file:
@@ -562,7 +597,10 @@ if __name__ == '__main__':
 
     elif option == 'calculate':
         
+        
+        
         for mod_name in df_models_to_process['final_model_name']:
+            print(f'\t[+] Working on {mod_name} model')
         
             model_data_folder =  '..' + os.path.sep + '..' + os.path.sep + 'Models'
             path_model = model_data_folder + os.path.sep + mod_name + os.path.sep + f'imputed-{mod_name}'
@@ -575,11 +613,15 @@ if __name__ == '__main__':
                 
                 dataset_name = value['dataset_iD']
                 
-                print(f'\t\t[+++] Working on {dataset_name} dataframe')
+                print(f'\t\t[++] Working on {dataset_name} dataframe')
                 
                 df_to_calculate = pd.read_csv(topredict_folder + os.path.sep +  f'{value["file_to_calculate"]}' , sep = value['sep_for_calculation'])
             
                 df_calculated = calc_descriptors(option, mod_name, df_to_calculate, model_dict, dataset_name, topredict_folder)
+                
+                df_calculated_filename = topredict_folder + os.path.sep + f'{dataset_name}_calculateddescriptors.csv'
+                df_calculated.to_csv(df_calculated_filename, sep = ';', index = False)
+                print(f'\t\t\t new file with descriptors created: {df_calculated_filename}')
 
 
             
@@ -611,11 +653,12 @@ if __name__ == '__main__':
                 
                 
                 dataset_name = value['dataset_iD']
+                dataset_file = value['file_to_calculate']
                 
                 print(f'\t\t[+++] Working on {dataset_name} dataframe')
 
                 
-                df_to_predict = pd.read_csv(topredict_folder + os.path.sep +  f'raw_{mod_name}-descriptors-{dataset_name}.txt', sep = '\t')
+                df_to_predict = pd.read_csv(topredict_folder + os.path.sep +  f'{dataset_name}_calculateddescriptors.csv', sep = ';')
                 # df_to_predict = pd.read_csv(path_model + os.path.sep +  f'raw_{mod_name}-descriptors-train.txt', sep = '\t')
                
                 descriptors_model = [descriptor.split('$')[1] for descriptor in list(model_dict.keys())]
@@ -695,6 +738,8 @@ if __name__ == '__main__':
         
     elif option == 'mergeJSONS':
         
+        batch = list(df_models_to_process['mergeJSONS_batch'])[0]
+        
         merged_dict = {}
         
         counter = 0
@@ -709,9 +754,17 @@ if __name__ == '__main__':
             merged_dict.update(model_dict)
             
             counter = counter + len(model_dict)
-            
-        print(counter, len(merged_dict))
-            
+
+        
+        merged_json_file =  f'batch{int(batch)}-merged_json.json'
+        
+        with open(merged_json_file, 'w', encoding='utf8') as json_file:
+                json.dump(merged_dict, json_file, ensure_ascii=False, indent=4)
+                
+        print(f'\t\t\t new json file with descriptors for batch {int(batch)} created: {merged_json_file}')
+
+        
+                    
             
             
 

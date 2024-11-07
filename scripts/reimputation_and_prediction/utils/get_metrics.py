@@ -254,6 +254,10 @@ def regressor_assessment_cv(together_for_observations, model):
 
 
 def getMetrics(mod_name, model, df_train, df_test, old_new):
+    
+
+    
+    
     dictio_metrics = {}    
     model_type = model._estimator_type
     
