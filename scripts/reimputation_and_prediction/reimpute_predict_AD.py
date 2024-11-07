@@ -546,6 +546,10 @@ if __name__ == '__main__':
             
             df_metrics_byone = getMetrics(mod_name, model, imputed_scaled_train_df, imputed_scaled_test_df, old_new)
             
+            individual_output_metrics_filename =   f'metrics_{mod_name}_{time.strftime("%Y%m%d_%H%M%S")}.csv'  
+            print(f'\t\t metrics file created: {individual_output_metrics_filename}')
+            df_metrics_byone.to_csv(individual_output_metrics_filename, sep = ';') 
+            
             df_metrics = pd.concat([df_metrics,df_metrics_byone], axis = 0)    
                 
                 
