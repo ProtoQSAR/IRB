@@ -512,7 +512,11 @@ dictio_properties = {
                              'classreg' : 'class'},
     'TK_HLM':        {'desired_units' : 'classHLM',
                              'classreg' : 'class'},
-
+    'TOX_acutevaporrat':        {'desired_units' : 'mg/L',
+                             'classreg' : 'reg'},
+    'TOX_acutevaporrat':        {'desired_units' : 'mg/L',
+                         'classreg' : 'reg'},
+    
      }
 
 
@@ -534,10 +538,10 @@ dictios_dfs = {
     # 'TK_OATP1B3inh' : ##↓ okis
     #             {'Livertox':   {'file' : 'TK_OATP1B3inh_livertox'}
     #             },
-    'TOX_MRDD' : ##↓ okis
-                {'DeepPK':   {'file' : 'TOX_MRDD_DeepPK'},
-                 'DSSTOX':   {'file' : 'TOX_MRDD_DSSTOX'}
-                },
+    # 'TOX_MRDD' : ##↓ okis
+    #             {'DeepPK':   {'file' : 'TOX_MRDD_DeepPK'},
+    #              'DSSTOX':   {'file' : 'TOX_MRDD_DSSTOX'}
+    #             },
      #  'TOX_Cav12inh' : ##↓ okis
      #             {'ChEMBL':   {'file' : 'TOX_Cav12inh_ChEMBL'},
      #             'CtoxPred':   {'file' : 'TOX_Cav12inh_CtoxPred'}
@@ -567,6 +571,11 @@ dictios_dfs = {
      # 'TK_HLM' : ##↓ okis
      #              {'Li':   {'file' : 'TK_HLM_Li'},
      #               },
+     
+
+    'TOX_acutevaporrat' : #marttina_noIRB
+                {'EPA':   {'file' : 'TOX_acutevaporrat_EPA'}
+                },     
     }
 
 
