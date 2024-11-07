@@ -1,0 +1,63 @@
+{
+    "topological_distance$F02(O-O)": {
+        "atoms": [
+            8,
+            8
+        ],
+        "distance": 2,
+        "type": "frequency"
+    },
+    "SLogP_VSA$SLogP_VSA2": {
+        "k": 2
+    },
+    "GATS$GATS2Z": {
+        "order": 2,
+        "prop": "Z"
+    },
+    "ATSC$ATSC8c": {
+        "order": 8,
+        "prop": "c"
+    },
+    "ATSC$ATSC1se": {
+        "order": 1,
+        "prop": "se"
+    },
+    "GATS$GATS6Z": {
+        "order": 6,
+        "prop": "Z"
+    },
+    "SICk$SIC0": {
+        "order": 0
+    },
+    "GATS$GATS1Z": {
+        "order": 1,
+        "prop": "Z"
+    },
+    "ATSC$ATSC0c": {
+        "order": 0,
+        "prop": "c"
+    },
+    "GATS$GATS1dv": {
+        "order": 1,
+        "prop": "dv"
+    },
+    "EStates$SssCH2": {
+        "estate": "ssCH2",
+        "type": "sum"
+    },
+    "GATS$GATS5i": {
+        "order": 5,
+        "prop": "i"
+    },
+    "ATSC$ATSC8d": {
+        "order": 8,
+        "prop": "d"
+    },
+    "ATSC$ATSC1v": {
+        "order": 1,
+        "prop": "v"
+    },
+    "atom_centred$C-019": {
+        "key": "C-019"
+    }
+}

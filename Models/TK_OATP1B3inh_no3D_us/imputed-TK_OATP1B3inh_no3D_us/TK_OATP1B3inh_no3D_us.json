@@ -1,0 +1,56 @@
+{
+    "SLogP_PA$SLogP": {},
+    "PEOE_VSA$PEOE_VSA6": {
+        "k": 6
+    },
+    "EState_VSA$EState_VSA2": {
+        "k": 2
+    },
+    "atom_centred$O-056": {
+        "key": "O-056"
+    },
+    "ATSC$ATSC6v": {
+        "order": 6,
+        "prop": "v"
+    },
+    "ATSC$ATSC8d": {
+        "order": 8,
+        "prop": "d"
+    },
+    "ATSC$ATSC5s": {
+        "order": 5,
+        "prop": "s"
+    },
+    "PEOE_VSA$PEOE_VSA10": {
+        "k": 10
+    },
+    "GATS$GATS2c": {
+        "order": 2,
+        "prop": "c"
+    },
+    "ATS$ATS0dv": {
+        "order": 0,
+        "prop": "dv"
+    },
+    "ATS$ATS0Z": {
+        "order": 0,
+        "prop": "Z"
+    },
+    "connectivity_index$X3A": {
+        "avg": "A",
+        "order": 3,
+        "type": ""
+    },
+    "ATSC$ATSC5se": {
+        "order": 5,
+        "prop": "se"
+    },
+    "GATS$GATS5Z": {
+        "order": 5,
+        "prop": "Z"
+    },
+    "ATSC$ATSC8v": {
+        "order": 8,
+        "prop": "v"
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "AATSC$AATSC1c": {
+        "order": 1,
+        "prop": "c"
+    },
+    "GATS$GATS1se": {
+        "order": 1,
+        "prop": "se"
+    },
+    "atom_centred$N-079": {
+        "key": "N-079"
+    },
+    "GATS$GATS7d": {
+        "order": 7,
+        "prop": "d"
+    },
+    "SICk$SIC3": {
+        "order": 3
+    },
+    "SLogP_VSA$SLogP_VSA2": {
+        "k": 2
+    },
+    "AATSC$AATSC0c": {
+        "order": 0,
+        "prop": "c"
+    },
+    "Topological_Charge$JGI7": {
+        "order": 7,
+        "prop": "mean"
+    },
+    "AATSC$AATSC3c": {
+        "order": 3,
+        "prop": "c"
+    },
+    "ATSC$ATSC3c": {
+        "order": 3,
+        "prop": "c"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "SLogP_PA$SLogP": {},
+    "atom_centred_hybr$H-049": {
+        "key": "H-049"
+    },
+    "MAXDP$MAXDP": {},
+    "PEOE_VSA$PEOE_VSA7": {
+        "k": 7
+    },
+    "VSA_EState$VSA_EState5": {
+        "k": 5
+    },
+    "PEOE_VSA$PEOE_VSA8": {
+        "k": 8
+    },
+    "Topological_Charge$JGI6": {
+        "order": 6,
+        "prop": "mean"
+    },
+    "VSA_EState$VSA_EState7": {
+        "k": 7
+    },
+    "EStates$SaasC": {
+        "estate": "aasC",
+        "type": "sum"
+    },
+    "ICk$IC2": {
+        "order": 2
+    }
+}

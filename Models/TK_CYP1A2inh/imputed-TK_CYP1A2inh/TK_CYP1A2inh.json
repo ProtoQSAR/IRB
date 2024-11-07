@@ -1,0 +1,16 @@
+{
+    "SLogP_PA$SLogP": {},
+    "SLogP_VSA$SLogP_VSA2": {
+        "k": 2
+    },
+    "EStates$SdssC": {
+        "estate": "dssC",
+        "type": "sum"
+    },
+    "PEOE_VSA$PEOE_VSA2": {
+        "k": 2
+    },
+    "PCR_PCD$PCR": {
+        "type": "PCR"
+    }
+}

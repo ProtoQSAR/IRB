@@ -1,0 +1,67 @@
+{
+    "SLogP_PA$SLogP": {},
+    "PEOE_VSA$PEOE_VSA7": {
+        "k": 7
+    },
+    "Jhetw$JhetZ": {
+        "weight": "Z"
+    },
+    "Barysz$SpMAD_Z": {
+        "prop": "Z",
+        "type": "SpMAD"
+    },
+    "EStates$SssCH2": {
+        "estate": "ssCH2",
+        "type": "sum"
+    },
+    "Topological_Charge$JGI3": {
+        "order": 3,
+        "prop": "mean"
+    },
+    "EStates$SdssC": {
+        "estate": "dssC",
+        "type": "sum"
+    },
+    "SMR_VSA$SMR_VSA3": {
+        "k": 3
+    },
+    "ICk$IC3": {
+        "order": 3
+    },
+    "GATS$GATS5Z": {
+        "order": 5,
+        "prop": "Z"
+    },
+    "ATSC$ATSC1i": {
+        "order": 1,
+        "prop": "i"
+    },
+    "EState_VSA$EState_VSA9": {
+        "k": 9
+    },
+    "VSA_EState$VSA_EState4": {
+        "k": 4
+    },
+    "PEOE_VSA$PEOE_VSA8": {
+        "k": 8
+    },
+    "atom_centred$S-108": {
+        "key": "S-108"
+    },
+    "GATS$GATS4s": {
+        "order": 4,
+        "prop": "s"
+    },
+    "DistanceDetourIndex$D/Dr6": {
+        "length": 6
+    },
+    "atom_centred_hybr$H-047": {
+        "key": "H-047"
+    },
+    "SMR_VSA$SMR_VSA7": {
+        "k": 7
+    },
+    "VSA_EState$VSA_EState2": {
+        "k": 2
+    }
+}

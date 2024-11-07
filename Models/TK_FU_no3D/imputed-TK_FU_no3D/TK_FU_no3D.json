@@ -1,0 +1,82 @@
+{
+    "SLogP_PA$SLogP": {},
+    "mol_properties$nR_3_True_False_True_False": {
+        "aromatic": true,
+        "fused": false,
+        "greater": true,
+        "hetero": false,
+        "length": 3,
+        "prop": "nr"
+    },
+    "EdgeAdjacencyIndex$ESpm03d": {
+        "order": 3,
+        "type": "spectral",
+        "weight": "dipole"
+    },
+    "atom_centred$N-068": {
+        "key": "N-068"
+    },
+    "ATSC$ATSC1dv": {
+        "order": 1,
+        "prop": "dv"
+    },
+    "GATS$GATS2dv": {
+        "order": 2,
+        "prop": "dv"
+    },
+    "AATS$AATS0dv": {
+        "order": 0,
+        "prop": "dv"
+    },
+    "GATS$GATS2d": {
+        "order": 2,
+        "prop": "d"
+    },
+    "AATS$AATS0p": {
+        "order": 0,
+        "prop": "p"
+    },
+    "MATS$MATS5Z": {
+        "order": 5,
+        "prop": "Z"
+    },
+    "AATSC$AATSC5c": {
+        "order": 5,
+        "prop": "c"
+    },
+    "functional_group$nArCOO": {
+        "group": "nArCOO"
+    },
+    "mol_properties$ARR": {
+        "prop": "ar"
+    },
+    "connectivity_index$X0vA": {
+        "avg": "A",
+        "order": 0,
+        "type": "v"
+    },
+    "AATS$AATS5i": {
+        "order": 5,
+        "prop": "i"
+    },
+    "ATSC$ATSC7c": {
+        "order": 7,
+        "prop": "c"
+    },
+    "AATSC$AATSC7i": {
+        "order": 7,
+        "prop": "i"
+    },
+    "BELpk$BELv0": {
+        "order": 0,
+        "prop": "v"
+    },
+    "GATS$GATS6i": {
+        "order": 6,
+        "prop": "i"
+    },
+    "AATSC$AATSC6v": {
+        "order": 6,
+        "prop": "v"
+    }
+}

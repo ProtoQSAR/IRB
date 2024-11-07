@@ -82,7 +82,9 @@ import warnings
 warnings.filterwarnings('ignore')
 import json
 from rdkit import Chem
-
+from rdkit import RDLogger
+lg = RDLogger.logger()
+lg.setLevel(RDLogger.CRITICAL)
 ########################  IMPORTS FOR  PARALLELIZATION ########################
 
 

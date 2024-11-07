@@ -1,0 +1,56 @@
+{
+    "MAXDP$MAXDP": {},
+    "GATS$GATS1Z": {
+        "order": 1,
+        "prop": "Z"
+    },
+    "VSA_EState$VSA_EState1": {
+        "k": 1
+    },
+    "atom_centred$N-079": {
+        "key": "N-079"
+    },
+    "ICk$IC2": {
+        "order": 2
+    },
+    "EState_VSA$EState_VSA8": {
+        "k": 8
+    },
+    "atom_centred_hybr$H-052": {
+        "key": "H-052"
+    },
+    "SLogP_VSA$SLogP_VSA2": {
+        "k": 2
+    },
+    "atom_centred_hybr$H-047": {
+        "key": "H-047"
+    },
+    "AATSC$AATSC5se": {
+        "order": 5,
+        "prop": "se"
+    },
+    "AATS$AATS4s": {
+        "order": 4,
+        "prop": "s"
+    },
+    "ATSC$ATSC6i": {
+        "order": 6,
+        "prop": "i"
+    },
+    "topological_distance$F07[C-F]": {
+        "atoms": [
+            6,
+            9
+        ],
+        "distance": 7,
+        "type": "frequency"
+    },
+    "GATS$GATS1se": {
+        "order": 1,
+        "prop": "se"
+    },
+    "Topological_Charge$JGI4": {
+        "order": 4,
+        "prop": "mean"
+    }
+}
