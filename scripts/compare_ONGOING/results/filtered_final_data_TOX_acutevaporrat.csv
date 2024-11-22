@@ -1,280 +1,398 @@
 ID_all;SMILES;y_consensus;valid/outlier;NAME_EPA;CAS_EPA;y_EPA_nointraoutliers;units
-0;C#CC1CC1;22.3;valid;Cyclopropylacetylene;6746-94-7;22.3;mg/L
-1;C#CCCl;4.44;valid;1-Propyne, 3-chloro-;624-65-7;4.44;mg/L
-2;C#CCN(CC)CC;2.1;valid;2-Propyn-1-amine, N,N-diethyl-;4079-68-9;2.1;mg/L
-3;C/C=C/C=C/C;27.51;valid;Hydrocarbons, C4-10-unsatd;68514-38-5;27.51;mg/L
-4;C/C=C/CC#N;1.42;valid;3-Pentenenitrile;4635-87-4;1.42;mg/L
-5;C/C=C/CC/C=C/CC/C=C/CC/C=C/CCCC/C=C/CC/C=C/C;118.75;valid;Hydrocarbons, C14-?30, olefin-?rich;68514-35-2;118.75;mg/L
-6;C/C=C/CCC;28.18;valid;Hexene;25264-93-1;28.18;mg/L
-7;C/C=C\CCCCC;2.1;valid;2-Octene;111-67-1;2.1;mg/L
-8;C1=CC2C3C=CC(C3)C2C1;1.765;valid;Dicyclopentadiene;77-73-6;1.765;mg/L
-9;C1=CCCC1;22.92;valid;Cyclopentene;142-29-0;22.92;mg/L
-10;C1=CCOC1;6.0;valid;2,5-Dihydrofuran;1708-29-8;6.0;mg/L
-11;C1=COCCC1;10.7;valid;3,4-Dihydro-2H-pyran;110-87-2;10.7;mg/L
-12;C1=C\CC/C=C/CC/C=C\CC/1;8.1;valid;1,5,9-Cyclododecatriene;4904-61-4;8.1;mg/L
-13;C1=Cc2ccccc2C1;5.14;valid;1H-Indene;95-13-6;5.14;mg/L
-14;C1CCC2CCCCC2C1;4.633333333333333;valid;Decalin;91-17-8;4.633333333333333;mg/L
-15;C1CCCC1;25.3;valid;Cyclopentane;287-92-3;25.3;mg/L
-16;C1CCCNCC1;2.59;valid;Hexamethyleneimine;111-49-9;2.59;mg/L
-17;C1CCNCC1;4.8;valid;Piperidine;110-89-4;4.8;mg/L
-18;C1CCOCOC1;20.8;valid;1,3-Dioxepane;505-65-7;20.8;mg/L
-19;C1CN(CCOCCN2CCOCC2)CCO1;0.21;valid;4,4'-(Oxydiethylene)bis(morpholine);6425-39-4;0.21;mg/L
-20;C1CO1;3.16;valid;Ethylene oxide;75-21-8;3.16;mg/L
-21;C1COCO1;68.4;valid;1,3-Dioxolane;646-06-0;68.4;mg/L
-22;C1OCOCO1;39.2;valid;1,3,5-Trioxane;110-88-3;39.2;mg/L
-23;C=C(Br)C(F)(F)F;85.33;valid;1-Propene, 2-bromo-3,3,3-trifluoro-;1514-82-5;85.33;mg/L
-24;C=C(C)C(=O)OC;29.8;valid;Methyl methacrylate;80-62-6;29.8;mg/L
-25;C=C(C)C(=O)OC1CCCCC1;29.8;valid;Cyclohexyl methacrylate;101-43-9;29.8;mg/L
-26;C=C(C)C(=O)OCCCC;29.04;valid;Butyl methacrylate;97-88-1;29.04;mg/L
-27;C=C(C)C=O;0.5533333333333333;valid;Methacrylaldehyde;78-85-3;0.5533333333333333;mg/L
-28;C=C(C)OC(C)=O;22.0;valid;Isopropenyl acetate;108-22-5;22.0;mg/L
-29;C=CC(=O)OCC(CC)(COC(=O)C=C)COC(=O)C=C;0.55;valid;Trimethylolpropane triacrylate;15625-89-5;0.55;mg/L
-30;C=CC(=O)OCC(CC)CCCC;1.19;valid;2-Ethylhexyl acrylate;103-11-7;1.19;mg/L
-31;C=CC(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;1.8;valid;(Perfluorohexyl)ethyl acrylate;17527-29-6;1.8;mg/L
-32;C=CC(=O)OCCCCCCCCCCCC;0.69;valid;Lauryl acrylate;2156-97-0;0.69;mg/L
-33;C=CC(=O)OCCCCCCCCCCCCCC;0.69;valid;Tetradecyl acrylate;21643-42-5;0.69;mg/L
-34;C=CC(=O)OCCCCOC(=O)C=C;0.06;valid;1,4-Butanediol diacrylate;1070-70-8;0.06;mg/L
-35;C=CC(=O)OCCCO;0.38;valid;Hydroxypropyl acrylate;25584-83-2;0.38;mg/L
-36;C=CC(=O)OCCOC;2.7;valid;2-Methoxyethyl acrylate;3121-61-7;2.7;mg/L
-37;C=CC(=O)[O-];5.1;valid;Polyacrylic acid;9003-01-4;5.1;mg/L
-38;C=CC(C#N)OC(C)=O;7.866666666666667;valid;1-Cyanoallyl acetate;15667-63-7;7.866666666666667;mg/L
-39;C=CC(C)(C)O;21.2;valid;2-Methyl-3-buten-2-ol;115-18-4;21.2;mg/L
-40;C=CC(C)(O)CCCC(C)CCCC(C)CCCC(C)C;1.1;valid;Isophytol;505-32-8;1.1;mg/L
-41;C=CC(C)C#N;10.12;valid;2-Methyl-3-butenenitrile;16529-56-9;10.12;mg/L
-42;C=CC(Cl)CCl;10.89;valid;3,4-Dichloro-1-butene;760-23-6;10.89;mg/L
-43;C=CC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C=C;25.94;valid;1,6-Divinylperfluorohexane;1800-91-5;25.94;mg/L
-44;C=CCBr;2.41;valid;Allyl bromide;106-95-6;2.41;mg/L
-45;C=CCCCCC=C;36.0;valid;1,7-Octadiene;3710-30-3;36.0;mg/L
-46;C=CCOCC1CO1;1.46;valid;Allyl glycidyl ether;106-92-3;1.46;mg/L
-47;C=CN1CCCCCC1=O;1.6;valid;N-Vinylcaprolactam;2235-00-9;1.6;mg/L
-48;C=COC(=O)CC;10.0;valid;Vinyl propionate;105-38-4;10.0;mg/L
-49;C=COC(C)=O;16.08;valid;Vinyl acetate;108-05-4;16.08;mg/L
-50;C=COCC(C)C;67.0;valid;Vinyl isobutyl ether;109-53-5;67.0;mg/L
-51;C=COCCCC;33.3;valid;Butyl vinyl ether;111-34-2;33.3;mg/L
-52;C=COCCCCOC=C;6.3;valid;Butane, 1,4-bis(ethenyloxy)-;3891-33-6;6.3;mg/L
-53;C=CSC(C)O;1.14;valid;Ethanol, 2-(ethenylthio)-;3090-56-0;1.14;mg/L
-54;C=C[Si](C)(C)O[Si](C)(C)C=C;1.91;valid;Divinyltetramethyldisiloxane;2627-95-4;1.91;mg/L
-55;C=C[Si](C)(OC)OC;5.0;valid;Vinylmethyldimethoxysilane;16753-62-1;5.0;mg/L
-56;C=C[Si](Cl)(Cl)Cl;6.68;valid;Trichloroethenylsilane;75-94-5;6.68;mg/L
-57;C=C[Si](OC)(OC)OC;17.1;valid;Vinyltrimethoxysilane;2768-02-7;17.1;mg/L
-58;C=C[Si]1(C)O[Si](C)(C=C)O[Si](C)(C=C)O[Si](C)(C=C)O1;1.32;valid;1,3,5,7-Tetramethyl-1,3,5,7-tetravinylcyclotetrasiloxane;2554-06-5;1.32;mg/L
-59;C=Cc1ccccc1;11.8;valid;Styrene;100-42-5;11.8;mg/L
-60;C=O;0.29;valid;Formaldehyde;50-00-0;0.29;mg/L
-61;CC;16.29;valid;Ethane;74-84-0;16.29;mg/L
-62;CC(=O)C(O)c1ccccc1;0.25;valid;(R)-Phenylacetylcarbinol;1798-60-3;0.25;mg/L
-63;CC(=O)C=C(C)C;4.61;valid;4-Methylpent-3-en-2-one;141-79-7;4.61;mg/L
-64;CC(=O)CC(C)=O;5.1;valid;2,4-Pentanedione;123-54-6;5.1;mg/L
-65;CC(=O)CC(C)C;11.6;valid;4-Methyl-2-pentanone;108-10-1;11.6;mg/L
-66;CC(=O)OCC(C)OC(C)=O;2.17;valid;Propylene glycol diacetate;623-84-7;2.17;mg/L
-67;CC(=O)OCCOC(C)=O;0.84;valid;1,2-Ethanediol diacetate;111-55-7;0.84;mg/L
-68;CC(=O)OOC(C)(C)C;2.47;valid;tert-Butyl peroxyacetate;107-71-1;2.47;mg/L
-69;CC(C)(C)C1CCC(O)CC1;0.22;valid;4-tert-Butylcyclohexanol;98-52-2;0.22;mg/L
-70;CC(C)(C)CCCCCC(=O)Cl;0.4;valid;Neodecanoyl chloride;40292-82-8;0.4;mg/L
-71;CC(C)(C)N;3.8;valid;tert-Butylamine;75-64-9;3.8;mg/L
-72;CC(C)(C)N=C=O;1.59;valid;tert-Butyl isocyanate;1609-86-5;1.59;mg/L
-73;CC(C)(C)O;30.83;valid;tert-Butyl alcohol;75-65-0;30.83;mg/L
-74;CC(C)(C)OC(=O)CCl;2.37;valid;1,1-Dimethylethyl chloroacetate;107-59-5;2.37;mg/L
-75;CC(C)(C)OC(=O)OC(=O)OC(C)(C)C;0.1;valid;Di-tert-butyl dicarbonate;24424-99-5;0.1;mg/L
-76;CC(C)(C)OOC(=O)c1ccccc1;0.26;valid;tert-Butyl perbenzoate;614-45-9;0.26;mg/L
-77;CC(C)(C)OOC(C)(C)C;22.0;valid;Di-tert-butyl peroxide;110-05-4;22.0;mg/L
-78;CC(C)(C)S;94.40333333333332;valid;t-Butyl mercaptan;75-66-1;94.40333333333332;mg/L
-79;CC(C)(C)c1ccc(OP(=O)(Oc2ccccc2)Oc2ccccc2)cc1;0.4;valid;tert-Butylphenyl diphenyl phosphate;56803-37-3;0.4;mg/L
-80;CC(C)(OO)c1ccccc1;1.39;valid;Cumene hydroperoxide;80-15-9;1.39;mg/L
-81;CC(C)C(=O)OC(=O)C(C)C;4.21;valid;Isobutyric anhydride;97-72-3;4.21;mg/L
-82;CC(C)C(C)(C)C;19.07333333333333;valid;2,2,3-Trimethylbutane;464-06-2;19.07333333333333;mg/L
-83;CC(C)C(C)C;264.77;valid;2,3-Dimethylbutane;79-29-8;264.77;mg/L
-84;CC(C)C=O;21.89333333333333;valid;2-Methylpropanal;78-84-2;21.89333333333333;mg/L
-85;CC(C)CC(C)(C)C;33.52;valid;2,2,4-Trimethylpentane;540-84-1;33.52;mg/L
-86;CC(C)CC(C)O;16.0;valid;4-Methyl-2-pentanol;108-11-2;16.0;mg/L
-87;CC(C)CC=O;42.7;valid;3-Methylbutanal;590-86-3;42.7;mg/L
-88;CC(C)CCCCCCCOP(=O)(Oc1ccccc1)Oc1ccccc1;1.6;valid;Isodecyl diphenyl phosphate;29761-21-5;1.6;mg/L
-89;CC(C)COC(C)(C)C;68.26666666666667;valid;Isopropyl tert-butyl ether;33021-02-2;68.26666666666667;mg/L
-90;CC(C)Cl;6.54;valid;2-Chloropropane;75-29-6;6.54;mg/L
-91;CC(C)NC(C)C;4.97;valid;Diisopropylamine;108-18-9;4.97;mg/L
-92;CC(C=O)Cc1ccc(C(C)(C)C)cc1;0.18;valid;2-(4-Tert-Butylbenzyl)propionaldehyde;80-54-6;0.18;mg/L
-93;CC(CC#N)N1CC1;0.54;valid;1-Aziridinepropanenitrile, .beta.-methyl-;4078-19-7;0.54;mg/L
-94;CC(N)CN;32.8;valid;1,2-Diaminopropane;78-90-0;32.8;mg/L
-95;CC(O)CCO;0.22;valid;1,3-Butanediol;107-88-0;0.22;mg/L
-96;CC(O)CN(C)C;3.0;valid;Dimepranol;108-16-7;3.0;mg/L
-97;CC/C=C\C#N;2.87;valid;(2Z)-2-Pentenenitrile;25899-50-7;2.87;mg/L
-98;CC1CCCC(C)C1N;3.6;valid;2,6-Dimethylcyclohexan-1-amine;6850-63-1;3.6;mg/L
-99;CC1CO1;10.14;valid;(+/-)-1,2-Propylene oxide;75-56-9;10.14;mg/L
-100;CC1OC1C;5.2;valid;2,3-Epoxybutane;3266-23-7;5.2;mg/L
-101;CC=O;22.7025;valid;Acetaldehyde;75-07-0;22.7025;mg/L
-102;CCC;23.89;valid;Propane;74-98-6;23.89;mg/L
-103;CCC#N;3.3;valid;Propionitrile;107-12-0;3.3;mg/L
-104;CCC(=O)Cl;0.2;valid;Propanoyl chloride;79-03-8;0.2;mg/L
-105;CCC(=O)OC;22.7;valid;Methyl propanoate;554-12-1;22.7;mg/L
-106;CCC(C)(C)C;264.77;valid;2,2-Dimethylbutane;75-83-2;264.77;mg/L
-107;CCC(C)(C)OC;5.4;valid;tert-Amyl methyl ether;994-05-8;5.4;mg/L
-108;CCC(C)(C)OO;2.42;valid;1,1-Dimethylpropyl hydroperoxide;3425-61-4;2.42;mg/L
-109;CCC(C)C(=O)OC(C)C;5.97;valid;Isopropyl 2-methylbutyrate;66576-71-4;5.97;mg/L
-110;CCC(C)C=O;50.5;valid;2-Methylbutanal;96-17-3;50.5;mg/L
-111;CCC(C)CC;5.975;valid;3-Methylpentane;96-14-0;5.975;mg/L
-112;CCC(C)NCCO;0.76;valid;2-[(1-Methylpropyl)amino]ethanol;35265-04-4;0.76;mg/L
-113;CCC(C)OC(=S)S;0.02;valid;Sodium isobutyl xanthate;25306-75-6;0.02;mg/L
-114;CCC/C(C)=N\O;1.24;valid;2-Pentanone oxime;623-40-5;1.24;mg/L
-115;CCC=O;4.6;valid;Propanal;123-38-6;4.6;mg/L
-116;CCCC;31.49;valid;Butane;106-97-8;31.49;mg/L
-117;CCCC(C)=O;25.5;valid;2-Pentanone;107-87-9;25.5;mg/L
-118;CCCC1CO1;18.0;valid;Oxirane, 2-propyl-;1003-14-1;18.0;mg/L
-119;CCCCBr;37.06;valid;1-Bromobutane;109-65-9;37.06;mg/L
-120;CCCCC(=O)Cl;2.07;valid;Valeryl chloride;638-29-9;2.07;mg/L
-121;CCCCC(C=O)CC;4.1;valid;2-Ethylhexaldehyde;123-05-7;4.1;mg/L
-122;CCCCC(CC)CN;1.55;valid;2-Ethylhexylamine;104-75-6;1.55;mg/L
-123;CCCCC(CC)COC(=O)CCCCCCCC(=O)OCC(CC)CCCC;0.0;valid;Bis(2-ethylhexyl) nonanedioate;103-24-2;0.0;mg/L
-124;CCCCC(CC)COC(=O)CCS;3.91;valid;Propanoic acid, 3-mercapto-, 2-ethylhexyl ester;50448-95-8;3.91;mg/L
-125;CCCCCC(=O)O;1.37;valid;Hexanoic acid;142-62-1;1.37;mg/L
-126;CCCCCC(C)C;33.52;valid;Isooctane;26635-64-3;33.52;mg/L
-127;CCCCCCCC(=O)O;0.16;valid;Octanoic acid;124-07-2;0.16;mg/L
-128;CCCCCCCC/C=C\CCCCCCCCOCCO;0.1;valid;9-Octadecen-1-ol-ethylene oxide copolymer;9004-98-2;0.1;mg/L
-129;CCCCCCCCC;20.380000000000003;valid;Nonane;111-84-2;20.380000000000003;mg/L
-130;CCCCCCCCCC(C)(C)SSc1n[nH]c(=S)s1;0.62;valid;1,3,4-Thiadiazole-2(3H)-thione, 5-(tert-dodecyldithio)-;73984-93-7;0.62;mg/L
-131;CCCCCCCCCCOCCO;0.1;valid;Polyethylene glycol monodecyl ether;26183-52-8;0.1;mg/L
-132;CCCCCCCC[Si](OCC)(OCC)OCC;0.25;valid;Triethoxyoctylsilane;2943-75-1;0.25;mg/L
-133;CCCCCCOC(=O)Cl;1.17;valid;Carbonochloridic acid, hexyl ester;6092-54-2;1.17;mg/L
-134;CCCCCCOC(C)=O;9.04;valid;Hexyl acetate;142-92-7;9.04;mg/L
-135;CCCCCON=O;3.46;valid;Pentyl nitrite;463-04-7;3.46;mg/L
-136;CCCCN;4.0062500000000005;valid;Butylamine;109-73-9;4.0062500000000005;mg/L
-137;CCCCOCC;4.25;valid;1-Ethoxybutane;628-81-9;4.25;mg/L
-138;CCCCOCC(C)O;3.58;valid;1-Butoxy-2-propanol;5131-66-8;3.58;mg/L
-139;CCCCOCC(C)OCC(C)O;0.33;valid;1-[(1-Butoxy-2-propanyl)oxy]-2-propanol;29911-28-2;0.33;mg/L
-140;CCCCOCC1CO1;5.58;valid;Butyl glycidyl ether;2426-08-6;5.58;mg/L
-141;CCCCOCCOC(C)=O;3.07;valid;2-Butoxyethyl acetate;112-07-2;3.07;mg/L
-142;CCCCOCCOCCOCCO;2.4;valid;2-[2-(2-Butoxyethoxy)ethoxy]ethanol;143-22-6;2.4;mg/L
-143;CCCCl;6.54;valid;1-Chloropropane;540-54-5;6.54;mg/L
-144;CCCN;7.083333333333332;valid;Propylamine;107-10-8;7.083333333333332;mg/L
-145;CCCN(CCC)CCC;1.49;valid;Tripropylamine;102-69-2;1.49;mg/L
-146;CCCOC(C)=O;32.0;valid;Propyl acetate;109-60-4;32.0;mg/L
-147;CCCS;22.74;valid;1-Propanethiol;107-03-9;22.74;mg/L
-148;CCCl;50.99;valid;Chloroethane;75-00-3;50.99;mg/L
-149;CCN(C)C;10.34;valid;N,N-Dimethylethylamine;598-56-1;10.34;mg/L
-150;CCN(CC)CCO;4.6;valid;N,N-Diethylethanolamine;100-37-8;4.6;mg/L
-151;CCN(CCCl)c1ccc(C=O)cc1;1.68;valid;p-((2-Chloroethyl)ethylamino)benzaldehyde;2643-07-4;1.68;mg/L
-152;CCN1CCNCC1;9.22;valid;Piperazine, 1-ethyl-;5308-25-8;9.22;mg/L
-153;CCNCC;15.616666666666664;valid;Diethylamine;109-89-7;15.616666666666664;mg/L
-154;CCNc1ccccc1C;0.96;valid;N-Ethyl-2-methylaniline;94-68-8;0.96;mg/L
-155;CCOC(=O)OCC;17.75;valid;Diethyl carbonate;105-58-8;17.75;mg/L
-156;CCOC(=O)[C@H](C)O;5.4;valid;(L)-(-)-Ethyl lactate;687-47-8;5.4;mg/L
-157;CCOC(C)(C)C;5.88;valid;Ethyl t-butyl ether;637-92-3;5.88;mg/L
-158;CCOC(C)(C)CC;23.2;valid;Butane, 2-ethoxy-2-methyl-;919-94-8;23.2;mg/L
-159;CCOC=O;21.0;valid;Ethyl formate;109-94-4;21.0;mg/L
-160;CCOCC;98.67;valid;Diethyl ether;60-29-7;98.67;mg/L
-161;CCOCC(C)O;9.59;valid;1-Ethoxy-2-propanol;1569-02-4;9.59;mg/L
-162;CCOCC(C)OC(C)=O;6.99;valid;1-Ethoxypropan-2-yl acetate;54839-24-6;6.99;mg/L
-163;CCOCCC(=O)OCC;6.07;valid;Ethyl 3-ethoxypropionate;763-69-9;6.07;mg/L
-164;CCOCC[NH3+];7.61;valid;Ethanamine, 2-ethoxy-;110-76-9;7.61;mg/L
-165;CCOP(=O)(C(=O)c1c(C)cc(C)cc1C)c1ccccc1;0.0;valid;Ethyl phenyl(2,4,6-trimethylbenzoyl)phosphinate;84434-11-7;0.0;mg/L
-166;CCOP(OCC)c1ccccc1;0.32;valid;Diethyl phenylphosphonite;1638-86-4;0.32;mg/L
-167;CCO[Si](C)(C)C;20.57;valid;Ethoxytrimethylsilane;1825-62-3;20.57;mg/L
-168;CCO[Si](C)OCC;26.31;valid;Diethoxy(methyl)silane;2031-62-1;26.31;mg/L
-169;CCO[Si](CC[Si](OCC)(OCC)OCC)(OCC)OCC;0.38;valid;1,2-Bis(triethoxysilyl)ethane;16068-37-4;0.38;mg/L
-170;CC[Si](CC)CC;21.3;valid;Silane, triethyl-;617-86-7;21.3;mg/L
-171;CCc1ccccc1;1.73;valid;Ethylbenzene;100-41-4;1.73;mg/L
-172;CCc1ncc(C)[nH]1;0.03;valid;2-Ethyl-4-methyl-1H-imidazole;931-36-2;0.03;mg/L
-173;CI;4.08;valid;Methyl iodide;74-88-4;4.08;mg/L
-174;CN(C)C=O;5.85;valid;N,N-Dimethylformamide;68-12-2;5.85;mg/L
-175;CN(C)CCCCCCN(C)C;1.54;valid;N,N,N',N'-Tetramethyl-1,6-hexanediamine;111-18-2;1.54;mg/L
-176;CN(C)CCN(C)CCN(C)C;2.09;valid;1,1,4,7,7-Pentamethyldiethylenetriamine;3030-47-5;2.09;mg/L
-177;CN(C)CCO;6.08;valid;Dimethylaminoethanol;108-01-0;6.08;mg/L
-178;CN(C)CCOCCO;0.4;valid;2-[2-(Dimethylamino)ethoxy]ethanol;1704-62-7;0.4;mg/L
-179;CN1CCCCC1;2.4233333333333333;valid;Piperidine, 1-methyl-;626-67-5;2.4233333333333333;mg/L
-180;COC(=O)C(C)O;5.4;valid;Methyl 2-hydroxypropanoate;547-64-8;5.4;mg/L
-181;COC(=O)CCS;2.1766666666666663;valid;Methyl 3-mercaptopropionate;2935-90-2;2.1766666666666663;mg/L
-182;COC(=O)c1ccc(C)cc1;0.49;valid;Methyl 4-methylbenzoate;99-75-2;0.49;mg/L
-183;COC(C)(C)C;85.0;valid;Methyl tert-butyl ether;1634-04-4;85.0;mg/L
-184;COC(OC)OC;40.0;valid;Trimethoxymethane;149-73-5;40.0;mg/L
-185;COC1CCCC1;21.5;valid;Cyclopentane, methoxy-;5614-37-9;21.5;mg/L
-186;COCCCOCCCOC;5.34;valid;Dipropylene glycol dimethyl ether;111109-77-4;5.34;mg/L
-187;CO[P+](=O)OC;7.1;valid;Dimethyl phosphonate;868-85-9;7.1;mg/L
-188;CO[SiH](CC1CCCCC1)OC;2.06;valid;Cyclohexyl(methyl)dimethoxysilane;17865-32-6;2.06;mg/L
-189;CO[Si](C)(C)OC;4.7;valid;Dimethoxydimethylsilane;1112-39-6;4.7;mg/L
-190;CO[Si](C)OC;4.6;valid;Methyldimethoxysilane;16881-77-9;4.6;mg/L
-191;CO[Si](CC(C)C)(OC)OC;11.31;valid;Silane, trimethoxy(2-methylpropyl)-;18395-30-7;11.31;mg/L
-192;CO[Si](CCCCCC[Si](OC)(OC)OC)(OC)OC;0.04;valid;2,11-Dioxa-3,10-disiladodecane, 3,3,10,10-tetramethoxy-;87135-01-1;0.04;mg/L
-193;CO[Si](CCCOCC1CO1)(OC)OC;0.56;valid;Trimethoxy[3-(oxiran-2-ylmethoxy)propyl]silane;2530-83-8;0.56;mg/L
-194;CO[Si](CC[Si](OC)(OC)OC)(OC)OC;0.03;valid;2,7-Dioxa-3,6-disilaoctane, 3,3,6,6-tetramethoxy-;18406-41-2;0.03;mg/L
-195;CO[Si](OC)(OC)OC;0.4;valid;Tetramethyl orthosilicate;681-84-5;0.4;mg/L
-196;CO[Si](OC)(c1ccccc1)c1ccccc1;0.42;valid;Dimethoxy(diphenyl)silane;6843-66-9;0.42;mg/L
-197;COc1cc(C=O)cc([N+](=O)[O-])c1O;0.04;valid;5-Nitrovanillin;6635-20-7;0.04;mg/L
-198;COc1cc(C=O)ccc1O;0.04;valid;4-Hydroxy-3-methoxybenzaldehyde;121-33-5;0.04;mg/L
-199;COc1ccc(C)cc1;6.032222222222222;valid;1-Methoxy-4-methylbenzene;104-93-8;6.032222222222222;mg/L
-200;COc1ccc(N=Nc2ccc(N=Nc3cccc(S(=O)(=O)[O-])c3)cc2OC)cc1;7.17;valid;Benzenesulfonic acid, 3-[[3-methoxy-4-[(4-methoxyphenyl)azo]phenyl]azo]-, sodium salt;63405-85-6;7.17;mg/L
-201;CS(=O)(=O)Cl;0.11;valid;Methanesulfonyl chloride;124-63-0;0.11;mg/L
-202;CSC;104.04;valid;Dimethyl sulfide;75-18-3;104.04;mg/L
-203;CSCCC(O)C#N;0.65;valid;Butanenitrile, 2-hydroxy-4-(methylthio)-;17773-41-0;0.65;mg/L
-204;C[C](C)C;3.8;valid;Isobutene trimer;7756-94-7;3.8;mg/L
-205;C[Si](C)(C)C;21.3;valid;Tetramethylsilane;75-76-3;21.3;mg/L
-206;C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C;2.58;valid;Decamethyltetrasiloxane;141-62-8;2.58;mg/L
-207;C[Si](C)(C)[O-];12.6;valid;Trimethylsilanol;1066-40-6;12.6;mg/L
-208;C[Si](Cl)(Cl)CCl;6.8;valid;Dichloro(chloromethyl)methylsilane;1558-33-4;6.8;mg/L
-209;C[Si](Cl)Cl;4.23;valid;Methyldichlorosilane;75-54-7;4.23;mg/L
-210;C[Si]1(C)N[Si](C)(C)N[Si](C)(C)N1;4.9;valid;2,2,4,4,6,6-Hexamethylcyclotrisilazane;1009-93-4;4.9;mg/L
-211;C[Si]1O[Si](C)O[Si](C)O[Si](C)O1;4.9;valid;Cyclotetrasiloxane, 2,4,6,8-tetramethyl-;2370-88-9;4.9;mg/L
-212;C[Si]1O[Si](C)O[Si](C)O[Si](C)O[Si](C)O1;4.9;valid;Cyclopentasiloxane, 2,4,6,8,10-pentamethyl-;6166-86-5;4.9;mg/L
-213;Cc1ccc(Cl)cc1Cl;2.67;valid;2,4-Dichlorotoluene;95-73-8;2.67;mg/L
-214;Cc1ccc2ccccc2c1;1.73;valid;2-Methylnaphthalene;91-57-6;1.73;mg/L
-215;Cc1cccc(C)c1;26.39588235294117;valid;['m-Xylene', 'Xylenes'];['1330-20-7', '108-38-3'];26.39588235294117;mg/L
-216;Cc1cccc(N=C=O)c1;0.03;valid;m-Tolyl isocyanate;621-29-4;0.03;mg/L
-217;Cc1ccccc1C;27.481;valid;o-Xylene;95-47-6;27.481;mg/L
-218;Cc1ccccc1Cc1ccccc1;1.6933333333333334;valid;Benzyltoluene;27776-01-8;1.6933333333333334;mg/L
-219;Cc1ccccc1OCC1CO1;0.04;valid;o-Cresyl glycidyl ether;2210-79-9;0.04;mg/L
-220;Cc1ccccc1[N+](=O)[O-];1.09;valid;2-Nitrotoluene;88-72-2;1.09;mg/L
-221;Cc1ccccn1;8.56;valid;2-Methylpyridine;109-06-8;8.56;mg/L
-222;Cc1nccn1C;0.9;valid;1H-Imidazole, 1,2-dimethyl-;1739-84-0;0.9;mg/L
-223;Cl/C=C\CCl;3.26;valid;(Z)-Dichloropropene;10061-01-5;3.26;mg/L
-224;ClC(Cl)(Cl)Cl;48.4;valid;Carbon tetrachloride;56-23-5;48.4;mg/L
-225;ClCBr;38.6;valid;Bromochloromethane;74-97-5;38.6;mg/L
-226;ClCCCl;7.76;valid;1,2-Dichloroethane;107-06-2;7.76;mg/L
-227;ClCCOCCCl;1.49;valid;Bis(chloroethyl) ether;111-44-4;1.49;mg/L
-228;Clc1ccc(Cl)cc1;5.07;valid;1,4-Dichlorobenzene;106-46-7;5.07;mg/L
-229;Clc1cccc(Cl)c1;17.6;valid;1,3-Dichlorobenzene;541-73-1;17.6;mg/L
-230;Clc1nc(Cl)nc(Cl)n1;0.17;valid;2,4,6-Trichloro-s-triazine;108-77-0;0.17;mg/L
-231;Clc1nc2ccccc2s1;0.08;valid;2-Chlorobenzothiazole;615-20-3;0.08;mg/L
-232;FC(C(F)C(F)(F)C(F)(F)F)C(F)(F)F;114.43;valid;2H,3H-Decafluoropentane;138495-42-8;114.43;mg/L
-233;FC(F)(F)OC(F)(Cl)C(F)(F)Cl;21.98;valid;1,2-Dichloro-1,1,2-trifluoro-2-(trifluoromethoxy)ethane;2356-53-8;21.98;mg/L
-234;FC(F)(F)c1ccc(Cl)c(Cl)c1;15.86;valid;1,2-Dichloro-4-(trifluoromethyl)benzene;328-84-7;15.86;mg/L
-235;FC(F)(F)c1ccc(Cl)nc1;13.7;valid;Pyridine, 2-chloro-5-(trifluoromethyl)-;52334-81-3;13.7;mg/L
-236;FC(F)(I)C(F)(F)C(F)(F)C(F)(F)I;23.185;valid;Perfluoro-1,4-diiodobutane;375-50-8;23.185;mg/L
-237;FC(F)=C(F)OC(F)(F)C(F)(F)C(F)(F)F;58.7;valid;Perfluoropropyl trifluorovinyl ether;1623-05-8;58.7;mg/L
-238;FC(F)=C(F)OC(F)(F)C(F)(F)F;188.71;valid;Perfluoroethyl vinyl ether;10493-43-3;188.71;mg/L
-239;FCC(F)(F)F;;outlier;1,1,1,2-Tetrafluoroethane;811-97-2;;mg/L
-240;Fc1cc(Br)cc(F)c1F;22.23;valid;1-Bromo-3,4,5-trifluorobenzene;138526-69-9;22.23;mg/L
-241;N#Cc1c(F)cccc1F;2.64;valid;2,6-Difluorobenzonitrile;1897-52-5;2.64;mg/L
-242;NC(=O)c1ccccc1N;0.01;valid;2-Aminobenzamide;88-68-6;0.01;mg/L
-243;NC1CCCC1;7.7;valid;Cyclopentanamine;1003-03-8;7.7;mg/L
-244;NCCO;1.3;valid;Ethanolamine;141-43-5;1.3;mg/L
-245;NN;0.76;valid;Hydrazine;302-01-2;0.76;mg/L
-246;Nc1ccc(OC(F)(F)F)cc1;1.0;valid;4-Trifluoromethoxyaniline;461-82-5;1.0;mg/L
-247;Nc1ccccc1N;1.34;valid;1,2-Phenylenediamine;95-54-5;1.34;mg/L
-248;O=C(CCl)c1ccc(F)cc1;0.04;valid;2-Chloro-4'-fluoroacetophenone;456-04-2;0.04;mg/L
-249;O=C(CCl)c1ccc(F)cc1F;0.04;valid;2-Chloro-2',4'-difluoroacetophenone;51336-94-8;0.04;mg/L
-250;O=C(Cl)C(Cl)Cl;12.26;valid;Dichloroacetyl chloride;79-36-7;12.26;mg/L
-251;O=C(Cl)CCCCCl;0.32;valid;Valeryl chloride, 5-chloro-;1575-61-7;0.32;mg/L
-252;O=C(Cl)Oc1ccccc1;0.29;valid;Phenyl carbonochloridate;1885-14-9;0.29;mg/L
-253;O=C1CCCC1;19.5;valid;Cyclopentanone;120-92-3;19.5;mg/L
-254;O=C1CCCCC1;6.2;valid;Cyclohexanone;108-94-1;6.2;mg/L
-255;O=C=NC1CCCCC1;0.02;valid;Isocyanatocyclohexane;3173-53-3;0.02;mg/L
-256;O=C=Nc1ccc(Cl)c(Cl)c1;0.1;valid;3,4-Dichlorophenyl isocyanate;102-36-3;0.1;mg/L
-257;O=C=Nc1ccc(Cl)cc1;0.11;valid;4-Chlorophenyl isocyanate;104-12-1;0.11;mg/L
-258;O=C=Nc1cccc(C(F)(F)F)c1;0.09;valid;3-(Trifluoromethyl)phenyl isocyanate;329-01-1;0.09;mg/L
-259;O=C=Nc1cccc(Cl)c1;0.04;valid;m-Chlorophenyl isocyanate;2909-38-8;0.04;mg/L
-260;O=CC1CC=CCC1;9.16;valid;3-Cyclohexene-1-carboxaldehyde;100-50-5;9.16;mg/L
-261;O=CO;7.85;valid;Formic acid;64-18-6;7.85;mg/L
-262;O=Cc1ccc(Cl)cc1;0.285;valid;4-Chlorobenzaldehyde;104-88-1;0.285;mg/L
-263;O=Cc1ccccc1Cl;1.2;valid;2-Chlorobenzaldehyde;89-98-5;1.2;mg/L
-264;O=N[O-];88.8;valid;Potassium nitrite;7758-09-0;88.8;mg/L
-265;O=S(=O)(Cl)Cl;0.88;valid;Sulfuryl chloride;7791-25-5;0.88;mg/L
-266;O=[Si]([O-])O;2.06;valid;Potassium silicate;1312-76-1;2.06;mg/L
-267;O=[Si]([O-])[O-];2.06;valid;['Sodium silicate (Na2SiO3)', 'Sodium silicate'];['6834-92-0', '1344-09-8'];2.06;mg/L
-268;O=[Si]=O;2.2;valid;Silica;7631-86-9;2.2;mg/L
-269;OCC(F)(F)C(F)F;10.8;valid;2,2,3,3-Tetrafluoro-1-propanol;76-37-9;10.8;mg/L
-270;OCC1CO1;1.79;valid;Glycidol;556-52-5;1.79;mg/L
-271;OCCS;2.0;valid;2-Mercaptoethanol;60-24-2;2.0;mg/L
-272;Oc1ccccc1-c1ccccc1;0.04;valid;2-Phenylphenol;90-43-7;0.04;mg/L
-273;S=C=S;10.35;valid;Carbon disulfide;75-15-0;10.35;mg/L
-274;SCc1ccccc1;1.19;valid;Benzenemethanethiol;100-53-8;1.19;mg/L
-275;[O-]CCS;2.03;valid;2-Mercaptoethanol sodium salt;37482-11-4;2.03;mg/L
-276;[SiH3]N([SiH3])[SiH3];0.44;valid;Silanamine, N,N-disilyl-;13862-16-3;0.44;mg/L
-277;c1ccc(-c2ccccc2)cc1;3.02;valid;Biphenyl;92-52-4;3.02;mg/L
-278;c1ccc(OCC2CO2)cc1;1.98;valid;Phenyl glycidyl ether;122-60-1;1.98;mg/L
+0;C#CC(C)(C)O;21.3;valid;2-Methyl-3-butyn-2-ol;115-19-5;21.3;mg/L
+1;C#CC1CC1;22.3;valid;Cyclopropylacetylene;6746-94-7;22.3;mg/L
+2;C#CCCl;4.44;valid;1-Propyne, 3-chloro-;624-65-7;4.44;mg/L
+3;C#CCN(CC)CC;2.1;valid;2-Propyn-1-amine, N,N-diethyl-;4079-68-9;2.1;mg/L
+4;C/C=C/C=C/C;27.50729201331115;valid;Hydrocarbons, C4-10-unsatd;68514-38-5;27.50729201331115;mg/L
+5;C/C=C/CC#N;1.4172029950083196;valid;3-Pentenenitrile;4635-87-4;1.4172029950083196;mg/L
+6;C/C=C/CC/C=C/CC/C=C/CC/C=C/CCCC/C=C/CC/C=C/C;118.74821547420969;valid;Hydrocarbons, C14-?30, olefin-?rich;68514-35-2;118.74821547420969;mg/L
+7;C/C=C/CCC;28.18236688851913;valid;Hexene;25264-93-1;28.18236688851913;mg/L
+8;C/C=C\CCCCC;2.1;valid;2-Octene;111-67-1;2.1;mg/L
+9;C1=CC2C3C=CC(C3)C2C1;1.8641990815307816;valid;Dicyclopentadiene;77-73-6;1.8641990815307816;mg/L
+10;C1=CCCC1;22.920061252079865;valid;Cyclopentene;142-29-0;22.920061252079865;mg/L
+11;C1=CCOC1;6.0;valid;2,5-Dihydrofuran;1708-29-8;6.0;mg/L
+12;C1=COCCC1;10.7;valid;3,4-Dihydro-2H-pyran;110-87-2;10.7;mg/L
+13;C1=C\CC/C=C/CC/C=C\CC/1;8.1;valid;1,5,9-Cyclododecatriene;4904-61-4;8.1;mg/L
+14;C1=Cc2ccccc2C1;5.14;valid;1H-Indene;95-13-6;5.14;mg/L
+15;C1CCC(NC2CCCCC2)CC1;1.4;valid;Dicyclohexylamine;101-83-7;1.4;mg/L
+16;C1CCC2CCCCC2C1;4.634402939545201;valid;Decalin;91-17-8;4.634402939545201;mg/L
+17;C1CCC2OC2C1;21.47;valid;Cyclohexene oxide;286-20-4;21.47;mg/L
+18;C1CCCC1;25.3;valid;Cyclopentane;287-92-3;25.3;mg/L
+19;C1CCNCC1;4.8;valid;Piperidine;110-89-4;4.8;mg/L
+20;C1CCOC1;60.6;valid;Tetrahydrofuran;109-99-9;60.6;mg/L
+21;C1CCOCOC1;20.8;valid;1,3-Dioxepane;505-65-7;20.8;mg/L
+22;C1CN(CCOCCN2CCOCC2)CCO1;0.21;valid;4,4'-(Oxydiethylene)bis(morpholine);6425-39-4;0.21;mg/L
+23;C1CO1;3.1585;valid;Ethylene oxide;75-21-8;3.1585;mg/L
+24;C1COCO1;68.4;valid;1,3-Dioxolane;646-06-0;68.4;mg/L
+25;C1OCOCO1;39.2;valid;1,3,5-Trioxane;110-88-3;39.2;mg/L
+26;C=C(Br)C(F)(F)F;85.33396514143095;valid;1-Propene, 2-bromo-3,3,3-trifluoro-;1514-82-5;85.33396514143095;mg/L
+27;C=C(C)C(=O)OC;29.8;valid;Methyl methacrylate;80-62-6;29.8;mg/L
+28;C=C(C)C(=O)OC1CCCCC1;29.8;valid;Cyclohexyl methacrylate;101-43-9;29.8;mg/L
+29;C=C(C)C(=O)OCCCC;29.04293594009982;valid;Butyl methacrylate;97-88-1;29.04293594009982;mg/L
+30;C=C(C)C=O;0.5533333333333333;valid;Methacrylaldehyde;78-85-3;0.5533333333333333;mg/L
+31;C=C(C)OC(C)=O;22.0;valid;Isopropenyl acetate;108-22-5;22.0;mg/L
+32;C=C(C)c1ccccc1;22.85;valid;alpha-Methylstyrene;98-83-9;22.85;mg/L
+33;C=C1CC(=O)O1;0.9634936356073208;valid;Diketene;674-82-8;0.9634936356073208;mg/L
+34;C=CC(=O)N(C)C;1.5899917637271217;valid;N,N-Dimethylacrylamide;2680-03-7;1.5899917637271217;mg/L
+35;C=CC(=O)OC(C)(C)C;7.0200000000000005;valid;tert-Butyl acrylate;1663-39-4;7.0200000000000005;mg/L
+36;C=CC(=O)OCC(C)C;12.65;valid;Isobutyl acrylate;106-63-8;12.65;mg/L
+37;C=CC(=O)OCC(CC)(COC(=O)C=C)COC(=O)C=C;0.55;valid;Trimethylolpropane triacrylate;15625-89-5;0.55;mg/L
+38;C=CC(=O)OCC(CC)CCCC;1.19;valid;2-Ethylhexyl acrylate;103-11-7;1.19;mg/L
+39;C=CC(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F;1.8;valid;(Perfluorohexyl)ethyl acrylate;17527-29-6;1.8;mg/L
+40;C=CC(=O)OCCCCCCCCCCCC;0.69;valid;Lauryl acrylate;2156-97-0;0.69;mg/L
+41;C=CC(=O)OCCCCCCCCCCCCCC;0.69;valid;Tetradecyl acrylate;21643-42-5;0.69;mg/L
+42;C=CC(=O)OCCCCOC(=O)C=C;0.06;valid;1,4-Butanediol diacrylate;1070-70-8;0.06;mg/L
+43;C=CC(=O)OCCCO;0.38;valid;Hydroxypropyl acrylate;25584-83-2;0.38;mg/L
+44;C=CC(=O)OCCOC;2.7;valid;2-Methoxyethyl acrylate;3121-61-7;2.7;mg/L
+45;C=CC(=O)[O-];5.1;valid;Polyacrylic acid;9003-01-4;5.1;mg/L
+46;C=CC(C#N)OC(C)=O;7.866666666666667;valid;1-Cyanoallyl acetate;15667-63-7;7.866666666666667;mg/L
+47;C=CC(C)(C)O;21.2;valid;2-Methyl-3-buten-2-ol;115-18-4;21.2;mg/L
+48;C=CC(C)(O)CCCC(C)CCCC(C)CCCC(C)C;1.1;valid;Isophytol;505-32-8;1.1;mg/L
+49;C=CC(C)C#N;10.122878535773712;valid;2-Methyl-3-butenenitrile;16529-56-9;10.122878535773712;mg/L
+50;C=CC(Cl)CCl;10.89;valid;3,4-Dichloro-1-butene;760-23-6;10.89;mg/L
+51;C=CC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C=C;25.94134667221298;valid;1,6-Divinylperfluorohexane;1800-91-5;25.94134667221298;mg/L
+52;C=CCBr;2.41;valid;Allyl bromide;106-95-6;2.41;mg/L
+53;C=CCCCCC=C;36.0;valid;1,7-Octadiene;3710-30-3;36.0;mg/L
+54;C=CCCl;11.2;valid;Allyl chloride;107-05-1;11.2;mg/L
+55;C=CCOCC1CO1;1.46;valid;Allyl glycidyl ether;106-92-3;1.46;mg/L
+56;C=CCOc1nc(OCC=C)nc(OCC=C)n1;0.1665;valid;2,4,6-Tris(allyloxy)-1,3,5-triazine;101-37-1;0.1665;mg/L
+57;C=CN1CCCCCC1=O;1.6;valid;N-Vinylcaprolactam;2235-00-9;1.6;mg/L
+58;C=COC(=O)CC;20.0;valid;Vinyl propionate;105-38-4;20.0;mg/L
+59;C=COC(C)=O;16.079205490848587;valid;Vinyl acetate;108-05-4;16.079205490848587;mg/L
+60;C=COC1CCCCC1;23.7485;valid;(Ethenyloxy)-cyclohexane;2182-55-0;23.7485;mg/L
+61;C=COCC(C)C;67.0;valid;Vinyl isobutyl ether;109-53-5;67.0;mg/L
+62;C=COCCCC;33.3;valid;Butyl vinyl ether;111-34-2;33.3;mg/L
+63;C=COCCCCOC=C;6.3;valid;Butane, 1,4-bis(ethenyloxy)-;3891-33-6;6.3;mg/L
+64;C=CSC(C)O;1.14;valid;Ethanol, 2-(ethenylthio)-;3090-56-0;1.14;mg/L
+65;C=C[Si](C)(C)N[Si](C)(C)C=C;11.692812146422629;valid;Silanamine, 1-ethenyl-N-(ethenyldimethylsilyl)-1,1-dimethyl-;7691-02-3;11.692812146422629;mg/L
+66;C=C[Si](C)(C)O[Si](C)(C)C=C;1.9074516638935104;valid;Divinyltetramethyldisiloxane;2627-95-4;1.9074516638935104;mg/L
+67;C=C[Si](C)(Cl)Cl;3.368381946755408;valid;Silane, dichloroethenylmethyl-;124-70-9;3.368381946755408;mg/L
+68;C=C[Si](C)(OC)OC;5.0;valid;Vinylmethyldimethoxysilane;16753-62-1;5.0;mg/L
+69;C=C[Si](OC)(OC)OC;17.098705574043258;valid;Vinyltrimethoxysilane;2768-02-7;17.098705574043258;mg/L
+70;C=C[Si](OCC)(OCC)OCC;18.04208693843594;valid;Ethenyl(triethoxy)silane;78-08-0;18.04208693843594;mg/L
+71;C=C[Si]1(C)O[Si](C)(C=C)O[Si](C)(C=C)O[Si](C)(C=C)O1;1.32;valid;1,3,5,7-Tetramethyl-1,3,5,7-tetravinylcyclotetrasiloxane;2554-06-5;1.32;mg/L
+72;C=Cc1ccc(C=C)cc1;;outlier;1,4-Divinylbenzene;105-06-6;;mg/L
+73;C=Cc1ccccc1;11.8;valid;Styrene;100-42-5;11.8;mg/L
+74;C=O;0.5782877703826955;valid;Formaldehyde;50-00-0;0.5782877703826955;mg/L
+75;CC;16.28958444259567;valid;Ethane;74-84-0;16.28958444259567;mg/L
+76;CC(=O)C(C)C;22.83291475318913;valid;3-Methyl-2-butanone;563-80-4;22.83291475318913;mg/L
+77;CC(=O)C(O)c1ccccc1;0.25;valid;(R)-Phenylacetylcarbinol;1798-60-3;0.25;mg/L
+78;CC(=O)C=C(C)C;4.613304908485857;valid;4-Methylpent-3-en-2-one;141-79-7;4.613304908485857;mg/L
+79;CC(=O)CC(C)=O;5.099647476428174;valid;2,4-Pentanedione;123-54-6;5.099647476428174;mg/L
+80;CC(=O)CC(C)C;11.6;valid;4-Methyl-2-pentanone;108-10-1;11.6;mg/L
+81;CC(=O)CCl;0.95;valid;1-Chloropropan-2-one;78-95-5;0.95;mg/L
+82;CC(=O)OC(C)C;50.6;valid;Isopropyl acetate;108-21-4;50.6;mg/L
+83;CC(=O)OCC(C)C;30.0;valid;Isobutyl acetate;110-19-0;30.0;mg/L
+84;CC(=O)OCC(C)OC(C)=O;2.17;valid;Propylene glycol diacetate;623-84-7;2.17;mg/L
+85;CC(=O)OCCOC(C)=O;0.845;valid;1,2-Ethanediol diacetate;111-55-7;0.845;mg/L
+86;CC(=O)OOC(C)(C)C;2.473858153078203;valid;tert-Butyl peroxyacetate;107-71-1;2.473858153078203;mg/L
+87;CC(C)(C)C1CCC(O)CC1;0.221;valid;4-tert-Butylcyclohexanol;98-52-2;0.221;mg/L
+88;CC(C)(C)CCCCCC(=O)Cl;0.4;valid;Neodecanoyl chloride;40292-82-8;0.4;mg/L
+89;CC(C)(C)CCCCCC(=O)OOC(C)(C)c1ccccc1;10.2;valid;2-Phenylpropan-2-yl 7,7-dimethyloctaneperoxoate;26748-47-0;10.2;mg/L
+90;CC(C)(C)N;3.8;valid;tert-Butylamine;75-64-9;3.8;mg/L
+91;CC(C)(C)N=C=O;1.593;valid;tert-Butyl isocyanate;1609-86-5;1.593;mg/L
+92;CC(C)(C)O;30.83319467554076;valid;tert-Butyl alcohol;75-65-0;30.83319467554076;mg/L
+93;CC(C)(C)OC(=O)CCl;4.738;valid;1,1-Dimethylethyl chloroacetate;107-59-5;4.738;mg/L
+94;CC(C)(C)OC(=O)OC(=O)OC(C)(C)C;0.1;valid;Di-tert-butyl dicarbonate;24424-99-5;0.1;mg/L
+95;CC(C)(C)OCC1CO1;86.02;valid;tert-Butyl glycidyl ether;7665-72-7;86.02;mg/L
+96;CC(C)(C)OOC(=O)c1ccccc1;0.26;valid;tert-Butyl perbenzoate;614-45-9;0.26;mg/L
+97;CC(C)(C)OOC(C)(C)C;22.0;valid;Di-tert-butyl peroxide;110-05-4;22.0;mg/L
+98;CC(C)(C)S;94.40041356073208;valid;t-Butyl mercaptan;75-66-1;94.40041356073208;mg/L
+99;CC(C)(C)c1ccc(OP(=O)(Oc2ccccc2)Oc2ccccc2)cc1;0.4;valid;tert-Butylphenyl diphenyl phosphate;56803-37-3;0.4;mg/L
+100;CC(C)(OO)c1ccccc1;1.3927811980033278;valid;Cumene hydroperoxide;80-15-9;1.3927811980033278;mg/L
+101;CC(C)(c1cc(Br)c(O)c(Br)c1)c1cc(Br)c(O)c(Br)c1;28.5;valid;3,3',5,5'-Tetrabromobisphenol A;79-94-7;28.5;mg/L
+102;CC(C)C;31.48705707154742;valid;Isobutane;75-28-5;31.48705707154742;mg/L
+103;CC(C)C#N;1.724800332778702;valid;2-Methylpropanenitrile;78-82-0;1.724800332778702;mg/L
+104;CC(C)C(=O)C(C)C;13.133519966722128;valid;2,4-Dimethylpentan-3-one;565-80-0;13.133519966722128;mg/L
+105;CC(C)C(=O)OC(=O)C(C)C;4.21;valid;Isobutyric anhydride;97-72-3;4.21;mg/L
+106;CC(C)C(C)(C)C;19.0740633666112;valid;2,2,3-Trimethylbutane;464-06-2;19.0740633666112;mg/L
+107;CC(C)C(C)C;264.7715091514143;valid;2,3-Dimethylbutane;79-29-8;264.7715091514143;mg/L
+108;CC(C)C=O;21.89333333333333;valid;2-Methylpropanal;78-84-2;21.89333333333333;mg/L
+109;CC(C)CC(=O)CC(C)C;14.5;valid;Diisobutyl ketone;108-83-8;14.5;mg/L
+110;CC(C)CC(C)(C)C;33.52;valid;2,2,4-Trimethylpentane;540-84-1;33.52;mg/L
+111;CC(C)CC(C)O;16.0;valid;4-Methyl-2-pentanol;108-11-2;16.0;mg/L
+112;CC(C)CC=O;42.7;valid;3-Methylbutanal;590-86-3;42.7;mg/L
+113;CC(C)CCCCCCCOP(=O)(Oc1ccccc1)Oc1ccccc1;1.6;valid;Isodecyl diphenyl phosphate;29761-21-5;1.6;mg/L
+114;CC(C)CCN;11.233333333333334;valid;3-Methyl-1-butanamine;107-85-7;11.233333333333334;mg/L
+115;CC(C)COC(C)(C)C;68.26666666666667;valid;Isopropyl tert-butyl ether;33021-02-2;68.26666666666667;mg/L
+116;CC(C)Cl;6.54;valid;2-Chloropropane;75-29-6;6.54;mg/L
+117;CC(C)N;8.626128119800333;valid;Isopropylamine;75-31-0;8.626128119800333;mg/L
+118;CC(C)NC(C)C;4.969786466999445;valid;Diisopropylamine;108-18-9;4.969786466999445;mg/L
+119;CC(C)O;24.998336106489184;valid;Isopropanol;67-63-0;24.998336106489184;mg/L
+120;CC(C)[C@@]12CC[C@@](C)(O1)[C@@H](O)C2;4.27;valid;rel-(1R,2S,4S)-1-Methyl-4-(1-methylethyl)-7-oxabicyclo[2.2.1]heptan-2-ol;87172-89-2;4.27;mg/L
+121;CC(C=O)Cc1ccc(C(C)(C)C)cc1;0.18;valid;2-(4-Tert-Butylbenzyl)propionaldehyde;80-54-6;0.18;mg/L
+122;CC(CC#N)N1CC1;0.54;valid;1-Aziridinepropanenitrile, .beta.-methyl-;4078-19-7;0.54;mg/L
+123;CC(CC(=O)Cl)CC(C)(C)C;0.1099999999999999;valid;3,5,5-Trimethylhexanoyl chloride;36727-29-4;0.1099999999999999;mg/L
+124;CC(Cl)(Cl)Cl;79.07742304492513;valid;1,1,1-Trichloroethane;71-55-6;79.07742304492513;mg/L
+125;CC(Cl)CCl;9.39991680532446;valid;1,2-Dichloropropane;78-87-5;9.39991680532446;mg/L
+126;CC(N)CN;32.8;valid;1,2-Diaminopropane;78-90-0;32.8;mg/L
+127;CC(O)CCO;0.22;valid;1,3-Butanediol;107-88-0;0.22;mg/L
+128;CC(O)CN(C)C;3.0;valid;Dimepranol;108-16-7;3.0;mg/L
+129;CC(O)CN(CCO)CCO;16.4;valid;2-Propanol, 1-[bis(2-hydroxyethyl)amino]-;6712-98-7;16.4;mg/L
+130;CC(c1ccccc1)c1ccccc1;0.8;valid;Diphenylethane;38888-98-1;0.8;mg/L
+131;CC/C=C\C#N;2.868148918469218;valid;(2Z)-2-Pentenenitrile;25899-50-7;2.868148918469218;mg/L
+132;CC1CCCC(C)C1N;3.6;valid;2,6-Dimethylcyclohexan-1-amine;6850-63-1;3.6;mg/L
+133;CC1CO1;10.13984026622296;valid;(+/-)-1,2-Propylene oxide;75-56-9;10.13984026622296;mg/L
+134;CC1OC1C;5.2;valid;2,3-Epoxybutane;3266-23-7;5.2;mg/L
+135;CC=O;24.206042013311148;valid;Acetaldehyde;75-07-0;24.206042013311148;mg/L
+136;CCC;23.888320757071543;valid;Propane;74-98-6;23.888320757071543;mg/L
+137;CCC#N;3.3;valid;Propionitrile;107-12-0;3.3;mg/L
+138;CCC(=O)Cl;0.2;valid;Propanoyl chloride;79-03-8;0.2;mg/L
+139;CCC(=O)O;9.85;valid;Propionic acid;79-09-4;9.85;mg/L
+140;CCC(=O)OC;22.7;valid;Methyl propanoate;554-12-1;22.7;mg/L
+141;CCC(C)(C)C;264.77150915141425;valid;2,2-Dimethylbutane;75-83-2;264.77150915141425;mg/L
+142;CCC(C)(C)OC;5.4;valid;tert-Amyl methyl ether;994-05-8;5.4;mg/L
+143;CCC(C)(C)OO;2.425;valid;1,1-Dimethylpropyl hydroperoxide;3425-61-4;2.425;mg/L
+144;CCC(C)C(=O)OC(C)C;5.967;valid;Isopropyl 2-methylbutyrate;66576-71-4;5.967;mg/L
+145;CCC(C)C=O;50.5;valid;2-Methylbutanal;96-17-3;50.5;mg/L
+146;CCC(C)CC;5.975;valid;3-Methylpentane;96-14-0;5.975;mg/L
+147;CCC(C)NCCO;0.76;valid;2-[(1-Methylpropyl)amino]ethanol;35265-04-4;0.76;mg/L
+148;CCC(C)OC(=S)S;0.0181799999999999;valid;Sodium isobutyl xanthate;25306-75-6;0.0181799999999999;mg/L
+149;CCC(O)CO;370.0;valid;1,2-Butanediol;584-03-2;370.0;mg/L
+150;CCC(O)OCC(C)OC(O)CC;0.083;valid;Tripropylene glycol;24800-44-0;0.083;mg/L
+151;CCC(OCCCOC)OC(C)=O;5.7;valid;Dipropyleneglycol methyl ether acetate;88917-22-0;5.7;mg/L
+152;CCC/C(C)=N\O;1.2412210898502494;valid;2-Pentanone oxime;623-40-5;1.2412210898502494;mg/L
+153;CCC=O;4.6;valid;Propanal;123-38-6;4.6;mg/L
+154;CCCC;31.48705707154742;valid;Butane;106-97-8;31.48705707154742;mg/L
+155;CCCC#N;1.724800332778702;valid;Butanenitrile;109-74-0;1.724800332778702;mg/L
+156;CCCC(C)=O;25.5;valid;2-Pentanone;107-87-9;25.5;mg/L
+157;CCCC(C)C;5.975;valid;2-Methylpentane;107-83-5;5.975;mg/L
+158;CCCC1CO1;18.0;valid;Oxirane, 2-propyl-;1003-14-1;18.0;mg/L
+159;CCCCBr;37.06;valid;1-Bromobutane;109-65-9;37.06;mg/L
+160;CCCCC(=O)Cl;2.07;valid;Valeryl chloride;638-29-9;2.07;mg/L
+161;CCCCC(C=O)CC;4.1;valid;2-Ethylhexaldehyde;123-05-7;4.1;mg/L
+162;CCCCC(CC)CCl;11.1;valid;3-(Chloromethyl)-heptane;123-04-6;11.1;mg/L
+163;CCCCC(CC)CN;1.548;valid;2-Ethylhexylamine;104-75-6;1.548;mg/L
+164;CCCCC(CC)CNc1ccc2ccccc2c1;11.0;valid;N-(2-Ethylhexyl)naphthalen-2-amine;56358-17-9;11.0;mg/L
+165;CCCCC(CC)COC(=O)CCCCCCCC(=O)OCC(CC)CCCC;1.6899999999999997e-05;valid;Bis(2-ethylhexyl) nonanedioate;103-24-2;1.6899999999999997e-05;mg/L
+166;CCCCC(CC)COC(=O)CCS;3.905809484193011;valid;Propanoic acid, 3-mercapto-, 2-ethylhexyl ester;50448-95-8;3.905809484193011;mg/L
+167;CCCCC(CC)COP(=O)(Oc1ccccc1)Oc1ccccc1;2.1;valid;2-Ethylhexyl diphenyl phosphate;1241-94-7;2.1;mg/L
+168;CCCCCC(=O)O;1.3682;valid;Hexanoic acid;142-62-1;1.3682;mg/L
+169;CCCCCC(C)=O;16.7;valid;2-Heptanone;110-43-0;16.7;mg/L
+170;CCCCCC(C)C;33.52;valid;Isooctane;26635-64-3;33.52;mg/L
+171;CCCCCCC(=O)OCC(CC)(COC(=O)CCCCCC)COC(=O)CCCCCC;10.0;valid;1,1,1-Trimethylolpropane triheptanoate;78-16-0;10.0;mg/L
+172;CCCCCCCC;24.88;valid;Octane;111-65-9;24.88;mg/L
+173;CCCCCCCC(=O)Cl;0.63;valid;Caprylyl chloride;111-64-8;0.63;mg/L
+174;CCCCCCCC(=O)O;0.1621;valid;Octanoic acid;124-07-2;0.1621;mg/L
+175;CCCCCCCC/C=C\CCCCCCCCOCCO;0.1;valid;9-Octadecen-1-ol-ethylene oxide copolymer;9004-98-2;0.1;mg/L
+176;CCCCCCCCC;20.380000000000003;valid;Nonane;111-84-2;20.380000000000003;mg/L
+177;CCCCCCCCCC(C)(C)SSc1n[nH]c(=S)s1;0.62;valid;1,3,4-Thiadiazole-2(3H)-thione, 5-(tert-dodecyldithio)-;73984-93-7;0.62;mg/L
+178;CCCCCCCCCCOCCO;0.1;valid;Polyethylene glycol monodecyl ether;26183-52-8;0.1;mg/L
+179;CCCCCCCC[Si](OCC)(OCC)OCC;0.2530301996672213;valid;Triethoxyoctylsilane;2943-75-1;0.2530301996672213;mg/L
+180;CCCCCCOC(=O)Cl;1.17;valid;Carbonochloridic acid, hexyl ester;6092-54-2;1.17;mg/L
+181;CCCCCCOC(C)=O;9.04;valid;Hexyl acetate;142-92-7;9.04;mg/L
+182;CCCCCON=O;3.4575500831946755;valid;Pentyl nitrite;463-04-7;3.4575500831946755;mg/L
+183;CCCCCl;30.40249584026622;valid;1-Chlorobutane;109-69-3;30.40249584026622;mg/L
+184;CCCCN;4.300000000000001;valid;Butylamine;109-73-9;4.300000000000001;mg/L
+185;CCCCN(CCCC)CCCC;0.6325;valid;Tributylamine;102-82-9;0.6325;mg/L
+186;CCCCNCCCC;1.2210998076123127;valid;N-Butyl-1-butanamine;111-92-2;1.2210998076123127;mg/L
+187;CCCCOC(=O)CC;21.99;valid;Butyl propionate;590-01-2;21.99;mg/L
+188;CCCCOCC;4.250291181364392;valid;1-Ethoxybutane;628-81-9;4.250291181364392;mg/L
+189;CCCCOCC(C)O;3.5800396422628955;valid;1-Butoxy-2-propanol;5131-66-8;3.5800396422628955;mg/L
+190;CCCCOCC(C)OCC(C)O;0.3332327079866888;valid;1-[(1-Butoxy-2-propanyl)oxy]-2-propanol;29911-28-2;0.3332327079866888;mg/L
+191;CCCCOCC1CO1;5.577895590682195;valid;Butyl glycidyl ether;2426-08-6;5.577895590682195;mg/L
+192;CCCCOCCOC(C)=O;3.0656397670549085;valid;2-Butoxyethyl acetate;112-07-2;3.0656397670549085;mg/L
+193;CCCCOCCOCCOCCO;2.4;valid;2-[2-(2-Butoxyethoxy)ethoxy]ethanol;143-22-6;2.4;mg/L
+194;CCCCOCOCCCC;11.24;valid;Butane, 1,1'-[methylenebis(oxy)]bis-;2568-90-3;11.24;mg/L
+195;CCCCl;6.54;valid;1-Chloropropane;540-54-5;6.54;mg/L
+196;CCCN;7.083333333333332;valid;Propylamine;107-10-8;7.083333333333332;mg/L
+197;CCCN(C)C;4.499;valid;Dimethyl-N-propylamine;926-63-6;4.499;mg/L
+198;CCCN(CCC)CCC;1.4899542429284522;valid;Tripropylamine;102-69-2;1.4899542429284522;mg/L
+199;CCCNCCC;4.11;valid;Dipropylamine;142-84-7;4.11;mg/L
+200;CCCOC(C)=O;32.0;valid;Propyl acetate;109-60-4;32.0;mg/L
+201;CCCOCCO;8.999675097060454;valid;2-Propoxyethanol;2807-30-9;8.999675097060454;mg/L
+202;CCCS;22.74;valid;1-Propanethiol;107-03-9;22.74;mg/L
+203;CCC[N+](=O)[O-];5.51;valid;1-Nitropropane;108-03-2;5.51;mg/L
+204;CCC[Si](Cl)(Cl)Cl;4.992220632279534;valid;Trichloropropylsilane;141-57-1;4.992220632279534;mg/L
+205;CCC[Si](OC)(OC)OC;22.2;valid;Trimethoxypropylsilane;1067-25-0;22.2;mg/L
+206;CCCl;50.98939267886856;valid;Chloroethane;75-00-3;50.98939267886856;mg/L
+207;CCN(C(C)C)C(C)C;2.63;valid;2-Propanamine, N-ethyl-N-(1-methylethyl)-;7087-68-5;2.63;mg/L
+208;CCN(C)C;10.344118136439269;valid;N,N-Dimethylethylamine;598-56-1;10.344118136439269;mg/L
+209;CCN(CC)CC;7.357960232945092;valid;Triethylamine;121-44-8;7.357960232945092;mg/L
+210;CCN(CC)CCN;2.5;valid;2-Aminoethyldiethylamine;100-36-7;2.5;mg/L
+211;CCN(CC)CCO;4.6;valid;N,N-Diethylethanolamine;100-37-8;4.6;mg/L
+212;CCN(CCCl)c1ccc(C=O)cc1;1.68;valid;p-((2-Chloroethyl)ethylamino)benzaldehyde;2643-07-4;1.68;mg/L
+213;CCN1CCCCC1;2.4233333333333333;valid;Piperidine, 1-ethyl-;766-09-6;2.4233333333333333;mg/L
+214;CCN1CCNCC1;9.219;valid;Piperazine, 1-ethyl-;5308-25-8;9.219;mg/L
+215;CCNCC;15.617590127565167;valid;Diethylamine;109-89-7;15.617590127565167;mg/L
+216;CCNc1ccccc1C;0.955;valid;N-Ethyl-2-methylaniline;94-68-8;0.955;mg/L
+217;CCOC(=O)Cl;0.4325;valid;Ethyl chloroformate;541-41-3;0.4325;mg/L
+218;CCOC(=O)OCC;17.75;valid;Diethyl carbonate;105-58-8;17.75;mg/L
+219;CCOC(=O)[C@H](C)O;5.4;valid;(L)-(-)-Ethyl lactate;687-47-8;5.4;mg/L
+220;CCOC(C)(C)C;5.88;valid;Ethyl t-butyl ether;637-92-3;5.88;mg/L
+221;CCOC(C)(C)CC;23.2;valid;Butane, 2-ethoxy-2-methyl-;919-94-8;23.2;mg/L
+222;CCOC(OCC)OCC;24.659234608985024;valid;Ethyl orthoformate;122-51-0;24.659234608985024;mg/L
+223;CCOC=O;21.0;valid;Ethyl formate;109-94-4;21.0;mg/L
+224;CCOCC;98.66622296173044;valid;Diethyl ether;60-29-7;98.66622296173044;mg/L
+225;CCOCC(C)O;9.59;valid;1-Ethoxy-2-propanol;1569-02-4;9.59;mg/L
+226;CCOCC(C)OC(C)=O;6.99;valid;1-Ethoxypropan-2-yl acetate;54839-24-6;6.99;mg/L
+227;CCOCCC(=O)OCC;6.0687865224625615;valid;Ethyl 3-ethoxypropionate;763-69-9;6.0687865224625615;mg/L
+228;CCOCC[NH3+];7.61;valid;Ethanamine, 2-ethoxy-;110-76-9;7.61;mg/L
+229;CCOCOCC;28.77960927620632;valid;Diethoxymethane;462-95-3;28.77960927620632;mg/L
+230;CCOP(=O)(C(=O)c1c(C)cc(C)cc1C)c1ccccc1;2.7e-05;valid;Ethyl phenyl(2,4,6-trimethylbenzoyl)phosphinate;84434-11-7;2.7e-05;mg/L
+231;CCOP(OCC)c1ccccc1;0.32;valid;Diethyl phenylphosphonite;1638-86-4;0.32;mg/L
+232;CCO[Si](C)(C)C;20.57;valid;Ethoxytrimethylsilane;1825-62-3;20.57;mg/L
+233;CCO[Si](C)OCC;26.310911668053244;valid;Diethoxy(methyl)silane;2031-62-1;26.310911668053244;mg/L
+234;CCO[Si](CC[Si](OCC)(OCC)OCC)(OCC)OCC;0.3835021630615642;valid;1,2-Bis(triethoxysilyl)ethane;16068-37-4;0.3835021630615642;mg/L
+235;CCO[Si](CCl)(OCC)OCC;4.7;valid;Silane, (chloromethyl)triethoxy-;15267-95-5;4.7;mg/L
+236;CCS;11.23;valid;Ethanethiol;75-08-1;11.23;mg/L
+237;CC[Si](CC)CC;21.3;valid;Silane, triethyl-;617-86-7;21.3;mg/L
+238;CC[Si](Cl)(Cl)Cl;4.274715037437604;valid;Ethyl silicon trichloride;115-21-9;4.274715037437604;mg/L
+239;CCc1ccccc1;1.73;valid;Ethylbenzene;100-41-4;1.73;mg/L
+240;CCc1ncc(C)[nH]1;0.03;valid;2-Ethyl-4-methyl-1H-imidazole;931-36-2;0.03;mg/L
+241;CI;4.079860607321131;valid;Methyl iodide;74-88-4;4.079860607321131;mg/L
+242;CN(C)C=O;5.85;valid;N,N-Dimethylformamide;68-12-2;5.85;mg/L
+243;CN(C)CCCCCCN(C)C;1.54;valid;N,N,N',N'-Tetramethyl-1,6-hexanediamine;111-18-2;1.54;mg/L
+244;CN(C)CCCNCCCN(C)C;1.315;valid;N'-[3-(Dimethylamino)propyl]-N,N-dimethylpropane-1,3-diamine;6711-48-4;1.315;mg/L
+245;CN(C)CCN(C)C;11.23650149750416;valid;N,N,N',N'-Tetramethylethylenediamine;110-18-9;11.23650149750416;mg/L
+246;CN(C)CCN(C)CCN(C)C;2.090605657237937;valid;1,1,4,7,7-Pentamethyldiethylenetriamine;3030-47-5;2.090605657237937;mg/L
+247;CN(C)CCO;6.0846696339434265;valid;Dimethylaminoethanol;108-01-0;6.0846696339434265;mg/L
+248;CN(C)CCOCCO;0.398908153078203;valid;2-[2-(Dimethylamino)ethoxy]ethanol;1704-62-7;0.398908153078203;mg/L
+249;CN1CCCCC1;2.4233333333333333;valid;Piperidine, 1-methyl-;626-67-5;2.4233333333333333;mg/L
+250;CN1CCNCC1;10.695;valid;1-Methylpiperazine;109-01-3;10.695;mg/L
+251;CNC(C)C;8.530000000000001;valid;N-Methylisopropylamine;4747-21-1;8.530000000000001;mg/L
+252;CO;106.16666666666669;valid;Methanol;67-56-1;106.16666666666669;mg/L
+253;COC(=O)C(C)O;5.4;valid;Methyl 2-hydroxypropanoate;547-64-8;5.4;mg/L
+254;COC(=O)CCS;2.176177731558514;valid;Methyl 3-mercaptopropionate;2935-90-2;2.176177731558514;mg/L
+255;COC(=O)c1ccc(C)cc1;0.49;valid;Methyl 4-methylbenzoate;99-75-2;0.49;mg/L
+256;COC(=O)c1ccccc1C(=O)OC;10.4;valid;Dimethyl phthalate;131-11-3;10.4;mg/L
+257;COC(C(F)(F)F)C(F)(F)F;185.3839008943428;valid;Hexafluoroisopropyl methyl ether;13171-18-1;185.3839008943428;mg/L
+258;COC(C)(C)C;85.0;valid;Methyl tert-butyl ether;1634-04-4;85.0;mg/L
+259;COC(OC)OC;40.0;valid;Trimethoxymethane;149-73-5;40.0;mg/L
+260;COC(OC)[NH+](C)C;12.16;valid;Methanamine, 1,1-dimethoxy-N,N-dimethyl-;4637-24-5;12.16;mg/L
+261;COC1CCC=CO1;6.1;valid;3,4-Dihydro-2-methoxy-2H-pyran;4454-05-1;6.1;mg/L
+262;COC1CCCC1;21.5;valid;Cyclopentane, methoxy-;5614-37-9;21.5;mg/L
+263;COCCCOCCCOC;5.34464925124792;valid;Dipropylene glycol dimethyl ether;111109-77-4;5.34464925124792;mg/L
+264;CO[P+](=O)OC;7.1;valid;Dimethyl phosphonate;868-85-9;7.1;mg/L
+265;CO[SiH](CC1CCCCC1)OC;2.06;valid;Cyclohexyl(methyl)dimethoxysilane;17865-32-6;2.06;mg/L
+266;CO[Si](C)(C)OC;4.7;valid;Dimethoxydimethylsilane;1112-39-6;4.7;mg/L
+267;CO[Si](C)OC;4.6;valid;Methyldimethoxysilane;16881-77-9;4.6;mg/L
+268;CO[Si](CC(C)C)(OC)OC;11.31088186356073;valid;Silane, trimethoxy(2-methylpropyl)-;18395-30-7;11.31088186356073;mg/L
+269;CO[Si](CCCCCC[Si](OC)(OC)OC)(OC)OC;0.042;valid;2,11-Dioxa-3,10-disiladodecane, 3,3,10,10-tetramethoxy-;87135-01-1;0.042;mg/L
+270;CO[Si](CCCN=C=O)(OC)OC;0.1280902662229617;valid;Silane, (3-isocyanatopropyl)trimethoxy-;15396-00-6;0.1280902662229617;mg/L
+271;CO[Si](CCCOCC1CO1)(OC)OC;0.56;valid;Trimethoxy[3-(oxiran-2-ylmethoxy)propyl]silane;2530-83-8;0.56;mg/L
+272;CO[Si](CC[Si](OC)(OC)OC)(OC)OC;0.026998003327787;valid;2,7-Dioxa-3,6-disilaoctane, 3,3,6,6-tetramethoxy-;18406-41-2;0.026998003327787;mg/L
+273;CO[Si](OC)(OC)OC;0.3989178868552412;valid;Tetramethyl orthosilicate;681-84-5;0.3989178868552412;mg/L
+274;CO[Si](OC)(c1ccccc1)c1ccccc1;0.42;valid;Dimethoxy(diphenyl)silane;6843-66-9;0.42;mg/L
+275;COc1cc(C=O)cc([N+](=O)[O-])c1O;0.0417;valid;5-Nitrovanillin;6635-20-7;0.0417;mg/L
+276;COc1cc(C=O)ccc1O;0.0417;valid;4-Hydroxy-3-methoxybenzaldehyde;121-33-5;0.0417;mg/L
+277;COc1ccc(C)cc1;6.371111111111111;valid;1-Methoxy-4-methylbenzene;104-93-8;6.371111111111111;mg/L
+278;COc1ccc(N=Nc2ccc(N=Nc3cccc(S(=O)(=O)[O-])c3)cc2OC)cc1;7.17;valid;Benzenesulfonic acid, 3-[[3-methoxy-4-[(4-methoxyphenyl)azo]phenyl]azo]-, sodium salt;63405-85-6;7.17;mg/L
+279;COc1ccccc1;6.51;valid;Anisole;100-66-3;6.51;mg/L
+280;CS(=O)(=O)Cl;0.1117;valid;Methanesulfonyl chloride;124-63-0;0.1117;mg/L
+281;CSC;104.03553452579035;valid;Dimethyl sulfide;75-18-3;104.03553452579035;mg/L
+282;CSCCC(O)C#N;0.651;valid;Butanenitrile, 2-hydroxy-4-(methylthio)-;17773-41-0;0.651;mg/L
+283;C[C](C)C;3.8;valid;Isobutene trimer;7756-94-7;3.8;mg/L
+284;C[N+](=O)[O-];5.51;valid;Nitromethane;75-52-5;5.51;mg/L
+285;C[NH+](C)CCC[NH+](C)C;5.410644758735441;valid;N,N,N',N'-Tetramethyltrimethylenediamine;110-95-2;5.410644758735441;mg/L
+286;C[Si](C)(C)C;21.3;valid;Tetramethylsilane;75-76-3;21.3;mg/L
+287;C[Si](C)(C)Cl;6.616256905158069;valid;Chlorotrimethylsilane;75-77-4;6.616256905158069;mg/L
+288;C[Si](C)(C)O[Si](C)(C)C;23.53333333333333;valid;Hexamethyldisiloxane;107-46-0;23.53333333333333;mg/L
+289;C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C;5.169567387687189;valid;Decamethyltetrasiloxane;141-62-8;5.169567387687189;mg/L
+290;C[Si](C)(C)[O-];12.60019887687188;valid;Trimethylsilanol;1066-40-6;12.60019887687188;mg/L
+291;C[Si](C)(Cl)Cl;5.949790411813645;valid;Dimethyldichlorosilane;75-78-5;5.949790411813645;mg/L
+292;C[Si](C)Cl;8.718408943427619;valid;Chlorodimethylsilane;1066-35-9;8.718408943427619;mg/L
+293;C[Si](Cl)(Cl)CCCCl;5.277755227398779;valid;Silane, dichloro(3-chloropropyl)methyl-;7787-93-1;5.277755227398779;mg/L
+294;C[Si](Cl)(Cl)CC[Si](C)(Cl)Cl;7.056109206877426;valid;Silane, 1,1'-(1,2-ethanediyl)bis[1,1-dichloro-1-methyl-;3353-69-3;7.056109206877426;mg/L
+295;C[Si](Cl)(Cl)CCl;6.8;valid;Dichloro(chloromethyl)methylsilane;1558-33-4;6.8;mg/L
+296;C[Si](Cl)(Cl)Cl;4.551035912368275;valid;Methyltrichlorosilane;75-79-6;4.551035912368275;mg/L
+297;C[Si](Cl)Cl;4.233323523294509;valid;Methyldichlorosilane;75-54-7;4.233323523294509;mg/L
+298;C[Si]1(C)N[Si](C)(C)N[Si](C)(C)N1;4.9;valid;2,2,4,4,6,6-Hexamethylcyclotrisilazane;1009-93-4;4.9;mg/L
+299;C[Si]1O[Si](C)O[Si](C)O[Si](C)O1;4.9;valid;Cyclotetrasiloxane, 2,4,6,8-tetramethyl-;2370-88-9;4.9;mg/L
+300;C[Si]1O[Si](C)O[Si](C)O[Si](C)O[Si](C)O1;4.9;valid;Cyclopentasiloxane, 2,4,6,8,10-pentamethyl-;6166-86-5;4.9;mg/L
+301;Cc1ccc(C)cc1;26.66871401510303;valid;p-Xylene;106-42-3;26.66871401510303;mg/L
+302;Cc1ccc(Cl)cc1Cl;2.669;valid;2,4-Dichlorotoluene;95-73-8;2.669;mg/L
+303;Cc1ccc(N)cc1;0.32;valid;4-Methylbenzenamine;106-49-0;0.32;mg/L
+304;Cc1ccc(N=C=O)cc1N=C=O;0.2390701747088186;valid;Toluene diisocyanate;26471-62-5;0.2390701747088186;mg/L
+305;Cc1ccc2ccccc2c1;1.73;valid;2-Methylnaphthalene;91-57-6;1.73;mg/L
+306;Cc1cccc(C)c1;27.174051345796222;valid;['Xylenes', 'm-Xylene'];['108-38-3', '1330-20-7'];27.174051345796222;mg/L
+307;Cc1cccc(N=C=O)c1;0.0315;valid;m-Tolyl isocyanate;621-29-4;0.0315;mg/L
+308;Cc1cccc([N+](=O)[O-])c1;1.04425;valid;3-Nitrotoluene;99-08-1;1.04425;mg/L
+309;Cc1ccccc1;27.933333333333337;valid;Toluene;108-88-3;27.933333333333337;mg/L
+310;Cc1ccccc1C;27.48223158069883;valid;o-Xylene;95-47-6;27.48223158069883;mg/L
+311;Cc1ccccc1Cl;10.2915;valid;2-Chlorotoluene;95-49-8;10.2915;mg/L
+312;Cc1ccccc1OCC1CO1;0.0416657404326123;valid;o-Cresyl glycidyl ether;2210-79-9;0.0416657404326123;mg/L
+313;Cc1ccccc1[N+](=O)[O-];1.086;valid;2-Nitrotoluene;88-72-2;1.086;mg/L
+314;Cc1ccccn1;8.556819190238492;valid;2-Methylpyridine;109-06-8;8.556819190238492;mg/L
+315;Cc1nccn1C;0.9;valid;1H-Imidazole, 1,2-dimethyl-;1739-84-0;0.9;mg/L
+316;Cl/C=C\CCl;3.263581405990017;valid;(Z)-Dichloropropene;10061-01-5;3.263581405990017;mg/L
+317;ClC(Cl)(Cl)Cl;48.39921680532446;valid;Carbon tetrachloride;56-23-5;48.39921680532446;mg/L
+318;ClC(Cl)(Cl)c1ccccc1;1.016410149750416;valid;Benzotrichloride;98-07-7;1.016410149750416;mg/L
+319;ClCBr;38.6;valid;Bromochloromethane;74-97-5;38.6;mg/L
+320;ClCCCBr;6.91;valid;1-Bromo-3-chloropropane;109-70-6;6.91;mg/L
+321;ClCCCl;7.758;valid;1,2-Dichloroethane;107-06-2;7.758;mg/L
+322;ClCCOCCCl;1.487240016638935;valid;Bis(chloroethyl) ether;111-44-4;1.487240016638935;mg/L
+323;Cl[SiH2]Cl;0.659661231281198;valid;Dichlorosilane;4109-96-0;0.659661231281198;mg/L
+324;Clc1ccc(Cl)cc1;5.07;valid;1,4-Dichlorobenzene;106-46-7;5.07;mg/L
+325;Clc1cccc(Cl)c1;17.6;valid;1,3-Dichlorobenzene;541-73-1;17.6;mg/L
+326;Clc1ccccc1Cl;9.809070881863558;valid;1,2-Dichlorobenzene;95-50-1;9.809070881863558;mg/L
+327;Clc1nc(Cl)nc(Cl)n1;0.1706666666666666;valid;2,4,6-Trichloro-s-triazine;108-77-0;0.1706666666666666;mg/L
+328;Clc1nc2ccccc2s1;0.079;valid;2-Chlorobenzothiazole;615-20-3;0.079;mg/L
+329;FC(C(F)C(F)(F)C(F)(F)F)C(F)(F)F;114.428;valid;2H,3H-Decafluoropentane;138495-42-8;114.428;mg/L
+330;FC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(C(F)(F)F)C1(F)F;;outlier;Perfluoro-1,3-dimethylcyclohexane;335-27-3;;mg/L
+331;FC(F)(F)OC(F)(Cl)C(F)(F)Cl;21.98;valid;1,2-Dichloro-1,1,2-trifluoro-2-(trifluoromethoxy)ethane;2356-53-8;21.98;mg/L
+332;FC(F)(F)c1ccc(Cl)c(Cl)c1;15.86;valid;1,2-Dichloro-4-(trifluoromethyl)benzene;328-84-7;15.86;mg/L
+333;FC(F)(F)c1ccc(Cl)nc1;13.7;valid;Pyridine, 2-chloro-5-(trifluoromethyl)-;52334-81-3;13.7;mg/L
+334;FC(F)(I)C(F)(F)C(F)(F)C(F)(F)I;23.18571064891847;valid;Perfluoro-1,4-diiodobutane;375-50-8;23.18571064891847;mg/L
+335;FC(F)=C(F)OC(F)(F)C(F)(F)C(F)(F)F;58.7;valid;Perfluoropropyl trifluorovinyl ether;1623-05-8;58.7;mg/L
+336;FC(F)=C(F)OC(F)(F)C(F)(F)F;188.70910981697168;valid;Perfluoroethyl vinyl ether;10493-43-3;188.70910981697168;mg/L
+337;FC(F)C(F)(F)OCC(F)(F)F;24.833516680532444;valid;(1H,1H-Perfluoroethyl)(2H-perfluoroethyl)ether;406-78-0;24.833516680532444;mg/L
+338;FC1(F)C(F)(F)C(F)(F)C2(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C2(F)C1(F)F;83.10220212146422;valid;Perflunafene;306-94-5;83.10220212146422;mg/L
+339;FCC(F)(F)F;;outlier;1,1,1,2-Tetrafluoroethane;811-97-2;;mg/L
+340;Fc1cc(Br)cc(F)c1F;22.23;valid;1-Bromo-3,4,5-trifluorobenzene;138526-69-9;22.23;mg/L
+341;N#Cc1c(F)cccc1F;2.64;valid;2,6-Difluorobenzonitrile;1897-52-5;2.64;mg/L
+342;NC(=O)c1ccccc1N;0.009;valid;2-Aminobenzamide;88-68-6;0.009;mg/L
+343;NC1CCCC1;7.7;valid;Cyclopentanamine;1003-03-8;7.7;mg/L
+344;NCCO;1.3;valid;Ethanolamine;141-43-5;1.3;mg/L
+345;NCc1ccccc1;0.4;valid;Benzylamine;100-46-9;0.4;mg/L
+346;NN;0.7598261231281198;valid;Hydrazine;302-01-2;0.7598261231281198;mg/L
+347;Nc1ccc(OC(F)(F)F)cc1;1.0;valid;4-Trifluoromethoxyaniline;461-82-5;1.0;mg/L
+348;Nc1ccccc1N;1.34;valid;1,2-Phenylenediamine;95-54-5;1.34;mg/L
+349;O=C(C(Cl)(Cl)Cl)C(Cl)(Cl)Cl;3.964642262895176;valid;1,1,1,3,3,3-Hexachloro-2-propanone;116-16-5;3.964642262895176;mg/L
+350;O=C(CCl)c1ccc(F)cc1;0.043;valid;2-Chloro-4'-fluoroacetophenone;456-04-2;0.043;mg/L
+351;O=C(CCl)c1ccc(F)cc1F;0.043;valid;2-Chloro-2',4'-difluoroacetophenone;51336-94-8;0.043;mg/L
+352;O=C(Cl)C(Cl)Cl;12.261896838602327;valid;Dichloroacetyl chloride;79-36-7;12.261896838602327;mg/L
+353;O=C(Cl)CCCCCl;0.32;valid;Valeryl chloride, 5-chloro-;1575-61-7;0.32;mg/L
+354;O=C(Cl)CCCl;0.45;valid;Propanoyl chloride, 3-chloro-;625-36-5;0.45;mg/L
+355;O=C(Cl)CCl;1.6525665661397673;valid;Chloroacetyl chloride;79-04-9;1.6525665661397673;mg/L
+356;O=C(Cl)Cc1cccs1;1.025;valid;2-Thiopheneacetyl chloride;39098-97-0;1.025;mg/L
+357;O=C(Cl)Oc1ccccc1;0.2865637271214642;valid;Phenyl carbonochloridate;1885-14-9;0.2865637271214642;mg/L
+358;O=C1CCCC1;19.5;valid;Cyclopentanone;120-92-3;19.5;mg/L
+359;O=C1CCCCC1;6.2;valid;Cyclohexanone;108-94-1;6.2;mg/L
+360;O=C=NC1CCCCC1;0.022;valid;Isocyanatocyclohexane;3173-53-3;0.022;mg/L
+361;O=C=Nc1ccc(Cl)c(Cl)c1;0.102;valid;3,4-Dichlorophenyl isocyanate;102-36-3;0.102;mg/L
+362;O=C=Nc1ccc(Cl)cc1;0.113;valid;4-Chlorophenyl isocyanate;104-12-1;0.113;mg/L
+363;O=C=Nc1cccc(C(F)(F)F)c1;0.087;valid;3-(Trifluoromethyl)phenyl isocyanate;329-01-1;0.087;mg/L
+364;O=C=Nc1cccc(Cl)c1;0.042;valid;m-Chlorophenyl isocyanate;2909-38-8;0.042;mg/L
+365;O=C=Nc1ccccc1Cl;0.047;valid;Benzene, 1-chloro-2-isocyanato-;3320-83-0;0.047;mg/L
+366;O=CC(Cl)(Cl)Cl;0.44;valid;Chloral;75-87-6;0.44;mg/L
+367;O=CC1CC=CCC1;9.164392678868552;valid;3-Cyclohexene-1-carboxaldehyde;100-50-5;9.164392678868552;mg/L
+368;O=CC=O;11.56;valid;Glyoxal;107-22-2;11.56;mg/L
+369;O=CO;7.85;valid;Formic acid;64-18-6;7.85;mg/L
+370;O=Cc1ccc(Cl)cc1;0.25;valid;4-Chlorobenzaldehyde;104-88-1;0.25;mg/L
+371;O=Cc1ccccc1Cl;1.203;valid;2-Chlorobenzaldehyde;89-98-5;1.203;mg/L
+372;O=Cc1ccco1;2.0225000000000004;valid;Furfural;98-01-1;2.0225000000000004;mg/L
+373;O=N[O-];88.8;valid;Potassium nitrite;7758-09-0;88.8;mg/L
+374;O=S(=O)(Cl)Cl;0.878;valid;Sulfuryl chloride;7791-25-5;0.878;mg/L
+375;O=[Si]([O-])O;2.06;valid;Potassium silicate;1312-76-1;2.06;mg/L
+376;O=[Si]([O-])[O-];2.06;valid;['Sodium silicate', 'Sodium silicate (Na2SiO3)'];['1344-09-8', '6834-92-0'];2.06;mg/L
+377;O=[Si]=O;2.2;valid;Silica;7631-86-9;2.2;mg/L
+378;OCC(F)(F)C(F)(F)F;23.94;valid;2:1 Fluorotelomer alcohol;422-05-9;23.94;mg/L
+379;OCC(F)(F)C(F)F;10.8;valid;2,2,3,3-Tetrafluoro-1-propanol;76-37-9;10.8;mg/L
+380;OCC(O)CCl;0.0767894342762063;valid;3-Chloro-1,2-propanediol;96-24-2;0.0767894342762063;mg/L
+381;OCC1CO1;1.7872637271214644;valid;Glycidol;556-52-5;1.7872637271214644;mg/L
+382;OCCS;2.0;valid;2-Mercaptoethanol;60-24-2;2.0;mg/L
+383;Oc1ccc(Cl)cc1;;outlier;4-Chlorophenol;106-48-9;;mg/L
+384;Oc1ccccc1-c1ccccc1;0.036;valid;2-Phenylphenol;90-43-7;0.036;mg/L
+385;S=C=S;10.35;valid;Carbon disulfide;75-15-0;10.35;mg/L
+386;SCc1ccccc1;1.19;valid;Benzenemethanethiol;100-53-8;1.19;mg/L
+387;[H+];0.5438403078202995;valid;Hydrogen fluoride;7664-39-3;0.5438403078202995;mg/L
+388;[N-]=[N+]=[N-];0.52625;valid;Sodium azide;26628-22-8;0.52625;mg/L
+389;[O-]CCS;2.03;valid;2-Mercaptoethanol sodium salt;37482-11-4;2.03;mg/L
+390;[O-]Cl;5.25;valid;Sodium hypochlorite;7681-52-9;5.25;mg/L
+391;[SiH3]N([SiH3])[SiH3];0.4420284109816972;valid;Silanamine, N,N-disilyl-;13862-16-3;0.4420284109816972;mg/L
+392;c1ccc(-c2ccccc2)cc1;3.02;valid;Biphenyl;92-52-4;3.02;mg/L
+393;c1ccc(C2CO2)cc1;2.498980865224625;valid;Styrene oxide;96-09-3;2.498980865224625;mg/L
+394;c1ccc(OCC2CO2)cc1;1.984;valid;Phenyl glycidyl ether;122-60-1;1.984;mg/L
+395;c1ccncc1;15.536325984470324;valid;Pyridine;110-86-1;15.536325984470324;mg/L
+396;c1ccoc1;4.914010676650028;valid;Furan;110-00-9;4.914010676650028;mg/L
