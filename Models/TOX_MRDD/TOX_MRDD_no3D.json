@@ -1,0 +1,70 @@
+{
+    "AATSC$AATSC0c": {
+        "order": 0,
+        "prop": "c"
+    },
+    "AATS$AATS1s": {
+        "order": 1,
+        "prop": "s"
+    },
+    "ICk$IC2": {
+        "order": 2
+    },
+    "DistanceDetourIndex$D/Dr5": {
+        "length": 5
+    },
+    "AATS$AATS3s": {
+        "order": 3,
+        "prop": "s"
+    },
+    "AATS$AATS4s": {
+        "order": 4,
+        "prop": "s"
+    },
+    "EStates$SdssC": {
+        "estate": "dssC",
+        "type": "sum"
+    },
+    "AATS$AATS0s": {
+        "order": 0,
+        "prop": "s"
+    },
+    "connectivity_index$X2A": {
+        "avg": "A",
+        "order": 2,
+        "type": ""
+    },
+    "SICk$SIC0": {
+        "order": 0
+    },
+    "AATSC$AATSC1Z": {
+        "order": 1,
+        "prop": "Z"
+    },
+    "mol_properties$nR_3_True_True_False_None": {
+        "aromatic": false,
+        "fused": true,
+        "greater": true,
+        "hetero": null,
+        "length": 3,
+        "prop": "nr"
+    },
+    "SMR_VSA$SMR_VSA7": {
+        "k": 7
+    },
+    "MATS$MATS1c": {
+        "order": 1,
+        "prop": "c"
+    },
+    "VSA_EState$VSA_EState5": {
+        "k": 5
+    },
+    "mol_properties$nR_3_True_False_None_False": {
+        "aromatic": null,
+        "fused": false,
+        "greater": true,
+        "hetero": false,
+        "length": 3,
+        "prop": "nr"
+    }
+}
