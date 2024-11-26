@@ -14,3 +14,4 @@ Models/TOX_hERGinh_NOoutliers/undesamplig_no_outliers/TOX_hERGinh-paralel_calcul
 #precompiled files
 *.pyc 
 /libreria/clusterized_DEPRECATED
+clustering_DEPRECATED/
