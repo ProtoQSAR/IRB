@@ -34,6 +34,16 @@ import re
 from ast import literal_eval
 ''' requires to install pip install xlrd '''
 ##############################################################################
+
+#SUPPORTING
+
+# df4_new = Chem.SDMolSupplier(data_folder + os.path.sep + file4)
+
+# invalid_mols = [i for i, mol in enumerate(df4_new) if mol is None]
+# print(f"Moléculas inválidas: {invalid_mols}")
+
+
+
 ################################ INITIAL VARIABLES ###########################
 parent = Path(__file__).resolve().parent
 os.chdir(parent)
@@ -158,35 +168,6 @@ print(f'\n[+] Opening "{file4}" file')
 
 df4 = PandasTools.LoadSDF(data_folder + os.path.sep + file4)
 
-
-df4_new = Chem.SDMolSupplier(data_folder + os.path.sep + file4)
-
-invalid_mols = [i for i, mol in enumerate(df4_new) if mol is None]
-print(f"Moléculas inválidas: {invalid_mols}")
-
-
-
-    # Load the molecules and their properties into a list. Activity is set by active=True/False 
-molecules = []
-for mol in df4_new:
-    if mol is not None:
-        props = mol.GetPropsAsDict()
-        props['Title'] = mol.GetProp('_Name')
-        props['Mol'] = mol
-        
-        molecules.append(props)
-
-# Convert the list into a DataFrame
-df = pd.DataFrame(molecules)
-
-# Reorder the DataFrame columns
-cols = ['Title', 'Mol', 'Activity'] + [col for col in df.columns if col not in ['Title', 'Mol', 'Activity']]
-df = df[cols]
-
-
-
-
-
 df4.rename(columns = {'IRB plate ': 'IRB PLATE', 'Library': 'LIBRARY'}, inplace = True)
 
 df4['SMILES']  = df4.apply(lambda row: retrieve_smiles(row['ROMol']), axis=1)
@@ -201,13 +182,7 @@ df4.to_csv(results_folder+ os.path.sep + name + output_file4_name + '.csv', sep 
 
 print(f'\t[++] {file4}: {df4.shape[0]} compounds')
 
-df4_dw = pd.read_csv(data_folder + os.path.sep + 'focus_10_mM_10665_cmpds_29092024_sent_datawarrior.txt', sep = '\t')
 
-different = df4_dw[df4_dw['ID NUMBER'].isin(list(df4['ID NUMBER']))]
-
-df4_onlyone = PandasTools.LoadSDF(data_folder + os.path.sep + 'nuevo26.sdf')
-
-nuevo26.sdf
 
 ##############################################################################
 
@@ -219,7 +194,7 @@ nuevo26.sdf
 
 ################################### merge ####################################
 
-print(f'\n[+] Merging files')
+print('\n[+] Merging files')
 merged = pd.concat([df1,df2,df3,df4], axis = 0)
 
 merged.reset_index(drop = True, inplace = True)
@@ -236,7 +211,7 @@ separated_size = df1.shape[0] + df2.shape[0]+ df3.shape[0] + df4.shape[0]
 
 print(f'\t[++] Separated files: {separated_size} compounds')
 
-print(f'\t[++] Merged file: {merged_reordered} compounds')
+print(f'\t[++] Merged file: {merged_reordered.shape[0]} compounds')
 
 ##################################prepare for HYGIEIA##########################
 
@@ -248,7 +223,7 @@ merged_hygieia.to_csv(results_folder+ os.path.sep + name + 'merged_all-preproces
 
 print(f'\n\t[++] Separated files: {separated_size} compounds')
 
-print(f'\t[++] Merged file with y : {merged_hygieia} compounds')
+print(f'\t[++] Merged file with y : {merged_hygieia.shape[0]} compounds')
 
 ##############################################################################
 
