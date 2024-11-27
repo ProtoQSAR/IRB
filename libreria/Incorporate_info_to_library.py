@@ -35,15 +35,6 @@ from ast import literal_eval
 ''' requires to install pip install xlrd '''
 ##############################################################################
 
-#SUPPORTING
-
-# df4_new = Chem.SDMolSupplier(data_folder + os.path.sep + file4)
-
-# invalid_mols = [i for i, mol in enumerate(df4_new) if mol is None]
-# print(f"Moléculas inválidas: {invalid_mols}")
-
-
-
 ################################ INITIAL VARIABLES ###########################
 parent = Path(__file__).resolve().parent
 os.chdir(parent)
@@ -52,10 +43,8 @@ print(f'Working on: \n {os.getcwd()}')
 data_folder =  '.' + os.path.sep + 'files' 
 
 mixtures_folder =  '.' + os.path.sep + 'pre_processing'
-
 cluster_folder =  '..' + os.path.sep + 'clustering' + os.path.sep + 'clusters_kmeans'
 
-results_folder = '.' + os.path.sep + 'pre_processing'
 
 results_folder_with_clustering = '.' + os.path.sep + 'clusterized'
 
@@ -77,8 +66,6 @@ def create_folder(folder):
 
 ##############################################################################
 
-
-create_folder(results_folder)
 
 create_folder(results_folder_with_clustering)
 
@@ -103,7 +90,7 @@ df1.insert(0, 'ID_SET', ['set_1']*df1.shape[0])
 df1.index.name = 'ID_SET_COMPOUND'
 
 output_file1_name = file1.split('.')[0]
-df1.to_csv(results_folder+ os.path.sep + name + output_file1_name + '.csv', sep = ';')
+df1.to_csv(results_folder_with_clustering+ os.path.sep + name + output_file1_name + '_tobeclustered.csv', sep = ';')
 
 print(f'\t[++] {file1}: {df1.shape[0]} compounds')
 
@@ -128,7 +115,7 @@ df2.index.name = 'ID_SET_COMPOUND'
 
 
 output_file2_name = file2.split('.')[0]
-df2.to_csv(results_folder+ os.path.sep + name + output_file2_name + '.csv', sep = ';')
+df2.to_csv(results_folder_with_clustering+ os.path.sep + name + output_file2_name + '_tobeclustered.csv', sep = ';')
 
 print(f'\t[++] {file2}: {df2.shape[0]} compounds')
 
@@ -153,14 +140,15 @@ df3.index.name = 'ID_SET_COMPOUND'
 
 
 output_file3_name = file3.split('.')[0]
-df3.to_csv(results_folder+ os.path.sep + name + output_file3_name + '.csv', sep = ';')
+df3.to_csv(results_folder_with_clustering+ os.path.sep + name + output_file3_name + '_tobeclustered.csv', sep = ';')
 
 print(f'\t[++] {file3}: {df3.shape[0]} compounds')
-
+#%%
 ##############################################################################
 
 ############################## file 4 processing #############################
 
+# this file has some incorrect molecules, thus, it uses different approach to be load in the final step
 
 file4 = 'focus 10 mM_10665 cmpds_29092024_sent.sdf'
 
@@ -178,79 +166,22 @@ df4.index.name = 'ID_SET_COMPOUND'
 
 
 output_file4_name = file4.split('.')[0]
-df4.to_csv(results_folder+ os.path.sep + name + output_file4_name + '.csv', sep = ';')
+df4.to_csv(results_folder_with_clustering+ os.path.sep + name + output_file4_name + '_tobeclustered.csv', sep = ';')
 
 print(f'\t[++] {file4}: {df4.shape[0]} compounds')
 
-
-
-##############################################################################
-
 #%%
-##############################################################################
-########################### MERGE INITIAL SDF FILES ##########################
-##############################################################################
+df4_withincorrect = PandasTools.LoadSDF(data_folder + os.path.sep + file4, molColName = None)
+
+df4_incorrect = df4_withincorrect[~df4_withincorrect['ID NUMBER'].isin(df4['ID NUMBER'])]
 
 
-################################### merge ####################################
 
-# print('\n[+] Merging files')
-# merged = pd.concat([df1,df2,df3,df4], axis = 0)
+df4_incorrect.to_csv(results_folder_with_clustering+ os.path.sep + name + output_file4_name + '_molerror.csv', sep = ';')
 
-# merged.reset_index(drop = True, inplace = True)
 
-# merged['ID_UNIQUE']  = 'IRB_' + merged.index.astype(str) 
-
-# merged.set_index('ID_UNIQUE', inplace = True)
-
-# merged_reordered = merged[['ID_SET', 'IRB WELL', 'LIBRARY', 'IRB PLATE', 'ID NUMBER', 'ID', 'ORIGINAL WELL', 'ROMol', 'SMILES']]
-
-# merged_reordered.to_csv(results_folder+ os.path.sep + name + 'merged_all-pre.csv', sep = ';')
-
-# separated_size = df1.shape[0] + df2.shape[0]+ df3.shape[0] + df4.shape[0]
-
-# print(f'\t[++] Separated files: {separated_size} compounds')
-
-# print(f'\t[++] Merged file: {merged_reordered.shape[0]} compounds')
-
-##################################prepare for HYGIEIA##########################
-
-# print('\n[+] Adding dummy variable response')
-
-# merged_hygieia = merged_reordered.copy()
-# merged_hygieia['y'] = 1
-# merged_hygieia.to_csv(results_folder+ os.path.sep + name + 'merged_all-preprocessed.csv', sep = ';')
-
-# print(f'\n\t[++] Separated files: {separated_size} compounds')
-
-# print(f'\t[++] Merged file with y : {merged_hygieia.shape[0]} compounds')
 
 ##############################################################################
-
-# merged_unique_smiles = merged_reordered[~merged_reordered.duplicated(subset=['SMILES'], keep = False)]
-
-# merged_unique_smiles.to_csv(results_folder+ os.path.sep + name+ 'merged_all_unique_smiles.csv', sep = ';')
-
-# merged_duplicated_smiles = merged_reordered[merged_reordered.duplicated(subset=['SMILES'], keep = False)]
-
-# merged_duplicated_smiles.sort_values(by=['SMILES'], inplace = True)
-
-# merged_duplicated_smiles.to_csv(results_folder + os.path.sep + name + 'merged_all_duplicated_smiles.csv', sep = ';')
-
-# print(f'\n[+] Files created in "{results_folder}" folder')
-
-# #print the number of molecules in the different datasets created
-# print(f'\n[+] Number of molecules in the different datasets created:')
-# print(f'File 1: {df1.shape[0]}')
-# print(f'File 2: {df2.shape[0]}')
-# print(f'File 3: {df3.shape[0]}')
-# print(f'File 4: {df4.shape[0]}')
-# print(f'Merged file: {merged_reordered.shape[0]}')
-# print(f'Merged file for HYGIEIA: {merged_hygieia.shape[0]}')
-# print(f'Unique SMILES: {merged_unique_smiles.shape[0]}')
-# print(f'Duplicated SMILES: {merged_duplicated_smiles.shape[0]}')
-
-##################
 
 
 #%%
@@ -348,6 +279,8 @@ for name, dictio in zip(dictios_names, dictios):
         dictio[idx2]['flag'] = flag
 
     df_again = pd.DataFrame.from_dict(dictio).T
+    
+    print(f'\t {df_again.shape[0]} compounds')
     
     
     strip_number = re.compile(r"^(>  <[\w\s]+>)(\s+\(\d+\)\s*)$", re.MULTILINE)
