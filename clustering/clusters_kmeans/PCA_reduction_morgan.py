@@ -156,7 +156,7 @@ study_frame.to_csv(data+"-prepared.csv", sep=";",index=False)
 #%%Create a subset with only the SMILES and the y columns
 #study_frame_sub = study_frame.loc[:,["SMILES","y"]]
 study_frame_sub = study_frame
-
+del study_frame_sub["y"]
 #%%Create a subset with only y= 0 values
 #study_frame_sub = study_frame_sub[study_frame_sub["y"]==0]
 
@@ -185,12 +185,15 @@ arr_fps = fps_array(df_all)
 # principal_components = pca_analysis(arr_fps, variance_threshold=0.80)
 # %%
 # optim_clu = optimal_kmeans_elbow(principal_components, first_number=20000, max_clusters=50000, step = 5000)
-
+print("[++] Comienza clustering con 40k grupos")
 kmeans = KMeans(n_clusters=40000, random_state=42)
 kmeans.fit(arr_fps)
 #Save the model
 pickle.dump(kmeans, open("kmeans_model_40k.sav", "wb"))
+print("[++] Acaba clustering con 40k grupos")
 
+
+print("[+++++] Comienza el cálculo de métricas con clustering con 40k grupos")
 # print the silhouette score
 silhouette_avg = silhouette_score(arr_fps, kmeans.labels_)
 
@@ -199,12 +202,20 @@ silhouette_avg = silhouette_score(arr_fps, kmeans.labels_)
 print("Silhouette Score: ", silhouette_avg)
 print("Number of entries in each cluster: ")
 print(pd.Series(kmeans.labels_).value_counts())
+
+print("[+++++] Acaba el cálculo de métricas con clustering con 40k grupos")
 #%%
+print("[++] Comienza clustering con 45k grupos")
 kmeans = KMeans(n_clusters=45000, random_state=42)
 kmeans.fit(arr_fps)
 #Save the model
 pickle.dump(kmeans, open("kmeans_model_45k.sav", "wb"))
 
+print("[++] Acaba clustering con 45k grupos")
+
+
+print("[+++++] Comienza el cálculo de métricas con clustering con 45k grupos")
+
 # print the silhouette score
 silhouette_avg = silhouette_score(arr_fps, kmeans.labels_)
 
@@ -213,11 +224,18 @@ silhouette_avg = silhouette_score(arr_fps, kmeans.labels_)
 print("Silhouette Score: ", silhouette_avg)
 print("Number of entries in each cluster: ")
 print(pd.Series(kmeans.labels_).value_counts())
+
+print("[+++++] Acaba el cálculo de métricas con clustering con 45k grupos")
+
 #%%
+print("[++] Comienza clustering con 50k grupos")
 kmeans = KMeans(n_clusters=50000, random_state=42)
 kmeans.fit(arr_fps)
 #Save the model
 pickle.dump(kmeans, open("kmeans_model_50k.sav", "wb"))
+print("[++] Acaba clustering con 50k grupos")
+
+print("[+++++] Comienza el cálculo de métricas con clustering con 50k grupos")
 
 # print the silhouette score
 silhouette_avg = silhouette_score(arr_fps, kmeans.labels_)
@@ -228,11 +246,20 @@ print("Silhouette Score: ", silhouette_avg)
 print("Number of entries in each cluster: ")
 print(pd.Series(kmeans.labels_).value_counts())
 
-
+print("[+++++] Acaba el cálculo de métricas con clustering con 50k grupos")
+#%% Count the number of clusters with less than 3 entries
+aa = pd.Series(kmeans.labels_).value_counts()
+len(aa[aa>=3])
+morethan3 = aa[aa>=3]
+sum(morethan3)
 # %% Add the cluster labels to the dataframe df_all in a column called Cluster_first_round
-df_all["Cluster"] = kmeans.labels_
-df_all = df_all.drop(columns=["y","Morgan"])
-df_all.to_csv("IRB_library_merged_clustering.csv", sep=";",index=False)
+kmeans_40k = pickle.load(open('/home/lauri/Desktop/ProtoQSAR/PROJECTS/contratas/IRB/clustering/clusters_kmeans/kmeans_model_40k.sav', 'rb'))
+
+labels_40k = kmeans_40k.labels_
+
+df_all["Cluster"] = labels_40k
+df_all = df_all.drop(columns=["Morgan"])
+df_all.to_csv("IRB_library_merged_clustering_50k.csv", sep=";",index=False)
 
 
 #%% Add a new column innicating the center of each of the clusters
@@ -276,14 +303,14 @@ df_all['is_centroid'] = is_centroid
 df_all2 = df_all.sort_values(by="Cluster")
 
 #%% save the fileç
-df_all2.to_csv("IRB_library_merged_clustering_sorted.csv", sep=";",index=False)
+df_all2.to_csv("IRB_library_merged_clustering40K_sorted.csv", sep=";",index=False)
 # #%%
-df_all2.to_excel("IRB_library_merged_clustering_sorted.xlsx",index=False)
+df_all2.to_excel("IRB_library_merged_clustering40K_sorted.xlsx",index=False)
 
 # #%%
-df_all.to_csv("IRB_library_merged_clustering_not-sorted.csv", sep=";",index=False)
+df_all.to_csv("IRB_library_merged_clustering40K_not-sorted.csv", sep=";",index=False)
 # #%%
-df_all.to_excel("IRB_library_merged_clustering_not-sorted.xlsx",index=False)
+df_all.to_excel("IRB_library_merged_clustering40K_not-sorted.xlsx",index=False)
 
 # %%count the number of clusters with less than 5 entries
 len(aa[aa<5])

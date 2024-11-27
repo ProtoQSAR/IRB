@@ -51,9 +51,9 @@ print(f'Working on: \n {os.getcwd()}')
 
 data_folder =  '.' + os.path.sep + 'files' 
 
-mixtures_folder =  '.' + os.path.sep + 'for_hygieia'
+mixtures_folder =  '.' + os.path.sep + 'pre_processing'
 
-cluster_folder =  '..' + os.path.sep + 'clustering' + os.path.sep + 'final_clusters_v1'
+cluster_folder =  '..' + os.path.sep + 'clustering' + os.path.sep + 'clusters_kmeans'
 
 results_folder = '.' + os.path.sep + 'pre_processing'
 
@@ -194,61 +194,61 @@ print(f'\t[++] {file4}: {df4.shape[0]} compounds')
 
 ################################### merge ####################################
 
-print('\n[+] Merging files')
-merged = pd.concat([df1,df2,df3,df4], axis = 0)
+# print('\n[+] Merging files')
+# merged = pd.concat([df1,df2,df3,df4], axis = 0)
 
-merged.reset_index(drop = True, inplace = True)
+# merged.reset_index(drop = True, inplace = True)
 
-merged['ID_UNIQUE']  = 'IRB_' + merged.index.astype(str) 
+# merged['ID_UNIQUE']  = 'IRB_' + merged.index.astype(str) 
 
-merged.set_index('ID_UNIQUE', inplace = True)
+# merged.set_index('ID_UNIQUE', inplace = True)
 
-merged_reordered = merged[['ID_SET', 'IRB WELL', 'LIBRARY', 'IRB PLATE', 'ID NUMBER', 'ID', 'ORIGINAL WELL', 'ROMol', 'SMILES']]
+# merged_reordered = merged[['ID_SET', 'IRB WELL', 'LIBRARY', 'IRB PLATE', 'ID NUMBER', 'ID', 'ORIGINAL WELL', 'ROMol', 'SMILES']]
 
-merged_reordered.to_csv(results_folder+ os.path.sep + name + 'merged_all-pre.csv', sep = ';')
+# merged_reordered.to_csv(results_folder+ os.path.sep + name + 'merged_all-pre.csv', sep = ';')
 
-separated_size = df1.shape[0] + df2.shape[0]+ df3.shape[0] + df4.shape[0]
+# separated_size = df1.shape[0] + df2.shape[0]+ df3.shape[0] + df4.shape[0]
 
-print(f'\t[++] Separated files: {separated_size} compounds')
+# print(f'\t[++] Separated files: {separated_size} compounds')
 
-print(f'\t[++] Merged file: {merged_reordered.shape[0]} compounds')
+# print(f'\t[++] Merged file: {merged_reordered.shape[0]} compounds')
 
 ##################################prepare for HYGIEIA##########################
 
-print('\n[+] Adding dummy variable response')
+# print('\n[+] Adding dummy variable response')
 
-merged_hygieia = merged_reordered.copy()
-merged_hygieia['y'] = 1
-merged_hygieia.to_csv(results_folder+ os.path.sep + name + 'merged_all-preprocessed.csv', sep = ';')
+# merged_hygieia = merged_reordered.copy()
+# merged_hygieia['y'] = 1
+# merged_hygieia.to_csv(results_folder+ os.path.sep + name + 'merged_all-preprocessed.csv', sep = ';')
 
-print(f'\n\t[++] Separated files: {separated_size} compounds')
+# print(f'\n\t[++] Separated files: {separated_size} compounds')
 
-print(f'\t[++] Merged file with y : {merged_hygieia.shape[0]} compounds')
+# print(f'\t[++] Merged file with y : {merged_hygieia.shape[0]} compounds')
 
 ##############################################################################
 
-merged_unique_smiles = merged_reordered[~merged_reordered.duplicated(subset=['SMILES'], keep = False)]
+# merged_unique_smiles = merged_reordered[~merged_reordered.duplicated(subset=['SMILES'], keep = False)]
 
-merged_unique_smiles.to_csv(results_folder+ os.path.sep + name+ 'merged_all_unique_smiles.csv', sep = ';')
+# merged_unique_smiles.to_csv(results_folder+ os.path.sep + name+ 'merged_all_unique_smiles.csv', sep = ';')
 
-merged_duplicated_smiles = merged_reordered[merged_reordered.duplicated(subset=['SMILES'], keep = False)]
+# merged_duplicated_smiles = merged_reordered[merged_reordered.duplicated(subset=['SMILES'], keep = False)]
 
-merged_duplicated_smiles.sort_values(by=['SMILES'], inplace = True)
+# merged_duplicated_smiles.sort_values(by=['SMILES'], inplace = True)
 
-merged_duplicated_smiles.to_csv(results_folder + os.path.sep + name + 'merged_all_duplicated_smiles.csv', sep = ';')
+# merged_duplicated_smiles.to_csv(results_folder + os.path.sep + name + 'merged_all_duplicated_smiles.csv', sep = ';')
 
-print(f'\n[+] Files created in "{results_folder}" folder')
+# print(f'\n[+] Files created in "{results_folder}" folder')
 
-#print the number of molecules in the different datasets created
-print(f'\n[+] Number of molecules in the different datasets created:')
-print(f'File 1: {df1.shape[0]}')
-print(f'File 2: {df2.shape[0]}')
-print(f'File 3: {df3.shape[0]}')
-print(f'File 4: {df4.shape[0]}')
-print(f'Merged file: {merged_reordered.shape[0]}')
-print(f'Merged file for HYGIEIA: {merged_hygieia.shape[0]}')
-print(f'Unique SMILES: {merged_unique_smiles.shape[0]}')
-print(f'Duplicated SMILES: {merged_duplicated_smiles.shape[0]}')
+# #print the number of molecules in the different datasets created
+# print(f'\n[+] Number of molecules in the different datasets created:')
+# print(f'File 1: {df1.shape[0]}')
+# print(f'File 2: {df2.shape[0]}')
+# print(f'File 3: {df3.shape[0]}')
+# print(f'File 4: {df4.shape[0]}')
+# print(f'Merged file: {merged_reordered.shape[0]}')
+# print(f'Merged file for HYGIEIA: {merged_hygieia.shape[0]}')
+# print(f'Unique SMILES: {merged_unique_smiles.shape[0]}')
+# print(f'Duplicated SMILES: {merged_duplicated_smiles.shape[0]}')
 
 ##################
 
@@ -261,7 +261,8 @@ print(f'Duplicated SMILES: {merged_duplicated_smiles.shape[0]}')
 
 print('[+] Retrieving clustering info')
 
-df_clustering = pd.read_excel(cluster_folder +  os.path.sep + 'IRB_all_clustering_sorted.xlsx')
+# df_clustering = pd.read_excel(cluster_folder +  os.path.sep + 'IRB_all_clustering40K_sorted.xlsx')
+df_clustering = pd.read_csv(cluster_folder +  os.path.sep + 'IRB_library_merged_clustering40K_sorted.csv', sep=';')
 
 # df_clustering_short = df_clustering.iloc[1660:1670,:]
 
