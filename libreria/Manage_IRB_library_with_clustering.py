@@ -51,9 +51,9 @@ print(f'Working on: \n {os.getcwd()}')
 
 data_folder =  '.' + os.path.sep + 'files' 
 
-mixtures_folder =  '.' + os.path.sep + 'for_hygieia'
+mixtures_folder =  '.' + os.path.sep + 'pre_processing'
 
-cluster_folder =  '..' + os.path.sep + 'clustering' + os.path.sep + 'final_clusters_v1'
+cluster_folder =  '..' + os.path.sep + 'clustering' + os.path.sep + 'clusters_kmeans'
 
 results_folder = '.' + os.path.sep + 'pre_processing'
 
@@ -182,38 +182,7 @@ df4.to_csv(results_folder+ os.path.sep + name + output_file4_name + '.csv', sep 
 
 print(f'\t[++] {file4}: {df4.shape[0]} compounds')
 
-df4_new = Chem.SDMolSupplier(data_folder + os.path.sep + file4)
 
-invalid_mols = [i for i, mol in enumerate(df4_new) if mol is None]
-print(f" {len(invalid_mols)} moléculas inválidas: {invalid_mols}")
-
-#%%
-
-# df4_new = Chem.SDMolSupplier(data_folder + os.path.sep + file4)
-
-# invalid_mols = [i for i, mol in enumerate(df4_new) if mol is None]
-# print(f"Moléculas inválidas: {invalid_mols}")
-
-# # Load the molecules and their properties into a list. Activity is set by active=True/False 
-# molecules = []
-# for mol in df4_new:
-#     if mol is None:
-#         props = mol.GetPropsAsDict()
-#         props['Title'] = mol.GetProp('_Name')
-#         props['Mol'] = mol
-
-#         molecules.append(props)
-
-# # Convert the list into a DataFrame
-# df = pd.DataFrame(molecules)
-
-# # Reorder the DataFrame columns
-# cols = ['Title', 'Mol'] + [col for col in df.columns if col not in ['Title', 'Mol']]
-# df = df[cols]
-
-
-
-# print(df4_new)
 
 ##############################################################################
 
@@ -225,173 +194,174 @@ print(f" {len(invalid_mols)} moléculas inválidas: {invalid_mols}")
 
 ################################### merge ####################################
 
-print('\n[+] Merging files')
-merged = pd.concat([df1,df2,df3,df4], axis = 0)
+# print('\n[+] Merging files')
+# merged = pd.concat([df1,df2,df3,df4], axis = 0)
 
-merged.reset_index(drop = True, inplace = True)
+# merged.reset_index(drop = True, inplace = True)
 
-merged['ID_UNIQUE']  = 'IRB_' + merged.index.astype(str) 
+# merged['ID_UNIQUE']  = 'IRB_' + merged.index.astype(str) 
 
-merged.set_index('ID_UNIQUE', inplace = True)
+# merged.set_index('ID_UNIQUE', inplace = True)
 
-merged_reordered = merged[['ID_SET', 'IRB WELL', 'LIBRARY', 'IRB PLATE', 'ID NUMBER', 'ID', 'ORIGINAL WELL', 'ROMol', 'SMILES']]
+# merged_reordered = merged[['ID_SET', 'IRB WELL', 'LIBRARY', 'IRB PLATE', 'ID NUMBER', 'ID', 'ORIGINAL WELL', 'ROMol', 'SMILES']]
 
-merged_reordered.to_csv(results_folder+ os.path.sep + name + 'merged_all-pre.csv', sep = ';')
+# merged_reordered.to_csv(results_folder+ os.path.sep + name + 'merged_all-pre.csv', sep = ';')
 
-separated_size = df1.shape[0] + df2.shape[0]+ df3.shape[0] + df4.shape[0]
+# separated_size = df1.shape[0] + df2.shape[0]+ df3.shape[0] + df4.shape[0]
 
-print(f'\t[++] Separated files: {separated_size} compounds')
+# print(f'\t[++] Separated files: {separated_size} compounds')
 
-print(f'\t[++] Merged file: {merged_reordered.shape[0]} compounds')
+# print(f'\t[++] Merged file: {merged_reordered.shape[0]} compounds')
 
 ##################################prepare for HYGIEIA##########################
 
-print('\n[+] Adding dummy variable response')
+# print('\n[+] Adding dummy variable response')
 
-merged_hygieia = merged_reordered.copy()
-merged_hygieia['y'] = 1
-merged_hygieia.to_csv(results_folder+ os.path.sep + name + 'merged_all-preprocessed.csv', sep = ';')
+# merged_hygieia = merged_reordered.copy()
+# merged_hygieia['y'] = 1
+# merged_hygieia.to_csv(results_folder+ os.path.sep + name + 'merged_all-preprocessed.csv', sep = ';')
 
-print(f'\n\t[++] Separated files: {separated_size} compounds')
+# print(f'\n\t[++] Separated files: {separated_size} compounds')
 
-print(f'\t[++] Merged file with y : {merged_hygieia.shape[0]} compounds')
+# print(f'\t[++] Merged file with y : {merged_hygieia.shape[0]} compounds')
 
 ##############################################################################
 
-merged_unique_smiles = merged_reordered[~merged_reordered.duplicated(subset=['SMILES'], keep = False)]
+# merged_unique_smiles = merged_reordered[~merged_reordered.duplicated(subset=['SMILES'], keep = False)]
 
-merged_unique_smiles.to_csv(results_folder+ os.path.sep + name+ 'merged_all_unique_smiles.csv', sep = ';')
+# merged_unique_smiles.to_csv(results_folder+ os.path.sep + name+ 'merged_all_unique_smiles.csv', sep = ';')
 
-merged_duplicated_smiles = merged_reordered[merged_reordered.duplicated(subset=['SMILES'], keep = False)]
+# merged_duplicated_smiles = merged_reordered[merged_reordered.duplicated(subset=['SMILES'], keep = False)]
 
-merged_duplicated_smiles.sort_values(by=['SMILES'], inplace = True)
+# merged_duplicated_smiles.sort_values(by=['SMILES'], inplace = True)
 
-merged_duplicated_smiles.to_csv(results_folder + os.path.sep + name + 'merged_all_duplicated_smiles.csv', sep = ';')
+# merged_duplicated_smiles.to_csv(results_folder + os.path.sep + name + 'merged_all_duplicated_smiles.csv', sep = ';')
 
-print(f'\n[+] Files created in "{results_folder}" folder')
+# print(f'\n[+] Files created in "{results_folder}" folder')
 
-#print the number of molecules in the different datasets created
-print(f'\n[+] Number of molecules in the different datasets created:')
-print(f'File 1: {df1.shape[0]}')
-print(f'File 2: {df2.shape[0]}')
-print(f'File 3: {df3.shape[0]}')
-print(f'File 4: {df4.shape[0]}')
-print(f'Merged file: {merged_reordered.shape[0]}')
-print(f'Merged file for HYGIEIA: {merged_hygieia.shape[0]}')
-print(f'Unique SMILES: {merged_unique_smiles.shape[0]}')
-print(f'Duplicated SMILES: {merged_duplicated_smiles.shape[0]}')
+# #print the number of molecules in the different datasets created
+# print(f'\n[+] Number of molecules in the different datasets created:')
+# print(f'File 1: {df1.shape[0]}')
+# print(f'File 2: {df2.shape[0]}')
+# print(f'File 3: {df3.shape[0]}')
+# print(f'File 4: {df4.shape[0]}')
+# print(f'Merged file: {merged_reordered.shape[0]}')
+# print(f'Merged file for HYGIEIA: {merged_hygieia.shape[0]}')
+# print(f'Unique SMILES: {merged_unique_smiles.shape[0]}')
+# print(f'Duplicated SMILES: {merged_duplicated_smiles.shape[0]}')
 
 ##################
 
 
-# #%%
-# ##############################################################################
-# ######################### INCORPORATE CLUSTERING INFO ########################
-# ##############################################################################
+#%%
+##############################################################################
+######################### INCORPORATE CLUSTERING INFO ########################
+##############################################################################
 
 
-# print('[+] Retrieving clustering info')
+print('[+] Retrieving clustering info')
 
-# df_clustering = pd.read_excel(cluster_folder +  os.path.sep + 'IRB_all_clustering_sorted.xlsx')
+# df_clustering = pd.read_excel(cluster_folder +  os.path.sep + 'IRB_all_clustering40K_sorted.xlsx')
+df_clustering = pd.read_csv(cluster_folder +  os.path.sep + 'IRB_library_merged_clustering40K_sorted.csv', sep=';')
 
-# # df_clustering_short = df_clustering.iloc[1660:1670,:]
+# df_clustering_short = df_clustering.iloc[1660:1670,:]
 
-# dfclustering_dict = {}
+dfclustering_dict = {}
 
-# for idx, row in df_clustering.iterrows():
+for idx, row in df_clustering.iterrows():
     
-#     try:
-#         identifier = row["ID NUMBER"]
-#         splitted = [i for i in literal_eval(identifier)]
-#         for ids in splitted:
-#             dfclustering_dict[ids] = {}
-#             dfclustering_dict[ids]['SMILES_new'] = row['SMILES']
-#             dfclustering_dict[ids]['Cluster'] = row['Cluster']
-#             dfclustering_dict[ids]['is_centroid'] = row['is_centroid']
+    try:
+        identifier = row["ID NUMBER"]
+        splitted = [i for i in literal_eval(identifier)]
+        for ids in splitted:
+            dfclustering_dict[ids] = {}
+            dfclustering_dict[ids]['SMILES_new'] = row['SMILES']
+            dfclustering_dict[ids]['Cluster'] = row['Cluster']
+            dfclustering_dict[ids]['is_centroid'] = row['is_centroid']
         
-#     except:
-#         ids = row["ID NUMBER"]
-#         dfclustering_dict[ids] = {}
-#         dfclustering_dict[ids]['SMILES_new'] = row['SMILES']
-#         dfclustering_dict[ids]['Cluster'] = row['Cluster']
-#         dfclustering_dict[ids]['is_centroid'] = row['is_centroid']
+    except:
+        ids = row["ID NUMBER"]
+        dfclustering_dict[ids] = {}
+        dfclustering_dict[ids]['SMILES_new'] = row['SMILES']
+        dfclustering_dict[ids]['Cluster'] = row['Cluster']
+        dfclustering_dict[ids]['is_centroid'] = row['is_centroid']
 
 
 
 
-# mixtures_identified = pd.read_csv(mixtures_folder + os.path.sep + 'IRB_library_merged_all-mixtures_for_manual_analysis.csv', sep = ';')
+mixtures_identified = pd.read_csv(mixtures_folder + os.path.sep + 'IRB_library_merged_all-mixtures_for_manual_analysis.csv', sep = ';')
 
-# mixtures_identified_dic = mixtures_identified.set_index('ID NUMBER').T.to_dict(orient = 'series')
+mixtures_identified_dic = mixtures_identified.set_index('ID NUMBER').T.to_dict(orient = 'series')
 
-# df1_dict = df1.T.to_dict()
-# df2_dict = df2.T.to_dict()
-# df3_dict = df3.T.to_dict()
-# df4_dict = df4.T.to_dict()
-
-
-# print('[+] Including clustering info in original files')
-
-# dictios_names = ['2021 LIB_47489 CMPDS_26092024_clustered', 'all new library_104017 CMPDS_26092024_clustered', 'focus 2 mM_70 cmpds_29092024_sent_clustered', 'focus 10 mM_10665 cmpds_29092024_sent_clustered']
-
-# dictios = [df1_dict,df2_dict,df3_dict,df4_dict]
+df1_dict = df1.T.to_dict()
+df2_dict = df2.T.to_dict()
+df3_dict = df3.T.to_dict()
+df4_dict = df4.T.to_dict()
 
 
-# # dictios_names = ['focus 2 mM_70 cmpds_29092024_sent_clustered']
+print('[+] Including clustering info in original files')
 
-# # dictios = [df3_dict]
+dictios_names = ['2021 LIB_47489 CMPDS_26092024_clustered', 'all new library_104017 CMPDS_26092024_clustered', 'focus 2 mM_70 cmpds_29092024_sent_clustered', 'focus 10 mM_10665 cmpds_29092024_sent_clustered']
+
+dictios = [df1_dict,df2_dict,df3_dict,df4_dict]
+
+
+# dictios_names = ['focus 2 mM_70 cmpds_29092024_sent_clustered']
+
+# dictios = [df3_dict]
 
 
 
-# for name, dictio in zip(dictios_names, dictios):
+for name, dictio in zip(dictios_names, dictios):
     
-#     print(f'Working on {name} sdf')
+    print(f'Working on {name} sdf')
 
-#     for idx2, row2 in dictio.items():
-#         if row2['ID NUMBER'] in dfclustering_dict.keys():
-#             flag = '-'
-#             smiles_new = dfclustering_dict[row2['ID NUMBER']]['SMILES_new']
-#             cluster = dfclustering_dict[row2['ID NUMBER']]['Cluster']
-#             centroid = dfclustering_dict[row2['ID NUMBER']]['is_centroid']
+    for idx2, row2 in dictio.items():
+        if row2['ID NUMBER'] in dfclustering_dict.keys():
+            flag = '-'
+            smiles_new = dfclustering_dict[row2['ID NUMBER']]['SMILES_new']
+            cluster = dfclustering_dict[row2['ID NUMBER']]['Cluster']
+            centroid = dfclustering_dict[row2['ID NUMBER']]['is_centroid']
             
             
-#         else:
-#             if row2['ID NUMBER'] in mixtures_identified_dic.keys():
-#                 flag = 'mixture'
-#                 smiles_new = '-'
-#                 cluster = '-'
-#                 centroid = '-'
-#             else:
-#                 if row2['ID'] =='empty mol':
-#                     flag = 'empty mol'
-#                     smiles_new = '-'
-#                     cluster = '-'
-#                     centroid = '-'
-#                 else:
-#                     flag = 'inorganic_organometallic_invalid'
-#                     smiles_new = '-'
-#                     cluster = '-'
-#                     centroid = '-'
+        else:
+            if row2['ID NUMBER'] in mixtures_identified_dic.keys():
+                flag = 'mixture'
+                smiles_new = '-'
+                cluster = '-'
+                centroid = '-'
+            else:
+                if row2['ID'] =='empty mol':
+                    flag = 'empty mol'
+                    smiles_new = '-'
+                    cluster = '-'
+                    centroid = '-'
+                else:
+                    flag = 'inorganic_organometallic_invalid'
+                    smiles_new = '-'
+                    cluster = '-'
+                    centroid = '-'
                     
-#         dictio[idx2]['SMILES_new'] = smiles_new
-#         dictio[idx2]['Cluster'] = cluster
-#         dictio[idx2]['is_centroid'] = centroid
-#         dictio[idx2]['flag'] = flag
+        dictio[idx2]['SMILES_new'] = smiles_new
+        dictio[idx2]['Cluster'] = cluster
+        dictio[idx2]['is_centroid'] = centroid
+        dictio[idx2]['flag'] = flag
 
-#     df_again = pd.DataFrame.from_dict(dictio).T
+    df_again = pd.DataFrame.from_dict(dictio).T
     
     
-#     strip_number = re.compile(r"^(>  <[\w\s]+>)(\s+\(\d+\)\s*)$", re.MULTILINE)
+    strip_number = re.compile(r"^(>  <[\w\s]+>)(\s+\(\d+\)\s*)$", re.MULTILINE)
     
-#     with StringIO() as buf:
-#         PandasTools.WriteSDF(df_again, buf, properties=list(df_again.columns))
-#         sdf = buf.getvalue()
-#     sdf = strip_number.sub(r"\1", sdf)
-#     with open(results_folder_with_clustering + os.path.sep + f'{name}_clustered.sdf', "w") as hnd:
-#         hnd.write(sdf)
+    with StringIO() as buf:
+        PandasTools.WriteSDF(df_again, buf, properties=list(df_again.columns))
+        sdf = buf.getvalue()
+    sdf = strip_number.sub(r"\1", sdf)
+    with open(results_folder_with_clustering + os.path.sep + f'{name}_clustered.sdf', "w") as hnd:
+        hnd.write(sdf)
     
 
 
-# ##############END OF THE SCRIPT###############################################
+##############END OF THE SCRIPT###############################################
 
 
 
