@@ -15,3 +15,5 @@ Models/TOX_hERGinh_NOoutliers/undesamplig_no_outliers/TOX_hERGinh-paralel_calcul
 *.pyc 
 /libreria/clusterized_DEPRECATED
 clustering_DEPRECATED/
+Models/DEPRECATED_novalid-TOX_hERGinh/undesamplig_no_descriptors/TOX_hERGinh-paralel_calculated_with_y.csv
+Models/DEPRECATED_novalid-TOX_hERGinh/undesamplig_no_descriptors/TOX_hERGinh-paralel_calculated_with_y.csv
