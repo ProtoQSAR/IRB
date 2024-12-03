@@ -1,0 +1,13 @@
+NAME	SMILES
+MoleculeID4817	NCCc1c[nH]cn1
+MoleculeID4829	NCCc1cnc[nH]1
+MoleculeID6608	[NH3+]C(Cc1c[nH]cn1)C(=O)[O-]
+MoleculeID6613	[NH3+]C(Cc1cnc[nH]1)C(=O)[O-]
+MoleculeID6641	[NH3+]CCC(=O)NC(Cc1c[nH]cn1)C(=O)[O-]
+MoleculeID6642	[NH3+]CCC(=O)NC(Cc1cnc[nH]1)C(=O)[O-]
+MoleculeID6899	c1ccc(-c2nn[nH]n2)cc1
+MoleculeID6902	c1ccc(-c2nnn[nH]2)cc1
+MoleculeID12137	N=C1NCC(=O)N1
+MoleculeID12280	NC1=NC(=O)CN1
+MoleculeID14904	O=c1c2ccccc2[nH]c2ccccc12
+MoleculeID15129	Oc1c2ccccc2nc2ccccc12

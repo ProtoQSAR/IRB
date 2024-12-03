@@ -1,0 +1,546 @@
+Working on: 
+ F:\ProtoQSAR\COMPIS\ONTOX_2022\ONTOX_2022_T3.1\MANUSCRIPT\first_final_version\Processing_datasets\prediction_files
+
+[+] Analysing "PhCh_BP_ONTOX_WP3_1" dataset
+  [++] Merging prediction files
+	[+++] Analysing "ADMETLab3_tool" tool
+		 12 files in input
+		 12 files will be processed
+		 5629 molecules found
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\BP
+	[+++] Analysing "ProtoPRED_tool" tool
+		 6 files in input
+		 6 files will be processed
+		 5629 molecules found
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\BP
+	All files processed!!!!!
+ 
+
+ [++] Matching with original file (ONTOX)
+		Directory already exists: .\prediction_files\together\matched
+		all_merged_PhCh_BP.csv
+		[++] Processing ADMETLab3 for ONTOX
+		 WARNING!!!! you have duplicated molecules in your prediction files 
+		 a total of 4 have been skeeped. A new file has been created
+		 WARNING!!!! some molecules cannot be matched 
+		 a total of 11 have been skeeped. A new file has been created
+		[++] Processing ProtoPRED for ONTOX
+
+[+] Analysing "PhCh_logD_ONTOX_WP3_1" dataset
+  [++] Merging prediction files
+	[+++] Analysing "ADMETLab3_tool" tool
+		 13 files in input
+		 13 files will be processed
+		 5058 molecules found
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\logD
+	[+++] Analysing "ProtoPRED_tool" tool
+		 6 files in input
+		 6 files will be processed
+		 5060 molecules found
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\logD
+	All files processed!!!!!
+ 
+
+ [++] Matching with original file (ONTOX)
+		Directory already exists: .\prediction_files\together\matched
+		all_merged_PhCh_logD.csv
+		[++] Processing ADMETLab3 for ONTOX
+		 WARNING!!!! some molecules cannot be matched 
+		 a total of 83 have been skeeped. A new file has been created
+		[++] Processing ProtoPRED for ONTOX
+
+[+] Analysing "PhCh_logP_ONTOX_WP3_1" dataset
+  [++] Merging prediction files
+	[+++] Analysing "ADMETLab3_tool" tool
+		 32 files in input
+		 32 files will be processed
+		 15506 molecules found
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\logP
+	[+++] Analysing "ProtoPRED_tool" tool
+		 4 files in input
+		 4 files will be processed
+		 WARNING!!!! number of input molecules 15506 != number of output molecules 15498
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\logP
+	[+++] Analysing "SwissADMEiLOGP_tool" tool
+		 78 files in input
+		 78 files will be processed
+		 WARNING!!!! number of input molecules 15506 != number of output molecules 15505
+		Directory already exists: .\prediction_files\SwissADMEiLOGP_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\SwissADMEiLOGP_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\logP
+	[+++] Analysing "SwissADMEXLOGP3_tool" tool
+		 78 files in input
+		 78 files will be processed
+		 WARNING!!!! number of input molecules 15506 != number of output molecules 15505
+		Directory already exists: .\prediction_files\SwissADMEXLOGP3_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\SwissADMEXLOGP3_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\logP
+	[+++] Analysing "SwissADMEWLOGP_tool" tool
+		 78 files in input
+		 78 files will be processed
+		 WARNING!!!! number of input molecules 15506 != number of output molecules 15505
+		Directory already exists: .\prediction_files\SwissADMEWLOGP_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\SwissADMEWLOGP_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\logP
+	[+++] Analysing "SwissADMEMLOGP_tool" tool
+		 78 files in input
+		 78 files will be processed
+		 WARNING!!!! number of input molecules 15506 != number of output molecules 15505
+		Directory already exists: .\prediction_files\SwissADMEMLOGP_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\SwissADMEMLOGP_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\logP
+	[+++] Analysing "SwissADMESilicos-ITLog P_tool" tool
+		 78 files in input
+		 78 files will be processed
+		 WARNING!!!! number of input molecules 15506 != number of output molecules 15505
+		Directory already exists: .\prediction_files\SwissADMESilicos-ITLog P_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\SwissADMESilicos-ITLog P_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\logP
+	[+++] Analysing "SwissADMEConsensusLog P_tool" tool
+		 78 files in input
+		 78 files will be processed
+		 WARNING!!!! number of input molecules 15506 != number of output molecules 15505
+		Directory already exists: .\prediction_files\SwissADMEConsensusLog P_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\SwissADMEConsensusLog P_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\logP
+	All files processed!!!!!
+ 
+
+ [++] Matching with original file (ONTOX)
+		Directory already exists: .\prediction_files\together\matched
+		all_merged_PhCh_logP.csv
+		[++] Processing ADMETLab3 for ONTOX
+		 WARNING!!!! you have duplicated molecules in your prediction files 
+		 a total of 13 have been skeeped. A new file has been created
+		 WARNING!!!! some molecules cannot be matched 
+		 a total of 181 have been skeeped. A new file has been created
+		[++] Processing ProtoPRED for ONTOX
+		[++] Processing SwissADMEiLOGP for ONTOX
+		[++] Processing SwissADMEXLOGP3 for ONTOX
+		[++] Processing SwissADMEWLOGP for ONTOX
+		[++] Processing SwissADMEMLOGP for ONTOX
+		[++] Processing SwissADMESilicos-ITLog P for ONTOX
+		[++] Processing SwissADMEConsensusLog P for ONTOX
+
+[+] Analysing "PhCh_MP_ONTOX_WP3_1" dataset
+  [++] Merging prediction files
+	[+++] Analysing "ADMETLab3_tool" tool
+		 20 files in input
+		 20 files will be processed
+		 9624 molecules found
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\MP
+	[+++] Analysing "ProtoPRED_tool" tool
+		 1 files in input
+		 1 files will be processed
+		 WARNING!!!! number of input molecules 9624 != number of output molecules 9611
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\MP
+	All files processed!!!!!
+ 
+
+ [++] Matching with original file (ONTOX)
+		Directory already exists: .\prediction_files\together\matched
+		all_merged_PhCh_MP.csv
+		[++] Processing ADMETLab3 for ONTOX
+		 WARNING!!!! you have duplicated molecules in your prediction files 
+		 a total of 40 have been skeeped. A new file has been created
+		 WARNING!!!! some molecules cannot be matched 
+		 a total of 91 have been skeeped. A new file has been created
+		[++] Processing ProtoPRED for ONTOX
+
+[+] Analysing "PhCh_pKa_ONTOX_WP3_1" dataset
+  [++] Merging prediction files
+	All files processed!!!!!
+ 
+
+ [++] Matching with original file (ONTOX)
+		Directory already exists: .\prediction_files\together\matched
+		all_merged_PhCh_pKa.csv
+
+[+] Analysing "PhCh_VP_ONTOX_WP3_1" dataset
+  [++] Merging prediction files
+	[+++] Analysing "ProtoPRED_tool" tool
+		 3 files in input
+		 3 files will be processed
+		 WARNING!!!! number of input molecules 2882 != number of output molecules 2865
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\VP
+	All files processed!!!!!
+ 
+
+ [++] Matching with original file (ONTOX)
+		Directory already exists: .\prediction_files\together\matched
+		all_merged_PhCh_VP.csv
+		[++] Processing ProtoPRED for ONTOX
+
+[+] Analysing "PhCh_WS_ONTOX_WP3_1" dataset
+  [++] Merging prediction files
+	[+++] Analysing "ADMETLab3_tool" tool
+		 5 files in input
+		 5 files will be processed
+		 2440 molecules found
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\WS
+	[+++] Analysing "ProtoPRED_tool" tool
+		 3 files in input
+		 3 files will be processed
+		 2440 molecules found
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\WS
+	[+++] Analysing "PKCSM_tool" tool
+		 25 files in input
+		 25 files will be processed
+		 2440 molecules found
+		Directory already exists: .\prediction_files\PKCSM_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\PKCSM_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\WS
+	[+++] Analysing "SwissADMEESOLLogS_tool" tool
+		 13 files in input
+		 13 files will be processed
+		 2440 molecules found
+		Directory already exists: .\prediction_files\SwissADMEESOLLogS_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\SwissADMEESOLLogS_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\WS
+	[+++] Analysing "SwissADMEAliLogS_tool" tool
+		 13 files in input
+		 13 files will be processed
+		 2440 molecules found
+		Directory already exists: .\prediction_files\SwissADMEAliLogS_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\SwissADMEAliLogS_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\WS
+	[+++] Analysing "SwissADMESilicos-ITLogS_tool" tool
+		 13 files in input
+		 13 files will be processed
+		 2440 molecules found
+		Directory already exists: .\prediction_files\SwissADMESilicos-ITLogS_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\SwissADMESilicos-ITLogS_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\WS
+	All files processed!!!!!
+ 
+
+ [++] Matching with original file (ONTOX)
+		Directory already exists: .\prediction_files\together\matched
+		all_merged_PhCh_WS.csv
+		[++] Processing ADMETLab3 for ONTOX
+		 WARNING!!!! some molecules cannot be matched 
+		 a total of 29 have been skeeped. A new file has been created
+		[++] Processing ProtoPRED for ONTOX
+		[++] Processing PKCSM for ONTOX
+		[++] Processing SwissADMEESOLLogS for ONTOX
+		[++] Processing SwissADMEAliLogS for ONTOX
+		[++] Processing SwissADMESilicos-ITLogS for ONTOX
+
+[+] Analysing "TK_BBB_ONTOX_WP3_1" dataset
+  [++] Merging prediction files
+	[+++] Analysing "ADMETLab3_tool" tool
+		 4 files in input
+		 4 files will be processed
+		 1546 molecules found
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\BBB
+	[+++] Analysing "vNNADMET_tool" tool
+		Directory already exists: .\prediction_files\vNNADMET_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\vNNADMET_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\BBB
+	[+++] Analysing "ProtoPRED_tool" tool
+		 2 files in input
+		 2 files will be processed
+		 WARNING!!!! number of input molecules 1546 != number of output molecules 1543
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\BBB
+	[+++] Analysing "PKCSM_tool" tool
+		 16 files in input
+		 16 files will be processed
+		 1546 molecules found
+		Directory already exists: .\prediction_files\PKCSM_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\PKCSM_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\BBB
+	[+++] Analysing "SwissADME_tool" tool
+		 8 files in input
+		 8 files will be processed
+		 1546 molecules found
+		Directory already exists: .\prediction_files\SwissADME_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\SwissADME_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\BBB
+	All files processed!!!!!
+ 
+
+ [++] Matching with original file (ONTOX)
+		Directory already exists: .\prediction_files\together\matched
+		all_merged_TK_BBB.csv
+		[++] Processing ADMETLab3 for ONTOX
+		 WARNING!!!! you have duplicated molecules in your prediction files 
+		 a total of 1 have been skeeped. A new file has been created
+		 WARNING!!!! some molecules cannot be matched 
+		 a total of 11 have been skeeped. A new file has been created
+		[++] Processing vNNADMET for ONTOX
+		[++] Processing ProtoPRED for ONTOX
+		[++] Processing PKCSM for ONTOX
+		[++] Processing SwissADME for ONTOX
+
+[+] Analysing "TK_Caco2_ONTOX_WP3_1" dataset
+  [++] Merging prediction files
+	[+++] Analysing "ADMETLab3_tool" tool
+		 4 files in input
+		 4 files will be processed
+		 1505 molecules found
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\Caco2
+	[+++] Analysing "ProtoPRED_tool" tool
+		 2 files in input
+		 2 files will be processed
+		 WARNING!!!! number of input molecules 1505 != number of output molecules 1502
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\Caco2
+	[+++] Analysing "PKCSM_tool" tool
+		 16 files in input
+		 16 files will be processed
+		 1505 molecules found
+		Directory already exists: .\prediction_files\PKCSM_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\PKCSM_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\Caco2
+	All files processed!!!!!
+ 
+
+ [++] Matching with original file (ONTOX)
+		Directory already exists: .\prediction_files\together\matched
+		all_merged_TK_Caco2.csv
+		[++] Processing ADMETLab3 for ONTOX
+		 WARNING!!!! you have duplicated molecules in your prediction files 
+		 a total of 7 have been skeeped. A new file has been created
+		 WARNING!!!! some molecules cannot be matched 
+		 a total of 71 have been skeeped. A new file has been created
+		[++] Processing ProtoPRED for ONTOX
+		[++] Processing PKCSM for ONTOX
+
+[+] Analysing "TK_F30_ONTOX_WP3_1" dataset
+  [++] Merging prediction files
+	[+++] Analysing "ADMETLab3_tool" tool
+		 3 files in input
+		 3 files will be processed
+		 988 molecules found
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\F30
+	[+++] Analysing "ProtoPRED_tool" tool
+		 1 files in input
+		 1 files will be processed
+		 988 molecules found
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\F30
+	All files processed!!!!!
+ 
+
+ [++] Matching with original file (ONTOX)
+		Directory already exists: .\prediction_files\together\matched
+		all_merged_TK_F30.csv
+		[++] Processing ADMETLab3 for ONTOX
+		 WARNING!!!! you have duplicated molecules in your prediction files 
+		 a total of 1 have been skeeped. A new file has been created
+		 WARNING!!!! some molecules cannot be matched 
+		 a total of 81 have been skeeped. A new file has been created
+		[++] Processing ProtoPRED for ONTOX
+
+[+] Analysing "TK_FU_ONTOX_WP3_1" dataset
+  [++] Merging prediction files
+	[+++] Analysing "ADMETLab3_tool" tool
+		 6 files in input
+		 6 files will be processed
+		 2086 molecules found
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\FU
+	[+++] Analysing "PKCSM_tool" tool
+		 21 files in input
+		 21 files will be processed
+		 2086 molecules found
+		Directory already exists: .\prediction_files\PKCSM_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\PKCSM_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\FU
+	All files processed!!!!!
+ 
+
+ [++] Matching with original file (ONTOX)
+		Directory already exists: .\prediction_files\together\matched
+		all_merged_TK_FU.csv
+		[++] Processing ADMETLab3 for ONTOX
+		 WARNING!!!! you have duplicated molecules in your prediction files 
+		 a total of 2 have been skeeped. A new file has been created
+		 WARNING!!!! some molecules cannot be matched 
+		 a total of 60 have been skeeped. A new file has been created
+		[++] Processing PKCSM for ONTOX
+
+[+] Analysing "TK_HIA_ONTOX_WP3_1" dataset
+  [++] Merging prediction files
+	[+++] Analysing "ADMETLab3_tool" tool
+		 3 files in input
+		 3 files will be processed
+		 1136 molecules found
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\HIA
+	[+++] Analysing "ProtoPRED_tool" tool
+		 2 files in input
+		 2 files will be processed
+		 1136 molecules found
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\HIA
+	[+++] Analysing "PKCSM_tool" tool
+		 12 files in input
+		 12 files will be processed
+		 1136 molecules found
+		Directory already exists: .\prediction_files\PKCSM_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\PKCSM_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\HIA
+	[+++] Analysing "SwissADME_tool" tool
+		 6 files in input
+		 6 files will be processed
+		 WARNING!!!! some input files have not prediction
+		 processing cannot continue
+	All files processed!!!!!
+ 
+
+ [++] Matching with original file (ONTOX)
+		Directory already exists: .\prediction_files\together\matched
+		all_merged_TK_HIA.csv
+		[++] Processing ADMETLab3 for ONTOX
+		 WARNING!!!! you have duplicated molecules in your prediction files 
+		 a total of 3 have been skeeped. A new file has been created
+		 WARNING!!!! some molecules cannot be matched 
+		 a total of 74 have been skeeped. A new file has been created
+		[++] Processing ProtoPRED for ONTOX
+		[++] Processing PKCSM for ONTOX
+
+[+] Analysing "TK_logKp_ONTOX_WP3_1" dataset
+  [++] Merging prediction files
+	[+++] Analysing "ProtoPRED_tool" tool
+		 1 files in input
+		 1 files will be processed
+		 368 molecules found
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\logKp
+	[+++] Analysing "PKCSM_tool" tool
+		 4 files in input
+		 4 files will be processed
+		 368 molecules found
+		Directory already exists: .\prediction_files\PKCSM_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\PKCSM_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\logKp
+	[+++] Analysing "SwissADME_tool" tool
+		 1 files in input
+		 1 files will be processed
+		 368 molecules found
+		Directory already exists: .\prediction_files\SwissADME_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\SwissADME_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\logKp
+	All files processed!!!!!
+ 
+
+ [++] Matching with original file (ONTOX)
+		Directory already exists: .\prediction_files\together\matched
+		all_merged_TK_logKp.csv
+		[++] Processing ProtoPRED for ONTOX
+		[++] Processing PKCSM for ONTOX
+		[++] Processing SwissADME for ONTOX
+
+[+] Analysing "TK_Psub_ONTOX_WP3_1" dataset
+  [++] Merging prediction files
+	[+++] Analysing "ADMETLab3_tool" tool
+		 3 files in input
+		 3 files will be processed
+		 WARNING!!!! number of input molecules 1340 != number of output molecules 1070
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\Psub
+	[+++] Analysing "vNNADMET_tool" tool
+		Directory already exists: .\prediction_files\vNNADMET_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\vNNADMET_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\Psub
+	[+++] Analysing "ProtoPRED_tool" tool
+		 2 files in input
+		 2 files will be processed
+		 1086 molecules found
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\Psub
+	[+++] Analysing "PKCSM_tool" tool
+		 11 files in input
+		 11 files will be processed
+		 WARNING!!!! some input files have not prediction
+		 processing cannot continue
+	All files processed!!!!!
+ 
+
+ [++] Matching with original file (ONTOX)
+		Directory already exists: .\prediction_files\together\matched
+		all_merged_TK_Psub.csv
+		[++] Processing ADMETLab3 for ONTOX
+		 WARNING!!!! some molecules cannot be matched 
+		 a total of 70 have been skeeped. A new file has been created
+		[++] Processing vNNADMET for ONTOX
+		[++] Processing ProtoPRED for ONTOX
+
+[+] Analysing "TK_Pinh_ONTOX_WP3_1" dataset
+  [++] Merging prediction files
+	[+++] Analysing "ADMETLab3_tool" tool
+		 4 files in input
+		 4 files will be processed
+		 1216 molecules found
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ADMETLab3_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\Pinh
+	[+++] Analysing "vNNADMET_tool" tool
+		Directory already exists: .\prediction_files\vNNADMET_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\vNNADMET_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\Pinh
+	[+++] Analysing "ProtoPRED_tool" tool
+		 2 files in input
+		 2 files will be processed
+		 1216 molecules found
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\ProtoPRED_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\Pinh
+	[+++] Analysing "PKCSM_tool" tool
+		 13 files in input
+		 13 files will be processed
+		 1216 molecules found
+		Directory already exists: .\prediction_files\PKCSM_tool\merged_predictions_all
+		Directory already exists: .\prediction_files\PKCSM_tool\merged_predictions_selcols
+		Directory already exists: .\prediction_files\together\Pinh
+	All files processed!!!!!
+ 
+
+ [++] Matching with original file (ONTOX)
+		Directory already exists: .\prediction_files\together\matched
+		all_merged_TK_Pinh.csv
+		[++] Processing ADMETLab3 for ONTOX
+		 WARNING!!!! some molecules cannot be matched 
+		 a total of 46 have been skeeped. A new file has been created
+		[++] Processing vNNADMET for ONTOX
+		[++] Processing ProtoPRED for ONTOX
+		[++] Processing PKCSM for ONTOX

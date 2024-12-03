@@ -1,0 +1,6 @@
+SMILES
+ON(O)NC1=NCCN1Cc1ccc(Cl)nc1
+Oc1cc(O)c2c(c1)OC(c1ccc(O)c(O)c1)C(O)C2
+Oc1cccc2ccccc12
+c1ccc(C2(N3CCCCC3)CCCCC2)cc1
+c1csc([C@]23CNC[C@H]2C3)c1
