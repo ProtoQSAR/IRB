@@ -1,2 +1,0 @@
-;Model type;Train R2/Acc;Train Ev/Sensit;Train MSE/Specif;Train MAE/Precis;Test R2/Acc;Test Ev/Sensit;Test MSE/Specif;Test MAE/Precis
-TOX_Nav15inh_NOoutliers_no3D_us_new;classifier;0.88;0.86;0.9;0.91;0.72;0.73;0.72;0.75

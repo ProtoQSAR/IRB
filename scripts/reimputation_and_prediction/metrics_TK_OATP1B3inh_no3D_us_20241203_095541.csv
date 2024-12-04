@@ -1,0 +1,3 @@
+;Model type;Train R2/Acc;Train Ev/Sensit;Train MSE/Specif;Train MAE/Precis;Test R2/Acc;Test Ev/Sensit;Test MSE/Specif;Test MAE/Precis
+TK_OATP1B3inh_no3D_us_old;classifier;0.91;0.96;0.88;0.82;0.7;0.69;0.71;0.59
+TK_OATP1B3inh_no3D_us_new;classifier;0.91;0.95;0.88;0.83;0.69;0.67;0.71;0.58

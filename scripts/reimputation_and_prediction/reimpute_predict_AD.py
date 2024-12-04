@@ -129,6 +129,7 @@ class Calculate(Process):
         # self.resultsresults = pd.DataFrame()
 
         for desc in self.model_dict:
+            start_time = time.time()
             kwargs = self.model_dict[desc]
     
             desc_fn_name = desc.split('$')[0]
@@ -148,7 +149,7 @@ class Calculate(Process):
     
             self.results[desc_name] = pd.Series(lista)
 
-
+            print(f'Cluster {self.i}: {desc} calculated in --- {time.time() - start_time} seconds ---')
 
         self.return_dict[self.i] = self.results
 
@@ -761,7 +762,11 @@ if __name__ == '__main__':
         with open(merged_json_file, 'w', encoding='utf8') as json_file:
                 json.dump(merged_dict, json_file, ensure_ascii=False, indent=4)
                 
-        print(f'\t\t\t new json file with descriptors for batch {int(batch)} created: {merged_json_file}')
+        print(f'individual descriptors count: {counter}')
+        print(f'merged descriptors count: {len(merged_dict)}')
+        
+                
+        print(f'\t new json file with descriptors for batch {int(batch)} created: {merged_json_file}')
 
         
                     

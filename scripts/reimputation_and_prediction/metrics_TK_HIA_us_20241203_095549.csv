@@ -1,0 +1,3 @@
+;Model type;Train R2/Acc;Train Ev/Sensit;Train MSE/Specif;Train MAE/Precis;Test R2/Acc;Test Ev/Sensit;Test MSE/Specif;Test MAE/Precis
+TK_HIA_us_old;classifier;0.92;0.97;0.84;0.91;0.87;0.9;0.82;0.89
+TK_HIA_us_new;classifier;0.92;0.97;0.84;0.91;0.88;0.92;0.82;0.89

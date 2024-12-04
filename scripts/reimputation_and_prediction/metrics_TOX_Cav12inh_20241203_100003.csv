@@ -1,0 +1,3 @@
+;Model type;Train R2/Acc;Train Ev/Sensit;Train MSE/Specif;Train MAE/Precis;Test R2/Acc;Test Ev/Sensit;Test MSE/Specif;Test MAE/Precis
+TOX_Cav12inh_old;classifier;0.86;0.84;0.9;0.94;0.74;0.72;0.78;0.86
+TOX_Cav12inh_new;classifier;0.86;0.84;0.9;0.94;0.74;0.72;0.78;0.86

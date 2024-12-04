@@ -1,0 +1,3 @@
+;Model type;Train R2/Acc;Train Ev/Sensit;Train MSE/Specif;Train MAE/Precis;Test R2/Acc;Test Ev/Sensit;Test MSE/Specif;Test MAE/Precis
+TK_CYP2D6inh_NOoutliers_us_old;classifier;0.92;0.91;0.93;0.92;0.76;0.75;0.77;0.76
+TK_CYP2D6inh_NOoutliers_us_new;classifier;0.92;0.91;0.92;0.92;0.76;0.75;0.77;0.76

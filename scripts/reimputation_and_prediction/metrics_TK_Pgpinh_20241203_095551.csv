@@ -1,0 +1,3 @@
+;Model type;Train R2/Acc;Train Ev/Sensit;Train MSE/Specif;Train MAE/Precis;Test R2/Acc;Test Ev/Sensit;Test MSE/Specif;Test MAE/Precis
+TK_Pgpinh_old;classifier;0.92;0.93;0.91;0.93;0.88;0.87;0.89;0.89
+TK_Pgpinh_new;classifier;0.92;0.93;0.91;0.93;0.88;0.87;0.89;0.89

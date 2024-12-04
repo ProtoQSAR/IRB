@@ -1,0 +1,3 @@
+;Model type;Train R2/Acc;Train Ev/Sensit;Train MSE/Specif;Train MAE/Precis;Test R2/Acc;Test Ev/Sensit;Test MSE/Specif;Test MAE/Precis
+TK_Caco2_old;regressor;0.92;0.92;0.05;0.17;0.75;0.75;0.16;0.31
+TK_Caco2_new;regressor;0.92;0.92;0.05;0.17;0.75;0.75;0.16;0.31
