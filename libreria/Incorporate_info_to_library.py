@@ -4,7 +4,7 @@ Created on Fri Sep 27 10:43:10 2024
 
 @author: proto (Eva Serrano-Candelas)
 
-This script is used to manage the IRB library. It reads the sdf files and obtain the SMILES, setting a unique ID for each compound and 
+This script is used to manage the IRB library. It reads the sdf files and obtain the SMILES, setting a unique ID for each compound and
 merging all the files in a single one. It also creates a file with the unique SMILES and another with the duplicated SMILES.
 
 The modifications are done in the following steps: Add the name variable = 'IRB_library_' to the output files, and generate the files for HYGIEIA, adding the column of unique "y".
@@ -40,7 +40,7 @@ parent = Path(__file__).resolve().parent
 os.chdir(parent)
 print(f'Working on: \n {os.getcwd()}')
 
-data_folder =  '.' + os.path.sep + 'files' 
+data_folder =  '.' + os.path.sep + 'files'
 
 mixtures_folder =  '.' + os.path.sep + 'pre_processing'
 cluster_folder =  '..' + os.path.sep + 'clustering' + os.path.sep + 'clusters_kmeans'
