@@ -1,0 +1,50 @@
+Prediction and Applicability Domain analysis for models:
+Water solubility model (IRFMN) (version 1.0.2)
+(calculation core version : 1.3.19)
+
+No.	tId	SMILES	Water solubility model (IRFMN)-assessment	Water solubility model (IRFMN)-prediction [-log(mol/L)]
+1	Molecule 1	O=C(OCCCCCCCC(C)C)c1ccc(C(=O)OCCCCCCCC(C)C)c(c1)C(=O)OCCCCCCCC(C)C	0.0255 mg/L (LOW reliability)	7.39
+2	Molecule 2	OCC(CO)(CO)CO	72290.53 mg/L (EXPERIMENTAL value)	-0.49
+3	Molecule 3	n1nn(c2ccccc12)C	261.55 mg/L (LOW reliability)	2.71
+4	Molecule 4	n1nc2ccccc2([n-]1)	272.62 mg/L (LOW reliability)	2.64
+5	Molecule 5	C=CCCCC	50.03 mg/L (EXPERIMENTAL value)	2.9
+6	Molecule 6	c1ccc(cc1)N(c3cccc2ccccc23)C(C)(C)CC(C)(C)C	0.8225 mg/L (LOW reliability)	5.61
+7	Molecule 7	OC(C)CC(C)C	16422.94 mg/L (EXPERIMENTAL value)	0.88
+8	Molecule 8	OC(C)CSCCCCCCCCC(C)(C)C	10.78 mg/L (LOW reliability)	4.38
+9	Molecule 9	OC(C)COc1ccccc1	11001.28 mg/L (EXPERIMENTAL value)	1.64
+10	Molecule 10	c1ccc(cc1)SCCSc2ccccc2	5.54 mg/L (MODERATE reliability)	4.65
+11	Molecule 11	O=C([O-])c1ccccc1([O-])	941.44 mg/L (GOOD reliability)	2.16
+12	Molecule 12	O=C(O)CC(C(=O)O)CCCCCCCCCC	208.96 mg/L (GOOD reliability)	3.09
+13	Molecule 13	O=C(OCC(CC)CCCC)CC(C(=O)OCC(CC)CCCC)S(=O)(=O)[O-]	1.34 mg/L (LOW reliability)	5.5
+14	Molecule 14	C(N(CCCC)CCCC)(=S)SCSC(N(CCCC)CCCC)=S	0.0088 mg/L (LOW reliability)	7.68
+15	Molecule 15	OCCOCCOCCOCCO	1000883.19 mg/L (EXPERIMENTAL value)	-0.55
+16	Molecule 16	OCCNCCO	999655.97 mg/L (EXPERIMENTAL value)	-1.35
+17	Molecule 17	O=C(OCCCCCCCC(C)C)CCCCC(=O)OCCCCCCCC(C)C	0.000044 mg/L (EXPERIMENTAL value)	6.87
+18	Molecule 18	O=C(O)CCCCCCCCCCCCCCC(C)C	0.6335 mg/L (LOW reliability)	5.65
+19	Molecule 19	O=C(O)CCCCCCCCCCC(O)CCCCCC	78.29 mg/L (LOW reliability)	3.58
+20	Molecule 20	O=C([O-])CCCC(=O)[O-]	1468.02 mg/L (LOW reliability)	1.95
+21	Molecule 21	Oc1c(cc(cc1C(C)(C)C)C)C(C)(C)C	0.6001 mg/L (EXPERIMENTAL value)	3.73
+22	Molecule 22	O(c1ccccc1)P(Oc2ccccc2)(Oc3ccccc3)=S	0.2483 mg/L (LOW reliability)	6.14
+23	Molecule 23	O(c1ccccc1)P(Oc2ccccc2)Oc3ccccc3	32.48 mg/L (LOW reliability)	3.98
+24	Molecule 24	OCCOCCOCCOCCOCCOCCCC	64594.17 mg/L (LOW reliability)	0.66
+25	Molecule 25	O=C(N)N	545327.8 mg/L (EXPERIMENTAL value)	-0.3
+26	Molecule 26	O=C(O)C(CC)CCCC	2000.26 mg/L (EXPERIMENTAL value)	1.92
+27	Molecule 27	O=C(O)C=C	178137.61 mg/L (GOOD reliability)	-0.39
+28	Molecule 28	O=C1OC(C(O)=C1([O-]))C(O)CO	937983.66 mg/L (GOOD reliability)	-0.73
+29	Molecule 29	O=C(OCC(CC)CCCC)CCc1cc(c(O)c(c1)C(C)(C)C)C(C)(C)C	14.45 mg/L (LOW reliability)	4.43
+30	Molecule 30	O=C(O)C=CC=CC	1908.8 mg/L (EXPERIMENTAL value)	1
+31	Molecule 31	O=C	3173.44 mg/L (LOW reliability)	0.98
+32	Molecule 32	O=C(OC)CCCC(=O)OC	58970.58 mg/L (EXPERIMENTAL value)	0.71
+33	Molecule 33	O=C(OC)CCC(=O)OC	64995.66 mg/L (GOOD reliability)	0.35
+34	Molecule 34	O=C(NCCC[N+]([O-])(C)C)CCCCCCCCCCC	10750.16 mg/L (LOW reliability)	1.45
+35	Molecule 35	O=C(O)C(N)CCCCN	1000015.56 mg/L (EXPERIMENTAL value)	0.78
+36	Molecule 36	O=CC(O)C(O)C(OC1OC(CO)C(O)C(O)C1(O))C(O)CO	111034.43 mg/L (EXPERIMENTAL value)	0.67
+37	Molecule 37	OCC(O)C	1001017.52 mg/L (EXPERIMENTAL value)	-0.66
+38	Molecule 38	O=C(O)CCCCCCCC(=O)O	2402.9 mg/L (EXPERIMENTAL value)	1.34
+39	Molecule 39	O=C(OCCCCCCCCCCC(C)C)CCCCC(=O)OCCCCCCCCCCC(C)C	0.0514 mg/L (LOW reliability)	7
+40	Molecule 40	O1CC1CCCCCCCCCC	4.53 mg/L (MODERATE reliability)	4.61
+41	Molecule 41	O=C(OC)C(CC)CCCC	102.86 mg/L (MODERATE reliability)	3.19
+42	Molecule 42	c1ccc(cc1)Cc2ccccc2C	0.4273 mg/L (LOW reliability)	5.63
+43	Molecule 43	O=C([O-])CCCCCCCC(=O)[O-]	47.29 mg/L (LOW reliability)	3.6
+44	Molecule 44	O=C([O-])CCCCC(=O)[O-]	515.48 mg/L (LOW reliability)	2.45
+45	Molecule 45	O=P(Oc1ccc(cc1)C(C)C)(Oc2ccc(cc2)C(C)C)Oc3ccc(cc3)C(C)C	0.015 mg/L (LOW reliability)	7.48
