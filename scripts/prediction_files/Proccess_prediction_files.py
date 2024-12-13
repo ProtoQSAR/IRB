@@ -12,6 +12,7 @@ for i in list(globals().keys()):
 ##############################################################################
 #################################### IMPORTS #################################
 import os
+import re   #"""importar regular expresions"""
 from pathlib import Path
 import pandas as pd
 import numpy as np
@@ -35,8 +36,27 @@ merge_ONTOX = True #delimite_endpoints should be True
 ##############################################################################
 
 ###############################  FUNCTIONS ###################################
+def eliminar_version(model):
+    
+    return re.sub(r"\(version \d*\.\d*\.\d*\)?", "", model).strip()
+def detectar_skiprow(file_path, header_start="No.",return_models=False): ##"""Modified by Vicente 09/12/2024. skiprow (detects header of VEGA atomatically)"""
+     models = []
+     with open(file_path, "r", encoding="ANSI") as file:
+         lines = file.readlines()  
 
-
+   
+     for i, line in enumerate(lines):
+         if header_start in line:
+            #  print(i)
+             if return_models:
+               
+                models = [lines[j].strip() for j in range(1, i-2)]
+                models = [eliminar_version(model) for model in models]
+                     
+                #  print(models)
+                return models
+             return i 
+     return None if not return_models else models
 
 def create_dir_for_io(folder):
 
@@ -92,7 +112,62 @@ def merge_files(list_files, path_for_files, tool, equivalence_in_tool, mode):
 
             list_to_merge.append(df)
             
+        elif 'VEGA' in tool: #"""Modified by Vicente 09/12/2024. Add Vega tool""" 
+            skiprows = detectar_skiprow(path_for_files + os.path.sep + file + '.txt')
+            models = detectar_skiprow(path_for_files + os.path.sep + file + '.txt', return_models=True)
             
+
+            
+            print(models)
+            if mode=="inputfiles":
+                df = pd.read_csv(
+                    path_for_files + os.path.sep + file + '.txt',
+                    sep="\t",
+                    encoding="ANSI",
+                    skiprows=skiprows,
+                    header=None
+                )
+                df["SMILES"]=df
+                df=df[["SMILES"]]
+                
+            else:
+                df = pd.read_csv(
+                    path_for_files + os.path.sep + file + '.txt',
+                    sep="\t",
+                    encoding="ANSI",
+                    skiprows=skiprows,
+                )
+                rename_columns = {
+                    df.columns[i]: f'Pred_{df.columns[i]}' for i in range(4, len(df.columns), 2)
+                }
+                df.rename(columns=rename_columns, inplace=True)
+                new_columns_exp = {}
+                new_columns_text = {}
+
+
+                for i in range(3, len(df.columns), 2):  
+                    col_name = df.columns[i]
+    
+    
+                new_columns_exp[f'Exp_{col_name}'] = np.where(
+                df[col_name].str.contains("EXPERIMENTAL"), 
+                df[col_name].str.extract(r'([\d.]+)')[0].astype(float), 
+                np.nan  
+                )
+                new_columns_text[f'AD_{col_name}'] =  df[col_name].str.extract(r'\((.*?)\)')  
+
+                # Añadir las nuevas columnas al DataFrame
+                for col_name, col_data in new_columns_exp.items():
+                    df[col_name] = col_data
+
+                for col_name, col_data in new_columns_text.items():
+                    df[col_name] = col_data
+                
+                print(df)
+                print(df.columns)
+                
+            list_to_merge.append(df)
+
         elif tool == 'PKCSM_tool':
             
              df = pd.read_csv(path_for_files + os.path.sep + file + '.csv', sep = '\t', lineterminator='\n')
@@ -365,6 +440,8 @@ for dataset, info in config_df.iterrows():
         #collect files to be predicted
         files_topredict_property = collect_files(files_to_predict_folder)
 
+        
+
         #collect files predicted        
         files_predicted_property = collect_files(files_predicted_folder)
         
@@ -398,6 +475,7 @@ for dataset, info in config_df.iterrows():
             
             smile_column_from_tool = config_df_tools.loc[tool, 'smiles_output']
             id_column_from_tool = config_df_tools.loc[tool, 'id_output']
+            
     
             merged_output.rename(columns = {smile_column_from_tool : f'SMILES_{tag_tool}',id_column_from_tool : f'ID_{tag_tool}' }, inplace = True)
             
@@ -453,7 +531,15 @@ for dataset, info in config_df.iterrows():
       
 
         if delimite_endpoints == True:
-            
+            # if tool == "VEGA_tool":
+                
+            #     for model in models:
+                
+                
+                
+                
+                    
+            #     merged_output.rename(columns={"SIMLES":f"SMILES_{tag_tool}"},inplace=True)
             if tool == 'ProtoPRED_tool':
                 
                 ''' just an exception on WS to get the value in logM to avoid internal conversion'''
@@ -461,15 +547,15 @@ for dataset, info in config_df.iterrows():
                 
                 if endpoint == 'WS':
                     
-                    cols = ['Other Regulatory ID',	'SMILES',	'Experimental numerical (common units)',	'Predicted numerical (model units)','Applicability domain**']
-
+                    # cols = ['Other Regulatory ID',	'SMILES',	'Experimental numerical (common units)',	'Predicted numerical (model units)','Applicability domain**'] """Modified by Vicente 09/12/2024. Motive: Change in column name of Protopred predictions"""
+                    cols = ['Other Regulatory ID',	'SMILES',	'Experimental numerical (model units)',	'Predicted numerical (model units)','Applicability domain**']
                     merged_output.rename(columns = {'Other Regulatory ID' : f'ID_{tag_tool}',
                                                 'SMILES' : f'SMILES_{tag_tool}',
                                                 'Experimental numerical (common units)': f'exp_{tag_tool}_{endpoint}',
                                                 'Predicted numerical (model units)': f'pred_{tag_tool}_{endpoint}',
                                                 
                                                 }, inplace = True)
-                
+                    print(merged_output.columns)
                 else:
                 
                     cols = ['Other Regulatory ID',	'SMILES',	'Experimental numerical',	'Predicted numerical','Applicability domain**']
@@ -494,7 +580,7 @@ for dataset, info in config_df.iterrows():
                 cols = [f'ID_{tag_tool}', f'SMILES_{tag_tool}', f'exp_{tag_tool}_{endpoint}',f'pred_{tag_tool}_{endpoint}',f'AD_{tag_tool}_{endpoint}',f'in_TS_{tag_tool}_{endpoint}' ]
 
            
-                
+            
                 
                 
                 
@@ -512,13 +598,14 @@ for dataset, info in config_df.iterrows():
 
                     
                     cols = [f'ID_{tag_tool}', f'SMILES_{tag_tool}', f'pred_{tag_tool}_{endpoint}', f'pred_{tag_tool}_{endpoint}_forad', f'AD_{tag_tool}_{endpoint}' ]
-                    
+                   
             
                 else:
                     
                     if pd.notnull(id_column_from_tool):
     
                         cols = [f'ID_{tag_tool}', f'SMILES_{tag_tool}', equivalence_in_tool]
+                     
                     else:
                         cols = [f'SMILES_{tag_tool}', equivalence_in_tool]
                     
@@ -563,7 +650,7 @@ for dataset, info in config_df.iterrows():
             merged_output_selcols.to_csv(merged_files_folder_selcols_together + os.path.sep + file_name_output + f'_{complete_endpoint}.csv', sep = ';', index = False)        
 
             
-
+            
 
 
             if merge_ONTOX == True:
