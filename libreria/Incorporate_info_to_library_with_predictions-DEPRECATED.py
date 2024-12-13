@@ -4,7 +4,7 @@ Created on Fri Sep 27 10:43:10 2024
 
 @author: proto (Eva Serrano-Candelas)
 
-This script is used to manage the IRB library. It reads the sdf files and obtain the SMILES, setting a unique ID for each compound and
+This script is used to manage the IRB library. It reads the sdf files and obtain the SMILES, setting a unique ID for each compound and 
 merging all the files in a single one. It also creates a file with the unique SMILES and another with the duplicated SMILES.
 
 The modifications are done in the following steps: Add the name variable = 'IRB_library_' to the output files, and generate the files for HYGIEIA, adding the column of unique "y".
@@ -40,14 +40,17 @@ parent = Path(__file__).resolve().parent
 os.chdir(parent)
 print(f'Working on: \n {os.getcwd()}')
 
-data_folder =  '.' + os.path.sep + 'files'
+data_folder =  '.' + os.path.sep + 'files' 
 
 mixtures_folder =  '.' + os.path.sep + 'pre_processing'
 cluster_folder =  '..' + os.path.sep + 'clustering' + os.path.sep + 'clusters_kmeans'
 
 predictions_folder =  '..' + os.path.sep + 'scripts' + os.path.sep + 'reimputation_and_prediction' + os.path.sep + 'predictions' + os.path.sep + 'df_predicted'
 
+
 results_folder_with_clustering = '.' + os.path.sep + 'clusterized'
+
+results_folder_with_clustering_and_predictions = '.' + os.path.sep + 'predictions'
 
 name = 'IRB_library_'
 ###############################  FUNCTIONS ###################################
@@ -65,13 +68,6 @@ def create_folder(folder):
     else:
         print(f"Output directory already exists: {folder}")
 
-
-def getidentifier(smiles):
-    
-    identif = df_clustering_asdict_smiles[smiles]['ID NUMBER']
-    
-    return identif
-
 ##############################################################################
 
 
@@ -83,7 +79,7 @@ create_folder(results_folder_with_clustering)
 ############################ READ INITIAL SDF FILES ##########################
 ##############################################################################
 
-print('\nREADING INITIAL SDF FILES')
+print('INCORPORATING CLUSTERING INFO')
 
 ############################## file 1 processing #############################
 
@@ -189,7 +185,7 @@ df4_incorrect = df4_withincorrect[~df4_withincorrect['ID NUMBER'].isin(df4['ID N
 
 df4_incorrect.to_csv(results_folder_with_clustering+ os.path.sep + name + output_file4_name + '_molerror.csv', sep = ';')
 
-
+print(f'\t{df4_incorrect.shape[0]} incorrect molecules')
 
 ##############################################################################
 
@@ -198,8 +194,8 @@ df4_incorrect.to_csv(results_folder_with_clustering+ os.path.sep + name + output
 ##############################################################################
 ######################### INCORPORATE CLUSTERING INFO ########################
 ##############################################################################
-print('\nINCORPORATING CLUSTERING INFO')
 
+print('INCORPORATING CLUSTERING INFO')
 print('[+] Retrieving clustering info')
 
 # df_clustering = pd.read_excel(cluster_folder +  os.path.sep + 'IRB_all_clustering40K_sorted.xlsx')
@@ -246,7 +242,7 @@ dictios_names = ['2021 LIB_47489 CMPDS_26092024_clustered', 'all new library_104
 
 dictios = [df1_dict,df2_dict,df3_dict,df4_dict]
 
-dictios_with_cluster = []
+
 # dictios_names = ['focus 2 mM_70 cmpds_29092024_sent_clustered']
 
 # dictios = [df3_dict]
@@ -255,7 +251,7 @@ dictios_with_cluster = []
 
 for name, dictio in zip(dictios_names, dictios):
     
-    print(f'\t[++] Working on {name} sdf')
+    print(f'Working on {name} sdf')
 
     for idx2, row2 in dictio.items():
         if row2['ID NUMBER'] in dfclustering_dict.keys():
@@ -287,14 +283,10 @@ for name, dictio in zip(dictios_names, dictios):
         dictio[idx2]['Cluster'] = cluster
         dictio[idx2]['is_centroid'] = centroid
         dictio[idx2]['flag'] = flag
-        
-        dictio[idx2]['Clustering_method'] = 'Clustering performed by ProtoQSAR, S.L., 2024'
-        
-    dictios_with_cluster.append(dictio)
 
     df_again = pd.DataFrame.from_dict(dictio).T
     
-    print(f'\t\t {df_again.shape[0]} compounds')
+    print(f'\t {df_again.shape[0]} compounds')
     
     
     strip_number = re.compile(r"^(>  <[\w\s]+>)(\s+\(\d+\)\s*)$", re.MULTILINE)
@@ -307,16 +299,14 @@ for name, dictio in zip(dictios_names, dictios):
         hnd.write(sdf)
     
 
+
 #%%
 ##############################################################################
 ########################### INCORPORATE PREDICTIONS ##########################
 ##############################################################################
-print('\nINCORPORATING PREDICTIONS')
+print('INCORPORATING PREDICTIONS')
 
-print('[+] Retrieving, merging predictions and assigning identifier')
-
-df_clustering_asdict_smiles = df_clustering.set_index('SMILES').T.to_dict(orient = 'dict') # to retrieve identifiers
-
+print('[+] Retrieving and merging predictions')
 
 for root_pred, dirs_pred, files_pred in os.walk(predictions_folder):
     continue
@@ -327,152 +317,30 @@ set_predictions_parts = set(predictions_parts)
 
 endpoints = [x.split('-')[1] for x in files_pred]
 
-set_endpoints_aslist = list(set(endpoints))
-
-#%%
-
-info_dict = {'TK_F20': {'explanation': 'Bioavailability 20% [binary: (1:positive, 0: negative), positive if Bioavailability > 20%]'},
-             'TK_F30': {'explanation': 'Bioavailability 30% [binary: (1:positive, 0: negative),  positive if Bioavailability > 30%]'},
-             'TK_FU': {'explanation': 'Fraction unbound (FU) to plasma proteins [ratio, dimensionless]'},
-
-             'TK_HLM': {'explanation': 'Human Liver Microsomal Stability [binary: (1:stable, 0: unstable)], stable if CLint < 20 mL/min/kg]'},
-             'TK_logKp': {'explanation': 'Skin permeability [log(cm/h)]'},
-             'TK_Caco2': {'explanation': ' Caco-2 permeability [log(cm/s)]'},
-             'TK_VDss': {'explanation': 'Volumne of distribution [log(L/kg)]'},
-             'TK_HIA': {'explanation': 'Human intestinal absorption [binary: (1:positive, 0: negative), positive if HIA% > 30%]'},
-             'TK_BBB': {'explanation': ' Blood-brain barrier penetration [binary: (1:positive, 0: negative), positive if LogBBB ≥ -1]'},
-             
-             'TK_CYP2C19inh': {'explanation': 'Cytochrome P450 2C19 inhibitor [binary: (1:inhibitor, 0: non-inhibitor)]'},
-             'TK_CYP1A2inh': {'explanation': 'Cytochrome P450 1A2 inhibitor [binary: (1:inhibitor, 0: non-inhibitor)]'},             
-             'TK_CYP2D6inh': {'explanation': 'Cytochrome P450 2D6 inhibitor [binary: (1:inhibitor, 0: non-inhibitor)]'},            
-             'TK_CYP3A4inh': {'explanation': 'Cytochrome P450 3A4 inhibitor [binary: (1:inhibitor, 0: non-inhibitor)]'},          
-             'TK_CYP2C9inh': {'explanation': 'Cytochrome P450 2C9 inhibitor [binary: (1:inhibitor, 0: non-inhibitor)]'},
-
-             'TK_CYP2C19sub': {'explanation': 'Cytochrome P450 2C19 substrate [binary: (1:substrate, 0: non-substrate)]'},
-             'TK_CYP1A2sub': {'explanation': 'Cytochrome P450 1A2 substrate [binary: (1:substrate, 0: non-substrate)]'},
-             'TK_CYP2D6sub': {'explanation': 'Cytochrome P450 2D6 substrate [binary: (1:substrate, 0: non-substrate)]'},
-             'TK_CYP3A4sub': {'explanation': 'Cytochrome P450 3A4 substrate [binary: (1:substrate, 0: non-substrate)]'},
-             'TK_CYP2C9sub': {'explanation': 'Cytochrome P450 2C9 substrate [binary: (1:substrate, 0: non-substrate)]'},
-
-             'TK_OATP1B1inh': {'explanation': 'Organic anion transporting polypeptides 1B1 inhibitor [binary: (1:inhibitor, 0: non-inhibitor)]'},
-             'TK_OATP1B3inh': {'explanation': 'Organic anion transporting polypeptides 1B3 inhibitor [binary: (1:inhibitor, 0: non-inhibitor)]'},
-
-             'TK_Pgpsub': {'explanation': 'P-glycoprotein substrate [binary: (1:substrate, 0: non-substrate)]'}, 
-             'TK_Pgpinh': {'explanation': 'P-glycoprotein inhibitor [binary: (1:inhibitor, 0: non-inhibitor)]'},
-             'TK_BSEPinh': {'explanation': 'Bile salt export pump substrate [binary: (1:substrate, 0: non-substrate)]'},
-             
-
-             'TOX_MRDD': {'explanation': 'Maximum Recommended Daily Dose [log(mg/kg/day)]'},
-             'TOX_hERGinh': {'explanation': 'Human ether-a-go-go-related gene (hERG) inhibitor [binary: (1:inhibitor, 0: non-inhibitor)]'},
-             'TOX_Cav12inh': {'explanation': 'voltage-gated calcium channel Ca V 1.2 inhibitor [binary: (1:inhibitor, 0: non-inhibitor)]'},             
-             'TOX_Nav15inh': {'explanation': 'voltage-gated sodium channel Na(v) 1.5 inhibitor [binary: (1:inhibitor, 0: non-inhibitor)]'}
-             
-             }
-
-
-#%%
-
-
-for endpoint in set_endpoints_aslist:
-
+set_endpoints = set(endpoints)
     
-    if endpoint == 'VDss_log10_sin_outliers':
-        clean_endpoint = 'TK_VDss'
-    else:
-        clean_endpoint_list = endpoint.split('_')
-        clean_endpoint = clean_endpoint_list [0] + '_' + clean_endpoint_list [1]
-    
-
-    
-    info_dict[clean_endpoint]['original_name'] = endpoint
-
-
-
-#%%
-
-
-#%%
-merged_by_endpoints = []
-
-mergedallendpoints = pd.DataFrame()
-    
-for cleanendpoint, value in info_dict.items():
+for endpoint in set_endpoints:
     
     print(f'\t[++] Merging predictions for {endpoint}')
     
-    endpoint = info_dict[cleanendpoint]['original_name']
+    merged = pd.DataFrame()
     
-    mergedbyendpoint = pd.DataFrame()
     
+        
     for part in set_predictions_parts:
 
         
         df_pred = pd.read_csv(predictions_folder + os.path.sep + f'{part}-{endpoint}-predictedAD.csv', sep = ';')
+
+        merged = pd.concat([merged,df_pred], axis = 0)
         
-        sel_cols = ['SMILES', f'{endpoint} experimental value', f'{endpoint} predicted value', 'AD_ProtoPRED']
-        
-        df_pred_selcols = df_pred[sel_cols]
-        
-        df_pred_selcols.rename(columns = {f'{endpoint} experimental value': f'{cleanendpoint}_experimental_value',
-                                          f'{endpoint} predicted value' : f'{cleanendpoint}_predicted_value',
-                                          'AD_ProtoPRED': f'{cleanendpoint}_AD'}, inplace = True)
-        
-        df_pred_selcols[f'{cleanendpoint}_info'] = info_dict[cleanendpoint]['explanation'] * df_pred_selcols.shape[0] 
-
-        mergedbyendpoint = pd.concat([mergedbyendpoint,df_pred_selcols], axis = 0)
-        
-    print(f'\t\t {mergedbyendpoint.shape[0]} compounds')
-    
-    mergedbyendpoint.set_index('SMILES', inplace = True)
-    
-    mergedallendpoints = pd.concat([mergedallendpoints,mergedbyendpoint], axis = 1)
+    print(merged.shape)
     
     
-dict_allpredictions = mergedallendpoints.T.to_dict(orient = 'dict') 
-    
-#%%  
-
-
-print('[+] Include prediction on sdf')
-
-for name, dictiocluster in zip(dictios_names, dictios_with_cluster):
-    
-    print(f'\t[++] Working on {name} sdf')
-
-
-    for idx3, row3 in dictiocluster.items():
-        if row3['SMILES_new'] in dict_allpredictions.keys():
-
-            for key1, value1 in dict_allpredictions[row3['SMILES_new']].items():
-                dictiocluster[idx3][key1] = value1
-            
-
-        else:
-            
-            if row3['flag'] != '-':
-                continue
-            else:
-                print('SOS')
-                
-        dictiocluster[idx3]['ADME_prediction_method'] = 'ADMET prediction performed with ProtoPRED (R) v1.0'
-                
-                
-    df_again2 = pd.DataFrame.from_dict(dictiocluster).T
-
-
-            
-    print(f'\t\t {df_again2.shape[0]} compounds')
+    merged.to_csv(predictions_folder + os.path.sep + f'IRB-{endpoint}-predictedallAD.csv')
     
     
-    strip_number = re.compile(r"^(>  <[\w\s]+>)(\s+\(\d+\)\s*)$", re.MULTILINE)
-    
-    with StringIO() as buf:
-        PandasTools.WriteSDF(df_again2, buf, properties=list(df_again2.columns))
-        sdf = buf.getvalue()
-    sdf = strip_number.sub(r"\1", sdf)
-    with open(results_folder_with_clustering + os.path.sep + f'{name}_clustered_predicted.sdf', "w") as hnd:
-        hnd.write(sdf)            
-
+df_clustering_asdict_smiles = df_clustering.T.to_dict()
 
 ##############END OF THE SCRIPT###############################################
 
