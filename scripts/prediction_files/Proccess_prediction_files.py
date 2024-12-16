@@ -143,28 +143,34 @@ def merge_files(list_files, path_for_files, tool, equivalence_in_tool, mode):
                 }
                 df.rename(columns=rename_columns, inplace=True)
                 new_columns_exp = {}
-                new_columns_text = {}
+                new_columns_AD = {}
 
 
                 for i in range(3, len(df.columns), 2):
                     col_name = df.columns[i]
 
 
-                new_columns_exp[f'Exp_{col_name}'] = np.where(
-                df[col_name].str.contains("EXPERIMENTAL"),
-                df[col_name].str.extract(r'([\d.]+)')[0].astype(float),
-                np.nan
-                )
-                new_columns_text[f'AD_{col_name}'] =  df[col_name].str.extract(r'\((.*?)\)')
+                    new_columns_exp[f'Exp_{col_name}'] = np.where(
+                    df[col_name].str.contains("EXPERIMENTAL"), 
+                    df[col_name].str.extract(r'([\d.]+)')[0].astype(float).apply(lambda x: round(x, 2)), 
+                    np.nan  
+                    )
+                    # new_columns_AD[f'AD_{col_name}'] =  df[col_name].str.extract(r'\((.*?)\)') 
+                    new_columns_AD[f'AD_{col_name}'] = np.where(
+                        df[col_name].str.contains(r'\(LOW reliability\)'),  
+                        0,  
+                        1   
+                    )
 
                 # Añadir las nuevas columnas al DataFrame
                 for col_name, col_data in new_columns_exp.items():
                     df[col_name] = col_data
 
-                for col_name, col_data in new_columns_text.items():
+                for col_name, col_data in new_columns_AD.items():
                     df[col_name] = col_data
-
-                print(df)
+                filtered_columns = df.filter(regex=r'^(Exp|AD|Pred)', axis=1)
+                df = filtered_columns
+                print(df.head())
                 print(df.columns)
 
             list_to_merge.append(df)
@@ -345,7 +351,7 @@ config_df_tools = config_df_tools[['Tool_column', 'smiles_output', 'id_output']]
 config_df_tools.set_index('Tool_column', inplace = True)
 
 
-# for tools enpoints
+# for tools endpoints
 
 df_tools_enpoints = pd.read_excel(config_file_tools, sheet_name = 'properties_to_proccess', header = 1)
 
@@ -434,6 +440,7 @@ for dataset, info in config_df.iterrows():
         files_predicted_folder = tool_folder + os.path.sep + 'predictions'
 
         equivalence_in_tool = df_tools_enpoint_names.loc[tag,tool]
+        print(equivalence_in_tool,"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
 
 
 
@@ -492,8 +499,7 @@ for dataset, info in config_df.iterrows():
             else:
                 print(f'\t\t {merged_output.shape[0]} molecules found')
 
-
-
+        
 
         else:
 
@@ -532,6 +538,10 @@ for dataset, info in config_df.iterrows():
 
 
         if delimite_endpoints == True:
+            if tool=="VEGA_tool":
+                if equivalence_in_tool=="MM":
+                
+
             # if tool == "VEGA_tool":
 
             #     for model in models:
@@ -540,7 +550,7 @@ for dataset, info in config_df.iterrows():
 
 
 
-            #     merged_output.rename(columns={"SIMLES":f"SMILES_{tag_tool}"},inplace=True)
+                        merged_output.rename(columns={"SIMLES":f"SMILES_{tag_tool}"},inplace=True)
             if tool == 'ProtoPRED_tool':
 
                 ''' just an exception on WS to get the value in logM to avoid internal conversion'''
