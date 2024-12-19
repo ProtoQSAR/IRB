@@ -346,7 +346,7 @@ if __name__ == '__main__':
     
     
     
-    option = 'reffit'
+    option = 'predict'
     
     calculate = 'WITHOUT'
     
