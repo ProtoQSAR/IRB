@@ -91,6 +91,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 43 bonds 47
      RDKit          2D
@@ -220,6 +223,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 35 bonds 38
      RDKit          2D
@@ -331,6 +337,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 56 bonds 63
@@ -490,6 +499,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 31 bonds 32
      RDKit          2D
@@ -585,6 +597,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 42 bonds 48
@@ -715,6 +730,9 @@ False
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 28 bonds 30
      RDKit          2D
@@ -807,6 +825,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 35 bonds 38
@@ -919,6 +940,9 @@ False
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 36 bonds 40
@@ -1034,6 +1058,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 46 bonds 49
@@ -1161,6 +1188,9 @@ C[C@H]1CN(c2c(NC(=O)c3ccc(F)c(-c4c(F)cccc4F)n3)cnc3c2CC[C@H]3O)C[C@@H](N)[C@@H]1
 >  <flag>
 mixture
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 28 bonds 31
      RDKit          2D
@@ -1258,6 +1288,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 38 bonds 42
@@ -1377,6 +1410,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 42 bonds 47
@@ -1505,6 +1541,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 43 bonds 48
@@ -1636,6 +1675,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 36 bonds 40
      RDKit          2D
@@ -1751,6 +1793,9 @@ False
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 31 bonds 35
      RDKit          2D
@@ -1855,6 +1900,9 @@ False
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 49 bonds 54
@@ -1997,6 +2045,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 128 bonds 127
@@ -2259,6 +2310,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 32 bonds 36
      RDKit          2D
@@ -2365,6 +2419,9 @@ False
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 48 bonds 54
@@ -2507,6 +2564,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 27 bonds 31
      RDKit          2D
@@ -2604,6 +2664,9 @@ False
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 25 bonds 27
      RDKit          2D
@@ -2695,6 +2758,9 @@ False
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 43 bonds 48
@@ -2826,6 +2892,9 @@ False
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 42 bonds 47
      RDKit          2D
@@ -2954,6 +3023,9 @@ False
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 21 bonds 24
      RDKit          2D
@@ -3037,6 +3109,9 @@ False
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 34 bonds 38
@@ -3148,6 +3223,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 42 bonds 47
@@ -3277,6 +3355,9 @@ False
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 36 bonds 40
      RDKit          2D
@@ -3391,6 +3472,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 43 bonds 47
@@ -3520,6 +3604,9 @@ COc1cc2c(-c3cnn4cc(N5CCC(N6CCN(C)CC6)CC5)cnc34)ccnc2cc1F.O=C(O)CCC(=O)O
 
 >  <flag>
 mixture
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 45 bonds 51
@@ -3656,6 +3743,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 34 bonds 38
      RDKit          2D
@@ -3766,6 +3856,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 45 bonds 49
@@ -3900,6 +3993,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 37 bonds 41
      RDKit          2D
@@ -4017,6 +4113,9 @@ False
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 empty mol
      RDKit          2D
@@ -4053,6 +4152,9 @@ empty mol
 
 >  <flag>
 empty mol
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 30 bonds 34
@@ -4157,6 +4259,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 24 bonds 26
      RDKit          2D
@@ -4246,6 +4351,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 22 bonds 25
      RDKit          2D
@@ -4331,6 +4439,9 @@ False
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 40 bonds 44
@@ -4454,6 +4565,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 58 bonds 55
@@ -4607,6 +4721,9 @@ False
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 40 bonds 44
      RDKit          2D
@@ -4730,6 +4847,9 @@ False
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 26 bonds 26
      RDKit          2D
@@ -4819,6 +4939,9 @@ False
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 31 bonds 34
@@ -4918,6 +5041,9 @@ False
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 14 bonds 16
      RDKit          2D
@@ -4980,6 +5106,9 @@ False
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 29 bonds 32
@@ -5081,6 +5210,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 252 bonds 257
@@ -5580,6 +5712,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 26 bonds 29
      RDKit          2D
@@ -5673,6 +5808,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 38 bonds 42
@@ -5791,6 +5929,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 29 bonds 32
      RDKit          2D
@@ -5891,6 +6032,9 @@ False
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 43 bonds 48
      RDKit          2D
@@ -5975,12 +6119,12 @@ atoms 43 bonds 48
  22 30  1  0
  30 31  2  0
  13 32  1  0
- 32 37  2  0
- 32 33  1  0
- 33 34  2  0
- 34 35  1  0
- 35 36  2  0
- 36 37  1  0
+ 32 37  1  0
+ 32 33  2  0
+ 33 34  1  0
+ 34 35  2  0
+ 35 36  1  0
+ 36 37  2  0
  37 38  1  0
  10 39  1  0
  39 40  1  0
@@ -6020,6 +6164,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 34 bonds 36
@@ -6130,6 +6277,9 @@ Cc1[nH]c(/C=C2\C(=O)Nc3ccc(F)cc32)c(C)c1C(=O)NCCN1CCCC1.O=P(O)(O)O
 >  <flag>
 mixture
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 22 bonds 22
      RDKit          2D
@@ -6212,6 +6362,9 @@ False
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 36 bonds 42
@@ -6330,6 +6483,9 @@ False
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 31 bonds 35
      RDKit          2D
@@ -6435,6 +6591,9 @@ False
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 30 bonds 34
      RDKit          2D
@@ -6475,8 +6634,8 @@ atoms 30 bonds 34
   3  7  1  0
   3  4  2  0
   4  5  1  0
-  5 29  2  0
-  5  6  1  0
+  5 29  1  0
+  5  6  2  0
   6  7  1  0
   7  8  1  0
   8 25  1  0
@@ -6499,10 +6658,10 @@ atoms 30 bonds 34
  22 23  1  0
  23 24  1  0
  18 25  2  0
-  6 26  2  0
- 26 27  1  0
- 27 28  2  0
- 28 29  1  0
+  6 26  1  0
+ 26 27  2  0
+ 27 28  1  0
+ 28 29  2  0
   2 30  1  0
 M  END
 >  <ID_SET>
@@ -6537,6 +6696,9 @@ False
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 38 bonds 42
@@ -6657,6 +6819,9 @@ False
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 30 bonds 34
      RDKit          2D
@@ -6760,6 +6925,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 empty mol
      RDKit          2D
@@ -6796,6 +6964,9 @@ empty mol
 
 >  <flag>
 empty mol
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 29 bonds 33
@@ -6897,6 +7068,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 42 bonds 46
@@ -7023,6 +7197,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 37 bonds 41
      RDKit          2D
@@ -7080,11 +7257,11 @@ atoms 37 bonds 41
  11 12  2  0
  12 13  1  0
  13 14  1  0
- 14 29  2  0
- 14 15  1  0
- 15 16  2  0
- 16 17  1  0
- 17 18  2  0
+ 14 29  1  0
+ 14 15  2  0
+ 15 16  1  0
+ 16 17  2  0
+ 17 18  1  0
  18 19  1  0
  19 28  1  0
  19 20  2  0
@@ -7096,7 +7273,7 @@ atoms 37 bonds 41
  24 26  1  0
  26 27  1  0
  26 28  2  0
- 18 29  1  0
+ 18 29  2  0
  10 30  1  0
  30 31  1  0
   8 31  2  0
@@ -7137,6 +7314,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 38 bonds 42
@@ -7257,6 +7437,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 25 bonds 28
      RDKit          2D
@@ -7348,6 +7531,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 28 bonds 30
@@ -7442,6 +7628,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 34 bonds 38
      RDKit          2D
@@ -7494,10 +7683,10 @@ atoms 34 bonds 38
   2 10  1  0
  10 11  1  0
  10 12  1  0
- 12 34  2  0
- 12 13  1  0
- 13 14  2  0
- 14 32  1  0
+ 12 34  1  0
+ 12 13  2  0
+ 13 14  1  0
+ 14 32  2  0
  14 15  1  0
  15 16  2  0
  16 17  1  0
@@ -7517,8 +7706,8 @@ atoms 34 bonds 38
  16 30  1  0
  30 31  2  0
  31 32  1  0
- 32 33  2  0
- 33 34  1  0
+ 32 33  1  0
+ 33 34  2  0
 M  END
 >  <ID_SET>
 set_3
@@ -7552,6 +7741,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 40 bonds 44
@@ -7676,6 +7868,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 37 bonds 40
      RDKit          2D
@@ -7792,6 +7987,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 27 bonds 30
      RDKit          2D
@@ -7888,6 +8086,9 @@ False
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 37 bonds 40
@@ -8002,6 +8203,9 @@ True
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$
 atoms 40 bonds 45
@@ -8127,6 +8331,9 @@ True
 >  <flag>
 -
 
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
+
 $$$$
 atoms 19 bonds 21
      RDKit          2D
@@ -8205,5 +8412,8 @@ False
 
 >  <flag>
 -
+
+>  <Clustering_method>
+Clustering performed by ProtoQSAR, S.L., 2024
 
 $$$$

@@ -417,7 +417,7 @@ for cleanendpoint, value in info_dict.items():
                                           f'{endpoint} predicted value' : f'{cleanendpoint}_predicted_value',
                                           'AD_ProtoPRED': f'{cleanendpoint}_AD'}, inplace = True)
         
-        df_pred_selcols[f'{cleanendpoint}_info'] = info_dict[cleanendpoint]['explanation'] * df_pred_selcols.shape[0] 
+        #df_pred_selcols[f'{cleanendpoint}_info'] = info_dict[cleanendpoint]['explanation'] * df_pred_selcols.shape[0] 
 
         mergedbyendpoint = pd.concat([mergedbyendpoint,df_pred_selcols], axis = 0)
         
@@ -426,6 +426,8 @@ for cleanendpoint, value in info_dict.items():
     mergedbyendpoint.set_index('SMILES', inplace = True)
     
     mergedallendpoints = pd.concat([mergedallendpoints,mergedbyendpoint], axis = 1)
+    
+    print(mergedallendpoints.shape)
     
     
 dict_allpredictions = mergedallendpoints.T.to_dict(orient = 'dict') 
@@ -470,7 +472,7 @@ for name, dictiocluster in zip(dictios_names, dictios_with_cluster):
         PandasTools.WriteSDF(df_again2, buf, properties=list(df_again2.columns))
         sdf = buf.getvalue()
     sdf = strip_number.sub(r"\1", sdf)
-    with open(results_folder_with_clustering + os.path.sep + f'{name}_clustered_predicted.sdf', "w") as hnd:
+    with open(results_folder_with_clustering + os.path.sep + f'{name}_predicted_renamed.sdf', "w") as hnd:
         hnd.write(sdf)            
 
 
