@@ -1,46 +1,46 @@
-index;Pred_Water solubility model (IRFMN)-prediction [-log(mol/L)];Exp_Water solubility model (IRFMN)-assessment;AD_Water solubility model (IRFMN)-assessment
-0;7.39;;0
-1;-0.49;72290.53;1
-2;2.71;;0
-3;2.64;;0
-4;2.9;50.03;1
-5;5.61;;0
-6;0.88;16422.94;1
-7;4.38;;0
-8;1.64;11001.28;1
-9;4.65;;1
-10;2.16;;1
-11;3.09;;1
-12;5.5;;0
-13;7.68;;0
-14;-0.55;1000883.19;1
-15;-1.35;999655.97;1
-16;6.87;0.0;1
-17;5.65;;0
-18;3.58;;0
-19;1.95;;0
-20;3.73;0.6;1
-21;6.14;;0
-22;3.98;;0
-23;0.66;;0
-24;-0.3;545327.8;1
-25;1.92;2000.26;1
-26;-0.39;;1
-27;-0.73;;1
-28;4.43;;0
-29;1.0;1908.8;1
-30;0.98;;0
-31;0.71;58970.58;1
-32;0.35;;1
-33;1.45;;0
-34;0.78;1000015.56;1
-35;0.67;111034.43;1
-36;-0.66;1001017.52;1
-37;1.34;2402.9;1
-38;7.0;;0
-39;4.61;;1
-40;3.19;;1
-41;5.63;;0
-42;3.6;;0
-43;2.45;;0
-44;7.48;;0
+index;tId;SMILES;Pred_Water solubility model (IRFMN)-prediction [-log(mol/L)];Exp_Water solubility model (IRFMN)-assessment;AD_Water solubility model (IRFMN)-assessment
+0;Molecule 1;O=C(OCCCCCCCC(C)C)c1ccc(C(=O)OCCCCCCCC(C)C)c(c1)C(=O)OCCCCCCCC(C)C;7.39;;0
+1;Molecule 2;OCC(CO)(CO)CO;-0.49;72290.53;1
+2;Molecule 3;n1nn(c2ccccc12)C;2.71;;0
+3;Molecule 4;n1nc2ccccc2([n-]1);2.64;;0
+4;Molecule 5;C=CCCCC;2.9;50.03;1
+5;Molecule 6;c1ccc(cc1)N(c3cccc2ccccc23)C(C)(C)CC(C)(C)C;5.61;;0
+6;Molecule 7;OC(C)CC(C)C;0.88;16422.94;1
+7;Molecule 8;OC(C)CSCCCCCCCCC(C)(C)C;4.38;;0
+8;Molecule 9;OC(C)COc1ccccc1;1.64;11001.28;1
+9;Molecule 10;c1ccc(cc1)SCCSc2ccccc2;4.65;;1
+10;Molecule 11;O=C([O-])c1ccccc1([O-]);2.16;;1
+11;Molecule 12;O=C(O)CC(C(=O)O)CCCCCCCCCC;3.09;;1
+12;Molecule 13;O=C(OCC(CC)CCCC)CC(C(=O)OCC(CC)CCCC)S(=O)(=O)[O-];5.5;;0
+13;Molecule 14;C(N(CCCC)CCCC)(=S)SCSC(N(CCCC)CCCC)=S;7.68;;0
+14;Molecule 15;OCCOCCOCCOCCO;-0.55;1000883.19;1
+15;Molecule 16;OCCNCCO;-1.35;999655.97;1
+16;Molecule 17;O=C(OCCCCCCCC(C)C)CCCCC(=O)OCCCCCCCC(C)C;6.87;0.0;1
+17;Molecule 18;O=C(O)CCCCCCCCCCCCCCC(C)C;5.65;;0
+18;Molecule 19;O=C(O)CCCCCCCCCCC(O)CCCCCC;3.58;;0
+19;Molecule 20;O=C([O-])CCCC(=O)[O-];1.95;;0
+20;Molecule 21;Oc1c(cc(cc1C(C)(C)C)C)C(C)(C)C;3.73;0.6;1
+21;Molecule 22;O(c1ccccc1)P(Oc2ccccc2)(Oc3ccccc3)=S;6.14;;0
+22;Molecule 23;O(c1ccccc1)P(Oc2ccccc2)Oc3ccccc3;3.98;;0
+23;Molecule 24;OCCOCCOCCOCCOCCOCCCC;0.66;;0
+24;Molecule 25;O=C(N)N;-0.3;545327.8;1
+25;Molecule 26;O=C(O)C(CC)CCCC;1.92;2000.26;1
+26;Molecule 27;O=C(O)C=C;-0.39;;1
+27;Molecule 28;O=C1OC(C(O)=C1([O-]))C(O)CO;-0.73;;1
+28;Molecule 29;O=C(OCC(CC)CCCC)CCc1cc(c(O)c(c1)C(C)(C)C)C(C)(C)C;4.43;;0
+29;Molecule 30;O=C(O)C=CC=CC;1.0;1908.8;1
+30;Molecule 31;O=C;0.98;;0
+31;Molecule 32;O=C(OC)CCCC(=O)OC;0.71;58970.58;1
+32;Molecule 33;O=C(OC)CCC(=O)OC;0.35;;1
+33;Molecule 34;O=C(NCCC[N+]([O-])(C)C)CCCCCCCCCCC;1.45;;0
+34;Molecule 35;O=C(O)C(N)CCCCN;0.78;1000015.56;1
+35;Molecule 36;O=CC(O)C(O)C(OC1OC(CO)C(O)C(O)C1(O))C(O)CO;0.67;111034.43;1
+36;Molecule 37;OCC(O)C;-0.66;1001017.52;1
+37;Molecule 38;O=C(O)CCCCCCCC(=O)O;1.34;2402.9;1
+38;Molecule 39;O=C(OCCCCCCCCCCC(C)C)CCCCC(=O)OCCCCCCCCCCC(C)C;7.0;;0
+39;Molecule 40;O1CC1CCCCCCCCCC;4.61;;1
+40;Molecule 41;O=C(OC)C(CC)CCCC;3.19;;1
+41;Molecule 42;c1ccc(cc1)Cc2ccccc2C;5.63;;0
+42;Molecule 43;O=C([O-])CCCCCCCC(=O)[O-];3.6;;0
+43;Molecule 44;O=C([O-])CCCCC(=O)[O-];2.45;;0
+44;Molecule 45;O=P(Oc1ccc(cc1)C(C)C)(Oc2ccc(cc2)C(C)C)Oc3ccc(cc3)C(C)C;7.48;;0

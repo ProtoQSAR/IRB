@@ -31,7 +31,7 @@ config_file_tools = 'config_predictions_tools.xlsx'
 
 delimite_endpoints = True
 
-merge_ONTOX = True #delimite_endpoints should be True
+merge_ONTOX = False #delimite_endpoints should be True
 
 ##############################################################################
 
@@ -88,6 +88,8 @@ def collect_files(folder):
 def merge_files(list_files, path_for_files, tool, equivalence_in_tool, mode):
 
     list_to_merge = []
+
+    models = []
     for file in list_files:
 
         if tool == 'ADMETLab3_tool':
@@ -96,6 +98,7 @@ def merge_files(list_files, path_for_files, tool, equivalence_in_tool, mode):
             if 'molstr' in df.columns: # this generates conflicts and is the mol representation
                 df = df.drop('molstr', axis = 1)
             list_to_merge.append(df)
+            
 
         elif tool == 'ProtoPRED_tool':
 
@@ -118,8 +121,6 @@ def merge_files(list_files, path_for_files, tool, equivalence_in_tool, mode):
             models = detectar_skiprow(path_for_files + os.path.sep + file + '.txt', return_models=True)
 
 
-
-            print(models)
             if mode=="inputfiles":
                 df = pd.read_csv(
                     path_for_files + os.path.sep + file + '.txt',
@@ -152,7 +153,7 @@ def merge_files(list_files, path_for_files, tool, equivalence_in_tool, mode):
 
                     new_columns_exp[f'Exp_{col_name}'] = np.where(
                     df[col_name].str.contains("EXPERIMENTAL"), 
-                    df[col_name].str.extract(r'([\d.]+)')[0].astype(float).apply(lambda x: round(x, 2)), 
+                    df[col_name].str.extract(r'(-?[\d.]+)')[0].astype(float).apply(lambda x: round(x, 2)), 
                     np.nan  
                     )
                     # new_columns_AD[f'AD_{col_name}'] =  df[col_name].str.extract(r'\((.*?)\)') 
@@ -168,13 +169,19 @@ def merge_files(list_files, path_for_files, tool, equivalence_in_tool, mode):
 
                 for col_name, col_data in new_columns_AD.items():
                     df[col_name] = col_data
-                filtered_columns = df.filter(regex=r'^(Exp|AD|Pred)', axis=1)
+                filtered_columns = df.filter(regex=r'^(tId|SMILES|Exp|AD|Pred)', axis=1)
                 df = filtered_columns
                 print(df.head())
                 print(df.columns)
 
             list_to_merge.append(df)
 
+            
+        elif 'EXPERIMENTAL' in tool: #"""Modified by Vicente 12/12/2024. Add Experimental tool"""
+            """_summary_ añadir valores experimentales, de clasificación o regresión + columna SMILES """
+            df = pd.read_csv(path_for_files + os.path.sep + file + '.csv', sep = ";", lineterminator='\n')
+            print(df)
+            list_to_merge.append(df)
         elif tool == 'PKCSM_tool':
 
             df = pd.read_csv(path_for_files + os.path.sep + file + '.csv', sep = '\t', lineterminator='\n')
@@ -186,6 +193,7 @@ def merge_files(list_files, path_for_files, tool, equivalence_in_tool, mode):
 
             list_to_merge.append(df)
 
+    
 
     merged_file = pd.concat(list_to_merge)
 
@@ -193,7 +201,7 @@ def merge_files(list_files, path_for_files, tool, equivalence_in_tool, mode):
 
     file_name = list_files[0].split('_part')[0]
 
-    return merged_file, file_name
+    return merged_file, file_name, models
 
 
 def conversion(row, units, desired_units):
@@ -326,7 +334,12 @@ def ts_ProtoPRED(row):
 
     ts = 0 if (row == '-' or pd.isnull(row) or row == 'N/A') else 1
     return ts
-
+def exp_ProtoPRED():
+    np.where(
+                    df["Experimental numerical"].str.contains("-"), 
+                    np.nan, 
+                    df["Experimental numerical"].astype(float))  
+                    
 
 def sanitize_smiles(row):
     mol = Chem.MolFromSmiles(row)
@@ -358,6 +371,7 @@ df_tools_enpoints = pd.read_excel(config_file_tools, sheet_name = 'properties_to
 df_tools_enpoints = df_tools_enpoints.drop('Category', axis = 1)
 
 dict_tools_enpoints = df_tools_enpoints.set_index('Tool_column').T.to_dict(orient = 'list')
+
 
 
 # for tools equivalence in names
@@ -421,261 +435,330 @@ for dataset, info in config_df.iterrows():
     print('  [++] Merging prediction files')
 
     for tool in tools_to_process:
+        if tool != 'VEGA_tool' and tool != "EXPERIMENTAL_tool":
 
-        print(f'\t[+++] Analysing "{tool}" tool')
+            print('melon')
+            print(f'\t[+++] Analysing "{tool}" tool')
 
-        tag_tool = tool.split('_')[0]
+            tag_tool = tool.split('_')[0]
 
-        if 'SwissADME' in tool:
-
-
-            tool_folder = results_folder + os.path.sep + 'SwissADME_tool'
-
-        else:
-
-            tool_folder = results_folder + os.path.sep + tool
+            if 'SwissADME' in tool:
 
 
-        files_to_predict_folder = tool_folder + os.path.sep + 'inputs'
-        files_predicted_folder = tool_folder + os.path.sep + 'predictions'
-
-        equivalence_in_tool = df_tools_enpoint_names.loc[tag,tool]
-        print(equivalence_in_tool,"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
-
-
-
-
-        #collect files to be predicted
-        files_topredict_property = collect_files(files_to_predict_folder)
-
-
-
-        #collect files predicted
-        files_predicted_property = collect_files(files_predicted_folder)
-
-        if tool != 'vNNADMET_tool':
-            ########### compare files ---> FIRST CHECK
-            input_to_output = [name.replace('input','output') for name in files_topredict_property]
-            different = set(input_to_output).difference(set(files_predicted_property))
-
-            if len(different) > 0:
-
-                print(f'\t\t {len(files_topredict_property)} files in input')
-                print(f'\t\t {len(files_predicted_property)} files will be processed')
-
-                print('\t\t WARNING!!!! some input files have not prediction')
-                print('\t\t processing cannot continue')
-                break
-            else:
-                print(f'\t\t {len(files_topredict_property)} files in input')
-                print(f'\t\t {len(files_predicted_property)} files will be processed')
-
-
-
-            # merge input files
-
-            merged_input, file_name_input = merge_files(files_topredict_property, files_to_predict_folder, tool, equivalence_in_tool, mode = 'inputfiles')
-            # merge output files
-
-            merged_output, file_name_output = merge_files(files_predicted_property, files_predicted_folder, tool, equivalence_in_tool, mode = 'outputfiles')
-
-
-
-            smile_column_from_tool = config_df_tools.loc[tool, 'smiles_output']
-            id_column_from_tool = config_df_tools.loc[tool, 'id_output']
-
-
-            merged_output.rename(columns = {smile_column_from_tool : f'SMILES_{tag_tool}',id_column_from_tool : f'ID_{tag_tool}' }, inplace = True)
-
-            # if pd.isnull(id_column_from_tool):
-            #     merged_output.index.name = f'ID_{tag_tool}'
-            #     merged_output.reset_index(inplace = True)
-
-            ########### compare number of molecules ---> SECOND CHECK
-
-            if merged_input.shape[0] != merged_output.shape[0]:
-                print(f'\t\t WARNING!!!! number of input molecules {merged_input.shape[0]} != number of output molecules {merged_output.shape[0]}')
+                tool_folder = results_folder + os.path.sep + 'SwissADME_tool'
 
             else:
-                print(f'\t\t {merged_output.shape[0]} molecules found')
 
-        
+                tool_folder = results_folder + os.path.sep + tool
 
-        else:
 
-            try:
-                restricted = [x for x in files_predicted_property if '_restricted' in x]
-                restricted_df = pd.read_csv(files_predicted_folder + os.path.sep + restricted[0] + '.csv')
-                restricted_df_columns = [f'{col}_restricted' for col in restricted_df]
-                restricted_df.columns = restricted_df_columns
-                restricted_df.set_index('Query_restricted')
+            files_to_predict_folder = tool_folder + os.path.sep + 'inputs'
+            files_predicted_folder = tool_folder + os.path.sep + 'predictions'
 
-                unrestricted = [x for x in files_predicted_property if '_unrestricted' in x]
-                unrestricted_df = pd.read_csv(files_predicted_folder + os.path.sep + unrestricted[0] + '.csv')
-                unrestricted_df_columns = [f'{col}_unrestricted' for col in unrestricted_df]
-                unrestricted_df.columns = unrestricted_df_columns
-                unrestricted_df.set_index('Query_unrestricted')
+            equivalence_in_tool = df_tools_enpoint_names.loc[tag,tool]
+            print(equivalence_in_tool,"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
 
-                merged_output = pd.concat([restricted_df, unrestricted_df], axis = 1)
+
+
+
+            #collect files to be predicted
+            files_topredict_property = collect_files(files_to_predict_folder)
+
+
+
+            #collect files predicted
+            files_predicted_property = collect_files(files_predicted_folder)
+
+            if tool != 'vNNADMET_tool':
+                ########### compare files ---> FIRST CHECK
+                input_to_output = [name.replace('input','output') for name in files_topredict_property]
+                different = set(input_to_output).difference(set(files_predicted_property))
+
+                if len(different) > 0:
+
+                    print(f'\t\t {len(files_topredict_property)} files in input')
+                    print(f'\t\t {len(files_predicted_property)} files will be processed')
+
+                    print('\t\t WARNING!!!! some input files have not prediction')
+                    print('\t\t processing cannot continue')
+                    break
+                else:
+                    print(f'\t\t {len(files_topredict_property)} files in input')
+                    print(f'\t\t {len(files_predicted_property)} files will be processed')
+
+
+
+                # merge input files
+
+                merged_input, file_name_input, models = merge_files(files_topredict_property, files_to_predict_folder, tool, equivalence_in_tool, mode = 'inputfiles')
+                # merge output files
+
+                merged_output, file_name_output, models = merge_files(files_predicted_property, files_predicted_folder, tool, equivalence_in_tool, mode = 'outputfiles')
+
+                print(models,"BBBBBBBBBBBBBBBBB")
 
                 smile_column_from_tool = config_df_tools.loc[tool, 'smiles_output']
                 id_column_from_tool = config_df_tools.loc[tool, 'id_output']
 
+
                 merged_output.rename(columns = {smile_column_from_tool : f'SMILES_{tag_tool}',id_column_from_tool : f'ID_{tag_tool}' }, inplace = True)
 
+                # if pd.isnull(id_column_from_tool):
+                #     merged_output.index.name = f'ID_{tag_tool}'
+                #     merged_output.reset_index(inplace = True)
 
-                file_name_output = restricted[0].strip('_restricted')
-            except:
-                print('\t\t WARNING!!!! some input files have not prediction')
-                print('\t\t processing cannot continue')
-                break
+                ########### compare number of molecules ---> SECOND CHECK
 
+                if merged_input.shape[0] != merged_output.shape[0]:
+                    print(f'\t\t WARNING!!!! number of input molecules {merged_input.shape[0]} != number of output molecules {merged_output.shape[0]}')
 
-        merged_files_folder = results_folder + os.path.sep + tool + os.path.sep + 'merged_predictions_all'
-        create_dir_for_io(merged_files_folder)
-        merged_output.to_csv(merged_files_folder + os.path.sep + file_name_output + '_allcolumns.csv', sep = ';', index = False)
-
-
-
-        if delimite_endpoints == True:
-            if tool=="VEGA_tool":
-                if equivalence_in_tool=="MM":
-                
-
-            # if tool == "VEGA_tool":
-
-            #     for model in models:
-
-
-
-
-
-                        merged_output.rename(columns={"SIMLES":f"SMILES_{tag_tool}"},inplace=True)
-            if tool == 'ProtoPRED_tool':
-
-                ''' just an exception on WS to get the value in logM to avoid internal conversion'''
-                ###############################################################
-
-                if endpoint == 'WS':
-
-                    # cols = ['Other Regulatory ID',	'SMILES',	'Experimental numerical (common units)',	'Predicted numerical (model units)','Applicability domain**'] """Modified by Vicente 09/12/2024. Motive: Change in column name of Protopred predictions"""
-                    cols = ['Other Regulatory ID',	'SMILES',	'Experimental numerical (model units)',	'Predicted numerical (model units)','Applicability domain**']
-                    merged_output.rename(columns = {'Other Regulatory ID' : f'ID_{tag_tool}',
-                                                'SMILES' : f'SMILES_{tag_tool}',
-                                                'Experimental numerical (common units)': f'exp_{tag_tool}_{endpoint}',
-                                                'Predicted numerical (model units)': f'pred_{tag_tool}_{endpoint}',
-
-                                                }, inplace = True)
-                    print(merged_output.columns)
                 else:
+                    print(f'\t\t {merged_output.shape[0]} molecules found')
 
-                    cols = ['Other Regulatory ID',	'SMILES',	'Experimental numerical',	'Predicted numerical','Applicability domain**']
-
-
-
-
-
-                    merged_output.rename(columns = {'Other Regulatory ID' : f'ID_{tag_tool}',
-                                                'SMILES' : f'SMILES_{tag_tool}',
-                                                'Experimental numerical': f'exp_{tag_tool}_{endpoint}',
-                                                'Predicted numerical': f'pred_{tag_tool}_{endpoint}',
-
-                                                }, inplace = True)
-
-
-                 ###############################################################
-                merged_output[f'AD_{tag_tool}_{endpoint}'] = merged_output.apply(lambda row: ad_ProtoPRED(row['Applicability domain**']), axis=1)
-                merged_output[f'in_TS_{tag_tool}_{endpoint}'] = merged_output.apply(lambda row: ts_ProtoPRED(row[f'exp_{tag_tool}_{endpoint}']), axis=1)
-
-
-                cols = [f'ID_{tag_tool}', f'SMILES_{tag_tool}', f'exp_{tag_tool}_{endpoint}',f'pred_{tag_tool}_{endpoint}',f'AD_{tag_tool}_{endpoint}',f'in_TS_{tag_tool}_{endpoint}' ]
-
-
-
-
-
-
-
+            
 
             else:
-                if tool == 'vNNADMET_tool':
+
+                try:
+                    restricted = [x for x in files_predicted_property if '_restricted' in x]
+                    restricted_df = pd.read_csv(files_predicted_folder + os.path.sep + restricted[0] + '.csv')
+                    restricted_df_columns = [f'{col}_restricted' for col in restricted_df]
+                    restricted_df.columns = restricted_df_columns
+                    restricted_df.set_index('Query_restricted')
+
+                    unrestricted = [x for x in files_predicted_property if '_unrestricted' in x]
+                    unrestricted_df = pd.read_csv(files_predicted_folder + os.path.sep + unrestricted[0] + '.csv')
+                    unrestricted_df_columns = [f'{col}_unrestricted' for col in unrestricted_df]
+                    unrestricted_df.columns = unrestricted_df_columns
+                    unrestricted_df.set_index('Query_unrestricted')
+
+                    merged_output = pd.concat([restricted_df, unrestricted_df], axis = 1)
+
+                    smile_column_from_tool = config_df_tools.loc[tool, 'smiles_output']
+                    id_column_from_tool = config_df_tools.loc[tool, 'id_output']
+
+                    merged_output.rename(columns = {smile_column_from_tool : f'SMILES_{tag_tool}',id_column_from_tool : f'ID_{tag_tool}' }, inplace = True)
 
 
-                    merged_output[f'AD_{tag_tool}_{endpoint}'] = merged_output.apply(lambda row: ad_vnnadmet(row, equivalence_in_tool), axis=1)
+                    file_name_output = restricted[0].strip('_restricted')
+                except:
+                    print('\t\t WARNING!!!! some input files have not prediction')
+                    print('\t\t processing cannot continue')
+                    break
 
-                    merged_output.rename(columns= {f'{equivalence_in_tool}_unrestricted' : f'pred_{tag_tool}_{endpoint}',
-                                                   f'{equivalence_in_tool}_restricted' : f'pred_{tag_tool}_{endpoint}_forad'}, inplace =True)
+
+            merged_files_folder = results_folder + os.path.sep + tool + os.path.sep + 'merged_predictions_all'
+            create_dir_for_io(merged_files_folder)
+            merged_output.to_csv(merged_files_folder + os.path.sep + file_name_output + '_allcolumns.csv', sep = ';', index = False)
 
 
 
-                    cols = [f'ID_{tag_tool}', f'SMILES_{tag_tool}', f'pred_{tag_tool}_{endpoint}', f'pred_{tag_tool}_{endpoint}_forad', f'AD_{tag_tool}_{endpoint}' ]
+            if delimite_endpoints == True:
+
+
+
+
+
+
+                if tool == 'ProtoPRED_tool':
+
+                    ''' just an exception on WS to get the value in logM to avoid internal conversion'''
+                    ###############################################################
+
+                    if endpoint == 'WS':
+
+                        # cols = ['Other Regulatory ID',	'SMILES',	'Experimental numerical (common units)',	'Predicted numerical (model units)','Applicability domain**'] """Modified by Vicente 09/12/2024. Motive: Change in column name of Protopred predictions"""
+                        cols = ['Other Regulatory ID',	'SMILES',	'Experimental numerical (model units)',	'Predicted numerical (model units)','Applicability domain**']
+                        merged_output.rename(columns = {'Other Regulatory ID' : f'ID_{tag_tool}',
+                                                    'SMILES' : f'SMILES_{tag_tool}',
+                                                    'Experimental numerical (common units)': f'exp_{tag_tool}_{endpoint}',
+                                                    'Predicted numerical (model units)': f'pred_{tag_tool}_{endpoint}',
+
+                                                    }, inplace = True)
+                        print(merged_output.columns)
+                    else:
+
+                        cols = ['Other Regulatory ID',	'SMILES',	'Experimental numerical',	'Predicted numerical','Applicability domain**']
+
+
+
+
+
+                        merged_output.rename(columns = {'Other Regulatory ID' : f'ID_{tag_tool}',
+                                                    'SMILES' : f'SMILES_{tag_tool}',
+                                                    'Experimental numerical': f'exp_{tag_tool}_{endpoint}',
+                                                    'Predicted numerical': f'pred_{tag_tool}_{endpoint}',
+
+                                                    }, inplace = True)
+
+
+                    ###############################################################
+                    merged_output[f'AD_{tag_tool}_{endpoint}'] = merged_output.apply(lambda row: ad_ProtoPRED(row['Applicability domain**']), axis=1)
+                    merged_output[f'in_TS_{tag_tool}_{endpoint}'] = merged_output.apply(lambda row: ts_ProtoPRED(row[f'exp_{tag_tool}_{endpoint}']), axis=1)
+
+
+                    cols = [f'ID_{tag_tool}', f'SMILES_{tag_tool}', f'exp_{tag_tool}_{endpoint}',f'pred_{tag_tool}_{endpoint}',f'AD_{tag_tool}_{endpoint}',f'in_TS_{tag_tool}_{endpoint}' ]
+
+
+
+
+
+
 
 
                 else:
+                    if tool == 'vNNADMET_tool':
 
-                    if pd.notnull(id_column_from_tool):
 
-                        cols = [f'ID_{tag_tool}', f'SMILES_{tag_tool}', equivalence_in_tool]
+                        merged_output[f'AD_{tag_tool}_{endpoint}'] = merged_output.apply(lambda row: ad_vnnadmet(row, equivalence_in_tool), axis=1)
+
+                        merged_output.rename(columns= {f'{equivalence_in_tool}_unrestricted' : f'pred_{tag_tool}_{endpoint}',
+                                                    f'{equivalence_in_tool}_restricted' : f'pred_{tag_tool}_{endpoint}_forad'}, inplace =True)
+
+
+
+                        cols = [f'ID_{tag_tool}', f'SMILES_{tag_tool}', f'pred_{tag_tool}_{endpoint}', f'pred_{tag_tool}_{endpoint}_forad', f'AD_{tag_tool}_{endpoint}' ]
+
 
                     else:
-                        cols = [f'SMILES_{tag_tool}', equivalence_in_tool]
 
-            merged_output_selcols = merged_output[cols]
+                        if pd.notnull(id_column_from_tool):
+
+                            cols = [f'ID_{tag_tool}', f'SMILES_{tag_tool}', equivalence_in_tool]
+
+                        
+
+                        else:
+                            cols = [f'SMILES_{tag_tool}', equivalence_in_tool]
+
+                merged_output_selcols = merged_output[cols]
 
 
-            merged_output_selcols.rename(columns = {equivalence_in_tool : f'pred_{tag_tool}_{endpoint}'}, inplace = True)
-
-
-
-            predicted_units = df_tools_enpoint_units.loc[tag,tool]
-
-            desired_units = config_df.loc[dataset,'desired_units']
-
-            if tool == 'ADMETLab3_tool':
-                predicted_units = predicted_units.split(':')[0]
-
-                if 'class' in desired_units:
-
-                    merged_output_selcols[f'AD_{tag_tool}_{endpoint}'] = merged_output.apply(lambda row: ad_ADMETlab(row, equivalence_in_tool, desired_units), axis=1)
+                merged_output_selcols.rename(columns = {equivalence_in_tool : f'pred_{tag_tool}_{endpoint}'}, inplace = True)
 
 
 
-            # print(desired_units, 'desired_units')
+                predicted_units = df_tools_enpoint_units.loc[tag,tool]
 
-            # print(predicted_units, 'predicted_units')
+                desired_units = config_df.loc[dataset,'desired_units']
 
-            merged_output_selcols[f'units_{tag_tool}_{endpoint}'] = predicted_units
+                if tool == 'ADMETLab3_tool':
+                    predicted_units = predicted_units.split(':')[0]
 
-            merged_output_selcols[f'pred_{tag_tool}_{endpoint}_converted'] = merged_output_selcols.apply(lambda row: conversion(row[f'pred_{tag_tool}_{endpoint}'], predicted_units, desired_units), axis=1)
+                    if 'class' in desired_units:
 
-            merged_output_selcols[f'pred_{tag_tool}_{endpoint}_convertedunits'] = desired_units
-
-
-            merged_files_folder_selcols = results_folder + os.path.sep + tool + os.path.sep + 'merged_predictions_selcols'
-            create_dir_for_io(merged_files_folder_selcols)
-            merged_output_selcols.to_csv(merged_files_folder_selcols + os.path.sep + file_name_output + f'_{complete_endpoint}.csv', sep = ';', index = False)
-
-            merged_files_folder_selcols_together = results_folder + os.path.sep + 'together' + os.path.sep + f'{endpoint}'
-            create_dir_for_io(merged_files_folder_selcols_together)
-
-            merged_output_selcols.to_csv(merged_files_folder_selcols_together + os.path.sep + file_name_output + f'_{complete_endpoint}.csv', sep = ';', index = False)
+                        merged_output_selcols[f'AD_{tag_tool}_{endpoint}'] = merged_output.apply(lambda row: ad_ADMETlab(row, equivalence_in_tool, desired_units), axis=1)
 
 
 
+                # print(desired_units, 'desired_units')
+
+                # print(predicted_units, 'predicted_units')
+
+                merged_output_selcols[f'units_{tag_tool}_{endpoint}'] = predicted_units
+
+                merged_output_selcols[f'pred_{tag_tool}_{endpoint}_converted'] = merged_output_selcols.apply(lambda row: conversion(row[f'pred_{tag_tool}_{endpoint}'], predicted_units, desired_units), axis=1)
+
+                merged_output_selcols[f'pred_{tag_tool}_{endpoint}_convertedunits'] = desired_units
 
 
-            if merge_ONTOX == True:
-                processed_dfs[tag_tool] = {}
+                merged_files_folder_selcols = results_folder + os.path.sep + tool + os.path.sep + 'merged_predictions_selcols'
+                create_dir_for_io(merged_files_folder_selcols)
+                merged_output_selcols.to_csv(merged_files_folder_selcols + os.path.sep + file_name_output + f'_{complete_endpoint}.csv', sep = ';', index = False)
 
-                processed_dfs[tag_tool]['df'] = merged_output_selcols
-                processed_dfs[tag_tool]['pred_units'] = predicted_units
-                processed_dfs[tag_tool]['des_units'] = desired_units
+                merged_files_folder_selcols_together = results_folder + os.path.sep + 'together' + os.path.sep + f'{endpoint}'
+                create_dir_for_io(merged_files_folder_selcols_together)
+
+                merged_output_selcols.to_csv(merged_files_folder_selcols_together + os.path.sep + file_name_output + f'_{complete_endpoint}.csv', sep = ';', index = False)
+
+
+
+
+
+                if merge_ONTOX == True:
+                    processed_dfs[tag_tool] = {}
+
+                    processed_dfs[tag_tool]['df'] = merged_output_selcols
+                    processed_dfs[tag_tool]['pred_units'] = predicted_units
+                    processed_dfs[tag_tool]['des_units'] = desired_units
                 # if f'ID_{tag_tool}' in merged_output_selcols.columns:
                 #     processed_dfs[tag_tool]['idindf'] = 'yes'
                 # else:
                 #     processed_dfs[tag_tool]['idindf'] = 'no'
+        if tool=="VEGA_tool":
+            tag_tool = tool.split('_')[0]
+            equivalence_in_tool = df_tools_enpoint_names.loc[tag,tool]
+            tool_folder = results_folder + os.path.sep + tool
+            files_to_predict_folder = tool_folder + os.path.sep + 'inputs'
+            files_predicted_folder = tool_folder + os.path.sep + 'predictions'
+            #collect files to be predicted
+            files_topredict_property = collect_files(files_to_predict_folder)
 
 
+
+            #collect files predicted
+            files_predicted_property = collect_files(files_predicted_folder)
+            print('patata')
+            merged_input, file_name_input, models = merge_files(files_topredict_property, files_to_predict_folder, tool, equivalence_in_tool, mode = 'inputfiles')
+                # merge output files
+
+            merged_output, file_name_output, models = merge_files(files_predicted_property, files_predicted_folder, tool, equivalence_in_tool, mode = 'outputfiles')
+            
+            
+            if equivalence_in_tool=="MM":
+                # cols=merged_output.columns
+                print("AAAAAAAAAAAAAAAAAAAAAAA",merged_output.columns)
+
+                merged_output.rename(columns={"SMILES":f"SMILES_{tag_tool}","tId":f"ID_{tag_tool}"},inplace=True)
+                print("AAAAAAAAAAAAAAAAAAAAAAA",merged_output.columns)
+
+                for model2 in models:
+                    col_exp = f'Exp_{model2}-assessment'
+                    tagnuevo_exp = f'exp_{model2}_{tag_tool}_{endpoint}'
+
+                    col_AD = f'AD_{model2}-assessment'
+                    tagnuevo_AD = f'AD_{model2}_{tag_tool}_{endpoint}'
+
+                    col_pred = f'Pred_{model2}-prediction'
+                    tagnuevo_pred = f'pred_{model2}_{tag_tool}_{endpoint}'
+
+                    merged_output.rename(columns={
+                        col_exp: tagnuevo_exp,
+                        col_AD: tagnuevo_AD,
+                        col_pred: tagnuevo_pred
+                    }, inplace=True)
+                print(merged_output.columns)
+                merged_files_folder = results_folder + os.path.sep + tool + os.path.sep + 'merged_predictions_all'
+                create_dir_for_io(merged_files_folder)
+                merged_output.to_csv(merged_files_folder + os.path.sep + file_name_output + '_allcolumns.csv', sep = ';', index = False)
+        elif tool=="EXPERIMENTAL_tool":
+            print("CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC")
+            tag_tool = tool.split('_')[0]
+            print(tag_tool)
+            equivalence_in_tool = df_tools_enpoint_names.loc[tag,tool]
+            tool_folder = results_folder + os.path.sep + tool
+            files_to_predict_folder = tool_folder + os.path.sep + 'inputs'
+            files_predicted_folder = tool_folder + os.path.sep + 'predictions'
+            #collect files to be predicted
+            files_topredict_property = collect_files(files_to_predict_folder)
+
+
+
+            #collect files predicted
+            files_predicted_property = collect_files(files_predicted_folder)
+            print('patata')
+            merged_input, file_name_input, models = merge_files(files_topredict_property, files_to_predict_folder, tool, equivalence_in_tool, mode = 'inputfiles')
+                # merge output files
+
+            merged_output, file_name_output, models = merge_files(files_predicted_property, files_predicted_folder, tool, equivalence_in_tool, mode = 'outputfiles')
+            print("AAAAAAAAAAAAAAAAAAAAAAA",merged_output.columns)
+            if equivalence_in_tool=="EXPERIMENTAL":
+                print(equivalence_in_tool)
+                merged_output.rename(columns={"SMILES":f"SMILES_{tag_tool}","ID":f"ID_{tag_tool}"},inplace=True)
+                print("AAAAAAAAAAAAAAAAAAAAAAA",merged_output.columns)
+                merged_files_folder = results_folder + os.path.sep + tool + os.path.sep + 'merged_predictions_all'
+                create_dir_for_io(merged_files_folder)
+                merged_output.to_csv(merged_files_folder + os.path.sep + file_name_output + '_allcolumns.csv', sep = ';', index = False)
     print('\tAll files processed!!!!!')
 
 
