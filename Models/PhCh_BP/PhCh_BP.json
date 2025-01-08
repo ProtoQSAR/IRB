@@ -1,0 +1,30 @@
+{
+    "ATSC$ATSC6dv": {
+        "order": 6,
+        "prop": "dv"
+    },
+    "connectivity_index$X3sol": {
+        "order": 3,
+        "type": "sol",
+        "avg": false
+    },
+    "VSA_EState$VSA_EState3": {
+        "k": 3
+    },
+    "connectivity_index$X2sol": {
+        "order": 2,
+        "type": "sol",
+        "avg": false
+    },
+    "PEOE_VSA$PEOE_VSA8": {
+        "k": 8
+    },
+    "atom_centred$H-050": {
+        "key": "H-050"
+    },
+    "GATS$GATS1c": {
+        "order": 1,
+        "prop": "c"
+    },
+    "SLogP_PA$SLogP": {}
+}
