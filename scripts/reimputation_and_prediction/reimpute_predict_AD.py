@@ -346,7 +346,7 @@ if __name__ == '__main__':
 
 
 
-    option = 'reffit'
+    option = 'predict'
 
     calculate = 'WITH'
 
@@ -461,7 +461,7 @@ if __name__ == '__main__':
                 train_with_descriptors = pd.read_csv(results_folder + os.path.sep + f'raw_{mod_name}-descriptors-train.txt', sep ='\t')
                 test_with_descriptors = pd.read_csv(results_folder + os.path.sep + f'raw_{mod_name}-descriptors-test.txt', sep ='\t')
 
-            if type(model).__name__ == 'LGBMClassifier':
+            if type(model).__name__ == 'LGBMClassifier' or type(model).__name__ == 'LGBMRegressor':
                 train_with_descriptors = rename_cols_for_LGBM(train_with_descriptors)
                 test_with_descriptors = rename_cols_for_LGBM(test_with_descriptors)
 
