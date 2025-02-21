@@ -1,0 +1,71 @@
+{
+    "atom_centred$C-005": {
+        "key": "C-005"
+    },
+    "atom_centred$C-029": {
+        "key": "C-029"
+    },
+    "atom_centred$O-060": {
+        "key": "O-060"
+    },
+    "atom_centred$N-069": {
+        "key": "N-069"
+    },
+    "atom_centred$N-070": {
+        "key": "N-070"
+    },
+    "atom_centred$N-078": {
+        "key": "N-078"
+    },
+    "atom_centred$N-079": {
+        "key": "N-079"
+    },
+    "ATSC$ATSC1c": {
+        "prop": "c",
+        "order": 1
+    },
+    "ATSC$ATSC8Z": {
+        "prop": "Z",
+        "order": 8
+    },
+    "AATSC$AATSC0v": {
+        "prop": "v",
+        "order": 0
+    },
+    "GATS$GATS1dv": {
+        "prop": "dv",
+        "order": 1
+    },
+    "ICk$IC1": {
+        "order": 1
+    },
+    "topological_distance$B03[N-N]": {
+        "type": "binary",
+        "atoms": [
+            7,
+            7
+        ],
+        "distance": 3
+    },
+    "topological_distance$F09[C-N]": {
+        "type": "frequency",
+        "atoms": [
+            6,
+            7
+        ],
+        "distance": 9
+    },
+    "functional_group$nRCOO": {
+        "group": "nRCOO"
+    },
+    "functional_group$nArN": {
+        "group": "nArN"
+    },
+    "functional_group$nArCOO": {
+        "group": "nArCOO"
+    },
+    "functional_group$nOxime": {
+        "group": "nOxime"
+    },
+    "SLogP_PA$SLogP": {}
+}

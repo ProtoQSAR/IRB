@@ -1,0 +1,63 @@
+{
+    "atom_centred$H-050": {
+        "key": "H-050"
+    },
+    "AATS$AATS0d": {
+        "prop": "d",
+        "order": 0
+    },
+    "AATS$AATS0i": {
+        "prop": "i",
+        "order": 0
+    },
+    "AATSC$AATSC0c": {
+        "prop": "c",
+        "order": 0
+    },
+    "AATSC$AATSC0i": {
+        "prop": "i",
+        "order": 0
+    },
+    "AATSC$AATSC1c": {
+        "prop": "c",
+        "order": 1
+    },
+    "GATS$GATS1v": {
+        "order": 1,
+        "prop": "v"
+    },
+    "GATS$GATS1se": {
+        "order": 1,
+        "prop": "se"
+    },
+    "EdgeAdjacencyIndex$ESpm02u": {
+        "type": "spectral",
+        "weight": "none",
+        "order": 2
+    },
+    "EdgeAdjacencyIndex$EEig04u": {
+        "type": "eigen",
+        "order": 4,
+        "weight": "none"
+    },
+    "SICk$SIC3": {
+        "order": 3
+    },
+    "ZMICk$ZMIC1": {
+        "order": 1
+    },
+    "topological_distance$B01[C-N]": {
+        "type": "binary",
+        "atoms": [
+            6,
+            7
+        ],
+        "distance": 1
+    },
+    "functional_group$nAr_NH": {
+        "group": "nAr_NH"
+    },
+    "functional_group$nCOO": {
+        "group": "nCOO"
+    }
+}

@@ -1,0 +1,231 @@
+{
+    "atom_centred$C-005": {
+        "key": "C-005"
+    },
+    "atom_centred$C-029": {
+        "key": "C-029"
+    },
+    "atom_centred$O-060": {
+        "key": "O-060"
+    },
+    "atom_centred$N-069": {
+        "key": "N-069"
+    },
+    "atom_centred$N-070": {
+        "key": "N-070"
+    },
+    "atom_centred$N-078": {
+        "key": "N-078"
+    },
+    "atom_centred$N-079": {
+        "key": "N-079"
+    },
+    "ATSC$ATSC1c": {
+        "prop": "c",
+        "order": 1
+    },
+    "ATSC$ATSC8Z": {
+        "prop": "Z",
+        "order": 8
+    },
+    "AATSC$AATSC0v": {
+        "prop": "v",
+        "order": 0
+    },
+    "GATS$GATS1dv": {
+        "prop": "dv",
+        "order": 1
+    },
+    "ICk$IC1": {
+        "order": 1
+    },
+    "topological_distance$B03[N-N]": {
+        "type": "binary",
+        "atoms": [
+            7,
+            7
+        ],
+        "distance": 3
+    },
+    "topological_distance$F09[C-N]": {
+        "type": "frequency",
+        "atoms": [
+            6,
+            7
+        ],
+        "distance": 9
+    },
+    "functional_group$nRCOO": {
+        "group": "nRCOO"
+    },
+    "functional_group$nArN": {
+        "group": "nArN"
+    },
+    "functional_group$nArCOO": {
+        "group": "nArCOO"
+    },
+    "functional_group$nOxime": {
+        "group": "nOxime"
+    },
+    "SLogP_PA$SLogP": {},
+    "EdgeAdjacencyIndex$EEig02d": {
+        "order": 2,
+        "type": "eigen",
+        "weight": "dipole"
+    },
+    "VSA_EState$VSA_EState2": {
+        "k": 2
+    },
+    "ATSC$ATSC8dv": {
+        "order": 8,
+        "prop": "dv"
+    },
+    "FPSA$FPSA4": {
+        "version": 4
+    },
+    "VSA_EState$VSA_EState9": {
+        "k": 9
+    },
+    "ATSC$ATSC8c": {
+        "order": 8,
+        "prop": "c"
+    },
+    "ATSC$ATSC8se": {
+        "order": 8,
+        "prop": "se"
+    },
+    "topological_distance$F08[O-O]": {
+        "atoms": [
+            8,
+            8
+        ],
+        "distance": 8,
+        "type": "frequency"
+    },
+    "atom_centred$H-051": {
+        "key": "H-051"
+    },
+    "atom_centred$H-050": {
+        "key": "H-050"
+    },
+    "AATS$AATS0d": {
+        "prop": "d",
+        "order": 0
+    },
+    "AATS$AATS0i": {
+        "prop": "i",
+        "order": 0
+    },
+    "AATSC$AATSC0c": {
+        "prop": "c",
+        "order": 0
+    },
+    "AATSC$AATSC0i": {
+        "prop": "i",
+        "order": 0
+    },
+    "AATSC$AATSC1c": {
+        "prop": "c",
+        "order": 1
+    },
+    "GATS$GATS1v": {
+        "order": 1,
+        "prop": "v"
+    },
+    "GATS$GATS1se": {
+        "order": 1,
+        "prop": "se"
+    },
+    "EdgeAdjacencyIndex$ESpm02u": {
+        "type": "spectral",
+        "weight": "none",
+        "order": 2
+    },
+    "EdgeAdjacencyIndex$EEig04u": {
+        "type": "eigen",
+        "order": 4,
+        "weight": "none"
+    },
+    "SICk$SIC3": {
+        "order": 3
+    },
+    "ZMICk$ZMIC1": {
+        "order": 1
+    },
+    "topological_distance$B01[C-N]": {
+        "type": "binary",
+        "atoms": [
+            6,
+            7
+        ],
+        "distance": 1
+    },
+    "functional_group$nAr_NH": {
+        "group": "nAr_NH"
+    },
+    "functional_group$nCOO": {
+        "group": "nCOO"
+    },
+    "ATSC$ATSC6dv": {
+        "order": 6,
+        "prop": "dv"
+    },
+    "connectivity_index$X3sol": {
+        "order": 3,
+        "type": "sol",
+        "avg": false
+    },
+    "VSA_EState$VSA_EState3": {
+        "k": 3
+    },
+    "connectivity_index$X2sol": {
+        "order": 2,
+        "type": "sol",
+        "avg": false
+    },
+    "PEOE_VSA$PEOE_VSA8": {
+        "k": 8
+    },
+    "GATS$GATS1c": {
+        "order": 1,
+        "prop": "c"
+    },
+    "GATS$GATS3s": {
+        "order": 3,
+        "prop": "s"
+    },
+    "GATS$GATS2c": {
+        "order": 2,
+        "prop": "c"
+    },
+    "GATS$GATS3c": {
+        "order": 3,
+        "prop": "c"
+    },
+    "EState_VSA$EState_VSA4": {
+        "k": 4
+    },
+    "AATS$AATS1i": {
+        "order": 1,
+        "prop": "i"
+    },
+    "VSA_EState$VSA_EState5": {
+        "k": 5
+    },
+    "GATS$GATS3dv": {
+        "order": 3,
+        "prop": "dv"
+    },
+    "ATSC$ATSC7v": {
+        "order": 7,
+        "prop": "v"
+    },
+    "GATS$GATS3Z": {
+        "order": 3,
+        "prop": "Z"
+    },
+    "GATS$GATS1Z": {
+        "order": 1,
+        "prop": "Z"
+    }
+}
