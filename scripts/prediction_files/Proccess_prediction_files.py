@@ -30,12 +30,14 @@ config_file_files = 'config_predictions_files.xlsx'
 config_file_tools = 'config_predictions_tools.xlsx'
 
 delimite_endpoints = True
-
+merge_SITOLUB=True
 merge_ONTOX = False #delimite_endpoints should be True
 
 ##############################################################################
 
 ###############################  FUNCTIONS ###################################
+
+
 def eliminar_version(model):
 
     return re.sub(r"\(version \d*\.\d*\.\d*\)?", "", model).strip()
@@ -88,7 +90,7 @@ def collect_files(folder):
 def merge_files(list_files, path_for_files, tool, equivalence_in_tool, mode):
 
     list_to_merge = []
-
+    
     models = []
     for file in list_files:
 
@@ -171,17 +173,22 @@ def merge_files(list_files, path_for_files, tool, equivalence_in_tool, mode):
                     df[col_name] = col_data
                 filtered_columns = df.filter(regex=r'^(tId|SMILES|Exp|AD|Pred)', axis=1)
                 df = filtered_columns
-                print(df.head())
-                print(df.columns)
+                # print(df.head())
+                # print(df.columns)
 
             list_to_merge.append(df)
-
+            print(df.shape,"CCCCCCCCCCCCCCCCCCCCCCCCC")
+        elif 'ECOSAR':
+            df=pd.read_csv(path_for_files + os.path.sep + file + '.csv', sep = ";", )
+            print(df)
+            list_to_merge.append(df)
             
         elif 'EXPERIMENTAL' in tool: #"""Modified by Vicente 12/12/2024. Add Experimental tool"""
             """_summary_ añadir valores experimentales, de clasificación o regresión + columna SMILES """
-            df = pd.read_csv(path_for_files + os.path.sep + file + '.csv', sep = ";", lineterminator='\n')
+            df = pd.read_csv(path_for_files + os.path.sep + file + '.csv', sep = ";", )
             print(df)
             list_to_merge.append(df)
+            
         elif tool == 'PKCSM_tool':
 
             df = pd.read_csv(path_for_files + os.path.sep + file + '.csv', sep = '\t', lineterminator='\n')
@@ -192,16 +199,17 @@ def merge_files(list_files, path_for_files, tool, equivalence_in_tool, mode):
 
 
             list_to_merge.append(df)
-
+            
     
 
     merged_file = pd.concat(list_to_merge)
-
+    print(merged_file,"PATATA")
     merged_file.reset_index(inplace=True)
 
     file_name = list_files[0].split('_part')[0]
-
+    
     return merged_file, file_name, models
+
 
 
 def conversion(row, units, desired_units):
@@ -407,6 +415,11 @@ if merge_ONTOX == True:
     # for original_files to merge
     initial_data_folder =  '..' + os.path.sep + 'compare_ONGOING' + os.path.sep + 'results'
 
+if merge_SITOLUB == True:
+
+    # for original_files to merge
+    initial_data_folder =  '..' + os.path.sep + 'compare_ONGOING' + os.path.sep + 'results'
+
 
 
 ##############################################################################
@@ -431,11 +444,12 @@ for dataset, info in config_df.iterrows():
     print(tools_to_process)
 
     processed_dfs = {}
-
+    validate_df={}
+    val = pd.DataFrame()
     print('  [++] Merging prediction files')
 
     for tool in tools_to_process:
-        if tool != 'VEGA_tool' and tool != "EXPERIMENTAL_tool":
+        if tool != 'VEGA_tool' and tool != "EXPERIMENTAL_tool" and tool != "ECOSAR_tool":
 
             print('melon')
             print(f'\t[+++] Analysing "{tool}" tool')
@@ -495,7 +509,7 @@ for dataset, info in config_df.iterrows():
 
                 merged_output, file_name_output, models = merge_files(files_predicted_property, files_predicted_folder, tool, equivalence_in_tool, mode = 'outputfiles')
 
-                print(models,"BBBBBBBBBBBBBBBBB")
+           
 
                 smile_column_from_tool = config_df_tools.loc[tool, 'smiles_output']
                 id_column_from_tool = config_df_tools.loc[tool, 'id_output']
@@ -685,6 +699,7 @@ for dataset, info in config_df.iterrows():
                 #     processed_dfs[tag_tool]['idindf'] = 'yes'
                 # else:
                 #     processed_dfs[tag_tool]['idindf'] = 'no'
+        
         if tool=="VEGA_tool":
             tag_tool = tool.split('_')[0]
             equivalence_in_tool = df_tools_enpoint_names.loc[tag,tool]
@@ -698,7 +713,7 @@ for dataset, info in config_df.iterrows():
 
             #collect files predicted
             files_predicted_property = collect_files(files_predicted_folder)
-            print('patata')
+            # print('patata')
             merged_input, file_name_input, models = merge_files(files_topredict_property, files_to_predict_folder, tool, equivalence_in_tool, mode = 'inputfiles')
                 # merge output files
 
@@ -707,10 +722,12 @@ for dataset, info in config_df.iterrows():
             
             if equivalence_in_tool=="MM":
                 # cols=merged_output.columns
-                print("AAAAAAAAAAAAAAAAAAAAAAA",merged_output.columns)
+                # print("AAAAAAAAAAAAAAAAAAAAAAA",merged_output.columns)
 
                 merged_output.rename(columns={"SMILES":f"SMILES_{tag_tool}","tId":f"ID_{tag_tool}"},inplace=True)
-                print("AAAAAAAAAAAAAAAAAAAAAAA",merged_output.columns)
+                merged_output["SMILES"]=merged_output[f"SMILES_{tag_tool}"]
+                merged_output["SMILES"]=merged_output["SMILES"].apply(sanitize_smiles)
+                # print("AAAAAAAAAAAAAAAAAAAAAAA",merged_output.columns)
 
                 for model2 in models:
                     col_exp = f'Exp_{model2}-assessment'
@@ -727,14 +744,18 @@ for dataset, info in config_df.iterrows():
                         col_AD: tagnuevo_AD,
                         col_pred: tagnuevo_pred
                     }, inplace=True)
-                print(merged_output.columns)
+                # print(merged_output.columns)
                 merged_files_folder = results_folder + os.path.sep + tool + os.path.sep + 'merged_predictions_all'
                 create_dir_for_io(merged_files_folder)
                 merged_output.to_csv(merged_files_folder + os.path.sep + file_name_output + '_allcolumns.csv', sep = ';', index = False)
+                
+        elif tool == "ECOSAR_tool":
+            print("a")
+        
         elif tool=="EXPERIMENTAL_tool":
-            print("CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC")
+            # print("CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC")
             tag_tool = tool.split('_')[0]
-            print(tag_tool)
+            # print(tag_tool)
             equivalence_in_tool = df_tools_enpoint_names.loc[tag,tool]
             tool_folder = results_folder + os.path.sep + tool
             files_to_predict_folder = tool_folder + os.path.sep + 'inputs'
@@ -746,24 +767,222 @@ for dataset, info in config_df.iterrows():
 
             #collect files predicted
             files_predicted_property = collect_files(files_predicted_folder)
-            print('patata')
-            merged_input, file_name_input, models = merge_files(files_topredict_property, files_to_predict_folder, tool, equivalence_in_tool, mode = 'inputfiles')
+            # print('patata')
+            # merged_input, file_name_input, models = merge_files(files_topredict_property, files_to_predict_folder, tool, equivalence_in_tool, mode = 'inputfiles')
                 # merge output files
 
             merged_output, file_name_output, models = merge_files(files_predicted_property, files_predicted_folder, tool, equivalence_in_tool, mode = 'outputfiles')
-            print("AAAAAAAAAAAAAAAAAAAAAAA",merged_output.columns)
+            # print("AAAAAAAAAAAAAAAAAAAAAAA",merged_output.columns)
             if equivalence_in_tool=="EXPERIMENTAL":
-                print(equivalence_in_tool)
+                print(merged_output.columns)
                 merged_output.rename(columns={"SMILES":f"SMILES_{tag_tool}","ID":f"ID_{tag_tool}"},inplace=True)
-                print("AAAAAAAAAAAAAAAAAAAAAAA",merged_output.columns)
+                merged_output["SMILES"]=merged_output[f"SMILES_{tag_tool}"].apply(sanitize_smiles)
+                # print("AAAAAAAAAAAAAAAAAAAAAAA",merged_output)
                 merged_files_folder = results_folder + os.path.sep + tool + os.path.sep + 'merged_predictions_all'
                 create_dir_for_io(merged_files_folder)
                 merged_output.to_csv(merged_files_folder + os.path.sep + file_name_output + '_allcolumns.csv', sep = ';', index = False)
+    
+        if merge_SITOLUB == True:
+            validate_df[tag_tool] = {}
+
+            validate_df[tag_tool]['df'] = merged_output
+
+            print('Pruebas JL')
+            print(tag_tool)
+            print(validate_df.keys())
+            
+            # processed_dfs[tag_tool]['pred_units'] = predicted_units
+            # processed_dfs[tag_tool]['des_units'] = desired_units
+        # if f'ID_{tag_tool}' in merged_output_selcols.columns:
+        #     processed_dfs[tag_tool]['idindf'] = 'yes'
+        # else:
+        #     processed_dfs[tag_tool]['idindf'] = 'no'
+    
+        if not val.empty:
+            print(val)
+            merged_output=merged_output.drop(columns=['index'], errors='ignore')
+           
+            
+            val = pd.concat([val, merged_output], axis=1)
+            val.to_csv("a.csv",sep=";",encoding="utf8",index=False)
+        else:
+            val = merged_output
+            val.set_index('SMILES')
+        
+    print(val)
+    print(validate_df.keys())
+
     print('\tAll files processed!!!!!')
 
 
 #%% manage_for_ONTOX
+    if merge_SITOLUB == True:
+        print(' \n\n [++] Creating validation file (SITOLUB)')
+        
+        matched_files_folder = results_folder + os.path.sep + 'together' + os.path.sep + 'matched'
+        create_dir_for_io(matched_files_folder)
+        print(f'\t\t{matched_files_folder}')
+        original_file_name = config_df.loc[dataset, 'file']
+        print(f'\t\t{original_file_name}')
 
+
+        original_file = pd.read_csv(initial_data_folder + os.path.sep + original_file_name, sep = ';', low_memory=False)
+        print(original_file)
+        print(os.scandir(initial_data_folder),"FFFFFFFFFFFFFFFFF")
+
+
+        df_duplis = original_file.loc[original_file['SMILES'].duplicated(keep=False)]
+        if df_duplis.shape[0] != 0:
+            print('\t\t WARNING!!!! you have duplicated molecules in your prediction files ')
+            print('\t\t processing cannot continue')
+
+        else:
+            print('estoy bien ')
+
+
+        all_dfs_with_ids  = [original_file]
+        print(all_dfs_with_ids)
+        all_dfs_wo_ids  = []
+        print(all_dfs_wo_ids)
+
+        for key, value in processed_dfs.items():
+            print(key,value)
+            print(f'\t\t[++] Processing {key} for ONTOX')
+
+            df = value['df']
+            print(df)
+
+
+
+            final_cols = [f'SMILES_{key}', f'pred_{key}_{endpoint}_converted']
+
+            if f'AD_{key}_{endpoint}' in list(df.columns):
+
+
+                final_cols.append(f'AD_{key}_{endpoint}')
+
+            if f'in_TS_{key}_{endpoint}' in list(df.columns):
+                final_cols.append(f'in_TS_{key}_{endpoint}')
+
+            if f'ID_{key}' in list(df.columns):
+
+
+                final_cols = [f'ID_{key}'] + final_cols
+                print(final_cols)
+                # print(list(df.columns))
+                # print(final_cols)
+
+
+                df_to_merge = df[final_cols]
+
+                df_to_merge.rename(columns = {
+                            f'pred_{key}_{endpoint}_converted': f'{key}_{endpoint}_pred',
+                            f'AD_{key}_{endpoint}': f'{key}_{endpoint}_AD',
+                            f'in_TS_{key}_{endpoint}': f'{key}_{endpoint}_TS',
+
+                            }, inplace = True)
+
+                df_to_merge = df_to_merge.set_index(f'ID_{key}')
+
+                df_duplis = df_to_merge.loc[df_to_merge.index.duplicated(keep=False)]
+                if df_duplis.shape[0] != 0:
+                    print('\t\t WARNING!!!! you have duplicated molecules in your prediction files ')
+                    print('\t\t processing cannot continue')
+
+                # else:
+                #     print('estoy bien ')
+
+                all_dfs_with_ids.append(df_to_merge)
+
+
+
+
+                original_file.set_index('ID_all', inplace = True)
+                original_file = pd.concat([original_file,df_to_merge], axis = 1, join="outer")
+                original_file.index.name = 'ID_all'
+                original_file.reset_index(inplace = True)
+
+            else:
+
+                # print(list(df.columns))
+                # print(final_cols)
+
+
+
+
+                df_to_merge = df[final_cols]
+
+
+                df_to_merge.rename(columns = {
+                                    f'pred_{key}_{endpoint}_converted': f'{key}_{endpoint}_pred',
+                                    f'AD_{key}_{endpoint}': f'{key}_{endpoint}_AD',
+                                    f'in_TS_{key}_{endpoint}': f'{key}_{endpoint}_TS',
+
+                        }, inplace = True)
+
+                df_to_merge['SMILES'] = df_to_merge[f'SMILES_{key}']
+                # df_to_merge['SMILES'] = df_to_merge.apply(lambda row: sanitize_smiles(row[f'SMILES_{key}']), axis=1)
+
+
+
+                # df_to_merge.index.name = f'ID_{key}'
+
+                # df_to_merge.reset_index(drop = False, inplace = True)
+
+                df_to_merge.set_index('SMILES', inplace = True)
+
+                # manage duplicated molecules
+
+
+
+                df_duplis_onerepe = df_to_merge.loc[df_to_merge.index.duplicated(keep='first')]
+                df_duplis = df_to_merge.loc[df_to_merge.index.duplicated(keep=False)]
+
+
+                if df_duplis.shape[0] != 0:
+                    print('\t\t WARNING!!!! you have duplicated molecules in your prediction files ')
+                    print(f'\t\t a total of {df_duplis_onerepe.shape[0]} have been skeeped. A new file has been created')
+
+                    df_duplis.to_csv(matched_files_folder + os.path.sep + f'{tag}_{key}_skeepedbyduplication.csv', sep = ';', index = False)
+
+
+                    df_to_merge = df_to_merge.loc[~df_to_merge.index.duplicated(keep='first')]
+
+
+                # manage molecules where smiles are changes by admetlab
+
+                diff = df_to_merge[~df_to_merge[f'SMILES_{key}'].isin(original_file['SMILES'])]
+
+                if diff.shape[0] != 0:
+                    print('\t\t WARNING!!!! some molecules cannot be matched ')
+                    print(f'\t\t a total of {diff.shape[0]} have been skeeped. A new file has been created')
+                    diff.to_csv(matched_files_folder + os.path.sep + f'{tag}_{key}_skeepednotmatched.csv', sep = ';', index = True)
+
+
+
+                onlyequal = df_to_merge[df_to_merge[f'SMILES_{key}'].isin(original_file['SMILES'])]
+
+                original_file.set_index('SMILES', inplace = True)
+
+                all_dfs_wo_ids.append(onlyequal)
+
+
+                # onlyequal.drop(f'ID_{key}', axis = 1)
+
+
+                original_file = pd.concat([original_file,onlyequal], axis = 1, join="outer")
+
+                original_file.index.name = 'SMILES'
+                original_file.reset_index(inplace = True)
+                original_file.set_index('ID_all', inplace = True)
+                original_file.reset_index(inplace = True)
+
+
+
+
+
+
+            original_file.to_csv(matched_files_folder + os.path.sep + f'{tag}.csv', sep = ';', index = False)
     if merge_ONTOX == True:
 
         print(' \n\n [++] Matching with original file (ONTOX)')
