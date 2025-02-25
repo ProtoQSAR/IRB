@@ -1,3 +1,0 @@
-;Model type;Train R2/Acc;Train Ev/Sensit;Train MSE/Specif;Train MAE/Precis;Test R2/Acc;Test Ev/Sensit;Test MSE/Specif;Test MAE/Precis
-PhCh_logD_old;regressor;0.93;0.93;0.24;0.37;0.82;0.82;0.61;0.61
-PhCh_logD_new;regressor;0.93;0.93;0.24;0.37;0.82;0.82;0.61;0.61

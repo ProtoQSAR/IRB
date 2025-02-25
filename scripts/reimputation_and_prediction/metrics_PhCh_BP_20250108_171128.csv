@@ -1,3 +1,0 @@
-;Model type;Train R2/Acc;Train Ev/Sensit;Train MSE/Specif;Train MAE/Precis;Test R2/Acc;Test Ev/Sensit;Test MSE/Specif;Test MAE/Precis
-PhCh_BP_old;regressor;0.97;0.97;0.0;0.01;0.88;0.88;0.0;0.02
-PhCh_BP_new;regressor;0.97;0.97;0.0;0.01;0.89;0.89;0.0;0.02
