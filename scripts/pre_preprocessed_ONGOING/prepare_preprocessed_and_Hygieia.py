@@ -15,7 +15,7 @@ for i in list(globals().keys()):
 import os
 from pathlib import Path
 import codecs
-from rdkit.Chem import PandasTools
+from rdkit.Chem import PandasTools, Descriptors
 from rdkit import Chem
 from rdkit import RDLogger
 lg = RDLogger.logger()
@@ -55,11 +55,40 @@ else:
 
 
 # path_to_hygieia = '/home/carmenortiz/Escritorio/generate_models/FullAsFunctions/' #Carmen
-path_to_hygieia = r'F:\ProtoQSAR\GENERATE_MODELS_3_0\FullAsFunctions' #Eva
+path_to_hygieia = r'D:\ProtoQSAR\GENERATE_MODELS_3_0\FullAsFunctions' #Eva
 exec_hygieia = 'hygieia_mod.py'
 
 config_file = 'info_original_datasets_IRB.xlsx'
 ##############################################################################
+
+###############################  FUNCTIONS ###################################
+
+
+def conversion_biocodes(row):
+
+
+    orig_value = row['y_original']
+
+    orig_units = row['orig_UNITS']
+
+
+
+    if orig_units == 'nM':
+
+        return orig_value
+
+    elif orig_units == 'ug.mL-1':
+
+        mol = Chem.MolFromSmiles(row['SMILES'])
+
+        mw = Descriptors.MolWt(mol)
+
+        transf_value = row['y_original']*1000000/mw
+
+        return transf_value
+
+##############################################################################
+
 
 
 
@@ -360,6 +389,29 @@ for dataset, info in dictios_dfs.items():
 
         smiles_source = info['SMILES_col']
 
+    elif info['curation_process'] == 'curationBIOCODES1':
+
+        df = pd.read_csv(pathfile, sep = ';')
+
+        allowed_units = ['nM', 'ug.mL-1']
+
+        df = df[df['Standard Units'].isin(allowed_units)]
+
+        df = df[df['Data Validity Comment'] != 'Outside typical range']
+
+        df = df[df['Standard Relation'] == "'='"]
+
+
+        smiles_source = info['SMILES_col']
+
+    elif info['curation_process'] == 'curationBIOCODES2':
+
+
+        df = pd.read_excel(pathfile)
+        smiles_source = info['SMILES_col']
+
+
+
     if use_smiles_from_unique_source == True:
 
         df.rename(columns = {info['SMILES_col']: 'SMILES'}, inplace = True)
@@ -398,7 +450,14 @@ for dataset, info in dictios_dfs.items():
     df.reset_index(inplace = True)
 
     df.insert(df.shape[1],'experimental_column',info["experimental_column"])
-    df.insert(df.shape[1],'UNITS',info["units"])
+
+    if info['curation_process'] != 'curationBIOCODES1':
+
+        df.insert(df.shape[1],'UNITS',info["units"])
+
+    else:
+
+        df.insert(df.shape[1],'UNITS',df[info["units"]])
 
     entire_output_file_df = f'{info["output_name"]}-entiredata.csv'
     print(f'\t[++] Dataframe file created: {entire_output_file_df}')
@@ -423,6 +482,7 @@ for dataset, info in dictios_dfs.items():
 
         cols_to_maintain = ['ID', 'orig_ID', 'SMILES', info["experimental_column"], 'CAS', 'NAME', 'UNITS', 'smiles_source']
 
+#%%
     df_preprocessed = df[cols_to_maintain]
 
     df_preprocessed.rename(columns={info["experimental_column"]: 'y'}, inplace = True)
@@ -440,7 +500,7 @@ for dataset, info in dictios_dfs.items():
     #         sanitize=True, duplicates=True, inorganics=True, mixtures=True,
     #         salts=True, SEP=';', smiles_lab='SMILES',san_dups=True)
 
-
+#%%
     processed_output_file_df = f'{info["output_name"]}'
     print(f'\t[+++] Dataframe curated file created: {processed_output_file_df}')
 
@@ -458,5 +518,15 @@ for dataset, info in dictios_dfs.items():
     df_final = df_final[cols_to_maintain2]
 
     df_final.replace({'[nan, nan]':np.nan, '[nan, nan, nan]':np.nan, '[nan, nan, nan, nan]':np.nan}, inplace = True)
+
+
+    if info['curation_process'] == 'curationBIOCODES1':
+
+        df_final.rename(columns = {'y': 'y_original', 'UNITS' : 'orig_UNITS'}, inplace = True)
+
+
+
+        df_final['y'] = df_final.apply(lambda row: conversion_biocodes(row), axis=1)
+        df_final['UNITS'] = 'nM'
 
     df_final.to_csv(clean_files_folder + os.path.sep + processed_output_file_df + '_final.csv', sep = ';', index = False)
