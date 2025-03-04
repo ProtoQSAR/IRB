@@ -104,7 +104,7 @@ def conversion(row, units, desired_units):
         return np.log10(row*10**(-6))
 
     elif units == 'mg/kg-bw/day' and desired_units == 'logmg/kg/day':
-        
+
         print(row, np.log10(row))
 
         return np.log10(row)
@@ -514,9 +514,16 @@ dictio_properties = {
                              'classreg' : 'class'},
     'TOX_acutevaporrat':        {'desired_units' : 'mg/L',
                              'classreg' : 'reg'},
-    'TOX_acutevaporrat':        {'desired_units' : 'mg/L',
+
+    'BIO_CalbicansMIC':        {'desired_units' : 'nM',
                          'classreg' : 'reg'},
-    
+    'BIO_PjiroveciiMIC':        {'desired_units' : 'nM',
+                         'classreg' : 'reg'},
+    'BIO_SepidermidisMIC':        {'desired_units' : 'nM',
+                         'classreg' : 'reg'},
+
+
+
      }
 
 
@@ -571,11 +578,21 @@ dictios_dfs = {
      # 'TK_HLM' : ##↓ okis
      #              {'Li':   {'file' : 'TK_HLM_Li'},
      #               },
-     
 
-    'TOX_acutevaporrat' : #marttina_noIRB
-                {'EPA':   {'file' : 'TOX_acutevaporrat_EPA'}
-                },     
+
+    # 'TOX_acutevaporrat' : #marttina_noIRB
+    #             {'EPA':   {'file' : 'TOX_acutevaporrat_EPA'}
+    #             },
+    'BIO_CalbicansMIC' : #marttina_noIRB
+                {'ChEMBL':   {'file' : 'BIO_CalbicansMIC_ChEMBL'}
+                },
+    'BIO_PjiroveciiMIC' : #marttina_noIRB
+                {'ChEMBL':   {'file' : 'BIO_PjiroveciiMIC_ChEMBL'}
+                },
+    'BIO_SepidermidisMIC' : #marttina_noIRB
+                {'ChEMBL':   {'file' : 'BIO_SepidermidisMIC_ChEMBL'}
+                },
+
     }
 
 
