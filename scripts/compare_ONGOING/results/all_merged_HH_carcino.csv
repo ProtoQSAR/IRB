@@ -1,26 +1,26 @@
-index;ID_EXPERIMENTAL;SMILES;y
-0;813;CCCCCCCC/C=C\CCCCCCCC(=O)O;0
-1;823_823;ClC(Cl)=C(Cl)Cl;1
-2;10_48;O=C(O)CC(O)(CC(=O)O)C(=O)O;0
-3;635_635;CC(O)CO;0
-4;358_358;O=C1O[C@H]([C@@H](O)CO)C(O)=C1O;0
-5;1034_1034;O=S1(=O)CC=CC1;0
-6;86_86;ClCc1ccccc1;0
-7;69_69_329_329_329_329;C=O;1
-8;182_182;CCCCCCCCCC(=O)O;0
-9;275_275_1072_1072;Sc1nc2ccccc2s1;1
-10;1112_1112;CC1CO1;1
-11;930_930;C=CC(=O)O;0
-12;915_915;OC[C@H](O)[C@@H](O)[C@H](O)[C@@H](O)CO;0
-13;122_122_535_535;O=C(O)c1ccccc1;0
-14;199_199;CCCCCCCC(=O)O;0
-15;18_18_76_76;c1ccccc1;1
-16;231_231;OCCNCCO;0
-17;133_133;O=C([O-])c1ccccc1;0
-18;507_507_507_507;CC(Cl)(Cl)Cl;0
-19;1081_1081;NC(N)=O;0
-20;245_245_913_913;CC=CC=CC(=O)O;0
-21;51_51;CC(C)O;0
-22;443_443;Cc1ccccc1OP(=O)(Oc1ccccc1C)Oc1ccccc1C;0
-23;719_719_719;OCCN(CCO)CCO;0
-24;222_222;Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1;0
+ID_all;SMILES;ID_protoscript;orig_ID_protoscript;yorig_protoscript;CAS_protoscript;NAME_protoscript;units_protoscript;smilessource_protoscript;SMILES_protoscript;desired_units_protoscript;y_protoscript;y_consensus;valid/outlier
+0;C=CC(=O)O;[61, 62];930;0.0;;;class;SMILES;C=CC(=O)O;class;0.0;0.0;valid
+1;C=O;[32, 33, 34, 35, 5, 6];[329, 69];1.0;[nan, nan, nan, nan, nan, nan];[nan, nan, nan, nan, nan, nan];class;SMILES;C=O;class;1.0;1.0;valid
+2;CC(C)O;[3, 4];51;0.0;;;class;SMILES;CC(C)O;class;0.0;0.0;valid
+3;CC(Cl)(Cl)Cl;[41, 42, 43, 44];507;0.0;;;class;SMILES;CC(Cl)(Cl)Cl;class;0.0;0.0;valid
+4;CC(O)CO;[48, 47];635;0.0;;;class;SMILES;CC(O)CO;class;0.0;0.0;valid
+5;CC1CO1;[69, 70];1112;1.0;;;class;SMILES;CC1CO1;class;1.0;1.0;valid
+6;CC=CC=CC(=O)O;[17, 18, 58, 57];[913, 245];0.0;;;class;SMILES;CC=CC=CC(=O)O;class;0.0;0.0;valid
+7;CCCCCCCC(=O)O;[16, 15];199;0.0;;;class;SMILES;CCCCCCCC(=O)O;class;0.0;0.0;valid
+8;CCCCCCCC/C=C\CCCCCCCC(=O)O;54;813;0.0;;;class;SMILES;CCCCCCCC/C=C\CCCCCCCC(=O)O;class;0.0;0.0;valid
+9;CCCCCCCCCC(=O)O;[13, 14];182;0.0;;;class;SMILES;CCCCCCCCCC(=O)O;class;0.0;0.0;valid
+10;Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1;[28, 29];222;0.0;;;class;SMILES;Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1;class;0.0;0.0;valid
+11;Cc1ccccc1OP(=O)(Oc1ccccc1C)Oc1ccccc1C;[40, 39];443;0.0;;;class;SMILES;Cc1ccccc1OP(=O)(Oc1ccccc1C)Oc1ccccc1C;class;0.0;0.0;valid
+12;ClC(Cl)=C(Cl)Cl;[56, 55];823;1.0;;;class;SMILES;ClC(Cl)=C(Cl)Cl;class;1.0;1.0;valid
+13;ClCc1ccccc1;[26, 27];86;0.0;;;class;SMILES;ClCc1ccccc1;class;0.0;0.0;valid
+14;NC(N)=O;[67, 68];1081;0.0;;;class;SMILES;NC(N)=O;class;0.0;0.0;valid
+15;O=C(O)CC(O)(CC(=O)O)C(=O)O;[0, 23];[48, 10];0.0;;;class;SMILES;O=C(O)CC(O)(CC(=O)O)C(=O)O;class;0.0;0.0;valid
+16;O=C(O)c1ccccc1;[8, 45, 46, 7];[122, 535];0.0;;;class;SMILES;O=C(O)c1ccccc1;class;0.0;0.0;valid
+17;O=C([O-])c1ccccc1;[9, 10];133;0.0;;;class;SMILES;O=C([O-])c1ccccc1;class;0.0;0.0;valid
+18;O=C1O[C@H]([C@@H](O)CO)C(O)=C1O;[36, 37];358;0.0;;;class;SMILES;O=C1O[C@H]([C@@H](O)CO)C(O)=C1O;class;0.0;0.0;valid
+19;O=S1(=O)CC=CC1;[64, 63];1034;0.0;;;class;SMILES;O=S1(=O)CC=CC1;class;0.0;0.0;valid
+20;OCCN(CCO)CCO;[49, 50, 51];719;0.0;;;class;SMILES;OCCN(CCO)CCO;class;0.0;0.0;valid
+21;OCCNCCO;[30, 31];231;0.0;;;class;SMILES;OCCNCCO;class;0.0;0.0;valid
+22;OC[C@H](O)[C@@H](O)[C@H](O)[C@@H](O)CO;[59, 60];915;0.0;;;class;SMILES;OC[C@H](O)[C@@H](O)[C@H](O)[C@@H](O)CO;class;0.0;0.0;valid
+23;Sc1nc2ccccc2s1;[65, 66, 21, 22];[1072, 275];1.0;;;class;SMILES;Sc1nc2ccccc2s1;class;1.0;1.0;valid
+24;c1ccccc1;[24, 1, 2, 25];[18, 76];1.0;;;class;SMILES;c1ccccc1;class;1.0;1.0;valid

@@ -1,0 +1,26 @@
+ID;orig_ID;SMILES;y;CAS;NAME;UNITS;smiles_source
+[61, 62];930;C=CC(=O)O;0.0;;;class;SMILES
+[32, 33, 34, 35, 5, 6];[329, 69];C=O;1.0;[nan, nan, nan, nan, nan, nan];[nan, nan, nan, nan, nan, nan];class;SMILES
+[3, 4];51;CC(C)O;0.0;;;class;SMILES
+[41, 42, 43, 44];507;CC(Cl)(Cl)Cl;0.0;;;class;SMILES
+[48, 47];635;CC(O)CO;0.0;;;class;SMILES
+[69, 70];1112;CC1CO1;1.0;;;class;SMILES
+[17, 18, 58, 57];[913, 245];CC=CC=CC(=O)O;0.0;;;class;SMILES
+[16, 15];199;CCCCCCCC(=O)O;0.0;;;class;SMILES
+54;813;CCCCCCCC/C=C\CCCCCCCC(=O)O;0.0;;;class;SMILES
+[13, 14];182;CCCCCCCCCC(=O)O;0.0;;;class;SMILES
+[28, 29];222;Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1;0.0;;;class;SMILES
+[40, 39];443;Cc1ccccc1OP(=O)(Oc1ccccc1C)Oc1ccccc1C;0.0;;;class;SMILES
+[56, 55];823;ClC(Cl)=C(Cl)Cl;1.0;;;class;SMILES
+[26, 27];86;ClCc1ccccc1;0.0;;;class;SMILES
+[67, 68];1081;NC(N)=O;0.0;;;class;SMILES
+[0, 23];[48, 10];O=C(O)CC(O)(CC(=O)O)C(=O)O;0.0;;;class;SMILES
+[8, 45, 46, 7];[122, 535];O=C(O)c1ccccc1;0.0;;;class;SMILES
+[9, 10];133;O=C([O-])c1ccccc1;0.0;;;class;SMILES
+[36, 37];358;O=C1O[C@H]([C@@H](O)CO)C(O)=C1O;0.0;;;class;SMILES
+[64, 63];1034;O=S1(=O)CC=CC1;0.0;;;class;SMILES
+[49, 50, 51];719;OCCN(CCO)CCO;0.0;;;class;SMILES
+[30, 31];231;OCCNCCO;0.0;;;class;SMILES
+[59, 60];915;OC[C@H](O)[C@@H](O)[C@H](O)[C@@H](O)CO;0.0;;;class;SMILES
+[65, 66, 21, 22];[1072, 275];Sc1nc2ccccc2s1;1.0;;;class;SMILES
+[24, 1, 2, 25];[18, 76];c1ccccc1;1.0;;;class;SMILES

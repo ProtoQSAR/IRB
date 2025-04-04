@@ -56,7 +56,7 @@ def detectar_skiprow(file_path, header_start="No.",return_models=False):
                 models = [eliminar_version(model) for model in models]
 
                 #  print(models)
-                return models
+                return models, i
             return i
     return None if not return_models else models
 
@@ -119,8 +119,8 @@ def merge_files(list_files, path_for_files, tool, equivalence_in_tool, mode):
             list_to_merge.append(df)
 
         elif 'VEGA' in tool: #"""Modified by Vicente 09/12/2024. Add Vega tool"""
-            skiprows = detectar_skiprow(path_for_files + os.path.sep + file + '.txt')
-            models = detectar_skiprow(path_for_files + os.path.sep + file + '.txt', return_models=True)
+            # skiprows = detectar_skiprow(path_for_files + os.path.sep + file + '.txt')
+            models, skiprows = detectar_skiprow(path_for_files + os.path.sep + file + '.txt', return_models=True)
 
 
             if mode=="inputfiles":

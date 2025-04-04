@@ -1,0 +1,26 @@
+ID_all;SMILES;y_consensus;valid/outlier;NAME_protoscript;CAS_protoscript
+0;C=CC(=O)O;0.0;valid;;
+1;C=O;1.0;valid;[nan, nan, nan, nan, nan, nan];[nan, nan, nan, nan, nan, nan]
+2;CC(C)O;0.0;valid;;
+3;CC(Cl)(Cl)Cl;0.0;valid;;
+4;CC(O)CO;0.0;valid;;
+5;CC1CO1;1.0;valid;;
+6;CC=CC=CC(=O)O;0.0;valid;;
+7;CCCCCCCC(=O)O;0.0;valid;;
+8;CCCCCCCC/C=C\CCCCCCCC(=O)O;0.0;valid;;
+9;CCCCCCCCCC(=O)O;0.0;valid;;
+10;Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1;0.0;valid;;
+11;Cc1ccccc1OP(=O)(Oc1ccccc1C)Oc1ccccc1C;0.0;valid;;
+12;ClC(Cl)=C(Cl)Cl;1.0;valid;;
+13;ClCc1ccccc1;0.0;valid;;
+14;NC(N)=O;0.0;valid;;
+15;O=C(O)CC(O)(CC(=O)O)C(=O)O;0.0;valid;;
+16;O=C(O)c1ccccc1;0.0;valid;;
+17;O=C([O-])c1ccccc1;0.0;valid;;
+18;O=C1O[C@H]([C@@H](O)CO)C(O)=C1O;0.0;valid;;
+19;O=S1(=O)CC=CC1;0.0;valid;;
+20;OCCN(CCO)CCO;0.0;valid;;
+21;OCCNCCO;0.0;valid;;
+22;OC[C@H](O)[C@@H](O)[C@H](O)[C@@H](O)CO;0.0;valid;;
+23;Sc1nc2ccccc2s1;1.0;valid;;
+24;c1ccccc1;1.0;valid;;
